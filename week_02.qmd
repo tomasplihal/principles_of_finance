@@ -1,0 +1,306 @@
+# Ekonomické základy: Peníze a úrokové sazby
+
+::: {.callout-note}
+# Studijní materiály
+
+- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
+University. <https://openstax.org/details/books/principles-finance>
+  - Chapter 3 - Economic Foundations: Money and Rates
+:::
+
+**Výstupy učení:**
+
+1. Porozumět a analyzovat základní koncepty mikroekonomie, včetně teorií
+poptávky, nabídky a rovnovážné ceny.
+2. Chápat klíčové makroekonomické ukazatele, jako je inflace, nezaměstnanost a
+hrubý domácí produkt a analyzovat jejich dopad na ekonomiku.
+3. Identifikovat, interpretovat a hodnotit fáze hospodářských cyklů a jejich
+vliv na ekonomickou aktivitu.
+4. Hodnotit roli a dopad úrokových sazeb na ekonomiku a rozhodování jednotlivců.
+5. Chápat faktory určující směnné kurzy a jejich vlivy na globální obchod a
+domácí ekonomiku.
+
+## Mikroekonomie
+
+- Mikroekonomie studuje rozhodnutí a akce jednotlivých aktérů jako jsou firmy a
+spotřebitelé v ekonomice.
+- Pomáhá finančním manažerům pochopit trh, cenotvorbu a dostupnost zdrojů.
+
+### Poptávka
+
+- Poptávka odkazuje na množství zboží nebo služby, které jsou spotřebitelé
+ochotni a schopni koupit za různé ceny, za předpokladu, že všechny ostatní
+faktory zůstanou konstantní.
+- Poptávka po produktu, jako je pizza, může být ilustrována prostřednictvím
+poptávkové křivky, která je typicky klesající, což reprezentuje zákon poptávky.
+- Zákon poptávky, tj. nepřímý vztah mezi cenou a prodaným množstvím, je dán
+klesajícím uspokojením z konzumace dalších jednotek a omezenou schopností
+spotřebitelů platit.
+- Poptávková křivka předpokládá, že se mění pouze cena produktu, zatímco všechny
+ostatní faktory zůstávají konstantní.
+
+| Cena ($)    | Množství   |
+|:-----------:|:----------:|
+| 30          | 0          |
+| 25          | 10         |
+| 20          | 20         |
+| 15          | 30         |
+| 10          | 40         |
+| 5           | 50         |
+
+![](images/fig_2_1.webp){width=500 fig-align="center"}
+
+- Nicméně změny v dalších ekonomických faktorech, jako je příjem spotřebitelů,
+velikost populace, vkus a preference a ceny ostatních statků mohou způsobit
+posun poptávkové křivky.
+- Nárůst poptávky, způsobený faktory jako je nárůst ceny substitů (podobných
+statků), posouvá poptávkovou křivku doprava, zatímco pokles poptávky, třeba
+kvůli negativní publicitě, ji posouvá doleva.
+
+| Cena ($)    | Množství   |
+|:-----------:|:----------:|
+| 30          | 9          |
+| 25          | 19         |
+| 20          | 29         |
+| 15          | 39         |
+| 10          | 49         |
+| 5           | 59         |
+
+![](images/fig_2_2.webp){width=500 fig-align="center"}
+
+### Nabídka
+
+- Nabídka odkazuje na množství zboží nebo služby, které jsou podniky připraveny
+prodat za různé ceny, za předpokladu, že ostatní faktory zůstanou konstantní.
+- Vyšší ceny často motivují výrobce, aby nabídli více svých produktů k prodeji,
+což naznačuje pozitivní korelaci mezi cenou a nabízeným množstvím.
+- Nabídková křivka vizuálně reprezentuje tento vztah za předpokladu, že všechny
+ostatní relevantní ekonomické faktory zůstávají nezměněny.
+- Pokud se změní jiné faktory, jako jsou náklady na výrobu nebo platy, nabídková
+křivka se posune.
+- Posun doprava na nabídkové křivce naznačuje nárůst nabídky (větší množství za
+stejnou cenu), zatímco posun doleva naznačuje pokles nabídky.
+
+| Cena ($)    | Množství   |
+|:-----------:|:----------:|
+|    30       |    60      |
+|    25       |    50      |
+|    20       |    40      |
+|    15       |    30      |
+|    10       |    20      |
+|     5       |    10      |
+
+![](images/fig_2_3.webp){width=500 fig-align="center"}
+
+### Rovnovážná cena
+
+- Tržní rovnováha je určena interakcí poptávky (kupujících) a nabídky
+(prodávajících), reprezentovanou bodem průsečíku poptávkové a nabídkové křivky.
+- V rovnováze je množství poptávané rovno množství nabízené, bez nedostatku nebo
+přebytku produktu.
+- Na konkurenčním trhu vede cena vyšší než je rovnovážná cena k přebytku
+nabídky, což způsobuje snížení ceny a menší výrobu.
+- Naopak cena nižší než rovnovážná vede k nedostatku, což tlačí ceny nahoru
+směrem k rovnováze.
+- Tržní síly táhnou ceny k rovnováze a zůstávají tam, dokud se nezmění poptávka
+nebo nabídka.
+
+![](images/fig_2_4.webp){width=500 fig-align="center"}
+
+- Nárůst nabídky (posun nabídkové křivky doprava) vede k poklesu rovnovážné
+ceny.
+- Nicméně, pohyb po poptávkové křivce kvůli změnám rovnovážné ceny je nárůst
+poptávaného množství, nikoli nárůst poptávky.
+
+![](images/fig_2_5.webp){width=500 fig-align="center"}
+
+- Pokles poptávky (posun poptávkové křivky doleva) také vede k poklesu
+rovnovážné ceny.
+- Výrobci se pohybují po nabídkové křivce a vyrábí méně produktů, když cena
+klesá, což se nazývá pokles nabízeného množství.
+
+![](images/fig_2_6.webp){width=500 fig-align="center"}
+
+## Makroekonomie
+
+- Makroekonomie se dívá na ekonomiku jako celek a zaměřuje se na široké otázky,
+jako je inflace, nezaměstnanost a růst výroby.
+
+### Inflace
+
+- Inflace se vztahuje na obecné zvyšování cenových hladin v čase. Způsobuje
+pokles kupní síly měny, což znamená, že dolar už nemůže koupit tolik věcí, jako
+dříve.
+- Ekonomové měří inflaci tím, že zohledňují cenu koše zboží namísto jedné
+položky.
+- Měření inflace má většinou provádí statistický úřad měsíčně, přičemž Index
+spotřebitelských cen (consumer price index, CPI) je nejčastěji citovaným
+ukazatelem.
+- CPI je založen na nákladech na nákup pevného koše zboží a služeb, které by
+typická městská rodina mohla zakoupit.
+- Index jádrové inflace (core inflation) je vypočítán vyloučením nestabilních
+ekonomických proměnných jako jsou energetické a potravinové ceny.
+- Index cen výrobců (producer price index, PPI) měří ceny, které výrobci platí
+za dodávky a suroviny, což naznačuje možné budoucí nárůsty CPI.
+- Alternativou pro výpočet inflace může být také deflátor HDP, který používá
+ceny z výchozího roku k vypočítání toho, jaký by byl HDP, pokud by ceny byly
+identické s těmi ve výchozím roce.
+
+![](images/fig_2_7.webp){width=500 fig-align="center"}
+
+### Nezaměstnanost
+
+- Nezaměstnanost se vztahuje na lidi, kteří nepracují, ale aktivně hledají práci
+a jsou schopni práci přijmout.
+- Míra nezaměstnanosti je procento pracovní síly, která je nezaměstnaná,
+vypočítaná jako:
+
+$$
+\text{Pracovní síla} = \text{Počet zaměstnaných} + \text{Počet nezaměstnaných}
+$$
+  
+$$
+\text{Míra nezaměstnanosti} = \frac{\text{Počet nezaměstnaných}}{\text{Pracovní síla}}
+$$
+
+- Ne každý bez práce je považován za nezaměstnaného. Například důchodci nebo
+rodiče pečující o domácnost a nehledající zaměstnání nejsou zahrnuti do pracovní
+síly.
+- Statistický úřad zveřejňuje míru nezaměstnanosti každý měsíc.
+- Pro porovnání míry nezaměstnanosti po celém světě navštivte
+<https://openstax.org/r/data-world-bank>.
+
+![](images/fig_2_8.webp){width=500 fig-align="center"}
+
+### Hrubý domácí produkt
+
+- Hrubý domácí produkt (HDP) představuje celkovou peněžní hodnotu všech
+konečných statků a služeb vyrobených v zemi během roku.
+- HDP lze vypočítat sečtením všech položek zakoupených v ekonomice, rozdělených
+do čtyř kategorií: spotřeba, investice, vládní výdaje a čistý export.
+  - Spotřeba se vztahuje na nákupy domácností, které tvoří přibližně dvě třetiny
+  amerického HDP.
+  - Investiční výdaje se týkají nákupů nových kapitálových statků podniky, což
+  tvoří 15%-18% amerického HDP.
+  - Vládní výdaje zahrnují nákupy federální, státní a místní vlády, tvoří téměř
+  20% amerického HDP.
+  - Čistý export zahrnuje hodnotu statků vyrobených v USA a prodaných v
+  zahraničí, mínus hodnotu statků vyrobených v zahraničí a zakoupených v USA.
+- Nominální HDP, tržní hodnota všech vyrobených statků a služeb, mů že narůst
+kvůli zvýšení produkce nebo zvýšení cen (inflace).
+- Reálný HDP, vypočítaný korigováním nominálního HDP o inflaci, roste pouze
+pokud jsou vyráběny více statky a služby. To poskytuje jasnější obrázek
+skutečného růstu produkce.
+
+![](images/fig_2_9.webp){width=500 fig-align="center"}
+
+## Hospodářský cyklus a ekonomická aktivita
+
+![](images/fig_2_10.webp){width=700 fig-align="center"}
+
+- Růst americké ekonomiky v čase nebyl konstantní; má období rychlejšího růstu a
+období negativního růstu, známé jako hospodářský cyklus.
+
+![](images/fig_2_11.webp){width=300 fig-align="center"}
+
+- Hospodářský cyklus se skládá z období ekonomické expanze a kontrakce.
+- Během fáze expanze roste HDP, zaměstnanost se zvyšuje a nezaměstnanost klesá.
+Jiná měřítka, jako je zahájení nových podniků a stavba nových domů, mohou
+narůst.
+- Časem rychlá expanze zpomaluje, což převede ekonomiku do fáze kontrakce. Tento
+bod je známý jako vrchol hospodářského cyklu.
+- Kontrakce je často spojena se zvyšující se nezaměstnaností a zpomalujícím HDP.
+Bod, kdy kontrakce končí a začíná expanze, se nazývá dno.
+- Délka hospodářského cyklu se měří od jednoho dna k dalšímu.
+
+![](images/fig_2_12.webp){width=500 fig-align="center"}
+
+- Recese, často synonymum pro fázi kontrakce, bývala definována jako dvě po sobě
+jdoucí čtvrtletí poklesu HDP.
+- Dnes Národní úřad pro ekonomický výzkum (National Bureau of Economic Research,
+NBER), který oficiálně deklaruje recese v USA, používá širší definici. Významný
+pokles ekonomické aktivity rozšířený napříč ekonomikou a trvající několik měsíců
+může být deklarován jako recese, bere se v úvahu reálný příjem, zaměstnanost,
+průmyslová výroba, velkoobchod a maloobchodní prodej, vedle reálného HDP.
+
+## Úrokové sazby
+
+- Trh zápůjčitelných fondů (dostupných peněz) je řízen úrokovou sazbou (cenou
+peněz).
+- Dodavatelé prostředků (věřitelé) jsou ti s rozpočtovým přebytkem, zatímco
+poptávači prostředků (dlužníci) jsou ti s rozpočtovým deficitem.
+- Faktory ovlivňující nabídku a poptávku po penězích:
+  - velikost úspor
+  - přístup komerčních bank
+  - politika centrální banky
+  - politika vlády 
+  - preference likvidity
+  - mezinárodní faktory
+- Na tomto trhu reprezentuje vzestupně se sklánějící křivka nabídky věřitele,
+kteří jsou povzbuzeni k dodání více prostředků při vyšší úrokové sazbě, a
+sestupně se sklánějící křivka poptávky reprezentuje dlužníky, kteří poptávají
+méně prostředků, jak úrokové sazby rostou.
+- Rovnováha na tomto trhu nastává tam, kde se křivky nabídky a poptávky
+protínají, stanoví úrokovou sazbu, která vyváží dodané a poptávané množství
+půjčitelných prostředků.
+
+![](images/fig_2_13.webp){width=500 fig-align="center"}
+
+- Nominální úroková sazba je kotovaná sazba a reálná úroková sazba ji upravuje o
+inflaci. Vypočítává se jako
+$$
+\text{Reálná úroková sazba} = \text{Nominální úroková sazba} - \text{Inflace}
+$$
+- Reálná úroková sazba, nikoli nominální, určuje skutečnou cenu půjčování a
+odměnu za půjčování.
+- Různé typy dlužníků mají různé úrokové sazby na základě jejich kreditního
+rizika. 
+- Státní dluhopisy mají zpravidla nejnižší (bezrizikovou) sazbu (může se velmi
+lišit u různých států), zatímco společnosti a jednotlivci mají vyšší sazby kvůli
+vyššímu riziku.
+- Rizikové přirážky jsou účtovány jako kompenzace za kreditní riziko, které
+nesou věřitelé. Rizikovější dlužníci, jako jsou držitelé kreditních karet bez
+zástavy, mají tendenci platit mnohem vyšší úrokové sazby.
+
+![](images/fig_2_14.webp){width=500 fig-align="center"}
+
+## Směnné kurzy
+
+- Směnný kurz je cena měny.
+- Kurz pro okamžitou směnu se nazývá spotový měnový kurz.
+- **Přímá kotace**: když jsou směnné kurzy vyjádřeny v jednotkách domácí měny za
+jednotku zahraniční měny.
+  - Například, pokud jsme v USA a směnný kurz mezi americkým dolarem a eurem je
+  1,2, to znamená, že EUR 1 je ekvivalentní USD 1,2. Přímá kotace je uvedena
+  jako:
+   $$
+   \text{USD } 1.2 = \text{EUR } 1
+   $$
+- **Nepřímá kotace**: když jsou směnné kurzy vyjádřeny v jednotkách zahraniční
+měny za jednotku domácí měny.
+  - V předchozím příkladu by nepřímá kvótace z americké perspektivy byla kolik
+  eur můžete koupit za 1 americký dolar. Pokud můžete koupit EUR 0,8333 eur za
+  USD 1, nepřímá kotace je uvedena jako:
+   $$
+   \text{USD } 1 = \frac{\text{EUR } 1}{\text{USD } 1.2}
+   $$
+   $$
+   \text{USD } 1 = \text{EUR } 0.8333
+   $$
+- Tyto dva typy kotací poskytují stejné informace, ale v jiném formátu. Volba
+mezi přímou a nepřímou kotací závisí na místních tržních zvycích a také někdy na
+tom, zda se cizí měna obvykle považuje za základní nebo protiměnu v měnových
+párech.
+- Apreciace měny je, když náklady na nákup měny rostou. Pokud cena za nákup
+jednoho EUR stoupne na USD 1,3, EUR se apreciovalo (zhodnotilo se). To může být
+kvůli zvýšené poptávce po měně nebo snížené nabídce.
+- Depreciace měny je, když náklady na nákup měny klesají. Pokud cena za nákup
+jednoho EUR klesne na USD 1,1, EUR depreciovalo (znehodnotilo se). To může být
+kvůli snížené poptávce po měně nebo zvýšené nabídce.
+- Riziko směnného kurzu je starostí pro podniky zapojené do mezinárodního
+obchodu. Hodnota očekávaných příjmů nebo výdajů podniku se může změnit kvůli
+kolísajícím směnným kurzům.
+- Ekonomická expozičnost odkazuje na riziko, že změna směnných kurzů může
+ovlivnit zákaznickou základnu a prodeje podniku. Apreciace nebo depreciace měny
+může ovlivnit kupní sílu spotřebitelů, což ovlivňuje např. jejich výběr
+dovolené.

@@ -1,0 +1,253 @@
+# Ekonomické základy: Peníze a úrokové sazby
+
+::: {.callout-note}
+# Studijní materiály
+
+- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
+University. <https://openstax.org/details/books/principles-finance>
+  - Chapter 3 - Economic Foundations: Money and Rates
+:::
+
+**Výstupy učení:**
+
+
+
+# Stocks and Stock Valuation
+
+LEARNING OUTCOMES
+By the end of this section, you will be able to:
+
+Define and calculate a P/E (price-to-earnings) ratio given company data.
+Determine relative under- or overvaluation indicated by a P/E (price-to-earnings) ratio.
+Define and calculate a P/B (price-to-book) ratio given company data.
+Determine relative under- or overvaluation indicated by a P/B (price-to-book) ratio.
+Define and detail alternative valuation multipliers, including P/S (price-to-sales) ratio, P/CF (price-to-cash-flow) ratio, and dividend yield.
+
+
+Learning Outcomes
+By the end of this section, you will be able to:
+• Identify and use DDMs (dividend discount models).
+• Define the constant growth DDM.
+• List the assumptions and limitations of the Gordon growth model.
+• Understand and be able to use the various forms of DDM.
+• Explain the advantages and limitations of DDMs.
+
+
+
+
+
+
+
+
+- Similar to bonds, common stocks give investors a claim on a company's future
+earnings and cash flows.
+- Unlike bonds, common stocks do not have maturity dates, face values, or
+guaranteed coupon payments.
+- Common stocks might pay dividends, but these are not promised and can vary
+based on the decisions of the company's board.
+- Investing in stocks is generally riskier than bonds or other fixed-income
+investments because there is no guarantee of payments to investors.
+- Common reasons for investing in stocks are to maintain value, accumulate
+wealth over time, and earn income through capital gains and dividends.
+- Advantages of stock investments include potentially substantial returns
+through dividends and share price appreciation, liquidity, and the availability
+of information about companies and markets.
+- Disadvantages include greater risk levels compared to fixed-income
+investments, difficulty in timing buy-and-sell transactions, and uncertainty
+around dividend payments.
+
+## Multiple Approaches to Stock Valuation
+
+### The Price-to Earnings (P/E) Ratio
+
+- Investors use various methods to evaluate companies and their common stock,
+including studying financial statements and calculating financial ratios.
+- The price-to-earnings (P/E) ratio is a crucial metric used to assess the
+market value of a company's stock.
+- The P/E ratio is calculated as: 
+$$
+\text{P/E Ratio} = \frac{\text{Price per Share}}{\text{Earnings per Share}}
+$$
+- The P/E ratio represents the price an investor pays for each unit of a
+company's current or future earnings.
+- P/E ratios can be trailing (based on past earnings) or forward (based on
+projected future earnings).
+- For example, if a company's stock price is $24.00 and its EPS is $4.00, its
+P/E ratio is calculated as:
+$$
+\text{P/E}_\text{Cameo} = \frac{$24.00}{$4.00} = 6
+$$
+- Indicating that investors are willing to pay up to six dollars for every
+dollar of earnings.
+- A company's P/E ratio should be compared to historical P/E ratios or the P/E
+ratios of other companies in the same industry for meaningful analysis.
+- High P/E ratios may suggest a company is overvalued and prone to price
+adjustment, while low P/E ratios may indicate undervaluation and opportunity for
+investment gains.
+- Care must be taken as the current stock price may not align with the company’s
+earning potential, necessitating the use of multiple evaluation techniques for
+stock analysis.
+
+
+### The Price-to-Book (P/B) Ratio
+
+- The Price-to-Book (P/B) ratio is a common financial metric used to evaluate a
+company's market value relative to its book value.
+- The market value is the current price of all a company's outstanding shares,
+while the book value represents the company's residual value after liquidating
+assets and paying off liabilities.
+- The P/B ratio is calculated as:
+$$
+\text{P/B Ratio} = \frac{\text{Market Price per Share}}{\text{Book Value per Share}}
+$$
+- P/B ratio is often used to evaluate financial services firms, but it has the
+limitation of not accounting for intangible assets like patents, trademarks, and
+copyrights.
+- P/B ratio can also be calculated by either:
+$$
+\text{P/B Ratio} = \frac{\text{Market Capitalization}}{\text{Net Book Value}}
+$$
+$$
+\text{P/B Ratio} = \frac{\text{Price per Share}}{\text{Net Book Value per Share}}
+$$
+  where the net book value equals total assets minus total liabilities.
+- A low P/B ratio (less than 1) might indicate a stock is undervalued, while a
+high ratio (greater than 1) might suggest overvaluation. However,
+interpretations vary among market experts.
+- P/B ratio should be used in conjunction with other metrics and compared with
+P/B ratios of companies within the same industry for a comprehensive analysis.
+
+### Alternative Multipliers
+
+- There are two main types of valuation multiples used for stock evaluation: equity multiples and enterprise value (EV) multiples. 
+- Equity multiples include the price-to-earnings (P/E) ratio, market-to-book (M/B) ratio, dividend yield, price-to-sales (P/S) ratio, and price-to-cash-flow (P/CF) ratio.
+- EV multiples are used primarily for valuations involving mergers and acquisitions and provide a more comprehensive measure of a company's total value than market capitalization.
+- Common EV multiples include:
+  - Enterprise Value to Revenue (EV/R): Used to compare a company's total valuation to its annual sales levels.
+  \[ EV/Revenue \]
+  - Enterprise Value to Earnings Before Interest and Taxes (EV/EBIT): Measures a company's profitability before interest and tax effects.
+  \[ EV/EBIT \]
+  - Enterprise Value to Earnings Before Interest, Taxes, Depreciation, and Amortization (EV/EBITDA): Compares a company's total value to its earnings before interest, taxes, depreciation, and amortization.
+  \[ EV/EBITDA \]
+  - Enterprise Value to Earnings Before Interest, Tax, Depreciation, Amortization, and Rental Costs (EV/EBITDAR): Suitable for businesses with significant rental and lease expenses.
+  \[ EV/EBITDAR \]
+  - Enterprise Value to Capital Employed (EV/Capital Employed): Measures enterprise value against the level of capital used by a business.
+  \[ EV/Capital\: Employed \]
+- Despite their usefulness, these multiples are snapshots in time and may mask important factors influencing the company's value.
+- To avoid misinterpretation and erroneous investment decisions, it's vital to use multiple ratios and alternate measures in company evaluations.
+
+## Dividend Discount Models (DDMs)
+
+- The Dividend Discount Model (DDM) is used to value a stock based on the present value of its future dividends. 
+- The most common DDM is the Gordon Growth Model, which uses the following formula:
+  \[ Stock\: Value = \frac{D1}{r - g} \]
+  where \(D1\) is the dividend for the next year, \(r\) is the required return, and \(g\) is the estimated future dividend growth rate.
+- The Zero Growth Dividend Discount Model assumes that future dividends will be the same forever. Its formula is similar to calculating the present value of a perpetuity:
+  \[ Stock\: Value = \frac{Annual\: Dividends}{Required\: Rate\: of\: Return} \]
+  or 
+  \[ PV = \frac{D}{r} \]
+  where \(PV\) is the stock value, \(D\) is the dividend payment, and \(r\) is the required rate of return.
+- The Constant Growth Dividend Discount Model assumes dividends grow at a fixed annual percentage. Its formula is similar to the Gordon Growth Model:
+  \[ Stock\: Value = \frac{D0(1 + g)}{r - g} = \frac{D1}{r - g} \]
+  where \(D0\) is the current dividend, \(D1\) is the dividend for the next year, \(g\) is the dividend growth rate, and \(r\) is the required rate of return.
+- Both the Zero and Constant Growth models have limitations due to their assumptions of fixed dividend and growth rates. These models are most suitable for stocks with a consistent dividend payment history.
+
+
+- The Variable or Nonconstant Growth Dividend Discount Model (DDM) is a more realistic model that assumes that a company and its stock value will progress through different stages of growth.
+- This model calculates the present value for each growth period and then sums them up to get the intrinsic value of the stock.
+- The formula for variable growth DDM extends the constant growth model to each growth period. The present value of dividends for each period is calculated and summed up.
+- For example, if Maddox Inc. has a dividend of $2.00 last year, a dividend growth rate of 5% for the next four years, and a steady growth rate of 3% after that, with a required rate of return of 8%, the stock value can be calculated as shown in the following table:
+
+|Year | Growth % | Dividend  ($) | Value after Year 4 ($) | PV Discount Factor at 8% | Present Value of Dividend ($) |
+|-----|----------|---------------|------------------------|--------------------------|-------------------------------|
+|  0  |   5%     |   2.00        |                        |                          |                               |
+|  1  |   5%     |   2.10        |                        |   1.0800                 | 1.9444                        |
+|  2  |   5%     |   2.21        |                        |   1.1664                 | 1.8904                        |
+|  3  |   5%     |   2.32        |                        |   1.2597                 | 1.8379                        |
+|  4  |   5%     |   2.43        |                        |   1.3605                 | 1.7869                        |
+|  5  |   3%     |   2.50        | 50.07886               |   1.4693                 | 35.7870                       |
+
+where 
+\[ Value_{after Year 4} = \frac{2.43 (1 + 0.03)}{0.08 - 0.03} = 50.078858 \]
+- The intrinsic value of the stock based on the variable growth model would be $43.25 per share.
+
+
+
+- to je strasne dlouhy, ted se mi to nechce delat...
+
+## Discounted Cash Flow (DCF) Model
+
+
+## Preferred Stock
+
+
+## Efficient Markets
+
+
+
+## Akcie
+
+- financování poskytnuté vlastníky firmy (akcionáři)
+- akciové společnosti umožňují oddělení vlastníků od managementu
+- akcie nemají dobu splatnosti
+- kmenové akcie (common stock):
+  - představují vlastnický podíl ve společnosti
+  - podíl na řízení a rozhodování
+  - podíl na zisku (dividendy)
+  - podíl na likvidačním zůstatku
+- prioritní akcie (preferred stock):
+  - nepředstavují vlastnické právo ve firmě
+  - oproti kmenovým akciím mají přednostní právo na zisky a majetek společnosti
+  - zpravidla vyplácejí pravidelnou fixní dividendu
+  - většinou neobsahují hlasovací právo
+  - nemají dobu splatnosti
+
+### Dividendy
+
+- firma rozhoduje jestli bude vyplácet dividendy a v jaké výši (většinou čtvrtletně)
+- snaha o stabilní dividendovou politiku
+- občas může být vyplacena mimořádná dividenda
+- dividendy většinou v penězích (***cash dividend***), ale mohou být i formou akcií (***stock dividend***)
+- stock dividend souvisí s pojmem štěpení akcií (***stock split***) $\rightarrow$  firma emituje dodatečné akcie a rozdělí je ve stejném poměru stávajícím akcionářům
+- Př. Držíte 10 akcií, každá má hodnotu 80. Firma udělá 2-for-1 split. Takže ve výsledku máte 20 akcií, ale každá stojí 40. Bohatství je pořád stejné, jen rozdělené na víc dílů.
+
+### Odkup akcií
+
+- místo výplaty dividend se může firma rozhodnout nakoupit svoje vlastní akcie
+- výsledkem je zvýšení cen akcií
+- daňové výhody pro akcionáře
+- firma může považovat své akcie za podhodnocené
+
+> - Podle čeho bude firma volit svoji dividendovou politiku / odkup akcií?
+
+## Oceňování akcií
+
+- složitější odhadnout budoucí cash flow než u dluhopisů
+- základní metoda je výpočet současné hodnoty všech očekávaných dividend $\rightarrow$ vnitřní hodnota akcie (intrinsic value)
+- počet období $n$ bude hodně vysoký, směřující až k nekonečnu
+- pokud firma nevyplácí dividendy:
+  - firma často začne vyplácet diviendy v pozdější fázi životního cyklu
+  - stále může generovat cash a pokud by někdo koupil celou firmu mohl by ho získat
+  - akcie musí mít hodnotu alespoň likvidačního zůstatku
+- odhadnutí všech budoucích cash flow z akcií je složité a nepraktické
+- využívá se zjednodušující předpoklad konstantních (nebo rostoucích) dividend
+- při předpokladu konstantních dividend počítáme perpetuitu 
+$$ PV = \frac{D}{r} $$
+- perpetuita se vyskytuje např. u prioritních akcií
+- pokud očekáváme stabilně rostoucí dividendu každý rok o $g$ potom lze použít Gordonův model 
+$$ PV = \frac{D \times (1+g)}{(r - g)} $$
+
+### Příklady oceňování akcií
+
+- Očekáváme, že firma bude vyplácet fixní dividendu ve výši 2. Požadujeme výnos z investice 10%. Kolik budeme ochotni za danou akcii zaplatit?
+$$ PV = \frac{D}{r} = \frac{2}{0.1} = 20 $$
+- Firma vyplící dividendu 1,89 ročně. Očekáváme růst dividend o 8,5% každý rok a požadujeme výnos 12% ročně. Jaká bude hodnota akcie podle Gordonova modelu?
+$$ PV = \frac{D \times (1+g)}{(r - g)} = \frac{1,89 \times (1+0.085)}{(0.12 - 0.085)} = 58,59 $$
+
+### Rizika investování do akcií
+
+- obecně rizikovější než dluhopisy, proto investoři očekávají vyšší výnosy
+- v případě likvidace společnosti jsou běžní akcionáři na posledním místě
+- nejistá výše budoucích dividend
+- možné problémy s managementem
+- vyšší volatilita cen akcií ve srovnání s cenou dluhopisů

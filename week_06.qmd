@@ -1,0 +1,237 @@
+# Historická výkonnost trhů v USA
+
+::: {.callout-note}
+# Studijní materiály
+
+- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
+University. <https://openstax.org/details/books/principles-finance>
+  - Chapter 12 - Historical Performance of US Markets
+:::
+
+**Výstupy učení:**
+
+1. Porozumět klíčovým prvkům amerických peněžních trhů.
+2. Charakterizovat trhy s dluhopisy (vládní a korporátní).
+3. Shrnutí struktury a operací amerických akciových trhů.
+4. Definovat a ilustrovat inflaci.
+5. Analyzovat dopad inflace na spotřebu a mzdy.
+6. Měřit a porovnávat skutečnou vs. očekávanou inflaci.
+7. Přezkoumat historické trendy inflace a dluhopisů (vládní a korporátní).
+8. Interpretovat výkonnost investic a akciových trhů z grafů.
+
+## Přehled amerických finančních trhů
+
+### Peněžní trhy
+
+- Peněžní trh, trh o hodnotě mnoha bilionů dolarů, je známý svými krátkodobými
+(méně než rok) a nízkorizikovými cennými papíry nabízejícími vysokou likviditu.
+- Instituce jako finanční korporace a vlády vydávají na peněžním trhu cenné
+papíry, aby pokryly své krátkodobé potřeby půjčování a půjček.
+- Pokladniční poukázky (Treasury bills, T-bills) jsou krátkodobé dluhopisy
+vydávané federální vládou, které slouží k pokrytí krátkodobých likviditních
+potřeb. Tyto cenné papíry jsou považovány za bezrizikové s ohledem na riziko
+defaultu a osvobozeny od státních a místních daní z příjmů.
+- Komerční směnky (commercial paper, CP) jsou krátkodobé, nezajištěné dluhové
+cenné papíry vydávané korporacemi a finančními institucemi k pokrytí
+krátkodobých finančních potřeb.
+- Obchodovatelné vkladové certifikáty (Negotiable certificates of deposit, NCDs)
+jsou vydávané finančními institucemi. Mohou být obchodovány na širokém
+sekundárním trhu.
+- Peněžní podílové fondy (Money market mutual funds, MMMFs) nabízejí menším
+firmám a investorům možnost účastnit se na peněžním trhu tím, že usnadňují menší
+individuální investiční částky.
+- Trh s federálními fondy je jedinečný, protože Federální rezervní systém cílí
+na rovnovážnou úrokovou míru federálních fondů jako na jednu z hlavních nástrojů
+své měnové politiky.
+
+### Dluhopisové trhy
+
+- Dluhopisové trhy jsou platformy, které umožňují investorům investovat do
+dluhopisů, s předem danou dobou splatnosti.
+- Existuje několik typů dluhopisů, včetně státních dluhopisů, firemních
+dluhopisů a komunálních dluhopisů.
+- Vláda vydává pokladniční poukázky (Treasury Notes) a dluhopisy (Treasury
+Bonds) na získání peněz na aktuální výdaje a splacení minulých půjček.
+Pokladniční poukázky mají splatnost 2, 3, 5, 7 nebo 10 let, zatímco pokladniční
+dluhopisy mají splatnost 20 nebo 30 let.
+- Od roku 1997 nabízí FED také pokladniční cenné papíry chráněné proti inflaci
+(TIPS), které mají splatnost 5, 10 nebo 30 let a jsou každý měsíc upravovány o
+inflaci.
+- Komunální dluhopisy (munis) vydávají státní a místní vlády a daňové okrsky.
+- Firmy si také půjčují peníze od investorů na delší dobu prostřednictvím
+firemních dluhopisů.
+- Riziko, které dluhopisový držitel nese za nákup dluhopisu, závisí na
+dluhopisové smlouvě, tržních podmínkách a schopnosti firmy generovat dostatečné
+peněžní toky na splnění svých dluhopisových závazků.
+- Agentury pro hodnocení úvěrové bonity, jako jsou Moody's, Standard and Poor's
+a Fitch, hodnotí úvěrovou spolehlivost vydavatelů dluhopisů.
+- Během posledních 40 let došlo k poklesu společností s hodnocením AAA, protože
+mnoho institucí zjistilo, že toto hodnocení vyžaduje konzervativnější přístup k
+dluhu, který může bránit jejich růstu a příjmům.
+
+| Fitch | Moody’s | S&P | Bond Grade/Risk        |
+|:-----:|:-------:|:---:|:----------------------:|
+| AAA   | Aaa     | AAA | Investment/low risk    |
+| AA    | Aa      | AA  | Investment/low risk    |
+| A     | A       | A   | Investment/low risk    |
+| BBB   | Baa     | BBB | Investment/medium risk |
+| BB    | Ba      | BB  | Junk/high risk         |
+| B     | B       | B   | Junk/high risk         |
+| CCC   | Caa     | CCC | Junk/highest risk      |
+
+### Akciové trhy
+
+- Korporace vydávají akcie reprezentující vlastnictví; nicméně oceňování akcií
+může být náročné kvůli nejistotě a riziku peněžních toků, které generují.
+- Akcie mohou být vydány jako běžné nebo preferenční akcie. Majitelé běžných
+akcií mají hlasovací práva a nárok na aktiva společnosti, zatímco majitelé
+preferenčních akcií mají vyšší nárok na peněžní toky a dostávají fixní peněžní
+toky, podobně jako u dluhopisu.
+- Akciové trhy mají centralizovaná obchodní místa a vyžadují makléře, aby spojil
+kupující a prodávající. Trhy mimoburzovní (OTC) jsou elektronické a umožňují
+přímé transakce mezi kupujícími a prodávajícími bez makléře.
+- Prvotní veřejné nabídky akcií (initial public offering, IPO) nastávají, když
+firma poprvé nabízí akcie veřejnosti, obvykle s pomocí investičního bankéře. IPO
+jsou pro vydávající firmu nákladné, obvykle stojí mezi 5% až 8% hodnoty IPO.
+- Nabídka sezónních akcií (seasoned equity offerings, SEO) nastávají, když
+veřejně obchodovaná společnost vydává další akcie. Společnosti mohou registrovat
+svůj záměr vydávat akcie u SEC a počkat, až budou tržní podmínky příznivé, než
+vydají akcie, proces známý jako shelf registration.
+- Specializované akviziční společnosti (Special purpose acquisition companies,
+SPACs) jsou typem IPO, kde sponzor shromažďuje kapitál v očekávání nalezení
+firmy připravené jít na veřejnost. Riziko a náklady spojené s vstupem na
+veřejnost jsou převedeny na SPAC, což zjednodušuje proces pro cílovou firmu.
+- Investoři, kteří chtějí obchodovat s akciemi, provádějí obchody
+prostřednictvím makléře (broker). Nejběžnějšími typy příkazů jsou tržní příkazy,
+které provedou obchod za aktuální cenu, a limitní příkazy, které specifikují
+cenu, za kterou je investor ochoten koupit nebo prodat.
+
+## Historický vývoj inflace
+
+- Výnosy na akciovém trhu historicky předčily ty na trhu dluhopisů. Avšak
+dluhopisy mohou v některých případech překonat inflaci, a lépe tak uchovat kupní
+sílu než akcie.
+- Inflace, neboli růst cen v čase, je klíčovým faktorem, který je třeba brát v
+úvahu při investování. Ačkoli může negativně ovlivnit kupní sílu, inflace není
+vždy špatná. Například inflace může prospět dlužníkům, neboť splácejí půjčky
+méně hodnotnými penězi.
+- Naopak, věřitelé a zaměstnanci mohou na inflaci trpět, protože peníze, které
+dostávají, jsou méně cenné, pokud je inflace vyšší než očekávaná.
+- Deflace, čili pokles cen, je typicky spojována s ekonomickými recesemi nebo
+depresemi a může být ještě více škodlivá než inflace.
+- Inflace ovlivňuje rozdělení bohatství a neovlivňuje všechno zboží a služby
+stejně. Například od roku 1980 do roku 2020 se školné a poplatky na vysokých
+školách zvyšovaly rychlostí více než dvojnásobkem průměrné inflační sazby.
+- Index spotřebitelských cen (CPI) měří změny cen za košík zboží po celých USA,
+přičemž různé kategorie, jako je zdravotnictví a bydlení, mají různé váhy. Různé
+regiony a podskupiny obyvatelstva mohou zažívat různé inflační sazby.
+- Dokonce i mírná roční inflační sazba může v průběhu času vést k významnému
+nárůstu cen. 
+
+![](images/fig_6_1.webp){width=500 fig-align="center"}
+
+| Year                     | 1980  | 2000  | 2020  | Annual Change |
+|:------------------------:|:-----:|:-----:|:-----:|:-------------:|
+| College tuition and fees | 70.8  | 331.9 | 877.3 | 6.49%         |
+| Rent                     | 80.9  | 183.9 | 341.5 | 3.67%         |
+| Used cars and trucks     | 62.3  | 155.8 | 144.2 | 2.12%         |
+| Ground beef              | 104.6 | 125.2 | 296.2 | 2.64%         |
+| Butter                   | 89.4  | 135.9 | 248.7 | 2.59%         |
+| CPI (1982 to 1984 = 100) | 82.4  | 172.2 | 258.8 | 2.90%         |
+
+
+## Historický vývoj dluhopisů
+
+### Státní dluhopisy USA
+
+- Americké státní dluhopisy (T-bonds) jsou považovány za jednu z
+nejbezpečnějších investic a často se používají jako benchmark pro bezrizikovou
+investici ve finančním modelování.
+- Přestože mají nízké riziko nesplacení, hodnoty T-bondů kolísají se změnami
+úrokových sazeb, což vede k různým výnosům pro investory z rok na rok.
+- Období od konce 70. let do začátku 80. let bylo charakterizováno vysokými
+sazbami inflace a úrokovými sazbami. Jak tyto sazby začaly klesat, ceny
+dluhopisů stoupaly a investoři viděli vysoké výnosy z jejich investic do
+T-bondů.
+- Avšak, když Federální rezervní systém zvýšil úrokové sazby, jako například v
+roce 1999, ceny stávajících dluhopisů klesly, což vedlo k negativním výnosům pro
+investory.
+- Od roku 1980 do roku 1999 byl průměrný roční výnos na T-bondech 10,21 %,
+ovlivněný nadprůměrnou roční inflační sazbou 4,28 %.
+- Mezi roky 2000 a 2020, kdy se inflace zpomalila a úrokové sazby byly obecně
+nižší, byly výnosy T-bondů také průměrně nižší, a to 5,77 %.
+
+![](images/fig_6_2.webp){width=500 fig-align="center"}
+![](images/fig_6_3.webp){width=500 fig-align="center"}
+
+### Korporátní dluhopisy
+
+- Korporátní dluhopisy, konkrétně dluhopisy Baa, vykazovaly výkonnostní vzorce
+podobné T-bondům v období čtyř dekád od roku 1980 do roku 2020.
+- Dluhopisy Baa, které nejsou bez rizika nesplacení a vyžadují rizikovou prémii,
+vykázaly průměrný roční výnos 12,07 % od roku 1980 do roku 1999 a prémii 2,30 %
+oproti T-bondům od roku 2000 do roku 2020.
+- Prémie získané z dluhopisů Baa významně zlepšují investiční výkonnost v
+průběhu času. Například investice 100 dolarů do portfolia dluhopisů Baa v roce
+1980 by byla v roce 2020 v hodnotě 4 506 dolarů, což předčilo koncovou hodnotu 1
+931 dolarů pro podobné portfolio T-bondů.
+
+![](images/fig_6_4.webp){width=500 fig-align="center"}
+![](images/fig_6_5.webp){width=500 fig-align="center"}
+![](images/fig_6_6.webp){width=500 fig-align="center"}
+
+## Historický vývoj akcií
+
+- Průměr Dow Jones Industrial Average (DJIA) a index S&P 500 jsou nejčastěji
+citovanými akciovými indexy, přičemž změny v obou jsou silně korelované. Oba
+indexy sledují změny hodnoty akcií s velkou kapitalizací.
+- Ke konci roku 2020 měly firmy zahrnuté v indexu S&P 500 kombinovanou tržní
+kapitalizaci 33,4 bilionu dolarů, což je přibližně 66 % odhadované tržní
+kapitalizace amerických akcií ve výši 50,8 bilionu dolarů.
+- Výkonnost indexu S&P 500 je široce považována za dobré zastoupení širšího
+trhu, zejména firem s velkou kapitalizací.
+- Historie kapitálových trhů ukazuje, že průměrný výnos z akcií výrazně předčil
+jiné třídy finančních cenných papírů, jako jsou státní dluhopisy, korporátní
+dluhopisy nebo peněžní trh.
+- Často se klade důraz na alokaci aktiv před výběrem konkrétních cenných papírů,
+protože rozhodnutí investovat do akcií namísto dluhopisů obvykle přináší větší
+dlouhodobý zisk.
+- Velikost firmy významně ovlivňuje investiční rozhodnutí v oblasti akcií. Akcie
+malých společností historicky realizovaly větší průměrné roční výnosy, i když s
+větší variabilitou, ve srovnání s velkými společnostmi zastoupenými v indexu S&P
+500.
+- V poslední době byl rozdíl ve výnosech mezi akciemi malých a velkých
+společností méně výrazný. Od roku 1980 do roku 2020 průměrný složený roční výnos
+indexu Wilshire US Small-Cap dosáhl 12,13 %, ve srovnání s průměrným výnosem
+indexu Wilshire US Large Cap, který byl 11,82 %.
+
+| Asset Class           | Nominal Average Annual Returns 1981–2020 | Standard Deviation of Returns 1981–2020 |
+|-----------------------|-----------------------------------------:|----------------------------------------:|
+| Large company stocks  |                                    12.64%|                                   16.06%|
+| Baa bonds             |                                    10.34%|                                    7.67%|
+| 10-year T-bonds       |                                     8.21%|                                    9.92%|
+| US T-bills            |                                     3.94%|                                    3.39%|
+| Inflation             |                                     2.93%|                                    1.76%|
+
+
+![](images/fig_6_7.webp){width=500 fig-align="center"}
+![](images/fig_6_8.webp){width=500 fig-align="center"}
+
+- Kalkulačky pro nalezení výnosů ve vybraných obdobích pro americké akcie,
+dluhopisy a inflaci.
+<https://openstax.org/r/6-what-to-invest-in>
+- Další kalkulačka pro globální akciové trhy.
+<https://openstax.org/r/returns-of-global-stocks>
+- Globální zpráva o bohatství publikovaná společností Credit Suisse.
+<https://openstax.org/r/global-wealth-report>
+
+::: {.callout-note}
+# Vyplatí se časovat trh?
+
+V období od roku 1980 do poloviny roku 2020 by investice 10 000 dolarů do
+indexového fondu S&P 500 vynesla investorovi 697 421 dolarů. Avšak pokud by
+investor zmeškal 5 nejvýkonnějších dní na trhu, snížil by se konečný zůstatek
+portfolia na 432 411 dolarů. Pokud by zůstal mimo trh během 10 nejlepších dnů,
+zůstatek by klesl na pouhých 313 377 dolarů, což je méně než polovina výnosu z
+celého období.
+:::

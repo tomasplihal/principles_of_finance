@@ -2,13 +2,24 @@ project:
   type: book
 
 book:
-  title: "principles_of_finance"
-  author: "Norah Jones"
-  date: "6/5/2023"
+  title: "Základy financí"
+  author: "Tomáš Plíhal"
+  date: ""
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - week_01.qmd
+    - week_02.qmd
+    - week_03_eng.qmd
+    - week_04_eng.qmd
+    - week_05_eng.qmd
+    - week_06.qmd
+    - week_07_eng.qmd
+    - week_08.qmd
+    - week_09.qmd
+    - week_10.qmd
+    - week_11.qmd
+    - week_12.qmd
+    - week_13.qmd
     - references.qmd
 
 bibliography: references.bib

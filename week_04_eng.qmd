@@ -1,0 +1,330 @@
+# Bonds and Bond Valuation
+
+::: {.callout-note}
+# Study Materials
+
+- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
+University. <https://openstax.org/details/books/principles-finance>
+  - Chapter 10 - Bonds and Bond Valuation
+:::
+
+**Learning Outcomes:**
+
+1. Understand the basic characteristics of bonds and the different types of
+bonds.
+2. Recognize how bond price is inversely related to its yield.
+3. Learn to calculate the value of a bond and differentiate between discount and
+premium bonds.
+4. Understand the concepts of fixed-rate and variable-rate bonds, and how to
+calculate bond yields.
+5. Learn about the yield curve, its implications for the term structure of
+interest rates, and its significance.
+6. Understand common bond risks including interest rate and default risk, and
+learn how to measure these risks.
+7. Become familiar with bond laddering as an investment strategy and how major
+rating agencies assess default risk.
+8. Learn to calculate the Yield to Maturity (YTM) on a bond.
+
+## Characteristics of Bonds
+
+### Bonds as Investments
+
+- An investor buying a bond is lending money to the issuer, such as a
+corporation or government.
+- The issuer promises to repay the original loan and interest (coupon payments)
+at a specific maturity date.
+- Coupon payments offset the delay of principal repayment, considering the time
+value of money.
+- Bonds, like stocks and mutual funds, are essential financial instruments that
+provide portfolio safety and diversity.
+- Investors buying bonds are essentially purchasing a promised future cash flow
+stream from the bond issuer.
+- Bonds, often termed as fixed-income securities, offer a predetermined cash
+inflow, fixed at the time of the bond sale.
+- Despite being a straightforward form of investment, bonds have unique and
+extensive terminology.
+- **An example:** If an investor buys a \$1,000 bond from Apple Inc. at 5%
+annual interest for 20 years, the investor is the lender and Apple Inc. is the
+borrower.
+
+### Basic terminology
+
+- **Par value:** Also known as face amount or value, it's the principal amount
+that the issuer will repay at maturity. For example, a \$1,000 bond has a par
+value of \$1,000.
+- **Coupon rate:** The interest rate used to calculate the bond's periodic
+interest or coupon payments, expressed in annual terms. For example, a 5%
+interest rate is the coupon rate.
+- **Coupon payment:** Regular interest payment on the bond, calculated by
+multiplying the par value by the coupon rate. For example, a $1,000 bond with a
+5% interest rate will have an annual coupon payment of $50.
+- **Maturity date:** The bond's expiration date when the issuer pays the final
+interest payment and the principal. For example, a bond with a term of 20 years
+has a maturity date 20 years after issuance.
+- **Yield to Maturity (YTM):** The discount rate used to calculate the present
+value of a bond's future cash flows, representing the return if the bond is held
+to maturity. The YTM indicates the overall investment value of a bond. Its
+computation is discussed later.
+- **Callable Feature:** States whether or not the bond has a call feature (if it
+can be retired or ended before its normal maturity date).
+- **Rating:** A grade that indicates credit quality.
+
+### Types of Bonds
+
+- **Government Bonds:**
+    - US Treasury bills (T-bills) are short-term and considered the safest, backed
+    by the US government.
+    - Treasury notes have maturities from one to 10 years, and Treasury bonds mature
+    in 10 to 30 years.
+- **Savings Bonds:**
+    - They are bought to finance certain government programs.
+    - The buyer loans money to the government, ensuring the return of face value
+    plus interest.
+    - Due to the government backing, they are low-risk and offer relatively low
+    returns.
+- **Municipal Bonds:**
+    - Issued by cities, states, or their agencies.
+    - Slightly riskier than Treasury bills, but typically offer a bit higher
+    returns.
+- **Corporate Bonds:**
+    - Issued by companies and carry higher risk than government bonds, as
+    corporations can't raise taxes to fund their bonds.
+    - The risk and return depend on the company's creditworthiness.
+    - High-risk, high-return corporate bonds are often called junk bonds.
+    - Zero-coupon bonds don't make regular interest payments and are issued at a
+    discount, repaying full par value at maturity.
+    - Convertible bonds can be converted into a predetermined number of common
+    stock shares at certain times, usually at the bondholder's discretion.
+
+### The Global Bond Market versus the Global Stock Market
+
+- The global bond market, including sovereign and corporate bonds, is
+significantly larger than the global stock market, though comparing only
+corporate bonds to the stock market may be more relevant.
+- Total value of bond markets still surpasses that of stocks, but stock markets
+are growing in size due to traditionally higher returns, making them more
+attractive despite higher risk.
+
+![](images/fig_4_1.webp){width=500 fig-align="center"}
+
+
+- A bond investment has two sides: payment of the par value at maturity and
+periodic coupon payments, both of which are contractually determined.
+- Bond valuation involves separate present value calculations for these two
+types of inflow.
+- Bond price and interest rates have an inverse relationship. When interest
+rates fall, bond prices rise, and vice versa. The exception is floating-rate
+bonds, whose rates are tied to a benchmark and adjust with economic changes.
+
+![](images/fig_4_2.webp){width=500 fig-align="center"}
+
+- Investors in fixed-rate bonds may see their investments lose value if interest
+rates rise, unlike those in variable-rate bonds.
+- Deep discount bonds, including zero-coupon bonds, have very low coupon rates
+and see larger price changes when interest rates shift.
+
+## Bond Valuation
+
+### General Framework for Bond Valuation
+
+1. **Determine the Cash Flows**: Identify the periodic coupon payments and the
+face value of the bond, which will be repaid at maturity.
+2. **Discount the Cash Flows**: Each future cash flow is discounted back to its
+present value.
+3. **Sum the Present Values**: Add up all the present values to obtain the bond
+price.
+
+- The formula to calculate the present value (PV) of a bond is:
+
+$$
+PV = C \times \frac{1 - (1 + r)^{-n}}{r} + FV \times (1 + r)^{-n}
+$$
+
+- where:
+    - $PV$ is the present value or price of the bond
+    - $C$ is the annual coupon payment
+    - $r$ is the yield to maturity (YTM) or discount rate
+    - $n$ is the number of periods until maturity
+    - $FV$ is the face value of the bond
+
+### Numerical Example
+
+- Assume a bond with:
+    - Annual coupon payment $C = \$100$
+    - Yield to maturity $r = 5\%$ or $0.05$
+    - Number of periods until maturity $n = 10$ years
+    - Face value of the bond $FV = \$1000$
+
+- Let's calculate the bond price:
+
+$$
+PV = 100 \times \frac{1 - (1 + 0.05)^{-10}}{0.05} + 1000 \times (1 + 0.05)^{-10}
+$$
+
+- Calculate the two components:
+    - The present value of the coupon payments: 
+    $$
+    100 \times \frac{1 - (1 + 0.05)^{-10}}{0.05} = \$772.17
+    $$
+    - The present value of the face value: 
+    $$
+    1000 \times (1 + 0.05)^{-10} = \$613.91
+    $$
+    - Add these two components together:
+    $$
+    PV = \$772.17 + \$613.91 = \$1386.08
+    $$
+
+- So, the price of the bond should be approximately \$1386.08.
+
+### Different Coupon Payment Frequency
+
+- Assume a bond with:
+    - Monthly coupon payment $C = \$10$ (this would equate to an annual payment
+    of $120$ if the bond is paying 12 times a year)
+    - Annual yield to maturity $r = 6\%$ or $0.06$ (We need to convert this to a
+    monthly rate by dividing by 12, so $r_{monthly} = 0.06/12 = 0.005$)
+    - Number of periods until maturity $n = 5$ years, but since coupons are paid
+    monthly, we have $n_{monthly} = 5 \times 12 = 60$ months
+    - Face value of the bond $FV = \$1000$
+
+- Let's calculate the bond price:
+
+$$
+PV = 10 \times \frac{1 - (1 + 0.005)^{-60}}{0.005} + 1000 \times (1 + 0.005)^{-60}
+$$
+$$
+PV = \$487.51 + \$740.74 = \$1228.25
+$$
+
+- So, the price of the bond should be approximately $1228.25.
+
+### The Relationship of Yield to Maturity and Coupon Rate
+
+- The price or value of a bond is directly influenced by its Yield to Maturity
+(YTM) and coupon rate. 
+- A bond sells at a premium (higher than its par value) when the coupon rate is
+greater than the YTM. Such bonds are termed **premium bonds**.
+- If the coupon rate is lower than the YTM, the bond sells at a discount (lower
+than its par value), making it a **discount bond**.
+- Bonds that sell at their par value occur when the coupon rate and YTM are
+equal. These bonds are referred to as **par value bonds**.
+- There's an inverse relationship between interest rates and bond prices, which
+is crucial for investors to understand because changes in interest rates can
+significantly affect the value of bonds.
+
+## Using the Yield Curve
+
+### Term Structure of Interest Rates
+
+- The term structure of interest rates shows the expected yields of bonds over
+various maturity periods.
+- The yield curve is a graphical representation of this, with yield on the
+y-axis and time period on the x-axis.
+
+![](images/fig_4_4.webp){width=300 fig-align="center"}
+
+- To construct a useful yield curve, yields for all remaining times to maturity
+of government bonds should be calculated.
+- A normal yield curve is upward-sloping, with yield increasing as the term
+increases. This reflects the increased risk associated with longer maturity
+periods for fixed-income investments such as bonds.
+- Corporate bonds generally offer higher yields than government bonds because of
+their greater risk of default.
+
+### Different Shapes of the Yield Curve
+
+- The shape of the yield curve is defined by its level and slope. The level
+corresponds to yield rates, while the slope indicates the difference between
+short-term and long-term yields, largely dictated by market expectations and
+uncertainty about future interest rates.
+- A positive yield curve suggests higher returns for long-term investments,
+often seen in economic expansion when investors expect rising inflation and
+interest rates.
+- A flat yield curve indicates similar yields for short and long-term
+investments, typically during transition phases in the economy or due to certain
+monetary policies.
+- An inverted yield curve is considered as a signal for upcoming recession.
+
+![](images/fig_4_6.webp){width=300 fig-align="center"}
+
+- An example of inverted yield curves caused by COVID-19 pandemic.
+
+![](images/fig_4_7.webp){width=500 fig-align="center"}
+
+- Market professionals closely monitor the yield curve due to its importance as
+an economic indicator. It reflects market expectations and attitudes of
+individual and institutional investors, influencing investment markets and the
+economy.
+
+## Risks of Interest Rates and Default
+
+### Bond Risks
+
+- **Default (Credit) risk** refers to the risk associated with the issuer's
+inability to meet its payment commitments. This is lower for government bonds
+due to their relative stability.
+- **Interest rate risk** is the risk of bond values falling when interest rates
+rise. It generally increases the longer an investor holds a bond.
+- **Liquidity risk** relates to the difficulty in selling a bond. 
+- **Duration risk** pertains to a bond's price sensitivity to changes in
+interest rates. The higher the duration, the more sensitive the bond is to
+interest rate changes.
+- **Call risk** and reinvestment risk involve bonds being redeemed before their
+maturity dates, potentially leading to investors having to reinvest in
+lower-yield options.
+- **Term risk** arises from investors demanding higher returns for lending funds
+at fixed interest rates, due to the risks presented by rising interest rates.
+
+### Bond Ratings and Rating Providers
+
+- Bond ratings are published to help investors understand these risks, with U.S.
+Treasury securities generally considered free of default risk, but corporate
+bonds typically facing some possibility of default.
+- Bond ratings services help investors assess the default risks of bonds, with
+agencies evaluating bonds based on available information and assigning grades to
+each bond and its issuer.
+- The three largest bond rating providers are Fitch Ratings, Moody's Investors
+Service, and Standard & Poor’s (S&P) Global Ratings. These services use a rating
+system that categorizes the highest quality bonds as AAA, followed by AA, and so
+on.
+- Bonds rated BBB (S&P, Fitch) / Baa (Moody’s) or higher are considered
+investment-grade bonds, indicating strong stability. These are popular as many
+banks and pension funds can only trade investment-grade bonds.
+- Bonds rated lower than BBB or Baa are known as high-yield bonds or junk bonds.
+These bonds carry higher risk and have seen fluctuating success, with market
+collapses and brief resurgences.
+- Bond ratings are judgments about a corporation's future ability to repay debt
+and their growth prospects.
+- Some financial analysts use financial ratios of the issuing firm, such as
+company debt ratio, earnings-to-interest ratio, and return on assets, to predict
+potential ratings.
+
+| S&P / Fitch | Moody’s | Grade       | Meaning                          |
+|:-----------:|:-------:|:-----------:|:--------------------------------:|
+| AAA         | Aaa     | Investment  | Risk almost zero                 |
+| AA          | Aa      | Investment  | Low risk                         |
+| A           | A       | Investment  | Risky if economy declines        |
+| BBB         | Baa     | Investment  | Some risk; more if economy declines |
+| BB          | Ba      | Speculative | Risky                            |
+| B           | B       | Speculative | Risky; expected to get worse     |
+| CCC         | Caa     | Speculative | Probably bankruptcy              |
+| CC          | Ca      | Speculative | Probably bankruptcy              |
+| C           | C       | Speculative | In bankruptcy or default          |
+| D           |         | Speculative | In bankruptcy or default          |
+
+### Concepts of Bond Returns
+
+- Bond investors earn profits through interest income and capital gains.
+Interest income is governed by the bond's coupon rate, and capital gains or
+losses occur when the bond is sold in the secondary market.
+- If interest rates change significantly, the investor may have to adjust the
+price of their bond to match market rates, potentially leading to a capital gain
+or loss.
+- A strategy called bond laddering, where investments are spread across bonds
+with different maturity dates, is commonly used to balance risk and return, and
+maintain regular cash inflows.
+- The bond's value has an inverse relationship with interest rates, meaning bond
+prices fall as interest rates rise and vice versa. Factors like interest rates,
+maturity periods, taxability of bond interest, credit standing of issuers, and
+likelihood of bond call all influence bond values.

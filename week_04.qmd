@@ -1,0 +1,114 @@
+# Bonds and Bond Valuation
+
+![](images/fig_4_1.webp){width=500 fig-align="center"}
+![](images/fig_4_2.webp){width=500 fig-align="center"}
+![](images/fig_4_3.webp){width=500 fig-align="center"}
+![](images/fig_4_4.webp){width=500 fig-align="center"}
+![](images/fig_4_5.webp){width=500 fig-align="center"}
+![](images/fig_4_6.webp){width=500 fig-align="center"}
+![](images/fig_4_7.webp){width=500 fig-align="center"}
+## Dlouhodobé externí financování firem
+
+- ***interní financování*** (vlastní zdroje, např. zisk) vs. ***externí financování*** (cizí zdroje, např. půjčka, emise dluhopisů/akcií)
+- poměr zdrojů financování závisí např. na:
+  - typu podníkání (služby vs. podnikání náročné na fixní kapitál)
+  - ekonomickém cyklu
+- půjčka a emise dluhopisů levnější než emise akcií
+
+## Dluhopisy
+
+- ***dluhopis*** $\rightarrow$ kontrakt mezi věřitelem a dlužníkem
+- ***jistina*** (par value, face value) $\rightarrow$ částka, kterou je věřitel povinen splatit při splatnosti dluhopisu
+- ***kupónové platby*** $\rightarrow$ úroky získané z dluhopisu
+- představuje půjčené peníze
+- přednostní právo na majetek společnosti a její cash flow (oproti vlastníkům)
+- neposkytuje hlasovací právo
+- zajištěný vs. nezajištěný dluhopis
+- případné další dohodnuté podmínky, které musí dlužník splnit (ochrana věřitele)
+
+> - Kdo kupuje dluhopisy?
+
+### Rating dluhopisů
+
+- ***rating*** dluhopisů $\rightarrow$ hodnocení jejich kvality ratingovou agenturou
+- dluhopisy s ratingem jsou lépe obchodovatelné
+- firma platí ratingové agentuře za zpracování ratingu
+- ***junk bonds*** (high-yield bonds) dluhopisy s nízkým ratingem
+
+> - Jaké znáte ratingové agentury? Jaké používají značení pro kvalitu dluhopisů?
+>   - [ratingové agentury](https://www.forbes.com/advisor/investing/bond-ratings/)
+> - Vzniká při zpracování ratingu konflikt zájmů?
+
+### Typy dluhopisů
+
+- ***convertible bond*** možnost převodu dluhopisu na akcie v předem daném poměru
+- ***callable bond*** dlužník může dluhopis předčasně splatit
+- ***putable bond*** věřitel může vyžadovat předčasné splacení
+- ***zero-coupon bond*** (diskontovaný dluhopis) nevyplácí kupón, ale investor ho kupuje se slevou
+- ***inflation protected*** securities dluhopisy zajištěné proti inflaci
+- ***eurodollar bonds*** dluhopisy denominované v dolarech prodávané mimo USA
+
+> Jaké jsou výhody a nevýhody těchto typů dluhopisů?
+## Princip oceňování finančních aktiv
+
+- výpočet současné hodnoty očekávaných budoucích cash flow
+  
+$$ \text{price} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{CF_n}{(1+r)^n} $$
+
+$$ \text{price} = \sum^n_{t=1} \frac{CF_t}{(1+r)^t} $$
+
+- $r$ ... diskontní sazba (nominální), neboli výnos požadovaný investorem
+- $CF$ ... očekávané budoucí cash flow
+
+## Oceňování dluhopisů
+
+- očekávaná cash flow jsou výplaty kupónů a s posledním kupónem i vrácení jistiny
+
+### Příklad očeňování dluhopisu
+- Dluhopis s jistinou 100 a splatností 3 roky. Na konci každého roku vyplácí úrok 5%. Investor požaduje výnos 5% (diskontní sazba). Kolik bude ochoten za dluhopis zaplatit (současná hodnota dluhopisu)?
+$$ \text{price} = \frac{5}{(1+0.05)^1} + \frac{5}{(1+0.05)^2} + \frac{105}{(1+0.05)^3} = 100 $$
+- Na trhu se zvýšily úrokové sazby a investor nyní požaduje z daného dluhopisu výnos 7%. Kolik bude ochoten za dluhopis zaplatit?
+$$ \text{price} = \frac{5}{(1+0.07)^1} + \frac{5}{(1+0.07)^2} + \frac{105}{(1+0.07)^3} = 94.75 $$
+- Centrální banka snížila úrokové sazby. Na trhu je méně atraktivních příležitostí. Investor je ochoten spokojit se s výnosem 3%. Kolik bude ochoten za dluhopis zaplatit?
+$$ \text{price} = \frac{5}{(1+0.03)^1} + \frac{5}{(1+0.03)^2} + \frac{105}{(1+0.03)^3} = 105,66 $$
+
+
+### Rizika investování do dluhopisů
+
+- ***kreditní riziko*** (credit risk) $\rightarrow$ riziko nesplacení části úroků nebo jistiny
+- ***úrokové riziko*** (intereset rate risk) $\rightarrow$ růst úrokových sazeb snižuje hodnotu dluhopisu a naopak
+- ***reinvestiční riziko*** (reinvestment rate risk) $\rightarrow$ získané kupóny jsou reinvestovány za jinou úrokovou sazbu
+- ***riziko změny směnných kurzů*** (exchange rate risk) $\rightarrow$ pokud je dluhopis v cizí měně
+- ***politické riziko*** (political risk) $\rightarrow$ většinou u zahraničních dluhopisů, stabilita země
+
+
+## Složky tržních úrokových sazeb
+
+- další specifické faktory ovlivňující úrokovou sazbu:
+  - $r \dots$ nominální (tržní) úroková sazba
+  - $\text{RR} \dots$ reálná úroková sazba
+  - $\text{IP} \dots$ inflační prémie (inflation premium)
+  - $\text{DRP} \dots$ prémie za riziko bankrotu (default risk premium)
+  - $\text{MRP} \dots$ prémie za dobu splatnosti (maturity risk premium), interest rate risk
+  - $\text{LP} \dots$ prémie za likviditu (liquidity premium)
+
+$$ r = \text{RR} + \text{IP} + \text{DRP} + \text{MRP} + \text{LP} $$
+
+## Státní dluhopisy
+
+- krátkodobé státní dluhopisy často používány pro odhad risk-free úrokové sazby (DRP, MRP a LP nulové)
+- dluhopisy v USA:
+  - treasury bills (max 1 rok)
+  - treasury notes (2 - 10 let)
+  - treasury bonds (11 - 30 let)
+
+## Úroková křivka (term structure, yield curve)
+
+- vztah mezi úrokovou sazbou a dobou splatnosti v daném časovém bodě
+- pro stejná aktiva s různou dobou splatnosti
+- změny mohou ukazovat na možnou krizi (změna sklonu křivky)
+- teorie vysvětlující tvar úrokové křivky:
+  1. teorie očekávání (očekávání investorů o budoucí inflaci)
+  2. teorie segmentace trhu (aktiva s různou splatností nejsou dokonalé substituty)
+  3. teorie preference likvidity (investoři preferují vysokou likviditu a nízké riziko)
+   

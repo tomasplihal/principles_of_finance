@@ -1,0 +1,249 @@
+# Úvod do financí a struktura firmy
+
+::: {.callout-note}
+# Studijní materiály
+
+- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
+University. <https://openstax.org/details/books/principles-finance>
+  - Chapter 1 - Introduction to Finance
+  - Chapter 2 - Corporate Structure and Governance
+:::
+
+**Výstupy z učení:**
+
+1. Pochopit základy **financí** a jejich základní principy.
+2. Pochopit význam **dat a technologií** ve finanční oblasti, rozhodování a
+strategickém plánování.
+3. Prozkoumat **možnosti uplatnění v oblasti financí**.
+4. Uvědomit si dopady mikroekonomických a makroekonomických faktorů.
+5. Porozumět používání **finančních nástrojů** a časové hodnotě peněz.
+6. Rozpoznat důsledky různých **podnikových struktur** na finanční řízení a
+správu společnosti.
+7. Porozumět vztahu mezi **akcionáři a vedením společnosti**.
+
+## Co jsou finance?
+
+### Definice financí
+
+- Finance jsou vědou o řízení, pohybu a získávání peněz.
+- Jde o pochopení použití a zdrojů peněžních prostředků, jakož i konceptu kompromisu mezi rizikem a výnosem.
+- Finance jsou také nástrojem, který nám může pomoci lépe se rozhodovat.
+
+### Základní oblasti financí
+
+- Finance se dělí na tři základní oblasti: podnikové finance, investice a finanční trhy a instituce.
+
+![](images/fig_1_1.webp){width=500 fig-align="center"}
+
+#### Podnikové finance {.unnumbered}
+
+- Finance podniku se zaměřují na maximalizaci hodnoty podniku v rizikovém prostředí.
+
+![](images/fig_1_2.webp){width=500 fig-align="center"}
+
+#### Investice {.unnumbered}
+
+- Investice jsou produkty a procesy používané k vytváření a růstu bohatství.
+- Zahrnují: např. finanční nástroje, regulaci a příležitosti k dosažení výnosu za určitého rizika.
+- Mezi investice patří: např. akcie, dluhopisy, futures, opce, podílové fondy, ETF, reálná aktiva atd.
+
+#### Finanční trhy a instituce {.unnumbered}
+
+- Finanční trhy a instituce zahrnují firmy a regulační orgány, které dohlížejí na finanční systém. 
+- Usnadňují investiční postupy a zajišťují bezpečnost investorů a odvětví. 
+- V USA mezi regulační orgány patří Komise pro cenné papíry (Securities and Exchange Commission, SEC), Úřad pro regulaci finančního průmyslu (Financial Industry Regulatory Authority, FINRA) a Společnost pro ochranu investorů do cenných papírů (Securities Investor Protection Corporation, SIPC).
+- V Evropě dohlíží na trh s cennými papíry v EU Evropský orgán pro cenné papíry a trhy (The European Securities and Markets Authority, ESMA), podobně jako SEC v USA. Centrální banky jednotlivých zemí obvykle slouží jako hlavní orgán dohledu nad finančním trhem v dané zemi.
+- Finanční odvětví prošlo významným vývojem díky čtyřiceti letům deregulace, zvýšené konkurenci a přizpůsobování se změnám a inovacím. 
+
+### Proč studovat finance
+
+- Finance jsou nezbytné pro ekonomické operace, protože usnadňují například vlastnictví nemovitostí a bezhotovostní transakce.
+- Silný a nezávislý finanční systém je pro ekonomiku založenou na kapitálu nezbytný.
+- Studium financí otevírá řadu profesních příležitostí.
+- Jedná se o kritický nástroj rozhodování vyžadující analytické myšlení a porozumění odhadu hodnoty.
+- Znalost financí a finančních trhů rozšiřuje investiční příležitosti, které zahrnují jak tradiční cesty, jako jsou akcie a dluhopisy, tak moderní, jako jsou finanční technologie a kryptoměny.
+
+### Riziko a výnos ve financích
+
+- Vyšší riziko vede k vyšším očekávaným výnosům, přičemž riziko je v podstatě nejistota.
+- Finance se snaží riziko kvantifikovat, aby pomohly při přijímání vhodných kompromisů mezi rizikem a výnosem, a to jak v každodenním životě, tak při finančním rozhodování.
+- Jednotlivci se obecně vyhýbají riziku (jsou rizikově averzní), což znamená, že za podstoupení většího rizika očekávají vyšší výnosy.
+- Finanční riziko se skládá z několika složek včetně rizika defaultu, inflačního rizika, diverzifikovatelného (nesystematického) rizika, nediverzifikovatelného (systematického) rizika a politického rizika.
+
+![](images/fig_1_3.webp){width=500 fig-align="center"}
+
+## Role financí ve firmě
+
+- Role financí v organizacích jsou různé a zahrnují:
+  - Controllers (kontroloři) dohlížejí na finanční výkaznictví a účetnictví.
+  - Treasurers (pokladníci)  se starají o peněžní toky, řídí externí finanční vztahy a výpůjční a investiční aktivity.
+- Vice President of Finance (Viceprezident pro finance) dohlíží na kontrolora a pokladníka a zaměřuje se na vytváření důkladných reportů.
+  - Finanční ředitel (CFO) je zodpovědný za přijímání klíčových finančních rozhodnutí, strategické finanční plánování a stanovování finančních cílů.
+- Finanční plánování je klíčové pro zajištění přehledu o minulých, současných a budoucích finančních potřebách organizace a pro dosažení obchodních cílů.
+- Dobré finanční plánování zahrnuje minulé, současné a výhledové výkazy zisků a ztrát, výkazy peněžních toků, rozvahy, prognózy a nástroje finanční analýzy, jako je analýza poměrových ukazatelů.
+- Rozpočtování (budgeting) je klíčovou součástí finančního plánování, které se zaměřuje na výši, zdroje a použití peněžních prostředků.
+- Finanční plánování pomáhá řídit změny rozpočtu, orientovat se v odchylkách od očekávaných výsledků a slouží jako základ pro budoucí rozpočty.
+
+## Význam dat a technologií
+
+- Finanční údaje jsou klíčové pro lepší obchodní a finanční rozhodování jak interních, tak externích pracovníků firmy, neboť pomáhají při rozhodování o financování projektů, realizaci projektů a alokaci zdrojů.
+- Mezi základní typy finančních údajů patří výkazy zisků a ztrát, výkazy peněžních toků a rozvahy, které odrážejí historické náklady a účetní úpravy. 
+- Kromě interních údajů firmy vyhledávají i externí údaje, jako jsou průzkumy mezi zákazníky a dodavateli, průzkumy trhu, dohody s věřiteli a makroekonomické údaje.
+- Využití dat sahá od měření dopadu obchodních rozhodnutí až po umožnění strategického plánování a motivace týmů.
+
+## Kariéra v oblasti financí
+
+- Kariéra v oblasti financí nabízí lukrativní příležitosti se slibnou prognózou růstu pracovních míst.
+- Dovednosti v oblasti financí jsou použitelné v celé řadě oblastí mimo tradiční
+včetně managementu, analýzy a logistiky.
+- Mezi tradiční finanční pozice patří finanční manažeři, pracovníci v oblasti investičních vztahů. spolupracovník, rozpočtový analytik, úvěrový analytik, finanční analytik, osobní finanční analytik, finanční specialista, úvěrový pracovník, pojišťovací agent.
+- Finanční analytici, nezbytní pro finanční prognózy a průzkum trhu,
+potřebují různorodé dovednosti zahrnující práci s tabulkovými procesory, finanční modelování,
+a porozumění obchodním procesům.
+- Podnikoví analytici se více zaměřují na strategické myšlení, vývoj procesů a
+budování týmu, pomáhají při formulování strategie a řešení problémů pomocí
+přístupů založených na datech.
+- Více informací o [možné kariéře v oblasti financí](https://openstax.org/r/thebalancecareers).
+na webových stránkách Balance Careers.
+
+## Trhy a účastníci trhu
+
+- Primární trh je trh s "novými" cennými papíry, jako jsou například počáteční emise acií (Initial Public Offering, IPO) a nabídka sezónních akcií (Seasoned Equity Offering, SEO), které poskytují přímé peněžní prostředky firmám. 
+- Sekundární trh je trhem "již existujících" cenných papírů, na kterém se obchoduje mezi investory a poskytuje přehled o vnímání hodnoty firmy. 
+- Účastníci trhu, včetně dealerů, brokerů a finančních zprostředkovatelů, hrají roli jedinečnou roli při usnadňování efektivních finančních transakcí.
+- Dealeři vlastní cenné papíry, které nakupují nebo prodávají, a vydělávají na obchodování s nimi (na rozdílu v cenách).
+- Brokers zprostředkovávají transakce mezi kupujícími a prodávajícími, přičemž obvykle vydělávají provize z prodeje.
+- Finanční zprostředkovatelé, jako jsou komerční banky nebo investiční společnosti, umožňují snazší obchodování mezi transakčními stranami.
+- Finanční zprostředkovatelé zvyšují efektivitu, poskytují úspory z rozsahu, specializované znalosti a mají zásadní význam pro tržní ekonomiku.
+
+## Mikroekonomické a makroekonomické faktory
+
+- Finance spojují ekonomii a účetnictví a využívají ekonomickou teorii, empirické důkazy a účetní údaje k přijímání obchodních rozhodnutí.
+- Ekonomie studuje alokaci omezených zdrojů a dělí se na mikroekonomii a makroekonomii.
+- Mikroekonomie se zaměřuje na rozhodování jednotlivých subjektů, analyzuje podněty, chování, spotřebu, nabídku a poptávku. Pomáhá při finančních prognózách, plánování a sestavování rozpočtů.
+- Makroekonomie zkoumá skupinová rozhodnutí a zkoumá prvky, jako je inflace, příjmy, hospodářský růst a nezaměstnanost. Zahrnuje širší proměnné, které modely nemohou vždy zachytit, ale musí být zahrnuty do finančních prognóz.
+- Makroekonomické proměnné, jako je inflace, úrokové sazby, nezaměstnanost, hospodářský růst, akciový trh a fiskální politika vlády, hrají zásadní roli na finančních trzích a při prognózování. 
+- Aby mohli finanční manažeři efektivně směřovat ke strategickým cílům, potřebují jak mikro (zdola nahoru, taktický), tak makro (shora dolů, strategický) pohled.
+
+## Finanční nástroje
+
+### Peněžní trhy
+
+- Na peněžním trhu se obchoduje s krátkodobými (méně než jeden rok), nízkorizikovými a vysoce likvidními cennými papíry. Míra selhání je minimální a nástroje lze rychle prodat na sekundárním trhu.
+- Finanční instituce, podniky a vlády využívají peněžní trh pro potřeby krátkodobých výpůjček a/nebo úvěrů. Transakce jsou obvykle velké, přesahující 100 000 USD.
+- Státní pokladniční poukázky (treasury bills, T-bills) jsou krátkodobé dluhové nástroje emitované vládou. Jsou prodávány v týdenních aukcích a jsou bez rizika defaultu. Pro pokladniční poukázky existuje aktivní sekundární trh.
+- Commercial paper je krátkodobý nezajištěný dluhový cenný papír vydávaný podniky a finančními institucemi k financování krátkodobých potřeb. Vzhledem k nezajištěnému charakteru a omezenému dohledu SEC je mohou vydávat pouze firmy s vysokým ratingem.
+- Negotiable Certificates of Deposit (NCDs) nebo jumbo CDc, které vydávají finanční instituce, jsou splatné až při splatnosti a mají silný sekundární trh.
+- Federální rezervní systém se zaměřuje na úrokovou sazbu jako na významný nástroj měnové politiky. Trh federálních fondů zahrnuje jednodenní půjčky a úvěry mezi finančními institucemi.
+
+### Kapitálové trhy a nástroje
+
+- Na kapitálovém trhu se obchoduje s dlouhodobějšími (delšími než jeden rok) finančními nástroji s různým rizikem defaultu a méně jistou likviditou.
+- Nástroje se dělí na dluhové nástroje (dluhopisové trhy) a majetkové cenné papíry (akciové trhy).
+- Federální vláda vydává státní dluhopisy a obligace, aby získala peníze na běžné výdaje a splatila minulé půjčky. Dluhopisy (T-notes) jsou dlouhodobější než pokladniční poukázky (T-bills) a vyplácejí pololetní kupónové úroky.
+- Státní a místní samosprávy mohou vydávat komunální dluhopisy ("munis"), které nesou větší riziko než státní dluhopisy, ale nabízejí nezdaněné úrokové platby.
+- Dluhopisy pro dlouhodobější financování vydávají také podniky. 
+- Akcie představují vlastnictví společnosti. Peněžní toky z akcií jsou vzhledem k jejich nepředvídatelnosti více nejisté a rizikové než peněžní toky z dluhopisů.  S akciemi lze obchodovat na organizovaných burzách cenných papírů nebo na mimoburzovním trhu.
+
+## Časová hodnota peněz
+
+- Volba mezi úsporami a výdaji je v podstatě volbou mezi současnou a budoucí spotřebou.
+- Toto rozhodnutí zahrnuje zvažování krátkodobých, střednědobých a dlouhodobých cílů.
+- Krátkodobé úspory se zaměřují na bezpečnost jistiny, střednědobé investice vyvažují výnosy a rizika a dlouhodobé investice využívají čas k zotavení z rizik a těží ze složených výnosů.
+- V podnikání jsou důležité tři typy hodnoty: účetní hodnota (historické náklady), tržní hodnota (cena, kterou platí spotřebitelé) a ekonomická hodnota (to, co jsou spotřebitelé ochotni zaplatit).
+
+| 10% Roční výnos           | Scénář 1   | Scénář 2   | Scénář 3   | Scénář 4   |
+|---------------------------|------------|------------|------------|------------|
+| Začátek investováná (věk) | 26         | 19         | 14         | 9          |
+| Konec investováni (věk)   | 60         | 25         | 18         | 13         |
+| Celkový počet investic    | 35         | 7          | 5          | 5          |
+| Roční investice           | $5,000     | $5,000     | $5,000     | $5,000     |
+| Celkem investováno        | $175,000   | $35,000    | $25,000    | $25,000    |
+| Hodnota ve věku 60        | $1,490,634 | $1,466,369 | $1,838,858 | $2,961,500 |
+
+## Struktura a řízení společnosti
+
+- Podnikatelské cíle zahrnují plnění osobních finančních cílů a u veřejně obchodovaných společností zvyšování hodnoty společnosti pro akcionáře.
+- Akcionáři jsou jednotlivci, kteří usilují o návratnost investic pro své osobní dlouhodobé finanční cíle.
+- Společnosti se zaměřují na finanční i nefinanční cíle, včetně rozšiřování prodeje, spokojenosti zákazníků a vývoje produktů.
+- Hodnota aktiv je určena současnou hodnotou budoucích peněžních toků.
+- Maximalizace bohatství akcionářů vyžaduje dlouhodobý pohled a rozhodnutí nemusí mít okamžitý vliv na ceny akcií.
+- V soukromě vlastněných subjektech je pro vlastníky stejně důležitý dlouhodobý růst a maximalizace hodnoty.
+
+### Hlavní cíl finančního managementu
+
+- Maximalizovat fundamentální hodnotu existujících akcií (maximalizovat hodnotu firmy v dlouhém období).
+- Maximalizace hodnoty firmy vyžaduje, aby podnik byl efektivní, poskytoval kvalitní produkty a služby za co nejnižší náklady.
+- Z dlouhodobého hlediska je pro hodnotu podniku prospěšné dobře se starat o své zaměstnance (kvalitní pracovní síla).
+- Důležitá je také dobrá pověst.
+- Při dodržování zákona a základní etiky je tento cíl vhodný pro celou společnost.
+
+## Typy obchodních společností
+
+- Podrobnosti v zákoně č. 90/2012 Sb.,Zákon o obchodních společnostech a družstvech (zákon o obchodních korporacích)
+- Organizace musí při volbě své struktury vyhodnotit všechna pro a proti, včetně možnosti získávat finanční prostředky, dopadů zdanění a likvidity.
+- Učebnice jsou z pravidla psané z pohledu velkých akciových společností, které jsou veřejně obchodované.
+- Většinu metod lze však aplikovat obecně i na malé firmy a jiná vlastnická uspořádání.
+
+### Akciová společnost
+
+- právnická osoba
+- majetek je rozdělen na určitý počet akcií
+- společnost za svoje závazky odpovídá celým svým majetkem
+- akcionář za závazky společnosti neručí a ani není povinen uhradit případnou ztrátu
+- umožňuje oddělení vlastníků od managementu a díky tomu může fungovat dlouhodobě i když se vlastníci nebo management mění
+
+### Ostatní typy obchodních společností
+
+- **Veřejná obchodní společnost** - společnost alespoň dvou osob, které se účastní na jejím podnikání nebo správě jejího majetku a ručí za její dluhy společně a nerozdílně celým svým majetkem.
+- **Komanditní společnost** - společnost, v níž alespoň jeden společník ručí za její dluhy omezeně (tzv. „komanditista“) a alespoň jeden společník neomezeně (tzv. „komplementář“).
+- **Společnost s ručením omezeným** - Společnost odpovídá za porušení svých závazků celým svým majetkem, společníci pak společně a nerozdílně ručí za závazky společnosti jen do výše, v jaké nesplnili vkladové povinnosti podle stavu zapsaného v obchodním rejstříku v době, kdy byli věřitelem vyzváni k plnění.
+
+## Vztah mezi akcionáři (shareholders) a vedením společnosti
+
+- Stakeholder (zainteresovaná strana) je každý, kdo má zájem na výsledcích organizace (např. zaměstnanci, zákazníci, akcionáři, dodavatelé, komunity a vlády).
+- Akcionáři (shareholders) jsou jednotlivci, společnosti nebo organizace, které vlastní akcie společnosti. Dostávají dividendy, hlasují o záležitostech společnosti a mohou být voleni do představenstva. 
+- Existují dva typy akcionářů: kmenoví a prioritní. Kmenoví akcionáři vlastní kmenové akcie společnosti a mají hlasovací práva, zatímco prioritní akcionáři vlastní prioritní akcie, dostávají pevné dividendy, ale nemají hlasovací práva.
+- Ředitelé najatí akcionáři řídí strategii společnosti, čímž se liší od akcionářů, kteří jsou vlastníky.
+- Akcionář je vlastníkem společnosti, zatímco stakeholder je někdo, kdo je závislý na výkonnosti společnosti, případně i nefinančně.
+- Na nejvyšší úrovni dohlíží na korporace představenstvo (board of directors, BOD), zatímco o každodenní provoz se starají manažeři střední úrovně.
+- Vedení by se mělo dlouhodobě zaměřovat na plnění růstových cílů a cílů společnosti; krátkodobé zaměření může bránit dlouhodobému zdraví společnosti.
+
+## Problém zastoupení
+
+- Jedná se o konflikt zájmů, který nastává v situaci, když se od člověka (nebo skupiny lidí) očekává, že bude jednat v nejlepším zájmu někoho jiného.
+- Ve světě financí se jedná zpravidla o vztah managementu a akcionářů, ale třeba i akcionářů a ostatních zainteresovaných stran (např. zaměstnanců).
+- Problémy nastávají, když manažer využívá své postavení k osobnímu prospěchu, místo aby jednal v nejlepším zájmu akcionářů. 
+- Od managementu se očekává, že se bude snažit maximalizovat bohatství akcionářů a nikoliv svoje vlastní bohatství.
+- Problém dále umocňují asymetrické informace mezi stranami.
+- Investiční komunita stále častěji využívá k hodnocení společností ratingy v oblasti životního prostředí, sociální oblasti a správy a řízení (ESG), které poskytují organizace třetích stran. Vysoké hodnocení ESG může naznačovat proaktivní řízení a potenciální dlouhodobou hodnotu.
+
+![](images/fig_1_5.webp){width=500 fig-align="center"}
+
+### Náklady problému zastoupení
+
+- Pokud management maximalizuje vlastní bohatství na úkor akcionářů vznikají ve firmě neefektivnosti.
+- Tento problém nelze úplně odstranit, ale dá se minimalizovat.
+- Snaha o řešení tohoto problému může vyžadovat další vynaložené náklady.
+
+### Možná řešení
+
+- Snaha zabránit problému právní cestou (např. na základě smluv).
+- Kontrola a dohled.
+- Motivační nastavení odměňování (např. spojené s cenou akcie).
+- Možnost odvolat management.
+- Celkově nastavení corporate governance, atd.
+
+## Interakce s investory, zprostředkovateli a dalšími účastníky trhu
+
+- Vztahy s investory (Investor Relations, IR) jsou dílčím útvarem podnikových vztahů s veřejností, jehož cílem je udržovat otevřené vztahy s akcionáři.
+- IR, které mají přísné regulační povinnosti, vyžadují úzkou spolupráci s právními a účetními odděleními.
+- K povinnostem patří organizování schůzek akcionářů, šíření finančních údajů, pořádání brífinků a řízení otázek zveřejňování finančních informací.
+- Pravidelné čtvrtletní zprávy o výsledcích hospodaření zajišťují transparentnost pro investiční komunitu.
+- Každoroční setkání akcionářů a investiční konference jsou důležité pro efektivní vztahy s investory a vyžadují jasný a poutavý investiční příběh.
+
+## Společnosti na domácích a globálních trzích
+
+- Společnosti působící především v USA, dodržují americké zákony o účetnictví a cenných papírech a při finančním výkaznictví používají obecně uznávané účetní zásady (Generally Accepted Accounting Principles, GAAP).
+- V Evropské unii a některých dalších zemích Asie nebo Jižní ameriky se finanční výkaznictví obvykle řídí Mezinárodními standardy účetního výkaznictví (International Financial Reporting Standards, IFRS).
+- Přestože jsou GAAP a IFRS navrženy tak, aby poskytovaly objektivní finanční výkaznictví, významně se liší, což má dopad na oblasti, jako je účtování zásob, konsolidace dceřiných společností a vykazování menšinových podílů.
