@@ -40,13 +40,13 @@ of risk-reward trade-off.
 - Finance is divided into three primary areas: business finance, investments,
 and financial markets and institutions.
 
-![](images/fig_1_1.webp){width=500 fig-align="center"}
+![](images/fig_1_1.png){width=500 fig-align="center"}
 
 #### Business Finance {.unnumbered}
 
 - Business finance focuses on maximizing a firm's value in a risky environment.
 
-![](images/fig_1_2.webp){width=500 fig-align="center"}
+![](images/fig_1_2.png){width=500 fig-align="center"}
 
 #### Investments {.unnumbered}
 
@@ -96,7 +96,7 @@ returns for taking on more risk.
 inflation risk, diversifiable (unsystematic) risk, non-diversifiable
 (systematic) risk, and political risk.
 
-![](images/fig_1_3.webp){width=500 fig-align="center"}
+![](images/fig_1_3.png){width=500 fig-align="center"}
 
 ## The Role of Finance in an Organization
 
@@ -167,7 +167,7 @@ enable easier exchanges between transacting parties.
 - Financial intermediaries increase efficiency, provide economies of scale,
 specialized knowledge, and are vital for a capitalist economy.
 
-![](images/fig_1_4.webp){width=700 fig-align="center"}
+![](images/fig_1_4.png){width=700 fig-align="center"}
 
 ## Microeconomic and Macroeconomic Matters
 
@@ -327,7 +327,7 @@ organizations, are being increasingly used by the investment community to
 evaluate companies. High ESG ratings can indicate proactive management and
 potential long-term value.
 
-![](images/fig_1_5.webp){width=500 fig-align="center"}
+![](images/fig_1_5.png){width=500 fig-align="center"}
 
 ## Interacting with Investors, Intermediaries, and Other Market Participants
 

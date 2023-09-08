@@ -49,7 +49,7 @@ other factors constant.
 | 10          | 40         |
 | 5           | 50         |
 
-![](images/fig_2_1.webp){width=500 fig-align="center"}
+![](images/fig_2_1.png){width=500 fig-align="center"}
 
 - However, changes in other economic factors like consumer income, population
 size, tastes and preferences, and prices of other goods can cause the demand
@@ -67,7 +67,7 @@ demand, perhaps due to negative publicity, shifts it to the left.
 | 10          | 49         |
 | 5           | 59         |
 
-![](images/fig_2_2.webp){width=500 fig-align="center"}
+![](images/fig_2_2.png){width=500 fig-align="center"}
 
 ### Supply
 
@@ -92,7 +92,7 @@ supply.
 |    10       |    20      |
 |     5       |    10      |
 
-![](images/fig_2_3.webp){width=500 fig-align="center"}
+![](images/fig_2_3.png){width=500 fig-align="center"}
 
 ### Equilibrium Price
 
@@ -108,21 +108,21 @@ prices up towards the equilibrium.
 - Market forces pull prices to equilibrium, and they remain there unless demand
 or supply changes.
 
-![](images/fig_2_4.webp){width=500 fig-align="center"}
+![](images/fig_2_4.png){width=500 fig-align="center"}
 
 - An increase in supply (outward shift of supply curve to the right) leads to a
 decrease in equilibrium price.
 - However, movement along the demand curve due to changes in equilibrium price
 is an increase in quantity demanded, not an increase in demand.
 
-![](images/fig_2_5.webp){width=500 fig-align="center"}
+![](images/fig_2_5.png){width=500 fig-align="center"}
 
 - A decrease in demand (inward shift of demand curve to the left) also results
 in a drop in equilibrium price.
 - Producers move along the supply curve producing fewer products when the price
 drops, called a decrease in quantity supplied.
 
-![](images/fig_2_6.webp){width=500 fig-align="center"}
+![](images/fig_2_6.png){width=500 fig-align="center"}
 
 ## Macroeconomics
 
@@ -148,7 +148,7 @@ raw materials, indicating potential future increases in CPI.
 called the GDP deflator, which uses prices from a base year to calculate what
 the GDP would have been if prices were identical to those in the base year.
 
-![](images/fig_2_7.webp){width=500 fig-align="center"}
+![](images/fig_2_7.png){width=500 fig-align="center"}
 
 ### Unemployment
 
@@ -173,7 +173,7 @@ using data from interviews conducted by the Census Bureau.
 - To compare unemployment rates around the world, visit the
 <https://openstax.org/r/data-world-bank>.
 
-![](images/fig_2_8.webp){width=500 fig-align="center"}
+![](images/fig_2_8.png){width=500 fig-align="center"}
 
 ### Gross Domestic Product
 
@@ -196,16 +196,16 @@ due to an increase in production or price rise (inflation).
 more goods and services are being produced. This gives a clearer picture of
 actual production growth.
 
-![](images/fig_2_9.webp){width=500 fig-align="center"}
+![](images/fig_2_9.png){width=500 fig-align="center"}
 
 ## Business Cycles and Economic Activity
 
-![](images/fig_2_10.webp){width=700 fig-align="center"}
+![](images/fig_2_10.png){width=700 fig-align="center"}
 
 - The US economy's growth over time has not been constant; it has periods of
 faster growth and periods of negative growth, known as the business cycle.
 
-![](images/fig_2_11.webp){width=300 fig-align="center"}
+![](images/fig_2_11.png){width=300 fig-align="center"}
 
 - The business cycle consists of alternating periods of economic expansion and
 contraction.
@@ -220,7 +220,7 @@ The point at which contraction ends and expansion begins is called the trough.
 - A recession, often synonymous with the contraction phase, used to be defined
 as two consecutive quarters of declining GDP.
 
-![](images/fig_2_12.webp){width=500 fig-align="center"}
+![](images/fig_2_12.png){width=500 fig-align="center"}
 
 - Today, the National Bureau of Economic Research (NBER), which officially
 declares recessions in the US, uses a broader definition. A significant decline
@@ -242,7 +242,7 @@ interest rates rise.
 intersect, setting an interest rate that balances the quantity supplied and
 demanded of loanable funds.
 
-![](images/fig_2_13.webp){width=500 fig-align="center"}
+![](images/fig_2_13.png){width=500 fig-align="center"}
 
 - Nominal interest rate is the quoted rate, and real interest rate adjusts this
 for inflation. It is calculated as 
@@ -260,7 +260,7 @@ corporations and individuals have higher rates due to their higher risk.
 lenders. Riskier borrowers, like credit card holders with no collateral, tend to
 pay much higher interest rates.
 
-![](images/fig_2_14.webp){width=500 fig-align="center"}
+![](images/fig_2_14.png){width=500 fig-align="center"}
 
 ## Foreign Exchange Rates
 

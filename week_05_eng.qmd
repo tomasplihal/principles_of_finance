@@ -65,7 +65,7 @@ projected future earnings).
 - For example, if a company's stock price is $24.00 and its EPS is $4.00, its
 P/E ratio is calculated as:
 $$
-\text{P/E} = \frac{$24.00}{$4.00} = 6
+\text{P/E} = \frac{\$24.00}{\$4.00} = 6
 $$
 - Indicating that investors are willing to pay up to six dollars for every
 dollar of earnings.

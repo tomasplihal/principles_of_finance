@@ -1,13 +1,13 @@
 # Historical Performance of US Markets
 
-• Understand key elements of US money markets.
-• Characterize bond markets (government and corporate).
-• Summarize US equity market structure and operations.
-• Define and exemplify inflation.
-• Analyze inflation's impact on consumption and wages.
-• Measure and compare actual vs. expected inflation.
-• Review historical inflation and bond (sovereign and corporate) trends.
-• Interpret investment and equity market performance from charts.
+- Understand key elements of US money markets.
+- Characterize bond markets (government and corporate).
+- Summarize US equity market structure and operations.
+- Define and exemplify inflation.
+- Analyze inflation's impact on consumption and wages.
+- Measure and compare actual vs. expected inflation.
+- Review historical inflation and bond (sovereign and corporate) trends.
+- Interpret investment and equity market performance from charts.
 
 
 ## Overview of US Financial Markets
@@ -69,7 +69,7 @@
 - Even a modest annual inflation rate can result in significant price increases over time. For instance, a basket of goods and services that cost $100 in 1984 would cost approximately $260 by the end of 2020, a 160% increase.
 
 
-![](images/fig_6_1.webp){width=500 fig-align="center"}
+![](images/fig_6_1.png){width=500 fig-align="center"}
 
 
 | Year | 1980 | 2000 | 2020 | Annual Change |
@@ -96,8 +96,8 @@
 - Between 2000 and 2020, as inflation slowed and interest rates were generally lower, T-bond returns also averaged lower at 5.77%.
 
 
-![](images/fig_6_2.webp){width=500 fig-align="center"}
-![](images/fig_6_3.webp){width=500 fig-align="center"}
+![](images/fig_6_2.png){width=500 fig-align="center"}
+![](images/fig_6_3.png){width=500 fig-align="center"}
 
 ### Corporate Bond Behavior
 
@@ -105,9 +105,9 @@
 - Baa bonds, which are not default-risk free and require a risk premium, showed an average annual return of 12.07% from 1980 to 1999 and a 2.30% premium over T-bonds from 2000 to 2020.
 - The premiums earned from Baa bonds significantly improve investment performance over time. For instance, a $100 investment in a Baa bond portfolio in 1980 would be worth $4,506 by 2020, outperforming the ending value of $1,931 for a similar T-bond portfolio.
 
-![](images/fig_6_4.webp){width=500 fig-align="center"}
-![](images/fig_6_5.webp){width=500 fig-align="center"}
-![](images/fig_6_6.webp){width=500 fig-align="center"}
+![](images/fig_6_4.png){width=500 fig-align="center"}
+![](images/fig_6_5.png){width=500 fig-align="center"}
+![](images/fig_6_6.png){width=500 fig-align="center"}
 
 ## Historical Picture of Returns to Stocks
 
@@ -129,8 +129,8 @@
 | Inflation             |                                     2.93%|                                    1.76%|
 
 
-![](images/fig_6_7.webp){width=500 fig-align="center"}
-![](images/fig_6_8.webp){width=500 fig-align="center"}
+![](images/fig_6_7.png){width=500 fig-align="center"}
+![](images/fig_6_8.png){width=500 fig-align="center"}
 
 
 - Calculators for finding returns over selected periods for US stocks, bonds, and inflation.
