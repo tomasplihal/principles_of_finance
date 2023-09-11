@@ -10,7 +10,7 @@ University. <https://openstax.org/details/books/principles-finance>
   - Chapter 9 - Time Value of Money III: Unequal Multiple Payment Values
 :::
 
-**Výstupy učení:**
+**Výstupy z učení:**
 
 1. Vysvětlit, proč má čas dopad na hodnotu peněz.
 2. Chápat pojmy budoucí hodnota a současná hodnota.
