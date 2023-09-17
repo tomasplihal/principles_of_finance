@@ -1,1 +1,5 @@
-# Týden
+# Reading Week
+
+::: {.callout-tip}
+Využijte volný týden k odpočinku, opakování první poloviny semestru a připravou na druhou polovinu semestru!
+:::
