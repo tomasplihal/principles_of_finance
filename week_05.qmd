@@ -1,201 +1,45 @@
-# Ekonomické základy: Peníze a úrokové sazby
+# Akcie a jejich oceňování
 
 ::: {.callout-note}
 # Studijní materiály
 
 - Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
 University. <https://openstax.org/details/books/principles-finance>
-  - Chapter 3 - Economic Foundations: Money and Rates
+  - Chapter 11 - Stocks and Stock Valuation
 :::
 
-**Výstupy učení:**
+**Výstupy z učení:**
 
+1. Definovat a vypočítat ukazatele P/E a P/B a pochopit jejich použití při určování
+relativního ocenění společnosti.
+2. Porozumět modelu s konstantním růstem dividend, poznat jeho výhody a nevýhody.
+3. Znát model diskontovaných peněžních toků (DCF) a jeho aplikace.
+4. Rozlišovat preferované a kmenové akcie, včetně jejich ocenění.
+5. Rozumět pojmu teorie efektivních trhů, operativní efektivnosti a informační
+efektivnosti na trzích.
 
+## Investování do akcií
 
-# Stocks and Stock Valuation
+- Akcie představují vlastnický podíl v dané společnosti a s tím i nárok na budoucí zisky
+a peněžní toky společnosti.
+- Akcie umožňují oddělení vlastníků od managementu.
+- Na rozdíl od dluhopisů akcie nemají datum splatnosti, nominální hodnotu ani zaručené
+kupónové platby.
+- Akcie mohou vyplácet dividendy, ale ty nejsou garantovány a mohou se měnit na základě
+rozhodnutí představenstva společnosti.
+- Investování do akcií je obecně rizikovější než dluhopisy nebo jiné investice s pevným
+výnosem, protože je zde větší nejistota.
+- S větším rizikem je spojen i potenciálně vyšší výnos v podobě dividend nebo
+kapitálového zhodnocení dané akcie.
 
-LEARNING OUTCOMES
-By the end of this section, you will be able to:
+### Typy akcií
 
-Define and calculate a P/E (price-to-earnings) ratio given company data.
-Determine relative under- or overvaluation indicated by a P/E (price-to-earnings) ratio.
-Define and calculate a P/B (price-to-book) ratio given company data.
-Determine relative under- or overvaluation indicated by a P/B (price-to-book) ratio.
-Define and detail alternative valuation multipliers, including P/S (price-to-sales) ratio, P/CF (price-to-cash-flow) ratio, and dividend yield.
-
-
-Learning Outcomes
-By the end of this section, you will be able to:
-• Identify and use DDMs (dividend discount models).
-• Define the constant growth DDM.
-• List the assumptions and limitations of the Gordon growth model.
-• Understand and be able to use the various forms of DDM.
-• Explain the advantages and limitations of DDMs.
-
-
-
-
-
-
-
-
-- Similar to bonds, common stocks give investors a claim on a company's future
-earnings and cash flows.
-- Unlike bonds, common stocks do not have maturity dates, face values, or
-guaranteed coupon payments.
-- Common stocks might pay dividends, but these are not promised and can vary
-based on the decisions of the company's board.
-- Investing in stocks is generally riskier than bonds or other fixed-income
-investments because there is no guarantee of payments to investors.
-- Common reasons for investing in stocks are to maintain value, accumulate
-wealth over time, and earn income through capital gains and dividends.
-- Advantages of stock investments include potentially substantial returns
-through dividends and share price appreciation, liquidity, and the availability
-of information about companies and markets.
-- Disadvantages include greater risk levels compared to fixed-income
-investments, difficulty in timing buy-and-sell transactions, and uncertainty
-around dividend payments.
-
-## Multiple Approaches to Stock Valuation
-
-### The Price-to Earnings (P/E) Ratio
-
-- Investors use various methods to evaluate companies and their common stock,
-including studying financial statements and calculating financial ratios.
-- The price-to-earnings (P/E) ratio is a crucial metric used to assess the
-market value of a company's stock.
-- The P/E ratio is calculated as: 
-$$
-\text{P/E Ratio} = \frac{\text{Price per Share}}{\text{Earnings per Share}}
-$$
-- The P/E ratio represents the price an investor pays for each unit of a
-company's current or future earnings.
-- P/E ratios can be trailing (based on past earnings) or forward (based on
-projected future earnings).
-- For example, if a company's stock price is $24.00 and its EPS is $4.00, its
-P/E ratio is calculated as:
-$$
-\text{P/E}_\text{Cameo} = \frac{$24.00}{$4.00} = 6
-$$
-- Indicating that investors are willing to pay up to six dollars for every
-dollar of earnings.
-- A company's P/E ratio should be compared to historical P/E ratios or the P/E
-ratios of other companies in the same industry for meaningful analysis.
-- High P/E ratios may suggest a company is overvalued and prone to price
-adjustment, while low P/E ratios may indicate undervaluation and opportunity for
-investment gains.
-- Care must be taken as the current stock price may not align with the company’s
-earning potential, necessitating the use of multiple evaluation techniques for
-stock analysis.
-
-
-### The Price-to-Book (P/B) Ratio
-
-- The Price-to-Book (P/B) ratio is a common financial metric used to evaluate a
-company's market value relative to its book value.
-- The market value is the current price of all a company's outstanding shares,
-while the book value represents the company's residual value after liquidating
-assets and paying off liabilities.
-- The P/B ratio is calculated as:
-$$
-\text{P/B Ratio} = \frac{\text{Market Price per Share}}{\text{Book Value per Share}}
-$$
-- P/B ratio is often used to evaluate financial services firms, but it has the
-limitation of not accounting for intangible assets like patents, trademarks, and
-copyrights.
-- P/B ratio can also be calculated by either:
-$$
-\text{P/B Ratio} = \frac{\text{Market Capitalization}}{\text{Net Book Value}}
-$$
-$$
-\text{P/B Ratio} = \frac{\text{Price per Share}}{\text{Net Book Value per Share}}
-$$
-  where the net book value equals total assets minus total liabilities.
-- A low P/B ratio (less than 1) might indicate a stock is undervalued, while a
-high ratio (greater than 1) might suggest overvaluation. However,
-interpretations vary among market experts.
-- P/B ratio should be used in conjunction with other metrics and compared with
-P/B ratios of companies within the same industry for a comprehensive analysis.
-
-### Alternative Multipliers
-
-- There are two main types of valuation multiples used for stock evaluation: equity multiples and enterprise value (EV) multiples. 
-- Equity multiples include the price-to-earnings (P/E) ratio, market-to-book (M/B) ratio, dividend yield, price-to-sales (P/S) ratio, and price-to-cash-flow (P/CF) ratio.
-- EV multiples are used primarily for valuations involving mergers and acquisitions and provide a more comprehensive measure of a company's total value than market capitalization.
-- Common EV multiples include:
-  - Enterprise Value to Revenue (EV/R): Used to compare a company's total valuation to its annual sales levels.
-  \[ EV/Revenue \]
-  - Enterprise Value to Earnings Before Interest and Taxes (EV/EBIT): Measures a company's profitability before interest and tax effects.
-  \[ EV/EBIT \]
-  - Enterprise Value to Earnings Before Interest, Taxes, Depreciation, and Amortization (EV/EBITDA): Compares a company's total value to its earnings before interest, taxes, depreciation, and amortization.
-  \[ EV/EBITDA \]
-  - Enterprise Value to Earnings Before Interest, Tax, Depreciation, Amortization, and Rental Costs (EV/EBITDAR): Suitable for businesses with significant rental and lease expenses.
-  \[ EV/EBITDAR \]
-  - Enterprise Value to Capital Employed (EV/Capital Employed): Measures enterprise value against the level of capital used by a business.
-  \[ EV/Capital\: Employed \]
-- Despite their usefulness, these multiples are snapshots in time and may mask important factors influencing the company's value.
-- To avoid misinterpretation and erroneous investment decisions, it's vital to use multiple ratios and alternate measures in company evaluations.
-
-## Dividend Discount Models (DDMs)
-
-- The Dividend Discount Model (DDM) is used to value a stock based on the present value of its future dividends. 
-- The most common DDM is the Gordon Growth Model, which uses the following formula:
-  \[ Stock\: Value = \frac{D1}{r - g} \]
-  where \(D1\) is the dividend for the next year, \(r\) is the required return, and \(g\) is the estimated future dividend growth rate.
-- The Zero Growth Dividend Discount Model assumes that future dividends will be the same forever. Its formula is similar to calculating the present value of a perpetuity:
-  \[ Stock\: Value = \frac{Annual\: Dividends}{Required\: Rate\: of\: Return} \]
-  or 
-  \[ PV = \frac{D}{r} \]
-  where \(PV\) is the stock value, \(D\) is the dividend payment, and \(r\) is the required rate of return.
-- The Constant Growth Dividend Discount Model assumes dividends grow at a fixed annual percentage. Its formula is similar to the Gordon Growth Model:
-  \[ Stock\: Value = \frac{D0(1 + g)}{r - g} = \frac{D1}{r - g} \]
-  where \(D0\) is the current dividend, \(D1\) is the dividend for the next year, \(g\) is the dividend growth rate, and \(r\) is the required rate of return.
-- Both the Zero and Constant Growth models have limitations due to their assumptions of fixed dividend and growth rates. These models are most suitable for stocks with a consistent dividend payment history.
-
-
-- The Variable or Nonconstant Growth Dividend Discount Model (DDM) is a more realistic model that assumes that a company and its stock value will progress through different stages of growth.
-- This model calculates the present value for each growth period and then sums them up to get the intrinsic value of the stock.
-- The formula for variable growth DDM extends the constant growth model to each growth period. The present value of dividends for each period is calculated and summed up.
-- For example, if Maddox Inc. has a dividend of $2.00 last year, a dividend growth rate of 5% for the next four years, and a steady growth rate of 3% after that, with a required rate of return of 8%, the stock value can be calculated as shown in the following table:
-
-|Year | Growth % | Dividend  ($) | Value after Year 4 ($) | PV Discount Factor at 8% | Present Value of Dividend ($) |
-|-----|----------|---------------|------------------------|--------------------------|-------------------------------|
-|  0  |   5%     |   2.00        |                        |                          |                               |
-|  1  |   5%     |   2.10        |                        |   1.0800                 | 1.9444                        |
-|  2  |   5%     |   2.21        |                        |   1.1664                 | 1.8904                        |
-|  3  |   5%     |   2.32        |                        |   1.2597                 | 1.8379                        |
-|  4  |   5%     |   2.43        |                        |   1.3605                 | 1.7869                        |
-|  5  |   3%     |   2.50        | 50.07886               |   1.4693                 | 35.7870                       |
-
-where 
-\[ Value_{after Year 4} = \frac{2.43 (1 + 0.03)}{0.08 - 0.03} = 50.078858 \]
-- The intrinsic value of the stock based on the variable growth model would be $43.25 per share.
-
-
-
-- to je strasne dlouhy, ted se mi to nechce delat...
-
-## Discounted Cash Flow (DCF) Model
-
-
-## Preferred Stock
-
-
-## Efficient Markets
-
-
-
-## Akcie
-
-- financování poskytnuté vlastníky firmy (akcionáři)
-- akciové společnosti umožňují oddělení vlastníků od managementu
-- akcie nemají dobu splatnosti
-- kmenové akcie (common stock):
+- Kmenové akcie (common stock):
   - představují vlastnický podíl ve společnosti
   - podíl na řízení a rozhodování
   - podíl na zisku (dividendy)
   - podíl na likvidačním zůstatku
-- prioritní akcie (preferred stock):
+- Prioritní akcie (preferred stock):
   - nepředstavují vlastnické právo ve firmě
   - oproti kmenovým akciím mají přednostní právo na zisky a majetek společnosti
   - zpravidla vyplácejí pravidelnou fixní dividendu
@@ -204,50 +48,286 @@ where
 
 ### Dividendy
 
-- firma rozhoduje jestli bude vyplácet dividendy a v jaké výši (většinou čtvrtletně)
-- snaha o stabilní dividendovou politiku
-- občas může být vyplacena mimořádná dividenda
-- dividendy většinou v penězích (***cash dividend***), ale mohou být i formou akcií (***stock dividend***)
-- stock dividend souvisí s pojmem štěpení akcií (***stock split***) $\rightarrow$  firma emituje dodatečné akcie a rozdělí je ve stejném poměru stávajícím akcionářům
-- Př. Držíte 10 akcií, každá má hodnotu 80. Firma udělá 2-for-1 split. Takže ve výsledku máte 20 akcií, ale každá stojí 40. Bohatství je pořád stejné, jen rozdělené na víc dílů.
-
-### Odkup akcií
-
-- místo výplaty dividend se může firma rozhodnout nakoupit svoje vlastní akcie
-- výsledkem je zvýšení cen akcií
-- daňové výhody pro akcionáře
-- firma může považovat své akcie za podhodnocené
-
-> - Podle čeho bude firma volit svoji dividendovou politiku / odkup akcií?
-
-## Oceňování akcií
-
-- složitější odhadnout budoucí cash flow než u dluhopisů
-- základní metoda je výpočet současné hodnoty všech očekávaných dividend $\rightarrow$ vnitřní hodnota akcie (intrinsic value)
-- počet období $n$ bude hodně vysoký, směřující až k nekonečnu
-- pokud firma nevyplácí dividendy:
-  - firma často začne vyplácet diviendy v pozdější fázi životního cyklu
-  - stále může generovat cash a pokud by někdo koupil celou firmu mohl by ho získat
-  - akcie musí mít hodnotu alespoň likvidačního zůstatku
-- odhadnutí všech budoucích cash flow z akcií je složité a nepraktické
-- využívá se zjednodušující předpoklad konstantních (nebo rostoucích) dividend
-- při předpokladu konstantních dividend počítáme perpetuitu 
-$$ PV = \frac{D}{r} $$
-- perpetuita se vyskytuje např. u prioritních akcií
-- pokud očekáváme stabilně rostoucí dividendu každý rok o $g$ potom lze použít Gordonův model 
-$$ PV = \frac{D \times (1+g)}{(r - g)} $$
-
-### Příklady oceňování akcií
-
-- Očekáváme, že firma bude vyplácet fixní dividendu ve výši 2. Požadujeme výnos z investice 10%. Kolik budeme ochotni za danou akcii zaplatit?
-$$ PV = \frac{D}{r} = \frac{2}{0.1} = 20 $$
-- Firma vyplící dividendu 1,89 ročně. Očekáváme růst dividend o 8,5% každý rok a požadujeme výnos 12% ročně. Jaká bude hodnota akcie podle Gordonova modelu?
-$$ PV = \frac{D \times (1+g)}{(r - g)} = \frac{1,89 \times (1+0.085)}{(0.12 - 0.085)} = 58,59 $$
+- Firma rozhoduje jestli bude vyplácet dividendy a v jaké výši (většinou čtvrtletně).
+- Snaha o stabilní dividendovou politiku.
+- Občas může být vyplacena mimořádná dividenda.
+- Dividendy většinou v penězích (***cash dividend***), ale mohou být i formou akcií
+(***stock dividend***).
+- Stock dividend souvisí s pojmem štěpení akcií (***stock split***), kdy firma rozdělí
+své stávající akcie na více kusů při zachování celkové trřní kapitalizace.
+- Hlavní rozdíl je v tom, že stock dividend zahrnuje vydání nových akcií zatímco u stock
+split je každá akcie rozdělen na více kusů, ale nejedná se o emisi nových akcií, přičemž
+v obou případech zůstává tržní kapitalizace konstantní.
+- Př. Držíte 10 akcií, každá má hodnotu 80. Firma udělá 2-for-1 split. Takže ve výsledku
+máte 20 akcií, ale každá stojí 40. Bohatství je pořád stejné, jen rozdělené na víc dílů.
+- Místo výplaty dividend se může firma rozhodnout nakoupit svoje vlastní akcie (stock
+buyback).
+- Výsledkem je zvýšení cen akcií a zpravidla daňové výhody pro akcionáře.
+- Buyback lze také použít v situaci, kdy firma považuje své akcie za podhodnocené.
 
 ### Rizika investování do akcií
 
-- obecně rizikovější než dluhopisy, proto investoři očekávají vyšší výnosy
-- v případě likvidace společnosti jsou běžní akcionáři na posledním místě
-- nejistá výše budoucích dividend
-- možné problémy s managementem
-- vyšší volatilita cen akcií ve srovnání s cenou dluhopisů
+- Obecně rizikovější než dluhopisy, proto investoři očekávají vyšší výnosy.
+- V případě likvidace společnosti jsou běžní akcionáři na posledním místě.
+- Nejistá výše budoucích dividend.
+- Možné problémy s managementem.
+- Vyšší volatilita cen akcií ve srovnání s cenou dluhopisů.
+
+## Přístupy k oceňování akcií
+
+- Investoři používají různé metody pro hodnocení společností a oceňvání jejich akcií.
+- Často se jedná o studium finančních výkazů a výpočet finančních ukazatelů.
+
+### Poměr cena/zisk (P/E, Price-earnings ratio)
+
+- P/E je klíčovým ukazatelem používaným k posouzení tržní hodnoty akcií společnosti.
+- P/E se vypočítá jako:
+$$
+\text{P/E} = \frac{\text{Cena za akcii}}{\text{Zisk na akcii}}
+$$
+- P/E reprezentuje cenu, kterou investor platí za jednotku současného nebo budoucího
+zisku společnosti.
+- P/E může být spočítáno historicky (na základě minulého zisku) nebo prediktivně (na
+základě očekávaných budoucích zisků).
+- Například, pokud je cena akcie společnosti \$24.00 a její zisk na akcii je \$4.00,
+její P/E poměr je:
+$$
+\text{P/E} = \frac{\$24.00}{\$4.00} = 6
+$$
+- Výsledek ukazuje, že investoři jsou ochotni platit až šest dolarů za každý dolar
+zisku.
+- P/E společnosti by měl být srovnáván s historickým P/E nebo s P/E jiných společností
+ve stejném odvětví.
+- Vysoké P/E může naznačovat, že společnost je nadhodnocena, zatímco nízké P/E může
+signalizovat podhodnocení a investiční příležitosti.
+- Prohlédněte si 90letý historický průměr P/E pro index S&P 500
+<https://openstax.org/r/90-year_historical_average_P/E>
+
+### Poměr cena/účetní hodnota (P/B, Price-to-book ratio)
+
+- Poměr cena/účetní hodnota (P/B) je běžný finanční ukazatel používaný k hodnocení tržní
+hodnoty společnosti vzhledem k její účetní hodnotě.
+- Tržní hodnota je aktuální cena všech akcií společnosti, zatímco účetní hodnota
+představuje hodnotu společnosti po likvidaci aktiv a splacení závazků.
+- P/B  se vypočítá jako:
+$$
+\text{P/B} = \frac{\text{Cena za akcii}}{\text{Účetní hodnota na akcii}}
+$$
+- P/B se často používá k hodnocení firem ve finančním sektoru, ale má omezení v
+nezahrnování nehmotných aktiv, jako jsou patenty, ochranné známky a autorská práva.
+- P/B poměr lze také vypočítat jako:
+$$
+\text{P/B} = \frac{\text{Cena za akcii}}{\text{Čistá účetní hodnota na akcii}}
+$$
+- Čistá účetní hodnota je rovna celkovým aktivům mínus celkové závazky.
+- Nízké P/B (méně než 1) by mohlo naznačovat, že akcie je podhodnocena, zatímco vysoké
+P/B (větší než 1) by mohlo naznačovat nadhodnocení.
+- P/B poměr by měl být použit v souvislosti s dalšími ukazateli a srovnán s P/B poměry
+společností ve stejném odvětví pro komplexní analýzu.
+
+## Dividendové diskontní modely
+
+- Dividendový diskontní model (DDM) se používá k ocenění akcie na základě současné
+hodnoty jejích budoucích dividend.
+- Model s nulovým a konstantním růstem má omezení kvůli předpokladu o fixní dividendě a
+růstových sazbách.
+- Tyto modely jsou nejvhodnější pro akcie se stabilní historií vyplácení dividend.
+
+### Gordonův růstový model
+
+- Nejběžnějším DDM je Gordonův růstový model (konstatní růst dividend), který používá
+následující vzorec:
+$$
+\text{Hodnota akcie} = \frac{D_0 (1+g)}{r - g} = \frac{D_1}{r - g}
+$$
+
+- Kde $D_0$ je současná roční dividenda, $r$ je požadovaný výnos, a $g$ je odhadovaná
+budoucí sazba růstu dividend.
+
+### Dividendový diskontní model s nulovým růstem
+
+- Model s nulovým růstem předpokládá, že budoucí dividendy budou stejné navždy.
+- Jeho vzorec je podobný výpočtu současné hodnoty perpetuity:
+$$
+\text{Hodnota akcie} = \frac{\text{Roční dividendy}}{\text{Požadovaná míra výnosu}} = \frac{D}{r}
+$$
+
+### Numerický příklad
+
+- Předpokládejme, že společnost právě vyplatila dividendu $D_0$ ve výši $\$2,00$,
+očekává se růst dividend $g$ ve výši 5% ročně. Vaše požadovaná míra výnosu $r$ je 10%.
+Cena akcie se vypočítá následovně:
+
+$$
+P = \frac{2.00 (1 + 0.05)}{0.10 - 0.05} = \frac{2.10}{0.05} = \$42.00
+$$
+
+- Podle DDM modelu by cena akcie měla být \$42,00.
+- Pokud je tržní cena nižší než tato hodnota, může to být dobrá investiční příležitost.
+
+### Model s proměnným růstem dividend
+
+- Model s proměnným růstem dividend je realističtější model, který předpokládá, že
+společnost a její akciová hodnota projdou různými fázemi růstu.
+- Tento model vypočítává současnou hodnotu pro každé období růstu a poté je sečte, aby
+získal vnitřní hodnotu akcie.
+- Vzorec pro DDM s proměnným růstem rozšiřuje model s konstantním růstem na každé
+- Např. máme společnost X, která za poslední rok vyplatila dividendu \$2.00. Očekáváme
+růstovou míru dividendy 5% pro další čtyři roky a následně stabilizaci na růstu 3%.
+Požadovaná výnosová míra je 8%. V následující tabulce je zobrazen výpočet hodnoty akcie.
+
+| Rok | Růst % | Dividenda (\$) | Hodnota po 4. roce (\$) | Diskontní faktor pro 8% | Současná hodnota dividendy (\$) |
+|:---:|:------:|:--------------:|:-----------------------:|:-----------------------:|:-------------------------------:|
+|  0  |   5%   |   2.00         |                         |                         |                                 |
+|  1  |   5%   |   2.10         |                         |   1.0800                |  1.9444                         |
+|  2  |   5%   |   2.21         |                         |   1.1664                |  1.8904                         |
+|  3  |   5%   |   2.32         |                         |   1.2597                |  1.8379                         |
+|  4  |   5%   |   2.43         |                         |   1.3605                |  1.7869                         |
+|  5  |   3%   |   2.50         |  50.07886               |   1.4693                |  35.7870                        |
+|     |        |                |                         |  $Celkem:$              |  43.2466                        |
+
+$$
+\text{Hodnota po 4. roce} = \frac{2.43 (1 + 0.03)}{0.08 - 0.03} = 50.07886
+$$
+
+- Vnitřní hodnota akcie by byla součet současných hodnot dividend, tedy \$43.2466.
+
+### Výhody a omezení DDM
+
+- Model slevování dividend (DDM) je nejužitečnější pro ocenění společností s dlouhou a
+konzistentní historií dividend, protože se opírá o očekávané budoucí výplaty a růst
+dividend.
+- DDM poskytují matematický vzorec, což snižuje šanci na nesprávný výklad nebo
+subjektivitu.
+- Společnosti mohou udržovat výplatu dividend, i když to dlouhodobě není výhodné, aby se
+vyhnuly volatilitě akciových cen.
+- Aplikace DDM na společnosti s omezenou historií dividend nebo na ty v odvětvích s
+vysokým rizikem může vést k nepřesnostem.
+- Jedním z hlavních omezení DDM je jejich neschopnost ohodnotit společnosti, které
+nevyplácí dividendy, což je trend zejména u mladých technologických společností.
+- Cena akcie podle DDM je vysoce citlivá na změny jednotlivých parametrů v rovnici.
+
+## Model diskontovaného cash flow (DCF)
+
+- Investoři při nákupu akcií očekávají budoucí příjmy z divident a zisk z prodeje akcií.
+- Prodejní cena akcie by ideálně měla být vyšší než nákupní cena, což vede ke
+kapitálovému zisku.
+- Kapitálový zisk je vyšší, pokud akcie nevyplácí dividendu.
+- Navíc pokud jsou akcie drženy delší dobu, platí se ve většině zemí nižší daně ze zisku
+z jejich prodeje (v ČR po 3 letech daň 0%).
+- Krátkodobé zisky z cenných papírů jsou zdaněny podle běžných sazeb daně z příjmů (v ČR
+15%).
+- Model diskontovaného cash flow (DCF) je často využíván používán u firem, které
+nevyplácí dividendy.
+- Model DCF vypočítává současnou hodnotu a hodnotu na akcií společnosti.
+- Model DCF je reprezentován následujícím rovnice:
+
+$$
+\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{CF_n}{(1+r)^n}
+$$
+
+- kde:
+  - $CF_n$ je očekávaný peněžní tok v období $n$,
+  - $r$ je diskontní sazba (také známá jako požadovaná míra výnosu),
+  - $n$ je počet období.
+- Alternativně lze model rozšířít o predikce cash flow do nekonečna s využitím perpetuity.
+- Přidá se poslední člen, tzv. terminal cash flow (TCF), který představuje poslední
+predikované cash flow, které dále roste konstantním tempem růstu.
+- Model DCF je poté reprezentován následujícím rovnicí:
+
+$$
+\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{\frac{TFC}{r-g}}{(1+r)^{n-1}}
+$$
+
+### Výhody a omezení modelu DCF
+
+- Mezi hlavní výhody ne možnost ocenit všechny firmy bez ohledu na jejich dividendovou
+politiku.
+- S cash flow firmy se v účetnictví hůře zkresluje než zisk, takže model není tak
+citlivý na manipulace s účetnictvím.
+- Společnosti však mohou například uměle vytvářet pozitivní cash flow prodejem aktiv,
+což není dlouhodobě udržitelné.
+- Přesnost modelu DCF závisí na přesnosti jeho vstupů, včetně odhadů cash flow a
+diskontní sazby.
+- Použití různých metod pro oceňování společností snižuje riziko nepřesností.
+
+## Prioritní akcie
+
+- Prioritní akcie nabízejí držitelům přednostní právo na majetek společnosti.
+- Mají stanovenou konstantní dividendu, která je vyplácena akcionářům.
+- Jako kmenové akcie nemají stanovenou dobu splatnosti.
+- Na rozdíl od kmenových akcií neposkytují hlasovací právo.
+- Mnoho preferovaných akcií je kumulativních, což znamená, že jakékoli vynechané
+dividendy se stávají závazkem, který společnost musí nakonec vyplatit preferovaným
+akcionářům.
+- Nekumulativní preferované akcie ztrácejí nevyplacené dividendy navždy.
+- Preferované akcie lze v budoucnu převést na obyčejné akcie.
+- Preferované akcie jsou více podobné dluhopisům kvůli jejich konstantním dividendám,
+což usnadňuje oceňování pomocí dividendových modelů.
+- Vnitřní hodnotu preferovaných akcií lze určit pomocí vzorce na perpetuitu.
+
+$$
+\text{Hodnota akcie} = \frac{\text{Dividenda}}{\text{Požadovaná míra výnosu}}
+$$
+
+### Numerický příklad
+
+- Firma X právě vydala preferované akcie (kumulativní) se jmenovitou hodnotou \$100D a
+roční dividendou 7%.
+- Aktuální cena preferovaných akcií je \$35 za akcii.
+- Jaká je výnosnost těchto preferovaných akcií?
+
+**Řešení:**
+
+- Prvním krokem je určení roční dividendy:
+
+$$
+\$100 \times 0.07 = \$7.00 
+$$
+
+- Nyní použijeme výše uvedený vzorec k vypočítání míry výnosu:
+
+$$
+r = \frac{\$7.00}{\$35.00} = 0.20 \text{ neboli } 20\%
+$$
+
+### Rozdíly mezi prioritními a kmenovými akciemi
+
+| Kmenové akcie                                             | Prioritní akcie                                                         |
+|:---------------------------------------------------------:|:-----------------------------------------------------------------------:|
+| Dividendy vyplaceny až po prioritních akcionářích         | Jako první dostanou dividendy                                           |
+| Dividendy jsou variabilní a mohou narůst nebo klesat      | Konstantní dividenda                                                    |
+| Vysoký potenciál růstu hodnoty vázán na výkon společnosti | Omezená možnost kapitálového zhodnocení                                 |
+| Při likvadaci vyplaceni jako poslední                     | Při likvidaci v pořadí podobně jako držitelé dluhopisů                  |
+| Poskytují držiteli hlasovací právo                        | Bez hlasovacího práva                                                   |
+| Žádná akumulace nevyplacených dividend                    | Pokud jsou kumulativní, nevyplacené dividendy se stávají závazkem firmy |
+
+## Teorie efektivních trhů
+
+- Efektivní trhy jsou ty, kde jsou náklady minimální, ceny aktuální a spravedlivé pro
+všechny obchodníky.
+
+### Informační Efektivita
+
+- Teorie efektivních trhů odkazuje primárně na informační efektivitu.
+- Informační efektivita odkazuje na rychlost, s jakou se v cená akcií odráží nejnovější
+dostupné informace.
+- Pokud jsou trhy efektivní, je těžké nebo nemožné dosáhnout konzistentně vyšších než
+průměrných výnosů.
+- Existují i další formy efektivity jako například operační efektivita se vztahuje na
+rychlost a přesnost zpracování nákupního nebo prodejního příkazu za nejlepší dostupnou
+cenu.
+- Existují tři formy informační efektivnosti trhu:
+  1. **Slabá efektivnost**
+    - Veškeré historické informace o tržních cenách a obchodech jsou plně odraženy v
+    aktuálních cenách.
+    - Tzn. technická analýza nelze použít k překonání trhu.
+  2. **Středně-silná efektivnost**
+    - Všechny veřejně dostupné informace jsou promítnuty v cenách.
+    - Nejen historické ceny, ale všechna dostupná data např. z finančních výkazů,
+    ekonomické faktory, atd.
+    - Tzn. technická ani fundamentální analýze nelze použít k překonání trhu.
+  3. **Silná efektivnost**
+    - Všechny veřejné i neveřejné informace jsou zohledněny v současných cenách.
+    - Tzn. nelze žádným způsobem překonat trh, ani s využítím interních informací
+    (insider trading).
