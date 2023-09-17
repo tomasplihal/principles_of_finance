@@ -3,30 +3,32 @@ project:
 
 book:
   title: "Základy financí"
-  author: "Tomáš Plíhal"
-  date: ""
+  author: "Tomáš Plíhal, Martina Sponerová"
+  date: "2023-09-18"
+  search: true
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook]
+  sidebar:
+    logo: logo.png
   chapters:
     - index.qmd
     - week_01.qmd
     - week_02.qmd
-    - week_03_eng.qmd
-    - week_04_eng.qmd
-    - week_05_eng.qmd
+    - week_03.qmd
+    - week_04.qmd
+    - week_05.qmd
     - week_06.qmd
-    - week_07_eng.qmd
+    - week_07.qmd
     - week_08.qmd
     - week_09.qmd
     - week_10.qmd
     - week_11.qmd
     - week_12.qmd
     - week_13.qmd
-    - references.qmd
-
-bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: materia
   pdf:
     documentclass: scrreprt
 

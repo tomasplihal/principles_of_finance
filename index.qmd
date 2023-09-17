@@ -1,5 +1,34 @@
-# Preface {.unnumbered}
+# Preambule {.unnumbered}
 
-This is a Quarto book.
+Vítejte na stránkách kurzu Základy financí. Jedná se o základní kurz navržený tak, aby
+studenty vybavil nezbytními znalostmi ze světa financí.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+## Cíle předmětu
+
+Základy financí je vyvážený první kurz financí, který studentům nabízí pohled na
+finanční trhy a instituce, svět investic a koncepty a aplikace podnikového finančního
+řízení. Pro studenty, kteří neplánují absolvovat další kurzy v oblasti financí,
+poskytuje tento kurz cenný přehled hlavních koncepcí oboru. Pro studenty, kteří naopak
+chtějí pokračovat ve studiu financí, poskytuje kurz přehledný a pevný základ, na kterém
+mohou budoucí předměty stavět.
+
+Cílem předmětu je základní porozumění složitému světu financí, které zahrnuje úvod do
+finančních trhů, investic a finančního řízení nebo podnikových financí. Studenti získají
+integrovaný pohled na vzájemné vztahy mezi těmito třemi oblastmi. Zjistí, jak jsou
+podniky a jednotlivci ovlivňováni trhy a institucemi, a také to, jak lze trhy a
+instituce využít ke splnění cílů jednotlivců nebo firem.
+
+## Výstupy z učení
+
+Studenti získají znalosti o trzích a institucích, investicích a managementu jako třech
+hlavních oblastech financí. Dokončí kurz s lepším pochopením toho, jak spolu tyto tři
+oblasti souvisí. Finanční trhy budou vnímány jako místo, kam podniky a finanční
+instituce chodí získávat finanční prostředky, a jako mechanismus, jehož prostřednictvím
+mohou jednotlivci investovat své úspory, aby splnili své budoucí cíle. Téma investic je
+důležité pro usnadnění procesu spoření a investování. Pochopení trade-off rizika a
+výnosu, stejně jako ocenění dluhopisů a akcií, je zásad pro investory a podniky
+získávající finanční kapitál. Stejně důležité je pochopit, jak trhy s cennými papíry
+fungují. Finanční řízení využívá informace, které získává z cenných papírů a finančních
+trhů, k efektivnímu a výnosnému řízení aktiv a k získávání potřebných finančních
+prostředků nákladově efektivním způsobem. Studenti získají praktický úvod do různých
+oborů financí a lépe pochopí vztahy mezi nimi.
