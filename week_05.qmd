@@ -73,7 +73,7 @@ buyback).
 - Možné problémy s managementem.
 - Vyšší volatilita cen akcií ve srovnání s cenou dluhopisů.
 
-## Přístupy k oceňování akcií
+## Poměrové ukazatele
 
 - Investoři používají různé metody pro hodnocení společností a oceňvání jejich akcií.
 - Často se jedná o studium finančních výkazů a výpočet finančních ukazatelů.
