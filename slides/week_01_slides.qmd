@@ -1,0 +1,74 @@
+---
+title: "Úvod do financí a struktura firmy"
+format:
+  revealjs:
+    center: true
+    incremental: true
+    embed-resources: true
+---
+
+## Organizační pokyny
+
+- [Interaktivní osnova](https://is.muni.cz/auth/el/econ/podzim2023/BPF_ZAFI/index.qwarp)
+
+# Úvod do financí
+
+## Proč studovat finance?
+
+- široké uplatnění
+- studenti financí vs. studenti jiných oborů
+
+## Co jsou finance?
+
+- řízení, pohyb a získávání peněz
+- Podnikové finance
+- Investice
+- Finanční trhy a instituce
+
+## Role financí ve firmě
+
+## Význam dat a technologií
+
+## Mikroekonomické a makroekonomické faktory
+
+## Riziko a výnos ve financích
+
+![](../images/fig_1_3.png){width=500 fig-align="center"}
+
+## Časová hodnota peněz
+
+- současná vs. budoucí spotřeba
+
+## Trhy a účastníci trhu
+
+- primární vs. sekundární trh
+- dealer, broker, finanční sprostředkovatel
+
+## Finanční nástroje
+
+- peněžní trhy $\leq$ 1 rok
+- kapitálový trh $>$ 1 rok  
+
+# Struktura a řízení firmy
+
+## Hlavní cíl firmy
+
+- maximalizovat hodnotu firmy
+- **v dlouhém období**
+
+## Typy obchodních společností
+
+- akciová společnost vs. ostatní typy obchodních společností
+
+## Vztah mezi akcionáři a vedením firmy
+
+- stakeholders vs. shareholders
+- práva a povinnosti akcionáře
+- kmenoví vs. prioritní akcionáři
+
+## Problém zastoupení
+
+- náklady problému zastoupení
+- možná řešení
+
+# Shrnutí
