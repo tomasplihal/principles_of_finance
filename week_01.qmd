@@ -21,6 +21,32 @@ University. <https://openstax.org/details/books/principles-finance>
 
 ## Úvod do financí
 
+### Proč studovat finance
+
+- Finance jsou v dnešním světě důležité pro ekonomické operace.
+- Usnadňují například vlastnictví nemovitostí a bezhotovostní transakce.
+- Silný a nezávislý finanční systém je pro ekonomiku založenou na kapitálu nezbytný.
+- Studium financí otevírá řadu profesních příležitostí.
+- Jedná se o kritický nástroj rozhodování vyžadující analytické myšlení.
+- Znalost financí a finančních trhů rozšiřuje vaše investiční příležitosti.
+
+#### Kariéra v oblasti financí
+
+- Kariéra v oblasti financí nabízí spoustu příležitosti s prognózou růstu počtu
+pracovních míst.
+- Dovednosti v oblasti financí jsou použitelné v celé řadě oblastí včetně managementu,
+analýzy a logistiky.
+- Mezi tradiční finanční pozice patří finanční manažeři, pracovníci v oblasti investičních vztahů, rozpočtový analytik, úvěrový analytik, finanční analytik, osobní finanční analytik, finanční specialista, úvěrový pracovník, pojišťovací agent, účetní, auditor.
+- Finanční analytici, nezbytní pro finanční prognózy a průzkum trhu, potřebují různorodé
+dovednosti zahrnující práci s tabulkovými procesory, finanční modelování, a porozumění
+obchodním procesům.
+- Podnikoví analytici se více zaměřují na strategické myšlení, vývoj procesů a budování
+týmu, pomáhají při formulování strategie a řešení problémů pomocí přístupů založených na
+datech.
+- Více informací o [možné kariéře v oblasti
+financí](https://openstax.org/r/thebalancecareers) na webových stránkách Balance
+Careers.
+
 ### Co jsou finance?
 
 ::: {.callout-tip}
@@ -62,27 +88,6 @@ a instituce.
   - Finanční odvětví prochází neustále významným vývojem díky novým technologiím,
   inovacím, konkurenci a změnám v regulacích.
 
-#### Proč studovat finance
-
-- Finance jsou v dnešním světě důležité pro ekonomické operace.
-- Usnadňují například vlastnictví nemovitostí a bezhotovostní transakce.
-- Silný a nezávislý finanční systém je pro ekonomiku založenou na kapitálu nezbytný.
-- Studium financí otevírá řadu profesních příležitostí.
-- Jedná se o kritický nástroj rozhodování vyžadující analytické myšlení.
-- Znalost financí a finančních trhů rozšiřuje vaše investiční příležitosti.
-
-#### Riziko a výnos ve financích
-
-- Vyšší riziko vede k vyšším očekávaným výnosům, přičemž riziko je v podstatě nejistota.
-- Finance se snaží riziko kvantifikovat, aby pomohly při našem rozhodování.
-- Jednotlivci se obecně vyhýbají riziku (jsou **rizikově averzní**), což znamená, že za
-podstoupení většího rizika očekávají vyšší výnosy.
-- Finanční riziko se skládá z několika složek včetně rizika defaultu, inflačního rizika,
-diverzifikovatelného (nesystematického) rizika, nediverzifikovatelného (systematického)
-rizika a politického rizika, atd.
-
-![](images/fig_1_3.png){width=500 fig-align="center"}
-
 ### Role financí ve firmě
 
 - Finanční plánování je klíčové pro zajištění přehledu o minulých, současných a
@@ -106,22 +111,41 @@ zákazníky a dodavateli, průzkumy trhu, dohody s věřiteli a makroekonomické
 - Využití dat sahá od měření dopadu obchodních rozhodnutí až po strategické plánování a
 motivaci zaměstnanců.
 
-### Kariéra v oblasti financí
+### Mikroekonomické a makroekonomické faktory
 
-- Kariéra v oblasti financí nabízí spoustu příležitosti se prognózou růstu počtu
-pracovních míst.
-- Dovednosti v oblasti financí jsou použitelné v celé řadě oblastí včetně managementu,
-analýzy a logistiky.
-- Mezi tradiční finanční pozice patří finanční manažeři, pracovníci v oblasti investičních vztahů, rozpočtový analytik, úvěrový analytik, finanční analytik, osobní finanční analytik, finanční specialista, úvěrový pracovník, pojišťovací agent, účetní, auditor.
-- Finanční analytici, nezbytní pro finanční prognózy a průzkum trhu, potřebují různorodé
-dovednosti zahrnující práci s tabulkovými procesory, finanční modelování, a porozumění
-obchodním procesům.
-- Podnikoví analytici se více zaměřují na strategické myšlení, vývoj procesů a budování
-týmu, pomáhají při formulování strategie a řešení problémů pomocí přístupů založených na
-datech.
-- Více informací o [možné kariéře v oblasti
-financí](https://openstax.org/r/thebalancecareers).  na webových stránkách Balance
-Careers.
+- Finance spojují ekonomii a účetnictví.
+- Využívají ekonomickou teorii, empirické důkazy a účetní údaje k přijímání obchodních
+rozhodnutí.
+- Ekonomie studuje alokaci omezených zdrojů a dělí se na mikroekonomii a makroekonomii.
+- Mikroekonomie se zaměřuje na rozhodování jednotlivých subjektů, analyzuje podněty,
+chování, spotřebu, nabídku a poptávku.
+  - Pomáhá při finančních prognózách, plánování a sestavování rozpočtů.
+- Makroekonomie zkoumá skupinová rozhodnutí a zkoumá prvky, jako je inflace, úrokové
+sazby, nezaměstnanost, hospodářský růst, akciový trh a fiskální politika vlády.
+  - Zahrnuje širší proměnné, které by měly být zahrnuty do finančních prognóz.
+- Aby mohli finanční manažeři efektivně směřovat ke strategickým cílům, potřebují jak
+mikro (zdola nahoru, taktický), tak makro (shora dolů, strategický) pohled.
+
+### Riziko a výnos ve financích
+
+- Vyšší riziko vede k vyšším očekávaným výnosům, přičemž riziko je v podstatě nejistota.
+- Finance se snaží riziko kvantifikovat, aby pomohly při našem rozhodování.
+- Jednotlivci se obecně vyhýbají riziku (jsou **rizikově averzní**), což znamená, že za
+podstoupení většího rizika očekávají vyšší výnosy.
+- Finanční riziko se skládá z několika složek včetně rizika defaultu, inflačního rizika,
+diverzifikovatelného (nesystematického) rizika, nediverzifikovatelného (systematického)
+rizika a politického rizika, atd.
+
+![](images/fig_1_3.png){width=500 fig-align="center"}
+
+### Časová hodnota peněz
+
+- Volba mezi úsporami a výdaji je v podstatě volbou mezi současnou a budoucí spotřebou.
+- Toto rozhodnutí zahrnuje zvažování krátkodobých, střednědobých a dlouhodobých cílů.
+- Časová hodnota peněz zahrnuje volbu poměru výnosu a rizika.
+- V podnikání jsou důležité tři typy hodnoty: účetní hodnota (historické náklady), tržní
+hodnota (cena, kterou platí spotřebitelé) a ekonomická hodnota (to, co jsou spotřebitelé
+ochotni zaplatit).
 
 ### Trhy a účastníci trhu
 
@@ -140,21 +164,6 @@ obvykle vydělávají na provizi z prodeje.
 umožňují snazší obchodování mezi transakčními stranami.
 - Finanční zprostředkovatelé zvyšují efektivitu, poskytují úspory z rozsahu,
 specializované znalosti a mají zásadní význam pro tržní ekonomiku.
-
-### Mikroekonomické a makroekonomické faktory
-
-- Finance spojují ekonomii a účetnictví.
-- Využívají ekonomickou teorii, empirické důkazy a účetní údaje k přijímání obchodních
-rozhodnutí.
-- Ekonomie studuje alokaci omezených zdrojů a dělí se na mikroekonomii a makroekonomii.
-- Mikroekonomie se zaměřuje na rozhodování jednotlivých subjektů, analyzuje podněty,
-chování, spotřebu, nabídku a poptávku.
-  - Pomáhá při finančních prognózách, plánování a sestavování rozpočtů.
-- Makroekonomie zkoumá skupinová rozhodnutí a zkoumá prvky, jako je inflace, úrokové
-sazby, nezaměstnanost, hospodářský růst, akciový trh a fiskální politika vlády.
-  - Zahrnuje širší proměnné, které by měly být zahrnuty do finančních prognóz.
-- Aby mohli finanční manažeři efektivně směřovat ke strategickým cílům, potřebují jak
-mikro (zdola nahoru, taktický), tak makro (shora dolů, strategický) pohled.
 
 ### Finanční nástroje
 
@@ -182,15 +191,6 @@ finančními nástroji s různým rizikem defaultu a méně jistou likviditou.
 než peněžní toky z dluhopisů.
 - S akciemi lze obchodovat na organizovaných burzách cenných papírů nebo na
 mimoburzovním trhu.
-
-### Časová hodnota peněz
-
-- Volba mezi úsporami a výdaji je v podstatě volbou mezi současnou a budoucí spotřebou.
-- Toto rozhodnutí zahrnuje zvažování krátkodobých, střednědobých a dlouhodobých cílů.
-- Časová hodnota peněz zahrnuje volbu poměru výnosu a rizika.
-- V podnikání jsou důležité tři typy hodnoty: účetní hodnota (historické náklady), tržní
-hodnota (cena, kterou platí spotřebitelé) a ekonomická hodnota (to, co jsou spotřebitelé
-ochotni zaplatit).
 
 ## Struktura a řízení firmy
 
