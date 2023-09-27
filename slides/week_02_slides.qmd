@@ -1,0 +1,149 @@
+---
+title: "Ekonomické základy: Peníze a úrokové sazby"
+format:
+  revealjs:
+    center: true
+    incremental: true
+    embed-resources: true
+---
+
+# Mikroekonomie
+
+## Mikroekonomie
+
+- firmy
+- spotřebitelé
+- rozhodování / alokace zdrojů
+
+## Poptávka
+
+- ochota a schopnost koupit
+- zákon poptávky
+
+##
+
+![](../images/fig_2_1.png)
+
+##
+
+![](../images/fig_2_2.png)
+
+## Nabídka
+
+- ochota a schopnost prodat
+- zákon nabídky
+
+## 
+
+![](../images/fig_2_3.png)
+
+## Rovnovážná cena
+
+- průsečík nabídky a poptávky
+
+##
+
+![](../images/fig_2_4.png)
+
+##
+
+![](../images/fig_2_5.png)
+
+##
+
+![](../images/fig_2_6.png)
+
+# Makroekonomie
+
+## Makroekonomie
+
+- ekonomika jako celek
+- inflace, nezaměstnanost, HDP
+
+## Inflace
+
+- pokles kupní síly peněz
+- Jak se měří?
+
+##
+
+![](../images/fig_2_7.png)
+
+## Nezaměstnanost
+
+-
+$$
+\text{Pracovní síla} = \text{Počet zaměstnaných} + \text{Počet nezaměstnaných}
+$$
+-  
+$$
+\text{Míra nezaměstnanosti} = \frac{\text{Počet nezaměstnaných}}{\text{Pracovní síla}}
+$$
+
+##
+
+![](../images/fig_2_8.png)
+
+## Hrubý domácí produkt
+
+- hodnota statků a služeb
+- reálný vs. nominální
+
+##
+
+![](../images/fig_2_9.png)
+
+## Hospodářský cyklus a ekonomická aktivita
+
+##
+
+![](../images/fig_2_10.png)
+
+##
+
+![](../images/fig_2_11.png)
+
+##
+
+![](../images/fig_2_12.png)
+
+# Úrokové sazby
+
+## Úrokové sazby
+
+- nabídka a poptávka po penězích
+- Cena peněz?
+
+##
+
+![](../images/fig_2_13.png)
+
+## Reálná úroková sazba
+
+-
+$$
+\text{Reálná úroková sazba} = \text{Nominální úroková sazba} - \text{Inflace}
+$$
+
+## 
+
+![](../images/fig_2_14.png)
+
+# Směnné kurzy
+
+## Směnné kurzy
+
+- cena cizí měny
+- **Přímá kotace**: X domácí za 1 zahraniční 
+- **Nepřímá kotace**: Y zahraniční za 1 domácí
+
+## Live exchange rates
+
+<https://www.oanda.com/currency-converter/live-exchange-rates/>
+
+## Směnné kurzy
+
+- apreciace vs. depreciace měny 
+- vliv přímé a nepřímé kotace
+
+# Shrnutí
