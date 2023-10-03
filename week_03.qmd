@@ -15,7 +15,7 @@ University. <https://openstax.org/details/books/principles-finance>
 1. Vysvětlit, proč má čas dopad na hodnotu peněz.
 2. Chápat pojmy budoucí hodnota a současná hodnota.
 3. Ovládat výpočet budoucí hodnoty pomocí jednoduchého i složeného úročení.
-4. Dokázas spočítat současnou hodnotu peněžního toku.
+4. Dokázat spočítat současnou hodnotu peněžního toku.
 5. Umět využívat vzroce pro výpočet anuity.
 
 ## Úvod do časové hodnoty peněz
@@ -36,6 +36,7 @@ prospívá spořitelům a investorům.
 - Delší investiční období a vyšší úrokové sazby zvyšují hodnotu investovaných peněz.
 - Základní finanční transakce je jednorázový peněžní tok buď přijatý nebo zaplacený.
 - Všechny typy peněžních toků lze rozložit na sérii jednorázových částek.
+- Pro ilustraci časové hodnoty peněz lze použít online kalkulačky, např. <https://www.calculator.net/interest-calculator.html>
 
 ## Základní terminologie
 
@@ -78,7 +79,7 @@ prvním roce vložíte získané peníze zpět na účet. Kolik budete mít za 2
   $$
   FV = PV \times (1 + r)^n
   $$
-  - n je počet úrokových období v letech
+  - $n$ je počet úrokových období v letech
 - Př. Kolik naspoříte za 15 let z původní částky 1000 při roční úrokové sazbě 8% a 10% s
 použitím složeného úročení?
   $$
@@ -102,10 +103,10 @@ $$
 investovat dnes, pokud je běžná úroková sazba 8%? Jak se změní výsledek, pokud dostanete
 1000 až za 7 let?
   $$
-  PV = \frac{1000}{(1+ 0.8)^1} = 925.93
+  PV = \frac{1000}{(1+ 0.08)^1} = 925.93
   $$
   $$
-  PV = \frac{1000}{(1+ 0.8)^7} = 583.49
+  PV = \frac{1000}{(1+ 0.08)^7} = 583.49
   $$
 
 ## Kratší časové intervaly než jeden rok
@@ -219,6 +220,3 @@ $$
 $$
 \text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r} \times (1+r)
 $$
-
-## Online kalkulačky
-- <https://www.calculator.net/interest-calculator.html>
