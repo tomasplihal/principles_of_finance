@@ -1,9 +1,1 @@
-# Historická výkonnost trhů v USA
-
-::: {.callout-note}
-# Studijní materiály
-
-- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
-University. <https://openstax.org/details/books/principles-finance>
-  - Chapter 12 - Historical Performance of US Markets
-:::
+# Týden
