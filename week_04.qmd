@@ -6,6 +6,7 @@
 - Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
 University. <https://openstax.org/details/books/principles-finance>
   - Chapter 10 - Bonds and Bond Valuation
+  - Chapter 12 - Historical Performance of US Markets
 :::
 
 **Výstupy z učení:**
@@ -304,3 +305,45 @@ prodán na sekundářním trhu.
 ho byl schopen prodat na sekundárním trhu.
 - Pokud invesetor drží dluhopis do splatnosti, jeho zisk tvoří pouze úřok a kapitálový
 výnos je nulový.
+
+## Historický vývoj dluhopisů
+
+### Státní dluhopisy USA
+
+- Americké státní dluhopisy (T-bonds) jsou považovány za jednu z nejbezpečnějších
+investic a často se používají jako benchmark pro bezrizikovou investici ve finančním
+modelování.
+- Přestože mají nízké riziko nesplacení, hodnoty T-bondů kolísají se změnami úrokových
+sazeb.
+- Období od konce 70. let do začátku 80. let bylo charakterizováno vysokými
+sazbami inflace a úrokovými sazbami.
+- Následný pokles úrokových sazeb poskytl investorům vysoké výnosy, jak jevidět v grafu.
+- Avšak zvýšení úrokových sazeb jako například v roce 1999 způsobilo i negativní výnosy
+pro investory.
+- Od roku 1980 do roku 1999 byl průměrný roční výnos na T-bondech 10,21 %, ovlivněný
+nadprůměrnou roční inflační sazbou 4,28 %.
+- Mezi roky 2000 a 2020, kdy se inflace zpomalila a úrokové sazby byly obecně nižší,
+byly výnosy T-bondů také průměrně nižší, a to 5,77 %.
+
+![](images/fig_6_2.webp){width=500 fig-align="center"}
+
+![](images/fig_6_3.webp){width=500 fig-align="center"}
+
+### Korporátní dluhopisy
+
+- Korporátní dluhopisy, konkrétně dluhopisy Baa, vykazovaly výkonnostní vzorce podobné
+T-bondům v období čtyř dekád od roku 1980 do roku 2020.
+- Dluhopisy Baa, které nejsou bez rizika nesplacení a vyžadují rizikovou prémii,
+vykázaly průměrný roční výnos 12,07 % od roku 1980 do roku 1999 a prémii 2,30 % oproti
+T-bondům od roku 2000 do roku 2020.
+
+![](images/fig_6_4.webp){width=500 fig-align="center"}
+
+![](images/fig_6_5.webp){width=500 fig-align="center"}
+
+- Prémie získané z dluhopisů Baa významně zlepšují investiční výkonnost v průběhu času.
+Například investice 100 dolarů do portfolia dluhopisů Baa v roce 1980 by byla v roce
+2020 v hodnotě 4 506 dolarů, což předčilo koncovou hodnotu 1 931 dolarů pro podobné
+portfolio T-bondů.
+
+![](images/fig_6_6.webp){width=500 fig-align="center"}
