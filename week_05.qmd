@@ -324,9 +324,9 @@ který byl 11,82 %.
 | US T-bills            |                                     3.94%|                                    3.39%|
 | Inflation             |                                     2.93%|                                    1.76%|
 
-![](images/fig_6_8.webp){width=800 fig-align="center"}
+![](images/fig_6_8.png){width=800 fig-align="center"}
 
-![](images/fig_6_7.webp){width=600 fig-align="center"}
+![](images/fig_6_7.png){width=600 fig-align="center"}
 
 - Kalkulačky pro nalezení výnosů ve vybraných obdobích pro americké akcie,
 dluhopisy a inflaci.

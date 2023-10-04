@@ -325,9 +325,9 @@ nadprůměrnou roční inflační sazbou 4,28 %.
 - Mezi roky 2000 a 2020, kdy se inflace zpomalila a úrokové sazby byly obecně nižší,
 byly výnosy T-bondů také průměrně nižší, a to 5,77 %.
 
-![](images/fig_6_2.webp){width=500 fig-align="center"}
+![](images/fig_6_2.png){width=500 fig-align="center"}
 
-![](images/fig_6_3.webp){width=500 fig-align="center"}
+![](images/fig_6_3.png){width=500 fig-align="center"}
 
 ### Korporátní dluhopisy
 
@@ -337,13 +337,13 @@ T-bondům v období čtyř dekád od roku 1980 do roku 2020.
 vykázaly průměrný roční výnos 12,07 % od roku 1980 do roku 1999 a prémii 2,30 % oproti
 T-bondům od roku 2000 do roku 2020.
 
-![](images/fig_6_4.webp){width=500 fig-align="center"}
+![](images/fig_6_4.png){width=500 fig-align="center"}
 
-![](images/fig_6_5.webp){width=500 fig-align="center"}
+![](images/fig_6_5.png){width=500 fig-align="center"}
 
 - Prémie získané z dluhopisů Baa významně zlepšují investiční výkonnost v průběhu času.
 Například investice 100 dolarů do portfolia dluhopisů Baa v roce 1980 by byla v roce
 2020 v hodnotě 4 506 dolarů, což předčilo koncovou hodnotu 1 931 dolarů pro podobné
 portfolio T-bondů.
 
-![](images/fig_6_6.webp){width=500 fig-align="center"}
+![](images/fig_6_6.png){width=500 fig-align="center"}
