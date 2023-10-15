@@ -1,0 +1,139 @@
+---
+title: "Dluhopisy a jejich oceňování"
+format:
+  revealjs:
+    center: true
+    incremental: true
+    embed-resources: true
+---
+
+# Charakteristika dluhopisů
+
+## Co je to dluhopis?
+
+- kontrakt mezi věřitelem a dlužníkem
+- externí zdroj financování
+
+## Základní terminologie I
+
+- jmenovitá hodnota (jistina, par value, face value)
+- úroková (kupónová) sazba
+- kupónová platba
+- datum splatnosti
+- yield to maturity
+
+# Typy dluhopisů 
+
+## Typy dluhopisů I
+
+- státní dluhopisy
+- korporátní dluhopisy
+- junk bonds
+
+## Typy dluhopisů II
+
+- zero-coupon bond (diskontovaný dluhopis)
+- inflation protected securities
+- convertible bond
+
+## Typy dluhopisů III
+
+- callable bond
+- putable bond
+- Eurodollar bonds
+
+# Vliv úrokových sazeb
+
+## 
+
+![](../images/fig_4_2.png){fig-align="center"}
+
+# Oceňování Dluhopisů
+
+## Obecný postup
+
+1. určení peněžních toků
+2. diskontování
+3. součet PV
+
+## Oceňování dluhopisů - Vzorec
+$$
+\text{price} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{CF_n}{(1+r)^n}
+$$
+
+::: {.fragment}
+$$
+\text{price} = \sum^n_{t=1} \frac{CF_t}{(1+r)^t}
+$$
+:::
+
+## Využití anuity
+
+$$
+PV = C \times \frac{1 - (1 + r)^{-n}}{r} + FV \times (1 + r)^{-n}
+$$
+
+## Různá frekvence kupónových plateb
+
+## Vztah diskontní a kupónové sazby
+
+- YTM = kupónová sazba $\rightarrow$ par value bonds
+- YTM > kupónová sazba $\rightarrow$ discount bonds
+- YTM < kupónová sazba $\rightarrow$ premium bonds
+
+# Výnosová křivka (yield curve)
+
+##
+ 
+![](../images/fig_4_4.png){fig-align="center"}
+
+## 
+
+![](../images/fig_4_6.png){width=500 fig-align="center"}
+
+## 
+
+![](../images/fig_4_7.png){width=500 fig-align="center"}
+
+# Rizika spojená s dluhopisy
+
+## Typy rizik
+
+- riziko nesplacení (kreditní riziko)
+- riziko úrokových sazeb
+- riziko likvidity
+- riziko předčasného splacení
+- měnové riziko
+- politické riziko
+
+## Rating dluhopisů
+
+- hodnocení kvality ratingovou agenturou
+- hlavně riziko nesplacení
+- [Ratingové agentury](https://www.forbes.com/advisor/investing/bond-ratings/)
+
+# Historický vývoj dluhopisů
+
+## Státní dluhopisy USA
+
+##
+
+![](../images/fig_6_2.png){fig-align="center"}
+
+##
+
+![](../images/fig_6_3.png){fig-align="center"}
+
+## Korporátní dluhopisy
+
+##
+
+![](../images/fig_6_4.png){fig-align="center"}
+
+##
+
+![](../images/fig_6_5.png){fig-align="center"}
+
+##
+
+![](../images/fig_6_6.png){fig-align="center"}
