@@ -303,7 +303,7 @@ vyhlídky na růst.
 prodán na sekundářním trhu.
 - Pokud se úrokové sazby významně změní, investor musí upravit cenu svého dluhopisu, aby
 ho byl schopen prodat na sekundárním trhu.
-- Pokud invesetor drží dluhopis do splatnosti, jeho zisk tvoří pouze úřok a kapitálový
+- Pokud invesetor drží dluhopis do splatnosti, jeho zisk tvoří pouze úrok a kapitálový
 výnos je nulový.
 
 ## Historický vývoj dluhopisů
