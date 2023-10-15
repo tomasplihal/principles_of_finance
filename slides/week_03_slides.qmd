@@ -1,0 +1,168 @@
+---
+title: "Časová hodnota peněz"
+format:
+  revealjs:
+    center: true
+    incremental: true
+    embed-resources: true
+---
+
+# Úvod
+
+## Časová hodnota peněz
+
+- peníze dnes $>$ peníze v budoucnosti
+- Důvody?
+  - investování
+  - riziko
+  - spotřeba
+
+## Současná hodnota
+
+- hodnota peněz dnes
+- PV, present value
+
+## Budoucí hodnota
+
+- hodnota peněz v budoucnosti
+- FV, future value
+
+# Budoucí hodnota
+
+## Jednoduché úročení
+
+- úročí se pouze jistina
+
+::: {.fragment}
+$$ FV = PV \times [1 + (r \times T)] $$
+:::
+
+## Složené úročení
+
+- úročí se jistina a všechny získané úroky
+
+::: {.fragment}
+$$ FV = PV \times (1 + r)^n $$
+:::
+
+# Současná hodnota
+
+## Současná hodnota
+
+- diskontování
+- oceňování investic
+
+::: {.fragment}
+$$ PV = \frac{FV}{(1+r)^n} $$
+:::
+
+# Kratší časové intervaly
+
+## Kratší časové intervaly - FV 
+- $m$ je počet úrokových období za rok
+- $n$ je počet let
+
+::: {.fragment}
+$$ FV = PV \times (1 + r)^n $$ 
+:::
+
+::: {.fragment}
+$$ \big\downarrow $$ 
+:::
+
+::: {.fragment}
+$$ FV = PV \times (1 + \frac{r}{m})^{n \times m} $$
+:::
+
+## Kratší časové intervaly - PV 
+
+- $m$ je počet úrokových období za rok
+- $n$ je počet let
+
+::: {.fragment}
+$$ PV = \frac{FV}{(1+r)^n} $$
+:::
+
+::: {.fragment}
+$$ \big\downarrow $$ 
+:::
+
+::: {.fragment}
+$$ PV = \frac{FV}{(1 + \frac{r}{m})^{n \times m}} $$ 
+:::
+
+# Anuita
+
+## Anuita
+
+- série peněžních toků
+- stejná velikost
+- pravidelnost
+
+## 2 typy anuity
+
+- ordinary annuity $\times$ annuity due
+- anuita běžná $\times$ anuita splatná
+- anuita polhůtní $\times$ anuita předlhůtní
+- tok na konci $\times$ tok na začátku
+
+## Budoucí hodnota anuity
+
+- běžná anuita 
+
+::: {.fragment}
+$$ \text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r} $$
+:::
+
+- splatná anuita
+
+::: {.fragment}
+$$
+\text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r} \times (1 + r)
+$$
+:::
+
+## Současná hodnota anuity
+
+- běžná anuita 
+
+::: {.fragment}
+$$ \text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r} $$
+:::
+
+- splatná anuita
+
+::: {.fragment}
+$$ \text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r} \times (1+r) $$
+:::
+
+## Perpetuita
+
+- typ anuity
+- nekonečná série peněžních toků
+- první platba na konci prvního období
+- konstantní platby
+
+## Současná hodnota perpetuity
+
+- $C$ je konstantní peněžní tok
+- $r$ je diskontní sazba
+
+::: {.fragment}
+$$ PV = \frac{C}{r} $$
+:::
+
+# Jak dlouho trvá naspořit milion?
+
+## Jak dlouho trvá naspořit milion?
+
+- [online kalkulačka](https://www.calculator.net/interest-calculator.html)
+- jednorázová investice
+- pravidelné investice
+- vliv frekvence úročení
+
+# Shrnutí
+
+## Nejdůležitější vzorec
+
+$$ FV = PV \times (1 + r)^n $$
