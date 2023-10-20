@@ -1,1 +1,299 @@
-# Týden
+# Jak přemýšlet o investování
+
+::: {.callout-note}
+# Studijní materiály
+
+- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
+University. <https://openstax.org/details/books/principles-finance>
+  - Chapter 15 - How to Think about Investing
+:::
+
+**Výstupy z učení:**
+
+1. Rozumět pojmu teorie efektivních trhů, operativní efektivnosti a informační
+efektivnosti na trzích.
+2. Pochopit základní principy investování, včetně role a typů tržních indexů.
+3. Znát metody hodnocení rizika a výnosu pro investice.
+4. Získat dovednosti k identifikaci a používání ukazatelů výkonnosti, jako je Sharpe
+Ratio.
+5. Naučit se činit informovaná investiční rozhodnutí na základě analytických nástrojů a
+teorií.
+
+## Teorie efektivních trhů
+
+- Efektivní trhy rychle a nezaujatě reaguje na nové informace, ceny se rychle a přesně
+přizpůsobují novým informacím, jsou tam nízké transakční náklady, rychlé a bezproblémové
+vypořádání obchodů atd.
+- Na efektivním trhu by měly být větší výkyvy v cenách způsobeny pouze neočekávanými
+zprávami (očekávané zprávy jsou již zahrnuty v cenách).
+- Na efektivních trzích je obtížné pravidelně nacházet akcie, které jsou špatně oceněné,
+a dosahovat vyšších výnosů než trh.
+- Odchylky od ideálních cen se objevují, ale náhodně a nelze je předpovídat (náhodná
+procházka, random walk theory).
+
+### Informační efektivita
+
+- Teorie efektivních trhů odkazuje primárně na informační efektivitu.
+- Informační efektivita odkazuje na rychlost, s jakou se v cenách akcií odráží
+nejnovější dostupné informace.
+- Pokud jsou trhy efektivní, je těžké nebo nemožné dosáhnout konzistentně vyšších než
+průměrných výnosů.
+- Existují i další formy efektivity jako například operační efektivita se vztahuje na
+rychlost a přesnost zpracování nákupního nebo prodejního příkazu za nejlepší dostupnou
+cenu.
+- Existují tři formy informační efektivnosti trhu:
+
+1. **Slabá efektivnost**
+    - Veškeré historické informace o tržních cenách a obchodech jsou plně odraženy v
+    aktuálních cenách.
+    - Tzn. technická analýza nelze použít k překonání trhu.
+2. **Středně-silná efektivnost**
+    - Všechny veřejně dostupné informace jsou promítnuty v cenách.
+    - Nejen historické ceny, ale všechna dostupná data např. z finančních výkazů,
+    ekonomické faktory, atd.
+    - Tzn. technická ani fundamentální analýze nelze použít k překonání trhu.
+3. **Silná efektivnost**
+    - Všechny veřejné i neveřejné informace jsou zohledněny v současných cenách.
+    - Tzn. nelze žádným způsobem překonat trh, ani s využítím interních informací
+    (insider trading).
+
+## Finanční indexy
+
+- Finanční index je statistické vyjádření hodnoty vybrané části trhu.
+- Vypočítává se pomocí váženého průměru vybraných aktiv.
+- Indexy mohou sledovat akcie, dluhopisy, komodity, atd. nebo jejich různé kombinace.
+- Index má přesně daná pravidla, jaká aktiva do něho vstupují a jakou mají v indexu
+váhu.
+- Účelem indexů je např.:
+  - **Benchmarking**: Měří výkonnost trhu pro srovnání s dalšími investicemi.
+  - **Investice**: Slouží jako podkladová aktiva pro indexové fondy a ETF.
+  - **Analýza**: Pomáhá při analýze vývoje trhu a sentimentu investorů (makroekonomický
+  ukazatel).
+
+### Výpočet indexů
+
+1. **Price-Weighted**:
+    - Cenově vážený index.
+    - Vypočítá se jako průměr cen vybraných akcií.
+    - Akcie s vyšší cenou mají větší vliv.
+    - *Příklad: Dow Jones Industrial Average*
+2. **Market Capitalization-Weighted**
+    - Index vážený podle tržní kapitalizace.
+    - $\text{Tržní kapitalizace} = \text{cena akcie} \times \text{počet existujících
+    akcií}
+    - *Příklad: S&P 500*
+3. **Equal-Weighted**:
+    - Stejná váha pro všechny akcie.
+    - Všechny akcie mají stejný dopad.
+    - *Příklad: MSCI World Equal Weighted*
+
+### Hlavní akciové indexy
+
+1. **Dow Jones Industrial Average (DJIA)**
+     - Zahrnuje 30 velkých amerických společností.
+     - Cenově vážený.
+     - Založen: 1896
+2. **S&P 500**
+     - 500 amerických akcií s největší tržní kapitalizací.
+     - Vážený podle tržní kapitalizace.
+     - Založen: 1957
+3. **NASDAQ Composite**
+     - Téměř všechny akcie na burze Nasdaq (kolem 3000 akcií).
+     - Zaměřený na společnosti z oblasti informačních technologií.
+     - Vážený podle tržní kapitalizace.
+     - Založen: 1971
+4. **FTSE 100**
+     - 100 největších britských společností.
+     - Vážený podle tržní kapitalizace.
+     - Založen: 1984
+5. **Nikkei 225**
+     - 225 velkých japonských společností.
+     - Cenově vážený.
+     - Založen: 1950
+
+## Podílové fondy a ETF
+
+- **Podílový fond**: Profesionálně spravovaný investiční fond, který sdružuje peníze od
+více investorů za účelem nákupu cenných papírů, jako jsou akcie, dluhopisy atd.
+- **Exchange-Traded Fund (ETF)**: Typ investičního fondu obchodovaného na burzách,
+podobně jako. Obvykle sleduje podkladový index.
+- Charakteristika podílového fondu:
+  - profesionální správa portfolioa
+  - aktivní řízení portfolia umožňuje reagovat na aktuální situaci
+  - velká diverzifikace
+  - automatické investování
+  - emituje podílové listy
+- Odlišnosti ETF:
+  - většinou pasivní řízení portfolia (sleduje index)
+  - nemůže měnit strategii podle aktuální situace, ale generuje výnosy zvoleného indexu
+  - nižší poplatky
+  - emituje akcie
+  - vysoká likvidita a transparentnost
+  - nutnost kupovat akcie na burze
+
+## Měření výnosu
+
+- Realizovaný výnos je změna hodnoty portfolia za určité časové období.
+- Potřeba zohlednit dividendy a případně štěpení akcií, proto se nejčastěji používá
+Adjusted Close Price.
+- Výnos lze rozdělit na kapitálový a dividendový:
+  - **Kapitálový výnos** představuje změnu ceny daného aktiva.
+  - **Dividendový výnos** tvoří získané dividendy.
+  - **Celkový výnos** je součet kapitálového a dividendového výnosu.
+  
+- Příklad: Nákup akcie za \$128,74 a prodej po jednom roce za \$176,53. Za dobu držení
+akcie byly vyplaceny dividendy ve výši \$2,68.
+$$
+\text{Kapitálový výnos} = 176,53 - 128,74 = 47,79
+$$
+
+$$
+\text{Dividendový výnos} = 2,68
+$$
+
+$$
+\text{Celkový výnos} = 2,68 + 47,79 = 50,47
+$$
+  
+- Návratnost se většinou vyjádřuje v procentech, aby se usnadnilo srovnání.
+
+$$
+\text{Celkový výnos v procentech} = \frac{2,68}{128,74} + \frac{47,79}{128,74} = 0,0208
++ 0,3712 = 0,3920 = 39,20\%
+$$
+
+### Efektivní roční výnos
+
+- Efektivní roční výnos (effective annual rate, EAR) vyjadřuje výnosnost investice pokud
+by byla držena jeden rok.
+- Důležité pro srovnání různých investic.
+
+$$
+\text{EAR} = (1 + \text{HPR})^m - 1
+$$
+
+- $\text{HPR}$ je výnos za dané časové období (holding priod return) a $m$ je počet
+těchto období v jednom roce.
+
+#### Příklady
+
+- Výnos 25% za 2 roky:
+$$
+\text{EAR} = (1 + 0.25)^{\frac{1}{2}} - 1 = 11.80\%
+$$
+- Výnos 10% za  6  měsíců:
+$$
+\text{EAR} = (1 + 0.10)^{\frac{12}{6}} - 1 = 20.89\%
+$$
+- Výnos 1% za 15 dní:
+$$
+\text{EAR} = (1 + 0.01)^{\frac{365}{15}} - 1 = 27.11\%
+$$
+
+### Průměrný roční výnos
+
+- Roční data SPY upravená o dividendy a splity stažená z
+[Macrotrends](https://www.macrotrends.net/stocks/charts/SPY/spdr-s-p-500-etf/stock-price-history).
+
+| Rok  | Cena     | Roční výnos |
+|:----:|:--------:|:-----------:|
+| 2022 | 378.1934 | -18.17%     |
+| 2021 | 462.1801 | 28.74%      |
+| 2020 | 358.9909 | 18.37%      |
+| 2019 | 303.2705 | 31.22%      |
+| 2018 | 231.1130 | -4.56%      |
+| 2017 | 242.1472 | 21.70%      |
+| 2016 | 198.9700 | 12.00%      |
+| 2015 | 177.6494 | 1.25%       |
+| 2014 | 175.4526 | 13.46%      |
+| 2013 | 154.6353 | 32.31%      |
+| 2012 | 116.8764 | -           |
+
+- Průměrný roční výnos lze spočítat pomocí EAR a výnosu za celé období:
+
+$$
+\text{EAR} = (1 + \frac{378.1934 - 116.8764}{116.8724})^{\frac{1}{11}} - 1 = 11.27\%
+$$
+
+- Stejného výsledku lze dosáhnout pomocí geometrického průměru ročních výnosů:
+$$
+\text{Geometric Average} = \left( (1 - 0.1817) \times (1 + 0.2874) \times \dots \times
+(1 + 0.3231) \right)^{1/10} - 1 = \left(2.9273\right)^{1/10} - 1 = 11.66\%
+$$
+
+- Aritmetický průměr ročních výnosů však dává odlišný výsledek, který bude zpravidla
+vyšší:
+$$
+\text{Arithmetic Average} = \frac{-18.17\% + 28.74\% + \dots + 32.31\%}{10} =
+\frac{135.52\%}{10} = 13.552\%
+$$
+
+- Aritmetický průměr vychází vyšší než geometrický, protože nezohledňuje složené
+úročení.
+- Aritmetický průměr vyjadřuje, kolik jste vydělali v typickém roce.
+- Geometrický průměr ukazuje, kolik jste skutečně vydělali za rok v průměru při držení
+dané investice.
+
+## Měření rizika
+
+- Riziko se týká nejistoty dosažení očekávaného výnosu.
+- Nejčastěji se vyjadřuje jako variabilita výnosů vzhledem k průměru (variance,
+směrodatná odchylka, atd.).
+- Vyšší odchylky od průměru znamenají vyšší riziko, protože je předpověď budoucího
+vývoje složitější a méně přesná.
+- Variance $\rightarrow$ $\sigma^2 = \frac{\sum^n_{t=1} (R_t - \overline{R})^2}{n-1}$
+  - $R_t$ $\rightarrow$ výnos v čase $t$
+  - $\overline{R}$ $\rightarrow$ průměrný výnos
+  - $n$ $\rightarrow$ počet pozorování
+- Směrodatná odchylka $\rightarrow$ odmocnina z variance $\rightarrow$ $\sigma =
+\sqrt{\sigma^2}$
+- Pokud mají výnosy normální rozložení pravděpodobnosti, tak platí (přibližně):
+  - 68 % pozorování leží v rozmezí jedné směrodatné odchylky od průměru.
+  - 95 % pozorování leží v rozmezí jedné směrodatné odchylky od průměru.
+  - 99,7 % pozorování leží v rozmezí jedné směrodatné odchylky od průměru.
+- Další ukazatele rizika jsou např. max. drawdown, value-at-risk, expected shortfall,
+atd.
+
+## Diverzifikace
+
+- Diverzifikace znamená rozložení portfolia do různých investic za účelem snížení
+rizika.
+- Využívá nedokonalé korelace aktiv v portfolium.
+- Různá aktiva reagují na tržní podmínky různě, tzn. pokud jedno aktivum klesá, jiné
+může růst.
+- Celkový benefit získaný diverzifikací záleží na korelaci jednotlivých aktiv.
+- S roztoucím množstvím aktiv klesá přínos dodatečného aktiva k diverzifikaci portfolia
+(přibližně po 20 až 30 akciích je již dodatečný efekt diverzifikace velmi malý).
+- Diverzifikací se nelze zbavit všech rizik.
+- **Nesystematické riziko** (specifické, jedinečné riziko) $\rightarrow$ lze odstranit
+diverzifikací.
+- **Systematické riziko** (tržní riziko) $\rightarrow$ nelze odstranit diverzifikací.
+
+## Sharpe Ratio
+
+- Poměrový ukazatel pro srovnání různých investic.
+- Sharpe Ratio porovnáná výnos investice s ohledem na její riziko měřené směrodatnou
+odchylkou.
+- Poskytuje komplexní pohled na profil rizika a výnosů investice.
+- Vyšší Sharpe Ratio značí atraktivnější investici.
+- $\text{Sharpe ratio} = \frac{R_p - R_f}{\sigma_p}$
+  - $R_p$ $\rightarrow$ výnos portfolia
+  - $R_f$ $\rightarrow$ bezriziková úroková sazba
+  - $\sigma_p$ $\rightarrow$ směrodatná odchylka výnosů (nad bezrizikovou sazbou)
+
+### Příklad
+
+| **Datum**  | **Cena akcie**     | **Výnos**     | **Odchylka od průměru**                  | **Odchylka od průměru na druhou** |
+|:----------:|:------------------:|:-------------:|:----------------------------------------:|:---------------------------------:|
+| 2022-01-31 | 446.572021         | NA            |                                          |                                   |
+| 2022-02-28 | 433.672150         | -0.028886     | -0.017685                                | 0.000313                          |
+| 2022-03-31 | 449.959442         | 0.037557      | 0.048759                                 | 0.002377                          |
+| 2022-04-30 | 410.159393         | -0.088453     | -0.077251                                | 0.005968                          |
+| 2022-05-31 | 411.458649         | 0.003168      | 0.014369                                 | 0.000206                          |
+| 2022-06-30 | 377.204315         | -0.083251     | -0.072049                                | 0.005191                          |
+| 2022-07-31 | 412.154053         | 0.092655      | 0.103856                                 | 0.010786                          |
+|            |                    |               |                                          |                                   |
+|            | **Průměrný výnos** | **-0.011202** | **Součet odchylek od průměru na druhou** | **0.024842**                      |
+|            |                    |               | **Variance**                             | **0.004968**                      |
+|            |                    |               | **Směrodatná odchylka**                  | **0.070486**                      |
+|            |                    |               | **Sharpe ratio (risk-free = 0)**         | **-0.158922**                     |
