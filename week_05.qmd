@@ -11,13 +11,12 @@ University. <https://openstax.org/details/books/principles-finance>
 
 **Výstupy z učení:**
 
-1. Definovat a vypočítat ukazatele P/E a P/B a pochopit jejich použití při určování
+1. Umět definovat akcie a jejich charakteristiky.
+2. Rozumět dividendám a jednotlivým typům akcií.
+3. Definovat a vypočítat ukazatele P/E a P/B a pochopit jejich použití při určování
 relativního ocenění společnosti.
-2. Porozumět modelu s konstantním růstem dividend, poznat jeho výhody a nevýhody.
-3. Znát model diskontovaných peněžních toků (DCF) a jeho aplikace.
-4. Rozlišovat preferované a kmenové akcie, včetně jejich ocenění.
-5. Rozumět pojmu teorie efektivních trhů, operativní efektivnosti a informační
-efektivnosti na trzích.
+4. Porozumět dividendově diskontním modelům a modelům diskontovaného cash flow.
+5. Získat základní přehled o historické výkonnosti trhů.
 
 ## Investování do akcií
 
