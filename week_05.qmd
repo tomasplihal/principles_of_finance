@@ -102,7 +102,7 @@ ve stejném odvětví.
 - Vysoké P/E může naznačovat, že společnost je nadhodnocena, zatímco nízké P/E může
 signalizovat podhodnocení a investiční příležitosti.
 - Prohlédněte si 90letý historický průměr P/E pro index S&P 500
-<https://openstax.org/r/90-year_historical_average_P/E>
+<https://www.multpl.com/s-p-500-pe-ratio>
 
 ### Poměr cena/účetní hodnota (P/B, Price-to-book ratio)
 
@@ -317,7 +317,7 @@ Small-Cap dosáhl 12,13 %, ve srovnání s průměrným výnosem indexu Wilshire
 který byl 11,82 %.
 
 | Asset Class           | Nominal Average Annual Returns 1981–2020 | Standard Deviation of Returns 1981–2020 |
-|-----------------------|-----------------------------------------:|----------------------------------------:|
+|:----------------------|:----------------------------------------:|:---------------------------------------:|
 | Large company stocks  |                                    12.64%|                                   16.06%|
 | Baa bonds             |                                    10.34%|                                    7.67%|
 | 10-year T-bonds       |                                     8.21%|                                    9.92%|
@@ -346,34 +346,3 @@ portfolia na 432 411 dolarů. Pokud by zůstal mimo trh během 10 nejlepších d
 zůstatek by klesl na pouhých 313 377 dolarů, což je méně než polovina výnosu z
 celého období.
 :::
-
-## Teorie efektivních trhů
-
-- Efektivní trhy jsou ty, kde jsou náklady minimální, ceny aktuální a spravedlivé pro
-všechny obchodníky.
-
-### Informační Efektivita
-
-- Teorie efektivních trhů odkazuje primárně na informační efektivitu.
-- Informační efektivita odkazuje na rychlost, s jakou se v cenách akcií odráží
-nejnovější dostupné informace.
-- Pokud jsou trhy efektivní, je těžké nebo nemožné dosáhnout konzistentně vyšších než
-průměrných výnosů.
-- Existují i další formy efektivity jako například operační efektivita se vztahuje na
-rychlost a přesnost zpracování nákupního nebo prodejního příkazu za nejlepší dostupnou
-cenu.
-- Existují tři formy informační efektivnosti trhu:
-
-1. **Slabá efektivnost**
-    - Veškeré historické informace o tržních cenách a obchodech jsou plně odraženy v
-    aktuálních cenách.
-    - Tzn. technická analýza nelze použít k překonání trhu.
-2. **Středně-silná efektivnost**
-    - Všechny veřejně dostupné informace jsou promítnuty v cenách.
-    - Nejen historické ceny, ale všechna dostupná data např. z finančních výkazů,
-    ekonomické faktory, atd.
-    - Tzn. technická ani fundamentální analýze nelze použít k překonání trhu.
-3. **Silná efektivnost**
-    - Všechny veřejné i neveřejné informace jsou zohledněny v současných cenách.
-    - Tzn. nelze žádným způsobem překonat trh, ani s využítím interních informací
-    (insider trading).
