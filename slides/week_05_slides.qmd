@@ -1,0 +1,182 @@
+---
+title: "Akcie a jejich oceňování"
+format:
+  revealjs:
+    center: true
+    incremental: true
+    embed-resources: true
+---
+
+## Co je to akcie?
+
+- vlastnický podíl ve firmě
+
+## Typy akcií
+
+## Kmenové akcie (common stock):
+
+- vlastnický podíl
+- řízení a rozhodování
+- zisk (dividendy)
+- likvidační zůstatek
+
+## Prioritní akcie (preferred stock):
+
+- NEposkytuje vlastnické právo
+- přednostní právo na zisky a majetek společnosti
+- fixní dividenda
+
+## Dividendy
+
+- podíl na zisku
+- cash dividend
+- stock dividend
+- dividendová politika
+
+## Stock buyback
+
+## Stock split
+
+## Rizika investování do akcií
+
+- akcie vs. dluhopisy
+
+# Poměrové ukazatele
+
+## Poměr cena/zisk 
+
+- P/E, Price-earnings ratio
+
+::: {.fragment}
+$$
+\text{P/E} = \frac{\text{Cena za akcii}}{\text{Zisk na akcii}}
+$$
+:::
+
+- [Historické P/E pro index S&P 500](https://www.multpl.com/s-p-500-pe-ratio>)
+
+## Poměr cena/účetní hodnota
+
+- P/B, Price-to-book ratio
+
+::: {.fragment}
+$$
+\text{P/B} = \frac{\text{Cena za akcii}}{\text{Účetní hodnota na akcii}}
+$$
+:::
+
+# Dividendové diskontní modely
+
+## Dividendový diskontní model (DDM)
+
+- PV budoucích dividend
+- stabilní vývoj dividend
+
+## Gordonův růstový model
+
+- $D_0 \dots$ současná roční dividenda
+- $r \dots$ diskontní sazba
+- $g \dots$ tempo růstu dividend
+
+::: {.fragment}
+$$
+\text{Hodnota akcie} = \frac{D_0 (1+g)}{r - g} = \frac{D_1}{r - g}
+$$
+:::
+
+## DDM s nulovým růstem
+
+- dividendy stejné navždy
+
+::: {.fragment}
+$$
+\text{Hodnota akcie} = \frac{\text{Roční dividendy}}{\text{Požadovaná míra výnosu}} = \frac{D}{r}
+$$
+:::
+
+## DDM s proměnným růstem dividend
+
+## Výhody a omezení DDM
+
+- (-) historie dividend
+- (+) jednoduchý vzorec
+
+# Modely diskontovaného cash flow
+
+## Model diskontovaného cash flow (DCF)
+
+- když nejsou dividendy
+- PV očekávaných cash flow
+
+## Model diskontovaného cash flow (DCF)
+
+- $CF_n \dots$ očekávané cash flow
+- $r \dots$ diskontní sazba
+- $n \dots$ je počet období
+
+::: {.fragment}
+$$
+\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{CF_n}{(1+r)^n}
+$$
+:::
+
+## Nekonečné cash flow
+
+::: {.fragment}
+$$
+\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{\frac{TFC}{r-g}}{(1+r)^{n-1}}
+$$
+:::
+
+## Výhody a omezení modelu DCF
+
+- (+) dividendy netřeba
+- (+) cash flow přesnější než zisk
+- (-) manipulace s cash flow
+
+# Prioritní akcie
+
+## Prioritní akcie
+
+- prioritní vs. kmenové
+- kumulativní vs. nekumulativní
+- ocenění akcie:
+
+::: {.fragment}
+$$
+\text{Hodnota akcie} = \frac{\text{Dividenda}}{\text{Požadovaná míra výnosu}}
+$$
+:::
+
+# Výkonnost akcií v USA
+
+| Asset Class           | Returns 1981–2020 | S.D.  |
+|:---------------------:|:-----------------:|:-----:|
+| Large company stocks  |             12.64%| 16.06%|
+| Baa bonds             |             10.34%|  7.67%|
+| 10-year T-bonds       |              8.21%|  9.92%|
+| US T-bills            |              3.94%|  3.39%|
+| Inflation             |              2.93%|  1.76%|
+
+##
+
+![](../images/fig_6_8.png){fig-align="center"}
+
+##
+
+![](../images/fig_6_7.png){fig-align="center"}
+
+## Kalkulačky historických výnosů
+
+- [Americké akcie](https://www.mindfullyinvesting.com/articles/6-what-to-invest-in/6-1-historical-returns-and-risks/)
+- [Globální akciové trhy](https://www.mindfullyinvesting.com/historical-returns-of-global-stocks/)
+
+## Vyplatí se časovat trh?
+
+- 1980-2020
+- investice \$10 000 do S&P 500
+- výnos **\$697 421**
+- vynechat 5 nejlepších dní:
+- výnos **\$432 411**
+- vynechat 10 nejlepších dní:
+- výnos **\$313 377**
