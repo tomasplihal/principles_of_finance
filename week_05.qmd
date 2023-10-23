@@ -75,7 +75,7 @@ buyback).
 
 ## Poměrové ukazatele
 
-- Investoři používají různé metody pro hodnocení společností a oceňvání jejich akcií.
+- Investoři používají různé metody pro hodnocení společností a oceňování jejich akcií.
 - Často se jedná o studium finančních výkazů a výpočet finančních ukazatelů.
 
 ### Poměr cena/zisk (P/E, Price-earnings ratio)
