@@ -1,0 +1,132 @@
+---
+title: "Jak přemýšlet o investování"
+format:
+  revealjs:
+    center: true
+    incremental: true
+    embed-resources: true
+---
+
+# Teorie efektivních trhů
+
+## Teorie efektivních trhů
+
+- informační efektivita
+- reakce na nové informace
+
+## Formy informační efektivnosti
+
+- **Slabá efektivnost**
+    - všechny historické informace
+- **Středně-silná efektivnost**
+    - všechny veřejně dostupné informace
+- **Silná efektivnost**
+    - všechny veřejné i neveřejné informace
+
+# Finanční indexy
+
+## Finanční index
+
+- reprezentuje trh
+- vážený průměr
+
+## Využití indexů
+
+- benchmarking
+- investice
+- analýza
+
+## Výpočet indexů
+
+- Price-Weighted
+- Market Capitalization-Weighted
+- Equal-Weighted
+
+## Hlavní akciové indexy
+
+- Dow Jones Industrial Average (DJIA)
+- S\&P 500
+- NASDAQ Composite
+- FTSE 100
+- Nikkei 225
+
+# Podílové fondy a ETF
+
+## Podílový fond
+
+- profesionální správa
+- aktivní řízení
+- diverzifikace
+- automatické investování
+- podílové listy
+
+## Exchange Traded Fund (ETF)
+
+- pasivní řízení
+- nízké poplatky
+- likvidita a transparentnost
+- emituje akcie
+
+# Měření výnosu
+
+## Měření výnosu
+
+- adjusted close price
+- **Druhy výnosu:**
+  - kapitálový
+  - dividendový
+  - celkový
+
+## Efektivní roční výnos
+
+- srovnání investic
+- $\text{HPR}$ je výnos za dané časové období
+- $m$ je počet těchto období v jednom roce
+
+::: {.fragment}
+$$
+\text{EAR} = (1 + \text{HPR})^m - 1
+$$
+:::
+
+## Průměrný roční výnos
+
+- aritmetický $>$ geometrický
+- aritmetický $\rightarrow$ průměr v jednom roce
+- geometrický $\rightarrow$ průměr při buy-and-hold
+
+## Měření rizika
+
+- nejistota budoucích výnosů
+- směrodatná odchylka nebo variance
+
+::: {.fragment}
+$$
+\sigma^2 = \frac{\sum^n_{t=1} (R_t - \overline{R})^2}{n-1}
+$$
+:::
+
+## Diverzifikace
+
+- různé investice $\rightarrow$ snížení rizika
+- využívá nedokonalé korelace
+- klesající mezní užitek
+
+## Diverzifikace
+
+- nelze se zbavit všech rizik
+- **Nesystematické riziko** (specifické, jedinečné riziko)
+- **Systematické riziko** (tržní riziko)
+
+## Sharpe Ratio
+
+- srovnání různých investic
+- výnos za podstoupené riziko
+
+::: {.fragment}
+$$
+\text{Sharpe ratio} = \frac{R_p - R_f}{\sigma_p}
+$$
+:::
+
+# Shrnutí
