@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Základy financí - 6&nbsp; Týden</title>
+<title>Základy financí - 6&nbsp; Jak přemýšlet o investování</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,6 +62,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -74,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_06.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Týden</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_06.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -177,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_06.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Týden</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -228,14 +230,40 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#teorie-efektivních-trhů" id="toc-teorie-efektivních-trhů" class="nav-link active" data-scroll-target="#teorie-efektivních-trhů"><span class="header-section-number">6.1</span> Teorie efektivních trhů</a>
+  <ul class="collapse">
+  <li><a href="#informační-efektivita" id="toc-informační-efektivita" class="nav-link" data-scroll-target="#informační-efektivita"><span class="header-section-number">6.1.1</span> Informační efektivita</a></li>
+  </ul></li>
+  <li><a href="#finanční-indexy" id="toc-finanční-indexy" class="nav-link" data-scroll-target="#finanční-indexy"><span class="header-section-number">6.2</span> Finanční indexy</a>
+  <ul class="collapse">
+  <li><a href="#výpočet-indexů" id="toc-výpočet-indexů" class="nav-link" data-scroll-target="#výpočet-indexů"><span class="header-section-number">6.2.1</span> Výpočet indexů</a></li>
+  <li><a href="#hlavní-akciové-indexy" id="toc-hlavní-akciové-indexy" class="nav-link" data-scroll-target="#hlavní-akciové-indexy"><span class="header-section-number">6.2.2</span> Hlavní akciové indexy</a></li>
+  </ul></li>
+  <li><a href="#podílové-fondy-a-etf" id="toc-podílové-fondy-a-etf" class="nav-link" data-scroll-target="#podílové-fondy-a-etf"><span class="header-section-number">6.3</span> Podílové fondy a ETF</a></li>
+  <li><a href="#měření-výnosu" id="toc-měření-výnosu" class="nav-link" data-scroll-target="#měření-výnosu"><span class="header-section-number">6.4</span> Měření výnosu</a>
+  <ul class="collapse">
+  <li><a href="#efektivní-roční-výnos" id="toc-efektivní-roční-výnos" class="nav-link" data-scroll-target="#efektivní-roční-výnos"><span class="header-section-number">6.4.1</span> Efektivní roční výnos</a></li>
+  <li><a href="#průměrný-roční-výnos" id="toc-průměrný-roční-výnos" class="nav-link" data-scroll-target="#průměrný-roční-výnos"><span class="header-section-number">6.4.2</span> Průměrný roční výnos</a></li>
+  </ul></li>
+  <li><a href="#měření-rizika" id="toc-měření-rizika" class="nav-link" data-scroll-target="#měření-rizika"><span class="header-section-number">6.5</span> Měření rizika</a></li>
+  <li><a href="#diverzifikace" id="toc-diverzifikace" class="nav-link" data-scroll-target="#diverzifikace"><span class="header-section-number">6.6</span> Diverzifikace</a></li>
+  <li><a href="#sharpe-ratio" id="toc-sharpe-ratio" class="nav-link" data-scroll-target="#sharpe-ratio"><span class="header-section-number">6.7</span> Sharpe Ratio</a>
+  <ul class="collapse">
+  <li><a href="#příklad" id="toc-příklad" class="nav-link" data-scroll-target="#příklad"><span class="header-section-number">6.7.1</span> Příklad</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Týden</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></h1>
 </div>
 
 
@@ -250,8 +278,474 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Studijní materiály
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Dahlquist, J. R., &amp;; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
+<ul>
+<li>Chapter 15 - How to Think about Investing</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p><strong>Výstupy z učení:</strong></p>
+<ol type="1">
+<li>Rozumět pojmu teorie efektivních trhů, operativní efektivnosti a informační efektivnosti na trzích.</li>
+<li>Pochopit základní principy investování, včetně role a typů tržních indexů.</li>
+<li>Znát metody hodnocení rizika a výnosu pro investice.</li>
+<li>Získat dovednosti k identifikaci a používání ukazatelů výkonnosti, jako je Sharpe Ratio.</li>
+<li>Naučit se činit informovaná investiční rozhodnutí na základě analytických nástrojů a teorií.</li>
+</ol>
+<section id="teorie-efektivních-trhů" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="teorie-efektivních-trhů"><span class="header-section-number">6.1</span> Teorie efektivních trhů</h2>
+<ul>
+<li>Efektivní trhy rychle a nezaujatě reaguje na nové informace, ceny se rychle a přesně přizpůsobují novým informacím, jsou tam nízké transakční náklady, rychlé a bezproblémové vypořádání obchodů atd.</li>
+<li>Na efektivním trhu by měly být větší výkyvy v cenách způsobeny pouze neočekávanými zprávami (očekávané zprávy jsou již zahrnuty v cenách).</li>
+<li>Na efektivních trzích je obtížné pravidelně nacházet akcie, které jsou špatně oceněné, a dosahovat vyšších výnosů než trh.</li>
+<li>Odchylky od ideálních cen se objevují, ale náhodně a nelze je předpovídat (náhodná procházka, random walk theory).</li>
+</ul>
+<section id="informační-efektivita" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="informační-efektivita"><span class="header-section-number">6.1.1</span> Informační efektivita</h3>
+<ul>
+<li>Teorie efektivních trhů odkazuje primárně na informační efektivitu.</li>
+<li>Informační efektivita odkazuje na rychlost, s jakou se v cenách akcií odráží nejnovější dostupné informace.</li>
+<li>Pokud jsou trhy efektivní, je těžké nebo nemožné dosáhnout konzistentně vyšších než průměrných výnosů.</li>
+<li>Existují i další formy efektivity jako například operační efektivita se vztahuje na rychlost a přesnost zpracování nákupního nebo prodejního příkazu za nejlepší dostupnou cenu.</li>
+<li>Existují tři formy informační efektivnosti trhu:</li>
+</ul>
+<ol type="1">
+<li><strong>Slabá efektivnost</strong>
+<ul>
+<li>Veškeré historické informace o tržních cenách a obchodech jsou plně odraženy v aktuálních cenách.</li>
+<li>Tzn. technická analýza nelze použít k překonání trhu.</li>
+</ul></li>
+<li><strong>Středně-silná efektivnost</strong>
+<ul>
+<li>Všechny veřejně dostupné informace jsou promítnuty v cenách.</li>
+<li>Nejen historické ceny, ale všechna dostupná data např. z finančních výkazů, ekonomické faktory, atd.</li>
+<li>Tzn. technická ani fundamentální analýze nelze použít k překonání trhu.</li>
+</ul></li>
+<li><strong>Silná efektivnost</strong>
+<ul>
+<li>Všechny veřejné i neveřejné informace jsou zohledněny v současných cenách.</li>
+<li>Tzn. nelze žádným způsobem překonat trh, ani s využítím interních informací (insider trading).</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="finanční-indexy" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="finanční-indexy"><span class="header-section-number">6.2</span> Finanční indexy</h2>
+<ul>
+<li>Finanční index je statistické vyjádření hodnoty vybrané části trhu.</li>
+<li>Vypočítává se pomocí váženého průměru vybraných aktiv.</li>
+<li>Indexy mohou sledovat akcie, dluhopisy, komodity, atd. nebo jejich různé kombinace.</li>
+<li>Index má přesně daná pravidla, jaká aktiva do něho vstupují a jakou mají v indexu váhu.</li>
+<li>Účelem indexů je např.:
+<ul>
+<li><strong>Benchmarking</strong>: Měří výkonnost trhu pro srovnání s dalšími investicemi.</li>
+<li><strong>Investice</strong>: Slouží jako podkladová aktiva pro indexové fondy a ETF.</li>
+<li><strong>Analýza</strong>: Pomáhá při analýze vývoje trhu a sentimentu investorů (makroekonomický ukazatel).</li>
+</ul></li>
+</ul>
+<section id="výpočet-indexů" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="výpočet-indexů"><span class="header-section-number">6.2.1</span> Výpočet indexů</h3>
+<ol type="1">
+<li><strong>Price-Weighted</strong>:
+<ul>
+<li>Cenově vážený index.</li>
+<li>Vypočítá se jako průměr cen vybraných akcií.</li>
+<li>Akcie s vyšší cenou mají větší vliv.</li>
+<li><em>Příklad: Dow Jones Industrial Average</em></li>
+</ul></li>
+<li><strong>Market Capitalization-Weighted</strong>
+<ul>
+<li>Index vážený podle tržní kapitalizace.</li>
+<li>$ = </li>
+<li><em>Příklad: S&amp;P 500</em></li>
+</ul></li>
+<li><strong>Equal-Weighted</strong>:
+<ul>
+<li>Stejná váha pro všechny akcie.</li>
+<li>Všechny akcie mají stejný dopad.</li>
+<li><em>Příklad: MSCI World Equal Weighted</em></li>
+</ul></li>
+</ol>
+</section>
+<section id="hlavní-akciové-indexy" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="hlavní-akciové-indexy"><span class="header-section-number">6.2.2</span> Hlavní akciové indexy</h3>
+<ol type="1">
+<li><strong>Dow Jones Industrial Average (DJIA)</strong>
+<ul>
+<li>Zahrnuje 30 velkých amerických společností.</li>
+<li>Cenově vážený.</li>
+<li>Založen: 1896</li>
+</ul></li>
+<li><strong>S&amp;P 500</strong>
+<ul>
+<li>500 amerických akcií s největší tržní kapitalizací.</li>
+<li>Vážený podle tržní kapitalizace.</li>
+<li>Založen: 1957</li>
+</ul></li>
+<li><strong>NASDAQ Composite</strong>
+<ul>
+<li>Téměř všechny akcie na burze Nasdaq (kolem 3000 akcií).</li>
+<li>Zaměřený na společnosti z oblasti informačních technologií.</li>
+<li>Vážený podle tržní kapitalizace.</li>
+<li>Založen: 1971</li>
+</ul></li>
+<li><strong>FTSE 100</strong>
+<ul>
+<li>100 největších britských společností.</li>
+<li>Vážený podle tržní kapitalizace.</li>
+<li>Založen: 1984</li>
+</ul></li>
+<li><strong>Nikkei 225</strong>
+<ul>
+<li>225 velkých japonských společností.</li>
+<li>Cenově vážený.</li>
+<li>Založen: 1950</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="podílové-fondy-a-etf" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="podílové-fondy-a-etf"><span class="header-section-number">6.3</span> Podílové fondy a ETF</h2>
+<ul>
+<li><strong>Podílový fond</strong>: Profesionálně spravovaný investiční fond, který sdružuje peníze od více investorů za účelem nákupu cenných papírů, jako jsou akcie, dluhopisy atd.</li>
+<li><strong>Exchange-Traded Fund (ETF)</strong>: Typ investičního fondu obchodovaného na burzách, podobně jako. Obvykle sleduje podkladový index.</li>
+<li>Charakteristika podílového fondu:
+<ul>
+<li>profesionální správa portfolioa</li>
+<li>aktivní řízení portfolia umožňuje reagovat na aktuální situaci</li>
+<li>velká diverzifikace</li>
+<li>automatické investování</li>
+<li>emituje podílové listy</li>
+</ul></li>
+<li>Odlišnosti ETF:
+<ul>
+<li>většinou pasivní řízení portfolia (sleduje index)</li>
+<li>nemůže měnit strategii podle aktuální situace, ale generuje výnosy zvoleného indexu</li>
+<li>nižší poplatky</li>
+<li>emituje akcie</li>
+<li>vysoká likvidita a transparentnost</li>
+<li>nutnost kupovat akcie na burze</li>
+</ul></li>
+</ul>
+</section>
+<section id="měření-výnosu" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="měření-výnosu"><span class="header-section-number">6.4</span> Měření výnosu</h2>
+<ul>
+<li>Realizovaný výnos je změna hodnoty portfolia za určité časové období.</li>
+<li>Potřeba zohlednit dividendy a případně štěpení akcií, proto se nejčastěji používá Adjusted Close Price.</li>
+<li>Výnos lze rozdělit na kapitálový a dividendový:
+<ul>
+<li><strong>Kapitálový výnos</strong> představuje změnu ceny daného aktiva.</li>
+<li><strong>Dividendový výnos</strong> tvoří získané dividendy.</li>
+<li><strong>Celkový výnos</strong> je součet kapitálového a dividendového výnosu.</li>
+</ul></li>
+<li>Příklad: Nákup akcie za $128,74 a prodej po jednom roce za $176,53. Za dobu držení akcie byly vyplaceny dividendy ve výši $2,68. <span class="math display">\[
+\text{Kapitálový výnos} = 176,53 - 128,74 = 47,79
+\]</span></li>
+</ul>
+<p><span class="math display">\[
+\text{Dividendový výnos} = 2,68
+\]</span></p>
+<p><span class="math display">\[
+\text{Celkový výnos} = 2,68 + 47,79 = 50,47
+\]</span></p>
+<ul>
+<li>Návratnost se většinou vyjádřuje v procentech, aby se usnadnilo srovnání.</li>
+</ul>
+<p><span class="math display">\[
+\text{Celkový výnos v procentech} = \frac{2,68}{128,74} + \frac{47,79}{128,74} = 0,0208
++ 0,3712 = 0,3920 = 39,20\%
+\]</span></p>
+<section id="efektivní-roční-výnos" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="efektivní-roční-výnos"><span class="header-section-number">6.4.1</span> Efektivní roční výnos</h3>
+<ul>
+<li>Efektivní roční výnos (effective annual rate, EAR) vyjadřuje výnosnost investice pokud by byla držena jeden rok.</li>
+<li>Důležité pro srovnání různých investic.</li>
+</ul>
+<p><span class="math display">\[
+\text{EAR} = (1 + \text{HPR})^m - 1
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\text{HPR}\)</span> je výnos za dané časové období (holding priod return) a <span class="math inline">\(m\)</span> je počet těchto období v jednom roce.</li>
+</ul>
+<section id="příklady" class="level4" data-number="6.4.1.1">
+<h4 data-number="6.4.1.1" class="anchored" data-anchor-id="příklady"><span class="header-section-number">6.4.1.1</span> Příklady</h4>
+<ul>
+<li>Výnos 25% za 2 roky: <span class="math display">\[
+\text{EAR} = (1 + 0.25)^{\frac{1}{2}} - 1 = 11.80\%
+\]</span></li>
+<li>Výnos 10% za 6 měsíců: <span class="math display">\[
+\text{EAR} = (1 + 0.10)^{\frac{12}{6}} - 1 = 20.89\%
+\]</span></li>
+<li>Výnos 1% za 15 dní: <span class="math display">\[
+\text{EAR} = (1 + 0.01)^{\frac{365}{15}} - 1 = 27.11\%
+\]</span></li>
+</ul>
+</section>
+</section>
+<section id="průměrný-roční-výnos" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="průměrný-roční-výnos"><span class="header-section-number">6.4.2</span> Průměrný roční výnos</h3>
+<ul>
+<li>Roční data SPY upravená o dividendy a splity stažená z <a href="https://www.macrotrends.net/stocks/charts/SPY/spdr-s-p-500-etf/stock-price-history">Macrotrends</a>.</li>
+</ul>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Rok</th>
+<th style="text-align: center;">Cena</th>
+<th style="text-align: center;">Roční výnos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">378.1934</td>
+<td style="text-align: center;">-18.17%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">462.1801</td>
+<td style="text-align: center;">28.74%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">358.9909</td>
+<td style="text-align: center;">18.37%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">303.2705</td>
+<td style="text-align: center;">31.22%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2018</td>
+<td style="text-align: center;">231.1130</td>
+<td style="text-align: center;">-4.56%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2017</td>
+<td style="text-align: center;">242.1472</td>
+<td style="text-align: center;">21.70%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">198.9700</td>
+<td style="text-align: center;">12.00%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2015</td>
+<td style="text-align: center;">177.6494</td>
+<td style="text-align: center;">1.25%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2014</td>
+<td style="text-align: center;">175.4526</td>
+<td style="text-align: center;">13.46%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2013</td>
+<td style="text-align: center;">154.6353</td>
+<td style="text-align: center;">32.31%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2012</td>
+<td style="text-align: center;">116.8764</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Průměrný roční výnos lze spočítat pomocí EAR a výnosu za celé období:</li>
+</ul>
+<p><span class="math display">\[
+\text{EAR} = (1 + \frac{378.1934 - 116.8764}{116.8724})^{\frac{1}{11}} - 1 = 11.27\%
+\]</span></p>
+<ul>
+<li><p>Stejného výsledku lze dosáhnout pomocí geometrického průměru ročních výnosů: <span class="math display">\[
+\text{Geometric Average} = \left( (1 - 0.1817) \times (1 + 0.2874) \times \dots \times
+(1 + 0.3231) \right)^{1/10} - 1 = \left(2.9273\right)^{1/10} - 1 = 11.66\%
+\]</span></p></li>
+<li><p>Aritmetický průměr ročních výnosů však dává odlišný výsledek, který bude zpravidla vyšší: <span class="math display">\[
+\text{Arithmetic Average} = \frac{-18.17\% + 28.74\% + \dots + 32.31\%}{10} =
+\frac{135.52\%}{10} = 13.552\%
+\]</span></p></li>
+<li><p>Aritmetický průměr vychází vyšší než geometrický, protože nezohledňuje složené úročení.</p></li>
+<li><p>Aritmetický průměr vyjadřuje, kolik jste vydělali v typickém roce.</p></li>
+<li><p>Geometrický průměr ukazuje, kolik jste skutečně vydělali za rok v průměru při držení dané investice.</p></li>
+</ul>
+</section>
+</section>
+<section id="měření-rizika" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="měření-rizika"><span class="header-section-number">6.5</span> Měření rizika</h2>
+<ul>
+<li>Riziko se týká nejistoty dosažení očekávaného výnosu.</li>
+<li>Nejčastěji se vyjadřuje jako variabilita výnosů vzhledem k průměru (variance, směrodatná odchylka, atd.).</li>
+<li>Vyšší odchylky od průměru znamenají vyšší riziko, protože je předpověď budoucího vývoje složitější a méně přesná.</li>
+<li>Variance <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(\sigma^2 = \frac{\sum^n_{t=1} (R_t - \overline{R})^2}{n-1}\)</span>
+<ul>
+<li><span class="math inline">\(R_t\)</span> <span class="math inline">\(\rightarrow\)</span> výnos v čase <span class="math inline">\(t\)</span></li>
+<li><span class="math inline">\(\overline{R}\)</span> <span class="math inline">\(\rightarrow\)</span> průměrný výnos</li>
+<li><span class="math inline">\(n\)</span> <span class="math inline">\(\rightarrow\)</span> počet pozorování</li>
+</ul></li>
+<li>Směrodatná odchylka <span class="math inline">\(\rightarrow\)</span> odmocnina z variance <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(\sigma = \sqrt{\sigma^2}\)</span></li>
+<li>Pokud mají výnosy normální rozložení pravděpodobnosti, tak platí (přibližně):
+<ul>
+<li>68 % pozorování leží v rozmezí jedné směrodatné odchylky od průměru.</li>
+<li>95 % pozorování leží v rozmezí jedné směrodatné odchylky od průměru.</li>
+<li>99,7 % pozorování leží v rozmezí jedné směrodatné odchylky od průměru.</li>
+</ul></li>
+<li>Další ukazatele rizika jsou např. max. drawdown, value-at-risk, expected shortfall, atd.</li>
+</ul>
+</section>
+<section id="diverzifikace" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="diverzifikace"><span class="header-section-number">6.6</span> Diverzifikace</h2>
+<ul>
+<li>Diverzifikace znamená rozložení portfolia do různých investic za účelem snížení rizika.</li>
+<li>Využívá nedokonalé korelace aktiv v portfolium.</li>
+<li>Různá aktiva reagují na tržní podmínky různě, tzn. pokud jedno aktivum klesá, jiné může růst.</li>
+<li>Celkový benefit získaný diverzifikací záleží na korelaci jednotlivých aktiv.</li>
+<li>S roztoucím množstvím aktiv klesá přínos dodatečného aktiva k diverzifikaci portfolia (přibližně po 20 až 30 akciích je již dodatečný efekt diverzifikace velmi malý).</li>
+<li>Diverzifikací se nelze zbavit všech rizik.</li>
+<li><strong>Nesystematické riziko</strong> (specifické, jedinečné riziko) <span class="math inline">\(\rightarrow\)</span> lze odstranit diverzifikací.</li>
+<li><strong>Systematické riziko</strong> (tržní riziko) <span class="math inline">\(\rightarrow\)</span> nelze odstranit diverzifikací.</li>
+</ul>
+</section>
+<section id="sharpe-ratio" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="sharpe-ratio"><span class="header-section-number">6.7</span> Sharpe Ratio</h2>
+<ul>
+<li>Poměrový ukazatel pro srovnání různých investic.</li>
+<li>Sharpe Ratio porovnáná výnos investice s ohledem na její riziko měřené směrodatnou odchylkou.</li>
+<li>Poskytuje komplexní pohled na profil rizika a výnosů investice.</li>
+<li>Vyšší Sharpe Ratio značí atraktivnější investici.</li>
+<li><span class="math inline">\(\text{Sharpe ratio} = \frac{R_p - R_f}{\sigma_p}\)</span>
+<ul>
+<li><span class="math inline">\(R_p\)</span> <span class="math inline">\(\rightarrow\)</span> výnos portfolia</li>
+<li><span class="math inline">\(R_f\)</span> <span class="math inline">\(\rightarrow\)</span> bezriziková úroková sazba</li>
+<li><span class="math inline">\(\sigma_p\)</span> <span class="math inline">\(\rightarrow\)</span> směrodatná odchylka výnosů (nad bezrizikovou sazbou)</li>
+</ul></li>
+</ul>
+<section id="příklad" class="level3" data-number="6.7.1">
+<h3 data-number="6.7.1" class="anchored" data-anchor-id="příklad"><span class="header-section-number">6.7.1</span> Příklad</h3>
+<table class="table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 16%">
+<col style="width: 12%">
+<col style="width: 33%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Datum</strong></th>
+<th style="text-align: center;"><strong>Cena akcie</strong></th>
+<th style="text-align: center;"><strong>Výnos</strong></th>
+<th style="text-align: center;"><strong>Odchylka od průměru</strong></th>
+<th style="text-align: center;"><strong>Odchylka od průměru na druhou</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2022-01-31</td>
+<td style="text-align: center;">446.572021</td>
+<td style="text-align: center;">NA</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2022-02-28</td>
+<td style="text-align: center;">433.672150</td>
+<td style="text-align: center;">-0.028886</td>
+<td style="text-align: center;">-0.017685</td>
+<td style="text-align: center;">0.000313</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2022-03-31</td>
+<td style="text-align: center;">449.959442</td>
+<td style="text-align: center;">0.037557</td>
+<td style="text-align: center;">0.048759</td>
+<td style="text-align: center;">0.002377</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2022-04-30</td>
+<td style="text-align: center;">410.159393</td>
+<td style="text-align: center;">-0.088453</td>
+<td style="text-align: center;">-0.077251</td>
+<td style="text-align: center;">0.005968</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2022-05-31</td>
+<td style="text-align: center;">411.458649</td>
+<td style="text-align: center;">0.003168</td>
+<td style="text-align: center;">0.014369</td>
+<td style="text-align: center;">0.000206</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2022-06-30</td>
+<td style="text-align: center;">377.204315</td>
+<td style="text-align: center;">-0.083251</td>
+<td style="text-align: center;">-0.072049</td>
+<td style="text-align: center;">0.005191</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2022-07-31</td>
+<td style="text-align: center;">412.154053</td>
+<td style="text-align: center;">0.092655</td>
+<td style="text-align: center;">0.103856</td>
+<td style="text-align: center;">0.010786</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>Průměrný výnos</strong></td>
+<td style="text-align: center;"><strong>-0.011202</strong></td>
+<td style="text-align: center;"><strong>Součet odchylek od průměru na druhou</strong></td>
+<td style="text-align: center;"><strong>0.024842</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>Variance</strong></td>
+<td style="text-align: center;"><strong>0.004968</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>Směrodatná odchylka</strong></td>
+<td style="text-align: center;"><strong>0.070486</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>Sharpe ratio (risk-free = 0)</strong></td>
+<td style="text-align: center;"><strong>-0.158922</strong></td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
