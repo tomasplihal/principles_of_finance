@@ -79,8 +79,7 @@ váhu.
     - *Příklad: Dow Jones Industrial Average*
 2. **Market Capitalization-Weighted**
     - Index vážený podle tržní kapitalizace.
-    - $\text{Tržní kapitalizace} = \text{cena akcie} \times \text{počet existujících
-    akcií}
+    - $\text{Tržní kapitalizace} = \text{cena akcie} \times \text{počet existujících akcií}$
     - *Příklad: S&P 500*
 3. **Equal-Weighted**:
     - Stejná váha pro všechny akcie.
