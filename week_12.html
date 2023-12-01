@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Základy financí - 12&nbsp; Týden</title>
+<title>Základy financí - 12&nbsp; Úvod do finančních derivátů</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,6 +62,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -74,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_12.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Týden</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_12.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Úvod do finančních derivátů</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -189,37 +191,37 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Týden</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Finanční systém</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Týden</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Týden</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Podnikové finance I</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Týden</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Podnikové finance II</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_12.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Týden</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Úvod do finančních derivátů</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Týden</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Předtermín zkoušky</span></span></a>
   </div>
 </li>
     </ul>
@@ -228,14 +230,46 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#charakteristika-finančních-derivátů" id="toc-charakteristika-finančních-derivátů" class="nav-link active" data-scroll-target="#charakteristika-finančních-derivátů"><span class="header-section-number">12.1</span> Charakteristika finančních derivátů</a>
+  <ul class="collapse">
+  <li><a href="#využití-finančních-derivátů" id="toc-využití-finančních-derivátů" class="nav-link" data-scroll-target="#využití-finančních-derivátů"><span class="header-section-number">12.1.1</span> Využití finančních derivátů</a></li>
+  <li><a href="#obchodování-s-finančními-deriváty" id="toc-obchodování-s-finančními-deriváty" class="nav-link" data-scroll-target="#obchodování-s-finančními-deriváty"><span class="header-section-number">12.1.2</span> Obchodování s finančními deriváty</a></li>
+  <li><a href="#výhody-a-nevýhody-derivátů" id="toc-výhody-a-nevýhody-derivátů" class="nav-link" data-scroll-target="#výhody-a-nevýhody-derivátů"><span class="header-section-number">12.1.3</span> Výhody a nevýhody derivátů</a></li>
+  </ul></li>
+  <li><a href="#forwardy" id="toc-forwardy" class="nav-link" data-scroll-target="#forwardy"><span class="header-section-number">12.2</span> Forwardy</a>
+  <ul class="collapse">
+  <li><a href="#jaká-existuje-přiležitost-k-arbitráži-v-následujících-případech" id="toc-jaká-existuje-přiležitost-k-arbitráži-v-následujících-případech" class="nav-link" data-scroll-target="#jaká-existuje-přiležitost-k-arbitráži-v-následujících-případech"><span class="header-section-number">12.2.1</span> Jaká existuje přiležitost k arbitráži v následujících případech?</a></li>
+  </ul></li>
+  <li><a href="#futures" id="toc-futures" class="nav-link" data-scroll-target="#futures"><span class="header-section-number">12.3</span> Futures</a>
+  <ul class="collapse">
+  <li><a href="#rozdíly-mezi-forwardy-a-futures" id="toc-rozdíly-mezi-forwardy-a-futures" class="nav-link" data-scroll-target="#rozdíly-mezi-forwardy-a-futures"><span class="header-section-number">12.3.1</span> Rozdíly mezi forwardy a futures</a></li>
+  </ul></li>
+  <li><a href="#swapy" id="toc-swapy" class="nav-link" data-scroll-target="#swapy"><span class="header-section-number">12.4</span> Swapy</a></li>
+  <li><a href="#opce" id="toc-opce" class="nav-link" data-scroll-target="#opce"><span class="header-section-number">12.5</span> Opce</a>
+  <ul class="collapse">
+  <li><a href="#call-vs.-put" id="toc-call-vs.-put" class="nav-link" data-scroll-target="#call-vs.-put"><span class="header-section-number">12.5.1</span> Call vs.&nbsp;Put</a></li>
+  <li><a href="#long-vs.-short" id="toc-long-vs.-short" class="nav-link" data-scroll-target="#long-vs.-short"><span class="header-section-number">12.5.2</span> Long vs.&nbsp;Short</a></li>
+  <li><a href="#americká-vs.-evropská-opce" id="toc-americká-vs.-evropská-opce" class="nav-link" data-scroll-target="#americká-vs.-evropská-opce"><span class="header-section-number">12.5.3</span> Americká vs.&nbsp;Evropská opce</a></li>
+  <li><a href="#charakteristiky-opce" id="toc-charakteristiky-opce" class="nav-link" data-scroll-target="#charakteristiky-opce"><span class="header-section-number">12.5.4</span> Charakteristiky opce</a></li>
+  <li><a href="#long-call" id="toc-long-call" class="nav-link" data-scroll-target="#long-call"><span class="header-section-number">12.5.5</span> Long call</a></li>
+  <li><a href="#short-call" id="toc-short-call" class="nav-link" data-scroll-target="#short-call"><span class="header-section-number">12.5.6</span> Short call</a></li>
+  <li><a href="#long-put" id="toc-long-put" class="nav-link" data-scroll-target="#long-put"><span class="header-section-number">12.5.7</span> Long put</a></li>
+  <li><a href="#short-put" id="toc-short-put" class="nav-link" data-scroll-target="#short-put"><span class="header-section-number">12.5.8</span> Short put</a></li>
+  <li><a href="#opční-prémie" id="toc-opční-prémie" class="nav-link" data-scroll-target="#opční-prémie"><span class="header-section-number">12.5.9</span> Opční prémie</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Týden</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Úvod do finančních derivátů</span></h1>
 </div>
 
 
@@ -250,8 +284,224 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Studijní materiály
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>MELICHER, Ronald W. a Edgar NORTON. Introduction to finance: markets, investments, and financial management.</li>
+<li>HULL, John. 2018. Options, futures, and other derivatives. Ninth edition. Harlow: Pearson. ISBN 978-1-292-21289-0.</li>
+</ul>
+</div>
+</div>
+<p><strong>Výstupy z učení:</strong></p>
+<ol type="1">
+<li>Porozumět základnímu fungování finančních derivátů.</li>
+<li>Pochopit základní principy využití finančních derivátů.</li>
+<li>Rozlišovat forwardy, futures, opce a swapy.</li>
+<li>Získat dovednosti k identifikaci výhod a nevýhod využití derivátů.</li>
+<li>Naučit se činit informovaná investiční rozhodnutí a řídit rizika.</li>
+</ol>
+<section id="charakteristika-finančních-derivátů" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="charakteristika-finančních-derivátů"><span class="header-section-number">12.1</span> Charakteristika finančních derivátů</h2>
+<ul>
+<li>Finanční derivát je nástroj, jehož hodnota je odvozena (derived from) od hodnoty jiného aktiva.</li>
+<li>Podkladovým aktivem mohou být například: akcie, směnné kurzy, úrokové sazby, komodity, atd.</li>
+<li>Specifikují parametry transakce, která proběhne v budoucnosti.</li>
+<li><strong><em>Nepodmíněné kontrakty</em></strong> <span class="math inline">\(\rightarrow\)</span> povinnost provést budoucí transakci (forwardy, futures, swapy)</li>
+<li><strong><em>Podmíněné kontrakty</em></strong> <span class="math inline">\(\rightarrow\)</span> držitel má právo rozhodnout, zda transakce bude provedena (opce)</li>
+</ul>
+<section id="využití-finančních-derivátů" class="level3" data-number="12.1.1">
+<h3 data-number="12.1.1" class="anchored" data-anchor-id="využití-finančních-derivátů"><span class="header-section-number">12.1.1</span> Využití finančních derivátů</h3>
+<ul>
+<li>Hedging (zajištění rizik)
+<ul>
+<li>Cílem hedgingu je snížení rizika.</li>
+<li>Výsledkem nemusí být vyšší zisk.</li>
+<li>Forwardy a futures eliminují riziko tím, že fixují cenu.</li>
+<li>Opce poskytují jistou formu pojištění proti nepříznivé události (za poplatek).</li>
+</ul></li>
+<li>Spekulace
+<ul>
+<li>Snaha vydělat na příznivém pohybu ceny podkladového aktiva.</li>
+</ul></li>
+<li>Arbitráž
+<ul>
+<li>Snaha vydělat na rozdílu v cenách určitých aktiv.</li>
+</ul></li>
+</ul>
+</section>
+<section id="obchodování-s-finančními-deriváty" class="level3" data-number="12.1.2">
+<h3 data-number="12.1.2" class="anchored" data-anchor-id="obchodování-s-finančními-deriváty"><span class="header-section-number">12.1.2</span> Obchodování s finančními deriváty</h3>
+<ul>
+<li>Burzovně obchodované deriváty
+<ul>
+<li>Burza derivátů např. Chicago Board Options Exchange (CBOE)</li>
+<li>Kontrakty jsou standardizované (doba expirace, velikost kontraktu, podkladové aktivum, atd.)</li>
+<li>Clearing house je prostředníkem mezi poptávkou a nabídkou.</li>
+<li>Garantuje plnění podmínek protistranou (nízké kraditní riziko).</li>
+<li>Trhy jsou transparentní a podléhají přísnější regulaci.</li>
+</ul></li>
+<li>Mimoburzovní OTC deriváty
+<ul>
+<li>Over-the-counter (OTC) trh.</li>
+<li>Velká regulace po roce 2008.</li>
+<li>Větší flexibilita kontraktů.</li>
+<li>Hojně využívají finanční instituce.</li>
+<li>Vyšší kreditní riziko.</li>
+</ul></li>
+</ul>
+</section>
+<section id="výhody-a-nevýhody-derivátů" class="level3" data-number="12.1.3">
+<h3 data-number="12.1.3" class="anchored" data-anchor-id="výhody-a-nevýhody-derivátů"><span class="header-section-number">12.1.3</span> Výhody a nevýhody derivátů</h3>
+<ul>
+<li>Kritika derivátů: gambling, destabilizace trhu, přiliš komplexní produkty</li>
+<li>Výhody derivátů:
+<ul>
+<li>Umožňují transfer rizik.</li>
+<li>Možnost vytvořit rizikově výnosový profil, který by jinak nebyl možný.</li>
+<li>Zlepšují efektivitu trhů (umožňují arbitráž).</li>
+<li>Nízké transakční náklady</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="forwardy" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="forwardy"><span class="header-section-number">12.2</span> Forwardy</h2>
+<ul>
+<li><strong><em>Povinnost</em></strong> koupit nebo prodat podkladové aktivum v předem sjednaný čas za předem dohodnutou cenu.</li>
+<li>Nejvíce používané k zajištění měnového rizika.</li>
+<li>Obchodují se na OTC trzích.</li>
+<li>Long pozice = závazek koupit podkladové aktivum</li>
+<li>Short pozice = závazek prodat podkladové aktivum</li>
+<li>Graf výplaty z long (a) a short (b) forwardu při splatnosti.
+<ul>
+<li><span class="math inline">\(K\)</span> je předem sjednaná cena</li>
+<li><span class="math inline">\(S_T\)</span> je cena podkladového aktiva při splatnosti (v čase <span class="math inline">\(T\)</span>)</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/forward_contracts.png" class="img-fluid figure-img" width="800"></p>
+</figure>
+</div>
+<section id="jaká-existuje-přiležitost-k-arbitráži-v-následujících-případech" class="level3" data-number="12.2.1">
+<h3 data-number="12.2.1" class="anchored" data-anchor-id="jaká-existuje-přiležitost-k-arbitráži-v-následujících-případech"><span class="header-section-number">12.2.1</span> Jaká existuje přiležitost k arbitráži v následujících případech?</h3>
+<ol type="1">
+<li>Spotová cena zlata je USD 1 200, forward na zlato s maturitou 1 rok má cenu zlata 1300, bezriziková úroková sazba je 5% ročně.</li>
+<li>Spotová cena zlata je USD 1 200, forward na zlato s maturitou 1 rok má cenu zlata 1200, bezriziková úroková sazba je 5% ročně.</li>
+</ol>
+</section>
+</section>
+<section id="futures" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="futures"><span class="header-section-number">12.3</span> Futures</h2>
+<ul>
+<li>*<strong>Povinnost</strong> koupit nebo prodat podkladové aktivum v předem sjednaný čas za předem dohodnutou cenu.</li>
+<li>Podobné forwardům.</li>
+<li>Burzovně obchodované, standardizované kontrakty.</li>
+</ul>
+<section id="rozdíly-mezi-forwardy-a-futures" class="level3" data-number="12.3.1">
+<h3 data-number="12.3.1" class="anchored" data-anchor-id="rozdíly-mezi-forwardy-a-futures"><span class="header-section-number">12.3.1</span> Rozdíly mezi forwardy a futures</h3>
+<ul>
+<li>Forwardy:
+<ul>
+<li>Obchodované na OTC trhu.</li>
+<li>Omezená regulace, vyšší kreditní riziko.</li>
+<li>Vypořádání na konci doby splatnosti.</li>
+</ul></li>
+<li>Futures:
+<ul>
+<li>Burzovně obchodované.</li>
+<li>Vyšší regulace, transparentnost.</li>
+<li>Nižší kreditní riziko (clearing house).</li>
+<li>Vypořádání průběžně každý den pomocí margin account.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="swapy" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="swapy"><span class="header-section-number">12.4</span> Swapy</h2>
+<ul>
+<li>Jedná se o několik stejných forwardů, které mají různé doby splatnosti.</li>
+<li>Používá se při hedgingu opakujících se pravidelných transakcí (např. úroky z půjčky placené čtvrtletně).</li>
+<li>Obchoduje se na OTC trhu.</li>
+<li>Využíván převážně finančními institucemi.</li>
+</ul>
+</section>
+<section id="opce" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="opce"><span class="header-section-number">12.5</span> Opce</h2>
+<section id="call-vs.-put" class="level3" data-number="12.5.1">
+<h3 data-number="12.5.1" class="anchored" data-anchor-id="call-vs.-put"><span class="header-section-number">12.5.1</span> Call vs.&nbsp;Put</h3>
+<ul>
+<li><strong><em>Call opce</em></strong> (kupní opce) je <strong><em>právo</em></strong> koupit podkladové aktivum v předem sjednaný čas za předem dohodnutou cenu.</li>
+<li><strong><em>Put opce</em></strong> (prodejní opce) je <strong><em>právo</em></strong> prodat podkladové aktivum v předem sjednaný čas za předem dohodnutou cenu.</li>
+</ul>
+</section>
+<section id="long-vs.-short" class="level3" data-number="12.5.2">
+<h3 data-number="12.5.2" class="anchored" data-anchor-id="long-vs.-short"><span class="header-section-number">12.5.2</span> Long vs.&nbsp;Short</h3>
+<ul>
+<li>Long pozice označuje majitele opce. Má právo rozhodnout, zda bude opce uplatněna.</li>
+<li>Short pozice označuje protistranu, která prodává opci long pozici. Pokud je opce uplatněna, musí transakci uskutečnit.</li>
+</ul>
+</section>
+<section id="americká-vs.-evropská-opce" class="level3" data-number="12.5.3">
+<h3 data-number="12.5.3" class="anchored" data-anchor-id="americká-vs.-evropská-opce"><span class="header-section-number">12.5.3</span> Americká vs.&nbsp;Evropská opce</h3>
+<ul>
+<li>Americká opce může být uplatněna kdykoliv během doby splatnosti.</li>
+<li>Evropská opce může být uplatněna pouze v den splatnosti.</li>
+</ul>
+</section>
+<section id="charakteristiky-opce" class="level3" data-number="12.5.4">
+<h3 data-number="12.5.4" class="anchored" data-anchor-id="charakteristiky-opce"><span class="header-section-number">12.5.4</span> Charakteristiky opce</h3>
+<ul>
+<li>opční prémie (poplatek, který platí long pozice short pozici, cena opce)</li>
+<li>strike price (předem dohodnutá cena podkladového aktiva)</li>
+<li>doba expirace</li>
+<li>Evropská nebo Americká</li>
+<li>Call nebo put</li>
+<li>Long nebo short</li>
+</ul>
+</section>
+<section id="long-call" class="level3" data-number="12.5.5">
+<h3 data-number="12.5.5" class="anchored" data-anchor-id="long-call"><span class="header-section-number">12.5.5</span> Long call</h3>
+<ul>
+<li>opční prémie 5, strike price 100 <img src="images/long_call.png" class="img-fluid" data-fig-align="center" width="800"></li>
+</ul>
+</section>
+<section id="short-call" class="level3" data-number="12.5.6">
+<h3 data-number="12.5.6" class="anchored" data-anchor-id="short-call"><span class="header-section-number">12.5.6</span> Short call</h3>
+<ul>
+<li>opční prémie 5, strike price 100 <img src="images/short_call.png" class="img-fluid" data-fig-align="center" width="800"></li>
+</ul>
+</section>
+<section id="long-put" class="level3" data-number="12.5.7">
+<h3 data-number="12.5.7" class="anchored" data-anchor-id="long-put"><span class="header-section-number">12.5.7</span> Long put</h3>
+<ul>
+<li>opční prémie 7, strike price 70 <img src="images/long_put.png" class="img-fluid" data-fig-align="center" width="800"></li>
+</ul>
+</section>
+<section id="short-put" class="level3" data-number="12.5.8">
+<h3 data-number="12.5.8" class="anchored" data-anchor-id="short-put"><span class="header-section-number">12.5.8</span> Short put</h3>
+<ul>
+<li>opční prémie 7, strike price 70 <img src="images/short_put.png" class="img-fluid" data-fig-align="center" width="800"></li>
+</ul>
+</section>
+<section id="opční-prémie" class="level3" data-number="12.5.9">
+<h3 data-number="12.5.9" class="anchored" data-anchor-id="opční-prémie"><span class="header-section-number">12.5.9</span> Opční prémie</h3>
+<ul>
+<li>Vnitřní hodnota hodnota opce pokud by byla okamžitě uplatněna.</li>
+<li>Časová hodnota rozdíl mezi opční prémií a vnitřní hodnotou opce.</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -490,12 +740,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week_11.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Týden</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Podnikové finance II</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week_13.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Týden</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Předtermín zkoušky</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

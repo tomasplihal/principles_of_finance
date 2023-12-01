@@ -243,5 +243,75 @@
     "title": "7  Reading Week",
     "section": "",
     "text": "Tip\n\n\n\nVyužijte volný týden k odpočinku, opakování první poloviny semestru a připravou na druhou polovinu semestru!"
+  },
+  {
+    "objectID": "week_08.html",
+    "href": "week_08.html",
+    "title": "8  Finanční systém",
+    "section": "",
+    "text": "Tip\n\n\n\nMateriály v Interaktivní osnově v ISu."
+  },
+  {
+    "objectID": "week_09.html",
+    "href": "week_09.html",
+    "title": "9  Banky a bankovní systémy",
+    "section": "",
+    "text": "Tip\n\n\n\nMateriály v Interaktivní osnově v ISu."
+  },
+  {
+    "objectID": "week_10.html",
+    "href": "week_10.html",
+    "title": "10  Podnikové finance I",
+    "section": "",
+    "text": "Tip\n\n\n\nMateriály v Interaktivní osnově v ISu."
+  },
+  {
+    "objectID": "week_11.html",
+    "href": "week_11.html",
+    "title": "11  Podnikové finance II",
+    "section": "",
+    "text": "Tip\n\n\n\nMateriály v Interaktivní osnově v ISu."
+  },
+  {
+    "objectID": "week_12.html#charakteristika-finančních-derivátů",
+    "href": "week_12.html#charakteristika-finančních-derivátů",
+    "title": "12  Úvod do finančních derivátů",
+    "section": "12.1 Charakteristika finančních derivátů",
+    "text": "12.1 Charakteristika finančních derivátů\n\nFinanční derivát je nástroj, jehož hodnota je odvozena (derived from) od hodnoty jiného aktiva.\nPodkladovým aktivem mohou být například: akcie, směnné kurzy, úrokové sazby, komodity, atd.\nSpecifikují parametry transakce, která proběhne v budoucnosti.\nNepodmíněné kontrakty \\(\\rightarrow\\) povinnost provést budoucí transakci (forwardy, futures, swapy)\nPodmíněné kontrakty \\(\\rightarrow\\) držitel má právo rozhodnout, zda transakce bude provedena (opce)\n\n\n12.1.1 Využití finančních derivátů\n\nHedging (zajištění rizik)\n\nCílem hedgingu je snížení rizika.\nVýsledkem nemusí být vyšší zisk.\nForwardy a futures eliminují riziko tím, že fixují cenu.\nOpce poskytují jistou formu pojištění proti nepříznivé události (za poplatek).\n\nSpekulace\n\nSnaha vydělat na příznivém pohybu ceny podkladového aktiva.\n\nArbitráž\n\nSnaha vydělat na rozdílu v cenách určitých aktiv.\n\n\n\n\n12.1.2 Obchodování s finančními deriváty\n\nBurzovně obchodované deriváty\n\nBurza derivátů např. Chicago Board Options Exchange (CBOE)\nKontrakty jsou standardizované (doba expirace, velikost kontraktu, podkladové aktivum, atd.)\nClearing house je prostředníkem mezi poptávkou a nabídkou.\nGarantuje plnění podmínek protistranou (nízké kraditní riziko).\nTrhy jsou transparentní a podléhají přísnější regulaci.\n\nMimoburzovní OTC deriváty\n\nOver-the-counter (OTC) trh.\nVelká regulace po roce 2008.\nVětší flexibilita kontraktů.\nHojně využívají finanční instituce.\nVyšší kreditní riziko.\n\n\n\n\n12.1.3 Výhody a nevýhody derivátů\n\nKritika derivátů: gambling, destabilizace trhu, přiliš komplexní produkty\nVýhody derivátů:\n\nUmožňují transfer rizik.\nMožnost vytvořit rizikově výnosový profil, který by jinak nebyl možný.\nZlepšují efektivitu trhů (umožňují arbitráž).\nNízké transakční náklady"
+  },
+  {
+    "objectID": "week_12.html#forwardy",
+    "href": "week_12.html#forwardy",
+    "title": "12  Úvod do finančních derivátů",
+    "section": "12.2 Forwardy",
+    "text": "12.2 Forwardy\n\nPovinnost koupit nebo prodat podkladové aktivum v předem sjednaný čas za předem dohodnutou cenu.\nNejvíce používané k zajištění měnového rizika.\nObchodují se na OTC trzích.\nLong pozice = závazek koupit podkladové aktivum\nShort pozice = závazek prodat podkladové aktivum\nGraf výplaty z long (a) a short (b) forwardu při splatnosti.\n\n\\(K\\) je předem sjednaná cena\n\\(S_T\\) je cena podkladového aktiva při splatnosti (v čase \\(T\\))\n\n\n\n\n\n\n\n\n12.2.1 Jaká existuje přiležitost k arbitráži v následujících případech?\n\nSpotová cena zlata je USD 1 200, forward na zlato s maturitou 1 rok má cenu zlata 1300, bezriziková úroková sazba je 5% ročně.\nSpotová cena zlata je USD 1 200, forward na zlato s maturitou 1 rok má cenu zlata 1200, bezriziková úroková sazba je 5% ročně."
+  },
+  {
+    "objectID": "week_12.html#futures",
+    "href": "week_12.html#futures",
+    "title": "12  Úvod do finančních derivátů",
+    "section": "12.3 Futures",
+    "text": "12.3 Futures\n\n*Povinnost koupit nebo prodat podkladové aktivum v předem sjednaný čas za předem dohodnutou cenu.\nPodobné forwardům.\nBurzovně obchodované, standardizované kontrakty.\n\n\n12.3.1 Rozdíly mezi forwardy a futures\n\nForwardy:\n\nObchodované na OTC trhu.\nOmezená regulace, vyšší kreditní riziko.\nVypořádání na konci doby splatnosti.\n\nFutures:\n\nBurzovně obchodované.\nVyšší regulace, transparentnost.\nNižší kreditní riziko (clearing house).\nVypořádání průběžně každý den pomocí margin account."
+  },
+  {
+    "objectID": "week_12.html#swapy",
+    "href": "week_12.html#swapy",
+    "title": "12  Úvod do finančních derivátů",
+    "section": "12.4 Swapy",
+    "text": "12.4 Swapy\n\nJedná se o několik stejných forwardů, které mají různé doby splatnosti.\nPoužívá se při hedgingu opakujících se pravidelných transakcí (např. úroky z půjčky placené čtvrtletně).\nObchoduje se na OTC trhu.\nVyužíván převážně finančními institucemi."
+  },
+  {
+    "objectID": "week_12.html#opce",
+    "href": "week_12.html#opce",
+    "title": "12  Úvod do finančních derivátů",
+    "section": "12.5 Opce",
+    "text": "12.5 Opce\n\n12.5.1 Call vs. Put\n\nCall opce (kupní opce) je právo koupit podkladové aktivum v předem sjednaný čas za předem dohodnutou cenu.\nPut opce (prodejní opce) je právo prodat podkladové aktivum v předem sjednaný čas za předem dohodnutou cenu.\n\n\n\n12.5.2 Long vs. Short\n\nLong pozice označuje majitele opce. Má právo rozhodnout, zda bude opce uplatněna.\nShort pozice označuje protistranu, která prodává opci long pozici. Pokud je opce uplatněna, musí transakci uskutečnit.\n\n\n\n12.5.3 Americká vs. Evropská opce\n\nAmerická opce může být uplatněna kdykoliv během doby splatnosti.\nEvropská opce může být uplatněna pouze v den splatnosti.\n\n\n\n12.5.4 Charakteristiky opce\n\nopční prémie (poplatek, který platí long pozice short pozici, cena opce)\nstrike price (předem dohodnutá cena podkladového aktiva)\ndoba expirace\nEvropská nebo Americká\nCall nebo put\nLong nebo short\n\n\n\n12.5.5 Long call\n\nopční prémie 5, strike price 100 \n\n\n\n12.5.6 Short call\n\nopční prémie 5, strike price 100 \n\n\n\n12.5.7 Long put\n\nopční prémie 7, strike price 70 \n\n\n\n12.5.8 Short put\n\nopční prémie 7, strike price 70 \n\n\n\n12.5.9 Opční prémie\n\nVnitřní hodnota hodnota opce pokud by byla okamžitě uplatněna.\nČasová hodnota rozdíl mezi opční prémií a vnitřní hodnotou opce."
+  },
+  {
+    "objectID": "week_13.html",
+    "href": "week_13.html",
+    "title": "13  Předtermín zkoušky",
+    "section": "",
+    "text": "Tip\n\n\n\nNutnost přihlášení na termín v ISu."
   }
 ]
