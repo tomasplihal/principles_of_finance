@@ -1,1 +1,571 @@
-# Týden
+# Časová hodnota peněz
+
+::: {.callout-note}
+# Studijní materiály
+
+- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
+University. <https://openstax.org/details/books/principles-finance>
+  - Chapter 7 - Time Value of Money I: Single Payment Value
+  - Chapter 8 - Time Value of Money II: Equal Multiple Payments
+  - Chapter 9 - Time Value of Money III: Unequal Multiple Payment Values
+:::
+
+**Výstupy z učení:**
+
+1. Vysvětlit vliv času na hodnotu peněz.
+2. Ovládat výpočet budoucí hodnoty pomocí jednoduchého i složeného úročení.
+3. Dokázat spočítat současnou hodnotu peněz.
+4. Chápat pojek efektivní úroková míra.
+5. Umět využívat vzroce pro výpočet anuity.
+
+## Úvod do časové hodnoty peněz
+
+::: {.callout-important title="Časová hodnota peněz"}
+Časová hodnota peněz (TVM, time value of money) $\rightarrow$ peníze dnes jsou
+hodnotnější než stejné množství peněz získané v budoucnosti.
+:::
+
+Hlavní důvody:
+
+1. preference okamžité spotřeby
+2. riziko platebního selhání
+3. potencíál zhodnocení (investování) 
+
+### Proč je TVM důležitá?
+
+- Celý svět financí je postaven na TVM.
+- Základní koncept každého finančního rozhodnutí (např. spotřeba, investice, půjčky,
+zajištění na důchod, atd.)
+- Umožňuje lépe se rozhodovat v běžném životě.
+
+### Základní pojmy
+
+- Úrok​ $\rightarrow$ rozdíl mezi vypůjčenou a vrácenou částkou vyjádřený v peněžních
+jednotkách.​
+- Úročení ​$\rightarrow$ způsob započítávání úroků.
+- Úroková míra ​$\rightarrow$ odměna za zapůjčení kapitálu vyjádřená v procentech.​
+- Úroková sazba ​$\rightarrow$ konkrétní úroková míra pro určitou operaci (míra vztažená
+ke konkrétnímu finančnímu produktu)​.
+
+#### Fisherova rovnice
+
+- Nominální úroková míra​$\rightarrow$ sjednaná úroková míra mezi vypůjčovatelem a
+poskytovatelem kapitálu.​
+- ​Reálná úroková míra ​$\rightarrow$ upravená nominální úroková míra o vliv inflace.​
+- Aktuální informace o inflace jsou na stránkách [ČNB](https://www.cnb.cz/).
+
+$$
+i = r + \pi
+$$
+  - $i \dots$ nominální úroková míra
+  - $r \dots$ reálná úroková míra
+  - $\pi \dots$ očekávaná inflace
+
+::: {.callout-tip title="Příklad"}
+Úroková sazba na spořicím účtu v bance je 4%. Jaká je reálná úroková míra pokud
+očekáváme inflaci ve výši 2.5%?
+
+$$ 
+i = r + \pi
+$$
+
+$$ 
+4\% = r + 2.5\%
+$$
+
+$$ 
+r = 4\% - 2.5\% = 1.5\%
+$$
+:::
+
+## Budoucí hodnota peněz
+
+::: {.callout-important title="Definice"}
+Budoucí hodnota (FV, future value) peněz $\rightarrow$ hodnota peněz v určitém čase v
+budoucnosti.
+:::
+
+::: {.callout-tip title="Příklad"}
+Investujete 100 Kč na spořicí účtet v bance, která slibuje roční úrokovou sazbu 8%.
+Budoucí hodnota peněz je celková naspořená částka za určitý čas. Budoucí hodnota 100 Kč
+za jeden rok je 108 Kč.
+:::
+
+### Jednoduché úročení
+
+::: {.callout-important title="Definice"}
+Jednoduché úročení $\rightarrow$ úročí se pouze jistina (počáteční vklad).
+:::
+
+::: {.callout-tip title="Příklad"}
+Investujete 100 Kč na spořicí účet v bance, který slibuje roční úrokovou sazbu 8%. Jaká
+bude hodnota investice za 2 roky?
+
+$$ FV = 100 + 8 + 8 = 116 $$ 
+:::
+
+- **Obecný vzorec pro jednoduché úročení:**
+$$
+FV = PV \times (1 + [r \times n])
+$$
+  - $r \dots$ úroková sazba
+  - $n \dots$ počet úrokových období
+  - $PV \dots$ současná hodnota peněz
+
+::: {.callout-tip title="Příklad"}
+Kolik naspoříte s použitím jednoduchého úročení za 15 let při roční úrokové sazbě 8% a
+10%? Počáteční vklad je 100 Kč.
+$$
+FV = 100 \times (1 + [0.08 \times 15]) = 220
+$$
+$$
+FV = 100 \times (1 + [0.10 \times 15]) = 250
+$$
+:::
+
+### Složené úročení
+
+::: {.callout-important title="Definice"}
+Složené úročení $\rightarrow$ úročí se jistina a všechny průběžně získané úroky.
+:::
+
+::: {.callout-tip title="Příklad"}
+Investujete 100 Kč na spořicí účet v bance, který slibuje úrok 8% ročně. Po prvním
+roce vložíte získané peníze zpět na účet. Kolik budete mít za 2 roky?
+
+$$
+FV = PV \times (1 + r) \times (1 + r) = 100 \times 1.08 \times 1.08 = 116.64
+$$
+:::
+
+- **Obecný vzorec pro složené úročení:**
+$$
+FV = PV \times (1 + r)^n
+$$
+  - $r \dots$ úroková sazba
+  - $n \dots$ počet úrokových období
+  - $PV \dots$ současná hodnota peněz
+
+::: {.callout-tip title="Příklad"}
+Kolik naspoříte s použitím složeného úročení za 15 let při roční úrokové sazbě 8% a
+10%? Počáteční vklad je 100 Kč a úroky jsou připisovány jednou ročně.
+$$
+FV = 100 \times (1 + 0.08)^{15} = 317.22
+$$
+$$
+FV = 100 \times (1 + 0.10)^{15} = 417.72 
+$$
+:::
+
+## Současná hodnota peněz
+
+::: {.callout-important title="Definice"}
+Současná hodnota (PV, present value) peněz $\rightarrow$ hodnota peněz dnes.
+:::
+
+::: {.callout-tip title="Příklad"}
+Investujete 100 Kč na spořicí účtet v bance, která slibuje roční úrokovou sazbu 8%.
+Současná hodnota peněz je investovaných 100 Kč.
+:::
+
+- Výpočet současné hodnoty se ozančuje také jako ***diskontování***.
+- Používá se v případech, kdy známe budoucí hodnotu daného peněžního toku a chceme zjistit jeho hodnotu v současnosti.
+- Dlůžitý koncept pro rozhodování o investicích a jejich oceňování.
+- **Obecný vzorec pro výpočet současné hodnoty:** 
+$$
+PV = \frac{FV}{(1+r)^n}
+$$
+  - $r \dots$ úroková sazba
+  - $n \dots$ počet úrokových období
+  - $FV \dots$ budoucí hodnota peněz
+
+::: {.callout-tip title="Příklad"}
+Máte možnost investice, která vám za jeden rok vyplatí 100 Kč. Kolik budete ochotni
+investovat dnes, pokud je běžná úroková sazba 8%? Jak se změní výsledek, pokud dostanete
+100 Kč až za 7 let?
+$$
+PV = \frac{100}{(1 + 0.08)^1} = 92.59
+$$
+$$
+PV = \frac{100}{(1 + 0.08)^7} = 58.35
+$$
+:::
+
+## Kratší časové intervaly než jeden rok
+
+- **Obecný vzorec:**
+$$
+FV = PV \times (1 + \frac{r}{m})^{n \times m}
+$$ 
+  - $m$ je počet úrokových období za rok
+  - $n$ je počet let
+
+::: {.callout-tip title="Příklad"}
+Kolik naspoříte za 15 let z původní částky 100 Kč při roční úrokové sazbě 8% s použitím
+složeného úročení pokud se bude úrok připisovat měsíčně/čtvrtletně?
+$$
+FV = 100 \times (1 + \frac{0.08}{12})^{15 \times 12} = 330.69
+$$
+$$
+FV = 100 \times (1 + \frac{0.08}{4})^{15 \times 4} = 328.10
+$$
+:::
+
+### Efektivní úroková míra
+
+::: {.callout-important title="Definice"}
+Efektivní úroková míra zohledňuje frekvenci úročení a dokáže vyjádřit úrokovou míru ve
+stejných jednotkách (roční úroková míra).
+:::
+
+- Umožnňuje snadné srovnání úrokových měr s různou frekvencí úročení.
+- Vyjadřuje přesněji skutečné náklady/vvýnosy.
+- **Obecný vzrorec efektivní úrokové míry:**
+
+$$
+EIR = \left(1 + \frac{i}{n}\right)^n - 1
+$$
+
+  - $i \dots$ nominální úroková míra
+  - $n \dots$ počet úrokových období v roce
+
+::: {.callout-tip title="Příklad"}
+Uvažujme roční úrokovou míru 5%:
+
+- roční úročení
+$$
+EIR = \left(1 + \frac{0.05}{1}\right)^1 - 1 = 0.05 = 5\%
+$$
+
+- půlroční úročení (semi-annual)
+$$
+EIR = \left(1 + \frac{0.05}{2}\right)^2 - 1 = \left(1 + 0.025\right)^2 - 1 = 0.050625 = 5.0625\%
+$$
+
+- čtvrtletní úročení (quarterly)
+$$
+EIR = \left(1 + \frac{0.05}{4}\right)^4 - 1 = \left(1 + 0.0125\right)^4 - 1 = 0.050945 = 5.0945\%
+$$
+
+- měsíční úročení (monthly)
+$$
+EIR = \left(1 + \frac{0.05}{12}\right)^12 - 1 = \left(1 + 0.004167\right)^{12} - 1 = 0.051162 = 5.1162\%
+$$
+:::
+
+## Anuita
+
+::: {.callout-important title="Definice"}
+Anuita $\rightarrow$ série stejných peněžních toků v pravidelných intervalech.
+:::
+
+- **Anuita polhůtní** $\rightarrow$ peněžní toky nastávají na konci každého obddobí.
+- **Anuita předlhůtní** $\rightarrow$ peněžní toky nastávají na začátku každého období.
+
+### Budoucí hodnota anuity
+
+::: {.callout-tip title="Příklad"}
+Na konci každého roku investujete 100 Kč po dobu tří let. Investice se zhodnocuje úrokem
+8%. Jaká bude budoucí hodnota investice? (anuita polhůtní)
+$$
+FV = 100 \times 1.08^2 + 100 \times 1.08^1 + 100 \times 1.08^0 = 324.64
+$$
+:::
+
+- **Obecný vzorec pro běžnou anuitu:**
+$$
+\text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r}
+$$
+
+- **Obecný vzorec pro splatnou anuitu:**
+$$
+\text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r} \times (1 + r)
+$$
+
+  - FVA (future value of an ordinary annuity)
+  - PMT (periodic equal payment)
+
+::: {.callout-note collapse="true" title="Jak dlouho trvá naspořit milion?"}
+
+- Výpočet s využitím běžné anuity.
+
+| Úroková sazba (%) | Jednorázová investice 10 000 Kč | Pravidelná investice 10 000 Kč ročně |
+|:-----------------:|:------------:|:------------:|
+|  5                | 94.4         | 36.7         |
+| 10                | 48.3         | 25.2         |
+| 15                | 33.0         | 19.8         |
+| 20                | 25.3         | 16.7         |
+:::
+
+### Perpetuita
+
+::: {.callout-important title="Definice"}
+Perpetuita $\rightarrow$ nekonečná série peněžních toků.
+:::
+
+- Specifický typ anuity s neomezenou dobou trvání.
+- Často se používá pro oceňování preferenčních akcií.
+- **Obecný vzorec pro současnou hodnotu perpetuity:**
+$$
+PV = \frac{C}{r}
+$$
+  - $C \dots$ konstantní peněžní tok přijatý za každé období
+  - Vzorec předpokládá, že první platba je provedena na konci prvního období, peněžní
+  toky jsou konstantní a pokračují na dobu neurčitou.
+
+::: {.callout-tip title="Příklad"}
+Zvažujete investování do perpetuity, která slibuje platbu 500 Kč na konci každého roku
+na dobu neurčitou a úroková sazba je 5%. Současná hodnota této perpetuity je:
+$$
+PV = \frac{500}{0.05} = 10000
+$$
+Přijatelná cena za tuto perpetuitu je až 10 000 Kč.
+:::
+
+### Současná hodnota anuity
+
+::: {.callout-tip title="Příklad"}
+Máte možnost investice, která vám za 1 rok vyplatí 1000 a poté ještě další 2 roky budete
+dostávat stejnou částku. Kolik jste ochotni za danou investici zaplatit pokud je běžná
+úroková sazba 8%?
+$$
+PV = 1000 \times \frac{1}{1,08^1} + 1000 \times \frac{1}{1,08^2} + 1000 \times
+\frac{1}{1,08^3} = 2577
+$$
+:::
+
+- **Obecný vzorec pro běžnou anuitu:**
+$$
+\text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r}
+$$
+
+- **Obecný vzorec pro splatnou anuitu:** 
+$$
+\text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r} \times (1+r)
+$$
+  - PVA (present value of an ordinary annuity)
+  - PMT (periodic equal payment)
+
+## Příklady k procvičení
+
+### Základní pojmy
+
+1. Jaká je reálná úroková míra na termínovaném účtu, pokud je nominální úroková míra na
+tomto účtu 12.5% a míra inflace činí 10.5%.​
+
+::: {.callout-note collapse="true" title="Výsledek"}
+2%
+:::
+
+2. Reálná úroková míra činí -3%, nominální úroková míra byla 5,5%. Jaká byla v daném
+roce výše inflace v ekonomice?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+8,5%
+:::
+​
+3. Jaká je výše reálné úrokové míry, pokud víme, že nominální úroková míra je 4% a
+očekávaná míra inflace v daném roce je 10%.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+-6%
+:::
+
+4. Investujete do dluhopisu, který vyplácí roční úrok 2,65%. Jaká bude vaše reálná
+úroková míra, pokud inflace dosahuje hodnoty 7,85% ročně?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+-5,26%
+:::
+
+5. Jakou budete požadovat nominální úrokovou sazbu, pokud chcete získat reálné
+zhodnocení investice 7,61% p.a. a očekáváte inflaci 4,42%? Investici navíc považujete za
+rizikovou a chcete prémii za riziko ve výši 2.26%.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+14,29%
+:::
+
+### Jednoduché úročení
+
+1. Termínovaný vklad nabízí jednoduché úročení na dobu 3 let s úrokem 7,2%. Kolik
+naspoříte při vkladu 150 000 Kč?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+182 400 Kč
+:::
+
+2. Termínovaný vklad nabízí jednoduché úročení na dobu 5 let s úrokem 3,4%. Kolik
+naspoříte při vkladu 300 000 Kč?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+351 000 Kč
+:::
+
+3. Investujete 72 000 Kč do termínovaného vkladu s roční úrokovou sazbou 1.4%. Úroky jsou
+vypláceny jednou ročně a úročí se pouze jistina. Kolik budete mít naspořeno za 17 let?.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+89 136 Kč
+:::
+
+### Složené úročení
+
+1. Termínovaný vklad nabízí složené úročení na dobu 8 let s úrokem 6,3%. Kolik
+naspoříte při vkladu 1 000 000 Kč?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+1 630 294,70 Kč
+:::
+
+2. Termínovaný vklad nabízí složené úročení na dobu 5 let s úrokem 4%. Kolik
+naspoříte při vkladu 300 000 Kč?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+364 995,87 Kč
+:::
+
+3. Investujete 65 000 Kč na spořicí účet v bance se sazbou 9.5% p.a. Úroky jsou
+vypláceny jednou ročně a úročí se vždy jistina i s úroky. Kolik budete mít naspořeno za
+5 let?.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+102 325,52 Kč
+:::
+
+4. Klient si uložil na spořicí účet částku 90 000 Kč při úrokové míře 4,5% p.a. Kolik si
+bude moci vyzvednout po 5 letech, pokud víme, že úroky jsou připisovány jednou ročně?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+112 156,4 Kč​
+:::
+
+5. Jaká byla roční úroková sazba z vkladu 20 000 Kč. Pokud za 4 roky máme na účtu 23 400
+Kč. Úroky byly připisovány jednou ročně a byly ponechány na účtu k dalšímu zhodnocení.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+4%​
+:::
+
+### Diskontování
+
+1. Investice vám za 5 let vyplatí 13 000 Kč. Jaká je současná hodnota této investice,
+pokud požadujete výnos 1,31% p.a.?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+12 180,97 Kč
+:::
+
+2. Banka odkoupila směnku v hodnotě 500 000 Kč s dobou splatnosti 1 rok. Jakou banka
+používá diskontní sazbu, pokud za směnku vyplatila 480 000 Kč?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+4%​
+:::
+
+3. Dlužník postupuje bance směnku na 100 000 Kč a zavazuje se ji splatit za 3 měsíce.
+Jakou má banka diskontní sazbu, pokud dlužník obdrží úvěr ve výši 97 000 Kč.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+12%​
+:::
+
+### Kratší časové intervaly než jeden rok
+
+1. Investujete 99 000 Kč na spořicí účet v bance s roční úrokovou mírou 7,24%. Úroky
+jsou vypláceny čtvrtletně a úročí se vždy jistina i s úroky. Kolik budete mít naspořeno
+za 12 let?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+234 194,23 Kč
+:::
+
+2. Investujete 85 000 Kč na spořicí účet v bance s roční úrokovou mírou 14,23%. Úroky
+jsou vypláceny měsíčně a úročí se vždy jistina i s úroky. Kolik budete mít naspořeno za
+15 let?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+70 9524,21 Kč
+:::
+
+3. Vypočítejte dobu splatnosti při jednoduchém úročení, pokud vklad ve výši 3 960 Kč
+vzrostl na 4 000 Kč. Úroková míra činí 2 % p.a.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+0,505 roku
+:::
+
+4. Při jaké úrokové sazbě bude činit úrok z vkladu 100 000 Kč na 7 měsíců 1 500 Kč?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+2,57%
+:::
+
+5. Na dvouletý termínovaný vklad jste uložili 10 000 Kč. Úroky jsou připisovány
+pololetně. Kolik si budete moci vybrat za 2 roky, pokud je úroková sazba 4% p.a.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+10 824,3 Kč
+:::
+
+6. Při jaké výši úrokové sazby se zúročí částka za 5 let z 50 000 na 70 000 Kč. Úroky
+jsou připisovány čtvrtletně.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+6,78%
+:::
+
+7. Jaký bude rozdíl za 3 roky v konečné výši kapitálu, pokud byl počáteční vklad 120 000
+Kč, úroková míra činí 1,5% p.a., a jsou úroky připisovány​ půlročně nebo ročně.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+125 502,3 Kč - 125 481,4 Kč = 20,9 Kč
+:::
+
+8. Chcete si uložit 10 000 Kč na 3 roky. Kterou z následujících možností zvolíte?
+    - Úroková míra 12% p.a. a pololetní připisování úroků [12,36%]​
+    - Úroková míra 11% p.a. a čtvrtletní připisování úroků [11,46%]​
+
+::: {.callout-note collapse="true" title="Výsledek"}
+- EIR = 12,36%​
+- EIR = 11,46%​
+:::
+
+9. Vaše banka nabízí klientům jeden typ účtu spojený se 4% roční nominální úrokovou
+mírou a se čtvrtletním úročením. Jeden z Vašich dobrých klientů však požaduje měsíční
+úročení. Jakou výši roční nominální úrokové sazby mu nabídnete, chcete-li zachovat
+stejné podmínky pro oba druhy účtů?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+3,98%​
+:::
+
+### Anuita
+
+1. Na konci každého roku investujete 58 000 Kč po dobu 18 let. Investice se zhodnocuje
+úrokem 10,61% p.a. Kolik budete mít celkem naspořeno?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+2 810 812,27 Kč
+:::
+
+2. Investiční příležitost vyplácí na konci každého roku 13 000 Kč po dobu 19 let. Vaše
+diskontní sazba je 8,39% p.a. Kolik budete ochotni zaplatit za danou investici?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+121 420,01 Kč
+:::
+
+3. Na začátku každého roku investujete 73 000 Kč po dobu 16 let. Investice se zhodnocuje
+úrokem 8,74% ročně. Kolik budete mít celkem naspořeno?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+2 562 563,13 Kč
+:::
+
+4. Investiční příležitost vyplácí na začátku každého roku 39 000  Kč po dobu 19 let.
+Vaše diskontní sazba je 10,48% ročně. Kolik budete ochotni zaplatit za danou investici?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+349 250,70 Kč
+:::
