@@ -1,1 +1,371 @@
-# Týden
+# Jak přemýšlet o investování
+
+::: {.callout-note}
+# Studijní materiály
+
+- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
+University. <https://openstax.org/details/books/principles-finance>
+  - Chapter 15 - How to Think about Investing
+:::
+
+**Výstupy z učení:**
+
+1. Rozumět pojmům teorie efektivních trhů, operativní efektivnosti a informační
+efektivnosti na trzích.
+2. Pochopit základní principy investování, včetně role a typů tržních indexů.
+3. Znát metody hodnocení rizika a výnosu pro investice.
+4. Naučit se činit informovaná investiční rozhodnutí na základě analytických nástrojů a
+teorií.
+
+## Teorie efektivních trhů
+
+::: {.callout-important title="Definice"}
+Teorie efektivních trhů (Efficient Market Hypothesis, EMH) tvrdí, že ceny finančních
+aktiv odrážejí všechny dostupné informace, což znemožňuje dlouhodobě překonávat
+výkonnosti trhu.
+:::
+
+- Jedná se o informační efektivitu trhu.
+- Ceny se rychle a přesně přizpůsobují novým informacím, nízké transakční náklady,
+rychlé a bezproblémové vypořádání obchodů atd.
+- Na efektivním trhu by měly být větší výkyvy v cenách způsobeny pouze neočekávanými
+zprávami (očekávané zprávy jsou již zahrnuty v cenách).
+- Obtížné najít akcie, které jsou špatně oceněné, a dosahovat vyšších výnosů než trh.
+- Odchylky od ideálních cen se objevují, ale náhodně a nelze je předpovídat (**náhodná
+procházka, random walk theory**).
+
+Existují tři formy informační efektivnosti trhu:
+
+1. **Slabá efektivnost**
+    - Veškeré historické informace o tržních cenách a obchodech jsou plně odraženy v
+    aktuálních cenách.
+    - Tzn. technická analýza nelze použít k překonání trhu.
+2. **Středně-silná efektivnost**
+    - Všechny veřejně dostupné informace jsou promítnuty v cenách, např. historické
+    ceny, finanční výkazy, ekonomické faktory, atd.
+    - Tzn. technická ani fundamentální analýze nelze použít k překonání trhu.
+3. **Silná efektivnost**
+    - Všechny veřejné i neveřejné informace jsou zohledněny v současných cenách.
+    - Tzn. nelze žádným způsobem překonat trh, ani s využítím neveřejných informací
+    (insider trading).
+
+- Existují i další formy efektivity jako například opertivní efektivita, tzn. rychlost a
+přesnost zpracování nákupního nebo prodejního příkazu za nejlepší dostupnou cenu.
+
+## Finanční indexy
+
+::: {.callout-important title="Definice"}
+Indexy jsou ukazatele, které sledují výkonnost vybraných finančních aktiv,
+reprezentující konkrétní trh nebo sektor.
+:::
+
+- Indexy mohou sledovat akcie, dluhopisy, komodity, atd. nebo jejich různé kombinace.
+- Index má přesně daná pravidla, jaká aktiva do něho vstupují a jakou mají v indexu
+váhu.
+- Hlavní využití akciových indexů zahrnují:
+  - **Benchmarking**: Měří výkonnost trhu pro srovnání s dalšími investicemi.
+  - **Investice**: Slouží jako podkladová aktiva pro indexové fondy a ETF.
+  - **Analýza**: Pomáhá při analýze vývoje trhu a sentimentu investorů (makroekonomický
+  ukazatel).
+
+Akciové indexy se počítají různými metodami, v závislosti na typu indexu. Tři
+nejběžnější metody jsou:
+
+1. **Vážený podle tržní kapitalizace**: Váhy podle celkové hodnoty akcií; Příklad: [S&P
+500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
+2. **Vážený podle ceny**: Příklad: [Dow Jones Industrial
+Average](https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/)
+3. **Rovnoměrně vážený** (equal-weighted): Každá akcie má stejnou váhu. Příklad: [S&P
+100 Equal Weight
+Index](https://www.spglobal.com/spdji/en/indices/equity/sp-100-equal-weight-index/)
+
+### Vybrané akciové indexy
+
+1. **S&P 500 (USA)**: Založen 1957, vážený podle tržní kapitalizace. Sleduje 500
+největších amerických společností a je považován za ukazatel výkonnosti amerického trhu.
+2. **Dow Jones Industrial Average (USA)**: Založen 1896, cenově vážený. Sleduje 30
+velkých, průmyslově významných amerických společností.
+3. **NASDAQ Composite (USA)**: Založen 1971, vážený podle třtní kapitalizace. Zaměřuje
+se na technologické společnosti, zahrnuje více než 3 000 akcií.
+4. **FTSE 100 (Spojené království)**: Založen 1984, vážený podle třžní kapitalizace.
+Sleduje 100 největších společností kotovaných na Londýnské burze.
+5. **Nikkei 225 (Japonsko)**: Založen 1950, cenově vážený. Sleduje 225 nejvýznamnějších
+japonských společností kotovaných na Tokijské burze.
+
+Další indexy např.: DAX (Německo), CAC 40 (Francie), Hang Seng (Hongkong), MSCI World,
+Shanghai Composite (Čína), BSE Sensex (Indie), atd.
+
+## Podílové fondy a ETF
+
+::: {.callout-important title="Definice"}
+**Podílové fondy** jsou investiční nástroje, které shromažďují prostředky od mnoha
+*investorů za účelem nákupu diverzifikovaného portfolia cenných papírů, jako jsou akcie,
+*dluhopisy, atd. Spravují je profesionální portfolio manažeři a sledují stanovenou
+*investiční strategii.
+:::
+
+::: {.callout-important title="Definice"}
+**ETF (Exchange-Traded Funds)** jsou investiční fondy, které se obchodují na burze
+*podobně jako akcie. ETF obvykle sledují konkrétní index, sektor, komoditu nebo jinou
+*třídu aktiv.
+:::
+
+Srovnání podílovvých fondů a ETF:
+
+|                               | **Podílové fondy**                                | **ETF (Exchange-Traded Funds)**                      |
+|-------------------------------|:-------------------------------------------------:|:----------------------------------------------------:|
+| **Obchodování**               | Nákup/prodej na konci obchodního dne za NAV (Net Asset Value) | Obchoduje se během obchodního dne na burze jako akcie |
+| **Správa**                    | Většinou aktivně spravované                       | Obvykle pasivně spravované (sledují index)           |
+| **Flexibilita**               | Strategie reaguje na aktuální situaci             | Strategie pevně daná                                 |
+| **Poplatky**                  | Vyšší poplatky (manažerské, vstupní/výstupní)     | Nižší poplatky (nízké manažerské, transakční poplatky) |
+| **Transparentnost**           | Méně transparentní (strategii tvoří manažer)      | Vysoce transparentní (strategie pevně daná předem)   |
+| **Dostupnost**                | Prostřednictvím finančních institucí nebo poradců | Na burzách, prostřednictvím makléřů                  |
+| **Jednoduchost**              | Možnost automatického investofání                 | Nutnost kupovat akcie na burze                       |
+| **Emise**                     | Emituje podílové listy                            | Emituje akcie                                        |
+
+## Měření výnosu
+
+- Realizovaný výnos je změna hodnoty portfolia za určité časové období.
+- Potřeba zohlednit dividendy a případně štěpení akcií, proto se nejčastěji používá
+Adjusted Close Price.
+
+::: {.callout-important title="Definice"}
+**Celkový výnos (Total Return)**: Zahrnuje všechny složky výnosu, tedy změnu hodnoty
+*investice (kapitálový zisk nebo ztráta) plus jakékoli výnosy z dividend nebo úroků.
+:::
+
+$$
+\text{Celkový výnos} = \frac{(V_f - V_i) + D}{V_i} \times 100
+$$
+
+- $V_f \dots$ koncová hodnota investice
+- $V_i \dots$ počáteční hodnota investice
+- $D \dots$ výnosy z investice (např. dividendy nebo úroky) 
+
+::: {.callout-tip title="Příklad"}
+Nákup akcie za \$128,74 a prodej po jednom roce za \$176,53. Za dobu držení
+akcie byly vyplaceny dividendy ve výši \$2,68.
+$$
+\text{Kapitálový výnos} = 176,53 - 128,74 = \$47,79
+$$
+
+$$
+\text{Dividendový výnos} = \$2,68
+$$
+
+$$
+\text{Celkový výnos} = 2,68 + 47,79 = \$50,47
+$$
+  
+$$
+\text{Celkový výnos (\%)} = \frac{(176,53 - 128,74) + 2.68}{128,74} \times 100 = 39,20\%
+$$
+:::
+
+::: {.callout-important title="Definice"}
+**CAGR** (Compound Annual Growth Rate) někdy označováno také jako efektivní roční výnos
+(effective annual rate, EAR) přepočítává celkový výnos na roční bázi a zohledňuje
+složené úročení, což umožňuje srovnání výnosů investic s různými časovými horizonty.
+:::
+
+$$
+\text{CAGR} = (\frac{V_f}{V_i})^m - 1 = (1 + \text{HPR})^m - 1
+$$
+
+- $V_f \dots$ koncová hodnota investice
+- $V_i \dots$ počáteční hodnota investice
+- $\text{HPR} \dots$ výnos za dané časové období (holding priod return)
+- $m \dots$ počet těchto období v jednom roce
+
+::: {.callout-tip title="Příklad"}
+- Výnos 25% za 2 roky:
+$$
+\text{CAGR} = (1 + 0.25)^{\frac{1}{2}} - 1 = 11.80\%
+$$
+- Výnos 10% za 6 měsíců:
+$$
+\text{CAGR} = (1 + 0.10)^{\frac{12}{6}} - 1 = 20.89\%
+$$
+- Výnos 1% za 15 dní:
+$$
+\text{CAGR} = (1 + 0.01)^{\frac{365}{15}} - 1 = 27.11\%
+$$
+:::
+
+::: {.callout-note title="Pozor na aritmetický průměr!" collapse="true"}
+Roční data SPY upravená o dividendy a splity stažená z
+[Macrotrends](https://www.macrotrends.net/stocks/charts/SPY/spdr-s-p-500-etf/stock-price-history).
+
+| Rok  | Cena     | Roční výnos |
+|:----:|:--------:|:-----------:|
+| 2022 | 378.1934 | -18.17%     |
+| 2021 | 462.1801 | 28.74%      |
+| 2020 | 358.9909 | 18.37%      |
+| 2019 | 303.2705 | 31.22%      |
+| 2018 | 231.1130 | -4.56%      |
+| 2017 | 242.1472 | 21.70%      |
+| 2016 | 198.9700 | 12.00%      |
+| 2015 | 177.6494 | 1.25%       |
+| 2014 | 175.4526 | 13.46%      |
+| 2013 | 154.6353 | 32.31%      |
+| 2012 | 116.8764 | -           |
+
+- Průměrný roční výnos lze spočítat pomocí CAGR a výnosu za celé období:
+
+$$
+\text{CAGR} = \frac{378.1934}{116.8724}^{\frac{1}{10}} - 1 = 12.46\%
+$$
+
+- Stejného výsledku lze dosáhnout pomocí geometrického průměru ročních výnosů.
+- **Aritmetický průměr** ročních výnosů však dává odlišný výsledek:
+
+$$
+\text{Arithmetic Average} = \frac{-18.17\% + 28.74\% + \dots + 32.31\%}{10} =
+\frac{136.32\%}{10} = 13.63\%
+$$
+
+- Aritmetický průměr vychází vyšší než geometrický, protože ***nezohledňuje složené
+úročení***.
+- Aritmetický průměr vyjadřuje, kolik jste vydělali v typickém roce.
+- Geometrický průměr ukazuje, kolik jste skutečně vydělali za rok v průměru při držení
+dané investice.
+:::
+
+## Měření rizika
+
+- Riziko se týká nejistoty dosažení očekávaného výnosu.
+
+::: {.callout-important title="Definice"}
+**Směrodatná odchylka (Standard Deviation)** měří, jak moc se výnosy investice odchylují
+*od průměrného výnosu. Vysoká směrodatná odchylka naznačuje vysokou volatilitu, tedy
+*vyšší riziko.
+:::
+
+Vzorec pro směrodatnou odchylku:
+
+$$
+\sigma = \sqrt{\frac{\sum_{i=1}^{n} (r_i - \bar{r})^2}{n}}
+$$
+
+- $r_i \dots$ jednotlivé výnosy
+- $\bar{r} \dots$ průměrný výnos
+- $n$ počet období
+
+Pokud mají výnosy normální rozložení pravděpodobnosti, tak platí (přibližně):
+
+- 68 % pozorování leží v rozmezí jedné směrodatné odchylky od průměru.
+- 95 % pozorování leží v rozmezí dvou směrodatných odchylek od průměru.
+- 99,7 % pozorování leží v rozmezí tří směrodatných odchylek od průměru.
+
+Mezi další ukazatele rizika řadíme např. max. drawdown, value-at-risk, expected
+shortfall, atd.
+
+### Diverzifikace
+
+::: {.callout-important title="Definice"}
+Diverzifikace je investiční strategie, která spočívá v rozložení investic do různých
+aktiv, sektorů nebo geografických oblastí s cílem snížit celkové riziko portfolia.
+:::
+
+- Využívá nedokonalé korelace aktiv v portfolium.
+- S roztoucím množstvím aktiv klesá přínos dodatečného aktiva k diverzifikaci portfolia
+(přibližně po 20 až 30 akciích je již dodatečný efekt diverzifikace velmi malý).
+- **Nesystematické riziko** (specifické, jedinečné riziko) $\rightarrow$ lze odstranit
+diverzifikací.
+- **Systematické riziko** (tržní riziko) $\rightarrow$ nelze odstranit diverzifikací.
+
+## Sharpe Ratio
+
+::: {.callout-important title="Definice"}
+Sharpe ratio měří výnos investice vzhledem k jejímu riziku, tedy poměr nadměrného výnosu
+(výnos nad bezrizikovou sazbou) k jeho volatilitě (směrodatné odchylce).
+:::
+
+- Poměrový ukazatel pro srovnání různých investic.
+- Poskytuje komplexní pohled na profil rizika a výnosů investice.
+- Vyšší Sharpe Ratio značí atraktivnější investici.
+
+$$
+\text{Sharpe ratio} = \frac{R_p - R_f}{\sigma_p}
+$$
+
+- $R_p \dots$ výnos portfolia
+- $R_f \dots$ bezriziková úroková sazba
+- $\sigma_p \dots$ směrodatná odchylka výnosů (nad bezrizikovou sazbou)
+
+### Souhrnný příklad
+
+| **Datum**  | **Cena akcie**     | **Výnos**     | **Odchylka od průměru**                  | **Odchylka od průměru na druhou** |
+|:----------:|:------------------:|:-------------:|:----------------------------------------:|:---------------------------------:|
+| 2022-01-31 | 446.572021         | NA            |                                          |                                   |
+| 2022-02-28 | 433.672150         | -0.028886     | -0.017685                                | 0.000313                          |
+| 2022-03-31 | 449.959442         | 0.037557      | 0.048759                                 | 0.002377                          |
+| 2022-04-30 | 410.159393         | -0.088453     | -0.077251                                | 0.005968                          |
+| 2022-05-31 | 411.458649         | 0.003168      | 0.014369                                 | 0.000206                          |
+| 2022-06-30 | 377.204315         | -0.083251     | -0.072049                                | 0.005191                          |
+| 2022-07-31 | 412.154053         | 0.092655      | 0.103856                                 | 0.010786                          |
+|            |                    |               |                                          |                                   |
+|            | **Průměrný výnos** | **-0.011202** | **Součet odchylek od průměru na druhou** | **0.024842**                      |
+|            |                    |               | **Variance**                             | **0.004968**                      |
+|            |                    |               | **Směrodatná odchylka**                  | **0.070486**                      |
+|            |                    |               | **Sharpe ratio (risk-free = 0)**         | **-0.158922**                     |
+
+## Příklady k procvičení
+
+1. Nákup akcie za $370 a prodej po jednom roce za $426. Za dobu držení akcie byly
+vyplaceny dividendy ve výši $3,2. Jaký je celkový procentní výnos invetice?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+16%
+:::
+
+2. Nákup akcie za $698,5 a prodej po jednom roce za $681. Za dobu držení akcie byly
+vyplaceny dividendy ve výši $4,9. Jaký je celkový procentní výnos invetice?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+-1,8%
+:::
+
+3. Počáteční hodnota investice byla \$1 200, na konci byla hodnota investice \$1 394.
+Celková doba trvání byla 4 roky. Jak velký je CAGR?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+3,82%
+:::
+
+4. Počáteční hodnota investice byla \$213, na konci byla hodnota investice \$321.
+Celková doba trvání byla 7 let. Jak velký je CAGR?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+6,03%
+:::
+
+5. Počáteční hodnota investice byla \$121, na konci byla hodnota investice \$91. Celková
+doba trvání byla 6 měsíců. Jak velký je CAGR?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+-43,44%
+:::
+
+6. Jaká bude hodnota Sharpe ratia, pokud je průměrný výnos investice 14.3%, risk-free
+rate 1.84% a volatilita 26.6%?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+0.47
+:::
+
+7. Jaká bude hodnota Sharpe ratia, pokud je průměrný výnos investice 7.1%, risk-free
+rate 2.4% a volatilita 18.3%?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+0.26
+:::
+
+8. Investice A má průměrný výnos 11.37% a volatilitu 16.92%. Investice B má průměrný
+výnos 7.34% a volatilitu 20.11%. Investice C má průměrný výnos 10.46% a volatilitu
+11.78%. Investice D má průměrný výnos 13.71% a volatilitu 10.69%. Risk-free rate je 0%.
+Která z uvedených investic je nejatraktivnější z hlediska Sharpe ratia?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Investice D
+:::
