@@ -1,1 +1,447 @@
-# Týden
+---
+execute:
+  echo: false
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+# Úvod do řízení rizik a finančních derivátů
+
+::: {.callout-note}
+# Studijní materiály
+
+- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
+University. <https://openstax.org/details/books/principles-finance>
+  - Chapter 20 - Risk Management and the Financial Manager
+- MELICHER, Ronald W. a Edgar NORTON. Introduction to finance: markets, investments, and financial management.
+- HULL, John. 2018. Options, futures, and other derivatives. Ninth edition. Harlow: Pearson. ISBN 978-1-292-21289-0.
+:::
+
+**Výstupy z učení:**
+
+1. Porozumět základnímu fungování finančních derivátů.
+2. Pochopit základní principy využití finančních derivátů.
+3. Rozlišovat forwardy, futures, opce a swapy.
+4. Získat dovednosti k identifikaci výhod a nevýhod využití derivátů.
+5. Naučit se činit informovaná investiční rozhodnutí a řídit rizika.
+
+## Řízení rizik ve firmě
+
+::: {.callout-important title="Definice"}
+Riziko z pohledu firmy představuje možnost, že skutečné výsledky se budou lišit od
+očekávaných výsledků, což může mít negativní dopad na finanční situaci, provozní
+činnost, reputaci nebo hodnotu firmy.
+:::
+
+Typy rizik, kterým čelí firmy:
+
+1. **Provozní riziko** $\rightarrow$ provoze firmy (např. selhání dodavatelů,
+technologický problém, lidský faktor)
+2. **Finanční riziko** $\rightarrow$ spojené s finančním řízením (např. zadlužení,
+volatilita úrokových sazeb, likvidita)
+3. **Tržní riziko** $\rightarrow$ pohyby tržních cen, jako jsou změny cen surovin,
+měnových kurzů nebo akciových trhů
+4. **Kreditní riziko** $\rightarrow$ protistrana (např. zákazník nebo partner) nesplní
+své finanční závazky
+5. **Regulatorní riziko** $\rightarrow$ změny zákonů a předpisů, které mohou negativně
+ovlivnit podnikání firmy
+6. **Reputační riziko** $\rightarrow$ poškození pověsti firmy.
+
+## Charakteristika finančních derivátů
+
+::: {.callout-important title="Definice"}
+**Finanční deriváty** jsou finanční nástroje, jejichž hodnota je odvozena od hodnoty
+jiného aktiva, kterému se říká podkladové aktivum. Podkladovým aktivem mohou být
+například akcie, dluhopisy, komodity, měnové kurzy, úrokové sazby nebo jiné finanční
+indexy. Specifikují parametry transakce, která proběhne v budoucnosti.
+:::
+
+**Využití finančních derivátů:**
+
+- *Hedging (zajištění rizik)* $\rightarrow$ snižení nebo úplná eliminace rizika
+- Spekulace $\rightarrow$ snaha vydělat na příznivém pohybu ceny podkladového aktiva
+- Arbitráž $\rightarrow$ využívání rozdílu v cenách určitých aktiv
+
+**Výhody derivátů:**
+
+- Umožňují transfer rizik.
+- Možnost vytvořit rizikově výnosový profil, který by jinak nebyl možný.
+- Zlepšují efektivitu trhů (umožňují arbitráž).
+- Nízké transakční náklady
+
+**Základní typy derivátů:**
+
+- ***Nepodmíněné kontrakty*** $\rightarrow$ povinnost provést budoucí transakci
+(forwardy, futures, swapy)
+    - Snaha zafixovat budoucí cenu.
+- ***Podmíněné kontrakty*** $\rightarrow$ držitel má právo rozhodnout, zda transakce
+bude provedena (opce)
+    - Poskytují jistou formu pojištění proti nepříznivé události.
+
+
+|                                         | **Burzovně obchodované deriváty (ETD)**   | **Mimoburzovně obchodované deriváty (OTC)** |
+|-----------------------------------------|:-----------------------------------------:|:-------------------------------------------:|
+| **Příklad derivátů**                    | Futures, opce                             | Forwardy, swapy, opce                       |
+| **Obchodování**                         | Na organizovaných burzách                 | Přímo mezi dvěma stranami                   |
+| **Standardizace smluv**                 | Vysoce standardizované                    | Přizpůsobené podle potřeb zúčastněných stran |
+| **Regulace**                            | Silně regulované                          | Méně regulované, závisí na dohodě stran     |
+| **Riziko protistrany**                  | Nízké (zajištěné clearingovým domem)      | Vyšší (riziko nesplnění závazků protistranou) |
+| **Likvidita**                           | Vysoce likvidní                           | Méně likvidní, závisí na specifickém trhu   |
+| **Požadavky na marži**                  | Povinné maržové požadavky                 | Individuálně sjednávané, často vyžadují zajištění |
+| **Transparentnost**                     | Vyšší transparentnost (veřejně dostupné ceny) | Nižší transparentnost (cenová tvorba mezi stranami) |
+| **Vypořádání**                          | Vypořádání prostřednictvím burzy a clearingového domu | Přímo mezi účastníky            |
+| **Příklad trhu**                        | CME, NYMEX, Euronext                      | Privátní dohody mezi bankami, korporacemi apod. |
+
+## Forwardy
+
+::: {.callout-important title="Definice"}
+**Forward** je smlouva o budoucím nákupu nebo prodeji aktiva za předem stanovenou cenu a
+v předem stanoveném termínu. Obě strany mají **povinnost** obchod uskutečnit.
+:::
+
+- Nejvíce používané k zajištění měnového rizika.
+- **Long pozice** $\rightarrow$ závazek koupit podkladové aktivum
+- **Short pozice** $\rightarrow$ závazek prodat podkladové aktivum
+- Graf výplaty z long (a) a short (b) forwardu při splatnosti.
+  - $K$ je předem sjednaná cena
+  - $S_T$ je cena podkladového aktiva při splatnosti (v čase $T$)
+
+::: {.callout-tip title="Příklad"}
+Firma A, která vyrábí elektroniku, ví, že za 6 měsíců bude potřebovat koupit 1000
+kilogramů mědi pro svou výrobu. Bojí se, že cena mědi vzroste, takže se dohodne s
+dodavatelem na forwardovém kontraktu, podle kterého koupí 1000 kg mědi za pevnou cenu 10
+000 USD za 6 měsíců. I když cena mědi vzroste na 12 000 USD, firma A zaplatí pouze 10
+000 USD, jak bylo sjednáno v kontraktu. Naopak, pokud cena klesne na 8 000 USD, firma A
+stále musí zaplatit dohodnutých 10 000 USD.
+:::
+<br>
+
+```{python}
+import plotly.graph_objects as go
+import numpy as np
+
+# Parameters
+F = 100  # Futures price
+Q = 1  # Quantity of the asset
+spot_prices = np.linspace(80, 120, 100)  # Range of spot prices
+
+# Payoff calculations
+long_payoff = (spot_prices - F) * Q
+short_payoff = (F - spot_prices) * Q
+
+# Create the figure
+fig = go.Figure()
+
+# Add traces for long and short positions
+fig.add_trace(
+    go.Scatter(
+        x=spot_prices,
+        y=long_payoff,
+        mode="lines",
+        name="Long Forward",
+        line=dict(color="blue", width=3),
+        hovertemplate="Long Forward<br>Cena podkladového aktiva: %{x:.0f}<br>Výplata: %{y:.0f}<extra></extra>",
+    )
+)
+fig.add_trace(
+    go.Scatter(
+        x=spot_prices,
+        y=short_payoff,
+        mode="lines",
+        name="Short Forward",
+        line=dict(color="red", width=3),
+        hovertemplate="Short Forward<br>Cena podkladového aktiva: %{x:.0f}<br>Výplata: %{y:.0f}<extra></extra>",
+    )
+)
+fig.add_hline(y=0, line_dash="solid", line_color="black", line=dict(width=0.7))
+
+# Layout
+fig.update_layout(
+    template="seaborn",
+    title_font=dict(size=20),
+    title="Výplata z forward kontraktu, dohodnutá cena 100",
+    xaxis_title="Cena podkladového aktiva při expiraci",
+    yaxis_title="Výplata",
+    legend_title="Pozice",
+)
+
+# Show the figure
+fig.show()
+```
+
+<br>
+
+## Futures
+
+::: {.callout-important title="Definice"}
+**Futures** je ***standardizovaný*** forwardový kontrakt obchodovaný na burzách, které
+zavazují obě strany k nákupu nebo prodeji aktiva za předem dohodnutou cenu v určitém
+budoucím čase.
+:::
+
+- Rozdíly mezi forwardy a futures vycházejí z výše uvedených rozdílů mezi OTC a ETD
+trhy.
+- **Forwardy** jsou flexibilní, mimoburzovní deriváty přizpůsobené potřebám zúčastněných
+stran, s vyšším rizikem protistrany a nižší likviditou.
+- **Futures** jsou standardizované deriváty obchodované na burze, s denním vypořádáním,
+vyšší likviditou a nižším rizikem protistrany díky clearingovým domům.
+
+::: {.callout-tip title="Příklad"}
+Farmář ví, že za 3 měsíce sklidí 5000 kg pšenice. Bojí se, že cena pšenice klesne, a
+proto prodá futures kontrakt na burze, který mu zaručuje prodej těchto 5000 kg za cenu 5
+USD za kg. Pokud za 3 měsíce cena pšenice skutečně klesne na 4 USD za kg, farmář stále
+dostane 5 USD za kg, jak bylo sjednáno. Naopak, pokud cena vzroste na 6 USD za kg,
+farmář stále musí prodat za 5 USD, jak je uvedeno v jeho futures kontraktu.
+:::
+
+## Swapy
+
+::: {.callout-important title="Definice"}
+**Swap** je smlouva mezi dvěma stranami o výměně peněžních toků nebo jiných finančních
+závazků. Nejběžnější jsou úrokové swapy a měnové swapy.
+:::
+
+- Používá se při hedgingu opakujících se pravidelných transakcí (např. úroky z půjčky
+placené čtvrtletně).
+- Jedná se v podstatě o několik stejných forwardů, které mají různé doby splatnosti. 
+- Využívají je převážně finanční instituce a obchodují se na OTC trhu.
+
+## Opce
+
+::: {.callout-important title="Definice"}
+**Opce (Options)** je finanční kontrakt, který dává kupujícímu právo, ale nikoli
+povinnost, koupit (call opce) nebo prodat (put opce) podkladové aktivum za určitou cenu
+během stanoveného časového období.
+:::
+
+ - **Call opce** (kupní opce) je ***právo*** koupit podkladové aktivum v předem sjednaný
+ čas za předem dohodnutou cenu.
+ - **Put opce** (prodejní opce) je ***právo*** prodat podkladové aktivum v předem
+ sjednaný čas za předem dohodnutou cenu.        
+
+<p></p>
+
+- **Long pozice** označuje majitele opce. Má právo rozhodnout, zda bude opce uplatněna.
+- **Short pozice** označuje protistranu, která prodává opci long pozici. Pokud je opce
+uplatněna, musí transakci uskutečnit. 
+
+<p></p>
+
+- **Americká opce** může být uplatněna kdykoliv během doby splatnosti.
+- **Evropská opce** může být uplatněna pouze v den splatnosti.
+
+::: {.callout-tip title="Příklad"}
+**Call opce:** Investor očekává, že cena akcií společnosti XYZ, která je nyní na úrovni
+50 USD za akcii, vzroste. Koupí tedy call opci s realizační cenou 55 USD a expirací za 3
+měsíce. Zaplatí prémii 2 USD za akcii. Pokud cena akcií XYZ za 3 měsíce vzroste na 60
+USD, investor může koupit akcie za 55 USD a okamžitě je prodat za tržní cenu 60 USD,
+čímž získá zisk (po odečtení prémie). Pokud cena klesne pod 55 USD, investor opci
+neuplatní a ztrácí pouze prémii 2 USD.
+:::
+
+::: {.callout-tip title="Příklad"}
+**Put opce:** Investor vlastní akcie společnosti ABC, které nyní mají hodnotu 100 USD za
+akcii. Obává se, že cena může klesnout, a proto si koupí put opci s realizační cenou 95
+USD, která mu umožňuje prodat akcie za tuto cenu během následujících 6 měsíců. Zaplatí
+prémii 3 USD za akcii. Pokud cena akcií skutečně klesne na 80 USD, investor může
+uplatnit opci a prodat akcie za 95 USD, čímž se vyhne ztrátě větší než prémii. Pokud
+cena zůstane nad 95 USD, opci neuplatní a ztrácí pouze prémii 3 USD.
+:::
+
+```{python}
+import plotly.graph_objects as go
+import numpy as np
+
+# Parameters
+S = 100  # Strike price of the option
+Q = 1  # Quantity of the asset
+spot_prices = np.linspace(80, 120, 100)  # Range of spot prices
+premium = 5  # Option premium
+
+# Payoff calculations for call options
+long_call_profit = np.maximum(spot_prices - S, 0) * Q - premium
+short_call_profit = -np.maximum(spot_prices - S, 0) * Q + premium
+
+# Create the figure
+fig = go.Figure()
+
+# Add traces for long and short call option positions
+fig.add_trace(
+    go.Scatter(
+        x=spot_prices,
+        y=long_call_profit,
+        mode="lines",
+        name="Long Call",
+        line=dict(color="blue", width=3),
+        hovertemplate="Long Call<br>Cena podkladového aktiva: %{x:.0f}<br>Zisk: %{y:.0f}<extra></extra>",
+    )
+)
+fig.add_trace(
+    go.Scatter(
+        x=spot_prices,
+        y=short_call_profit,
+        mode="lines",
+        name="Short Call",
+        line=dict(color="red", width=3),
+        hovertemplate="Short Call<br>Cena podkladového aktiva: %{x:.0f}<br>Zisk: %{y:.0f}<extra></extra>",
+    )
+)
+fig.add_hline(y=0, line_dash="solid", line_color="black", line=dict(width=0.7))
+
+# Layout
+fig.update_layout(
+    template="seaborn",
+    title_font=dict(size=20),
+    title="Zisk z Call Opce, Strike price = 100, Opční prémie = 5",
+    xaxis_title="Cena podkladového aktiva při expiraci",
+    yaxis_title="Zisk",
+    legend_title="Pozice",
+)
+
+# Show the figure
+fig.show()
+```
+
+<br>
+
+```{python}
+# Parameters
+S = 100  # Strike price of the option
+Q = 1  # Quantity of the asset
+spot_prices = np.linspace(80, 120, 100)  # Range of spot prices
+premium = 5  # Option premium
+
+# Payoff calculations for call options
+long_put_profit = np.maximum(S - spot_prices, 0) * Q - premium
+short_put_profit = -np.maximum(S - spot_prices, 0) * Q + premium
+
+# Create the figure
+fig = go.Figure()
+
+# Add traces for long and short call option positions
+fig.add_trace(
+    go.Scatter(
+        x=spot_prices,
+        y=long_put_profit,
+        mode="lines",
+        name="Long Put",
+        line=dict(color="blue", width=3),
+        hovertemplate="Long Put<br>Cena podkladového aktiva: %{x:.0f}<br>Zisk: %{y:.0f}<extra></extra>",
+    )
+)
+fig.add_trace(
+    go.Scatter(
+        x=spot_prices,
+        y=short_put_profit,
+        mode="lines",
+        name="Short Put",
+        line=dict(color="red", width=3),
+        hovertemplate="Short Put<br>Cena podkladového aktiva: %{x:.0f}<br>Zisk: %{y:.0f}<extra></extra>",
+    )
+)
+fig.add_hline(y=0, line_dash="solid", line_color="black", line=dict(width=0.7))
+
+# Layout
+fig.update_layout(
+    template="seaborn",
+    title_font=dict(size=20),
+    title="Zisk z Put Opce, Strike price = 100, Opční prémie = 5",
+    xaxis_title="Cena podkladového aktiva při expiraci",
+    yaxis_title="Zisk",
+    legend_title="Pozice",
+)
+
+# Show the figure
+fig.show()
+```
+
+<br>
+
+### Další charakteristiky opce
+
+- **Realizační cena (Strike Price)** $\rightarrow$ cena, za kterou může být podkladové
+aktivum koupeno (u call opce) nebo prodáno (u put opce)
+- **Datum expirace (Expiration Date)** $\rightarrow$ den, kdy právo vyplývající z opce
+zaniká
+- **Prémie (Premium)** $\rightarrow$ cena, kterou kupující opce platí prodávajícímu za
+získání práva vyplývajícího z opce
+- **Vnitřní hodnota (Intrinsic Value)** $\rightarrow$ rozdíl mezi aktuální cenou
+podkladového aktiva a realizační cenou opce 
+- **Časová hodnota (Time Value)** $\rightarrow$ část prémie opce, která přesahuje její
+vnitřní hodnotu
+- **In-the-money (ITM)** $\rightarrow$ opce má vnitřní hodnotu
+- **At-the-money (ATM)** $\rightarrow$ strike price je přibližně rovna aktuální ceně
+podkladového aktiva
+- **Out-of-the-money (OTM)** $\rightarrow$ opce nemá vnitřní hodnotu
+
+## Příklady k procvičení
+
+1. Firma A uzavřela forwardový kontrakt na nákup 1 000 barelů ropy za cenu 50 USD za
+barel, s dodáním za 3 měsíce. Po 3 měsících je tržní cena ropy 55 USD za barel. Jaký je
+zisk nebo ztráta firmy A z tohoto forwardového kontraktu?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Firma A dosáhne zisku 5000 USD (5 USD za barel).
+:::
+
+2. Investor uzavřel futures kontrakt na nákup 1 000 kg kukuřice za cenu 4 USD za kg. O
+měsíc později se cena kukuřice zvýšila na 4,50 USD za kg. Jaký je zisk nebo ztráta
+investora při uzavření pozice?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Investor dosáhne zisku 500 USD (0,5 USD za kg)
+:::
+
+3. Firma B uzavřela forwardový kontrakt na prodej 1 000 tun hliníku za cenu 2 000 USD za
+tunu, s dodáním za 6 měsíců. Po 6 měsících je tržní cena hliníku 2 100 USD za tunu. Jaký
+je zisk nebo ztráta firmy B z tohoto forwardového kontraktu?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Firma B utrpí ztrátu 100 000 USD, protože prodala hliník za nižší cenu, než je tržní
+cena.
+:::
+
+4. Investor uzavřel futures kontrakt na nákup 5 000 kg pšenice za cenu 6 USD za kg. O
+dva měsíce později se cena pšenice snížila na 5,50 USD za kg. Jaký je zisk nebo ztráta
+investora při uzavření pozice?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Investor utrpí ztrátu 2 500 USD, protože koupil pšenici za vyšší cenu, než je aktuální
+tržní cena.
+:::
+
+5. Investor koupil call opci na akcii společnosti XYZ s realizační cenou 100 USD a
+expirací za 2 měsíce. Zaplatil prémii 5 USD za akcii. Těsně před expirací je cena akcie
+XYZ 110 USD. Jaký je zisk nebo ztráta investora při uplatnění opce?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Investor dosáhne zisku 5 USD na jednu akcii.
+:::
+
+6. Investor koupil put opci na akcii společnosti ABC s realizační cenou 80 USD a
+expirací za 1 měsíc. Zaplatil prémii 2 USD za akcii. Těsně před expirací je cena akcie
+ABC 75 USD. Jaký je zisk nebo ztráta investora při uplatnění opce?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Investor dosáhne zisku 3 USD na jednu akcii.
+:::
+
+7. Investor koupil call opci na akcii společnosti XYZ s realizační cenou 100 USD a
+expirací za 3 měsíce. Zaplatil prémii 4 USD za akcii. Těsně před expirací je cena akcie
+XYZ 95 USD. Jaký je zisk nebo ztráta investora?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Investor utrpí ztrátu 4 USD na každou akcii, tedy celkovou ztrátu rovnou zaplacené
+prémii.
+:::
+
+8. Investor koupil put opci na akcii společnosti ABC s realizační cenou 50 USD a
+expirací za 2 měsíce. Zaplatil prémii 3 USD za akcii. Těsně před expirací je cena akcie
+ABC 55 USD. Jaký je zisk nebo ztráta investora?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Investor utrpí ztrátu 3 USD na každou akcii, tedy celkovou ztrátu rovnou zaplacené
+prémii.
+:::
