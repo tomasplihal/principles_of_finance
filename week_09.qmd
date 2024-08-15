@@ -325,7 +325,7 @@ fig.show()
 Za ***vyšší riziko*** investoři požadují ***vyšší úrokovou sazbu***. Mezi základní typy
 rizik patří např.:
 
-- **Riziko nesplacen** (kreditní riziko) $\rightarrow$ neschopnost dlužníka splácet.
+- **Riziko nesplacení** (kreditní riziko) $\rightarrow$ neschopnost dlužníka splácet.
 - **Riziko úrokových sazeb** $\rightarrow$ změna úrokových sazeb ovlivňuje hodnotu
 dluhopisu.
 - **Riziko likvidity** $\rightarrow$ obtížnost prodeje dluhopisu.
@@ -406,7 +406,6 @@ portfolio T-bondů.
 ![](images/fig_6_6.png){width=500 fig-align="center"}
 
 ## Příklady k procvičení
-
 
 1. Kupónový dluhopis s jistinou 100 Kč vyplácí na konci každého roku kupón ve výši
 12,73% a jeho splatnost je za 2 roky. Jaká je hodnota dluhopisu, pokud uvažujeme

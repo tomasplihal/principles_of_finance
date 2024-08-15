@@ -1,1 +1,374 @@
-# Týden
+# Akcie a jejich oceňování
+
+::: {.callout-note}
+# Studijní materiály
+
+- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
+University. <https://openstax.org/details/books/principles-finance>
+  - Chapter 11 - Stocks and Stock Valuation
+  - Chapter 12 - Historical Performance of US Markets
+:::
+
+**Výstupy z učení:**
+
+1. Umět definovat akcie a jejich charakteristiky.
+2. Rozumět dividendám a jednotlivým typům akcií.
+3. Definovat a vypočítat ukazatele P/E a P/B a pochopit jejich použití při určování
+relativního ocenění společnosti.
+4. Porozumět dividendově diskontním modelům a modelům diskontovaného cash flow.
+5. Získat základní přehled o historické výkonnosti trhů.
+
+## Charakteristika akcií
+
+::: {.callout-important title="Definice"}
+Akcie představuje vlastnický podíl v dané společnosti a poskytuje držiteli právo na
+podíl ze zisku, na rozhodování a na likvidační zůstatek.
+:::
+
+- Akcie umožňují oddělení vlastníků od managementu.
+- Na rozdíl od dluhopisů akcie nemají datum splatnosti, nominální hodnotu ani zaručené
+kupónové platby.
+- Základním typem akcií jsou tzv. kmenové akcie (common stock), speciálním typem jsou
+například preferenční akcie (prioritní, preferred s stock).
+
+|                               | Kmenové akcie | Prioritní akcie |
+|-------------------------------|:-------------:|:---------------:|
+| Vlastnický podíl ve firmě     | Ano           | Ne              |
+| Podíl na řízení               | Ano           | Ne              |
+| Podíl na zisku                | Ano           | Ano             |
+| Podíl na likvidačním zůstatku | Ano           | Ano             |
+| Přednostní právo na zisky a majetek | Ne      | Ano             |
+| Pravidelná fixní dividenda    | Ne            | Ano             |
+| Doba splatnosti               | Ne            | Ne              |
+
+### Dividendy
+
+- Akcie mohou vyplácet dividendy, ale ty nejsou garantovány a mohou se měnit na základě
+rozhodnutí představenstva společnosti.
+- Vetšinou snaha o stabilní dividendovou politiku.
+- Dividendy jsou většinou v penězích (***cash dividend***), ale mohou být i formou nově
+vydaných akcií (***stock dividend***).
+- Místo výplaty dividend se může firma rozhodnout nakoupit svoje vlastní akcie (***stock
+buyback***).
+- Výsledkem odkupu vlastních akcií je zvýšení jejich ceny a zpravidla daňové výhody pro
+akcionáře.
+
+### Stěpení akcií
+
+::: {.callout-important title="Definice"}
+Štěpení akcií (***stock split***) rozdělí stávající akcie na více kusů při zachování
+celkové hodnoty všech akcií (tržní kapitalizace).
+:::
+
+::: {.callout-tip title="Příklad"}
+Držíte 10 akcií, každá má hodnotu 80 Kč. Firma udělá 2-for-1 split. Ve výsledku máte 20
+akcií, ale každá stojí 40 Kč. Celková hodnota akcií (tržní kapitalizace) je pořád
+stejná, jen rozdělená na více dílů.
+:::
+
+### Rizika investování do akcií
+
+Akcie jsou obecně rizikovější než dluhopisy, proto investoři očekávají vyšší výnosy.
+Mezi hlavní rizika lze zařadit:
+
+- **Tržní riziko** $\rightarrow$ vývoj tržní hodnoty akcie
+- **Kreditní riziko** $\rightarrow$ firma může zbankrotovat, nastane likvidace, akcionář
+získá likvidační zůstatek
+- **Riziko likvidity** $\rightarrow$ může být obtížné prodat akcii
+- **Úrokové riziko** $\rightarrow$ změny úrokových sazeb mohou ovlivnit chování akcií
+- **Riziko inflace** $\rightarrow$ snižuje reálné výnosy
+- **Riziko změny směnných kurzů** $\rightarrow$ pokud se akcie obchoduje v cizí měně
+- **Politické a regulační riziko** $\rightarrow$ změny v politice nebo regulacích mohou
+ovlivnit podnikatelské prostředí
+
+## Poměrové ukazatele P/E a P/B
+
+::: {.callout-important title="Definice"}
+P/E ratio (price-earnings ratio) neboli poměr cena/zisk je finanční ukazatel, který
+vyjadřuje vztah mezi tržní cenou akcie a čistým ziskem na jednu akcii (EPS, earnings per
+share).
+:::
+
+$$
+\text{P/E} = \frac{\text{Cena akcie}}{\text{Zisk na akcii}}
+$$
+
+- P/E se používá k hodnocení, jak drahé nebo levné jsou akcie v poměru k ziskům
+společnosti.
+- Vysoké P/E může naznačovat, že investoři očekávají budoucí růst zisků, zatímco nízké
+P/E indikuje podhodnocenou akcii nebo slabší růstové vyhlídky společnosti.
+- P/E reprezentuje cenu, kterou investor platí za jednotku současného nebo budoucího
+zisku společnosti.
+- P/E společnosti by měl být srovnáván s historickým P/E nebo s P/E jiných společností
+ve stejném odvětví.
+- Prohlédněte si 90letý historický průměr P/E pro index S&P 500
+<https://www.multpl.com/s-p-500-pe-ratio>
+
+::: {.callout-tip title="Příklad"}
+Cena akcie společnosti \$24.00 a její zisk na akcii je \$4.00.
+$$
+\text{P/E} = \frac{\$24.00}{\$4.00} = \$6
+$$
+
+Výsledek ukazuje, že investoři jsou ochotni platit až šest dolarů za každý dolar zisku.
+:::
+
+::: {.callout-important title="Definice"}
+P/B ratio (price-to-book ratio) neboli poměr cena/účetní hodnota je finanční ukazatel,
+který vyjadřuje vztah mezi tržní cenou akcie a účetní hodnotou vlastního kapitálu na
+jednu akcii (book value per share).
+:::
+
+$$
+\text{P/B} = \frac{\text{Cena za akcii}}{\text{Účetní hodnota na akcii}}
+$$
+
+- *Tržní hodnota* je aktuální cena všech akcií společnosti, zatímco *účetní hodnota*
+představuje hodnotu společnosti po likvidaci aktiv a splacení závazků.
+- P/B se používá k hodnocení, zda je akcie podhodnocená nebo nadhodnocená ve vztahu k
+účetní hodnotě společnosti.
+- Nízké P/B (méně než 1) může signalizovat, že akcie je podhodnocená nebo že společnost
+má problémy, zatímco vysoké P/B naznačuje, že investoři očekávají budoucí růst nebo že
+je akcie nadhodnocená.
+- P/B má omezení v nezahrnování nehmotných aktiv, jako jsou patenty, ochranné známky a
+autorská práva.
+
+## Dividendové diskontní modely
+
+::: {.callout-important title="Definice"}
+Dividendový diskontní model (DDM) je metoda oceňování akcií, která odhaduje současnou
+hodnotu akcie na základě budoucích dividend, které budou vyplaceny, diskontovaných na
+současnou hodnotu.
+:::
+
+Základní forma DDM, známá jako **Gordonův růstový model**:
+
+$$
+\text{Hodnota akcie} = \frac{D_0 (1+g)}{r - g} = \frac{D_1}{r - g}
+$$
+
+- $D_0 \dots$ současná roční dividenda
+- $D_1 \dots$ očekávaná dividenda v příštím roce
+- $r \dots$ požadovaná míra výnosnosti (diskontní míra)
+- $g \dots$ očekávaná míra růstu dividend
+
+Tento model předpokládá, že dividendy porostou konstantním tempem $g$ navždy. Je
+užitečný pro oceňování akcií společností, které pravidelně vyplácejí dividendy a mají
+stabilní růstový profil ($g$ může být i 0).
+
+::: {.callout-tip title="Příklad"}
+Předpokládejme, že společnost právě vyplatila dividendu ve výši $\$2$, očekává se růst
+dividend ve výši 5\% ročně. Vaše požadovaná míra výnosu je 10%. Cena akcie se vypočítá
+následovně:
+
+$$
+P = \frac{2.00 (1 + 0.05)}{0.10 - 0.05} = \frac{2.10}{0.05} = \$42.00
+$$
+
+Podle DDM modelu by cena akcie měla být \$42,00. Pokud je tržní cena nižší, může to být
+dobrá investiční příležitost.
+:::
+
+- Model lze rozšířit o proměnný růst dividend.
+- Předpokládá se, že společnost a její dividendy projdou různými fázemi růstu.
+
+::: {.callout-tip title="Příklad"}
+Máme společnost $X$, která za poslední rok vyplatila dividendu \$2.00. Očekáváme
+růstovou míru dividendy 5% pro další čtyři roky a následně stabilizaci na růstu 3%.
+Požadovaná výnosová míra je 8%. V následující tabulce je zobrazen výpočet hodnoty akcie.
+
+| Rok | Růst % | Dividenda (\$) | Hodnota po 4. roce (\$) | Diskontní faktor pro 8% | Současná hodnota dividendy (\$) |
+|:---:|:------:|:--------------:|:-----------------------:|:-----------------------:|:-------------------------------:|
+|  0  |   5%   |   2.00         |                         |                         |                                 |
+|  1  |   5%   |   2.10         |                         |   1.0800                |  1.9444                         |
+|  2  |   5%   |   2.21         |                         |   1.1664                |  1.8904                         |
+|  3  |   5%   |   2.32         |                         |   1.2597                |  1.8379                         |
+|  4  |   5%   |   2.43         |                         |   1.3605                |  1.7869                         |
+|  5  |   3%   |   2.50         |  50.07886               |   1.4693                |  35.7870                        |
+|     |        |                |                         |  $Celkem:$              |  43.2466                        |
+
+$$
+\text{Hodnota po 4. roce} = \frac{2.43 (1 + 0.03)}{0.08 - 0.03} = 50.07886
+$$
+
+Vnitřní hodnota akcie je součet všech současných hodnot dividend, tedy \$43.2466.
+:::
+
+| **Výhody DDM**                    | **Omezení DDM**                |
+|:---------------------------------:|:------------------------------:|
+| Jednoduchost a srozumitelnost     | Závislost na dividendách       |
+| Vhodnost pro stabilní společnosti | Citlivost na vstupní parametry |
+| Teoretická konzistence            | Nerealistické předpoklady      |
+|                                   | Ignorování jiných faktorů      |
+
+## Model diskontovaného cash flow (DCF)
+
+::: {.callout-important title="Definice"}
+Model diskontovaného cashflow (DCF) je metoda oceňování, která se používá k určení
+hodnoty investice na základě budoucích peněžních toků (cashflow), které tato investice
+vygeneruje. Tyto budoucí peněžní toky jsou diskontovány na jejich současnou hodnotu
+pomocí diskontní sazby, která odráží požadovanou míru výnosnosti investora a riziko
+spojené s investicí.
+:::
+
+Základní vzorec pro DCF model je:
+
+$$
+\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{CF_n}{(1+r)^n}
+$$
+
+- $CF_n \dots$ očekávaný peněžní tok v období $n$
+- $r \dots$ diskontní sazba
+- $n \dots$ počet období
+
+Alternativně lze model rozšířít o predikce cash flow do nekonečna s využitím perpetuity:
+
+$$
+\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{\frac{TFC}{r-g}}{(1+r)^{n-1}}
+$$
+
+- Poslední člen, tzv. terminal cash flow (TCF), představuje poslední predikované cash
+flow, které dále roste konstantním tempem růstu.
+
+| **Výhody DCF**                         | **Omezení DCF**                    |
+|:--------------------------------------:|:----------------------------------:|
+| Nepotřebuje dividendy                  | Citlivost na vstupní parametry     |
+| Komplexní ocenění                      | Obtížnost přesných odhadů cashflow |
+| Flexibilita                            | Náročnost na data                  |
+| Založen na skutečných peněžních tocích |                                    |
+
+- Pro účely modelu diskontovaného cashflow (DCF) se obvykle používá tzv. volný peněžní
+tok (Free Cash Flow, FCF).
+- FCF není přímo uveden v účetních výkazech, ale lze jej odvodit z informací uvedených
+ve výkazu o peněžních tocích (Cash Flow Statement) a výkazu zisku a ztráty (Income
+Statement).
+- Metody přesného výpočtu FCF jsou nad rámec tohoto předmětu.
+
+## Preferenční akcie
+
+::: {.callout-important title="Definice"}
+Preferenční (prioritní) akcie (preferred stock) jsou typem akcií, které mají přednostní
+postavení ve vztahu k výplatě dividend a při likvidaci společnosti oproti kmenovým
+akciím. Mají stanovenou konstantní pravidelnou dividendu (bez doby splatnosti), a
+většinou neposkytují hlasovací právo.
+:::
+
+- Mohou být tzv. kumulativní $\rightarrow$ jakékoli vynechané
+dividendy se stávají závazkem, který společnost musí vyplatit.
+- Nekumulativní preferované akcie ztrácejí nevyplacené dividendy navždy.
+- Konvertibilní preferované akcie lze za určitých podmínek převést na kmenové akcie.
+
+Vnitřní hodnotu preferovaných akcií lze určit pomocí vzorce na perpetuitu:
+
+$$
+\text{Hodnota akcie} = \frac{\text{Dividenda}}{\text{Diskontní míra}}
+$$
+
+::: {.callout-tip title="Příklad"}
+Firma $X$ právě vydala preferované akcie (kumulativní) se jmenovitou hodnotou \$100 a
+roční dividendou 7%. Aktuální cena preferovaných akcií je \$35 za akcii. Jaká je
+výnosnost těchto preferovaných akcií?
+
+- Prvním krokem je určení roční dividendy:
+
+$$
+\$100 \times 0.07 = \$7.00 
+$$
+
+- Nyní použijeme výše uvedený vzorec k vypočítání míry výnosu:
+
+$$
+r = \frac{\$7.00}{\$35.00} = 0.20 \text{ neboli } 20\%
+$$
+:::
+
+
+## Historický vývoj akcií
+
+- Dow Jones Industrial Average (DJIA) a S&P 500 jsou nejčastěji citovanými akciovými
+indexy, přičemž změny v obou jsou silně korelované.
+- Indexy mají za cíl reprezentovat výnosnost celého akciového trhu.
+- Historie kapitálových trhů ukazuje, že průměrný výnos z akcií výrazně předčil jiné
+třídy finančních cenných papírů.
+
+| Asset Class           | Nominal Average Annual Returns 1981–2020 | Standard Deviation of Returns 1981–2020 |
+|:----------------------|:----------------------------------------:|:---------------------------------------:|
+| Large company stocks  |                                    12.64%|                                   16.06%|
+| Baa bonds             |                                    10.34%|                                    7.67%|
+| 10-year T-bonds       |                                     8.21%|                                    9.92%|
+| US T-bills            |                                     3.94%|                                    3.39%|
+| Inflation             |                                     2.93%|                                    1.76%|
+
+- Zvláště patrný je tento rozdíl při pohledu na kumulované výnosy (složené úročení).
+
+![](images/fig_6_8.png){width=800 fig-align="center"}
+
+::: {.callout-note title="Vyplatí se časovat trh?"}
+V období od roku 1980 do poloviny roku 2020 by investice 10 000 dolarů do indexového
+fondu S&P 500 vynesla investorovi 697 421 dolarů. Avšak pokud by investor zmeškal 5
+nejvýkonnějších dní na trhu, snížil by se konečný zůstatek portfolia na 432 411 dolarů.
+Pokud by zůstal mimo trh během 10 nejlepších dnů, zůstatek by klesl na pouhých 313 377
+dolarů, což je méně než polovina výnosu z celého období.
+:::
+
+- Kalkulačky pro nalezení výnosů ve vybraných obdobích pro americké akcie,
+dluhopisy a inflaci.
+<https://openstax.org/r/6-what-to-invest-in>
+- Další kalkulačka pro globální akciové trhy.
+<https://openstax.org/r/returns-of-global-stocks>
+- Globální zpráva o bohatství publikovaná společností Credit Suisse.
+<https://openstax.org/r/global-wealth-report>
+
+## Příklady k procvičení
+
+1. Vlastníte 20 akcií firmy $X$, které stojí \$484. Firma oznámila štěpení akcií v
+poměru 4:1. Jaká bude nová cena akcií a kolik jich budete vlastnit?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+80 kusů, cena \$121
+:::
+
+2. Vlastníte 300 akcií firmy $Y$, které stojí \$230. Firma oznámila štěpení akcií v
+poměru 2:1. Jaká bude nová cena akcií a kolik jich budete vlastnit?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+600 kusů, cena \$115
+:::
+
+3. Kmenová akcie dané firmy vyplácí dividendu ve výši \$30 ročně. Jaká bude hodnota
+akcie, pokud je vaše diskontní sazba 11.4% ročně a očekáváte tempo růstu dividendy ve
+výši 11.1% ročně?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+\$11 110
+:::
+
+4. Kmenová akcie dané firmy vyplácí dividendu ve výši \$5 ročně. Jaká bude hodnota
+akcie, pokud je vaše diskontní sazba 7.2% ročně a očekáváte tempo růstu dividendy ve
+výši 0% ročně?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+\$416.67
+:::
+
+5. Kmenová akcie dané firmy vyplácí dividendu ve výši \$12 ročně. Jaká bude hodnota
+akcie, pokud je vaše diskontní sazba 9.8% ročně a očekáváte tempo růstu dividendy ve
+výši 3% ročně?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+\$181.76
+:::
+
+6. Preferenční akcie dané firmy vyplácí fixní dividendu ve výši \$5 ročně. Jaká bude
+hodnota akcie, pokud je vaše diskontní sazba 13.04% ročně?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+\$38.34
+:::
+
+7. Preferenční akcie dané firmy vyplácí fixní dividendu ve výši \$17 ročně. Jaká bude
+hodnota akcie, pokud je vaše diskontní sazba 10.3% ročně?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+\$165.5
+:::

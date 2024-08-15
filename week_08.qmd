@@ -20,7 +20,7 @@ University. <https://openstax.org/details/books/principles-finance>
 
 ## Úvod do časové hodnoty peněz
 
-::: {.callout-important title="Časová hodnota peněz"}
+::: {.callout-important title="Definice"}
 Časová hodnota peněz (TVM, time value of money) $\rightarrow$ peníze dnes jsou
 hodnotnější než stejné množství peněz získané v budoucnosti.
 :::
