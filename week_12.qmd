@@ -1,1 +1,437 @@
-# Týden
+---
+execute:
+  echo: false
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+# Jak firmy přemýšlejí o investování
+
+::: {.callout-note}
+# Studijní materiály
+
+- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
+University. <https://openstax.org/details/books/principles-finance>
+  - Chapter 16 - How Companies Think about Investing
+:::
+
+**Výstupy z učení:**
+
+1. Umět vysvětlit hlavní cíl firmy a metody jeho dosažení.
+2. Porozumět metodám hodnocení investic z pohledu firmy.
+3. Naučit se vypočítat dobu návratnosti, NPV a IRR.
+4. Interpretovat dosažené výsledky a kriticky je zhodnotit.
+5. Získat povědomí o dalších alternativních metodách hodnocení investic.
+
+## Cíl firmy
+
+::: {.callout-important title="Definice"}
+Hlavním cílem firmy je maximalizace tržní hodnoty firmy **v dlouhém období**. Firmy se
+snaží generovat zisk prostřednictvím efektivního řízení zdrojů, zvyšováním příjmů,
+snižováním nákladů a zajištěním udržitelného růstu.
+:::
+
+Základní tři pilíře vedoucí k maximalizaci hodnoty firmy:
+
+- **Rozhodování o investicích** (kapitálové rozpočtování, Capital Budgeting)
+$\rightarrow$ plánování a hodnocení investic do projektů nebo aktiv.
+- **Rozhodování o financování** (Capital Structure) $\rightarrow$ volba vhodné kombinace
+vlastního kapitálu (equity) a dluhu (debt) k financování investic.
+- **Strategické řízení rizik** (Risk management) $\rightarrow$ identifikace rizik,
+jejich hodnocení a zajištění proti rizikům.
+
+Všechny tři oblasti jsou důležité, hodnota však vzniká hlavně z investic. Proto se tato
+kapitola zaměří na metody hodnocení investic.
+
+Klíčové aspekty kapitálového rozpočtování:
+
+1. Identifikace investičních příležitostí.
+2. Odhad budoucích peněžních toků
+3. Stanovení nákladů na kapitál (např. úroky)
+4. Vyhodnocení projektů (NPV, IRR, atd.)
+5. Rozhodnutí o investici
+6. Monitorování a kontrola
+
+## Doba návratnosti
+
+::: {.callout-important title="Definice"}
+**Doba návratnosti** (Payback period) je doba, za kterou se vrátí počáteční investice z
+peněžních toků generovaných projektem nebo investicí. Čím kratší je doba návratnosti,
+tím méně je investice vystavena riziku.
+:::
+
+Vzorec pro výpočet payback period s konstatním cashflow:
+
+$$
+\text{Payback Period} = \frac{\text{Počáteční investice}}{\text{Roční čistý peněžní tok}}
+$$
+
+::: {.callout-tip title="Příklad"}
+Firma investuje 100 000 Kč do projektu. Očekává, že projekt bude generovat čistý peněžní
+tok 25 000 Kč ročně.
+
+$$
+\text{Payback Period} = \frac{100 000 \text{ Kč}}{25 000 \text{ Kč}} = 4 \text{ roky}
+$$
+:::
+
+- Pokud se peněžní toky liší rok od roku, výpočet se provádí postupným sčítáním
+peněžních toků, dokud není dosaženo výše počáteční investice.
+
+::: {.callout-tip title="Příklad"}
+Počáteční investice je 100 000 Kč, ale peněžní toky jsou následující:
+
+| Rok  | Peněžní tok (Kč) | Kumulativní peněžní tok (Kč) |
+|------|------------------|------------------------------|
+| 1    | 20 000           | 20 000                       |
+| 2    | 30 000           | 50 000                       |
+| 3    | 40 000           | 90 000                       |
+| 4    | 50 000           | 140 000                      |
+
+- Peněžní tok se vyrovná s počáteční investicí někdy během 4. roku.
+- Kumulativní peněžní tok po 3 letech je 90 000 Kč. K pokrytí zbývajících 10 000 Kč
+potřebujeme 10 000 Kč z peněžního toku ve 4. roce.
+
+$$
+\text{Payback Period} = 3 \text{ roky} + \frac{10 000 \text{ Kč}}{50 000 \text{ Kč}} = 3,2 \text{ roky}
+$$
+:::
+
+<br>
+
+| **Výhody**                           | **Nevýhody**                                   |
+|:------------------------------------:|:----------------------------------------------:|
+| Jednoduchost a snadná interpretace   | Ignoruje časovou hodnotu peněz                 |
+| Rychlé zhodnocení likvidity a rizika | Nezohledňuje celkovou ziskovost                |
+| Vhodné pro krátkodobé projekty       | Nevhodné pro srovnávání různě velkých projektů |
+
+<br>
+
+## Čistá současná hodnota
+
+::: {.callout-important title="Definice"}
+**Čistá současná hodnota** (Net Present Value, NPV) je metoda hodnocení investic, která
+počítá současnou hodnotu očekávaných budoucích peněžních toků, sníženou o počáteční
+investici.
+:::
+
+$$
+\text{NPV} = \sum \left( \frac{CF_t}{(1+r)^t} \right) - C_0
+$$
+
+- $CF_t \dots$ peněžní tok v čase $t$
+- $r \dots$ diskontní sazba
+- $C_0 \dots$ počáteční investice
+
+::: {.callout-tip title="Příklad"}
+Firma investuje 100 000 Kč do projektu, který generuje roční peněžní toky 30 000 Kč po
+dobu 5 let. Diskontní sazba je 10 %.
+
+$$
+\text{NPV} = \frac{30 000}{(1+0,1)^1} + \frac{30 000}{(1+0,1)^2} + \frac{30 000}{(1+0,1)^3} + \frac{30 000}{(1+0,1)^4} + \frac{30 000}{(1+0,1)^5} - 100 000
+$$
+$$
+\text{NPV} = 13723.60 \text{ Kč}
+$$
+:::
+
+<br>
+
+```{python}
+import numpy as np
+import plotly.graph_objs as go
+
+# Parametry investice
+cash_flows = [30000, 30000, 30000, 30000, 30000]  # Peněžní toky v jednotlivých letech
+initial_investment = 100000  # Počáteční investice
+
+# Diskontní sazby od 0 % do 25 %
+discount_rates = np.arange(0, 0.20 + 0.001, 0.001)
+
+
+# Výpočet NPV pro různé diskontní sazby
+npv_values = []
+for r in discount_rates:
+    npv = -initial_investment
+    for t, cash_flow in enumerate(cash_flows):
+        npv += cash_flow / (1 + r) ** (t + 1)
+    npv_values.append(npv)
+
+# Vytvoření grafu
+fig = go.Figure()
+
+fig.add_trace(go.Scatter(
+    x=discount_rates * 100,  # Převod na procenta
+    y=npv_values,
+    mode='lines',
+    name=""
+))
+
+fig.update_layout(
+    template="seaborn",
+    title="Závislost NPV na diskontní sazbě",
+    title_font=dict(size=20),
+    xaxis_title="Diskontní sazba (%)",
+    yaxis_title="Čistá současná hodnota (NPV)",
+    showlegend=False
+)
+
+fig.update_traces(
+    hovertemplate="NPV: %{y:.2f}<br>Diskontní sazba: %{x:.2f}%"
+)
+
+fig.show()
+```
+
+<br>
+
+| **Výhody**                          | **Nevýhody**                                |
+|:-----------------------------------:|:-------------------------------------------:|
+| Zohledňuje časovou hodnotu peněz    | Složitější výpočet a interpretace           |
+| Poskytuje míru ziskovosti investice | Citlivost na přesnost odhadů peněžních toků |
+| Vhodné pro dlouhodobé projekty      | Závislost na stanovení diskontní sazby      |
+
+<br>
+
+## Vnitřní výnosové procento
+
+::: {.callout-important title="Definice"}
+**Vnitřní výnosové procento** (Internal Rate of Return, IRR) je diskontní sazba, při
+*které se čistá současná hodnota (NPV) peněžních toků z investice rovná nule.
+:::
+
+- Pokud je IRR vyšší než požadovaná návratnost nebo diskontní sazba, investice je
+považována za výhodnou.
+- IRR se vypočítává řešením následující rovnice pro $r$:
+
+$$
+0 = \sum \left( \frac{CF_t}{(1+IRR)^t} \right) - C_0
+$$
+
+- $CF_t \dots$ peněžní tok v čase $t$
+- $IRR \dots$ vnitřní míra návratnosti, kterou hledáme
+- $C_0 \dots$ počáteční investice
+
+::: {.callout-tip title="Příklad"}
+Firma investuje 100 000 Kč do projektu, který bude generovat následující peněžní toky:
+
+- Rok 1: 30 000 Kč
+- Rok 2: 40 000 Kč
+- Rok 3: 50 000 Kč
+
+$$
+0 = \frac{30 000}{(1+IRR)^1} + \frac{40 000}{(1+IRR)^2} + \frac{50 000}{(1+IRR)^3} - 100 000 = 18,5\%
+$$
+
+Pokud by požadovaná návratnost (diskontní sazba) byla nižší než 18,5 %, byla by
+investice považována za výhodnou, protože IRR převyšuje požadovanou návratnost.
+
+*Ponz. Tento problém nelze vyřešit analyticky jednoduchým způsobem, proto se obvykle
+řeší numerickými metodami, například iterací nebo využitím funkcí finančních kalkulaček
+nebo softwarových nástrojů, jako je Excel.*
+:::
+
+<br>
+
+| **Výhody**                                     | **Nevýhody**                                                            |
+|:----------------------------------------------:|:-----------------------------------------------------------------------:|
+| Jednoduché porovnání s požadovanou návratností | Může vést k chybným rozhodnutím při nestandardních peněžních tocích     |
+| Zohledňuje časovou hodnotu peněz               | Ignoruje velikost projektu (může preferovat menší projekty s vyšší IRR) |
+| Snadno pochopitelné a široce používané         | Může být obtížné vypočítat u složitějších peněžních toků                |
+| Umožňuje srovnání různých projektů             | Nezohledňuje reinvestiční riziko                                        |
+
+<br>
+
+## Alternativní metody měření výkonnosti investic
+
+### Profitability Index 
+
+::: {.callout-important title="Definice"}
+**Profitability Index** (PI) je poměr současné hodnoty budoucích peněžních toků
+*generovaných investicí k počáteční investici.
+:::
+
+$$
+\text{PI} = \frac{\text{PV budoucích peněžních toků}}{\text{Počáteční investice}}
+$$
+
+- Pokud je PI větší než 1, investice je považována za ziskovou.
+
+::: {.callout-tip title="Příklad"}
+Firma investuje 100 000 Kč do projektu, který generuje budoucí peněžní toky ve výši 30
+000 Kč ročně po dobu 5 let. Diskontní sazba je 10 %.
+
+$$
+PV = \frac{30 000}{(1+0,1)^1} + \frac{30 000}{(1+0,1)^2} + \frac{30 000}{(1+0,1)^3} + \frac{30 000}{(1+0,1)^4} + \frac{30 000}{(1+0,1)^5} = 113 723,60 \text{ Kč} 
+$$
+
+$$
+\text{PI} = \frac{113 723,6 \text{ Kč}}{100 000 \text{ Kč}} = 1,137
+$$
+
+- Investice přinese o 13,7% více než vložená částka.
+:::
+
+### Diskontovaná doba návratnosti
+
+::: {.callout-important title="Definice"}
+**Diskontovaná doba návratnosti** (Discounted Payback Period) je doba, za kterou se
+vrátí počáteční investice s ohledem na časovou hodnotu peněz, tedy po diskontování
+budoucích peněžních toků. 
+:::
+
+- Není specifický vzorec, výpočet se provádí postupným sčítáním diskontovaných peněžních
+toků do té doby, než se pokryje počáteční investice.
+
+::: {.callout-tip title="Příklad"}
+Firma investuje 100 000 Kč do projektu, který generuje následující peněžní toky při
+diskontní sazbě 10 %:
+
+- Rok 1: 30 000 Kč
+- Rok 2: 40 000 Kč
+- Rok 3: 50 000 Kč
+
+| Rok  | Peněžní tok (Kč) | Diskontovaný peněžní tok (Kč) | Kumulativní diskontovaný peněžní tok (Kč) |
+|------|------------------|-------------------------------|------------------------------------------|
+| 1    | 30 000           | 27 273                        | 27 273                                   |
+| 2    | 40 000           | 33 058                        | 60 331                                   |
+| 3    | 50 000           | 37 565                        | 97 896                                   |
+
+Kumulativní diskontované peněžní toky dosáhnou téměř 100 000 Kč po 3 letech, takže
+Discounted Payback Period je něco málo přes 3 roky.
+:::
+
+### Modifikované IRR
+
+::: {.callout-important title="Definice"}
+**Modifikované vnitřní výnosové procento** Modified Internal Rate of Return (MIRR) je
+*upravená verze IRR, která bere v úvahu nejen náklady na kapitál, ale také reinvestiční
+*míru, která se používá pro budoucí peněžní toky. 
+:::
+
+- MIRR poskytuje přesnější míru návratnosti pro projekty s nestandardními peněžními
+toky, eliminuje některé problémy spojené s IRR.
+
+$$
+\text{MIRR} = \left( \frac{FV(\text{pozitivní peněžní toky})}{PV(\text{negativní peněžní toky})} \right)^{\frac{1}{n}} - 1
+$$
+
+- $FV \dots$ budoucí hodnota pozitivních peněžních toků při reinvestiční sazbě
+- $PV \dots$ současná hodnota negativních peněžních toků při financovací sazbě
+- $n \dots$ počet období
+
+::: {.callout-tip title="Příklad"}
+Firma má počáteční investici 100 000 Kč a očekává následující peněžní toky:
+
+- Rok 1: 20 000 Kč
+- Rok 2: 40 000 Kč
+- Rok 3: 50 000 Kč
+
+Předpokládejme, že diskontní sazba (náklady na kapitál) je 10 % a reinvestiční sazba je
+12 %.
+
+1. **Výpočet FV pro pozitivní peněžní toky:**
+$$
+FV = 20 000 \times (1+0,12)^2 + 40 000 \times (1+0,12)^1 + 50 000 = 122 016 \text{ Kč}
+$$
+
+2. **Výpočet PV pro počáteční investici:**
+$$
+PV = 100 000 \text{ Kč} 
+$$
+
+3. **Výpočet MIRR:**
+$$
+\text{MIRR} = \left( \frac{122 016}{100 000} \right)^{\frac{1}{3}} - 1 = 6,9\%
+$$
+
+Projekt by měl roční návratnost 6,9 %, pokud by byly peněžní toky reinvestovány při
+sazbě 12 %.
+:::
+
+## Příklady k procvičení
+
+1. Firma investuje 50 000 Kč do projektu, který generuje roční peněžní toky ve výši 10
+000 Kč. Jaká je doba návratnosti?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+5 let
+:::
+
+2. Firma investuje 120 000 Kč do projektu, který generuje roční peněžní toky ve výši 30
+000 Kč. Jaká je doba návratnosti?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+4 roky
+:::
+
+3. Firma investuje 75 000 Kč do projektu, který generuje roční peněžní toky ve výši 20
+000 Kč. Jaká je doba návratnosti?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+3,75 roku, což znamená 3 roky a 9 měsíců.
+:::
+
+4. Firma investuje 100 000 Kč do projektu, který generuje následující peněžní toky:
+
+- Rok 1: 30 000 Kč
+- Rok 2: 30 000 Kč
+- Rok 3: 30 000 Kč
+
+Diskontní sazba je 10 %. Jaká je NPV daného projektu?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+-25 395 Kč
+:::
+
+5. Firma investuje 150 000 Kč do projektu, který generuje následující peněžní toky:
+
+- Rok 1: 50 000 Kč
+- Rok 2: 60 000 Kč
+- Rok 3: 70 000 Kč
+
+Diskontní sazba je 8 %. Jaká je NPV daného projektu?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+3 311 Kč
+:::
+
+6. Firma investuje 200 000 Kč do projektu, který generuje následující peněžní toky:
+
+- Rok 1: 70 000 Kč
+- Rok 2: 80 000 Kč
+- Rok 3: 90 000 Kč
+- Rok 4: 100 000 Kč
+
+Diskontní sazba je 12 %. Jaká je NPV daného projektu?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+53 897 Kč
+:::
+
+7. Firma investuje 50 000 Kč do projektu, který generuje následující peněžní toky:
+
+- Rok 1: 15 000 Kč
+- Rok 2: 20 000 Kč
+- Rok 3: 25 000 Kč
+
+Jaká bude hodnota IRR?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+14,5%
+:::
+
+8. Firma investuje 120 000 Kč do projektu, který generuje následující peněžní toky:
+
+- Rok 1: 40 000 Kč
+- Rok 2: 50 000 Kč
+- Rok 3: 60 000 Kč
+- Rok 4: 70 000 Kč
+
+Jaká bude hodnota IRR?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+20,2%
+:::
