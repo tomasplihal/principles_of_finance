@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Základy financí - 9&nbsp; Banky a bankovní systémy</title>
+<title>9&nbsp; Dluhopisy a jejich oceňování – Základy financí</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,12 +62,61 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-2.35.0.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -71,13 +126,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_09.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_09.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -86,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -95,34 +150,34 @@ ul.task-list li input[type="checkbox"] {
       <a href="./">Základy financí</a> 
         <div class="sidebar-tools-main">
     <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
+              <i class="bi bi-file-pdf pe-1"></i>
             Download PDF
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
+              <i class="bi bi-journal pe-1"></i>
             Download ePub
             </a>
           </li>
       </ul>
     </div>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
+              <i class="bi bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
+              <i class="bi bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
@@ -147,37 +202,37 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí a struktura firmy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy: Peníze a úrokové sazby</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bankovní systém</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mezinárodní finance</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Podnikové finance a zdroje finančních informací</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Finanční management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -189,53 +244,64 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Finanční systém</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_09.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Podnikové finance I</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Podnikové finance II</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Úvod do finančních derivátů</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Jak firmy přemýšlejí o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Předtermín zkoušky</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Úvod do řízení rizik a finančních derivátů</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Obsah lekce</h2>
+   
+  <ul class="collapse">
+  <li><a href="#charakteristika-dluhopisů" id="toc-charakteristika-dluhopisů" class="nav-link active" data-scroll-target="#charakteristika-dluhopisů"><span class="header-section-number">9.1</span> Charakteristika dluhopisů</a></li>
+  <li><a href="#oceňování-dluhopisů" id="toc-oceňování-dluhopisů" class="nav-link" data-scroll-target="#oceňování-dluhopisů"><span class="header-section-number">9.2</span> Oceňování Dluhopisů</a></li>
+  <li><a href="#výnosová-křivka-yield-curve" id="toc-výnosová-křivka-yield-curve" class="nav-link" data-scroll-target="#výnosová-křivka-yield-curve"><span class="header-section-number">9.3</span> Výnosová křivka (yield curve)</a></li>
+  <li><a href="#rizika-spojená-s-dluhopisy" id="toc-rizika-spojená-s-dluhopisy" class="nav-link" data-scroll-target="#rizika-spojená-s-dluhopisy"><span class="header-section-number">9.4</span> Rizika spojená s dluhopisy</a></li>
+  <li><a href="#historický-vývoj-dluhopisů" id="toc-historický-vývoj-dluhopisů" class="nav-link" data-scroll-target="#historický-vývoj-dluhopisů"><span class="header-section-number">9.5</span> Historický vývoj dluhopisů</a></li>
+  <li><a href="#příklady-k-procvičení" id="toc-příklady-k-procvičení" class="nav-link" data-scroll-target="#příklady-k-procvičení"><span class="header-section-number">9.6</span> Příklady k procvičení</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></h1>
 </div>
 
 
@@ -248,23 +314,625 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<div class="callout callout-style-default callout-tip callout-titled">
+
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Studijní materiály
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Materiály v Interaktivní osnově v <a href="<https://is.muni.cz/auth/el/econ/podzim2023/BPF_ZAFI/130966369/Banky_a_bankovni_systemy.pdf?predmet=1546566">ISu</a>.</p>
+<ul>
+<li>Dahlquist, J. R., &amp;; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
+<ul>
+<li>Chapter 10 - Bonds and Bond Valuation</li>
+<li>Chapter 12 - Historical Performance of US Markets</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p><strong>Výstupy z učení:</strong></p>
+<ol type="1">
+<li>Porozumět základním charakteristikám dluhopisů a různým typům dluhopisů.</li>
+<li>Rozpoznat, jaký je vztah mezi cenou dluhopisu a jeho výnosem.</li>
+<li>Naučit se vypočítat hodnotu dluhopisu a rozlišovat mezi dluhopisy s diskontem a kupónovými dluhopisy.</li>
+<li>Porozumět konceptům dluhopisů s pevnou a variabilní úrokovou sazbou.</li>
+<li>Naučit se, jak funguje výnosová křivka a jaký je její význam.</li>
+<li>Identifikovat běžná rizika dluhopisů.</li>
+</ol>
+<section id="charakteristika-dluhopisů" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="charakteristika-dluhopisů"><span class="header-section-number">9.1</span> Charakteristika dluhopisů</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dluhopis je kontrakt představující půjčku poskytnutou věřitelem (investorem) dlužníkovi (emitentovi dluhopisu), kde se dlužník zavazuje splatit jistinu spolu s úroky (tzv. kupónem) ve stanoveném čase.</p>
+</div>
+</div>
+<ul>
+<li>Dluhopisy emitují převážně firmy (korporátní dluhopisy, corporate bonds) a státy (státní dluhopisy, government bonds).</li>
+<li>Korporátní dluhopisy s vysokým výnosem, ale také velkým rizikem se nazývají <em>“junk bonds”</em> nebo <em>“high yield bonds”</em>.</li>
+<li>Jedná se o <strong>externí zdroj financování</strong>.</li>
+<li>Držitel dluhopisu má přednostní právo na majetek společnosti a její cash flow (oproti vlastníkům / akcionářům), ale nemá hlasovací právo.</li>
+<li><strong>Kupónový dluhopis</strong> <span class="math inline">\(\rightarrow\)</span> pravidelné splátky úroků.</li>
+<li><strong>Diskonovaný dluhopis</strong> (zero-coupon bond) <span class="math inline">\(\rightarrow\)</span> žádné splátky úroků, ale investor ho kupuje se slevou.</li>
+<li>Další typy dluhopisů: convertible bond, callable bond, putable bond, inflation protected bond, Eurodollar bond, atd.</li>
+</ul>
+<section id="základní-pojmy" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="základní-pojmy"><span class="header-section-number">9.1.1</span> Základní pojmy</h3>
+<ul>
+<li><strong>Jmenovitá hodnota</strong> (jistina, par value, face value) <span class="math inline">\(\rightarrow\)</span> půjčená částka, kterou je věřitel povinen splatit při splatnosti dluhopisu.</li>
+<li><strong>Úroková</strong> (kupónová) <strong>sazba</strong> <span class="math inline">\(\rightarrow\)</span> úroková sazba použitá k výpočtu pravidelných kupónových plateb dluhopisu, vyjádřena jako roční sazba.</li>
+<li><strong>Kupónová platba</strong> <span class="math inline">\(\rightarrow\)</span> pravidelná platka, kterou dostává věřitel od dlužníka.</li>
+<li><strong>Datum splatnosti</strong> <span class="math inline">\(\rightarrow\)</span> datum expirace dluhopisu, kdy emitent zaplatí poslední úrokovou platbu a splatí jemnovitou hodnotu.</li>
+<li><strong>Výnos do splatnosti (YTM)</strong> <span class="math inline">\(\rightarrow\)</span> diskontní sazba použitá k výpočtu současné hodnoty budoucích peněžních toků dluhopisu, reprezentující návratnost, pokud je dluhopis držen do splatnosti.</li>
+<li><strong>Možnost předčasného splacení</strong> (callable feature) <span class="math inline">\(\rightarrow\)</span> dluhopis může být ukončen nebo splacen před normálním datem splatnosti.</li>
+<li><strong>Rating</strong> hodnocení pravděpodobnosti, že dlužník nesplatí daný dluhopis.</li>
+</ul>
+</section>
+</section>
+<section id="oceňování-dluhopisů" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="oceňování-dluhopisů"><span class="header-section-number">9.2</span> Oceňování Dluhopisů</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Obecný postup">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Obecný postup
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Určení peněžních toků.</li>
+<li>Diskontování peněžních toků (výpočet současné hodnoty).</li>
+<li>Součet jednotlivých diskontovaných peněžních toků.</li>
+</ol>
+</div>
+</div>
+<p><span class="math display">\[
+\text{PV} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{CF_n}{(1+r)^n}
+\]</span></p>
+<p><span class="math display">\[
+\text{PV} = \sum^n_{t=1} \frac{CF_t}{(1+r)^t}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(PV \dots\)</span> cena dluhopisu, současná hodnota všech cash flow</li>
+<li><span class="math inline">\(r \dots\)</span> diskontní sazba (nominální), neboli výnos požadovaný investorem (YTM)</li>
+<li><span class="math inline">\(CF \dots\)</span> očekávané budoucí cash flow</li>
+<li>Očekávaná cash flow jsou výplaty kupónů a s posledním kupónem i vrácení jistiny.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dluhopis s jistinou 100 Kč a splatností 3 roky vyplácí na konci každého roku úrok 5%. Investor požaduje minimální výnos také 5% (diskontní sazba). Kolik bude ochoten za dluhopis zaplatit? <span class="math display">\[
+\text{PV} = \frac{5}{(1+0.05)^1} + \frac{5}{(1+0.05)^2} + \frac{105}{(1+0.05)^3} = 100
+\]</span></p>
+<ul>
+<li><p>Na trhu se zvýšily úrokové sazby a investor požaduje výnos 7%. Kolik bude ochoten za dluhopis zaplatit? <span class="math display">\[
+\text{PV} = \frac{5}{(1+0.07)^1} + \frac{5}{(1+0.07)^2} + \frac{105}{(1+0.07)^3} = 94,75
+\]</span></p></li>
+<li><p>Centrální banka snížila úrokové sazby. Na trhu je méně atraktivních příležitostí. Investor je ochoten spokojit se s výnosem 3%. Kolik bude ochoten za dluhopis zaplatit? <span class="math display">\[
+\text{PV} = \frac{5}{(1+0.03)^1} + \frac{5}{(1+0.03)^2} + \frac{105}{(1+0.03)^3} = 105,66
+\]</span></p></li>
+</ul>
+</div>
+</div>
+<ul>
+<li>Příklad ukazuje vliv úrokové sazby na cenu dluhopisu, který je zobrazen na následujícím grafu.</li>
+<li>Jedná se o inverzní vztah, tzn. pokud investoři začnou požadovat vyšší diskontní sazby, cena dluhopisu se sníží.</li>
+<li>Na začátku je většinou nabízený kupón stejný jako požadovaná diskontní sazba (par value bond), v průběhu splatnosti mohou diskontní sazby růst (discount bond) nebo klesat (premium bond).</li>
+</ul>
+<p><br></p>
+<div id="ece6f582" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>                            <div id="4dd10661-c166-460a-b3ee-5c35d3a56507" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("4dd10661-c166-460a-b3ee-5c35d3a56507")) {                    Plotly.newPlot(                        "4dd10661-c166-460a-b3ee-5c35d3a56507",                        [{"line":{"color":"teal","width":3},"mode":"lines","name":"","x":[111.76394082894221,111.47598211995074,111.18904148864647,110.90311440524582,110.6181963642043,110.33428288406486,110.0513695073077,109.76945180020077,109.48852535265183,109.20858577806126,108.92962871317569,108.65164981794332,108.37464477536967,108.09860929137459,107.82353909465022,107.54942993652011,107.2762775907992,107.00407785365479,106.73282654346839,106.46251950069892,106.19315258774655,105.92472168881731,105.65722270978937,105.39065157807941,105.12500424251073,104.86027667318135,104.596464861334,104.33356481922651,104.07157258000322,103.81048419756685,103.55029574645232,103.2910033217004,103.03260303873255,102.77509103322711,102.51846346099575,102.26271649786094,102.00784633953435,101.75384920149628,101.50072131887555,101.24845894633025,100.99705835792983,100.74651584703733,100.49682772619299,100.247990326998,99.99999999999999,99.75285311457833,99.50654605883099,99.26107523946155,99.0164370816676,98.77262802902949,98.52964454339978,98.28748310479394,98.04614021128126,97.80561237887687,97.56589614143414,97.32698805053836,97.08888467540058,96.8515826027526,96.61507843674215,96.37936879882966,96.1444503276848,95.91031967908413,95.67697352580974,95.44440855754797,95.21262148078942,94.98160901872896,94.7513679111672,94.521894914412,94.29318680118087,94.06524036050423,93.83805239762893,93.61161973392274,93.3859392067792,93.16100766952351,92.93682199131871,92.71337905707247,92.49067576734484,92.26870903825635,92.04747580139677,91.82697300373438,91.60719760752622,91.38814659022854,91.16981694440808,90.95220567765358,90.73530981248861,90.51912638628426,90.3036524511727,90.08888507396125,89.87482133604728,89.66145833333336,89.44879317614286,89.2368229891367,89.02554491123007,88.81495609551003,88.60505370915321,88.39583493334487,88.18729696319778,87.97943700767163,87.77225228949361,87.56574004507885],"y":[1.0,1.090909090909091,1.1818181818181819,1.2727272727272727,1.3636363636363638,1.4545454545454546,1.5454545454545454,1.6363636363636365,1.7272727272727273,1.8181818181818181,1.9090909090909092,2.0000000000000004,2.0909090909090913,2.181818181818182,2.272727272727273,2.3636363636363638,2.4545454545454546,2.545454545454546,2.6363636363636367,2.7272727272727275,2.8181818181818183,2.909090909090909,3.0000000000000004,3.0909090909090913,3.181818181818182,3.272727272727273,3.3636363636363638,3.4545454545454546,3.545454545454546,3.6363636363636367,3.7272727272727275,3.8181818181818183,3.909090909090909,4.0,4.090909090909092,4.1818181818181825,4.272727272727273,4.363636363636364,4.454545454545455,4.545454545454546,4.636363636363637,4.7272727272727275,4.818181818181818,4.909090909090909,5.000000000000001,5.090909090909092,5.1818181818181825,5.272727272727273,5.363636363636364,5.454545454545455,5.545454545454547,5.636363636363638,5.727272727272728,5.818181818181819,5.90909090909091,6.000000000000001,6.090909090909092,6.1818181818181825,6.2727272727272725,6.363636363636364,6.454545454545454,6.545454545454546,6.636363636363638,6.7272727272727275,6.818181818181819,6.909090909090909,7.000000000000001,7.090909090909092,7.1818181818181825,7.2727272727272725,7.363636363636364,7.454545454545455,7.545454545454546,7.636363636363637,7.727272727272727,7.818181818181818,7.90909090909091,8.0,8.090909090909092,8.181818181818182,8.272727272727273,8.363636363636363,8.454545454545455,8.545454545454547,8.636363636363637,8.727272727272728,8.818181818181818,8.90909090909091,9.000000000000002,9.090909090909092,9.181818181818183,9.272727272727273,9.363636363636365,9.454545454545455,9.545454545454547,9.636363636363637,9.727272727272727,9.818181818181818,9.909090909090908,10.0],"type":"scatter","hovertemplate":"Diskontn\u00ed sazba: %{y:.2f}%\u003cbr\u003eCena dluhopisu: %{x:.2f}"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"title":{"text":"Vliv \u00farokov\u00e9 sazby na cenu dluhopisu","font":{"size":20}},"xaxis":{"title":{"text":"Cena dluhopisu"},"tickformat":".2f","showgrid":true,"zeroline":false},"yaxis":{"title":{"text":"Diskontn\u00ed sazba (%)"},"tickformat":".2f","showgrid":true,"zeroline":false},"hovermode":"closest","showlegend":false},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('4dd10661-c166-460a-b3ee-5c35d3a56507');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+<p><br></p>
+<section id="využití-anuity" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="využití-anuity"><span class="header-section-number">9.2.1</span> Využití anuity</h3>
+<p>S využitím vzorce pro výpočet anuity lze výpočet zjednodušit:</p>
+<p><span class="math display">\[
+PV = C \times \frac{1 - (1 + r)^{-n}}{r} + FV \times (1 + r)^{-n}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(PV \dots\)</span> současná cena dluhopisu</li>
+<li><span class="math inline">\(C \dots\)</span> roční kupónová platba</li>
+<li><span class="math inline">\(r \dots\)</span> požadovaná úřoková sazba (YTM, yield to maturity), diskontní sazba</li>
+<li><span class="math inline">\(n \dots\)</span> počet období do splatnosti</li>
+<li><span class="math inline">\(FV \dots\)</span> nominální hodnota dluhopisu</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Předpokládejme dluhopis s následujícími parametry:</p>
+<ul>
+<li><span class="math inline">\(C = \$100\)</span>, <span class="math inline">\(r = 5\%\)</span>, <span class="math inline">\(n = 10\)</span> let, <span class="math inline">\(FV = \$1000\)</span></li>
+</ul>
+<p><span class="math display">\[
+PV = 100 \times \frac{1 - (1 + 0.05)^{-10}}{0.05} + 1000 \times (1 + 0.05)^{-10}
+\]</span></p>
+<ul>
+<li>Současná hodnota kupónových plateb: <span class="math display">\[
+100 \times \frac{1 - (1 + 0.05)^{-10}}{0.05} = \$772.17
+\]</span></li>
+<li>Současná hodnota jistiny: <span class="math display">\[
+1000 \times (1 + 0.05)^{-10} = \$613.91
+\]</span></li>
+<li>Celková hodnota dluhopisu: <span class="math display">\[
+PV = \$772.17 + \$613.91 = \$1386.08
+\]</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="různá-frekvence-kupónových-plateb" class="level3" data-number="9.2.2">
+<h3 data-number="9.2.2" class="anchored" data-anchor-id="různá-frekvence-kupónových-plateb"><span class="header-section-number">9.2.2</span> Různá frekvence kupónových plateb</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Předpokládejme následující dluhopis:</p>
+<ul>
+<li>Měsíční kupónová platba <span class="math inline">\(C = \$10\)</span> (Celkem <span class="math inline">\(\$120\)</span> za rok)</li>
+<li>Diskontní sazba <span class="math inline">\(r = 6\%\)</span>, musí být převedena na měsíční frekvency, <span class="math inline">\(r_{monthly} =
+0.06/12 = 0.005\)</span></li>
+<li>Počet období do splatnosti <span class="math inline">\(n = 5\)</span> let, ale protože jsou platby měsíční bude počet úrokových bodobí <span class="math inline">\(n_{monthly} = 5 \times 12 = 60\)</span></li>
+</ul>
+<p><span class="math display">\[
+PV = 10 \times \frac{1 - (1 + 0.005)^{-60}}{0.005} + 1000 \times (1 + 0.005)^{-60}
+\]</span> <span class="math display">\[
+PV = \$517.26 + \$741.37 = \$1258.63
+\]</span></p>
+</div>
+</div>
+</section>
+</section>
+<section id="výnosová-křivka-yield-curve" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="výnosová-křivka-yield-curve"><span class="header-section-number">9.3</span> Výnosová křivka (yield curve)</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Výnosová křivka je grafickým znázorněním vztahu mezi výnosem a dobou splatnosti, kdy na ose y je úroková sazba a na ose x doba splatnosti dluhopisu.</p>
+</div>
+</div>
+<ul>
+<li>Tvar výnosové křivky je definován její úrovní a sklonem.</li>
+<li><em>Normální</em> výnosová křivka je rostoucí, tzn. s rostoucí dobou splatnosti roste očekávaný výnos z dluhopisu.</li>
+<li><em>Plochá</em> výnosová křivka indikuje podobné výnosy pro krátkodobé a dlouhodobé investice, typicky během přechodných fází v ekonomice nebo kvůli určitým monetárním politikám.</li>
+<li><em>Klesající</em> (invertovaná) výnosová křivka je považována za signál blížící se recese.</li>
+<li>Výnosová křivka je důležitým ekonomickým ukazatelem.</li>
+</ul>
+<p><br></p>
+<div id="0e5536af" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div>                            <div id="9d62c07e-dfda-4099-aed7-73ff5e213a1c" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("9d62c07e-dfda-4099-aed7-73ff5e213a1c")) {                    Plotly.newPlot(                        "9d62c07e-dfda-4099-aed7-73ff5e213a1c",                        [{"line":{"color":"green","width":3},"mode":"lines+markers","name":"Norm\u00e1ln\u00ed v\u00fdnosov\u00e1 k\u0159ivka","x":[1,2,5,10,20,30],"y":[1.0,1.3,2.0,2.5,3.0,3.5],"type":"scatter","hovertemplate":"Splatnost: %{x} let\u003cbr\u003e\u00darokov\u00e1 sazba: %{y:.2f}%"},{"line":{"color":"blue","width":3},"mode":"lines+markers","name":"Ploch\u00e1 v\u00fdnosov\u00e1 k\u0159ivka","x":[1,2,5,10,20,30],"y":[2.5,2.5,2.5,2.5,2.5,2.5],"type":"scatter","hovertemplate":"Splatnost: %{x} let\u003cbr\u003e\u00darokov\u00e1 sazba: %{y:.2f}%"},{"line":{"color":"red","width":3},"mode":"lines+markers","name":"Klesaj\u00edc\u00ed v\u00fdnosov\u00e1 k\u0159ivka","x":[1,2,5,10,20,30],"y":[3.5,3.0,2.5,2.0,1.5,1.0],"type":"scatter","hovertemplate":"Splatnost: %{x} let\u003cbr\u003e\u00darokov\u00e1 sazba: %{y:.2f}%"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"title":{"text":"P\u0159\u00edklady v\u00fdnosov\u00fdch k\u0159ivek","font":{"size":20}},"xaxis":{"title":{"text":"\u010cas do splatnosti v letech"},"tickformat":".0f","showgrid":true,"zeroline":false},"yaxis":{"title":{"text":"\u00darokov\u00e1 sazba (%)"},"tickformat":".2f","showgrid":true,"zeroline":false},"hovermode":"closest","showlegend":true},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('9d62c07e-dfda-4099-aed7-73ff5e213a1c');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Příklad invertovaných výnosových křivek způsobených pandemií COVID-19.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_4_7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+</section>
+<section id="rizika-spojená-s-dluhopisy" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="rizika-spojená-s-dluhopisy"><span class="header-section-number">9.4</span> Rizika spojená s dluhopisy</h2>
+<p>Za <strong><em>vyšší riziko</em></strong> investoři požadují <strong><em>vyšší úrokovou sazbu</em></strong>. Mezi základní typy rizik patří např.:</p>
+<ul>
+<li><strong>Riziko nesplacení</strong> (kreditní riziko) <span class="math inline">\(\rightarrow\)</span> neschopnost dlužníka splácet.</li>
+<li><strong>Riziko úrokových sazeb</strong> <span class="math inline">\(\rightarrow\)</span> změna úrokových sazeb ovlivňuje hodnotu dluhopisu.</li>
+<li><strong>Riziko likvidity</strong> <span class="math inline">\(\rightarrow\)</span> obtížnost prodeje dluhopisu.</li>
+<li><strong>Riziko předčasného splacení</strong> <span class="math inline">\(\rightarrow\)</span> nutnost reinvestovat za méně výhodných podmínek.</li>
+<li><strong>Riziko změny směnných kurzů</strong> <span class="math inline">\(\rightarrow\)</span> pokud je dluhopis v cizí měně.</li>
+<li><strong>Politické riziko</strong> <span class="math inline">\(\rightarrow\)</span> politická stabilita daného státu.</li>
+</ul>
+<section id="rating-dluhopisů" class="level3" data-number="9.4.1">
+<h3 data-number="9.4.1" class="anchored" data-anchor-id="rating-dluhopisů"><span class="header-section-number">9.4.1</span> Rating dluhopisů</h3>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Rating</strong> dluhopisů představuje hodnocení jejich kvality ratingovou agenturou. Převážně *se hodnotí kreditní riziko.</p>
+</div>
+</div>
+<ul>
+<li>Hodnocení dluhopisů zahrnuje očekávanou budoucí schopnost firmy splácet dluh a její vyhlídky na růst.</li>
+<li>Firma platí ratingové agentuře za zpracování ratingu.</li>
+</ul>
+<blockquote class="blockquote">
+<ul>
+<li><a href="https://www.forbes.com/advisor/investing/bond-ratings/">Ratingové agentury</a></li>
+</ul>
+</blockquote>
+<ul>
+<li>Tři největší poskytovatelé hodnocení dluhopisů jsou Fitch Ratings, Moody’s Investors Service a Standard &amp; Poor’s (S&amp;P) Global Ratings.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 12%">
+<col style="width: 18%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">S&amp;P / Fitch</th>
+<th style="text-align: center;">Moody’s</th>
+<th style="text-align: center;">Grade</th>
+<th style="text-align: center;">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">AAA</td>
+<td style="text-align: center;">Aaa</td>
+<td style="text-align: center;">Investment</td>
+<td style="text-align: center;">Risk almost zero</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">AA</td>
+<td style="text-align: center;">Aa</td>
+<td style="text-align: center;">Investment</td>
+<td style="text-align: center;">Low risk</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Investment</td>
+<td style="text-align: center;">Risky if economy declines</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">BBB</td>
+<td style="text-align: center;">Baa</td>
+<td style="text-align: center;">Investment</td>
+<td style="text-align: center;">Some risk; more if economy declines</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">BB</td>
+<td style="text-align: center;">Ba</td>
+<td style="text-align: center;">Speculative</td>
+<td style="text-align: center;">Risky</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Speculative</td>
+<td style="text-align: center;">Risky; expected to get worse</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">CCC</td>
+<td style="text-align: center;">Caa</td>
+<td style="text-align: center;">Speculative</td>
+<td style="text-align: center;">Probably bankruptcy</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">CC</td>
+<td style="text-align: center;">Ca</td>
+<td style="text-align: center;">Speculative</td>
+<td style="text-align: center;">Probably bankruptcy</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">Speculative</td>
+<td style="text-align: center;">In bankruptcy or default</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">D</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Speculative</td>
+<td style="text-align: center;">In bankruptcy or default</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="historický-vývoj-dluhopisů" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="historický-vývoj-dluhopisů"><span class="header-section-number">9.5</span> Historický vývoj dluhopisů</h2>
+<ul>
+<li>Zisk z dluhopisů je tvořen úrokem a kapitálovým výnosem.</li>
+<li>Kapitálový výnos představuje změnu ceny samotného dluhopisu a vzniká pokud je dluhopis prodán před dobou splatnosti.</li>
+</ul>
+<section id="státní-dluhopisy-usa" class="level3" data-number="9.5.1">
+<h3 data-number="9.5.1" class="anchored" data-anchor-id="státní-dluhopisy-usa"><span class="header-section-number">9.5.1</span> Státní dluhopisy USA</h3>
+<ul>
+<li>Americké státní dluhopisy (T-bonds) jsou považovány za jednu z nejbezpečnějších investic a často se používají jako benchmark pro bezrizikovou investici ve finančním modelování.</li>
+<li>Přestože mají nízké riziko nesplacení, hodnoty T-bondů kolísají se změnami úrokových sazeb.</li>
+<li>Od roku 1980 do roku 1999 byl průměrný roční výnos na T-bondech 10,21 %, ovlivněný nadprůměrnou roční inflační sazbou 4,28 % a poklesem úrokových sazeb z předchozího období.</li>
+<li>Mezi roky 2000 a 2020, kdy se inflace zpomalila a úrokové sazby byly obecně nižší, byly výnosy T-bondů také průměrně pouze 5,77 %.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_6_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_6_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+</section>
+<section id="korporátní-dluhopisy-usa" class="level3" data-number="9.5.2">
+<h3 data-number="9.5.2" class="anchored" data-anchor-id="korporátní-dluhopisy-usa"><span class="header-section-number">9.5.2</span> Korporátní dluhopisy USA</h3>
+<ul>
+<li>Korporátní dluhopisy, konkrétně dluhopisy Baa, vykazovaly výkonnostní vzorce podobné T-bondům v období čtyř dekád od roku 1980 do roku 2020.</li>
+<li>Dluhopisy Baa, které mají vyšší kreditní riziko, vykázaly průměrný roční výnos 12,07 % od roku 1980 do roku 1999 a prémii 2,30 % oproti T-bondům od roku 2000 do roku 2020.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_6_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_6_5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+<ul>
+<li>Prémie získané z dluhopisů Baa významně zlepšují investiční výkonnost v průběhu času. Například investice 100 dolarů do portfolia dluhopisů Baa v roce 1980 by byla v roce 2020 v hodnotě 4 506 dolarů, což předčilo koncovou hodnotu 1 931 dolarů pro podobné portfolio T-bondů.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_6_6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="příklady-k-procvičení" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="příklady-k-procvičení"><span class="header-section-number">9.6</span> Příklady k procvičení</h2>
+<ol type="1">
+<li>Kupónový dluhopis s jistinou 100 Kč vyplácí na konci každého roku kupón ve výši 12,73% a jeho splatnost je za 2 roky. Jaká je hodnota dluhopisu, pokud uvažujeme diskontní sazbu 8,79% p.a.?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>106,95 Kč</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Kupónový dluhopis s jistinou 50 000 Kč vyplácí na konci každého roku kupón ve výši 6,5% a jeho splatnost je za 3 roky. Jaká je hodnota dluhopisu, pokud uvažujeme diskontní sazbu 9% p.a.?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>46 835,88 Kč</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Kupónový dluhopis s jistinou 120 000 Kč vyplácí na konci každého roku kupón ve výši 5.2% a jeho splatnost je za 12 let. Jaká je hodnota dluhopisu, pokud uvažujeme diskontní sazbu 4,6% p.a.?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>106 634,76 Kč</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Diskontovaný dluhopis s jistinou 100 Kč nevyplácí žádné kupóny a jeho splatnost je za 13 let. Jaká je hodnota dluhopisu, pokud uvažujeme diskontní sazbu 3,60% ročně?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>63,14 Kč</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Diskontovaný dluhopis s jistinou 75 000 Kč nevyplácí žádné kupóny a jeho splatnost je za 5 let. Jaká je hodnota dluhopisu, pokud uvažujeme diskontní sazbu 5,7% ročně?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>56 844,22 Kč</p>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Diskontovaný dluhopis s jistinou 35 000 Kč nevyplácí žádné kupóny a jeho splatnost je za 8 let. Jaká je hodnota dluhopisu, pokud uvažujeme diskontní sazbu 6,9% ročně?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>20 523,26 Kč</p>
+</div>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Kupónový dluhopis s jistinou 25 000 Kč vyplácí čtvrtletní kupón ve výši 7,22% p.a. a jeho splatnost je za 4 roky. Jaká je hodnota dluhopisu, pokud uvažujeme diskontní sazbu 8,5% p.a.?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>23 924,46 Kč</p>
+</div>
+</div>
+</div>
+<ol start="8" type="1">
+<li>Kupónový dluhopis s jistinou 100 000 Kč vyplácí měsíční kupón ve výši 5,8% p.a. a jeho splatnost je za 9 roky. Jaká je hodnota dluhopisu, pokud uvažujeme diskontní sazbu 4,3% p.a.?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>111 178,1 Kč</p>
+</div>
 </div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -302,18 +970,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -345,11 +1002,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -359,8 +1055,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -372,7 +1077,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -416,6 +1244,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -441,6 +1270,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -502,17 +1357,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week_08.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Finanční systém</span></span>
+      <a href="./week_08.html" class="pagination-link" aria-label="Časová hodnota peněz">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week_10.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Podnikové finance I</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week_10.html" class="pagination-link" aria-label="Akcie a jejich oceňování">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

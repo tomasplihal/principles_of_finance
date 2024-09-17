@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Základy financí - 5&nbsp; Akcie a jejich oceňování</title>
+<title>5&nbsp; Podnikové finance a zdroje finančních informací – Základy financí</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,14 +62,42 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -73,13 +107,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_05.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_05.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Podnikové finance a zdroje finančních informací</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -88,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -97,34 +131,34 @@ ul.task-list li input[type="checkbox"] {
       <a href="./">Základy financí</a> 
         <div class="sidebar-tools-main">
     <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
+              <i class="bi bi-file-pdf pe-1"></i>
             Download PDF
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
+              <i class="bi bi-journal pe-1"></i>
             Download ePub
             </a>
           </li>
       </ul>
     </div>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
+              <i class="bi bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
+              <i class="bi bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
@@ -149,37 +183,37 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí a struktura firmy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy: Peníze a úrokové sazby</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bankovní systém</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mezinárodní finance</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_05.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Podnikové finance a zdroje finančních informací</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Finanční management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -191,78 +225,54 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Finanční systém</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Podnikové finance I</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Podnikové finance II</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Úvod do finančních derivátů</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Jak firmy přemýšlejí o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Předtermín zkoušky</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Úvod do řízení rizik a finančních derivátů</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Obsah lekce</h2>
    
-  <ul>
-  <li><a href="#investování-do-akcií" id="toc-investování-do-akcií" class="nav-link active" data-scroll-target="#investování-do-akcií"><span class="header-section-number">5.1</span> Investování do akcií</a>
   <ul class="collapse">
-  <li><a href="#typy-akcií" id="toc-typy-akcií" class="nav-link" data-scroll-target="#typy-akcií"><span class="header-section-number">5.1.1</span> Typy akcií</a></li>
-  <li><a href="#dividendy" id="toc-dividendy" class="nav-link" data-scroll-target="#dividendy"><span class="header-section-number">5.1.2</span> Dividendy</a></li>
-  <li><a href="#rizika-investování-do-akcií" id="toc-rizika-investování-do-akcií" class="nav-link" data-scroll-target="#rizika-investování-do-akcií"><span class="header-section-number">5.1.3</span> Rizika investování do akcií</a></li>
-  </ul></li>
-  <li><a href="#poměrové-ukazatele" id="toc-poměrové-ukazatele" class="nav-link" data-scroll-target="#poměrové-ukazatele"><span class="header-section-number">5.2</span> Poměrové ukazatele</a>
-  <ul class="collapse">
-  <li><a href="#poměr-cenazisk-pe-price-earnings-ratio" id="toc-poměr-cenazisk-pe-price-earnings-ratio" class="nav-link" data-scroll-target="#poměr-cenazisk-pe-price-earnings-ratio"><span class="header-section-number">5.2.1</span> Poměr cena/zisk (P/E, Price-earnings ratio)</a></li>
-  <li><a href="#poměr-cenaúčetní-hodnota-pb-price-to-book-ratio" id="toc-poměr-cenaúčetní-hodnota-pb-price-to-book-ratio" class="nav-link" data-scroll-target="#poměr-cenaúčetní-hodnota-pb-price-to-book-ratio"><span class="header-section-number">5.2.2</span> Poměr cena/účetní hodnota (P/B, Price-to-book ratio)</a></li>
-  </ul></li>
-  <li><a href="#dividendové-diskontní-modely" id="toc-dividendové-diskontní-modely" class="nav-link" data-scroll-target="#dividendové-diskontní-modely"><span class="header-section-number">5.3</span> Dividendové diskontní modely</a>
-  <ul class="collapse">
-  <li><a href="#gordonův-růstový-model" id="toc-gordonův-růstový-model" class="nav-link" data-scroll-target="#gordonův-růstový-model"><span class="header-section-number">5.3.1</span> Gordonův růstový model</a></li>
-  <li><a href="#dividendový-diskontní-model-s-nulovým-růstem" id="toc-dividendový-diskontní-model-s-nulovým-růstem" class="nav-link" data-scroll-target="#dividendový-diskontní-model-s-nulovým-růstem"><span class="header-section-number">5.3.2</span> Dividendový diskontní model s nulovým růstem</a></li>
-  <li><a href="#numerický-příklad" id="toc-numerický-příklad" class="nav-link" data-scroll-target="#numerický-příklad"><span class="header-section-number">5.3.3</span> Numerický příklad</a></li>
-  <li><a href="#model-s-proměnným-růstem-dividend" id="toc-model-s-proměnným-růstem-dividend" class="nav-link" data-scroll-target="#model-s-proměnným-růstem-dividend"><span class="header-section-number">5.3.4</span> Model s proměnným růstem dividend</a></li>
-  <li><a href="#výhody-a-omezení-ddm" id="toc-výhody-a-omezení-ddm" class="nav-link" data-scroll-target="#výhody-a-omezení-ddm"><span class="header-section-number">5.3.5</span> Výhody a omezení DDM</a></li>
-  </ul></li>
-  <li><a href="#model-diskontovaného-cash-flow-dcf" id="toc-model-diskontovaného-cash-flow-dcf" class="nav-link" data-scroll-target="#model-diskontovaného-cash-flow-dcf"><span class="header-section-number">5.4</span> Model diskontovaného cash flow (DCF)</a>
-  <ul class="collapse">
-  <li><a href="#výhody-a-omezení-modelu-dcf" id="toc-výhody-a-omezení-modelu-dcf" class="nav-link" data-scroll-target="#výhody-a-omezení-modelu-dcf"><span class="header-section-number">5.4.1</span> Výhody a omezení modelu DCF</a></li>
-  </ul></li>
-  <li><a href="#prioritní-akcie" id="toc-prioritní-akcie" class="nav-link" data-scroll-target="#prioritní-akcie"><span class="header-section-number">5.5</span> Prioritní akcie</a>
-  <ul class="collapse">
-  <li><a href="#numerický-příklad-1" id="toc-numerický-příklad-1" class="nav-link" data-scroll-target="#numerický-příklad-1"><span class="header-section-number">5.5.1</span> Numerický příklad</a></li>
-  <li><a href="#rozdíly-mezi-prioritními-a-kmenovými-akciemi" id="toc-rozdíly-mezi-prioritními-a-kmenovými-akciemi" class="nav-link" data-scroll-target="#rozdíly-mezi-prioritními-a-kmenovými-akciemi"><span class="header-section-number">5.5.2</span> Rozdíly mezi prioritními a kmenovými akciemi</a></li>
-  </ul></li>
-  <li><a href="#historický-vývoj-akcií" id="toc-historický-vývoj-akcií" class="nav-link" data-scroll-target="#historický-vývoj-akcií"><span class="header-section-number">5.6</span> Historický vývoj akcií</a></li>
+  <li><a href="#podnikové-finance" id="toc-podnikové-finance" class="nav-link active" data-scroll-target="#podnikové-finance"><span class="header-section-number">5.1</span> Podnikové finance</a></li>
+  <li><a href="#zdroje-finančních-informací" id="toc-zdroje-finančních-informací" class="nav-link" data-scroll-target="#zdroje-finančních-informací"><span class="header-section-number">5.2</span> Zdroje finančních informací</a></li>
+  <li><a href="#strategie-financování" id="toc-strategie-financování" class="nav-link" data-scroll-target="#strategie-financování"><span class="header-section-number">5.3</span> Strategie financování</a></li>
+  <li><a href="#čistý-pracovní-kapitál-net-working-capital" id="toc-čistý-pracovní-kapitál-net-working-capital" class="nav-link" data-scroll-target="#čistý-pracovní-kapitál-net-working-capital"><span class="header-section-number">5.4</span> Čistý pracovní kapitál (Net Working Capital)</a></li>
+  <li><a href="#výkaz-cash-flow-přehled-o-peněžních-tocích" id="toc-výkaz-cash-flow-přehled-o-peněžních-tocích" class="nav-link" data-scroll-target="#výkaz-cash-flow-přehled-o-peněžních-tocích"><span class="header-section-number">5.5</span> Výkaz cash flow – přehled o peněžních tocích</a></li>
   </ul>
 </nav>
     </div>
@@ -271,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Podnikové finance a zdroje finančních informací</span></h1>
 </div>
 
 
@@ -284,7 +294,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -299,457 +311,411 @@ Studijní materiály
 <ul>
 <li>Dahlquist, J. R., &amp;; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
 <ul>
-<li>Chapter 11 - Stocks and Stock Valuation</li>
-<li>Chapter 12 - Historical Performance of US Markets</li>
+<li>Chapter 2 - Corporate Structure and Governance</li>
+<li>Chapter 5 - Financial Statements</li>
 </ul></li>
+<li>RůČKOVÁ, P. (2011).&nbsp;Finanční analýza–4. rozšířené vydání. Grada Publishing as.</li>
 </ul>
 </div>
 </div>
 <p><strong>Výstupy z učení:</strong></p>
 <ol type="1">
-<li>Umět definovat akcie a jejich charakteristiky.</li>
-<li>Rozumět dividendám a jednotlivým typům akcií.</li>
-<li>Definovat a vypočítat ukazatele P/E a P/B a pochopit jejich použití při určování relativního ocenění společnosti.</li>
-<li>Porozumět dividendově diskontním modelům a modelům diskontovaného cash flow.</li>
-<li>Získat základní přehled o historické výkonnosti trhů.</li>
+<li>Definovat podnikové finance a hlavní cíl finančního managementu.</li>
+<li>Znát typy obchodních společností.</li>
+<li>Porozumět struktuře výkazu zisků a ztráty, rozvahy a výkazu cash flow.</li>
+<li>Definovat majetkovou a finanční strukturu rozvahy.</li>
+<li>Znát jednotlivé typy zisků.</li>
+<li>Znát různé druhy cash flow.</li>
 </ol>
-<section id="investování-do-akcií" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="investování-do-akcií"><span class="header-section-number">5.1</span> Investování do akcií</h2>
+<section id="podnikové-finance" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="podnikové-finance"><span class="header-section-number">5.1</span> Podnikové finance</h2>
+<p>Podnikové finance se zabývají získáváním finančního kapitálu, řízením finančních operací a aktiv podniku od jeho založení až po případný zánik. Zobrazují pohyby peněžních prostředků, kapitálu a dalších finančních zdrojů.</p>
+<section id="struktura-a-řízení-firmy" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="struktura-a-řízení-firmy"><span class="header-section-number">5.1.1</span> Struktura a řízení firmy</h3>
+<p>Firmy sledují finanční i nefinanční cíle, jako je rozšiřování prodeje, spokojenost zákazníků a vývoj nových produktů. Maximalizace bohatství vlastníků nebo akcionářů se zaměřuje na dlouhodobou prosperitu firmy.</p>
+<section id="hlavní-cíl-finančního-managementu" class="level4">
+<h4 class="anchored" data-anchor-id="hlavní-cíl-finančního-managementu">Hlavní cíl finančního managementu</h4>
+<p>Hlavním cílem finančního managementu je <strong>maximalizace tržní hodnoty firmy</strong>, tedy například tržní ceny akcií u akciových společností. Efektivní podnik musí poskytovat kvalitní produkty a služby při co nejnižších nákladech, což vede k dlouhodobé prosperitě a růstu hodnoty podniku. Klíčová je také péče o zaměstnance a dobrá pověst, přičemž tento cíl by měl být dosažen v souladu se zákonem a etickými zásadami.</p>
+</section>
+</section>
+<section id="typy-obchodních-společností" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="typy-obchodních-společností"><span class="header-section-number">5.1.2</span> Typy obchodních společností</h3>
+<p>Typy obchodních společností jsou specifikovány v zákoně č. 90/2012 Sb., Zákon o obchodních společnostech a družstvech. Výběr správné struktury závisí na možnostech financování, zdanění a likviditě.</p>
+<section id="akciová-společnost" class="level4">
+<h4 class="anchored" data-anchor-id="akciová-společnost">Akciová společnost</h4>
+<p>Akciová společnost je právnická osoba, jejíž majetek je rozdělen na akcie. Za své závazky odpovídá celým svým majetkem, ale akcionáři za závazky společnosti neručí a nehradí její případné ztráty. Oddělení vlastníků od managementu umožňuje společnosti dlouhodobé fungování, i když se vlastníci nebo manažeři mění.</p>
+</section>
+<section id="další-typy-obchodních-společností" class="level4">
+<h4 class="anchored" data-anchor-id="další-typy-obchodních-společností">Další typy obchodních společností</h4>
 <ul>
-<li>Akcie představují vlastnický podíl v dané společnosti a s tím i nárok na budoucí zisky a peněžní toky společnosti.</li>
-<li>Akcie umožňují oddělení vlastníků od managementu.</li>
-<li>Na rozdíl od dluhopisů akcie nemají datum splatnosti, nominální hodnotu ani zaručené kupónové platby.</li>
-<li>Akcie mohou vyplácet dividendy, ale ty nejsou garantovány a mohou se měnit na základě rozhodnutí představenstva společnosti.</li>
-<li>Investování do akcií je obecně rizikovější než dluhopisy nebo jiné investice s pevným výnosem, protože je zde větší nejistota.</li>
-<li>S větším rizikem je spojen i potenciálně vyšší výnos v podobě dividend nebo kapitálového zhodnocení dané akcie.</li>
+<li><strong>Veřejná obchodní společnost</strong> – Společnost alespoň dvou osob, které se podílejí na podnikání a ručí za její dluhy celým svým majetkem.</li>
+<li><strong>Komanditní společnost</strong> – V této společnosti alespoň jeden společník ručí za dluhy omezeně (komanditista) a jeden neomezeně (komplementář).</li>
+<li><strong>Společnost s ručením omezeným (s.r.o.)</strong> – Ručí za závazky celým svým majetkem, přičemž společníci ručí do výše nesplněných vkladových povinností.</li>
 </ul>
-<section id="typy-akcií" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="typy-akcií"><span class="header-section-number">5.1.1</span> Typy akcií</h3>
+</section>
+</section>
+<section id="vztah-mezi-akcionáři-a-vedením-společnosti" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="vztah-mezi-akcionáři-a-vedením-společnosti"><span class="header-section-number">5.1.3</span> Vztah mezi akcionáři a vedením společnosti</h3>
 <ul>
-<li>Kmenové akcie (common stock):
+<li><strong>Stakeholder</strong> je každá osoba nebo subjekt, který má zájem na výsledcích společnosti (zaměstnanci, zákazníci, dodavatelé, stát).</li>
+<li><strong>Akcionáři</strong> jsou jednotlivci nebo organizace, které vlastní akcie společnosti. Jsou vlastníky firmy, zatímco stakeholder může být zainteresovaný i nefinančně.</li>
+<li>Akcionáři mají nárok na dividendy, hlasují o záležitostech společnosti a mohou být zvoleni do představenstva.</li>
+<li>Existují dva typy akcionářů:
 <ul>
-<li>představují vlastnický podíl ve společnosti</li>
-<li>podíl na řízení a rozhodování</li>
-<li>podíl na zisku (dividendy)</li>
-<li>podíl na likvidačním zůstatku</li>
+<li><strong>Kmenoví akcionáři</strong> – mají hlasovací práva a vlastní kmenové akcie.</li>
+<li><strong>Prioritní akcionáři</strong> – vlastní prioritní akcie s pevným výnosem, ale bez hlasovacího práva.</li>
 </ul></li>
-<li>Prioritní akcie (preferred stock):
-<ul>
-<li>nepředstavují vlastnické právo ve firmě</li>
-<li>oproti kmenovým akciím mají přednostní právo na zisky a majetek společnosti</li>
-<li>zpravidla vyplácejí pravidelnou fixní dividendu</li>
-<li>většinou neobsahují hlasovací právo</li>
-<li>nemají dobu splatnosti</li>
-</ul></li>
+<li>Akcionáři najímají manažery k řízení firmy. Představenstvo (board of directors, BOD) dohlíží na korporaci, zatímco manažeři střední úrovně spravují každodenní provoz.</li>
 </ul>
 </section>
-<section id="dividendy" class="level3" data-number="5.1.2">
-<h3 data-number="5.1.2" class="anchored" data-anchor-id="dividendy"><span class="header-section-number">5.1.2</span> Dividendy</h3>
-<ul>
-<li>Firma rozhoduje jestli bude vyplácet dividendy a v jaké výši (většinou čtvrtletně).</li>
-<li>Snaha o stabilní dividendovou politiku.</li>
-<li>Občas může být vyplacena mimořádná dividenda.</li>
-<li>Dividendy většinou v penězích (<strong><em>cash dividend</em></strong>), ale mohou být i formou akcií (<strong><em>stock dividend</em></strong>).</li>
-<li>Stock dividend souvisí s pojmem štěpení akcií (<strong><em>stock split</em></strong>), kdy firma rozdělí své stávající akcie na více kusů při zachování celkové tržní kapitalizace.</li>
-<li>Hlavní rozdíl je v tom, že stock dividend zahrnuje vydání nových akcií zatímco u stock split je každá akcie rozdělena na více kusů, ale nejedná se o emisi nových akcií, přičemž v obou případech zůstává tržní kapitalizace konstantní.</li>
-<li>Př. Držíte 10 akcií, každá má hodnotu 80. Firma udělá 2-for-1 split. Takže ve výsledku máte 20 akcií, ale každá stojí 40. Bohatství je pořád stejné, jen rozdělené na víc dílů.</li>
-<li>Místo výplaty dividend se může firma rozhodnout nakoupit svoje vlastní akcie (stock buyback).</li>
-<li>Výsledkem je zvýšení cen akcií a zpravidla daňové výhody pro akcionáře.</li>
-<li>Buyback lze také použít v situaci, kdy firma považuje své akcie za podhodnocené.</li>
-</ul>
-</section>
-<section id="rizika-investování-do-akcií" class="level3" data-number="5.1.3">
-<h3 data-number="5.1.3" class="anchored" data-anchor-id="rizika-investování-do-akcií"><span class="header-section-number">5.1.3</span> Rizika investování do akcií</h3>
-<ul>
-<li>Obecně rizikovější než dluhopisy, proto investoři očekávají vyšší výnosy.</li>
-<li>V případě likvidace společnosti jsou běžní akcionáři na posledním místě.</li>
-<li>Nejistá výše budoucích dividend.</li>
-<li>Možné problémy s managementem.</li>
-<li>Vyšší volatilita cen akcií ve srovnání s cenou dluhopisů.</li>
-</ul>
-</section>
-</section>
-<section id="poměrové-ukazatele" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="poměrové-ukazatele"><span class="header-section-number">5.2</span> Poměrové ukazatele</h2>
-<ul>
-<li>Investoři používají různé metody pro hodnocení společností a oceňování jejich akcií.</li>
-<li>Často se jedná o studium finančních výkazů a výpočet finančních ukazatelů.</li>
-</ul>
-<section id="poměr-cenazisk-pe-price-earnings-ratio" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="poměr-cenazisk-pe-price-earnings-ratio"><span class="header-section-number">5.2.1</span> Poměr cena/zisk (P/E, Price-earnings ratio)</h3>
-<ul>
-<li>P/E je klíčovým ukazatelem používaným k posouzení tržní hodnoty akcií společnosti.</li>
-<li>P/E se vypočítá jako: <span class="math display">\[
-\text{P/E} = \frac{\text{Cena za akcii}}{\text{Zisk na akcii}}
-\]</span></li>
-<li>P/E reprezentuje cenu, kterou investor platí za jednotku současného nebo budoucího zisku společnosti.</li>
-<li>P/E může být spočítáno historicky (na základě minulého zisku) nebo prediktivně (na základě očekávaných budoucích zisků).</li>
-<li>Například, pokud je cena akcie společnosti $24.00 a její zisk na akcii je $4.00, její P/E poměr je: <span class="math display">\[
-\text{P/E} = \frac{\$24.00}{\$4.00} = 6
-\]</span></li>
-<li>Výsledek ukazuje, že investoři jsou ochotni platit až šest dolarů za každý dolar zisku.</li>
-<li>P/E společnosti by měl být srovnáván s historickým P/E nebo s P/E jiných společností ve stejném odvětví.</li>
-<li>Vysoké P/E může naznačovat, že společnost je nadhodnocena, zatímco nízké P/E může signalizovat podhodnocení a investiční příležitosti.</li>
-<li>Prohlédněte si 90letý historický průměr P/E pro index S&amp;P 500 <a href="https://www.multpl.com/s-p-500-pe-ratio" class="uri">https://www.multpl.com/s-p-500-pe-ratio</a></li>
-</ul>
-</section>
-<section id="poměr-cenaúčetní-hodnota-pb-price-to-book-ratio" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="poměr-cenaúčetní-hodnota-pb-price-to-book-ratio"><span class="header-section-number">5.2.2</span> Poměr cena/účetní hodnota (P/B, Price-to-book ratio)</h3>
-<ul>
-<li>Poměr cena/účetní hodnota (P/B) je běžný finanční ukazatel používaný k hodnocení tržní hodnoty společnosti vzhledem k její účetní hodnotě.</li>
-<li>Tržní hodnota je aktuální cena všech akcií společnosti, zatímco účetní hodnota představuje hodnotu společnosti po likvidaci aktiv a splacení závazků.</li>
-<li>P/B se vypočítá jako: <span class="math display">\[
-\text{P/B} = \frac{\text{Cena za akcii}}{\text{Účetní hodnota na akcii}}
-\]</span></li>
-<li>P/B se často používá k hodnocení firem ve finančním sektoru, ale má omezení v nezahrnování nehmotných aktiv, jako jsou patenty, ochranné známky a autorská práva.</li>
-<li>Nízké P/B (méně než 1) by mohlo naznačovat, že akcie je podhodnocena, zatímco vysoké P/B (větší než 1) by mohlo naznačovat nadhodnocení.</li>
-<li>P/B poměr by měl být použit v souvislosti s dalšími ukazateli a srovnán s P/B poměry společností ve stejném odvětví pro komplexní analýzu.</li>
-</ul>
-</section>
-</section>
-<section id="dividendové-diskontní-modely" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="dividendové-diskontní-modely"><span class="header-section-number">5.3</span> Dividendové diskontní modely</h2>
-<ul>
-<li>Dividendový diskontní model (DDM) se používá k ocenění akcie na základě současné hodnoty jejích budoucích dividend.</li>
-<li>Model s nulovým a konstantním růstem má omezení kvůli předpokladu o fixní dividendě a růstových sazbách.</li>
-<li>Tyto modely jsou nejvhodnější pro akcie se stabilní historií vyplácení dividend.</li>
-</ul>
-<section id="gordonův-růstový-model" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="gordonův-růstový-model"><span class="header-section-number">5.3.1</span> Gordonův růstový model</h3>
-<ul>
-<li><p>Nejběžnějším DDM je Gordonův růstový model (konstatní růst dividend), který používá následující vzorec: <span class="math display">\[
-\text{Hodnota akcie} = \frac{D_0 (1+g)}{r - g} = \frac{D_1}{r - g}
-\]</span></p></li>
-<li><p>Kde <span class="math inline">\(D_0\)</span> je současná roční dividenda, <span class="math inline">\(r\)</span> je požadovaný výnos, a <span class="math inline">\(g\)</span> je odhadovaná budoucí sazba růstu dividend.</p></li>
-</ul>
-</section>
-<section id="dividendový-diskontní-model-s-nulovým-růstem" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="dividendový-diskontní-model-s-nulovým-růstem"><span class="header-section-number">5.3.2</span> Dividendový diskontní model s nulovým růstem</h3>
-<ul>
-<li>Model s nulovým růstem předpokládá, že budoucí dividendy budou stejné navždy.</li>
-<li>Jeho vzorec je podobný výpočtu současné hodnoty perpetuity: <span class="math display">\[
-\text{Hodnota akcie} = \frac{\text{Roční dividendy}}{\text{Požadovaná míra výnosu}} = \frac{D}{r}
-\]</span></li>
-</ul>
-</section>
-<section id="numerický-příklad" class="level3" data-number="5.3.3">
-<h3 data-number="5.3.3" class="anchored" data-anchor-id="numerický-příklad"><span class="header-section-number">5.3.3</span> Numerický příklad</h3>
-<ul>
-<li>Předpokládejme, že společnost právě vyplatila dividendu <span class="math inline">\(D_0\)</span> ve výši <span class="math inline">\(\$2\)</span>, očekává se růst dividend <span class="math inline">\(g\)</span> ve výši 5% ročně. Vaše požadovaná míra výnosu <span class="math inline">\(r\)</span> je 10%. Cena akcie se vypočítá následovně:</li>
-</ul>
-<p><span class="math display">\[
-P = \frac{2.00 (1 + 0.05)}{0.10 - 0.05} = \frac{2.10}{0.05} = \$42.00
-\]</span></p>
-<ul>
-<li>Podle DDM modelu by cena akcie měla být $42,00.</li>
-<li>Pokud je tržní cena nižší než tato hodnota, může to být dobrá investiční příležitost.</li>
-</ul>
-</section>
-<section id="model-s-proměnným-růstem-dividend" class="level3" data-number="5.3.4">
-<h3 data-number="5.3.4" class="anchored" data-anchor-id="model-s-proměnným-růstem-dividend"><span class="header-section-number">5.3.4</span> Model s proměnným růstem dividend</h3>
-<ul>
-<li>Model s proměnným růstem dividend je realističtější model, který předpokládá, že společnost a její akciová hodnota projdou různými fázemi růstu.</li>
-<li>Tento model vypočítává současnou hodnotu pro každé období růstu a poté je sečte, aby získal vnitřní hodnotu akcie.</li>
-<li>Např. máme společnost X, která za poslední rok vyplatila dividendu $2.00. Očekáváme růstovou míru dividendy 5% pro další čtyři roky a následně stabilizaci na růstu 3%. Požadovaná výnosová míra je 8%. V následující tabulce je zobrazen výpočet hodnoty akcie.</li>
-</ul>
-<table class="table">
-<colgroup>
-<col style="width: 4%">
-<col style="width: 7%">
-<col style="width: 14%">
-<col style="width: 22%">
-<col style="width: 22%">
-<col style="width: 29%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Rok</th>
-<th style="text-align: center;">Růst %</th>
-<th style="text-align: center;">Dividenda ($)</th>
-<th style="text-align: center;">Hodnota po 4. roce ($)</th>
-<th style="text-align: center;">Diskontní faktor pro 8%</th>
-<th style="text-align: center;">Současná hodnota dividendy ($)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">2.00</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">2.10</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">1.0800</td>
-<td style="text-align: center;">1.9444</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">2.21</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">1.1664</td>
-<td style="text-align: center;">1.8904</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">2.32</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">1.2597</td>
-<td style="text-align: center;">1.8379</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">2.43</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">1.3605</td>
-<td style="text-align: center;">1.7869</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">3%</td>
-<td style="text-align: center;">2.50</td>
-<td style="text-align: center;">50.07886</td>
-<td style="text-align: center;">1.4693</td>
-<td style="text-align: center;">35.7870</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><span class="math inline">\(Celkem:\)</span></td>
-<td style="text-align: center;">43.2466</td>
-</tr>
-</tbody>
-</table>
-<p><span class="math display">\[
-\text{Hodnota po 4. roce} = \frac{2.43 (1 + 0.03)}{0.08 - 0.03} = 50.07886
-\]</span></p>
-<ul>
-<li>Vnitřní hodnota akcie by byla součet současných hodnot dividend, tedy $43.2466.</li>
-</ul>
-</section>
-<section id="výhody-a-omezení-ddm" class="level3" data-number="5.3.5">
-<h3 data-number="5.3.5" class="anchored" data-anchor-id="výhody-a-omezení-ddm"><span class="header-section-number">5.3.5</span> Výhody a omezení DDM</h3>
-<ul>
-<li>Model je nejužitečnější pro ocenění společností s dlouhou a konzistentní historií dividend, protože se opírá o očekávané budoucí výplaty a růst dividend.</li>
-<li>DDM poskytují matematický vzorec, což snižuje šanci na nesprávný výklad nebo subjektivitu.</li>
-<li>Společnosti mohou udržovat výplatu dividend, i když to dlouhodobě není výhodné, aby se vyhnuly volatilitě akciových cen.</li>
-<li>Aplikace DDM na společnosti s omezenou historií dividend nebo na ty v odvětvích s vysokým rizikem může vést k nepřesnostem.</li>
-<li>Jedním z hlavních omezení DDM je jejich neschopnost ohodnotit společnosti, které nevyplácí dividendy, což je trend zejména u mladých technologických společností.</li>
-<li>Cena akcie podle DDM je vysoce citlivá na změny jednotlivých parametrů v rovnici.</li>
-</ul>
-</section>
-</section>
-<section id="model-diskontovaného-cash-flow-dcf" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="model-diskontovaného-cash-flow-dcf"><span class="header-section-number">5.4</span> Model diskontovaného cash flow (DCF)</h2>
-<ul>
-<li>Investoři při nákupu akcií očekávají budoucí příjmy z divident a zisk z prodeje akcií.</li>
-<li>Prodejní cena akcie by ideálně měla být vyšší než nákupní cena, což vede ke kapitálovému zisku.</li>
-<li>Kapitálový zisk je vyšší, pokud akcie nevyplácí dividendu.</li>
-<li>Navíc pokud jsou akcie drženy delší dobu, platí se ve většině zemí nižší daně ze zisku z jejich prodeje (v ČR po 3 letech daň 0%).</li>
-<li>Krátkodobé zisky z cenných papírů jsou zdaněny podle běžných sazeb daně z příjmů (v ČR 15%).</li>
-<li>Model diskontovaného cash flow (DCF) je často využíván u firem, které nevyplácí dividendy.</li>
-<li>Model DCF vypočítává současnou hodnotu očekávaných cash flow společnosti.</li>
-<li>Model DCF je reprezentován následujícím rovnice:</li>
-</ul>
-<p><span class="math display">\[
-\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{CF_n}{(1+r)^n}
-\]</span></p>
-<ul>
-<li>kde:
-<ul>
-<li><span class="math inline">\(CF_n\)</span> je očekávaný peněžní tok v období <span class="math inline">\(n\)</span>,</li>
-<li><span class="math inline">\(r\)</span> je diskontní sazba (také známá jako požadovaná míra výnosu),</li>
-<li><span class="math inline">\(n\)</span> je počet období.</li>
-</ul></li>
-<li>Alternativně lze model rozšířít o predikce cash flow do nekonečna s využitím perpetuity.</li>
-<li>Přidá se poslední člen, tzv. terminal cash flow (TCF), který představuje poslední predikované cash flow, které dále roste konstantním tempem růstu.</li>
-<li>Model DCF je poté reprezentován následujícím rovnicí:</li>
-</ul>
-<p><span class="math display">\[
-\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{\frac{TFC}{r-g}}{(1+r)^{n-1}}
-\]</span></p>
-<section id="výhody-a-omezení-modelu-dcf" class="level3" data-number="5.4.1">
-<h3 data-number="5.4.1" class="anchored" data-anchor-id="výhody-a-omezení-modelu-dcf"><span class="header-section-number">5.4.1</span> Výhody a omezení modelu DCF</h3>
-<ul>
-<li>Mezi hlavní výhody je možnost ocenit všechny firmy bez ohledu na jejich dividendovou politiku.</li>
-<li>Cash flow firmy se v účetnictví hůře zkresluje než zisk, takže model není tak citlivý na manipulace s účetnictvím.</li>
-<li>Společnosti však mohou například uměle vytvářet pozitivní cash flow prodejem aktiv, což není dlouhodobě udržitelné.</li>
-<li>Přesnost modelu DCF závisí na přesnosti jeho vstupů, včetně odhadů cash flow a diskontní sazby.</li>
-<li>Použití různých metod pro oceňování společností snižuje riziko nepřesností.</li>
-</ul>
-</section>
-</section>
-<section id="prioritní-akcie" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="prioritní-akcie"><span class="header-section-number">5.5</span> Prioritní akcie</h2>
-<ul>
-<li>Prioritní akcie nabízejí držitelům přednostní právo na majetek společnosti.</li>
-<li>Mají stanovenou konstantní dividendu, která je vyplácena akcionářům.</li>
-<li>Jako kmenové akcie nemají stanovenou dobu splatnosti.</li>
-<li>Na rozdíl od kmenových akcií neposkytují hlasovací právo.</li>
-<li>Mnoho preferovaných akcií je kumulativních, což znamená, že jakékoli vynechané dividendy se stávají závazkem, který společnost musí nakonec vyplatit preferovaným akcionářům.</li>
-<li>Nekumulativní preferované akcie ztrácejí nevyplacené dividendy navždy.</li>
-<li>Preferované akcie lze v budoucnu převést na obyčejné akcie.</li>
-<li>Preferované akcie jsou více podobné dluhopisům kvůli jejich konstantním dividendám, což usnadňuje oceňování pomocí dividendových modelů.</li>
-<li>Vnitřní hodnotu preferovaných akcií lze určit pomocí vzorce na perpetuitu.</li>
-</ul>
-<p><span class="math display">\[
-\text{Hodnota akcie} = \frac{\text{Dividenda}}{\text{Požadovaná míra výnosu}}
-\]</span></p>
-<section id="numerický-příklad-1" class="level3" data-number="5.5.1">
-<h3 data-number="5.5.1" class="anchored" data-anchor-id="numerický-příklad-1"><span class="header-section-number">5.5.1</span> Numerický příklad</h3>
-<ul>
-<li>Firma X právě vydala preferované akcie (kumulativní) se jmenovitou hodnotou $100 a roční dividendou 7%.</li>
-<li>Aktuální cena preferovaných akcií je $35 za akcii.</li>
-<li>Jaká je výnosnost těchto preferovaných akcií?</li>
-</ul>
-<p><strong>Řešení:</strong></p>
-<ul>
-<li>Prvním krokem je určení roční dividendy:</li>
-</ul>
-<p><span class="math display">\[
-\$100 \times 0.07 = \$7.00
-\]</span></p>
-<ul>
-<li>Nyní použijeme výše uvedený vzorec k vypočítání míry výnosu:</li>
-</ul>
-<p><span class="math display">\[
-r = \frac{\$7.00}{\$35.00} = 0.20 \text{ neboli } 20\%
-\]</span></p>
-</section>
-<section id="rozdíly-mezi-prioritními-a-kmenovými-akciemi" class="level3" data-number="5.5.2">
-<h3 data-number="5.5.2" class="anchored" data-anchor-id="rozdíly-mezi-prioritními-a-kmenovými-akciemi"><span class="header-section-number">5.5.2</span> Rozdíly mezi prioritními a kmenovými akciemi</h3>
-<table class="table">
-<colgroup>
-<col style="width: 44%">
-<col style="width: 55%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Kmenové akcie</th>
-<th style="text-align: center;">Prioritní akcie</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">Dividendy vyplaceny až po prioritních akcionářích</td>
-<td style="text-align: center;">Jako první dostanou dividendy</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Dividendy jsou variabilní a mohou narůst nebo klesat</td>
-<td style="text-align: center;">Konstantní dividenda</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Vysoký potenciál růstu hodnoty vázán na výkon společnosti</td>
-<td style="text-align: center;">Omezená možnost kapitálového zhodnocení</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Při likvadaci vyplaceni jako poslední</td>
-<td style="text-align: center;">Při likvidaci v pořadí podobně jako držitelé dluhopisů</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Poskytují držiteli hlasovací právo</td>
-<td style="text-align: center;">Bez hlasovacího práva</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Žádná akumulace nevyplacených dividend</td>
-<td style="text-align: center;">Pokud jsou kumulativní, nevyplacené dividendy se stávají závazkem firmy</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="historický-vývoj-akcií" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="historický-vývoj-akcií"><span class="header-section-number">5.6</span> Historický vývoj akcií</h2>
-<ul>
-<li>Dow Jones Industrial Average (DJIA) a S&amp;P 500 jsou nejčastěji citovanými akciovými indexy, přičemž změny v obou jsou silně korelované.</li>
-<li>Indexy mají za cíl reprezentovat výnosnost celého akciového trhu.</li>
-<li>Ke konci roku 2020 měly firmy zahrnuté v indexu S&amp;P 500 kombinovanou tržní kapitalizaci 33,4 bilionu dolarů, což je přibližně 66 % odhadované tržní kapitalizace amerických akcií ve výši 50,8 bilionu dolarů.</li>
-<li>Historie kapitálových trhů ukazuje, že průměrný výnos z akcií výrazně předčil jiné třídy finančních cenných papírů, jako jsou státní dluhopisy, korporátní dluhopisy nebo peněžní trh.</li>
-<li>Často se klade důraz na alokaci aktiv před výběrem konkrétních cenných papírů, protože rozhodnutí investovat do akcií namísto dluhopisů obvykle přináší větší dlouhodobý zisk.</li>
-<li>Akcie malých společností historicky realizovaly větší průměrné roční výnosy, i když s větší variabilitou, ve srovnání s velkými společnostmi zastoupenými v indexu S&amp;P 500.</li>
-<li>V poslední době byl rozdíl ve výnosech mezi akciemi malých a velkých společností méně výrazný. Od roku 1980 do roku 2020 průměrný složený roční výnos indexu Wilshire US Small-Cap dosáhl 12,13 %, ve srovnání s průměrným výnosem indexu Wilshire US Large Cap, který byl 11,82 %.</li>
-</ul>
-<table class="table">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 39%">
-<col style="width: 38%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Asset Class</th>
-<th style="text-align: center;">Nominal Average Annual Returns 1981–2020</th>
-<th style="text-align: center;">Standard Deviation of Returns 1981–2020</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Large company stocks</td>
-<td style="text-align: center;">12.64%</td>
-<td style="text-align: center;">16.06%</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Baa bonds</td>
-<td style="text-align: center;">10.34%</td>
-<td style="text-align: center;">7.67%</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">10-year T-bonds</td>
-<td style="text-align: center;">8.21%</td>
-<td style="text-align: center;">9.92%</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">US T-bills</td>
-<td style="text-align: center;">3.94%</td>
-<td style="text-align: center;">3.39%</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Inflation</td>
-<td style="text-align: center;">2.93%</td>
-<td style="text-align: center;">1.76%</td>
-</tr>
-</tbody>
-</table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_6_8.png" class="img-fluid figure-img" width="800"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_6_7.png" class="img-fluid figure-img" width="600"></p>
-</figure>
-</div>
-<ul>
-<li>Kalkulačky pro nalezení výnosů ve vybraných obdobích pro americké akcie, dluhopisy a inflaci. <a href="https://openstax.org/r/6-what-to-invest-in" class="uri">https://openstax.org/r/6-what-to-invest-in</a></li>
-<li>Další kalkulačka pro globální akciové trhy. <a href="https://openstax.org/r/returns-of-global-stocks" class="uri">https://openstax.org/r/returns-of-global-stocks</a></li>
-<li>Globální zpráva o bohatství publikovaná společností Credit Suisse. <a href="https://openstax.org/r/global-wealth-report" class="uri">https://openstax.org/r/global-wealth-report</a></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
+<section id="problém-zastoupení" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="problém-zastoupení"><span class="header-section-number">5.1.4</span> Problém zastoupení</h3>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Vyplatí se časovat trh?
+Definice
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>V období od roku 1980 do poloviny roku 2020 by investice 10 000 dolarů do indexového fondu S&amp;P 500 vynesla investorovi 697 421 dolarů. Avšak pokud by investor zmeškal 5 nejvýkonnějších dní na trhu, snížil by se konečný zůstatek portfolia na 432 411 dolarů. Pokud by zůstal mimo trh během 10 nejlepších dnů, zůstatek by klesl na pouhých 313 377 dolarů, což je méně než polovina výnosu z celého období.</p>
+<p>Problém zastoupení vzniká, když je od jedné osoby či skupiny očekáváno, že bude jednat v zájmu jiné osoby, avšak může dojít ke konfliktu zájmů.</p>
 </div>
 </div>
+<p>Ve financích je nejčastěji spojován s konfliktem mezi akcionáři a managementem, nebo mezi akcionáři a dalšími zainteresovanými stranami, jako jsou zaměstnanci.</p>
+<p>Pokud manažeři využívají své pozice pro osobní prospěch místo maximalizace hodnoty pro akcionáře, nastává problém. Asymetrie informací mezi stranami tento problém prohlubuje. V současnosti je stále častěji využíváno hodnocení ESG (životní prostředí, sociální oblast a správa a řízení), které naznačuje proaktivní řízení a dlouhodobou hodnotu podniku.</p>
+<section id="náklady-problému-zastoupení" class="level4">
+<h4 class="anchored" data-anchor-id="náklady-problému-zastoupení">Náklady problému zastoupení</h4>
+<p>Pokud management upřednostňuje své zájmy před zájmy akcionářů, vznikají ve firmě neefektivnosti. Tento problém nelze zcela odstranit, ale může být zmírněn, přičemž snahy o jeho řešení obvykle vyžadují dodatečné náklady.</p>
+</section>
+<section id="možná-řešení" class="level4">
+<h4 class="anchored" data-anchor-id="možná-řešení">Možná řešení</h4>
+<p>Možná řešení problému zastoupení zahrnují právní prevence, kontrolu a dohled nad činností managementu, motivační odměňování vázané na výkonnost (např. hodnotu akcií), nebo možnost odvolat vedení. Klíčové je také správné nastavení corporate governance.</p>
+</section>
+</section>
+<section id="společnosti-na-domácích-a-globálních-trzích" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="společnosti-na-domácích-a-globálních-trzích"><span class="header-section-number">5.1.5</span> Společnosti na domácích a globálních trzích</h3>
+<ul>
+<li>Společnosti na českém trhu vedou účetnictví dle českých účetních standardů, pokud není zákonem stanoveno jinak.</li>
+<li>Firmy působící v USA dodržují americké účetní a cenné papírové předpisy, konkrétně používají zásady GAAP (Generally Accepted Accounting Principles).</li>
+<li>V Evropě, Asii a některých částech Jižní Ameriky se naopak používají standardy IFRS (International Financial Reporting Standards).</li>
+</ul>
+<p>Ačkoli GAAP a IFRS sledují stejný cíl objektivního finančního výkaznictví, v praxi se liší, zejména v oblastech jako účtování zásob, konsolidace dceřiných společností a vykazování menšinových podílů. Při analýze společnosti je důležité zohlednit, zda firma používá české účetní standardy, GAAP nebo IFRS.</p>
+</section>
+<section id="role-financí-ve-firmě" class="level3" data-number="5.1.6">
+<h3 data-number="5.1.6" class="anchored" data-anchor-id="role-financí-ve-firmě"><span class="header-section-number">5.1.6</span> Role financí ve firmě</h3>
+<p>Finanční plánování zajišťuje přehled o minulých, současných i budoucích finančních potřebách organizace a pomáhá dosahovat obchodních cílů. Kvalitní finanční plánování zahrnuje výkazy zisků a ztrát, peněžních toků, rozvahy, prognózy a různé nástroje finanční analýzy, například poměrové ukazatele.</p>
+<p>Rozpočtování je klíčovou součástí finančního plánování, které se zaměřuje na objem, zdroje a využití peněžních prostředků. Finanční plánování pomáhá řídit rozpočtové změny, identifikovat odchylky od očekávaných výsledků a slouží jako základ pro tvorbu budoucích rozpočtů.</p>
+</section>
+</section>
+<section id="zdroje-finančních-informací" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="zdroje-finančních-informací"><span class="header-section-number">5.2</span> Zdroje finančních informací</h2>
+<p>Finanční informace o výkonnosti a stavu podniku jsou poskytovány třemi hlavními výkazy:</p>
+<ul>
+<li><strong>Výkaz zisku a ztráty</strong> (income statement)</li>
+<li><strong>Rozvaha</strong> (balance sheet)</li>
+<li><strong>Výkaz cash flow</strong> (cash flow statement)</li>
+</ul>
+<section id="výkaz-zisků-a-ztráty" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="výkaz-zisků-a-ztráty"><span class="header-section-number">5.2.1</span> Výkaz zisků a ztráty</h3>
+<p>Výkaz zisků a ztrát zachycuje výkonnost firmy za určité období a zobrazuje tržby a náklady spojené s jejich realizací. Tento dokument vykazuje všechny výnosy (tržby) a náklady za účetní období, bez ohledu na to, zda došlo k jejich skutečnému inkasu nebo zaplacení.</p>
+<ul>
+<li><strong>Výnosy</strong> představují peněžní částky, které podnik získal z veškerých svých činností za dané období.</li>
+<li><strong>Náklady</strong> jsou peněžní částky, které podnik účelně vynaložil na dosažení výnosů, i když jejich zaplacení nemuselo nastat ve stejném období.</li>
+</ul>
+<section id="vybrané-položky-výkazu-zisků-a-ztráty" class="level4">
+<h4 class="anchored" data-anchor-id="vybrané-položky-výkazu-zisků-a-ztráty">Vybrané položky výkazu zisků a ztráty</h4>
+<p>Některé důležité položky výkazu zisků a ztrát zahrnují:</p>
+<ul>
+<li><strong>Tržby za prodej výrobků a služeb</strong> – zahrnují tržby za výrobky a služby vyprodukované samotnou firmou.</li>
+<li><strong>Tržby za prodej zboží</strong> – příjmy z přeprodeje zboží, které firma nevyrobila.</li>
+<li><strong>Výkonová spotřeba</strong> – náklady na materiál, energie, opravy, cestovné a drobný nehmotný majetek.</li>
+<li><strong>Změna stavu zásob</strong> – rozdíl v hodnotě nedokončené výroby, polotovarů a výrobků, který může být kladný i záporný.</li>
+<li><strong>Odpisy</strong> – snížení účetní hodnoty dlouhodobých aktiv v důsledku jejich používání.</li>
+<li><strong>Opravné položky</strong> – dočasné snížení hodnoty aktiv, např. pohledávek či zásob, pokud existují pochybnosti o jejich plné hodnotě.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pokud odběratel dluží firmě 100 000 Kč po dobu dvou let a pravděpodobnost splacení je nízká, opravná položka sníží hodnotu této pohledávky, aby účetnictví odráželo věrnou realitu.</p>
+</div>
+</div>
+</section>
+<section id="výsledky-hospodaření" class="level4">
+<h4 class="anchored" data-anchor-id="výsledky-hospodaření">Výsledky hospodaření</h4>
+<p>Výsledky hospodaření firmy jsou členěny na několik kategorií:</p>
+<ul>
+<li><strong>Provozní výsledek hospodaření</strong>: rozdíl mezi provozními výnosy a náklady.</li>
+<li><strong>Finanční výsledek hospodaření</strong>: rozdíl mezi finančními výnosy a náklady.</li>
+<li><strong>Výsledek hospodaření před zdaněním</strong>: součet provozního a finančního výsledku.</li>
+<li><strong>Čistý zisk</strong>: výsledek hospodaření po odečtení daně.</li>
+</ul>
+</section>
+<section id="klíčové-ukazatele" class="level4">
+<h4 class="anchored" data-anchor-id="klíčové-ukazatele">Klíčové ukazatele</h4>
+<p>Pro hodnocení výkonnosti firmy jsou důležité následující ukazatele:</p>
+<ul>
+<li><strong>EBITDA</strong> (Earnings before Interest, Taxes, Depreciation, and Amortization): provozní výsledek hospodaření po přičtení odpisů hmotného a nehmotného majetku.</li>
+<li><strong>EBIT</strong> (Earnings before Interest and Taxes): měří efektivitu podnikání bez zohlednění financování a zdanění.</li>
+<li><strong>EBT</strong> (Earnings before Taxes): výsledek hospodaření před zdaněním.</li>
+<li><strong>EAT</strong> (Earnings after Taxes): čistý zisk po zdanění.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_5_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="rozvaha" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="rozvaha"><span class="header-section-number">5.2.2</span> Rozvaha</h3>
+<p>Rozvaha zachycuje stav dlouhodobého hmotného a nehmotného majetku (<strong>aktiva</strong>) a zdrojů jejich financování (<strong>pasiva</strong>) k určitému datu. Poskytuje základní přehled o majetku podniku a jeho financování v určitém okamžiku, a to ve statické formě, tedy k okamžiku účetní závěrky.</p>
+<section id="aktiva-majetek" class="level4">
+<h4 class="anchored" data-anchor-id="aktiva-majetek">Aktiva (majetek)</h4>
+<p>Aktiva představují veškerý majetek, který firma vlastní, a jsou rozdělena do dvou hlavních kategorií:</p>
+<ul>
+<li><strong>Dlouhodobý majetek</strong> zahrnuje dlouhodobá hmotná, nehmotná a finanční aktiva, která jsou ve firmě používána po delší dobu.</li>
+<li><strong>Oběžná aktiva</strong> představují krátkodobý majetek, jako jsou zásoby, pohledávky a hotovost, které se rychleji mění v rámci běžného provozu.</li>
+</ul>
+</section>
+<section id="pasiva-zdroje-financování" class="level4">
+<h4 class="anchored" data-anchor-id="pasiva-zdroje-financování">Pasiva (zdroje financování)</h4>
+<p>Pasiva zahrnují zdroje financování aktiv podniku a dělí se na:</p>
+<ul>
+<li><strong>Vlastní kapitál</strong>: kapitál vložený vlastníky společnosti, například základní kapitál, rezervy nebo nerozdělený zisk.</li>
+<li><strong>Cizí zdroje</strong>: zahrnují závazky vůči věřitelům, jako jsou úvěry, dluhopisy a neuhrazené závazky.</li>
+</ul>
+</section>
+<section id="rovnice-rozvahy" class="level4">
+<h4 class="anchored" data-anchor-id="rovnice-rozvahy">Rovnice rozvahy</h4>
+<p>Základní rovnice rozvahy, která musí být vždy v rovnováze, zní:</p>
+<p><span class="math display">\[
+\text{Majetek} = \text{Zdroje financování}
+\]</span></p>
+<p><span class="math display">\[
+\text{Aktiva} = \text{Vlastní kapitál} + \text{Cizí zdroje}
+\]</span></p>
+</section>
+<section id="rozvaha-ve-zkráceném-rozsahu" class="level4">
+<h4 class="anchored" data-anchor-id="rozvaha-ve-zkráceném-rozsahu">Rozvaha ve zkráceném rozsahu</h4>
+<p>Rozvaha může být prezentována ve zjednodušené formě, která shrnuje hlavní kategorie aktiv a pasiv, což poskytuje rychlý přehled o finanční situaci podniku bez přílišného detailu.</p>
+<p><img src="images/fig_5_3.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="majetková-struktura-podniku" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="majetková-struktura-podniku"><span class="header-section-number">5.2.3</span> Majetková struktura podniku</h3>
+<p>Majetková struktura podniku představuje přehled aktiv, tedy majetku, který přináší budoucí ekonomický užitek. Aktiva lze rozdělit na dlouhodobá a krátkodobá (oběžná) podle doby jejich využití.</p>
+<section id="dlouhodobý-majetek" class="level4">
+<h4 class="anchored" data-anchor-id="dlouhodobý-majetek">Dlouhodobý majetek</h4>
+<p>Dlouhodobý majetek zahrnuje:</p>
+<ul>
+<li><strong>Nehmotný majetek</strong>, jako je know-how, goodwill, software, výsledky výzkumu, licence a patenty.</li>
+<li><strong>Hmotný majetek</strong>, například pozemky, budovy, strojní zařízení, technické vybavení a inventář.</li>
+<li><strong>Finanční majetek</strong>, což jsou cenné papíry a účasti se splatností delší než jeden rok, nebo poskytnuté půjčky se splatností nad jeden rok.</li>
+</ul>
+</section>
+<section id="oběžná-krátkodobá-aktiva" class="level4">
+<h4 class="anchored" data-anchor-id="oběžná-krátkodobá-aktiva">Oběžná (krátkodobá) aktiva</h4>
+<p>Krátkodobá aktiva zahrnují:</p>
+<ul>
+<li><strong>Zásoby</strong>: materiál, zboží, polotovary a pomocné látky.</li>
+<li><strong>Krátkodobé pohledávky</strong>: pohledávky se splatností do jednoho roku.</li>
+<li><strong>Krátkodobý finanční majetek</strong>: finanční aktiva se splatností do jednoho roku.</li>
+<li><strong>Peněžní prostředky</strong>: hotovost a prostředky na běžných účtech.</li>
+</ul>
+</section>
+<section id="faktory-ovlivňující-majetkovou-strukturu-podniku" class="level4">
+<h4 class="anchored" data-anchor-id="faktory-ovlivňující-majetkovou-strukturu-podniku">Faktory ovlivňující majetkovou strukturu podniku</h4>
+<p>Majetková struktura podniku závisí na několika faktorech:</p>
+<ul>
+<li><strong>Obor podnikání</strong> – různé sektory, jako bankovnictví, obchod nebo výroba, vykazují odlišnou majetkovou strukturu.</li>
+<li><strong>Technická náročnost výroby</strong> – firmy s vyšší technickou náročností obvykle vlastní větší podíl hmotného a nehmotného dlouhodobého majetku, jako je know-how nebo patenty.</li>
+<li><strong>Rozvinutost peněžního a kapitálového trhu</strong> – přístup k finančním trhům ovlivňuje podíl finančních aktiv.</li>
+<li><strong>Ekonomická situace a strategie podniku</strong> – rozhodnutí o alokaci zdrojů a majetkové struktuře jsou formovány firemní strategií a aktuálními ekonomickými podmínkami.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>V průmyslu a službách je vysoký podíl dlouhodobého majetku, zatímco ve stavebnictví převládají pohledávky kvůli dlouhým dobám splatnosti.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_5_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="finanční-struktura-podniku" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="finanční-struktura-podniku"><span class="header-section-number">5.2.4</span> Finanční struktura podniku</h3>
+<p>Finanční struktura podniku představuje způsob, jakým je financován majetek podniku, a je zobrazena na straně pasiv v rozvaze. Skládá se z vlastního kapitálu a cizích zdrojů.</p>
+<section id="vlastní-kapitál" class="level4">
+<h4 class="anchored" data-anchor-id="vlastní-kapitál">Vlastní kapitál</h4>
+<p>Vlastní kapitál tvoří:</p>
+<ul>
+<li><strong>Základní kapitál</strong> – kapitál vložený do podniku akcionáři nebo společníky, včetně peněžních a nepeněžitých vkladů.</li>
+<li><strong>Kapitálové fondy</strong> – vytvářeny z darů, dotací, neodepisovaného majetku a emisního ážia.</li>
+<li><strong>Fondy ze zisku</strong> – zahrnují rezervní fondy, statutární fondy a další fondy tvořené ze zisku.</li>
+<li><strong>Výsledek hospodaření</strong> – vyjadřuje zisk nebo ztrátu podniku za určité období.</li>
+<li><strong>Nerozdělený zisk</strong> – příjmy společnosti získané od jejího vzniku, snížené o dividendy vyplacené akcionářům.</li>
+</ul>
+</section>
+<section id="cizí-zdroje" class="level4">
+<h4 class="anchored" data-anchor-id="cizí-zdroje">Cizí zdroje</h4>
+<p>Cizí zdroje zahrnují:</p>
+<ul>
+<li><strong>Rezervy</strong> – vytvářené pro specifické účely, jako jsou rezervy na opravy majetku nebo nedobytné pohledávky.</li>
+<li><strong>Dlouhodobé závazky</strong> – dluhopisy, závazky se splatností delší než jeden rok a bankovní úvěry.</li>
+<li><strong>Krátkodobé závazky</strong> – obchodní úvěry, závazky vůči státu, zaměstnancům či společníkům, a bankovní úvěry se splatností do jednoho roku.</li>
+</ul>
+</section>
+<section id="optimalizace-finanční-struktury" class="level4">
+<h4 class="anchored" data-anchor-id="optimalizace-finanční-struktury">Optimalizace finanční struktury</h4>
+<ul>
+<li>Optimalizace finanční struktury zahrnuje vyváženou kombinaci vlastního a cizího kapitálu, která minimalizuje náklady na kapitál a zároveň kontroluje rizika.</li>
+<li><strong>Optimální finanční struktura</strong> je taková, při níž jsou průměrné náklady na kapitál minimální a tržní hodnota firmy maximální.</li>
+<li>Je důležité dosáhnout správné rovnováhy mezi likviditou, rizikem a náklady na kapitál.</li>
+</ul>
+</section>
+</section>
+<section id="bilanční-pravidla" class="level3" data-number="5.2.5">
+<h3 data-number="5.2.5" class="anchored" data-anchor-id="bilanční-pravidla"><span class="header-section-number">5.2.5</span> Bilanční pravidla</h3>
+<ul>
+<li><strong>Zlaté pravidlo financování</strong> – krátkodobé zdroje by měly financovat oběžná aktiva, zatímco dlouhodobé zdroje by měly pokrývat dlouhodobý majetek.</li>
+<li><strong>Zlaté pravidlo vyrovnání rizika</strong> – vlastní kapitál by měl převyšovat nebo se rovnat cizím zdrojům, aby se omezila rizika a udržely nízké náklady na kapitál.</li>
+<li><strong>Zlaté pari pravidlo</strong> – dlouhodobý majetek by měl být financován primárně vlastním kapitálem.</li>
+<li><strong>Zlaté poměrové pravidlo</strong> – růst investic by neměl překračovat růst tržeb, aby nedošlo ke snížení rentability a likvidity podniku.</li>
+</ul>
+</section>
+</section>
+<section id="strategie-financování" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="strategie-financování"><span class="header-section-number">5.3</span> Strategie financování</h2>
+<p>Finanční strategie firmy vyjadřuje, jakým způsobem jsou financovány aktiva podniku, zejména rozdělení mezi krátkodobé a dlouhodobé zdroje. Existují tři základní přístupy k financování.</p>
+<section id="neutrální-strategie" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="neutrální-strategie"><span class="header-section-number">5.3.1</span> Neutrální strategie</h3>
+<p>Neutrální strategie spočívá v tom, že dlouhodobý majetek a trvale přítomná oběžná aktiva jsou financována dlouhodobým kapitálem (vlastním i cizím), zatímco proměnlivá část oběžných aktiv je kryta krátkodobým kapitálem.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_5_5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+</section>
+<section id="konzervativní-strategie" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="konzervativní-strategie"><span class="header-section-number">5.3.2</span> Konzervativní strategie</h3>
+<p>Konzervativní strategie využívá vyšší podíl dlouhodobých finančních zdrojů, kterými se financuje i část oběžných aktiv. Tento přístup snižuje riziko platební neschopnosti, protože podnik má k dispozici stabilní dlouhodobé zdroje. Nicméně s tímto modelem přichází vyšší náklady, jelikož dlouhodobý kapitál je obvykle dražší než krátkodobý.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_5_6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+</section>
+<section id="agresivní-strategie" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="agresivní-strategie"><span class="header-section-number">5.3.3</span> Agresivní strategie</h3>
+<p>Agresivní strategie naopak spočívá v tom, že podnik financuje i část trvale přítomných oběžných aktiv a někdy i dlouhodobý majetek pomocí krátkodobých zdrojů. Tento přístup snižuje náklady na financování, ale zvyšuje riziko platební neschopnosti, protože krátkodobé závazky mohou být splatné dříve, než podnik získá dostatek prostředků na jejich pokrytí.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_5_7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+</section>
+<section id="doporučení-a-shrnutí" class="level3" data-number="5.3.4">
+<h3 data-number="5.3.4" class="anchored" data-anchor-id="doporučení-a-shrnutí"><span class="header-section-number">5.3.4</span> Doporučení a shrnutí</h3>
+<p>Při volbě strategie financování by se měly zohlednit následující zásady:</p>
+<ul>
+<li>Udržovat optimální poměr mezi vlastním a cizím kapitálem, při němž jsou celkové náklady na kapitál minimální a tržní hodnota firmy maximální.</li>
+<li><strong>Krátkodobá aktiva</strong> by měla být financována krátkodobým kapitálem.</li>
+<li><strong>Dlouhodobá aktiva</strong> je vhodné financovat dlouhodobým kapitálem, a to jak vlastním, tak cizím.</li>
+<li>Dlouhodobá aktiva, která jsou klíčová pro hlavní činnost podniku, je lepší financovat převážně vlastním kapitálem. Ostatní dlouhodobá aktiva lze financovat cizími zdroji, protože je v případě potřeby možné je odprodat.</li>
+<li>Vysoký podíl dlouhodobého kapitálu snižuje efektivnost, protože dlouhodobé zdroje jsou dražší.</li>
+<li>Nízký podíl dlouhodobého kapitálu (a tedy vyšší podíl krátkodobých zdrojů) je riskantní a může vést k finančním problémům.</li>
+<li>Oběžná aktiva by měla výrazně převyšovat krátkodobý cizí kapitál, aby byl podnik schopen plynule fungovat i v případě finančních problémů.</li>
+</ul>
+</section>
+</section>
+<section id="čistý-pracovní-kapitál-net-working-capital" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="čistý-pracovní-kapitál-net-working-capital"><span class="header-section-number">5.4</span> Čistý pracovní kapitál (Net Working Capital)</h2>
+<p><strong>Čistý pracovní kapitál (ČPK)</strong> představuje rozdíl mezi oběžnými aktivy a krátkodobými <em>cizími zdroji, a hraje klíčovou roli v udržování platební schopnosti podniku. Výpočet </em>ČPK vychází z rozlišení mezi oběžným a dlouhodobým majetkem a také mezi dlouhodobě a *krátkodobě vázaným kapitálem.</p>
+<ul>
+<li><strong>ČPK = Oběžná aktiva – Krátkodobé cizí zdroje</strong></li>
+<li><strong>ČPK = Vlastní kapitál + Dlouhodobé cizí zdroje – Dlouhodobý majetek</strong></li>
+</ul>
+<p>ČPK je pozitivní, pokud oběžná aktiva převyšují krátkodobé závazky, což signalizuje, že podnik má dostatek prostředků pro pokrytí svých krátkodobých závazků. Naopak záporný ČPK může znamenat potenciální problémy s likviditou.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_5_8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+<section id="solventnost" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="solventnost"><span class="header-section-number">5.4.1</span> Solventnost</h3>
+<ul>
+<li><strong>Solventnost</strong> označuje schopnost podniku splácet své závazky v řádných lhůtách.</li>
+<li>Solventní podnik má dostatek finančních zdrojů k úhradě svých závazků, zatímco nesolventní podnik (se záporným vlastním kapitálem) dluží více, než je schopen splatit.</li>
+</ul>
+</section>
+</section>
+<section id="výkaz-cash-flow-přehled-o-peněžních-tocích" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="výkaz-cash-flow-přehled-o-peněžních-tocích"><span class="header-section-number">5.5</span> Výkaz cash flow – přehled o peněžních tocích</h2>
+<p>Výkaz cash flow je zásadní finanční dokument, který poskytuje přehled o zdrojích a použití peněžních prostředků podniku během účetního období. Zatímco rozvaha a výkaz zisků a ztrát zaznamenávají transakce v okamžiku jejich uskutečnění, výkaz cash flow se zaměřuje výhradně na skutečné pohyby peněžních prostředků.</p>
+<p>Na rozdíl od výkazu zisků a ztrát, který neposkytuje kompletní obraz o pohybu peněz ve firmě, výkaz cash flow odhaluje, jak peníze skutečně proudí. Tento výkaz je tedy nezbytný pro pochopení celkové likvidity a finanční stability podniku.</p>
+<section id="struktura-výkazu-cash-flow" class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="struktura-výkazu-cash-flow"><span class="header-section-number">5.5.1</span> Struktura výkazu cash flow</h3>
+<p>Peněžní toky jsou rozděleny do tří hlavních kategorií:</p>
+<ul>
+<li><strong>Provozní činnost</strong>: zahrnuje příjmy a výdaje spojené s každodenním obchodním provozem.</li>
+<li><strong>Investiční činnost</strong>: týká se nákupu a prodeje dlouhodobého majetku a investic.</li>
+<li><strong>Finanční činnost</strong>: zahrnuje změny ve vlastním kapitálu a dlouhodobých závazcích, jako jsou úvěry a emise akcií.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_5_9.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<p>Existují dva hlavní způsoby, jak vypočítat cash flow:</p>
+<ul>
+<li><strong>Přímá metoda</strong>: zobrazuje příjmy a výdaje z provozní činnosti přímo, přičemž sleduje skutečné platby.</li>
+<li><strong>Nepřímá metoda</strong>: vychází z výsledku hospodaření a upravuje jej o nepeněžní operace, jako jsou odpisy, a změny pracovního kapitálu. Tato metoda je běžněji používaná.</li>
+</ul>
+<section id="cash-flow-z-provozní-činnosti" class="level4">
+<h4 class="anchored" data-anchor-id="cash-flow-z-provozní-činnosti">Cash flow z provozní činnosti</h4>
+<p>Tato část ukazuje rozdíl mezi provozními příjmy a výdaji za určité období, což vypovídá o schopnosti firmy generovat peněžní prostředky ze svých hlavních obchodních aktivit.</p>
+</section>
+<section id="cash-flow-z-investiční-činnosti" class="level4">
+<h4 class="anchored" data-anchor-id="cash-flow-z-investiční-činnosti">Cash flow z investiční činnosti</h4>
+<p>Zahrnuje příjmy a výdaje spojené s nákupem a prodejem dlouhodobého majetku, jako jsou nemovitosti, stroje nebo investice do jiných firem.</p>
+</section>
+<section id="cash-flow-z-finanční-činnosti" class="level4">
+<h4 class="anchored" data-anchor-id="cash-flow-z-finanční-činnosti">Cash flow z finanční činnosti</h4>
+<p>Peněžní toky z finanční činnosti se vztahují k financování podniku, jako jsou změny ve vlastním kapitálu nebo dlouhodobých závazcích. Tato část výkazu ukazuje, jak podnik získává nebo splácí finanční prostředky.</p>
+</section>
+<section id="volné-cash-flow" class="level4">
+<h4 class="anchored" data-anchor-id="volné-cash-flow">Volné cash flow</h4>
+<p><strong>Volné cash flow</strong> představuje rozdíl mezi provozním cash flow a kapitálovými výdaji, <em>které jsou upraveny o změny v dlouhodobém majetku. Je to ukazatel toho, kolik peněz má </em>firma k dispozici po financování svých základních provozních potřeb.</p>
+<ul>
+<li>Pokud je volné cash flow záporné, firma musí získat dodatečné finanční prostředky prostřednictvím zvýšení vlastního kapitálu nebo cizích zdrojů.</li>
+</ul>
+</section>
+</section>
+<section id="shrnutí" class="level3" data-number="5.5.2">
+<h3 data-number="5.5.2" class="anchored" data-anchor-id="shrnutí"><span class="header-section-number">5.5.2</span> Shrnutí</h3>
+<p>Výkaz cash flow sleduje změny stavu peněžních prostředků a poskytuje důvody, proč k těmto změnám dochází. Pomáhá posoudit kvalitu dosažených zisků a zjistit, zda jsou peněžní prostředky generovány převážně z provozních činností nebo z neprovozních aktivit. Výkaz cash flow je sestavován buď přímou, nebo častěji nepřímou metodou, a rozděluje peněžní toky do tří hlavních kategorií: provozní, investiční a finanční činnosti.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -788,18 +754,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -831,11 +786,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -845,8 +839,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -858,7 +861,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -902,6 +1028,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -927,6 +1054,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -988,17 +1141,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week_04.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span>
+      <a href="./week_04.html" class="pagination-link" aria-label="Mezinárodní finance">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mezinárodní finance</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week_06.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week_06.html" class="pagination-link" aria-label="Finanční management">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Finanční management</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

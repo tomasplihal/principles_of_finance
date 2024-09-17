@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Základy financí - 1&nbsp; Úvod do financí a struktura firmy</title>
+<title>1&nbsp; Úvod do financí – Základy financí</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -71,13 +78,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_01.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí a struktura firmy</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_01.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -86,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -95,34 +102,34 @@ ul.task-list li input[type="checkbox"] {
       <a href="./">Základy financí</a> 
         <div class="sidebar-tools-main">
     <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
+              <i class="bi bi-file-pdf pe-1"></i>
             Download PDF
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
+              <i class="bi bi-journal pe-1"></i>
             Download ePub
             </a>
           </li>
       </ul>
     </div>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
+              <i class="bi bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
+              <i class="bi bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
@@ -147,37 +154,37 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_01.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí a struktura firmy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy: Peníze a úrokové sazby</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bankovní systém</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mezinárodní finance</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Podnikové finance a zdroje finančních informací</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Finanční management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -189,70 +196,54 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Finanční systém</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Podnikové finance I</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Podnikové finance II</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Úvod do finančních derivátů</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Jak firmy přemýšlejí o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Předtermín zkoušky</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Úvod do řízení rizik a finančních derivátů</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Obsah lekce</h2>
    
-  <ul>
-  <li><a href="#úvod-do-financí" id="toc-úvod-do-financí" class="nav-link active" data-scroll-target="#úvod-do-financí"><span class="header-section-number">1.1</span> Úvod do financí</a>
   <ul class="collapse">
-  <li><a href="#proč-studovat-finance" id="toc-proč-studovat-finance" class="nav-link" data-scroll-target="#proč-studovat-finance"><span class="header-section-number">1.1.1</span> Proč studovat finance</a></li>
-  <li><a href="#co-jsou-finance" id="toc-co-jsou-finance" class="nav-link" data-scroll-target="#co-jsou-finance"><span class="header-section-number">1.1.2</span> Co jsou finance?</a></li>
-  <li><a href="#role-financí-ve-firmě" id="toc-role-financí-ve-firmě" class="nav-link" data-scroll-target="#role-financí-ve-firmě"><span class="header-section-number">1.1.3</span> Role financí ve firmě</a></li>
-  <li><a href="#význam-dat-a-technologií" id="toc-význam-dat-a-technologií" class="nav-link" data-scroll-target="#význam-dat-a-technologií"><span class="header-section-number">1.1.4</span> Význam dat a technologií</a></li>
-  <li><a href="#mikroekonomické-a-makroekonomické-faktory" id="toc-mikroekonomické-a-makroekonomické-faktory" class="nav-link" data-scroll-target="#mikroekonomické-a-makroekonomické-faktory"><span class="header-section-number">1.1.5</span> Mikroekonomické a makroekonomické faktory</a></li>
-  <li><a href="#riziko-a-výnos-ve-financích" id="toc-riziko-a-výnos-ve-financích" class="nav-link" data-scroll-target="#riziko-a-výnos-ve-financích"><span class="header-section-number">1.1.6</span> Riziko a výnos ve financích</a></li>
-  <li><a href="#časová-hodnota-peněz" id="toc-časová-hodnota-peněz" class="nav-link" data-scroll-target="#časová-hodnota-peněz"><span class="header-section-number">1.1.7</span> Časová hodnota peněz</a></li>
-  <li><a href="#trhy-a-účastníci-trhu" id="toc-trhy-a-účastníci-trhu" class="nav-link" data-scroll-target="#trhy-a-účastníci-trhu"><span class="header-section-number">1.1.8</span> Trhy a účastníci trhu</a></li>
-  <li><a href="#finanční-nástroje" id="toc-finanční-nástroje" class="nav-link" data-scroll-target="#finanční-nástroje"><span class="header-section-number">1.1.9</span> Finanční nástroje</a></li>
-  </ul></li>
-  <li><a href="#struktura-a-řízení-firmy" id="toc-struktura-a-řízení-firmy" class="nav-link" data-scroll-target="#struktura-a-řízení-firmy"><span class="header-section-number">1.2</span> Struktura a řízení firmy</a>
-  <ul class="collapse">
-  <li><a href="#hlavní-cíl-finančního-managementu" id="toc-hlavní-cíl-finančního-managementu" class="nav-link" data-scroll-target="#hlavní-cíl-finančního-managementu"><span class="header-section-number">1.2.1</span> Hlavní cíl finančního managementu</a></li>
-  <li><a href="#typy-obchodních-společností" id="toc-typy-obchodních-společností" class="nav-link" data-scroll-target="#typy-obchodních-společností"><span class="header-section-number">1.2.2</span> Typy obchodních společností</a></li>
-  <li><a href="#vztah-mezi-akcionáři-shareholders-a-vedením-společnosti" id="toc-vztah-mezi-akcionáři-shareholders-a-vedením-společnosti" class="nav-link" data-scroll-target="#vztah-mezi-akcionáři-shareholders-a-vedením-společnosti"><span class="header-section-number">1.2.3</span> Vztah mezi akcionáři (shareholders) a vedením společnosti</a></li>
-  <li><a href="#problém-zastoupení" id="toc-problém-zastoupení" class="nav-link" data-scroll-target="#problém-zastoupení"><span class="header-section-number">1.2.4</span> Problém zastoupení</a></li>
-  <li><a href="#interakce-s-investory-zprostředkovateli-a-dalšími-účastníky-trhu" id="toc-interakce-s-investory-zprostředkovateli-a-dalšími-účastníky-trhu" class="nav-link" data-scroll-target="#interakce-s-investory-zprostředkovateli-a-dalšími-účastníky-trhu"><span class="header-section-number">1.2.5</span> Interakce s investory, zprostředkovateli a dalšími účastníky trhu</a></li>
-  <li><a href="#společnosti-na-domácích-a-globálních-trzích" id="toc-společnosti-na-domácích-a-globálních-trzích" class="nav-link" data-scroll-target="#společnosti-na-domácích-a-globálních-trzích"><span class="header-section-number">1.2.6</span> Společnosti na domácích a globálních trzích</a></li>
-  </ul></li>
+  <li><a href="#úvod-do-financí" id="toc-úvod-do-financí" class="nav-link active" data-scroll-target="#úvod-do-financí"><span class="header-section-number">1.1</span> Úvod do financí</a></li>
+  <li><a href="#finanční-systém" id="toc-finanční-systém" class="nav-link" data-scroll-target="#finanční-systém"><span class="header-section-number">1.2</span> Finanční systém</a></li>
+  <li><a href="#struktura-a-funkce-finančního-systému" id="toc-struktura-a-funkce-finančního-systému" class="nav-link" data-scroll-target="#struktura-a-funkce-finančního-systému"><span class="header-section-number">1.3</span> Struktura a funkce finančního systému</a></li>
+  <li><a href="#subjekty-působící-ve-finančním-systému" id="toc-subjekty-působící-ve-finančním-systému" class="nav-link" data-scroll-target="#subjekty-působící-ve-finančním-systému"><span class="header-section-number">1.4</span> Subjekty působící ve finančním systému</a></li>
+  <li><a href="#peníze-a-peněžní-systém" id="toc-peníze-a-peněžní-systém" class="nav-link" data-scroll-target="#peníze-a-peněžní-systém"><span class="header-section-number">1.5</span> Peníze a peněžní systém</a></li>
   </ul>
 </nav>
     </div>
@@ -261,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí a struktura firmy</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí</span></h1>
 </div>
 
 
@@ -274,7 +265,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -292,318 +285,286 @@ Studijní materiály
 <li>Chapter 1 - Introduction to Finance</li>
 <li>Chapter 2 - Corporate Structure and Governance</li>
 </ul></li>
+<li>MELICHER Ronald W. a Edgar NORTON. Introduction to finance: markets investments and financial management. Seventeenth edition. Hoboken: Wiley 2020 xxix 613. ISBN 9781119561170
+<ul>
+<li>Chapter 1 – The Financial Environment</li>
+<li>Chapter 2 – Money and the Monetary System</li>
+</ul></li>
 </ul>
 </div>
 </div>
 <p><strong>Výstupy z učení:</strong></p>
 <ol type="1">
 <li>Pochopit základní principy financí.</li>
-<li>Porozumět finančnímu rozhodování a strategickému plánování.</li>
 <li>Prozkoumat možnosti uplatnění v oblasti financí.</li>
-<li>Uvědomit si dopady mikroekonomických a makroekonomických faktorů.</li>
-<li>Porozumět používání finančních nástrojů a časové hodnoty peněz.</li>
-<li>Rozpoznat důsledky různých podnikových struktur na finanční řízení firmy.</li>
-<li>Porozumět vztahu mezi akcionáři a vedením společnosti.</li>
+<li>Porozumět struktuře finančního systému.</li>
+<li>Znát funkce finančního systému.</li>
+<li>Identifikovat subjekty působící ve finančním systému.</li>
+<li>Pochopit peněžní systém a nabídku peněz.</li>
 </ol>
 <section id="úvod-do-financí" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="úvod-do-financí"><span class="header-section-number">1.1</span> Úvod do financí</h2>
 <section id="proč-studovat-finance" class="level3" data-number="1.1.1">
 <h3 data-number="1.1.1" class="anchored" data-anchor-id="proč-studovat-finance"><span class="header-section-number">1.1.1</span> Proč studovat finance</h3>
-<ul>
-<li>Finance jsou v dnešním světě důležité pro ekonomické operace.</li>
-<li>Usnadňují například vlastnictví nemovitostí a bezhotovostní transakce.</li>
-<li>Silný a nezávislý finanční systém je pro ekonomiku založenou na kapitálu nezbytný.</li>
-<li>Studium financí otevírá řadu profesních příležitostí.</li>
-<li>Jedná se o kritický nástroj rozhodování vyžadující analytické myšlení.</li>
-<li>Znalost financí a finančních trhů rozšiřuje vaše investiční příležitosti.</li>
-</ul>
-<section id="kariéra-v-oblasti-financí" class="level4" data-number="1.1.1.1">
-<h4 data-number="1.1.1.1" class="anchored" data-anchor-id="kariéra-v-oblasti-financí"><span class="header-section-number">1.1.1.1</span> Kariéra v oblasti financí</h4>
-<ul>
-<li>Kariéra v oblasti financí nabízí spoustu příležitosti s prognózou růstu počtu pracovních míst.</li>
-<li>Dovednosti v oblasti financí jsou použitelné v celé řadě oblastí včetně managementu, analýzy a logistiky.</li>
-<li>Mezi tradiční finanční pozice patří finanční manažeři, pracovníci v oblasti investičních vztahů, rozpočtový analytik, úvěrový analytik, finanční analytik, osobní finanční analytik, finanční specialista, úvěrový pracovník, pojišťovací agent, účetní, auditor.</li>
-<li>Finanční analytici, nezbytní pro finanční prognózy a průzkum trhu, potřebují různorodé dovednosti zahrnující práci s tabulkovými procesory, finanční modelování, a porozumění obchodním procesům.</li>
-<li>Podnikoví analytici se více zaměřují na strategické myšlení, vývoj procesů a budování týmu, pomáhají při formulování strategie a řešení problémů pomocí přístupů založených na datech.</li>
-<li>Více informací o <a href="https://openstax.org/r/thebalancecareers">možné kariéře v oblasti financí</a> na webových stránkách Balance Careers.</li>
-</ul>
+<p>Finance hrají klíčovou roli v moderní ekonomice. Umožňují vlastnictví <strong>aktiv</strong>, jako jsou nemovitosti, a podporují <strong>bezhotovostní transakce</strong>, které jsou dnes běžnou součástí života. <strong>Silný a stabilní finanční systém</strong> je zásadní pro ekonomiku založenou na kapitálu. Studium financí navíc poskytuje hlubší pochopení <strong>analytického myšlení</strong> nezbytného pro správná rozhodnutí. <strong>Znalost finančních trhů</strong> pak rozšiřuje vaše možnosti investování a otevírá dveře k novým příležitostem.</p>
 </section>
+<section id="kariéra-ve-financích" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="kariéra-ve-financích"><span class="header-section-number">1.1.2</span> Kariéra ve financích</h3>
+<p>Kariéra v oblasti financí nabízí širokou škálu možností s vysokým potenciálem růstu. Mezi nejběžnější finanční pozice patří:</p>
+<ul>
+<li>Finanční manažer</li>
+<li>Pracovník v oblasti investičních vztahů</li>
+<li>Rozpočtový a úvěrový analytik</li>
+<li>Finanční analytik</li>
+<li>Osobní finanční poradce</li>
+<li>Úvěrový pracovník</li>
+<li>Účetní a auditor</li>
+</ul>
+<p>Finanční analytici hrají klíčovou roli při tvorbě <strong>finančních prognóz</strong> a <strong>průzkumu trhů</strong>, a proto vyžadují dovednosti v práci s tabulkovými procesory a finančním modelováním. <strong>Podnikoví analytici</strong> se soustředí na <strong>strategické myšlení</strong>, <strong>vývoj procesů</strong> a týmovou spolupráci. Pomáhají formulovat strategie a řešit problémy na základě datově podložených přístupů. Více o kariéře ve financích najdete na webu <a href="https://www.thebalancemoney.com/top-jobs-for-finance-majors-2064048">Balance Careers</a>.</p>
 </section>
-<section id="co-jsou-finance" class="level3" data-number="1.1.2">
-<h3 data-number="1.1.2" class="anchored" data-anchor-id="co-jsou-finance"><span class="header-section-number">1.1.2</span> Co jsou finance?</h3>
-<div class="callout callout-style-default callout-tip callout-titled">
+<section id="co-jsou-finance" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="co-jsou-finance"><span class="header-section-number">1.1.3</span> Co jsou finance?</h3>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Definice financí
+Definice
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Finance jsou vědou o řízení, pohybu a získávání peněz.</li>
-<li>Jde o pochopení způsobu získávání a využívání peněžních prostředků.</li>
-<li>Základním principem je porozumění vztahu mezi rizikem a výnosem.</li>
-<li>Finance jsou také nástrojem, který nám může pomoci lépe se rozhodovat.</li>
-</ul>
+<p><strong>Finance</strong> jsou věda o <strong>řízení, pohybu a získávání peněz</strong>.</p>
 </div>
 </div>
-<ul>
-<li>Finance se dělí na tři základní oblasti: podnikové finance, investice a finanční trhy a instituce.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_1_1.png" class="img-fluid figure-img" width="500"></p>
-</figure>
+<p>Slovo finance pochází z latinského výrazu „finare“, které původně označovalo platbu na základě soudního rozhodnutí, později jakoukoliv formu platby. V jádru financí leží vztah mezi <strong>rizikem a výnosem</strong>, který je základem pro rozhodování v oblasti investic. Znalosti z financí vám mohou pomoci lépe spravovat vaše finanční zdroje a činit informovaná rozhodnutí.</p>
+</section>
+</section>
+<section id="finanční-systém" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="finanční-systém"><span class="header-section-number">1.2</span> Finanční systém</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<ul>
-<li><strong>Podnikové finance</strong>:
-<ul>
-<li>Finance podniku se zaměřují na maximalizaci hodnoty podniku v rizikovém prostředí.</li>
-</ul></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_1_2.png" class="img-fluid figure-img" width="500"></p>
-</figure>
+<div class="callout-title-container flex-fill">
+Definice
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Finanční systém zahrnuje jak <strong>národní</strong>, tak <strong>mezinárodní</strong> finanční systémy, které zajišťují financování podniků a správu kapitálu.</p>
+</div>
+</div>
+<p>Tento systém lze rozdělit do tří hlavních oblastí:</p>
+<ol type="1">
+<li><strong>Finanční instituce a trhy</strong> – kde dochází k interakci mezi poskytovateli a uživateli finančních prostředků.</li>
+<li><strong>Investice</strong> – proces alokace kapitálu za účelem dosažení budoucího výnosu.</li>
+<li><strong>Finanční řízení</strong> – zahrnuje správu aktiv, závazků a kapitálu podniku.</li>
+</ol>
+<div style="text-align: center;">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<p><img src="week_01_files/figure-html/mermaid-figure-1.png" style="width:3in;height:3.23in" class="figure-img"></p>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<p>Finanční systém zahrnuje různé složky, jako jsou <strong>zákony a předpisy</strong>, které ovlivňují finanční transakce, a <strong>centrální banku</strong>, která kontroluje nabídku peněz v ekonomice. Dále lze finanční systém rozdělit na:</p>
 <ul>
-<li><strong>Investice</strong>:
+<li><strong>Podnikové finance</strong> – zabývají se tím, jak podniky získávají finanční kapitál a spravují své operace a aktiva během svého vývoje.</li>
+<li><strong>Osobní finance</strong> – zaměřují se na to, jak jednotlivci investují a spravují své prostředky, připravují se na mimořádné situace a chrání se před neočekávanými událostmi.</li>
+</ul>
+<section id="finanční-instituce" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="finanční-instituce"><span class="header-section-number">1.2.1</span> Finanční instituce</h3>
+<p>Finanční instituce, jako jsou <strong>komerční banky</strong>, <strong>pojišťovny</strong> nebo <strong>podílové fondy</strong>, shromažďují prostředky od střadatelů a půjčují je podnikům nebo jednotlivcům. Tyto instituce plní zásadní roli v <strong>efektivním fungování finančního systému</strong>, protože převádějí finanční prostředky od střadatelů k těm, kteří je potřebují investovat do <strong>fyzických aktiv</strong>, jako jsou zásoby, budovy a zařízení.</p>
+</section>
+<section id="finanční-trhy-a-investice" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="finanční-trhy-a-investice"><span class="header-section-number">1.2.2</span> Finanční trhy a investice</h3>
+<p>Finanční trhy propojují <strong>investory</strong> s těmi, kteří hledají kapitál pro financování svých projektů. Účast na finančních trzích zahrnuje <strong>investování prostředků</strong>, <strong>půjčování peněz</strong> nebo <strong>obchodování s akciemi</strong>. Tyto trhy mohou být jak fyzická místa (např. burzy), tak elektronická fóra, která usnadňují tok finančních prostředků mezi investory, podniky a vládami. <strong>Investice</strong> zahrnují nákup a prodej cenných papírů, analýzu jejich výkonnosti a řízení investičního rizika, např. pomocí <strong>diverzifikace portfolia</strong>.</p>
+</section>
+<section id="finanční-management" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="finanční-management"><span class="header-section-number">1.2.3</span> Finanční management</h3>
+<p>Finanční management se zaměřuje na to, jak podniky spravují svá <strong>aktiva</strong>, <strong>závazky</strong> a <strong>vlastní kapitál</strong>. Finanční manažeři rozhodují o klíčových otázkách, jako je zavedení nového produktu, expanze výroby nebo <strong>alokace přebytečných prostředků</strong>. Při těchto rozhodnutích spolupracují s finančními institucemi a sledují <strong>trendy na finančních trzích</strong>. Klíčovou součástí finančního managementu je <strong>finanční plánování</strong>, správa majetku a získávání kapitálu, což má za cíl zvýšit <strong>hodnotu podniku</strong>.</p>
+</section>
+</section>
+<section id="struktura-a-funkce-finančního-systému" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="struktura-a-funkce-finančního-systému"><span class="header-section-number">1.3</span> Struktura a funkce finančního systému</h2>
+<p>Finanční systém je komplexní soustava zahrnující <strong>finanční zprostředkovatele</strong>, <strong>trhy</strong>, <strong>nástroje</strong>, <strong>tvůrce politik</strong> a <strong>předpisy</strong>, které vzájemně interagují a podporují efektivní fungování ekonomiky.</p>
+<div style="text-align: center;">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<p><img src="week_01_files/figure-html/mermaid-figure-3.png" style="width:4.36in;height:9.31in" class="figure-img"></p>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<section id="funkce-finančního-systému" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="funkce-finančního-systému"><span class="header-section-number">1.3.1</span> Funkce finančního systému</h3>
+<ol type="1">
+<li><strong>Shromažďovací funkce</strong> – <strong>akumulace úspor</strong>
 <ul>
-<li>Investice jsou produkty a procesy používané k vytváření bohatství (dosažení výnosu za určitého rizika).</li>
-<li>Mezi investice patří např.: akcie, dluhopisy, futures, opce, podílové fondy, ETF, reálná aktiva atd.</li>
+<li>Finanční systém umožňuje dočasné <strong>shromažďování volných prostředků</strong> od subjektů s přebytkem.</li>
+<li>Tyto prostředky jsou shromažďovány ve formě <strong>vkladů</strong>, které mohou být dále použity na půjčky a investice v mnohem větších objemech, než by zvládl kterýkoli jednotlivý vkladatel.</li>
 </ul></li>
-<li><strong>Finanční trhy a instituce</strong>:
+<li><strong>Depozitní a alokační funkce</strong> – <strong>úvěrování a investování úspor</strong>
 <ul>
-<li>Finanční trhy a instituce zahrnují firmy a regulační orgány, které dohlížejí na finanční systém.</li>
-<li>Usnadňují investiční postupy a zajišťují bezpečnost investorů i celého odvětví.</li>
-<li>V USA např.:
+<li>Subjekty s přebytkem mohou ukládat nebo investovat své <strong>dočasně volné prostředky</strong>.</li>
+<li>Uložené finanční prostředky jsou následně půjčovány <strong>podnikům</strong>, <strong>spotřebitelům</strong> a <strong>institucím</strong>, což podporuje ekonomickou aktivitu.</li>
+</ul></li>
+<li><strong>Zprostředkovací funkce</strong> – <strong>přenos finančních prostředků</strong>
 <ul>
-<li>Securities and Exchange Commission (SEC)</li>
-<li>Financial Industry Regulatory Authority (FINRA)</li>
-<li>Securities Investor Protection Corporation (SIPC)</li>
+<li>Finanční systém zajišťuje <strong>zprostředkování</strong> finančních toků mezi přebytkovými a deficitními subjekty, čímž napomáhá rovnováze mezi těmito dvěma skupinami.</li>
 </ul></li>
-<li>V Evropě např.:
+<li><strong>Multiplikace depozit</strong> – <strong>multiplikace peněz</strong>
 <ul>
-<li>The European Securities and Markets Authority (ESMA)</li>
-<li>Centrální banky jednotlivých zemí obvykle slouží jako hlavní orgán dohledu nad finančním trhem v dané zemi.</li>
+<li>V rámci měnového systému dochází k <strong>multiplikaci peněžních prostředků</strong>, což umožňuje zvětšení objemu prostředků v oběhu a tím zajišťuje dostatek <strong>prostředků směny</strong> v ekonomice.</li>
 </ul></li>
-<li>Finanční odvětví prochází neustále významným vývojem díky novým technologiím, inovacím, konkurenci a změnám v regulacích.</li>
-</ul></li>
+</ol>
+</section>
+</section>
+<section id="subjekty-působící-ve-finančním-systému" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="subjekty-působící-ve-finančním-systému"><span class="header-section-number">1.4</span> Subjekty působící ve finančním systému</h2>
+<section id="subjekty-kolektivního-investování" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="subjekty-kolektivního-investování"><span class="header-section-number">1.4.1</span> Subjekty kolektivního investování</h3>
+<p>Subjekty kolektivního investování zahrnují <strong>investiční společnosti</strong> a <strong>fondy</strong>. Investiční fondy mohou být <strong>otevřené</strong> nebo <strong>uzavřené</strong>, což závisí na možnosti přijetí nových investorů a likvidity fondu. Mezi další důležité subjekty patří <strong>obchodníci s cennými papíry</strong> (zprostředkovatelé, makléři, brokeři, dealeři) a <strong>fondy kvalifikovaných investorů</strong>.</p>
+<p>Zákonná regulace je stanovena <strong>Zákonem 256/2004 Sb. o podnikání na kapitálovém trhu</strong>, který vymezuje <strong>hlavní investiční služby</strong>:</p>
+<ul>
+<li>Přijímání a předávání pokynů</li>
+<li>Provádění pokynů</li>
+<li>Obchodování s investičními nástroji na účet jiných osob nebo na vlastní účet</li>
+<li>Upisování a umísťování emisí investičních nástrojů</li>
+</ul>
+<p>Dále jsou k dispozici <strong>doplňkové investiční služby</strong>, mezi které patří:</p>
+<ul>
+<li>Správa a úschova investičních nástrojů</li>
+<li>Poradenská činnost</li>
+<li>Služby spojené s upisováním emisí</li>
 </ul>
 </section>
-<section id="role-financí-ve-firmě" class="level3" data-number="1.1.3">
-<h3 data-number="1.1.3" class="anchored" data-anchor-id="role-financí-ve-firmě"><span class="header-section-number">1.1.3</span> Role financí ve firmě</h3>
+<section id="pojišťovny" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="pojišťovny"><span class="header-section-number">1.4.2</span> Pojišťovny</h3>
+<p>Pojišťovny jsou specifické instituce oprávněné provádět pojišťovací nebo zajišťovací činnost. Jejich činnost je regulována <strong>Zákonem č. 277/2009 Sb. o pojišťovnictví</strong>. Pojišťovny poskytují <strong>životní</strong> i <strong>neživotní pojištění</strong>.</p>
+<p>Hlavní úkoly pojišťoven zahrnují:</p>
 <ul>
-<li>Finanční plánování je klíčové pro zajištění přehledu o minulých, současných a budoucích finančních potřebách organizace a pro dosažení obchodních cílů.</li>
-<li>Dobré finanční plánování zahrnuje minulé, současné a výhledové výkazy zisků a ztrát, výkazy peněžních toků, rozvahy, prognózy a nástroje finanční analýzy, jako je analýza poměrových ukazatelů.</li>
-<li>Rozpočtování (budgeting) je klíčovou součástí finančního plánování, které se zaměřuje na výši, zdroje a použití peněžních prostředků.</li>
-<li>Finanční plánování pomáhá řídit změny rozpočtu, orientovat se v odchylkách od očekávaných výsledků a slouží jako základ pro budoucí rozpočty.</li>
+<li>Preventivní úkol – prevence škod a rizik.</li>
+<li>Investiční úkol – investice získaných pojistných prostředků.</li>
+<li>Technický úkol – vytváření pojistně technických rezerv.</li>
 </ul>
+<p>Pojistně technické rezervy jsou vytvářeny pro pokrytí budoucích závazků z daného pojištění. Pojištění funguje na základě několika klíčových <strong>principů</strong>:</p>
+<ul>
+<li><strong>Princip solidárnosti</strong></li>
+<li><strong>Princip podmíněné návratnosti</strong></li>
+<li><strong>Princip neekvivalence</strong></li>
+</ul>
+<p>Ukazatele pojistného trhu zahrnují <strong>předepsané pojistné</strong>, <strong>pojistné plnění</strong>, <strong>škodovost</strong>, <strong>pojištěnost</strong> a <strong>koncentraci pojistného trhu</strong>.</p>
 </section>
-<section id="význam-dat-a-technologií" class="level3" data-number="1.1.4">
-<h3 data-number="1.1.4" class="anchored" data-anchor-id="význam-dat-a-technologií"><span class="header-section-number">1.1.4</span> Význam dat a technologií</h3>
+<section id="penzijní-společnosti" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="penzijní-společnosti"><span class="header-section-number">1.4.3</span> Penzijní společnosti</h3>
+<p>Penzijní společnosti shromažďují příspěvky účastníků, zaměstnavatelů a státní příspěvky, které investují do účastnických fondů a spravují je. Právní rámec pro jejich činnost je dán <strong>Zákonem 427/2011 Sb. o doplňkovém penzijním spoření</strong>. Penzijní systém se skládá ze dvou pilířů:</p>
+<ol type="1">
+<li>I. pilíř – Státní průběžně financovaný systém.</li>
+<li><ol start="3" type="I">
+<li>pilíř – Penzijní připojištění a doplňkové penzijní spoření.</li>
+</ol></li>
+</ol>
+<section id="doplňkové-penzijní-spoření" class="level4">
+<h4 class="anchored" data-anchor-id="doplňkové-penzijní-spoření">Doplňkové penzijní spoření</h4>
+<p>Doplňkové penzijní spoření nabízí možnost vyššího zhodnocení s určitou mírou rizika. Minimální příspěvek účastníka nebo zaměstnavatele činí <strong>100 Kč</strong>. Výše státního příspěvku závisí na měsíčním příspěvku:</p>
 <ul>
-<li>Finanční údaje jsou klíčové pro lepší obchodní a finanční rozhodování a alokaci zdrojů.</li>
-<li>Mezi základní typy finančních údajů patří výkaz zisků a ztrát, výkaz peněžních toků a rozvaha.</li>
-<li>Kromě interních údajů firmy lze využít i externí údaje, jako jsou průzkumy mezi zákazníky a dodavateli, průzkumy trhu, dohody s věřiteli a makroekonomické údaje.</li>
-<li>Využití dat sahá od měření dopadu obchodních rozhodnutí až po strategické plánování a motivaci zaměstnanců.</li>
+<li>500 až 1 699 Kč: Státní příspěvek činí 20 %.</li>
+<li>1 700 Kč a více: Státní příspěvek činí 19 %.</li>
 </ul>
+<p>Minimální doba spoření je <strong>10 let</strong> a příspěvky lze odečíst od daňového základu. Účastníci si mohou vybrat z různých investičních strategií.</p>
 </section>
-<section id="mikroekonomické-a-makroekonomické-faktory" class="level3" data-number="1.1.5">
-<h3 data-number="1.1.5" class="anchored" data-anchor-id="mikroekonomické-a-makroekonomické-faktory"><span class="header-section-number">1.1.5</span> Mikroekonomické a makroekonomické faktory</h3>
+<section id="výplata-dávek" class="level4">
+<h4 class="anchored" data-anchor-id="výplata-dávek">Výplata dávek</h4>
+<p>Prostředky účastníka jsou použity k výplatě následujících dávek:</p>
 <ul>
-<li>Finance spojují ekonomii a účetnictví.</li>
-<li>Využívají ekonomickou teorii, empirické důkazy a účetní údaje k přijímání obchodních rozhodnutí.</li>
-<li>Ekonomie studuje alokaci omezených zdrojů a dělí se na mikroekonomii a makroekonomii.</li>
-<li>Mikroekonomie se zaměřuje na rozhodování jednotlivých subjektů, analyzuje podněty, chování, spotřebu, nabídku a poptávku.
-<ul>
-<li>Pomáhá při finančních prognózách, plánování a sestavování rozpočtů.</li>
-</ul></li>
-<li>Makroekonomie zkoumá skupinová rozhodnutí a zkoumá prvky, jako je inflace, úrokové sazby, nezaměstnanost, hospodářský růst, akciový trh a fiskální politika vlády.
-<ul>
-<li>Zahrnuje širší proměnné, které by měly být zahrnuty do finančních prognóz.</li>
-</ul></li>
-<li>Aby mohli finanční manažeři efektivně směřovat ke strategickým cílům, potřebují jak mikro (zdola nahoru, taktický), tak makro (shora dolů, strategický) pohled.</li>
+<li>Starobní penze na určenou dobu</li>
+<li>Invalidní penze na určenou dobu</li>
+<li>Jednorázové vyrovnání</li>
+<li>Odbytné</li>
+<li>Úhrada jednorázového pojistného pro doživotní penzi nebo penzi na určitou dobu</li>
 </ul>
+<p>Podmínky pro nárok na starobní penzi nebo úhradu jednorázového pojistného zahrnují dosažení věku <strong>60 let</strong> a spoření po dobu <strong>minimálně 120 měsíců</strong>.</p>
 </section>
-<section id="riziko-a-výnos-ve-financích" class="level3" data-number="1.1.6">
-<h3 data-number="1.1.6" class="anchored" data-anchor-id="riziko-a-výnos-ve-financích"><span class="header-section-number">1.1.6</span> Riziko a výnos ve financích</h3>
+</section>
+<section id="banky" class="level3" data-number="1.4.4">
+<h3 data-number="1.4.4" class="anchored" data-anchor-id="banky"><span class="header-section-number">1.4.4</span> Banky</h3>
+<p>Více informací o bankách je uvedeno v přednášce <strong>„Bankovní systém“</strong>.</p>
+</section>
+</section>
+<section id="peníze-a-peněžní-systém" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="peníze-a-peněžní-systém"><span class="header-section-number">1.5</span> Peníze a peněžní systém</h2>
+<p><strong>Peníze</strong> jsou klíčovým prvkem fungování finančního systému. Slouží jako <strong>měřítko <em>bohatství<strong>, prostředek pro </strong>nákup zboží a služeb<strong>, a jsou všeobecně přijímány k </strong></em>úhradě dluhů</strong>. Tvorba a převod peněz jsou nezbytné pro proces <strong>tvorby kapitálu</strong>.</p>
 <ul>
-<li>Vyšší riziko vede k vyšším očekávaným výnosům, přičemž riziko je v podstatě nejistota.</li>
-<li>Finance se snaží riziko kvantifikovat, aby pomohly při našem rozhodování.</li>
-<li>Jednotlivci se obecně vyhýbají riziku (jsou <strong>rizikově averzní</strong>), což znamená, že za podstoupení většího rizika očekávají vyšší výnosy.</li>
-<li>Finanční riziko se skládá z několika složek včetně rizika defaultu, inflačního rizika, diverzifikovatelného (nesystematického) rizika, nediverzifikovatelného (systematického) rizika a politického rizika, atd.</li>
+<li>Příliš mnoho peněz v ekonomice vede k <strong>neudržitelnému hospodářskému růstu</strong> a inflaci.</li>
+<li>Nedostatek peněz může naopak vést k <strong>recesi</strong> a poklesu ekonomické aktivity.</li>
+<li>Vztahy mezi <strong>peněžní zásobou</strong>, <strong>ekonomickou aktivitou</strong> a <strong>růstem cen</strong> jsou komplexní a ovlivněny dalšími faktory.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_1_3.png" class="img-fluid figure-img" width="500"></p>
-</figure>
+<section id="historie-peněz" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="historie-peněz"><span class="header-section-number">1.5.1</span> Historie peněz</h3>
+<p>Peníze prošly dlouhým vývojem od <strong>naturální směny</strong> (barter) k moderním měnám. Nejprve fungovaly <strong>komoditní peníze</strong>, kdy byly využívány předměty s vlastní hodnotou, například <strong>zlato a stříbro</strong>. První mince se objevily kolem roku <strong>650 př. n.&nbsp;l.</strong> v Malé Asii.</p>
+<p>V 19. století byl zaveden <strong>zlatý standard</strong>, kde byla hodnota měny pevně vázána ke zlatu, což určovalo směnný kurz a stabilizovalo ekonomické vztahy mezi zeměmi.</p>
+</section>
+<section id="funkce-a-formy-peněz" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="funkce-a-formy-peněz"><span class="header-section-number">1.5.2</span> Funkce a formy peněz</h3>
+<p>Peníze jsou jakékoli aktivum všeobecně přijímané při placení za zboží a služby nebo úhradě dluhů. Peníze plní tři základní funkce:</p>
+<ol type="1">
+<li><strong>Prostředek směny</strong> – umožňují jednoduchou výměnu zboží a služeb.</li>
+<li><strong>Uchovatel hodnoty</strong> – uchovávají hodnotu v čase, čímž umožňují spoření a budoucí spotřebu.</li>
+<li><strong>Zúčtovací jednotka</strong> – poskytují jednotný systém pro oceňování zboží a služeb.</li>
+</ol>
+<p><strong>Formy peněz</strong> zahrnují:</p>
+<ul>
+<li><strong>Hotovost</strong> (bankovky a mince)</li>
+<li><strong>Bezhotovostní peníze</strong> (bankovní depozita)</li>
+</ul>
+<p>Obě formy společně tvoří <strong>peněžní zásobu</strong>.</p>
+</section>
+<section id="peněžní-systém" class="level3" data-number="1.5.3">
+<h3 data-number="1.5.3" class="anchored" data-anchor-id="peněžní-systém"><span class="header-section-number">1.5.3</span> Peněžní systém</h3>
+<p>Peněžní systém je soustava, která vytváří a převádí peníze, což je klíčové pro fungování ekonomiky. <strong>Centrální banka</strong> hraje důležitou roli při regulaci objemu peněžní zásoby. Pouze <strong>banky</strong> mohou vytvářet nové peníze, zatímco jiné finanční instituce působí jako zprostředkovatelé mezi střadateli a investory.</p>
+<div style="text-align: center;">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<p><img src="week_01_files/figure-html/mermaid-figure-2.png" style="width:3.99in;height:3.96in" class="figure-img"></p>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="časová-hodnota-peněz" class="level3" data-number="1.1.7">
-<h3 data-number="1.1.7" class="anchored" data-anchor-id="časová-hodnota-peněz"><span class="header-section-number">1.1.7</span> Časová hodnota peněz</h3>
+<section id="peněžní-zásoba" class="level3" data-number="1.5.4">
+<h3 data-number="1.5.4" class="anchored" data-anchor-id="peněžní-zásoba"><span class="header-section-number">1.5.4</span> Peněžní zásoba</h3>
+<p>Peněžní zásobu tvoří <strong>centrální banka</strong> a <strong>obchodní banky</strong>. Centrální banka vydává <strong>hotovost</strong> a vytváří <strong>bankovní rezervy</strong>, zatímco obchodní banky vytvářejí <strong>bezhotovostní peníze</strong> prostřednictvím svých operací.</p>
+<p><strong>Měření peněžní zásoby</strong> se provádí pomocí měnových agregátů, které se liší podle *likvidity zahrnutých aktiv. Česká národní banka sleduje následující agregáty:</p>
 <ul>
-<li>Volba mezi úsporami a výdaji je v podstatě volbou mezi současnou a budoucí spotřebou.</li>
-<li>Toto rozhodnutí zahrnuje zvažování krátkodobých, střednědobých a dlouhodobých cílů.</li>
-<li>Časová hodnota peněz zahrnuje volbu poměru výnosu a rizika.</li>
-<li>V podnikání jsou důležité tři typy hodnoty: účetní hodnota (historické náklady), tržní hodnota (cena, kterou platí spotřebitelé) a ekonomická hodnota (to, co jsou spotřebitelé ochotni zaplatit).</li>
+<li><strong>M1</strong>: Hotovostní oběživo + jednodenní vklady (tzv. úzké peníze).</li>
+<li><strong>M2</strong>: M1 + termínová depozita se splatností do 2 let a s výpovědní lhůtou do 3 měsíců (střední peníze).</li>
+<li><strong>M3</strong>: M2 + repo operace, akcie/podílové listy fondů peněžního trhu a dluhové cenné papíry do 2 let (široké peníze).</li>
 </ul>
 </section>
-<section id="trhy-a-účastníci-trhu" class="level3" data-number="1.1.8">
-<h3 data-number="1.1.8" class="anchored" data-anchor-id="trhy-a-účastníci-trhu"><span class="header-section-number">1.1.8</span> Trhy a účastníci trhu</h3>
+<section id="nabídka-peněz-a-ekonomická-aktivita" class="level3" data-number="1.5.5">
+<h3 data-number="1.5.5" class="anchored" data-anchor-id="nabídka-peněz-a-ekonomická-aktivita"><span class="header-section-number">1.5.5</span> Nabídka peněz a ekonomická aktivita</h3>
+<p><strong>Peněžní zásoba</strong> a <strong>ekonomická aktivita</strong> jsou úzce propojené. Změny v objemu peněz v *oběhu mají přímý dopad na <strong>cenovou hladinu</strong> a <strong>ekonomický růst</strong>.</p>
 <ul>
-<li><strong>Primární trh</strong> je trh s “novými” cennými papíry, jako jsou například počáteční emise acií (Initial Public Offering, IPO) a nabídka sezónních akcií (Seasoned Equity Offering, SEO), které poskytují přímé peněžní prostředky firmám.</li>
-<li><strong>Sekundární trh</strong> je trhem “již existujících” cenných papírů, na kterém se obchoduje mezi investory a poskytuje přehled o vnímání hodnoty firmy.</li>
-<li>Účastníci trhu, včetně dealerů, brokerů a finančních zprostředkovatelů, hrají roli při usnadňování finančních transakcí.</li>
-<li><strong>Dealeři</strong> vlastní cenné papíry, které nakupují nebo prodávají, a vydělávají na obchodování s nimi (na rozdílu v cenách).</li>
-<li><strong>Brokeři</strong> zprostředkovávají transakce mezi kupujícími a prodávajícími, přičemž obvykle vydělávají na provizi z prodeje.</li>
-<li><strong>Finanční zprostředkovatelé</strong>, jako jsou komerční banky nebo investiční společnosti, umožňují snazší obchodování mezi transakčními stranami.</li>
-<li>Finanční zprostředkovatelé zvyšují efektivitu, poskytují úspory z rozsahu, specializované znalosti a mají zásadní význam pro tržní ekonomiku.</li>
-</ul>
-</section>
-<section id="finanční-nástroje" class="level3" data-number="1.1.9">
-<h3 data-number="1.1.9" class="anchored" data-anchor-id="finanční-nástroje"><span class="header-section-number">1.1.9</span> Finanční nástroje</h3>
-<section id="peněžní-trhy" class="level4" data-number="1.1.9.1">
-<h4 data-number="1.1.9.1" class="anchored" data-anchor-id="peněžní-trhy"><span class="header-section-number">1.1.9.1</span> Peněžní trhy</h4>
-<ul>
-<li>Na peněžním trhu se obchoduje s krátkodobými (<strong>méně než jeden rok</strong>), nízkorizikovými a vysoce likvidními cennými papíry.</li>
-<li>Míra bankrotu je minimální a nástroje lze rychle prodat na sekundárním trhu.</li>
-<li>Finanční instituce, podniky a vlády využívají peněžní trh pro potřeby krátkodobých výpůjček a/nebo úvěrů.</li>
-<li>Transakce jsou obvykle velké, přesahující 100 000 USD.</li>
-<li>Státní pokladniční poukázky (treasury bills, T-bills) jsou krátkodobé dluhové nástroje emitované vládou USA, považují se za téměr bezrizikové.</li>
-<li>Úrokové sazby patří mezi významný nástroj měnové politiky.</li>
-</ul>
-</section>
-<section id="kapitálové-trhy" class="level4" data-number="1.1.9.2">
-<h4 data-number="1.1.9.2" class="anchored" data-anchor-id="kapitálové-trhy"><span class="header-section-number">1.1.9.2</span> Kapitálové trhy</h4>
-<ul>
-<li>Na kapitálovém trhu se obchoduje s dlouhodobějšími (<strong>delšími než jeden rok</strong>) finančními nástroji s různým rizikem defaultu a méně jistou likviditou.</li>
-<li>Nástroje se dělí na dluhové nástroje (dluhopisové trhy) a majetkové cenné papíry (akciové trhy).</li>
-<li>Státní i korporátní dluhopisy s delší splatností určené pro dlouhodobější financování.</li>
-<li>Akcie představují vlastnictví společnosti.</li>
-<li>Peněžní toky z akcií jsou vzhledem k jejich nepředvídatelnosti více nejisté a rizikové než peněžní toky z dluhopisů.</li>
-<li>S akciemi lze obchodovat na organizovaných burzách cenných papírů nebo na mimoburzovním trhu.</li>
-</ul>
-</section>
-</section>
-</section>
-<section id="struktura-a-řízení-firmy" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="struktura-a-řízení-firmy"><span class="header-section-number">1.2</span> Struktura a řízení firmy</h2>
-<ul>
-<li>Podnikatelské cíle zahrnují plnění osobních finančních cílů a u veřejně obchodovaných společností zvyšování hodnoty společnosti pro akcionáře.</li>
-<li>Akcionáři jsou jednotlivci, kteří usilují o návratnost investic pro své osobní dlouhodobé finanční cíle.</li>
-<li>Firmy se zaměřují na finanční i nefinanční cíle, včetně rozšiřování prodeje, spokojenosti zákazníků a vývoje produktů.</li>
-<li>Hodnota aktiv je určena současnou hodnotou budoucích peněžních toků.</li>
-<li>Maximalizace bohatství vlastníků/akcionářů by měla zohledňovat dlouhé období.</li>
-</ul>
-<section id="hlavní-cíl-finančního-managementu" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="hlavní-cíl-finančního-managementu"><span class="header-section-number">1.2.1</span> Hlavní cíl finančního managementu</h3>
-<ul>
-<li>Maximalizovat fundamentální hodnotu existujících akcií (maximalizovat hodnotu firmy v dlouhém období).</li>
-<li>Maximalizace hodnoty firmy vyžaduje, aby podnik byl efektivní, poskytoval kvalitní produkty a služby za co nejnižší náklady.</li>
-<li>Z dlouhodobého hlediska je pro hodnotu podniku prospěšné dobře se starat o své zaměstnance (kvalitní pracovní síla).</li>
-<li>Důležitá je také dobrá pověst.</li>
-<li>Při dodržování zákona a základní etiky je tento cíl vhodný pro celou společnost.</li>
-</ul>
-</section>
-<section id="typy-obchodních-společností" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="typy-obchodních-společností"><span class="header-section-number">1.2.2</span> Typy obchodních společností</h3>
-<ul>
-<li>Podrobnosti v zákoně č. 90/2012 Sb.,Zákon o obchodních společnostech a družstvech (zákon o obchodních korporacích)</li>
-<li>Organizace musí při volbě své struktury vyhodnotit všechna pro a proti, včetně možnosti získávat finanční prostředky, dopadů zdanění a likvidity.</li>
-<li>Učebnice jsou z pravidla psané z pohledu velkých akciových společností, které jsou veřejně obchodované.</li>
-<li>Většinu metod lze však aplikovat obecně i na malé firmy a jiná vlastnická uspořádání.</li>
-</ul>
-<section id="akciová-společnost" class="level4" data-number="1.2.2.1">
-<h4 data-number="1.2.2.1" class="anchored" data-anchor-id="akciová-společnost"><span class="header-section-number">1.2.2.1</span> Akciová společnost</h4>
-<ul>
-<li>Právnická osoba.</li>
-<li>Majetek je rozdělen na určitý počet akcií (podílů na majetku).</li>
-<li>Společnost za svoje závazky odpovídá celým svým majetkem.</li>
-<li>Akcionář za závazky společnosti neručí a ani není povinen uhradit případnou ztrátu.</li>
-<li>Umožňuje oddělení vlastníků od managementu a díky tomu může fungovat dlouhodobě i když se vlastníci nebo management mění.</li>
-</ul>
-</section>
-<section id="ostatní-typy-obchodních-společností" class="level4" data-number="1.2.2.2">
-<h4 data-number="1.2.2.2" class="anchored" data-anchor-id="ostatní-typy-obchodních-společností"><span class="header-section-number">1.2.2.2</span> Ostatní typy obchodních společností</h4>
-<ul>
-<li><strong>Veřejná obchodní společnost</strong> - společnost alespoň dvou osob, které se účastní na jejím podnikání nebo správě jejího majetku a ručí za její dluhy společně a nerozdílně celým svým majetkem.</li>
-<li><strong>Komanditní společnost</strong> - společnost, v níž alespoň jeden společník ručí za její dluhy omezeně (tzv. „komanditista“) a alespoň jeden společník neomezeně (tzv. „komplementář“).</li>
-<li><strong>Společnost s ručením omezeným</strong> - Společnost odpovídá za porušení svých závazků celým svým majetkem, společníci pak společně a nerozdílně ručí za závazky společnosti jen do výše, v jaké nesplnili vkladové povinnosti podle stavu zapsaného v obchodním rejstříku v době, kdy byli věřitelem vyzváni k plnění.</li>
-</ul>
-</section>
-</section>
-<section id="vztah-mezi-akcionáři-shareholders-a-vedením-společnosti" class="level3" data-number="1.2.3">
-<h3 data-number="1.2.3" class="anchored" data-anchor-id="vztah-mezi-akcionáři-shareholders-a-vedením-společnosti"><span class="header-section-number">1.2.3</span> Vztah mezi akcionáři (shareholders) a vedením společnosti</h3>
-<ul>
-<li><strong>Stakeholder</strong> (zainteresovaná strana) je každý, kdo má zájem na výsledcích organizace (např. zaměstnanci, zákazníci, akcionáři, dodavatelé, stát).</li>
-<li>Akcionáři (<strong>shareholder</strong>s) jsou jednotlivci, společnosti nebo organizace, které vlastní akcie.</li>
-<li>Akcionář je vlastníkem společnosti, zatímco stakeholder je někdo, kdo je závislý na výkonnosti společnosti, případně i nefinančně.</li>
-<li>Akcionáří dostávají dividendy, hlasují o záležitostech společnosti a mohou být voleni do představenstva.</li>
-<li>Existují dva typy akcionářů: kmenoví a prioritní:
-<ul>
-<li><strong>Kmenoví akcionáři</strong> vlastní kmenové akcie (common stock) společnosti a mají hlasovací práva.</li>
-<li><strong>Prioritní akcionáři</strong> vlastní prioritní akcie (preferred stock), dostávají pevné dividendy, ale nemají hlasovací práva.</li>
-</ul></li>
-<li>Akcionáří najímají manažery, aby řídili firmu.</li>
-<li>Na nejvyšší úrovni dohlíží na korporace představenstvo (board of directors, BOD), zatímco o každodenní provoz se starají manažeři střední úrovně.</li>
-<li>Vedení by se mělo dlouhodobě zaměřovat na plnění cílů společnosti; krátkodobé zaměření může bránit dlouhodobému zdraví společnosti.</li>
-</ul>
-</section>
-<section id="problém-zastoupení" class="level3" data-number="1.2.4">
-<h3 data-number="1.2.4" class="anchored" data-anchor-id="problém-zastoupení"><span class="header-section-number">1.2.4</span> Problém zastoupení</h3>
-<ul>
-<li>Jedná se o konflikt zájmů, který nastává v situaci, když se od člověka (nebo skupiny lidí) očekává, že bude jednat v nejlepším zájmu někoho jiného.</li>
-<li>Ve světě financí se jedná zpravidla o vztah managementu a akcionářů, ale třeba i akcionářů a ostatních zainteresovaných stran (např. zaměstnanců).</li>
-<li>Problémy nastávají, když manažer využívá své postavení k osobnímu prospěchu, místo aby jednal v nejlepším zájmu akcionářů.</li>
-<li>Od managementu se očekává, že se bude snažit maximalizovat bohatství akcionářů a nikoliv svoje vlastní bohatství.</li>
-<li>Problém dále umocňují asymetrické informace mezi stranami.</li>
-<li>Stále častěji se využívá k hodnocení společností rating v oblasti životního prostředí, sociální oblasti a správy a řízení (ESG), které poskytují organizace třetích stran.</li>
-<li>Vysoké hodnocení ESG může naznačovat proaktivní řízení a potenciální dlouhodobou hodnotu.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_1_5.png" class="img-fluid figure-img" width="500"></p>
-</figure>
-</div>
-<section id="náklady-problému-zastoupení" class="level4" data-number="1.2.4.1">
-<h4 data-number="1.2.4.1" class="anchored" data-anchor-id="náklady-problému-zastoupení"><span class="header-section-number">1.2.4.1</span> Náklady problému zastoupení</h4>
-<ul>
-<li>Pokud management maximalizuje vlastní bohatství na úkor akcionářů vznikají ve firmě neefektivnosti.</li>
-<li>Tento problém nelze úplně odstranit, ale dá se minimalizovat.</li>
-<li>Snaha o řešení tohoto problému může vyžadovat další vynaložené náklady.</li>
-</ul>
-</section>
-<section id="možná-řešení" class="level4" data-number="1.2.4.2">
-<h4 data-number="1.2.4.2" class="anchored" data-anchor-id="možná-řešení"><span class="header-section-number">1.2.4.2</span> Možná řešení</h4>
-<ul>
-<li>Snaha zabránit problému právní cestou (např. na základě smluv).</li>
-<li>Kontrola a dohled.</li>
-<li>Motivační nastavení odměňování (např. spojené s cenou akcie).</li>
-<li>Možnost odvolat management.</li>
-<li>Celkově nastavení corporate governance, atd.</li>
-</ul>
-</section>
-</section>
-<section id="interakce-s-investory-zprostředkovateli-a-dalšími-účastníky-trhu" class="level3" data-number="1.2.5">
-<h3 data-number="1.2.5" class="anchored" data-anchor-id="interakce-s-investory-zprostředkovateli-a-dalšími-účastníky-trhu"><span class="header-section-number">1.2.5</span> Interakce s investory, zprostředkovateli a dalšími účastníky trhu</h3>
-<ul>
-<li>Vztahy s investory (Investor Relations, IR) jsou dílčím útvarem podnikových vztahů s veřejností, jehož cílem je udržovat otevřené vztahy s akcionáři.</li>
-<li>IR, které mají přísné regulační povinnosti, vyžadují úzkou spolupráci s právními a účetními odděleními.</li>
-<li>K povinnostem patří organizování schůzek akcionářů, šíření finančních údajů a řízení otázek zveřejňování finančních informací.</li>
-<li>Pravidelné čtvrtletní zprávy o výsledcích hospodaření zajišťují transparentnost pro investiční komunitu.</li>
-<li>Každoroční setkání akcionářů a investiční konference jsou důležité pro efektivní vztahy s investory.</li>
-</ul>
-</section>
-<section id="společnosti-na-domácích-a-globálních-trzích" class="level3" data-number="1.2.6">
-<h3 data-number="1.2.6" class="anchored" data-anchor-id="společnosti-na-domácích-a-globálních-trzích"><span class="header-section-number">1.2.6</span> Společnosti na domácích a globálních trzích</h3>
-<ul>
-<li>Společnosti působící především v USA, dodržují americké zákony o účetnictví a cenných papírech a při finančním výkaznictví používají obecně uznávané účetní zásady (Generally Accepted Accounting Principles, GAAP).</li>
-<li>V Evropské unii a některých dalších zemích Asie nebo Jižní ameriky se finanční výkaznictví obvykle řídí Mezinárodními standardy účetního výkaznictví (International Financial Reporting Standards, IFRS).</li>
-<li>Přestože jsou GAAP a IFRS navrženy tak, aby poskytovaly objektivní finanční výkaznictví, významně se liší, což má dopad na oblasti, jako je účtování zásob, konsolidace dceřiných společností a vykazování menšinových podílů.</li>
-<li>Při analýze společnosti je potřeba brát v úvahu zda se používá GAAP nebo IFRS.</li>
+<li><strong>Monetaristé</strong> tvrdí, že množství peněz v oběhu přímo ovlivňuje úroveň <strong>HDP</strong>. Přebytek peněz vede k růstu reálné ekonomické aktivity a následně ke <strong>zvyšování cen</strong> (inflaci).</li>
+<li><strong>Keynesiánci</strong> věří, že změna peněžní zásoby ovlivňuje <strong>HDP</strong> nepřímo, zejména prostřednictvím změn <strong>úrokových sazeb</strong>. Tyto změny ovlivňují poptávku po zboží a službách, a tedy i celkovou ekonomickou aktivitu.</li>
 </ul>
 
 
@@ -646,18 +607,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -689,11 +639,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -703,8 +692,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -716,7 +714,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -760,6 +881,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -785,6 +907,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -846,17 +994,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
+      <a href="./index.html" class="pagination-link" aria-label="Preambule">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preambule</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week_02.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy: Peníze a úrokové sazby</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week_02.html" class="pagination-link" aria-label="Ekonomické základy">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

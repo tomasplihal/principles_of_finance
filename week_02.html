@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Základy financí - 2&nbsp; Ekonomické základy: Peníze a úrokové sazby</title>
+<title>2&nbsp; Ekonomické základy – Základy financí</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,14 +62,42 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -73,13 +107,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_02.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy: Peníze a úrokové sazby</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_02.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -88,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -97,34 +131,34 @@ ul.task-list li input[type="checkbox"] {
       <a href="./">Základy financí</a> 
         <div class="sidebar-tools-main">
     <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
+              <i class="bi bi-file-pdf pe-1"></i>
             Download PDF
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
+              <i class="bi bi-journal pe-1"></i>
             Download ePub
             </a>
           </li>
       </ul>
     </div>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
+              <i class="bi bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
+              <i class="bi bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
@@ -149,37 +183,37 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí a struktura firmy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_02.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy: Peníze a úrokové sazby</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bankovní systém</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mezinárodní finance</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Podnikové finance a zdroje finančních informací</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Finanční management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -191,64 +225,54 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Finanční systém</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Podnikové finance I</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Podnikové finance II</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Úvod do finančních derivátů</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Jak firmy přemýšlejí o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Předtermín zkoušky</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Úvod do řízení rizik a finančních derivátů</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Obsah lekce</h2>
    
-  <ul>
-  <li><a href="#mikroekonomie" id="toc-mikroekonomie" class="nav-link active" data-scroll-target="#mikroekonomie"><span class="header-section-number">2.1</span> Mikroekonomie</a>
   <ul class="collapse">
-  <li><a href="#poptávka" id="toc-poptávka" class="nav-link" data-scroll-target="#poptávka"><span class="header-section-number">2.1.1</span> Poptávka</a></li>
-  <li><a href="#nabídka" id="toc-nabídka" class="nav-link" data-scroll-target="#nabídka"><span class="header-section-number">2.1.2</span> Nabídka</a></li>
-  <li><a href="#rovnovážná-cena" id="toc-rovnovážná-cena" class="nav-link" data-scroll-target="#rovnovážná-cena"><span class="header-section-number">2.1.3</span> Rovnovážná cena</a></li>
-  </ul></li>
-  <li><a href="#makroekonomie" id="toc-makroekonomie" class="nav-link" data-scroll-target="#makroekonomie"><span class="header-section-number">2.2</span> Makroekonomie</a>
-  <ul class="collapse">
-  <li><a href="#inflace" id="toc-inflace" class="nav-link" data-scroll-target="#inflace"><span class="header-section-number">2.2.1</span> Inflace</a></li>
-  <li><a href="#nezaměstnanost" id="toc-nezaměstnanost" class="nav-link" data-scroll-target="#nezaměstnanost"><span class="header-section-number">2.2.2</span> Nezaměstnanost</a></li>
-  <li><a href="#hrubý-domácí-produkt" id="toc-hrubý-domácí-produkt" class="nav-link" data-scroll-target="#hrubý-domácí-produkt"><span class="header-section-number">2.2.3</span> Hrubý domácí produkt</a></li>
-  </ul></li>
-  <li><a href="#hospodářský-cyklus-a-ekonomická-aktivita" id="toc-hospodářský-cyklus-a-ekonomická-aktivita" class="nav-link" data-scroll-target="#hospodářský-cyklus-a-ekonomická-aktivita"><span class="header-section-number">2.3</span> Hospodářský cyklus a ekonomická aktivita</a></li>
-  <li><a href="#úrokové-sazby" id="toc-úrokové-sazby" class="nav-link" data-scroll-target="#úrokové-sazby"><span class="header-section-number">2.4</span> Úrokové sazby</a></li>
-  <li><a href="#směnné-kurzy" id="toc-směnné-kurzy" class="nav-link" data-scroll-target="#směnné-kurzy"><span class="header-section-number">2.5</span> Směnné kurzy</a></li>
+  <li><a href="#mikroekonomie-poptávka-nabídka-rovnováha" id="toc-mikroekonomie-poptávka-nabídka-rovnováha" class="nav-link active" data-scroll-target="#mikroekonomie-poptávka-nabídka-rovnováha"><span class="header-section-number">2.1</span> Mikroekonomie: Poptávka, nabídka, rovnováha</a></li>
+  <li><a href="#makroekonomie-hrubý-domácí-produkt" id="toc-makroekonomie-hrubý-domácí-produkt" class="nav-link" data-scroll-target="#makroekonomie-hrubý-domácí-produkt"><span class="header-section-number">2.2</span> Makroekonomie: Hrubý domácí produkt</a></li>
+  <li><a href="#makroekonomie-inflace" id="toc-makroekonomie-inflace" class="nav-link" data-scroll-target="#makroekonomie-inflace"><span class="header-section-number">2.3</span> Makroekonomie: Inflace</a></li>
+  <li><a href="#makroekonomie-nezaměstnanost" id="toc-makroekonomie-nezaměstnanost" class="nav-link" data-scroll-target="#makroekonomie-nezaměstnanost"><span class="header-section-number">2.4</span> Makroekonomie: Nezaměstnanost</a></li>
+  <li><a href="#ekonomické-a-finanční-indikátory" id="toc-ekonomické-a-finanční-indikátory" class="nav-link" data-scroll-target="#ekonomické-a-finanční-indikátory"><span class="header-section-number">2.5</span> Ekonomické a finanční indikátory</a></li>
   </ul>
 </nav>
     </div>
@@ -257,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy: Peníze a úrokové sazby</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></h1>
 </div>
 
 
@@ -270,7 +294,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -287,6 +313,7 @@ Studijní materiály
 <ul>
 <li>Chapter 3 - Economic Foundations: Money and Rates</li>
 </ul></li>
+<li>MANKIW, N. Gregory.&nbsp;Zásady ekonomie. Praha: Grada, 2000, 763 s. ISBN&nbsp;80-7169-891-1.</li>
 </ul>
 </div>
 </div>
@@ -295,24 +322,43 @@ Studijní materiály
 <li>Porozumět základním konceptům mikroekonomie, včetně teorií poptávky, nabídky a rovnovážné ceny.</li>
 <li>Chápat klíčové makroekonomické ukazatele, jako je inflace, nezaměstnanost nebo hrubý domácí produkt a jejich dopad na ekonomiku.</li>
 <li>Identifikovat a interpretovat fáze hospodářského cyklu.</li>
-<li>Zhodnotit dopad úrokových sazeb na ekonomiku a rozhodování jednotlivců.</li>
-<li>Chápat faktory určující směnné kurzy a jejich vliv na globální obchod a domácí ekonomiku.</li>
+<li>Chápat vztah vybraných faktorů na vývoj finančních indikátorů</li>
 </ol>
-<section id="mikroekonomie" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="mikroekonomie"><span class="header-section-number">2.1</span> Mikroekonomie</h2>
+<section id="mikroekonomie-poptávka-nabídka-rovnováha" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="mikroekonomie-poptávka-nabídka-rovnováha"><span class="header-section-number">2.1</span> Mikroekonomie: Poptávka, nabídka, rovnováha</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Mikroekonomie</strong> se zabývá rozhodováním jednotlivých ekonomických subjektů, jako jsou <strong>firmy a spotřebitelé</strong>.</p>
+</div>
+</div>
 <ul>
-<li>Mikroekonomie studuje rozhodnutí a akce jednotlivých aktérů v ekonomice jako jsou firmy a spotřebitelé.</li>
-<li>Pomáhá finančním manažerům pochopit trh, cenotvorbu a dostupnost zdrojů.</li>
+<li>Pomáhá finančním manažerům lépe pochopit <strong>trh</strong>, <strong>cenotvorbu</strong> a <strong>dostupnost zdrojů</strong>.</li>
 </ul>
 <section id="poptávka" class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="poptávka"><span class="header-section-number">2.1.1</span> Poptávka</h3>
-<ul>
-<li>Poptávka odkazuje na množství zboží nebo služby, které jsou spotřebitelé <strong>ochotni a schopni koupit</strong> za různé ceny, za předpokladu, že všechny ostatní faktory zůstanou konstantní.</li>
-<li>Poptávka po produktu může být ilustrována prostřednictvím poptávkové křivky, která je typicky klesající, což reprezentuje zákon poptávky.</li>
-<li>Zákon poptávky, tj. nepřímý vztah mezi cenou a prodaným množstvím, je dán klesajícím uspokojením z konzumace dalších jednotek a omezenou schopností spotřebitelů platit.</li>
-<li>Poptávková křivka předpokládá, že se mění pouze cena produktu, zatímco všechny ostatní faktory zůstávají konstantní.</li>
-</ul>
-<table class="table">
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Poptávka</strong> vyjadřuje množství zboží či služeb, které jsou spotřebitelé <strong>ochotni a schopni koupit</strong> za různé ceny, pokud ostatní faktory zůstanou konstantní.</p>
+</div>
+</div>
+<p>Zákon poptávky popisuje <strong>nepřímý vztah</strong> mezi cenou a poptávaným množstvím – při nižší ceně roste poptávané množství. Tento vztah je znázorněn na <strong>poptávkové křivce</strong>, která je obvykle klesající.</p>
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;">Cena ($)</th>
@@ -349,14 +395,11 @@ Studijní materiály
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/fig_2_1.png" class="img-fluid figure-img" width="500"></p>
+<figcaption>Poptávková křivka</figcaption>
 </figure>
 </div>
-<ul>
-<li>Nicméně změny v dalších ekonomických faktorech, jako je příjem a preference spotřebitelů, velikost populace a ceny ostatních statků mohou způsobit posun poptávkové křivky.</li>
-<li>Nárůst poptávky, způsobený faktory jako je nárůst ceny substitů (podobných statků), posouvá poptávkovou křivku doprava, zatímco pokles poptávky, třeba kvůli negativní publicitě, ji posouvá doleva.</li>
-<li>Níže je zobrazen nárůst poptávky.</li>
-</ul>
-<table class="table">
+<p>Změny v jiných faktorech, jako jsou <strong>příjmy</strong>, <strong>preference spotřebitelů</strong> nebo <strong>ceny substitutů</strong> (podobných statků), mohou způsobit <strong>posun poptávkové křivky</strong>. Například nárůst ceny substitutu posune poptávkovou křivku doprava, zatímco pokles poptávky, například vlivem negativní publicity, ji posune doleva.</p>
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;">Cena ($)</th>
@@ -393,19 +436,27 @@ Studijní materiály
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/fig_2_2.png" class="img-fluid figure-img" width="500"></p>
+<figcaption>Posun poptávky doprava</figcaption>
 </figure>
 </div>
 </section>
 <section id="nabídka" class="level3" data-number="2.1.2">
 <h3 data-number="2.1.2" class="anchored" data-anchor-id="nabídka"><span class="header-section-number">2.1.2</span> Nabídka</h3>
-<ul>
-<li>Nabídka odkazuje na množství zboží nebo služby, které jsou podniky <strong>ochotni a schopni prodat</strong> za různé ceny, za předpokladu, že ostatní faktory zůstanou konstantní.</li>
-<li>Vyšší ceny často motivují výrobce, aby nabídli více svých produktů k prodeji, což naznačuje pozitivní korelaci mezi cenou a nabízeným množstvím.</li>
-<li>Nabídková křivka vizuálně reprezentuje tento vztah za předpokladu, že všechny ostatní relevantní ekonomické faktory zůstávají nezměněny.</li>
-<li>Pokud se změní jiné faktory, jako jsou náklady na výrobu nebo mzdy, nabídková křivka se posune.</li>
-<li>Posun doprava na nabídkové křivce naznačuje nárůst nabídky (větší množství za stejnou cenu), zatímco posun doleva naznačuje pokles nabídky.</li>
-</ul>
-<table class="table">
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Nabídka</strong> vyjadřuje množství zboží či služeb, které jsou výrobci <strong>ochotni a schopni prodat</strong> za různé ceny, pokud ostatní faktory zůstanou konstantní.</p>
+</div>
+</div>
+<p>Zákon nabídky popisuje <strong>přímý vztah</strong> mezi cenou a nabízeným množstvím – vyšší cena motivuje výrobce k nabídnutí většího množství. Tento vztah je znázorněn na <strong>nabídkové křivce</strong>.</p>
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;">Cena ($)</th>
@@ -442,208 +493,691 @@ Studijní materiály
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/fig_2_3.png" class="img-fluid figure-img" width="500"></p>
+<figcaption>Nabídková křivka</figcaption>
 </figure>
 </div>
+<p>Posun nabídkové křivky nastává při změně faktorů, jako jsou <strong>náklady na výrobu</strong> nebo <strong>mzdy</strong>. <strong>Posun doprava</strong> znamená nárůst nabídky, zatímco <strong>posun doleva</strong> naznačuje její pokles.</p>
 </section>
 <section id="rovnovážná-cena" class="level3" data-number="2.1.3">
 <h3 data-number="2.1.3" class="anchored" data-anchor-id="rovnovážná-cena"><span class="header-section-number">2.1.3</span> Rovnovážná cena</h3>
-<ul>
-<li>Tržní rovnováha je určena interakcí poptávky (kupujících) a nabídky (prodávajících), reprezentovanou bodem průsečíku poptávkové a nabídkové křivky.</li>
-<li>V rovnováze je poptávané množství stejné jako nabízené a nevzníká tak žádný nedostatek ani přebytek.</li>
-<li>Na konkurenčním trhu vede cena vyšší než je rovnovážná cena k přebytku nabídky, což způsobuje snížení ceny a menší výrobu.</li>
-<li>Naopak cena nižší než rovnovážná vede k nedostatku, což tlačí ceny nahoru směrem k rovnováze.</li>
-<li>Tržní síly táhnou ceny k rovnováze a zůstávají tam, dokud se nezmění poptávka nebo nabídka.</li>
-</ul>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Tržní rovnováha</strong> je dosažena v bodě, kde se <strong>poptávka</strong> a <strong>nabídka</strong> protínají, což určuje <strong>rovnovážnou cenu</strong>.</p>
+</div>
+</div>
+<p>V rovnovážném bodě je poptávané množství stejné jako nabízené a na trhu není žádný <strong>přebytek</strong> ani <strong>nedostatek</strong>. Pokud cena překročí rovnovážnou hodnotu, vzniká přebytek, což tlačí cenu dolů. Naopak <strong>nedostatek</strong> zboží způsobuje růst ceny směrem k rovnováze.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/fig_2_4.png" class="img-fluid figure-img" width="500"></p>
+<figcaption>Rovnovážná cena</figcaption>
 </figure>
 </div>
+<p>Změny v nabídce nebo poptávce vedou k pohybům v rovnováze:</p>
 <ul>
-<li>Nárůst nabídky (posun nabídkové křivky doprava) vede k poklesu rovnovážné ceny.</li>
-<li>Nicméně, pohyb po poptávkové křivce kvůli změnám rovnovážné ceny je nárůst poptávaného množství, nikoli nárůst poptávky.</li>
+<li><strong>Nárůst nabídky</strong> (posun nabídkové křivky doprava) způsobí pokles rovnovážné ceny.</li>
+<li><strong>Pokles poptávky</strong> (posun poptávkové křivky doleva) také snižuje rovnovážnou cenu.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_2_5.png" class="img-fluid figure-img" width="500"></p>
-</figure>
-</div>
-<ul>
-<li>Pokles poptávky (posun poptávkové křivky doleva) také vede k poklesu rovnovážné ceny.</li>
-<li>Výrobci se pohybují po nabídkové křivce a vyrábí méně produktů, když cena klesá, což se nazývá pokles nabízeného množství.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_2_6.png" class="img-fluid figure-img" width="500"></p>
-</figure>
-</div>
+<p><img src="images/fig_2_5.png" class="img-fluid quarto-figure quarto-figure-center" width="500" alt="Posun v nabídce a poptávce"> <img src="images/fig_2_6.png" class="img-fluid quarto-figure quarto-figure-center" width="500" alt="Pokles poptávky"></p>
 </section>
 </section>
-<section id="makroekonomie" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="makroekonomie"><span class="header-section-number">2.2</span> Makroekonomie</h2>
+<section id="makroekonomie-hrubý-domácí-produkt" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="makroekonomie-hrubý-domácí-produkt"><span class="header-section-number">2.2</span> Makroekonomie: Hrubý domácí produkt</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Hrubý domácí produkt (HDP, GDP)</strong> představuje <strong>hodnotu finální produkce</strong> dosaženou na území daného státu výrobními faktory působícími na tomto území v určitém časovém období, <strong>bez ohledu na zemi původu těchto faktorů</strong>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Hrubý národní produkt (HNP)</strong> představuje <strong>hodnotu finální produkce</strong> dosažené výrobními faktory náležícími danému státu, bez ohledu na to, kde působily.</p>
+</div>
+</div>
+<p><strong>Výpočet HNP:</strong></p>
+<p><span class="math display">\[
+\text{HNP} = \text{HDP} + \text{produkt českých firem v zahraničí} − \text{produkt
+zahraničních firem v ČR}
+\]</span></p>
+<blockquote class="blockquote">
+<p><strong>Poznámka</strong>: V praxi se častěji využívá <strong>HDP</strong>, protože <strong>HNP</strong> je obtížné přesně zjistit.</p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Společnost</th>
+<th style="text-align: center;">HDP</th>
+<th style="text-align: center;">HNP</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adidas, výrobní závod na Taiwanu</td>
+<td style="text-align: center;">Taiwan</td>
+<td style="text-align: center;">Německo</td>
+</tr>
+<tr class="even">
+<td>ČSOB, a.s.</td>
+<td style="text-align: center;">ČR</td>
+<td style="text-align: center;">Belgie</td>
+</tr>
+<tr class="odd">
+<td>Hyundai Motor Manufacturing Czech, Nošovice</td>
+<td style="text-align: center;">ČR</td>
+<td style="text-align: center;">Jižní Korea</td>
+</tr>
+<tr class="even">
+<td>Land Rover, pobočka ve VB</td>
+<td style="text-align: center;">VB</td>
+<td style="text-align: center;">Indie</td>
+</tr>
+<tr class="odd">
+<td>Penam, a.s. (pekárna)</td>
+<td style="text-align: center;">ČR</td>
+<td style="text-align: center;">ČR</td>
+</tr>
+<tr class="even">
+<td>Pivovar Starobrno</td>
+<td style="text-align: center;">ČR</td>
+<td style="text-align: center;">Nizozemsko</td>
+</tr>
+<tr class="odd">
+<td>Škoda Auto, a.s. divize SR</td>
+<td style="text-align: center;">SR</td>
+<td style="text-align: center;">Německo</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <ul>
-<li>Makroekonomie se dívá na ekonomiku jako celek a zaměřuje se na otázky, jako je inflace, nezaměstnanost nebo hrubý domácí produkt (HDP).</li>
+<li><strong>Čistý produkt</strong> je hodnota hrubého produktu po odečtení <strong>opotřebení kapitálu</strong> (amortizace).</li>
 </ul>
-<section id="inflace" class="level3" data-number="2.2.1">
-<h3 data-number="2.2.1" class="anchored" data-anchor-id="inflace"><span class="header-section-number">2.2.1</span> Inflace</h3>
+<p><span class="math display">\[
+\text{Čistý produkt} = \text{Hrubý produkt} − \text{Opotřebení kapitálu}
+\]</span></p>
+<section id="nominální-hdp" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="nominální-hdp"><span class="header-section-number">2.2.1</span> Nominální HDP</h3>
 <ul>
-<li>Inflace označuje zvyšování cenových hladin v čase.</li>
-<li>Způsobuje pokles kupní síly měny, což znamená, že daná měna už nemůže koupit tolik věcí, jako dříve.</li>
-<li>Měření inflace má většinou provádí statistický úřad měsíčně, přičemž Index spotřebitelských cen (consumer price index, CPI) je nejčastěji citovaným ukazatelem.</li>
-<li>CPI je založen na nákladech na nákup pevného koše zboží a služeb, které by typická městská rodina mohla zakoupit.</li>
-<li>Index jádrové inflace (core inflation) je vypočítán vyloučením nestabilních ekonomických proměnných jako jsou energetické a potravinové ceny.</li>
-<li>Index cen výrobců (producer price index, PPI) měří ceny, které výrobci platí za dodávky a suroviny, což naznačuje možné budoucí nárůsty CPI.</li>
-<li>Alternativou pro výpočet inflace může být také deflátor HDP, který používá ceny z výchozího roku k vypočítání toho, jaký by byl HDP, pokud by ceny byly identické s těmi ve výchozím roce.</li>
+<li><strong>Nominální HDP</strong> měří produkci v <strong>běžných cenách</strong> daného období.</li>
+<li>Pokud chceme porovnat HDP v různých obdobích, je problém v tom, že <strong>ceny nejsou fixní</strong> a mohou se měnit.</li>
+<li><strong>Důsledek</strong>: Změny v nominálním HDP mohou být způsobeny:
+<ol type="1">
+<li>Změnou vyráběného množství.</li>
+<li>Změnou cen.</li>
+</ol></li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_2_7.png" class="img-fluid figure-img" width="500"></p>
-</figure>
+<blockquote class="blockquote">
+<p><strong>Poznámka</strong>: Při posuzování <strong>hospodářského růstu</strong> by neměly změny cen hrát roli, proto <strong>nominální HDP není vhodným ukazatelem</strong> pro jeho měření.</p>
+</blockquote>
+</section>
+<section id="reálný-hdp" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="reálný-hdp"><span class="header-section-number">2.2.2</span> Reálný HDP</h3>
+<ul>
+<li><strong>Reálný HDP</strong> měří produkci oceněnou <strong>stálými cenami</strong> jednoho vybraného období, což eliminuje vliv inflace.</li>
+<li>Změny v reálném HDP tak odrážejí pouze <strong>změnu vyráběného množství</strong>.</li>
+<li><strong>Hospodářský růst</strong> se měří růstem reálného HDP, nikoli nominálního.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>2007-2009 - Zimbabwe</strong>: Hyperinflace (měsíční inflace v červnu 2008 přes 11 milionů %) vedla k výraznému zvýšení nominálního HDP, ale hospodářské vazby se zhroutily.</li>
+<li><strong>2019-2021 - Venezuela</strong>: Hyperinflace (1 500 %) způsobila prudký nárůst cen, ale reálná ekonomická aktivita výrazně poklesla.</li>
+<li><strong>Turecko 2024</strong>: Inflace dosahuje 70 %, což má dopad na ceny a nominální HDP, ale o reálném hospodářském růstu nelze mluvit.</li>
+</ul>
+<p>Závěr: <strong>Nominální HDP není ukazatelem hospodářského růstu</strong>, protože odráží i změny cen, nikoliv pouze změny v množství produkce.</p>
+</div>
 </div>
 </section>
-<section id="nezaměstnanost" class="level3" data-number="2.2.2">
-<h3 data-number="2.2.2" class="anchored" data-anchor-id="nezaměstnanost"><span class="header-section-number">2.2.2</span> Nezaměstnanost</h3>
+<section id="srovnání-hdp-mezi-různými-zeměmi" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="srovnání-hdp-mezi-různými-zeměmi"><span class="header-section-number">2.2.3</span> Srovnání HDP mezi různými zeměmi</h3>
+<p>Při srovnávání <strong>výkonnosti ekonomik</strong> dvou zemí nemusí být absolutní hodnota <strong>reálného HDP</strong> vždy vhodná, zejména pokud se země výrazně liší svou velikostí. Větší země mají zpravidla vyšší HDP než malé země jednoduše proto, že v nich vzniká více produkce. Například USA mají mnohem vyšší HDP než Lucembursko, ale to neznamená, že je Lucembursko zaostalé.</p>
+<p>Tento efekt lze eliminovat pomocí <strong>HDP na hlavu (GDP per capita)</strong>, který lépe vyjadřuje hospodářskou úroveň na obyvatele.</p>
+<p><img src="images/fig_2_15.png" class="img-fluid"> <em>Zdroj: Kurzy.cz</em> <img src="images/fig_2_16.png" class="img-fluid"> <em>Zdroj: World Bank</em></p>
 <ul>
-<li>Nezaměstnanost se vztahuje na lidi, kteří nepracují, ale aktivně hledají práci a jsou schopni práci přijmout.</li>
-<li>Míra nezaměstnanosti je procento pracovní síly, která je nezaměstnaná, vypočítaná jako:</li>
+<li>Ekonomický růst (reálné HDP, meziroční změna v %):</li>
 </ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Rok</th>
+<th>EMU</th>
+<th>USA</th>
+<th>ČR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>2020</strong></td>
+<td>-6,1%</td>
+<td>-2,2%</td>
+<td>-5,5%</td>
+</tr>
+<tr class="even">
+<td><strong>2021</strong></td>
+<td>6,0%</td>
+<td>5,8%</td>
+<td>3,6%</td>
+</tr>
+<tr class="odd">
+<td><strong>2023</strong></td>
+<td>0,4%</td>
+<td>2,5%</td>
+<td>-0,4%</td>
+</tr>
+<tr class="even">
+<td><strong>2Q 2024</strong></td>
+<td>0,6%</td>
+<td>3,1%</td>
+<td>0,4%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="metody-měření-hdp" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="metody-měření-hdp"><span class="header-section-number">2.2.4</span> Metody měření HDP</h3>
+<p>Existují tři základní metody měření HDP, které by měly vždy vést ke stejné hodnotě. Každá z nich představuje jiný pohled na ekonomickou aktivitu.</p>
+<section id="výdajová-metoda" class="level4">
+<h4 class="anchored" data-anchor-id="výdajová-metoda">Výdajová metoda</h4>
+<p>Výdajová metoda (nejpoužívanější) sčítá všechny <strong>výdaje na finální produkci</strong>. Tato hodnota se často označuje jako <strong>agregátní poptávka (AD)</strong> a skládá se ze čtyř základních složek:</p>
+<p><span class="math display">\[
+GDP = C + G + I + NX  
+\]</span></p>
+<p>kde:</p>
+<ul>
+<li><span class="math inline">\(C \dots\)</span> spotřeba domácností</li>
+<li><span class="math inline">\(G \dots\)</span> vládní výdaje</li>
+<li><span class="math inline">\(I \dots\)</span> investice (firmy)</li>
+<li><span class="math inline">\(NX \dots\)</span> = čistý export (export - import)</li>
+</ul>
+<p>Každá z těchto složek přispívá ke změně HDP a je důležitým ukazatelem ekonomické aktivity.</p>
+<p><img src="images/fig_2_17.png" class="img-fluid"> <em>Zdroj: ČSÚ</em></p>
+</section>
+<section id="důchodová-metoda" class="level4">
+<h4 class="anchored" data-anchor-id="důchodová-metoda">Důchodová metoda</h4>
+<p>Důchodová metoda je opakem výdajové metody. <strong>Princip</strong> spočívá v tom, že každý výdaj je zároveň důchodem někoho jiného. Když sečteme všechny <strong>důchody</strong>, dostaneme stejnou hodnotu jako při výpočtu podle výdajové metody.</p>
+</section>
+<section id="výrobková-metoda-produkčnízbožová-metoda" class="level4">
+<h4 class="anchored" data-anchor-id="výrobková-metoda-produkčnízbožová-metoda">Výrobková metoda (produkční/zbožová metoda)</h4>
+<p>Výrobková metoda se zaměřuje na <strong>přidanou hodnotu</strong> na jednotlivých stupních výroby. HDP se zde počítá jako součet přidaných hodnot vytvořených v různých fázích produkce.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Modelový příklad výroby džemu:</strong></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stupeň výroby</th>
+<th>Meziprodukt</th>
+<th>Přidaná hodnota</th>
+<th>Hodnota produktu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Sběr malin</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>2. Výroba džemu</td>
+<td>3</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>3. Prodej džemu</td>
+<td>8</td>
+<td>2</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td><strong>Součet</strong></td>
+<td>11</td>
+<td><strong>10</strong></td>
+<td>21</td>
+</tr>
+</tbody>
+</table>
+<p>V tomto příkladu je <strong>HDP</strong> součtem přidaných hodnot v každé fázi výroby (10). V hodnotě 21 jsou maliny započítány třikrát, výroba džemu dvakrát – musíme tyto duplicity eliminovat. Zajímá nás až hodnota finální produkce (složená z ceny malin + ceny za výrobu džemu + marže za prodej = 10), nikoliv hodnota mezistupňů.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><strong>Poznámka</strong>: Výrobková metoda se v praxi využívá méně často kvůli složitosti sledování přidané hodnoty v případě dlouhých výrobních řetězců.</p>
+</blockquote>
+</section>
+</section>
+</section>
+<section id="makroekonomie-inflace" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="makroekonomie-inflace"><span class="header-section-number">2.3</span> Makroekonomie: Inflace</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Inflace</strong> představuje <strong>zvyšování cenové hladiny</strong> v čase, což vede k poklesu **kupní *síly měny**. Znamená to, že za danou měnu nelze koupit tolik věcí jako dříve.</p>
+</div>
+</div>
+<ul>
+<li><strong>Deflace</strong> je opakem inflace, kdy ceny klesají.</li>
+<li><strong>Desinflace</strong> označuje zpomalení tempa inflace.</li>
+</ul>
+<p><strong>Index jádrové inflace</strong> (core inflation) je ukazatel inflace, který vylučuje ceny *potravin a energie kvůli jejich vysoké nestabilitě.</p>
+<p>Míra inflace se počítá následovně:</p>
+<p><span class="math display">\[
+\pi_t = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\pi_t \dots\)</span> míra inflace v čase <span class="math inline">\(t\)</span> (v %)</li>
+<li><span class="math inline">\(P_t \dots\)</span> je hodnota cenového indexu v čase <span class="math inline">\(t\)</span></li>
+<li><span class="math inline">\(P_{t-1} \dots\)</span> je hodnota cenového indexu v předchozím období</li>
+</ul>
+<section id="měření-inflace" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="měření-inflace"><span class="header-section-number">2.3.1</span> Měření inflace</h3>
+<section id="index-spotřebitelských-cen-cpi" class="level4">
+<h4 class="anchored" data-anchor-id="index-spotřebitelských-cen-cpi">Index spotřebitelských cen (CPI)</h4>
+<p><strong>Index spotřebitelských cen (CPI)</strong> je nejčastěji používaným ukazatelem inflace. Je <em>založen na <strong>spotřebním koši</strong> – fixním souboru zboží a služeb, které obvykle nakupuje </em>průměrná městská domácnost.</p>
+<p>CPI v čase <span class="math inline">\(t\)</span> se vypočítá podle následujícího vzorce:</p>
+<p><span class="math display">\[
+\text{CPI}_t = \left( \frac{\sum \left( \frac{p_t}{p_0} \times p_0 q_0 \right)}{\sum \left( p_0 q_0 \right)} \right) \times 100
+\]</span></p>
+<ul>
+<li><span class="math inline">\(p_t \dots\)</span> cena zboží/služby v běžném období</li>
+<li><span class="math inline">\(p_0 \dots\)</span> cena zboží/služby v základním období</li>
+<li><span class="math inline">\(p_0 \times q_0 \dots\)</span> fixní váha zboží/služby ve spotřebním koši</li>
+</ul>
+<p>Takto se spočítá cenová hladina pro daný rok. <strong>Míra inflace</strong> se poté vypočítá podle předchozího vzorce pro inflaci.</p>
+<ul>
+<li>Spotřební koš – váhy položek (platné od ledna 2024):</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 68%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Kategorie</strong></th>
+<th><strong>Váha (v promilech)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Potraviny a nealkoholické nápoje</td>
+<td>177,43</td>
+</tr>
+<tr class="even">
+<td>2. Alkoholické nápoje, tabák</td>
+<td>84,62</td>
+</tr>
+<tr class="odd">
+<td>3. Odívání a obuv</td>
+<td>43,94</td>
+</tr>
+<tr class="even">
+<td>4. Bydlení, voda, energie, paliva</td>
+<td>258,39</td>
+</tr>
+<tr class="odd">
+<td>5. Bytové vybavení, opravy</td>
+<td>58,00</td>
+</tr>
+<tr class="even">
+<td>6. Zdraví</td>
+<td>27,88</td>
+</tr>
+<tr class="odd">
+<td>7. Doprava</td>
+<td>105,62</td>
+</tr>
+<tr class="even">
+<td>8. Pošty a telekomunikace</td>
+<td>29,36</td>
+</tr>
+<tr class="odd">
+<td>9. Rekreace a kultura</td>
+<td>78,24</td>
+</tr>
+<tr class="even">
+<td>10. Vzdělávání</td>
+<td>6,17</td>
+</tr>
+<tr class="odd">
+<td>11. Stravování a ubytování</td>
+<td>64,77</td>
+</tr>
+<tr class="even">
+<td>12. Ostatní zboží a služby</td>
+<td>65,53</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><strong>Poznámky:</strong> Váhy jsou uvedeny v promilech a aktualizují se každé dva roky. Spotřební koš v ČR obsahuje více než 1 000 položek. Podrobnou strukturu koše lze nalézt na stránkách <a href="https://www.czso.cz">Českého statistického úřadu (ČSÚ)</a>.</p>
+</blockquote>
+</section>
+<section id="deflátor-hdp" class="level4">
+<h4 class="anchored" data-anchor-id="deflátor-hdp">Deflátor HDP</h4>
+<p>Deflátor HDP je <strong>cenový index</strong>, který využívá <strong>HDP</strong> k výpočtu inflace. Vypočítá se pomocí následujícího vzorce:</p>
+<p><span class="math display">\[
+IPD = \frac{HDP_N}{HDP_R} \times 100
+\]</span></p>
+<ul>
+<li><span class="math inline">\(HDP_N \dots\)</span> HDP v běžných cenách</li>
+<li><span class="math inline">\(HDP_R \dots\)</span> HDP ve stálých cenách</li>
+</ul>
+<p>Deflátor HDP pomáhá odstranit vliv <strong>cenových změn</strong> a umožňuje lépe pochopit reálnou produkci v ekonomice.</p>
+</section>
+</section>
+<section id="srovnání-cpi-a-deflátoru-hdp" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="srovnání-cpi-a-deflátoru-hdp"><span class="header-section-number">2.3.2</span> Srovnání CPI a Deflátoru HDP</h3>
+<section id="deflátor-hdp-1" class="level4">
+<h4 class="anchored" data-anchor-id="deflátor-hdp-1">Deflátor HDP</h4>
+<ul>
+<li><strong>Výhoda</strong>: Zachycuje <strong>změny cen všech statků</strong> a služeb v ekonomice, což z něj činí komplexní ukazatel celkové cenové hladiny.</li>
+<li>Snadno se konstruuje, protože vychází z již dostupných dat o HDP.</li>
+<li>Pro běžného spotřebitele nemá příliš vysokou vypovídací hodnotu, protože zahrnuje i statky, které běžný spotřebitel nekupuje.</li>
+</ul>
+</section>
+<section id="cpi-index-spotřebitelských-cen" class="level4">
+<h4 class="anchored" data-anchor-id="cpi-index-spotřebitelských-cen">CPI (Index spotřebitelských cen)</h4>
+<ul>
+<li><strong>Výhoda</strong>: Odráží pouze změny cen <strong>zboží a služeb, které nakupuje typická domácnost</strong>, a má tak vyšší vypovídací hodnotu pro domácnosti.</li>
+<li>Jeho konstrukce je náročnější, protože vyžaduje pečlivý výběr <strong>spotřebního koše</strong>.</li>
+<li><strong>Fixní váhy</strong> položek ve spotřebním koši se mění pouze každých několik let, což může snižovat přesnost CPI, pokud se změnily preference spotřebitelů.</li>
+</ul>
+</section>
+</section>
+<section id="index-cen-výrobců" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="index-cen-výrobců"><span class="header-section-number">2.3.3</span> Index cen výrobců</h3>
+<p><strong>Index cen výrobců</strong> (PPI – Producer Price Index) měří ceny, které <strong>výrobci platí</strong> za suroviny a dodávky, a často předpovídá budoucí změny v CPI. Když se zvýší ceny vstupů pro výrobce, lze očekávat, že konečné ceny výrobků, které spotřebitelé nakupují, také vzrostou.</p>
+<ul>
+<li>PPI se konstruuje podobně jako CPI, ale zaměřuje se na <strong>jiný koš</strong> – zboží a služby, které nakupují výrobci.</li>
+<li>PPI je v předstihu oproti CPI, protože reaguje na změny v nákladech výrobců dříve, než se tyto změny projeví u spotřebitelů.</li>
+</ul>
+<p><strong>Složení PPI:</strong></p>
+<ul>
+<li>Index cen průmyslových výrobců – sleduje ceny zboží a služeb průmyslového sektoru.</li>
+<li>Index cen stavebních prací – měří náklady stavebních projektů.</li>
+<li>Index cen tržních služeb – monitoruje ceny služeb v tržním sektoru.</li>
+<li>Index cen zemědělských výrobců – zachycuje změny cen v zemědělském sektoru.</li>
+</ul>
+<p><img src="images/fig_2_18.png" class="img-fluid"> <em>Zdroj: EUROSTAT</em> <img src="images/fig_2_19.png" class="img-fluid"> <em>Zdroj: EUROSTAT</em></p>
+</section>
+<section id="formy-inflace" class="level3" data-number="2.3.4">
+<h3 data-number="2.3.4" class="anchored" data-anchor-id="formy-inflace"><span class="header-section-number">2.3.4</span> Formy inflace</h3>
+<ul>
+<li><strong>Otevřená inflace</strong> – klasický případ, kdy ceny zboží a služeb skutečně rostou.</li>
+<li><strong>Potlačená inflace</strong> – ceny by měly růst, ale kvůli regulacím nebo jiným zásahům zůstávají nízké.
+<ul>
+<li>Typická pro ekonomiky s cenovými regulacemi, kde dochází k <strong>makroekonomické nerovnováze</strong> – poptávka převyšuje nabídku, ale ceny se nezvyšují kvůli regulaci.</li>
+<li>Kdyby trh fungoval bez zásahů, ceny by rostly a vedly by k rovnováze.</li>
+<li>Potlačená inflace je dlouhodobě neudržitelná a nakonec se projeví jako <strong>otevřená inflace</strong>.</li>
+</ul></li>
+<li><strong>Mírná (plíživá) inflace</strong> – míra inflace je relativně nízká, jednociferná.</li>
+<li><strong>Pádivá inflace</strong> – inflace dosahuje vyšších hodnot, dvou až trojciferné úrovně, což způsobuje problémy v hospodářství.</li>
+<li><strong>Hyperinflace</strong> – extrémní forma inflace, při které se rozpadá peněžní systém a lidé se často uchylují k <strong>barteru</strong>.</li>
+</ul>
+</section>
+</section>
+<section id="makroekonomie-nezaměstnanost" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="makroekonomie-nezaměstnanost"><span class="header-section-number">2.4</span> Makroekonomie: Nezaměstnanost</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Nezaměstnanost</strong> označuje stav, kdy lidé, kteří <strong>nepracují</strong>, ale aktivně hledají práci a jsou připraveni ji přijmout, nejsou schopni najít zaměstnání.</p>
+</div>
+</div>
+<p><strong>Míra nezaměstnanosti</strong> udává procento pracovní síly, které je nezaměstnané:</p>
+<p><span class="math display">\[
+\text{Míra nezaměstnanosti} = \frac{\text{Počet nezaměstnaných}}{\text{Pracovní síla}} \times 100
+\]</span></p>
 <p><span class="math display">\[
 \text{Pracovní síla} = \text{Počet zaměstnaných} + \text{Počet nezaměstnaných}
 \]</span></p>
-<p><span class="math display">\[
-\text{Míra nezaměstnanosti} = \frac{\text{Počet nezaměstnaných}}{\text{Pracovní síla}}
-\]</span></p>
+<p>Pracovní síla tedy zahrnuje <strong>ekonomicky aktivní obyvatelstvo</strong>.</p>
+<section id="kdo-je-považován-za-nezaměstnaného" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="kdo-je-považován-za-nezaměstnaného"><span class="header-section-number">2.4.1</span> Kdo je považován za nezaměstnaného?</h3>
+<p>Aby osoba byla považována za nezaměstnanou, musí splňovat následující podmínky:</p>
 <ul>
-<li>Ne každý bez práce je považován za nezaměstnaného.</li>
-<li>Například důchodci nebo rodiče pečující o domácnost a nehledající zaměstnání nejsou zahrnuti do pracovní síly.</li>
-<li>Statistický úřad zveřejňuje míru nezaměstnanosti každý měsíc.</li>
-<li>Pro porovnání míry nezaměstnanosti po celém světě navštivte <a href="https://openstax.org/r/data-world-bank" class="uri">https://openstax.org/r/data-world-bank</a>.</li>
+<li>Je starší 15 let.</li>
+<li><strong>Aktivně hledá práci</strong>.</li>
+<li>Je připravena k <strong>nástupu do práce do 14 dnů</strong>.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_2_8.png" class="img-fluid figure-img" width="500"></p>
-</figure>
-</div>
-</section>
-<section id="hrubý-domácí-produkt" class="level3" data-number="2.2.3">
-<h3 data-number="2.2.3" class="anchored" data-anchor-id="hrubý-domácí-produkt"><span class="header-section-number">2.2.3</span> Hrubý domácí produkt</h3>
+<p>Ne každý, kdo nemá práci, je považován za nezaměstnaného. Například <strong>důchodci</strong> nebo <strong>rodiče pečující o domácnost</strong>, kteří nehledají práci, nejsou součástí pracovní síly.</p>
 <ul>
-<li>Hrubý domácí produkt (HDP) představuje celkovou peněžní hodnotu všech konečných statků a služeb vyrobených v zemi během jednoho roku.</li>
-<li>HDP lze vypočítat sečtením všech položek zakoupených v ekonomice, rozdělených do čtyř kategorií: spotřeba, investice, vládní výdaje a čistý export.</li>
-<li>Čistý export zahrnuje hodnotu statků vyrobených v domácí ekonomice a prodaných v zahraničí, mínus hodnotu statků vyrobených v zahraničí a zakoupených v domácí ekonomice.</li>
-<li>Nominální HDP, tržní hodnota všech vyrobených statků a služeb, může narůst kvůli zvýšení produkce nebo zvýšení cen (inflace).</li>
-<li>Reálný HDP, vypočítaný korigováním nominálního HDP o inflaci, roste pouze pokud roste produkce statků a služeb.</li>
+<li>Statistické úřady zveřejňují <strong>míru nezaměstnanosti</strong> každý měsíc.</li>
+<li>Pro porovnání globálních dat o nezaměstnanosti můžete navštívit <a href="https://openstax.org/r/data-world-bank">World Bank Data</a>.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_2_9.png" class="img-fluid figure-img" width="500"></p>
-</figure>
-</div>
+<p><img src="images/fig_2_20.png" class="img-fluid"></p>
+<p><em>Zdroj: EUROSTAT</em></p>
+<blockquote class="blockquote">
+<p><strong>Poznámka</strong>: V České republice je <strong>míra nezaměstnanosti kolem 3 %</strong> považována za hranici <strong>přirozené nezaměstnanosti</strong>. To znamená, že pracují ti, kteří chtějí, a na trhu zůstávají lidé, kteří mají špatné pracovní návyky nebo z nějakého důvodu pracovat nechtějí. K přirozené nezaměstnanosti přispívají také lidé, kteří přecházejí mezi zaměstnáními kvůli lepším příležitostem.</p>
+</blockquote>
 </section>
 </section>
-<section id="hospodářský-cyklus-a-ekonomická-aktivita" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="hospodářský-cyklus-a-ekonomická-aktivita"><span class="header-section-number">2.3</span> Hospodářský cyklus a ekonomická aktivita</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_2_10.png" class="img-fluid figure-img" width="700"></p>
-</figure>
+<section id="ekonomické-a-finanční-indikátory" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="ekonomické-a-finanční-indikátory"><span class="header-section-number">2.5</span> Ekonomické a finanční indikátory</h2>
+<p>Mezi nejznámější ekonomické a finanční indikátory patří:</p>
+<ul>
+<li><strong>HDP</strong> (hrubý domácí produkt)</li>
+<li><strong>Inflace</strong></li>
+<li><strong>Míra nezaměstnanosti</strong></li>
+<li><strong>Burzovní indexy</strong> (tržní indexy)</li>
+<li><strong>Úrokové míry</strong></li>
+<li><strong>Akciové kurzy</strong></li>
+<li><strong>Cena dluhopisů</strong></li>
+</ul>
+<section id="vliv-vybraných-faktorů-na-vývoj-indikátorů" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="vliv-vybraných-faktorů-na-vývoj-indikátorů"><span class="header-section-number">2.5.1</span> Vliv vybraných faktorů na vývoj indikátorů</h3>
+<section id="cena-dluhopisů-a-nominální-úroková-míra" class="level4">
+<h4 class="anchored" data-anchor-id="cena-dluhopisů-a-nominální-úroková-míra">Cena dluhopisů a nominální úroková míra</h4>
+<ul>
+<li>Existuje <strong>inverzní vztah</strong> mezi úrovní úrokových sazeb a cenou dluhopisů.</li>
+<li><strong>Růst úrokových sazeb</strong> snižuje cenu již emitovaných dluhopisů.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<ul>
-<li>Růst ekonomiky není v čase konstantní; má období rychlejšího růstu a období negativního růstu, známé jako hospodářský cyklus.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_2_11.png" class="img-fluid figure-img" width="300"></p>
-</figure>
+<div class="callout-title-container flex-fill">
+Příklad
 </div>
-<ul>
-<li>Hospodářský cyklus se skládá z období ekonomické expanze a kontrakce.</li>
-<li>Během fáze expanze roste HDP, zaměstnanost se zvyšuje a nezaměstnanost klesá.</li>
-<li>Další ukazatele jako je zakládání nových firem nebo stavba stavba nových domů, mohou narůst.</li>
-<li>Časem rychlá expanze zpomaluje, což převede ekonomiku do fáze kontrakce.</li>
-<li>Tento bod je známý jako vrchol hospodářského cyklu.</li>
-<li>Kontrakce je často spojena se zvyšující se nezaměstnaností a zpomalujícím HDP.</li>
-<li>Bod, kdy kontrakce končí a začíná expanze, se nazývá dno.</li>
-<li>Délka hospodářského cyklu se měří od jednoho dna k dalšímu.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_2_12.png" class="img-fluid figure-img" width="500"></p>
-</figure>
 </div>
-<ul>
-<li>Recese, často synonymum pro fázi kontrakce, bývala definována jako dvě po sobě jdoucí čtvrtletí poklesu HDP.</li>
-<li>Dnes Národní úřad pro ekonomický výzkum (National Bureau of Economic Research, NBER), který oficiálně deklaruje recese v USA, používá širší definici.</li>
-<li>Významný pokles ekonomické aktivity rozšířený napříč ekonomikou a trvající několik měsíců může být deklarován jako recese, bere se v úvahu reálný příjem, zaměstnanost, průmyslová výroba, velkoobchod a maloobchodní prodej, vedle reálného HDP.</li>
-</ul>
-</section>
-<section id="úrokové-sazby" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="úrokové-sazby"><span class="header-section-number">2.4</span> Úrokové sazby</h2>
-<ul>
-<li>Trh zápůjčitelných fondů (dostupných peněz) je řízen úrokovou sazbou (cenou peněz).</li>
-<li>Dodavatelé prostředků (věřitelé) jsou ti s rozpočtovým přebytkem, zatímco poptávači prostředků (dlužníci) jsou ti s rozpočtovým deficitem.</li>
-<li>Faktory ovlivňující nabídku a poptávku po penězích:
-<ul>
-<li>velikost úspor</li>
-<li>přístup komerčních bank</li>
-<li>politika centrální banky</li>
-<li>politika vlády</li>
-<li>preference likvidity</li>
-<li>mezinárodní faktory</li>
-</ul></li>
-<li>Na tomto trhu reprezentuje vzestupně se sklánějící křivka nabídky věřitele, kteří jsou povzbuzeni k dodání více prostředků při vyšší úrokové sazbě, a sestupně se sklánějící křivka poptávky reprezentuje dlužníky, kteří poptávají méně prostředků, jak úrokové sazby rostou.</li>
-<li>Rovnováha na tomto trhu nastává tam, kde se křivky nabídky a poptávky protínají, stanoví úrokovou sazbu, která vyváží dodané a poptávané množství půjčitelných prostředků.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_2_13.png" class="img-fluid figure-img" width="500"></p>
-</figure>
+<div class="callout-body-container callout-body">
+<p>Původní dluhopis s výnosovou mírou 5 % a očekávanou inflací 8 % se stává méně atraktivním, když nově emitovaný dluhopis nabízí 10% výnos.</p>
 </div>
-<ul>
-<li>Nominální úroková sazba je kotovaná sazba a reálná úroková sazba ji upravuje o inflaci. Vypočítá se jako: <span class="math display">\[
-\text{Reálná úroková sazba} = \text{Nominální úroková sazba} - \text{Inflace}
-\]</span></li>
-<li>Reálná úroková sazba, nikoli nominální, určuje skutečnou cenu půjčování si a odměnu za půjčování.</li>
-<li>Různé typy dlužníků mají různé úrokové sazby na základě jejich kreditního rizika.</li>
-<li>Státní dluhopisy mají zpravidla nejnižší (bezrizikovou) sazbu (může se velmi lišit u různých států), zatímco společnosti a jednotlivci mají vyšší sazby kvůli vyššímu riziku.</li>
-<li>Rizikové přirážky jsou účtovány jako kompenzace za kreditní riziko, které nesou věřitelé.</li>
-<li>Rizikovější dlužníci, jako jsou držitelé kreditních karet bez zástavy, mají tendenci platit mnohem vyšší úrokové sazby.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_2_14.png" class="img-fluid figure-img" width="500"></p>
-</figure>
 </div>
 </section>
-<section id="směnné-kurzy" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="směnné-kurzy"><span class="header-section-number">2.5</span> Směnné kurzy</h2>
+<section id="cena-akcií-a-výsledky-podnikatelské-činnosti" class="level4">
+<h4 class="anchored" data-anchor-id="cena-akcií-a-výsledky-podnikatelské-činnosti">Cena akcií a výsledky podnikatelské činnosti</h4>
 <ul>
-<li>Směnný kurz je cena měny.</li>
-<li>Kurz pro okamžitou směnu se nazývá spotový měnový kurz.</li>
-<li><strong>Přímá kotace</strong>: když jsou směnné kurzy vyjádřeny v jednotkách domácí měny za jednotku zahraniční měny.
-<ul>
-<li>Například, pokud jsme v USA a směnný kurz mezi americkým dolarem a eurem je 1,2, to znamená, že EUR 1 je ekvivalentní USD 1,2. Přímá kotace je uvedena jako: <span class="math display">\[
-\text{USD } 1.2 = \text{EUR } 1
-\]</span></li>
-</ul></li>
-<li><strong>Nepřímá kotace</strong>: když jsou směnné kurzy vyjádřeny v jednotkách zahraniční měny za jednotku domácí měny.
-<ul>
-<li>V předchozím příkladu by nepřímá kvótace z americké perspektivy byla kolik eur můžete koupit za 1 americký dolar. Pokud můžete koupit EUR 0,8333 eur za USD 1, nepřímá kotace je uvedena jako: <span class="math display">\[
-\text{USD } 1 = \frac{\text{EUR } 1}{\text{USD } 1.2}
-\]</span> <span class="math display">\[
-\text{USD } 1 = \text{EUR } 0.8333
-\]</span></li>
-</ul></li>
-<li>Tyto dva typy kotací poskytují stejné informace, ale v jiném formátu.</li>
-<li>Volba mezi přímou a nepřímou kotací závisí na místních tržních zvycích.</li>
-<li>Apreciace měny je, když náklady na nákup měny rostou. Pokud cena za nákup jednoho EUR stoupne na USD 1,3, EUR se apreciovalo (zhodnotilo se). To může být kvůli zvýšené poptávce po měně nebo snížené nabídce.</li>
-<li>Depreciace měny je, když náklady na nákup měny klesají. Pokud cena za nákup jednoho EUR klesne na USD 1,1, EUR depreciovalo (znehodnotilo se). To může být kvůli snížené poptávce po měně nebo zvýšené nabídce.</li>
-<li>Riziko směnného kurzu je starostí pro podniky zapojené do mezinárodního obchodu. Hodnota očekávaných příjmů nebo výdajů podniku se může změnit kvůli kolísajícím směnným kurzům.</li>
-<li>Ekonomická expozice odkazuje na riziko, že změna směnných kurzů může ovlivnit zákaznickou základnu a prodeje podniku.</li>
-<li>Apreciace nebo depreciace měny může ovlivnit kupní sílu spotřebitelů, což ovlivňuje např. jejich výběr dovolené.</li>
+<li>Pozitivní očekávání hospodářského růstu zvyšují <strong>akciové kurzy</strong> díky očekávanému nárůstu zisků firem.</li>
+<li>V období <strong>recese</strong> se očekávají horší podnikatelské výsledky, což vede k poklesu akciových kurzů.</li>
 </ul>
+</section>
+<section id="cena-akcií-inflace-a-úrokové-sazby" class="level4">
+<h4 class="anchored" data-anchor-id="cena-akcií-inflace-a-úrokové-sazby">Cena akcií, inflace a úrokové sazby</h4>
+<ul>
+<li><strong>Růst inflace</strong> snižuje reálnou hodnotu zisků a dividend, což negativně ovlivňuje <strong>akciové kurzy</strong>.</li>
+<li>Vysoká inflace zvyšuje <strong>úrokové sazby</strong>, což zvyšuje náklady na úvěry pro firmy.</li>
+</ul>
+</section>
+<section id="úroková-míra-a-devizový-trh" class="level4">
+<h4 class="anchored" data-anchor-id="úroková-míra-a-devizový-trh">Úroková míra a devizový trh</h4>
+<ul>
+<li>Růst <strong>úrokových sazeb</strong> zvyšuje <strong>hodnotu domácí měny</strong> díky vyšší atraktivitě investic do této měny.</li>
+<li>Vyšší úrokové sazby vedou k vyšší poptávce po domácí měně, což způsobuje <strong>apreciaci</strong> měnového kurzu.</li>
+</ul>
+</section>
+<section id="další-faktory" class="level4">
+<h4 class="anchored" data-anchor-id="další-faktory">Další faktory</h4>
+<ul>
+<li>Daňová zátěž</li>
+<li>Neekonomické faktory: občanské nepokoje, války, politická nestabilita, přírodní katastrofy.</li>
+</ul>
+</section>
+</section>
+<section id="dělení-indikátorů-dle-vztahu-k-hospodářskému-cyklu" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="dělení-indikátorů-dle-vztahu-k-hospodářskému-cyklu"><span class="header-section-number">2.5.2</span> Dělení indikátorů dle vztahu k hospodářskému cyklu</h3>
+<section id="předbíhající-indikátory" class="level4">
+<h4 class="anchored" data-anchor-id="předbíhající-indikátory">Předbíhající indikátory</h4>
+<ul>
+<li>Pohybují se ve stejném směru jako hospodářský cyklus, ale <strong>v předstihu</strong>.</li>
+<li>Používají se pro prognózy budoucího vývoje.</li>
+<li>Příklady: nová stavební povolení, akciové kurzy, objednávky strojního zařízení.</li>
+</ul>
+</section>
+<section id="souběžné-indikátory" class="level4">
+<h4 class="anchored" data-anchor-id="souběžné-indikátory">Souběžné indikátory</h4>
+<ul>
+<li>Odráží <strong>aktuální průběh</strong> hospodářského cyklu.</li>
+<li>Potvrzují stávající trendy v ekonomice.</li>
+<li>Příklady: průmyslová produkce, tržby za zboží a služby.</li>
+</ul>
+</section>
+<section id="zpožďující-se-indikátory" class="level4">
+<h4 class="anchored" data-anchor-id="zpožďující-se-indikátory">Zpožďující se indikátory</h4>
+<ul>
+<li>Potvrzují vývoj s <strong>určitým zpožděním</strong>.</li>
+<li>Slouží k analýze vztahů mezi ekonomickými veličinami.</li>
+<li>Příklady: průměrná doba trvání nezaměstnanosti, změny CPI.</li>
+</ul>
+</section>
+</section>
+<section id="citlivost-odvětví-na-hospodářský-cyklus" class="level3" data-number="2.5.3">
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="citlivost-odvětví-na-hospodářský-cyklus"><span class="header-section-number">2.5.3</span> Citlivost odvětví na hospodářský cyklus</h3>
+<section id="cyklická-odvětví" class="level4">
+<h4 class="anchored" data-anchor-id="cyklická-odvětví">Cyklická odvětví</h4>
+<ul>
+<li>Zisky a tržby těchto odvětví se pohybují v souladu s hospodářským cyklem.</li>
+<li>Největší zisky mají v období <strong>konjunktury</strong>, zatímco během recese trpí.</li>
+</ul>
+</section>
+<section id="neutrální-odvětví" class="level4">
+<h4 class="anchored" data-anchor-id="neutrální-odvětví">Neutrální odvětví</h4>
+<ul>
+<li>Tato odvětví nejsou přímo ovlivněna hospodářským cyklem.</li>
+<li>Zahrnují sektory, kde spotřebitelé nemohou dlouhodobě odložit spotřebu, např. <strong>potravinářský</strong> a <strong>farmaceutický</strong> průmysl.</li>
+</ul>
+</section>
+<section id="anticyklická-odvětví" class="level4">
+<h4 class="anchored" data-anchor-id="anticyklická-odvětví">Anticyklická odvětví</h4>
+<ul>
+<li>Profitují během <strong>recese</strong>, protože nabízejí levnější substituty dražších produktů.</li>
+<li>Příkladem jsou firmy vyrábějící <strong>levné potraviny</strong>, <strong>oděvy</strong> nebo <strong>televizní společnosti</strong>.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Cyklická odvětví</strong></th>
+<th><strong>Neutrální odvětví</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Stavebnictví</td>
+<td>1. Potravinářský průmysl</td>
+</tr>
+<tr class="even">
+<td>2. Automobilový průmysl</td>
+<td>2. Nealkoholické nápoje</td>
+</tr>
+<tr class="odd">
+<td>3. Hotelnictví a ubytování</td>
+<td>3. Alkoholické nápoje</td>
+</tr>
+<tr class="even">
+<td>4. Oděvní průmysl</td>
+<td>4. Pivovarnictví</td>
+</tr>
+<tr class="odd">
+<td>5. Strojírenství</td>
+<td>5. Tabákový průmysl</td>
+</tr>
+<tr class="even">
+<td>6. Elektronika</td>
+<td>6. Farmaceutický průmysl</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -682,18 +1216,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -725,11 +1248,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -739,8 +1301,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -752,7 +1323,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -796,6 +1490,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -821,6 +1516,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -882,17 +1603,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week_01.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí a struktura firmy</span></span>
+      <a href="./week_01.html" class="pagination-link" aria-label="Úvod do financí">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week_03.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week_03.html" class="pagination-link" aria-label="Bankovní systém">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bankovní systém</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

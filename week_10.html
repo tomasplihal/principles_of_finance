@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Základy financí - 10&nbsp; Podnikové finance I</title>
+<title>10&nbsp; Akcie a jejich oceňování – Základy financí</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,12 +62,42 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -71,13 +107,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_10.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Podnikové finance I</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_10.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -86,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -95,34 +131,34 @@ ul.task-list li input[type="checkbox"] {
       <a href="./">Základy financí</a> 
         <div class="sidebar-tools-main">
     <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
+              <i class="bi bi-file-pdf pe-1"></i>
             Download PDF
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
+              <i class="bi bi-journal pe-1"></i>
             Download ePub
             </a>
           </li>
       </ul>
     </div>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
+              <i class="bi bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
+              <i class="bi bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
@@ -147,37 +183,37 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí a struktura firmy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy: Peníze a úrokové sazby</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bankovní systém</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mezinárodní finance</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Podnikové finance a zdroje finančních informací</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Finanční management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -189,53 +225,65 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Finanční systém</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_10.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Podnikové finance I</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Podnikové finance II</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Úvod do finančních derivátů</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Jak firmy přemýšlejí o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Předtermín zkoušky</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Úvod do řízení rizik a finančních derivátů</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Obsah lekce</h2>
+   
+  <ul class="collapse">
+  <li><a href="#charakteristika-akcií" id="toc-charakteristika-akcií" class="nav-link active" data-scroll-target="#charakteristika-akcií"><span class="header-section-number">10.1</span> Charakteristika akcií</a></li>
+  <li><a href="#poměrové-ukazatele-pe-a-pb" id="toc-poměrové-ukazatele-pe-a-pb" class="nav-link" data-scroll-target="#poměrové-ukazatele-pe-a-pb"><span class="header-section-number">10.2</span> Poměrové ukazatele P/E a P/B</a></li>
+  <li><a href="#dividendové-diskontní-modely" id="toc-dividendové-diskontní-modely" class="nav-link" data-scroll-target="#dividendové-diskontní-modely"><span class="header-section-number">10.3</span> Dividendové diskontní modely</a></li>
+  <li><a href="#model-diskontovaného-cash-flow-dcf" id="toc-model-diskontovaného-cash-flow-dcf" class="nav-link" data-scroll-target="#model-diskontovaného-cash-flow-dcf"><span class="header-section-number">10.4</span> Model diskontovaného cash flow (DCF)</a></li>
+  <li><a href="#preferenční-akcie" id="toc-preferenční-akcie" class="nav-link" data-scroll-target="#preferenční-akcie"><span class="header-section-number">10.5</span> Preferenční akcie</a></li>
+  <li><a href="#historický-vývoj-akcií" id="toc-historický-vývoj-akcií" class="nav-link" data-scroll-target="#historický-vývoj-akcií"><span class="header-section-number">10.6</span> Historický vývoj akcií</a></li>
+  <li><a href="#příklady-k-procvičení" id="toc-příklady-k-procvičení" class="nav-link" data-scroll-target="#příklady-k-procvičení"><span class="header-section-number">10.7</span> Příklady k procvičení</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Podnikové finance I</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></h1>
 </div>
 
 
@@ -248,23 +296,719 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<div class="callout callout-style-default callout-tip callout-titled">
+
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Studijní materiály
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Materiály v Interaktivní osnově v <a href="<https://is.muni.cz/auth/el/econ/podzim2023/BPF_ZAFI/130966369/Podnikove_finance_I.pdf?predmet=1546566">ISu</a>.</p>
+<ul>
+<li>Dahlquist, J. R., &amp;; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
+<ul>
+<li>Chapter 11 - Stocks and Stock Valuation</li>
+<li>Chapter 12 - Historical Performance of US Markets</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p><strong>Výstupy z učení:</strong></p>
+<ol type="1">
+<li>Umět definovat akcie a jejich charakteristiky.</li>
+<li>Rozumět dividendám a jednotlivým typům akcií.</li>
+<li>Definovat a vypočítat ukazatele P/E a P/B a pochopit jejich použití při určování relativního ocenění společnosti.</li>
+<li>Porozumět dividendově diskontním modelům a modelům diskontovaného cash flow.</li>
+<li>Získat základní přehled o historické výkonnosti trhů.</li>
+</ol>
+<section id="charakteristika-akcií" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="charakteristika-akcií"><span class="header-section-number">10.1</span> Charakteristika akcií</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Akcie představuje vlastnický podíl v dané společnosti a poskytuje držiteli právo na podíl ze zisku, na rozhodování a na likvidační zůstatek.</p>
+</div>
+</div>
+<ul>
+<li>Akcie umožňují oddělení vlastníků od managementu.</li>
+<li>Na rozdíl od dluhopisů akcie nemají datum splatnosti, nominální hodnotu ani zaručené kupónové platby.</li>
+<li>Základním typem akcií jsou tzv. kmenové akcie (common stock), speciálním typem jsou například preferenční akcie (prioritní, preferred s stock).</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Kmenové akcie</th>
+<th style="text-align: center;">Prioritní akcie</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vlastnický podíl ve firmě</td>
+<td style="text-align: center;">Ano</td>
+<td style="text-align: center;">Ne</td>
+</tr>
+<tr class="even">
+<td>Podíl na řízení</td>
+<td style="text-align: center;">Ano</td>
+<td style="text-align: center;">Ne</td>
+</tr>
+<tr class="odd">
+<td>Podíl na zisku</td>
+<td style="text-align: center;">Ano</td>
+<td style="text-align: center;">Ano</td>
+</tr>
+<tr class="even">
+<td>Podíl na likvidačním zůstatku</td>
+<td style="text-align: center;">Ano</td>
+<td style="text-align: center;">Ano</td>
+</tr>
+<tr class="odd">
+<td>Přednostní právo na zisky a majetek</td>
+<td style="text-align: center;">Ne</td>
+<td style="text-align: center;">Ano</td>
+</tr>
+<tr class="even">
+<td>Pravidelná fixní dividenda</td>
+<td style="text-align: center;">Ne</td>
+<td style="text-align: center;">Ano</td>
+</tr>
+<tr class="odd">
+<td>Doba splatnosti</td>
+<td style="text-align: center;">Ne</td>
+<td style="text-align: center;">Ne</td>
+</tr>
+</tbody>
+</table>
+<section id="dividendy" class="level3" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="dividendy"><span class="header-section-number">10.1.1</span> Dividendy</h3>
+<ul>
+<li>Akcie mohou vyplácet dividendy, ale ty nejsou garantovány a mohou se měnit na základě rozhodnutí představenstva společnosti.</li>
+<li>Vetšinou snaha o stabilní dividendovou politiku.</li>
+<li>Dividendy jsou většinou v penězích (<strong><em>cash dividend</em></strong>), ale mohou být i formou nově vydaných akcií (<strong><em>stock dividend</em></strong>).</li>
+<li>Místo výplaty dividend se může firma rozhodnout nakoupit svoje vlastní akcie (<strong><em>stock buyback</em></strong>).</li>
+<li>Výsledkem odkupu vlastních akcií je zvýšení jejich ceny a zpravidla daňové výhody pro akcionáře.</li>
+</ul>
+</section>
+<section id="stěpení-akcií" class="level3" data-number="10.1.2">
+<h3 data-number="10.1.2" class="anchored" data-anchor-id="stěpení-akcií"><span class="header-section-number">10.1.2</span> Stěpení akcií</h3>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Štěpení akcií (<strong><em>stock split</em></strong>) rozdělí stávající akcie na více kusů při zachování celkové hodnoty všech akcií (tržní kapitalizace).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Držíte 10 akcií, každá má hodnotu 80 Kč. Firma udělá 2-for-1 split. Ve výsledku máte 20 akcií, ale každá stojí 40 Kč. Celková hodnota akcií (tržní kapitalizace) je pořád stejná, jen rozdělená na více dílů.</p>
+</div>
+</div>
+</section>
+<section id="rizika-investování-do-akcií" class="level3" data-number="10.1.3">
+<h3 data-number="10.1.3" class="anchored" data-anchor-id="rizika-investování-do-akcií"><span class="header-section-number">10.1.3</span> Rizika investování do akcií</h3>
+<p>Akcie jsou obecně rizikovější než dluhopisy, proto investoři očekávají vyšší výnosy. Mezi hlavní rizika lze zařadit:</p>
+<ul>
+<li><strong>Tržní riziko</strong> <span class="math inline">\(\rightarrow\)</span> vývoj tržní hodnoty akcie</li>
+<li><strong>Kreditní riziko</strong> <span class="math inline">\(\rightarrow\)</span> firma může zbankrotovat, nastane likvidace, akcionář získá likvidační zůstatek</li>
+<li><strong>Riziko likvidity</strong> <span class="math inline">\(\rightarrow\)</span> může být obtížné prodat akcii</li>
+<li><strong>Úrokové riziko</strong> <span class="math inline">\(\rightarrow\)</span> změny úrokových sazeb mohou ovlivnit chování akcií</li>
+<li><strong>Riziko inflace</strong> <span class="math inline">\(\rightarrow\)</span> snižuje reálné výnosy</li>
+<li><strong>Riziko změny směnných kurzů</strong> <span class="math inline">\(\rightarrow\)</span> pokud se akcie obchoduje v cizí měně</li>
+<li><strong>Politické a regulační riziko</strong> <span class="math inline">\(\rightarrow\)</span> změny v politice nebo regulacích mohou ovlivnit podnikatelské prostředí</li>
+</ul>
+</section>
+</section>
+<section id="poměrové-ukazatele-pe-a-pb" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="poměrové-ukazatele-pe-a-pb"><span class="header-section-number">10.2</span> Poměrové ukazatele P/E a P/B</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>P/E ratio (price-earnings ratio) neboli poměr cena/zisk je finanční ukazatel, který vyjadřuje vztah mezi tržní cenou akcie a čistým ziskem na jednu akcii (EPS, earnings per share).</p>
+</div>
+</div>
+<p><span class="math display">\[
+\text{P/E} = \frac{\text{Cena akcie}}{\text{Zisk na akcii}}
+\]</span></p>
+<ul>
+<li>P/E se používá k hodnocení, jak drahé nebo levné jsou akcie v poměru k ziskům společnosti.</li>
+<li>Vysoké P/E může naznačovat, že investoři očekávají budoucí růst zisků, zatímco nízké P/E indikuje podhodnocenou akcii nebo slabší růstové vyhlídky společnosti.</li>
+<li>P/E reprezentuje cenu, kterou investor platí za jednotku současného nebo budoucího zisku společnosti.</li>
+<li>P/E společnosti by měl být srovnáván s historickým P/E nebo s P/E jiných společností ve stejném odvětví.</li>
+<li>Prohlédněte si 90letý historický průměr P/E pro index S&amp;P 500 <a href="https://www.multpl.com/s-p-500-pe-ratio" class="uri">https://www.multpl.com/s-p-500-pe-ratio</a></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cena akcie společnosti $24.00 a její zisk na akcii je $4.00. <span class="math display">\[
+\text{P/E} = \frac{\$24.00}{\$4.00} = \$6
+\]</span></p>
+<p>Výsledek ukazuje, že investoři jsou ochotni platit až šest dolarů za každý dolar zisku.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>P/B ratio (price-to-book ratio) neboli poměr cena/účetní hodnota je finanční ukazatel, který vyjadřuje vztah mezi tržní cenou akcie a účetní hodnotou vlastního kapitálu na jednu akcii (book value per share).</p>
+</div>
+</div>
+<p><span class="math display">\[
+\text{P/B} = \frac{\text{Cena za akcii}}{\text{Účetní hodnota na akcii}}
+\]</span></p>
+<ul>
+<li><em>Tržní hodnota</em> je aktuální cena všech akcií společnosti, zatímco <em>účetní hodnota</em> představuje hodnotu společnosti po likvidaci aktiv a splacení závazků.</li>
+<li>P/B se používá k hodnocení, zda je akcie podhodnocená nebo nadhodnocená ve vztahu k účetní hodnotě společnosti.</li>
+<li>Nízké P/B (méně než 1) může signalizovat, že akcie je podhodnocená nebo že společnost má problémy, zatímco vysoké P/B naznačuje, že investoři očekávají budoucí růst nebo že je akcie nadhodnocená.</li>
+<li>P/B má omezení v nezahrnování nehmotných aktiv, jako jsou patenty, ochranné známky a autorská práva.</li>
+</ul>
+</section>
+<section id="dividendové-diskontní-modely" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="dividendové-diskontní-modely"><span class="header-section-number">10.3</span> Dividendové diskontní modely</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dividendový diskontní model (DDM) je metoda oceňování akcií, která odhaduje současnou hodnotu akcie na základě budoucích dividend, které budou vyplaceny, diskontovaných na současnou hodnotu.</p>
+</div>
+</div>
+<p>Základní forma DDM, známá jako <strong>Gordonův růstový model</strong>:</p>
+<p><span class="math display">\[
+\text{Hodnota akcie} = \frac{D_0 (1+g)}{r - g} = \frac{D_1}{r - g}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(D_0 \dots\)</span> současná roční dividenda</li>
+<li><span class="math inline">\(D_1 \dots\)</span> očekávaná dividenda v příštím roce</li>
+<li><span class="math inline">\(r \dots\)</span> požadovaná míra výnosnosti (diskontní míra)</li>
+<li><span class="math inline">\(g \dots\)</span> očekávaná míra růstu dividend</li>
+</ul>
+<p>Tento model předpokládá, že dividendy porostou konstantním tempem <span class="math inline">\(g\)</span> navždy. Je užitečný pro oceňování akcií společností, které pravidelně vyplácejí dividendy a mají stabilní růstový profil (<span class="math inline">\(g\)</span> může být i 0).</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Předpokládejme, že společnost právě vyplatila dividendu ve výši <span class="math inline">\(\$2\)</span>, očekává se růst dividend ve výši 5% ročně. Vaše požadovaná míra výnosu je 10%. Cena akcie se vypočítá následovně:</p>
+<p><span class="math display">\[
+P = \frac{2.00 (1 + 0.05)}{0.10 - 0.05} = \frac{2.10}{0.05} = \$42.00
+\]</span></p>
+<p>Podle DDM modelu by cena akcie měla být $42,00. Pokud je tržní cena nižší, může to být dobrá investiční příležitost.</p>
+</div>
+</div>
+<ul>
+<li>Model lze rozšířit o proměnný růst dividend.</li>
+<li>Předpokládá se, že společnost a její dividendy projdou různými fázemi růstu.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Máme společnost <span class="math inline">\(X\)</span>, která za poslední rok vyplatila dividendu $2.00. Očekáváme růstovou míru dividendy 5% pro další čtyři roky a následně stabilizaci na růstu 3%. Požadovaná výnosová míra je 8%. V následující tabulce je zobrazen výpočet hodnoty akcie.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 7%">
+<col style="width: 14%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Rok</th>
+<th style="text-align: center;">Růst %</th>
+<th style="text-align: center;">Dividenda ($)</th>
+<th style="text-align: center;">Hodnota po 4. roce ($)</th>
+<th style="text-align: center;">Diskontní faktor pro 8%</th>
+<th style="text-align: center;">Současná hodnota dividendy ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5%</td>
+<td style="text-align: center;">2.00</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5%</td>
+<td style="text-align: center;">2.10</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1.0800</td>
+<td style="text-align: center;">1.9444</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5%</td>
+<td style="text-align: center;">2.21</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1.1664</td>
+<td style="text-align: center;">1.8904</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5%</td>
+<td style="text-align: center;">2.32</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1.2597</td>
+<td style="text-align: center;">1.8379</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5%</td>
+<td style="text-align: center;">2.43</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1.3605</td>
+<td style="text-align: center;">1.7869</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3%</td>
+<td style="text-align: center;">2.50</td>
+<td style="text-align: center;">50.07886</td>
+<td style="text-align: center;">1.4693</td>
+<td style="text-align: center;">35.7870</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(Celkem:\)</span></td>
+<td style="text-align: center;">43.2466</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+\text{Hodnota po 4. roce} = \frac{2.43 (1 + 0.03)}{0.08 - 0.03} = 50.07886
+\]</span></p>
+<p>Vnitřní hodnota akcie je součet všech současných hodnot dividend, tedy $43.2466.</p>
+</div>
+</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Výhody DDM</strong></th>
+<th style="text-align: center;"><strong>Omezení DDM</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Jednoduchost a srozumitelnost</td>
+<td style="text-align: center;">Závislost na dividendách</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Vhodnost pro stabilní společnosti</td>
+<td style="text-align: center;">Citlivost na vstupní parametry</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Teoretická konzistence</td>
+<td style="text-align: center;">Nerealistické předpoklady</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Ignorování jiných faktorů</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="model-diskontovaného-cash-flow-dcf" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="model-diskontovaného-cash-flow-dcf"><span class="header-section-number">10.4</span> Model diskontovaného cash flow (DCF)</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Model diskontovaného cashflow (DCF) je metoda oceňování, která se používá k určení hodnoty investice na základě budoucích peněžních toků (cashflow), které tato investice vygeneruje. Tyto budoucí peněžní toky jsou diskontovány na jejich současnou hodnotu pomocí diskontní sazby, která odráží požadovanou míru výnosnosti investora a riziko spojené s investicí.</p>
+</div>
+</div>
+<p>Základní vzorec pro DCF model je:</p>
+<p><span class="math display">\[
+\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{CF_n}{(1+r)^n}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(CF_n \dots\)</span> očekávaný peněžní tok v období <span class="math inline">\(n\)</span></li>
+<li><span class="math inline">\(r \dots\)</span> diskontní sazba</li>
+<li><span class="math inline">\(n \dots\)</span> počet období</li>
+</ul>
+<p>Alternativně lze model rozšířít o predikce cash flow do nekonečna s využitím perpetuity:</p>
+<p><span class="math display">\[
+\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{\frac{TFC}{r-g}}{(1+r)^{n-1}}
+\]</span></p>
+<ul>
+<li>Poslední člen, tzv. terminal cash flow (TCF), představuje poslední predikované cash flow, které dále roste konstantním tempem růstu.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Výhody DCF</strong></th>
+<th style="text-align: center;"><strong>Omezení DCF</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Nepotřebuje dividendy</td>
+<td style="text-align: center;">Citlivost na vstupní parametry</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Komplexní ocenění</td>
+<td style="text-align: center;">Obtížnost přesných odhadů cashflow</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Flexibilita</td>
+<td style="text-align: center;">Náročnost na data</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Založen na skutečných peněžních tocích</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Pro účely modelu diskontovaného cashflow (DCF) se obvykle používá tzv. volný peněžní tok (Free Cash Flow, FCF).</li>
+<li>FCF není přímo uveden v účetních výkazech, ale lze jej odvodit z informací uvedených ve výkazu o peněžních tocích (Cash Flow Statement) a výkazu zisku a ztráty (Income Statement).</li>
+<li>Metody přesného výpočtu FCF jsou nad rámec tohoto předmětu.</li>
+</ul>
+</section>
+<section id="preferenční-akcie" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="preferenční-akcie"><span class="header-section-number">10.5</span> Preferenční akcie</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Preferenční (prioritní) akcie (preferred stock) jsou typem akcií, které mají přednostní postavení ve vztahu k výplatě dividend a při likvidaci společnosti oproti kmenovým akciím. Mají stanovenou konstantní pravidelnou dividendu (bez doby splatnosti), a většinou neposkytují hlasovací právo.</p>
+</div>
+</div>
+<ul>
+<li>Mohou být tzv. kumulativní <span class="math inline">\(\rightarrow\)</span> jakékoli vynechané dividendy se stávají závazkem, který společnost musí vyplatit.</li>
+<li>Nekumulativní preferované akcie ztrácejí nevyplacené dividendy navždy.</li>
+<li>Konvertibilní preferované akcie lze za určitých podmínek převést na kmenové akcie.</li>
+</ul>
+<p>Vnitřní hodnotu preferovaných akcií lze určit pomocí vzorce na perpetuitu:</p>
+<p><span class="math display">\[
+\text{Hodnota akcie} = \frac{\text{Dividenda}}{\text{Diskontní míra}}
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Firma <span class="math inline">\(X\)</span> právě vydala preferované akcie (kumulativní) se jmenovitou hodnotou $100 a roční dividendou 7%. Aktuální cena preferovaných akcií je $35 za akcii. Jaká je výnosnost těchto preferovaných akcií?</p>
+<ul>
+<li>Prvním krokem je určení roční dividendy:</li>
+</ul>
+<p><span class="math display">\[
+\$100 \times 0.07 = \$7.00
+\]</span></p>
+<ul>
+<li>Nyní použijeme výše uvedený vzorec k vypočítání míry výnosu:</li>
+</ul>
+<p><span class="math display">\[
+r = \frac{\$7.00}{\$35.00} = 0.20 \text{ neboli } 20\%
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="historický-vývoj-akcií" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="historický-vývoj-akcií"><span class="header-section-number">10.6</span> Historický vývoj akcií</h2>
+<ul>
+<li>Dow Jones Industrial Average (DJIA) a S&amp;P 500 jsou nejčastěji citovanými akciovými indexy, přičemž změny v obou jsou silně korelované.</li>
+<li>Indexy mají za cíl reprezentovat výnosnost celého akciového trhu.</li>
+<li>Historie kapitálových trhů ukazuje, že průměrný výnos z akcií výrazně předčil jiné třídy finančních cenných papírů.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 39%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Asset Class</th>
+<th style="text-align: center;">Nominal Average Annual Returns 1981–2020</th>
+<th style="text-align: center;">Standard Deviation of Returns 1981–2020</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Large company stocks</td>
+<td style="text-align: center;">12.64%</td>
+<td style="text-align: center;">16.06%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Baa bonds</td>
+<td style="text-align: center;">10.34%</td>
+<td style="text-align: center;">7.67%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">10-year T-bonds</td>
+<td style="text-align: center;">8.21%</td>
+<td style="text-align: center;">9.92%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">US T-bills</td>
+<td style="text-align: center;">3.94%</td>
+<td style="text-align: center;">3.39%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Inflation</td>
+<td style="text-align: center;">2.93%</td>
+<td style="text-align: center;">1.76%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Zvláště patrný je tento rozdíl při pohledu na kumulované výnosy (složené úročení).</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig_6_8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Vyplatí se časovat trh?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vyplatí se časovat trh?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>V období od roku 1980 do poloviny roku 2020 by investice 10 000 dolarů do indexového fondu S&amp;P 500 vynesla investorovi 697 421 dolarů. Avšak pokud by investor zmeškal 5 nejvýkonnějších dní na trhu, snížil by se konečný zůstatek portfolia na 432 411 dolarů. Pokud by zůstal mimo trh během 10 nejlepších dnů, zůstatek by klesl na pouhých 313 377 dolarů, což je méně než polovina výnosu z celého období.</p>
+</div>
+</div>
+<ul>
+<li>Kalkulačky pro nalezení výnosů ve vybraných obdobích pro americké akcie, dluhopisy a inflaci. <a href="https://openstax.org/r/6-what-to-invest-in" class="uri">https://openstax.org/r/6-what-to-invest-in</a></li>
+<li>Další kalkulačka pro globální akciové trhy. <a href="https://openstax.org/r/returns-of-global-stocks" class="uri">https://openstax.org/r/returns-of-global-stocks</a></li>
+<li>Globální zpráva o bohatství publikovaná společností Credit Suisse. <a href="https://openstax.org/r/global-wealth-report" class="uri">https://openstax.org/r/global-wealth-report</a></li>
+</ul>
+</section>
+<section id="příklady-k-procvičení" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="příklady-k-procvičení"><span class="header-section-number">10.7</span> Příklady k procvičení</h2>
+<ol type="1">
+<li>Vlastníte 20 akcií firmy <span class="math inline">\(X\)</span>, které stojí $484. Firma oznámila štěpení akcií v poměru 4:1. Jaká bude nová cena akcií a kolik jich budete vlastnit?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>80 kusů, cena $121</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Vlastníte 300 akcií firmy <span class="math inline">\(Y\)</span>, které stojí $230. Firma oznámila štěpení akcií v poměru 2:1. Jaká bude nová cena akcií a kolik jich budete vlastnit?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>600 kusů, cena $115</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Kmenová akcie dané firmy vyplácí dividendu ve výši $30 ročně. Jaká bude hodnota akcie, pokud je vaše diskontní sazba 11.4% ročně a očekáváte tempo růstu dividendy ve výši 11.1% ročně?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>$11 110</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Kmenová akcie dané firmy vyplácí dividendu ve výši $5 ročně. Jaká bude hodnota akcie, pokud je vaše diskontní sazba 7.2% ročně a očekáváte tempo růstu dividendy ve výši 0% ročně?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>$416.67</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Kmenová akcie dané firmy vyplácí dividendu ve výši $12 ročně. Jaká bude hodnota akcie, pokud je vaše diskontní sazba 9.8% ročně a očekáváte tempo růstu dividendy ve výši 3% ročně?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>$181.76</p>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Preferenční akcie dané firmy vyplácí fixní dividendu ve výši $5 ročně. Jaká bude hodnota akcie, pokud je vaše diskontní sazba 13.04% ročně?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>$38.34</p>
+</div>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Preferenční akcie dané firmy vyplácí fixní dividendu ve výši $17 ročně. Jaká bude hodnota akcie, pokud je vaše diskontní sazba 10.3% ročně?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>$165.5</p>
+</div>
 </div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -302,18 +1046,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -345,11 +1078,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -359,8 +1131,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -372,7 +1153,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -416,6 +1320,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -441,6 +1346,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -502,17 +1433,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week_09.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></span>
+      <a href="./week_09.html" class="pagination-link" aria-label="Dluhopisy a jejich oceňování">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week_11.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Podnikové finance II</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week_11.html" class="pagination-link" aria-label="Jak přemýšlet o investování">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

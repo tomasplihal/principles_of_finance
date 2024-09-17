@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Základy financí - 3&nbsp; Časová hodnota peněz</title>
+<title>3&nbsp; Bankovní systém – Základy financí</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,14 +62,42 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -73,13 +107,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_03.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_03.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bankovní systém</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -88,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -97,34 +131,34 @@ ul.task-list li input[type="checkbox"] {
       <a href="./">Základy financí</a> 
         <div class="sidebar-tools-main">
     <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
+              <i class="bi bi-file-pdf pe-1"></i>
             Download PDF
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
+              <i class="bi bi-journal pe-1"></i>
             Download ePub
             </a>
           </li>
       </ul>
     </div>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
+              <i class="bi bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
+              <i class="bi bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
@@ -149,37 +183,37 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí a struktura firmy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy: Peníze a úrokové sazby</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_03.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bankovní systém</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mezinárodní finance</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Podnikové finance a zdroje finančních informací</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Finanční management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -191,65 +225,53 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Finanční systém</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Podnikové finance I</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Podnikové finance II</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Úvod do finančních derivátů</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Jak firmy přemýšlejí o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Předtermín zkoušky</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Úvod do řízení rizik a finančních derivátů</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Obsah lekce</h2>
    
-  <ul>
-  <li><a href="#úvod-do-časové-hodnoty-peněz" id="toc-úvod-do-časové-hodnoty-peněz" class="nav-link active" data-scroll-target="#úvod-do-časové-hodnoty-peněz"><span class="header-section-number">3.1</span> Úvod do časové hodnoty peněz</a></li>
-  <li><a href="#základní-terminologie" id="toc-základní-terminologie" class="nav-link" data-scroll-target="#základní-terminologie"><span class="header-section-number">3.2</span> Základní terminologie</a></li>
-  <li><a href="#budoucí-hodnota" id="toc-budoucí-hodnota" class="nav-link" data-scroll-target="#budoucí-hodnota"><span class="header-section-number">3.3</span> Budoucí hodnota</a>
   <ul class="collapse">
-  <li><a href="#jednoduché-úročení" id="toc-jednoduché-úročení" class="nav-link" data-scroll-target="#jednoduché-úročení"><span class="header-section-number">3.3.1</span> Jednoduché úročení</a></li>
-  <li><a href="#složené-úročení" id="toc-složené-úročení" class="nav-link" data-scroll-target="#složené-úročení"><span class="header-section-number">3.3.2</span> Složené úročení</a></li>
-  </ul></li>
-  <li><a href="#současná-hodnota" id="toc-současná-hodnota" class="nav-link" data-scroll-target="#současná-hodnota"><span class="header-section-number">3.4</span> Současná hodnota</a></li>
-  <li><a href="#kratší-časové-intervaly-než-jeden-rok" id="toc-kratší-časové-intervaly-než-jeden-rok" class="nav-link" data-scroll-target="#kratší-časové-intervaly-než-jeden-rok"><span class="header-section-number">3.5</span> Kratší časové intervaly než jeden rok</a></li>
-  <li><a href="#anuita" id="toc-anuita" class="nav-link" data-scroll-target="#anuita"><span class="header-section-number">3.6</span> Anuita</a>
-  <ul class="collapse">
-  <li><a href="#budoucí-hodnota-anuity" id="toc-budoucí-hodnota-anuity" class="nav-link" data-scroll-target="#budoucí-hodnota-anuity"><span class="header-section-number">3.6.1</span> Budoucí hodnota anuity</a></li>
-  <li><a href="#perpetuita" id="toc-perpetuita" class="nav-link" data-scroll-target="#perpetuita"><span class="header-section-number">3.6.2</span> Perpetuita</a></li>
-  <li><a href="#jak-dlouho-trvá-naspořit-milion" id="toc-jak-dlouho-trvá-naspořit-milion" class="nav-link" data-scroll-target="#jak-dlouho-trvá-naspořit-milion"><span class="header-section-number">3.6.3</span> Jak dlouho trvá naspořit milion?</a></li>
-  <li><a href="#současná-hodnota-anuity" id="toc-současná-hodnota-anuity" class="nav-link" data-scroll-target="#současná-hodnota-anuity"><span class="header-section-number">3.6.4</span> Současná hodnota anuity</a></li>
-  </ul></li>
+  <li><a href="#bankovní-systém" id="toc-bankovní-systém" class="nav-link active" data-scroll-target="#bankovní-systém"><span class="header-section-number">3.1</span> Bankovní systém</a></li>
+  <li><a href="#banka" id="toc-banka" class="nav-link" data-scroll-target="#banka"><span class="header-section-number">3.2</span> Banka</a></li>
+  <li><a href="#úrokové-míry-v-ekonomice" id="toc-úrokové-míry-v-ekonomice" class="nav-link" data-scroll-target="#úrokové-míry-v-ekonomice"><span class="header-section-number">3.3</span> Úrokové míry v ekonomice</a></li>
+  <li><a href="#centrální-banka" id="toc-centrální-banka" class="nav-link" data-scroll-target="#centrální-banka"><span class="header-section-number">3.4</span> Centrální banka</a></li>
   </ul>
 </nav>
     </div>
@@ -258,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bankovní systém</span></h1>
 </div>
 
 
@@ -271,7 +293,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -284,257 +308,427 @@ Studijní materiály
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Dahlquist, J. R., &amp;; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
+<li>MELICHER, Ronald W. a Edgar NORTON.&nbsp;Introduction to finance : markets, investments, and financial management. Seventeenth edition. Hoboken: Wiley, 2020, xxix, 613. ISBN&nbsp;9781119561170
 <ul>
-<li>Chapter 7 - Time Value of Money I: Single Payment Value</li>
-<li>Chapter 8 - Time Value of Money II: Equal Multiple Payments</li>
-<li>Chapter 9 - Time Value of Money III: Unequal Multiple Payment Values</li>
+<li>Chapter 3 – Banks and Other Financial Institutions</li>
 </ul></li>
+<li>Kantnerová, L. (2016).&nbsp;Základy bankovnictví: teorie a praxe. CH Beck.</li>
 </ul>
 </div>
 </div>
 <p><strong>Výstupy z učení:</strong></p>
+<ul>
+<li>Porozumět pojmům bankovní systém a různé podoby bankovního systému.</li>
+<li>Definovat pojem banka, hlavní činnosti bank, úrokové míry ČNB.</li>
+<li>Rozumět pojmu centrální banka a znát její funkce.</li>
+</ul>
+<section id="bankovní-systém" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="bankovní-systém"><span class="header-section-number">3.1</span> Bankovní systém</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Bankovní systém</strong> představuje soustavu všech bankovních institucí působících na území daného státu, včetně jejich <strong>vztahů mezi sebou</strong> a s dalšími ekonomickými subjekty, jako jsou domácnosti či firmy.</p>
+</div>
+</div>
+<p>Fungování a efektivnost bankovního systému závisí na:</p>
+<ul>
+<li>Ekonomickém systému země.</li>
+<li>Rozvinutosti finančního trhu.</li>
+<li>Měnové stabilitě.</li>
+<li>Zapojení do mezinárodních organizací.</li>
+<li>Regulaci bankovních aktivit.</li>
+</ul>
+<section id="různé-podoby-bankovního-systému" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="různé-podoby-bankovního-systému"><span class="header-section-number">3.1.1</span> Různé podoby bankovního systému</h3>
 <ol type="1">
-<li>Vysvětlit, proč má čas dopad na hodnotu peněz.</li>
-<li>Chápat pojmy budoucí hodnota a současná hodnota.</li>
-<li>Ovládat výpočet budoucí hodnoty pomocí jednoduchého i složeného úročení.</li>
-<li>Dokázat spočítat současnou hodnotu peněžního toku.</li>
-<li>Umět využívat vzroce pro výpočet anuity.</li>
+<li><strong>Jednostupňový vs.&nbsp;dvoustupňový systém</strong>
+<ul>
+<li>Jednostupňový systém: Centrální banka vykonává všechny bankovní funkce.</li>
+<li>Dvoustupňový systém: Oddělení centrální banky (regulátor) a komerčních bank.</li>
+</ul></li>
+<li><strong>Univerzální model vs.&nbsp;model odděleného bankovnictví</strong>
+<ul>
+<li>Univerzální model: Banky mohou poskytovat všechny druhy finančních služeb (např. depozitní i investiční služby).</li>
+<li>Oddělený model: Specializace bank na různé oblasti (např. investiční bankovnictví oddělené od běžných služeb).</li>
+</ul></li>
+<li><strong>Otevřenost vůči zahraničním bankám</strong>
+<ul>
+<li>Vysoce otevřený systém: Vysoká přítomnost zahraničních bank.</li>
+<li>Málo otevřený systém: Omezený vstup zahraničních bank.</li>
+</ul></li>
+<li><strong>Pobočkový vs.&nbsp;unitární vs.&nbsp;propojený systém</strong>
+<ul>
+<li>Pobočkový model: Banky provozují širokou síť poboček.</li>
+<li>Unitární systém: Banky bez poboček, operující centrálně.</li>
+<li>Propojený systém: Systém, ve kterém jsou banky propojené s jinými finančními institucemi.</li>
+</ul></li>
 </ol>
-<section id="úvod-do-časové-hodnoty-peněz" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="úvod-do-časové-hodnoty-peněz"><span class="header-section-number">3.1</span> Úvod do časové hodnoty peněz</h2>
+</section>
+<section id="bankovní-systém-v-české-republice" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="bankovní-systém-v-české-republice"><span class="header-section-number">3.1.2</span> Bankovní systém v České republice</h3>
 <ul>
-<li>Koncept časové hodnoty peněz (TVM, time value of money) uvádí, že peníze dnes jsou hodnotnější než peníze v budoucnosti.</li>
-<li>To je způsobeno třemi důvody:
+<li><p><strong>Dvoustupňový systém</strong>:</p>
+<ul>
+<li><strong>Česká národní banka (ČNB)</strong> funguje jako centrální banka a regulátor.</li>
+<li>Ostatní <strong>komerční banky</strong> poskytují běžné finanční služby.</li>
+</ul></li>
+<li><p><strong>Univerzální model</strong>: České banky mohou poskytovat širokou škálu finančních služeb.</p></li>
+<li><p><strong>Pobočkový model</strong>: Banky v ČR provozují pobočky, které slouží klientům po celé zemi.</p></li>
+<li><p><strong>Otevřený systém</strong>: Český bankovní systém je otevřený pro zahraniční banky.</p></li>
+<li><p><strong>Struktura bank v ČR</strong> (údaje ČNB k 31.7.2024):</p>
+<ul>
+<li>52 bank a poboček (včetně stavebních spořitelen).</li>
+<li>11 bank s českou účastí, z toho 2 banky se <strong>státní účastí</strong>.</li>
+<li>18 bank s převládající zahraniční účastí.</li>
+<li>23 poboček zahraničních bank.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="banka" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="banka"><span class="header-section-number">3.2</span> Banka</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Banka je <strong>právnická osoba</strong> se sídlem v České republice, založená jako <strong>akciová společnost</strong>, která: - <strong>Přijímá vklady</strong> od veřejnosti. - <strong>Poskytuje úvěry</strong>. - Má <strong>bankovní licenci</strong> k výkonu těchto činností.</p>
+</div>
+</div>
+<p><strong>Hlavní činnosti bank:</strong></p>
 <ol type="1">
-<li>potenciálem pro okamžité spoření/investování</li>
-<li>rizikem budoucích platebních selhání</li>
-<li>lidskou preferencí pro okamžitou spotřebu</li>
-</ol></li>
-<li>TVM motivuje ke spoření v současnosti za účelem dosažení budoucích zisků.</li>
-<li>TVM je klíčové pro informovaná finanční rozhodnutí s ohledem na faktory jako riziko, úrokové sazby, inflace a výnos.</li>
-<li>Pomáhá ve finančním plánování, hodnocení firemních projektů, plánování důchodu a osobních investičních rozhodnutí.</li>
-<li>Zatímco inflace snižuje budoucí hodnotu peněz, pozitivní efekt složeného úroku prospívá spořitelům a investorům.</li>
-<li>Delší investiční období a vyšší úrokové sazby zvyšují hodnotu investovaných peněz.</li>
-<li>Základní finanční transakce je jednorázový peněžní tok buď přijatý nebo zaplacený.</li>
-<li>Všechny typy peněžních toků lze rozložit na sérii jednorázových částek.</li>
-<li>Pro ilustraci časové hodnoty peněz lze použít online kalkulačky, např. <a href="https://www.calculator.net/interest-calculator.html" class="uri">https://www.calculator.net/interest-calculator.html</a></li>
-</ul>
-</section>
-<section id="základní-terminologie" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="základní-terminologie"><span class="header-section-number">3.2</span> Základní terminologie</h2>
+<li><strong>Finanční zprostředkování</strong> – pohyb kapitálu od přebytkových subjektů k deficitním.</li>
+<li><strong>Provádění platebního styku</strong> – zajišťování peněžních převodů mezi subjekty.</li>
+<li><strong>Clearingový systém</strong> – zúčtování tuzemských mezibankovních plateb, které v ČR zajišťuje systém CERTIS pod vedením <strong>ČNB</strong>.</li>
+<li><strong>Emise bezhotovostních peněz</strong> – banky vytvářejí bezhotovostní peníze prostřednictvím <strong>multiplikace peněz</strong>.</li>
+<li><strong>Finanční investování</strong> – banky poskytují klientům služby spojené s obchodováním s cennými papíry (CP), deriváty, nebo správou aktiv.</li>
+<li><strong>Další činnosti</strong>:
 <ul>
-<li><strong>Současná hodnota</strong> (PV, present value) <span class="math inline">\(\rightarrow\)</span> hodnota peněz dnes.</li>
-<li><strong>Budoucí hodnota</strong> (FV, future value) <span class="math inline">\(\rightarrow\)</span> hodnota peněz v určitém čase v budoucnosti.</li>
-<li>Příklad: Investujete 1000 na spořicí účtet v bance, která slibuje roční úrokovou sazbu 8%.
+<li>Investice do cenných papírů (i na vlastní účet).</li>
+<li>Poskytování záruk a zajišťování dokumentárního platebního styku.</li>
+<li>Směnárenská činnost.</li>
+</ul></li>
+</ol>
+<section id="peněžní-multiplikátor" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="peněžní-multiplikátor"><span class="header-section-number">3.2.1</span> Peněžní multiplikátor</h3>
+<p><strong>Peněžní multiplikátor</strong> popisuje, jak obchodní banky <strong>vytvářejí peníze</strong> *prostřednictvím <strong>depozit</strong> a <strong>úvěrové expanze</strong>.</p>
 <ul>
-<li>Současná hodnota = 1000</li>
-<li>Budoucí hodnota za rok = vklad + úrok = 1000 + 80 = 1080</li>
+<li><strong>Centrální banka</strong>:
+<ul>
+<li>Vydává hotovost (oběživo a depozita).</li>
+<li>Vytváří bankovní rezervy a bezhotovostní peníze prostřednictvím nástrojů měnové politiky.</li>
+</ul></li>
+<li><strong>Obchodní banky</strong>:
+<ul>
+<li>Vytvářejí bezhotovostní peníze prostřednictvím <strong>úvěrů</strong> a <strong>depozitní multiplikace</strong>.</li>
 </ul></li>
 </ul>
+<p>Obchodní banky jsou povinny držet určité procento z vkladů nebankovních subjektů jako <strong>rezervy</strong> u centrální banky. Toto procento stanovuje centrální banka jako <strong>povinné minimální rezervy (PMR)</strong>.</p>
+<p>Například, pokud centrální banka stanoví <strong>10% míru PMR</strong>, banky musí z každého vkladu 10% uložit u centrální banky a zbývajících 90% mohou použít k <strong>poskytnutí úvěrů</strong> nebo na <strong>finanční investice</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Předpokládejme, že centrální banka <strong>nákupem dluhopisu</strong> dodá do oběhu <strong>100 milionů Kč</strong>. Tato částka vstoupí do oběhu prostřednictvím obchodních bank, které ji postupně multiplikují:</p>
+<ol type="1">
+<li><strong>Obchodní banka</strong> poskytne úvěr ve výši <strong>100 mil. Kč</strong> a klient zaplatí dodavateli za technologie. Dodavatel uloží peníze u své banky, která uloží <strong>10 mil. Kč do rezerv</strong> a zbývajících <strong>90 mil. Kč</strong> poskytne jako úvěr.</li>
+<li>Následně další banka z těchto 90 mil. Kč uloží <strong>9 mil. Kč do rezerv</strong> a poskytne <strong>81 mil. Kč</strong> jako úvěr.</li>
+<li>Tento proces pokračuje dále, což vede k vytvoření dodatečných peněz v oběhu.</li>
+</ol>
+<p>Celkově proces vytváří mnohem více peněz, než bylo původně do oběhu vloženo. <strong>Peněžní multiplikátor</strong> určuje, kolikrát se peněžní zásoba zvýší na základě původní dodané částky.</p>
+</div>
+</div>
 </section>
-<section id="budoucí-hodnota" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="budoucí-hodnota"><span class="header-section-number">3.3</span> Budoucí hodnota</h2>
-<section id="jednoduché-úročení" class="level3" data-number="3.3.1">
-<h3 data-number="3.3.1" class="anchored" data-anchor-id="jednoduché-úročení"><span class="header-section-number">3.3.1</span> Jednoduché úročení</h3>
+<section id="druhy-bank" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="druhy-bank"><span class="header-section-number">3.2.2</span> Druhy bank</h3>
+<section id="univerzální-banky" class="level4">
+<h4 class="anchored" data-anchor-id="univerzální-banky">Univerzální banky</h4>
 <ul>
-<li><strong>Jednoduché úročení</strong> <span class="math inline">\(\rightarrow\)</span> úročí se pouze jistina (počáteční vklad).</li>
-<li>Př. Investujete 1000 na spořicí účet v bance, který slibuje úrok (r) 8% ročně. Jaká bude hodnota investice za 2 roky?
+<li>Banky poskytující širokou škálu finančních služeb, včetně depozitních, úvěrových a investičních produktů.</li>
+</ul>
+</section>
+<section id="specializované-banky" class="level4">
+<h4 class="anchored" data-anchor-id="specializované-banky">Specializované banky</h4>
 <ul>
-<li>FV za 2 roky = 1000 + 80 + 80 = 1160</li>
+<li><strong>Specializované banky</strong> se zaměřují na specifické sektory nebo oblasti ekonomiky.</li>
+<li>Některé z těchto bank jsou vytvořeny za účelem podpory <strong>státní hospodářské politiky</strong>.</li>
+<li>Cílem může být podpora <strong>exportu</strong>, <strong>bydlení</strong> nebo <strong>podnikatelské činnosti</strong>.</li>
+</ul>
+</section>
+<section id="exportní-banky" class="level4">
+<h4 class="anchored" data-anchor-id="exportní-banky">Exportní banky</h4>
+<ul>
+<li>V ČR: <strong>Česká exportní banka</strong>, založena v roce 1995.</li>
+<li>Poskytuje <strong>státní podporu vývozu</strong> formou vývozních úvěrů.</li>
+<li>Cílem je zvýšení <strong>konkurenceschopnosti</strong> českých exportérů na mezinárodních trzích.</li>
+</ul>
+</section>
+</section>
+<section id="záruční-a-rozvojové-banky" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="záruční-a-rozvojové-banky"><span class="header-section-number">3.2.3</span> Záruční a rozvojové banky</h3>
+<ul>
+<li>V ČR: <strong>Národní rozvojová banka, a.s.</strong></li>
+<li>Podporuje <strong>rozvoj malého a středního podnikání</strong>, infrastruktury a dalších sektorů ekonomiky.</li>
+<li>Cílem je napomáhat rozvoji sektorů, které vyžadují <strong>veřejnou podporu</strong>, v souladu s hospodářskou politikou ČR.</li>
+</ul>
+</section>
+<section id="právní-úprava-bankovnictví-v-čr" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="právní-úprava-bankovnictví-v-čr"><span class="header-section-number">3.2.4</span> Právní úprava bankovnictví v ČR</h3>
+<ol type="1">
+<li><strong>Zákon č. 21/1992 Sb., o bankách</strong> – Definuje právní rámec pro fungování bank v ČR.</li>
+<li><strong>Zákon č. 6/1993 Sb., o České národní bance</strong> – Upravuje postavení, činnost a organizační strukturu <strong>ČNB</strong>.</li>
+<li><strong>Právní normy EU</strong>:
+<ul>
+<li>ČR je členem EU, a proto v ČR platí i <strong>nařízení Evropského parlamentu a Rady EU</strong>.</li>
+<li><strong>Směrnice</strong> a <strong>doporučení</strong> EU musí být začleněny do českého právního řádu.</li>
 </ul></li>
-<li>Obecný vzorec: <span class="math display">\[
-FV = PV \times [1 + (r \times n)]
-\]</span></li>
-<li>Př. Kolik naspoříte za 15 let při roční úrokové sazbě 8% a 10%? <span class="math display">\[
-FV = 1000 \times (1 + [0.08 \times 15]) = 2200
-\]</span> <span class="math display">\[
-FV = 1000 \times (1 + [0.10 \times 15]) = 2500
-\]</span></li>
+</ol>
+<p><strong>Princip jednotné bankovní licence:</strong></p>
+<ul>
+<li>Banky z členských zemí EU mají vůči ČNB pouze <strong>informační povinnost</strong>.</li>
+<li>Banky mimo EU musí <strong>požádat o licenci</strong> od ČNB pro provozování bankovních služeb v ČR.</li>
 </ul>
 </section>
-<section id="složené-úročení" class="level3" data-number="3.3.2">
-<h3 data-number="3.3.2" class="anchored" data-anchor-id="složené-úročení"><span class="header-section-number">3.3.2</span> Složené úročení</h3>
+<section id="hospodaření-bank" class="level3" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="hospodaření-bank"><span class="header-section-number">3.2.5</span> Hospodaření bank</h3>
+<p><strong>Finanční situace bank</strong> je hodnocena pomocí několika klíčových poměrových ukazatelů:</p>
+<ol type="1">
+<li><p><strong>Kapitálová přiměřenost</strong> – Poměr <strong>regulatorního kapitálu Tier 1</strong> k <strong>rizikově váženým aktivům</strong>.</p></li>
+<li><p><strong>Rizikovost</strong>:</p>
 <ul>
-<li><strong>Složené úročení</strong> <span class="math inline">\(\rightarrow\)</span> úročí se jistina a všechny získané úroky.</li>
-<li>Př. Investujete 1000 na spořicí účet v bance, který slibuje úrok (r) 8% ročně. Po prvním roce vložíte získané peníze zpět na účet. Kolik budete mít za 2 roky? <span class="math display">\[
-FV = PV \times (1 + r) \times (1 + r) = 1000 \times 1.08 \times 1.08 = 1166
-\]</span></li>
-<li>Obecný vzorec: <span class="math display">\[
-FV = PV \times (1 + r)^n
-\]</span>
-<ul>
-<li><span class="math inline">\(n\)</span> je počet úrokových období v letech</li>
+<li>Podíl <strong>pohledávek se selháním</strong> na celkových pohledávkách.</li>
+<li>Poměr <strong>kapitálu Tier 1</strong> k celkovým aktivům.</li>
 </ul></li>
-<li>Př. Kolik naspoříte za 15 let z původní částky 1000 při roční úrokové sazbě 8% a 10% s použitím složeného úročení? <span class="math display">\[
-FV = 1000 \times (1 + 0.08)^{15} = 3172.169
-\]</span> <span class="math display">\[
-FV = 1000 \times (1 + 0.10)^{15} = 4177.248
-\]</span></li>
-</ul>
-</section>
-</section>
-<section id="současná-hodnota" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="současná-hodnota"><span class="header-section-number">3.4</span> Současná hodnota</h2>
+<li><p><strong>Ziskovost</strong>:</p>
 <ul>
-<li><p>Diskontování umožňuje výpočet současné hodnoty pokud známe budoucí hodnotu a úrokovou sazbu.</p></li>
-<li><p>Dlůžitý koncept pro rozhodování o investicích a jejich oceňování.</p></li>
-<li><p>Obecný vzorec: <span class="math display">\[
-PV = \frac{FV}{(1+r)^n}
-\]</span></p></li>
-<li><p>Př. Máte možnost investice, která vám za jeden rok vyplatí 1000. Kolik budete ochotni investovat dnes, pokud je běžná úroková sazba 8%? Jak se změní výsledek, pokud dostanete 1000 až za 7 let? <span class="math display">\[
-PV = \frac{1000}{(1+ 0.08)^1} = 925.93
-\]</span> <span class="math display">\[
-PV = \frac{1000}{(1+ 0.08)^7} = 583.49
-\]</span></p></li>
-</ul>
-</section>
-<section id="kratší-časové-intervaly-než-jeden-rok" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="kratší-časové-intervaly-než-jeden-rok"><span class="header-section-number">3.5</span> Kratší časové intervaly než jeden rok</h2>
-<ul>
-<li>Obecný vzorec: <span class="math display">\[
-FV = PV \times (1 + \frac{r}{m})^{n \times m}
-\]</span>
-<ul>
-<li><span class="math inline">\(m\)</span> je počet úrokových období za rok</li>
-<li><span class="math inline">\(n\)</span> je počet let</li>
+<li><strong>ROAA (Return on Average Assets)</strong> – Míra ziskovosti průměrných aktiv: <span class="math display">\[ ROAA = \frac{\text{Čistý zisk}}{\text{Průměrná aktiva}} \times 100 \]</span></li>
+<li><strong>ROAE (Return on Average Equity)</strong> – Míra ziskovosti průměrného vlastního kapitálu: <span class="math display">\[ ROAE = \frac{\text{Čistý zisk}}{\text{Průměrný vlastní kapitál}} \times 100 \]</span></li>
+<li><strong>Čistá úroková marže (NIM)</strong> – Poměr čistého úrokového zisku k průměrným výnosovým aktivům: <span class="math display">\[ NIM = \frac{\text{Čistý úrokový zisk}}{\text{Průměrná výnosová aktiva}} \times 100 \]</span></li>
 </ul></li>
-<li>Př. Kolik naspoříte za 15 let z původní částky 1000 při roční úrokové sazbě 8% s použitím složeného úročení pokud se bude úrok připisovat měsíčně/čtvrtletně? <span class="math display">\[
-FV = 1000 \times (1 + \frac{0.08}{12})^{15 \times 12} = 3306.921
-\]</span> <span class="math display">\[
-FV = 1000 \times (1 + \frac{0.08}{4})^{15 \times 4} = 3281.031
-\]</span></li>
+</ol>
+<p>Vybrané finanční ukazatele bankovního sektoru ČR:</p>
+<p><img src="images/fig_3_1.png" class="img-fluid"> <em>Zdroj: www.cnb.cz</em></p>
+<p>Mezinárodní srovnání ROA:</p>
+<p><img src="images/fig_3_2.png" class="img-fluid"> <em>Zdroj: Macrotrends.net</em></p>
+<p>Mezinárodní srovnání ROAE:</p>
+<p><img src="images/fig_3_3.png" class="img-fluid"> <em>Zdroj: Macrotrends.net</em></p>
+</section>
+</section>
+<section id="úrokové-míry-v-ekonomice" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="úrokové-míry-v-ekonomice"><span class="header-section-number">3.3</span> Úrokové míry v ekonomice</h2>
+<p><strong>Úrokové míry</strong> patří mezi důležité ekonomické ukazatele, které výrazně ovlivňují <em>ekonomickou aktivitu. Centrální banky obvykle vyhlašují tři základní sazby. V ČR tyto </em>sazby stanovuje <strong>Česká národní banka (ČNB)</strong>.</p>
+<p>Základní sazby ČNB (platné od 2.8.2024):</p>
+<ul>
+<li><strong>Diskontní sazba</strong>: 3,50 %</li>
+<li><strong>2T Repo sazba</strong>: 4,50 %</li>
+<li><strong>Lombardní sazba</strong>: 5,50 %</li>
+</ul>
+<section id="diskontní-sazba" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="diskontní-sazba"><span class="header-section-number">3.3.1</span> Diskontní sazba</h3>
+<ul>
+<li>Diskontní sazba je sazba, kterou ČNB používá pro <strong>depozitní facilitu</strong> – možnost pro banky uložit přebytečnou likviditu u ČNB přes noc.</li>
+<li>Tato sazba představuje <strong>dolní hranici</strong> pro pohyb krátkodobých úrokových sazeb na peněžním trhu.</li>
+<li>Změna diskontní sazby ovlivňuje <strong>množství peněz v oběhu</strong>:
+<ul>
+<li><strong>Zvýšení diskontní sazby</strong> <span class="math inline">\(\rightarrow\)</span> snaha snížit množství peněz v oběhu <span class="math inline">\(\rightarrow\)</span> růst úrokových sazeb komerčních bank <span class="math inline">\(\rightarrow\)</span> větší příliv kapitálu do země <span class="math inline">\(\rightarrow\)</span> paradoxně růst peněžní zásoby, což může být v rozporu s původním záměrem centrální banky.</li>
+</ul></li>
+<li>Dlouhodobě <strong>diskontní sazba</strong> nepředstavuje hlavní operativní nástroj měnové politiky.</li>
+</ul>
+<p><img src="images/fig_3_4.png" class="img-fluid"></p>
+</section>
+<section id="repo-sazba" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="repo-sazba"><span class="header-section-number">3.3.2</span> Repo sazba</h3>
+<ul>
+<li><strong>2T Repo sazba</strong> je hlavní měnový nástroj ČNB. Repo operace probíhají ve formě tendrů, při kterých ČNB přijímá přebytečnou likviditu od bank a předává jim jako zajištění cenné papíry.</li>
+<li>Repo operace mají <strong>14denní splatnost</strong>, proto se sazba označuje jako <strong>dvoutýdenní repo sazba</strong>.</li>
+<li>Repo operace slouží především k <strong>odčerpání přebytečné likvidity</strong> z bankovního sektoru.</li>
+</ul>
+<p><img src="images/fig_3_5.png" class="img-fluid"></p>
+</section>
+<section id="lombardní-sazba" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="lombardní-sazba"><span class="header-section-number">3.3.3</span> Lombardní sazba</h3>
+<ul>
+<li><strong>Lombardní sazba</strong> umožňuje bankám vypůjčit si likviditu od ČNB formou <strong>repo operace</strong> přes noc.</li>
+<li>Vzhledem k přebytku likvidity v bankovním systému je lombardní facilita málo využívaná.</li>
+<li>Lombardní sazba tvoří <strong>horní hranici</strong> pro krátkodobé úrokové sazby na peněžním trhu.</li>
+<li>ČNB může dočasně omezit nebo zastavit poskytování lombardních úvěrů z mimořádných důvodů měnové politiky.</li>
+</ul>
+<p><img src="images/fig_3_6.png" class="img-fluid"></p>
+</section>
+<section id="mezibankovní-úrokové-sazby" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="mezibankovní-úrokové-sazby"><span class="header-section-number">3.3.4</span> Mezibankovní úrokové sazby</h3>
+<p><strong>Mezibankovní úrokové sazby</strong> jsou sjednávány individuálně mezi komerčními bankami. Referenční banky kotují dvě sazby:</p>
+<ul>
+<li><strong>Sazba „bid“</strong>: Sazba, za kterou banky přijímají mezibankovní depozita.</li>
+<li><strong>Sazba „offer“</strong>: Sazba, za kterou banky prodávají mezibankovní depozita.</li>
+</ul>
+<section id="pribor" class="level4">
+<h4 class="anchored" data-anchor-id="pribor">PRIBOR</h4>
+<ul>
+<li><strong>PRIBOR (Prague Interbank Offered Rate)</strong> je průměrná sazba, za kterou si banky navzájem poskytují likviditu na českém mezibankovním trhu.</li>
+<li>PRIBOR slouží jako <strong>referenční sazba</strong> pro úvěry komerčních bank, jejichž sazby jsou často vázané na PRIBOR.</li>
 </ul>
 </section>
-<section id="anuita" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="anuita"><span class="header-section-number">3.6</span> Anuita</h2>
+</section>
+<section id="význam-úrokových-sazeb-na-trhu-mezibankovních-depozit" class="level3" data-number="3.3.5">
+<h3 data-number="3.3.5" class="anchored" data-anchor-id="význam-úrokových-sazeb-na-trhu-mezibankovních-depozit"><span class="header-section-number">3.3.5</span> Význam úrokových sazeb na trhu mezibankovních depozit</h3>
 <ul>
-<li><strong>Anuita</strong> <span class="math inline">\(\rightarrow\)</span> série stejných peněžních toků v pravidelných intervalech.</li>
-<li><strong>Anuita běžná</strong> (polhůtní) <span class="math inline">\(\rightarrow\)</span> peněžní toky nastávají na konci každého obddobí.</li>
-<li><strong>Anuita splatná</strong> (předlhůtní) <span class="math inline">\(\rightarrow\)</span> peněžní toky nastávají na začátku každého období.</li>
+<li><strong>Mezibankovní sazby</strong> jsou citlivé na měnově politická opatření centrální banky a další ekonomické vlivy.</li>
+<li>Ovlivňují <strong>úrokové sazby bankovních produktů</strong>, jako jsou depozita a úvěry.</li>
+<li><strong>Různí dlužníci</strong> mají různé úrokové sazby podle svého <strong>kreditního rizika</strong> – státní dluhopisy mají nižší sazby, zatímco rizikovější dlužníci platí vyšší úroky.</li>
 </ul>
-<section id="budoucí-hodnota-anuity" class="level3" data-number="3.6.1">
-<h3 data-number="3.6.1" class="anchored" data-anchor-id="budoucí-hodnota-anuity"><span class="header-section-number">3.6.1</span> Budoucí hodnota anuity</h3>
+</section>
+<section id="reálná-a-nominální-úroková-míra" class="level3" data-number="3.3.6">
+<h3 data-number="3.3.6" class="anchored" data-anchor-id="reálná-a-nominální-úroková-míra"><span class="header-section-number">3.3.6</span> Reálná a nominální úroková míra</h3>
 <ul>
-<li><p>Př. Na konci každého roku investujete 1000 po dobu tří let. Investice se zhodnocuje úrokem 8%. Jaká bude budoucí hodnota investice? (běžná anuita) <span class="math display">\[
-FV = 1000 \times 1.08^2 +1000 \times 1.08^1 +1000 \times 1.08^0 = 3246
-\]</span></p></li>
-<li><p>Obecný vzorec pro běžnou anuitu: <span class="math display">\[
-\text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r}
+<li><strong>Nominální úroková míra</strong> je sazba bez ohledu na inflaci.</li>
+<li><strong>Reálná úroková míra</strong> je nominální sazba upravená o inflaci. Vypočítá se jako:</li>
+</ul>
+<p><span class="math display">\[
+\text{Reálná úroková míra} = \text{Nominální úroková míra} - \text{Inflace}
 \]</span></p>
 <ul>
-<li>FVA (future value of an ordinary annuity)</li>
-<li>PMT (periodic equal payment)</li>
-</ul></li>
-<li><p>Obecný vzorec pro splatnou anuitu: <span class="math display">\[
-\text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r} \times (1 + r)
-\]</span></p></li>
+<li>Reálná úroková míra určuje skutečnou <strong>cenu půjčování</strong> a <strong>odměnu za půjčování</strong> po zohlednění inflace.</li>
 </ul>
 </section>
-<section id="perpetuita" class="level3" data-number="3.6.2">
-<h3 data-number="3.6.2" class="anchored" data-anchor-id="perpetuita"><span class="header-section-number">3.6.2</span> Perpetuita</h3>
+</section>
+<section id="centrální-banka" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="centrální-banka"><span class="header-section-number">3.4</span> Centrální banka</h2>
+<p><strong>Centrální banka</strong> se od ostatních bank v zemi liší tím, že má <strong>výjimečné pravomoci</strong> <em>a vykonává činnosti, které žádná jiná banka provádět nemůže. Mezi její hlavní rysy </em>patří:</p>
 <ul>
-<li><strong>Perpetuita</strong> je typ anuity, který poskytuje nekonečnou sérii peněžních toků.</li>
-<li>Jinými slovy, peněžní toky pokračují na dobu neurčitou.</li>
-<li>Často se používá pro oceňování preferovaných akcií.</li>
-<li>Obecný vzorec pro současnou hodnotu (PV) perpetuity je: <span class="math display">\[
-PV = \frac{C}{r}
-\]</span></li>
-<li>kde:
+<li><strong>Emisní monopol</strong>: Centrální banka má výhradní právo vydávat hotovostní peníze.</li>
+<li><strong>Provádění měnové politiky</strong>: Centrální banka řídí monetární politiku země.</li>
+<li><strong>Regulace bankovního systému</strong>: Dozor nad bankami a finančním systémem.</li>
+</ul>
+<p>Důvody vzniku centrální banky:</p>
 <ul>
-<li><span class="math inline">\(C\)</span> je konstantní peněžní tok přijatý za každé období,</li>
-<li><span class="math inline">\(r\)</span> je diskontní sazba nebo úroková sazba.</li>
+<li>Potřeba stabilizovat měnový a finanční systém.</li>
+<li>Regulace bankovního sektoru.</li>
+<li>Podpora hospodářské politiky státu.</li>
+</ul>
+<section id="česká-národní-banka-čnb" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="česká-národní-banka-čnb"><span class="header-section-number">3.4.1</span> Česká národní banka (ČNB)</h3>
+<ul>
+<li>Řídící orgán: <strong>Bankovní rada ČNB</strong>
+<ul>
+<li>Guvernér: Aleš Michl</li>
+<li>Dva víceguvernéři: Jan Frait a Eva Zamrazilová</li>
+<li>Další členové rady: Jan Kubíček, Jan Procházka, Tomáš Holub, Karina Kubelková</li>
+<li>Členové bankovní rady jsou jmenováni prezidentem ČR na šestileté období.</li>
 </ul></li>
-<li>Vzorec předpokládá, že první platba je provedena na konci prvního období, peněžní toky jsou konstatní a pokračují na dobu neurčitou.</li>
-<li>Př. Předpokládejte, že zvažujete investování do perpetuity, která slibuje platbu 500 na konci každého roku na dobu neurčitou a úroková sazba je 5%. Současná hodnota této perpetuity by byla: <span class="math display">\[
-PV = \frac{500}{0.05} = 10000
-\]</span></li>
-<li>Takže byste měli být ochotni zaplatit až 10 000 za tuto perpetuitu.</li>
+</ul>
+<p><strong>Cíle ČNB:</strong></p>
+<ul>
+<li><strong>Primární cíl</strong>: Udržování <strong>cenové stability</strong> (kontrola inflace).</li>
+<li><strong>Sekundární cíl</strong>: Podpora <strong>hospodářské politiky vlády</strong> vedoucí k udržitelnému růstu, nízké nezaměstnanosti a stabilnímu růstu HDP.</li>
+</ul>
+<p><strong>Hlavní funkce ČNB:</strong></p>
+<ol type="1">
+<li>Emise hotovostních peněz (bankovky a mince).</li>
+<li>Provádění měnové politiky (expanzivní a restriktivní opatření).</li>
+<li>Regulace a dohled nad finančním trhem.</li>
+</ol>
+<section id="makroekonomické-funkce" class="level4">
+<h4 class="anchored" data-anchor-id="makroekonomické-funkce">Makroekonomické funkce</h4>
+<ol type="1">
+<li><strong>Měnová politika</strong>:
+<ul>
+<li>Provádění expanzivní (podpora růstu) nebo restriktivní (boj proti inflaci) politiky.</li>
+</ul></li>
+<li><strong>Emise hotovostních peněz</strong>:
+<ul>
+<li>ČNB má <strong>emisní monopol</strong> na vydávání peněz.</li>
+<li>Stanovuje design a ochranné prvky bankovek a mincí.</li>
+<li>Zajišťuje bezpečnost a likvidaci vyřazených peněz.</li>
+</ul></li>
+<li><strong>Devizová politika</strong>:
+<ul>
+<li>ČNB spravuje <strong>devizové rezervy</strong>.</li>
+<li>Ovlivňuje <strong>měnový kurz</strong> a obchoduje se zlatem a devizami.</li>
+<li>Povolení směnárenské činnosti.</li>
+</ul></li>
+</ol>
+</section>
+<section id="mikroekonomické-funkce" class="level4">
+<h4 class="anchored" data-anchor-id="mikroekonomické-funkce">Mikroekonomické funkce</h4>
+<ol type="1">
+<li><strong>Banka bank</strong>:
+<ul>
+<li>ČNB přijímá vklady a poskytuje úvěry komerčním bankám.</li>
+<li>Vede účty bank a zajišťuje clearing (zúčtování mezi bankami).</li>
+<li>Reguluje povinné minimální rezervy.</li>
+</ul></li>
+<li><strong>Banka státu</strong>:
+<ul>
+<li>ČNB vede účty státního rozpočtu a spravuje státní dluh.</li>
+<li>Poskytuje úvěry státu a emituje státní dluhopisy.</li>
+</ul></li>
+<li><strong>Regulace a dohled nad bankovním sektorem</strong>:
+<ul>
+<li>ČNB dohlíží na banky a finanční instituce, uděluje bankovní licence.</li>
+<li>Kontroluje dodržování předpisů a může pozastavit činnost banky.</li>
+</ul></li>
+<li><strong>Reprezentace státu v měnové oblasti</strong>:
+<ul>
+<li>Zastupuje ČR v mezinárodních organizacích (IMF, WB).</li>
+<li>Informuje veřejnost o měnovém vývoji.</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="nástroje-čnb-v-oblasti-měnové-politiky" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="nástroje-čnb-v-oblasti-měnové-politiky"><span class="header-section-number">3.4.2</span> Nástroje ČNB v oblasti měnové politiky</h3>
+<section id="přímé-administrativní-nástroje" class="level4">
+<h4 class="anchored" data-anchor-id="přímé-administrativní-nástroje">Přímé (administrativní) nástroje:</h4>
+<ul>
+<li>Regulace a limity na <strong>úvěry</strong>, <strong>úrokové sazby</strong>, či <strong>likviditu</strong>.</li>
+<li>Používány zřídka a jsou tržně nekonformní.</li>
 </ul>
 </section>
-<section id="jak-dlouho-trvá-naspořit-milion" class="level3" data-number="3.6.3">
-<h3 data-number="3.6.3" class="anchored" data-anchor-id="jak-dlouho-trvá-naspořit-milion"><span class="header-section-number">3.6.3</span> Jak dlouho trvá naspořit milion?</h3>
+<section id="nepřímé-tržně-konformní-nástroje" class="level4">
+<h4 class="anchored" data-anchor-id="nepřímé-tržně-konformní-nástroje">Nepřímé (tržně konformní) nástroje:</h4>
+<ol type="1">
+<li><strong>Povinné minimální rezervy (PMR)</strong>:
 <ul>
-<li>Výpočet s využitím běžné anuity.</li>
-<li>Jednorázová investice 10 000:</li>
-</ul>
-<table class="table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Úroková sazba (%)</th>
-<th style="text-align: center;">Čas v letech</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">94,4</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">10</td>
-<td style="text-align: center;">48,3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">15</td>
-<td style="text-align: center;">33,0</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">20</td>
-<td style="text-align: center;">25,3</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Pravidelná investice 10 000 ročně:</li>
-</ul>
-<table class="table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Úroková sazba (%)</th>
-<th style="text-align: center;">Čas v letech</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">36,7</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">10</td>
-<td style="text-align: center;">25,2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">15</td>
-<td style="text-align: center;">19,8</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">20</td>
-<td style="text-align: center;">16,7</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="současná-hodnota-anuity" class="level3" data-number="3.6.4">
-<h3 data-number="3.6.4" class="anchored" data-anchor-id="současná-hodnota-anuity"><span class="header-section-number">3.6.4</span> Současná hodnota anuity</h3>
-<ul>
-<li><p>Používá se např. k oceňování investic.</p></li>
-<li><p>Př. Mate možnost investice, která vám za 1 rok vyplatí 1000 a poté ještě další 2 roky budete dostávat stejnou částku. Kolik jste ochotni za danou investici zaplatit pokud je běžná úroková sazba 8%? <span class="math display">\[
-PV = 1000 \times \frac{1}{1,08^1} + 1000 \times \frac{1}{1,08^2} + 1000 \times
-\frac{1}{1,08^3} = 2577
-\]</span></p></li>
-<li><p>Obecný vzorec pro běžnou anuitu: <span class="math display">\[
-\text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r}
-\]</span></p>
-<ul>
-<li>PVA (present value of an ordinary annuity)</li>
-<li>PMT (periodic equal payment)</li>
+<li>Banky musí držet určité procento z vkladů jako rezervu u ČNB (v ČR 2 %).</li>
 </ul></li>
-<li><p>Obecný vzorec pro splatnou anuitu: <span class="math display">\[
-\text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r} \times (1+r)
-\]</span></p></li>
-</ul>
+<li><strong>Diskontní nástroje</strong>:
+<ul>
+<li>Diskontní sazba: Pro vklady komerčních bank u ČNB.</li>
+<li>2T Repo sazba: Klíčová sazba pro řízení likvidity bankovního sektoru.</li>
+<li>Lombardní sazba: Sazba pro půjčky od ČNB komerčním bankám.</li>
+</ul></li>
+<li><strong>Operace na volném trhu</strong>:
+<ul>
+<li>Nákup a prodej vládních cenných papírů.</li>
+<li>Devizové intervence na podporu měnového kurzu.</li>
+</ul></li>
+<li><strong>Dohody, výzvy, doporučení</strong>:
+<ul>
+<li>Nepřímé opatření ČNB k ovlivňování chování bank a trhu.</li>
+</ul></li>
+</ol>
 
 
+</section>
 </section>
 </section>
 
@@ -574,18 +768,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -617,11 +800,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -631,8 +853,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -644,7 +875,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -688,6 +1042,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -713,6 +1068,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -774,17 +1155,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week_02.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy: Peníze a úrokové sazby</span></span>
+      <a href="./week_02.html" class="pagination-link" aria-label="Ekonomické základy">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week_04.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week_04.html" class="pagination-link" aria-label="Mezinárodní finance">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mezinárodní finance</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

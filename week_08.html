@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Základy financí - 8&nbsp; Finanční systém</title>
+<title>8&nbsp; Časová hodnota peněz – Základy financí</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,12 +62,42 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -71,13 +107,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_08.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Finanční systém</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_08.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -86,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -95,34 +131,34 @@ ul.task-list li input[type="checkbox"] {
       <a href="./">Základy financí</a> 
         <div class="sidebar-tools-main">
     <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
+              <i class="bi bi-file-pdf pe-1"></i>
             Download PDF
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
+              <i class="bi bi-journal pe-1"></i>
             Download ePub
             </a>
           </li>
       </ul>
     </div>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
+              <i class="bi bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
+              <i class="bi bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
@@ -147,37 +183,37 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí a struktura firmy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy: Peníze a úrokové sazby</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bankovní systém</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mezinárodní finance</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Podnikové finance a zdroje finančních informací</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Finanční management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -189,53 +225,64 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_08.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Finanční systém</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Podnikové finance I</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Podnikové finance II</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Úvod do finančních derivátů</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Jak firmy přemýšlejí o investování</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Předtermín zkoušky</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Úvod do řízení rizik a finančních derivátů</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Obsah lekce</h2>
+   
+  <ul class="collapse">
+  <li><a href="#úvod-do-časové-hodnoty-peněz" id="toc-úvod-do-časové-hodnoty-peněz" class="nav-link active" data-scroll-target="#úvod-do-časové-hodnoty-peněz"><span class="header-section-number">8.1</span> Úvod do časové hodnoty peněz</a></li>
+  <li><a href="#budoucí-hodnota-peněz" id="toc-budoucí-hodnota-peněz" class="nav-link" data-scroll-target="#budoucí-hodnota-peněz"><span class="header-section-number">8.2</span> Budoucí hodnota peněz</a></li>
+  <li><a href="#současná-hodnota-peněz" id="toc-současná-hodnota-peněz" class="nav-link" data-scroll-target="#současná-hodnota-peněz"><span class="header-section-number">8.3</span> Současná hodnota peněz</a></li>
+  <li><a href="#kratší-časové-intervaly-než-jeden-rok" id="toc-kratší-časové-intervaly-než-jeden-rok" class="nav-link" data-scroll-target="#kratší-časové-intervaly-než-jeden-rok"><span class="header-section-number">8.4</span> Kratší časové intervaly než jeden rok</a></li>
+  <li><a href="#anuita" id="toc-anuita" class="nav-link" data-scroll-target="#anuita"><span class="header-section-number">8.5</span> Anuita</a></li>
+  <li><a href="#příklady-k-procvičení" id="toc-příklady-k-procvičení" class="nav-link" data-scroll-target="#příklady-k-procvičení"><span class="header-section-number">8.6</span> Příklady k procvičení</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Finanční systém</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></h1>
 </div>
 
 
@@ -248,23 +295,1154 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<div class="callout callout-style-default callout-tip callout-titled">
+
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Studijní materiály
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Materiály v Interaktivní osnově v <a href="https://is.muni.cz/auth/el/econ/podzim2023/BPF_ZAFI/130966369/ZAFI_Financni_system.pdf?predmet=1546566">ISu</a>.</p>
+<ul>
+<li>Dahlquist, J. R., &amp;; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
+<ul>
+<li>Chapter 7 - Time Value of Money I: Single Payment Value</li>
+<li>Chapter 8 - Time Value of Money II: Equal Multiple Payments</li>
+<li>Chapter 9 - Time Value of Money III: Unequal Multiple Payment Values</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p><strong>Výstupy z učení:</strong></p>
+<ol type="1">
+<li>Vysvětlit vliv času na hodnotu peněz.</li>
+<li>Ovládat výpočet budoucí hodnoty pomocí jednoduchého i složeného úročení.</li>
+<li>Dokázat spočítat současnou hodnotu peněz.</li>
+<li>Chápat pojek efektivní úroková míra.</li>
+<li>Umět využívat vzroce pro výpočet anuity.</li>
+</ol>
+<section id="úvod-do-časové-hodnoty-peněz" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="úvod-do-časové-hodnoty-peněz"><span class="header-section-number">8.1</span> Úvod do časové hodnoty peněz</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Časová hodnota peněz (TVM, time value of money) <span class="math inline">\(\rightarrow\)</span> peníze dnes jsou hodnotnější než stejné množství peněz získané v budoucnosti.</p>
+</div>
+</div>
+<p>Hlavní důvody:</p>
+<ol type="1">
+<li>preference okamžité spotřeby</li>
+<li>riziko platebního selhání</li>
+<li>potencíál zhodnocení (investování)</li>
+</ol>
+<section id="proč-je-tvm-důležitá" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="proč-je-tvm-důležitá"><span class="header-section-number">8.1.1</span> Proč je TVM důležitá?</h3>
+<ul>
+<li>Celý svět financí je postaven na TVM.</li>
+<li>Základní koncept každého finančního rozhodnutí (např. spotřeba, investice, půjčky, zajištění na důchod, atd.)</li>
+<li>Umožňuje lépe se rozhodovat v běžném životě.</li>
+</ul>
+</section>
+<section id="základní-pojmy" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="základní-pojmy"><span class="header-section-number">8.1.2</span> Základní pojmy</h3>
+<ul>
+<li>Úrok​ <span class="math inline">\(\rightarrow\)</span> rozdíl mezi vypůjčenou a vrácenou částkou vyjádřený v peněžních jednotkách.​</li>
+<li>Úročení ​<span class="math inline">\(\rightarrow\)</span> způsob započítávání úroků.</li>
+<li>Úroková míra ​<span class="math inline">\(\rightarrow\)</span> odměna za zapůjčení kapitálu vyjádřená v procentech.​</li>
+<li>Úroková sazba ​<span class="math inline">\(\rightarrow\)</span> konkrétní úroková míra pro určitou operaci (míra vztažená ke konkrétnímu finančnímu produktu)​.</li>
+</ul>
+<section id="fisherova-rovnice" class="level4">
+<h4 class="anchored" data-anchor-id="fisherova-rovnice">Fisherova rovnice</h4>
+<ul>
+<li>Nominální úroková míra​<span class="math inline">\(\rightarrow\)</span> sjednaná úroková míra mezi vypůjčovatelem a poskytovatelem kapitálu.​</li>
+<li>​Reálná úroková míra ​<span class="math inline">\(\rightarrow\)</span> upravená nominální úroková míra o vliv inflace.​</li>
+<li>Aktuální informace o inflace jsou na stránkách <a href="https://www.cnb.cz/">ČNB</a>.</li>
+</ul>
+<p><span class="math display">\[
+i = r + \pi
+\]</span> - <span class="math inline">\(i \dots\)</span> nominální úroková míra - <span class="math inline">\(r \dots\)</span> reálná úroková míra - <span class="math inline">\(\pi \dots\)</span> očekávaná inflace</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Úroková sazba na spořicím účtu v bance je 4%. Jaká je reálná úroková míra pokud očekáváme inflaci ve výši 2.5%?</p>
+<p><span class="math display">\[
+i = r + \pi
+\]</span></p>
+<p><span class="math display">\[
+4\% = r + 2.5\%
+\]</span></p>
+<p><span class="math display">\[
+r = 4\% - 2.5\% = 1.5\%
+\]</span></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="budoucí-hodnota-peněz" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="budoucí-hodnota-peněz"><span class="header-section-number">8.2</span> Budoucí hodnota peněz</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Budoucí hodnota (FV, future value) peněz <span class="math inline">\(\rightarrow\)</span> hodnota peněz v určitém čase v budoucnosti.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Investujete 100 Kč na spořicí účtet v bance, která slibuje roční úrokovou sazbu 8%. Budoucí hodnota peněz je celková naspořená částka za určitý čas. Budoucí hodnota 100 Kč za jeden rok je 108 Kč.</p>
+</div>
+</div>
+<section id="jednoduché-úročení" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="jednoduché-úročení"><span class="header-section-number">8.2.1</span> Jednoduché úročení</h3>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Jednoduché úročení <span class="math inline">\(\rightarrow\)</span> úročí se pouze jistina (počáteční vklad).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Investujete 100 Kč na spořicí účet v bance, který slibuje roční úrokovou sazbu 8%. Jaká bude hodnota investice za 2 roky?</p>
+<p><span class="math display">\[ FV = 100 + 8 + 8 = 116 \]</span></p>
+</div>
+</div>
+<ul>
+<li><strong>Obecný vzorec pro jednoduché úročení:</strong> <span class="math display">\[
+FV = PV \times (1 + [r \times n])
+\]</span>
+<ul>
+<li><span class="math inline">\(r \dots\)</span> úroková sazba</li>
+<li><span class="math inline">\(n \dots\)</span> počet úrokových období</li>
+<li><span class="math inline">\(PV \dots\)</span> současná hodnota peněz</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Kolik naspoříte s použitím jednoduchého úročení za 15 let při roční úrokové sazbě 8% a 10%? Počáteční vklad je 100 Kč. <span class="math display">\[
+FV = 100 \times (1 + [0.08 \times 15]) = 220
+\]</span> <span class="math display">\[
+FV = 100 \times (1 + [0.10 \times 15]) = 250
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="složené-úročení" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="složené-úročení"><span class="header-section-number">8.2.2</span> Složené úročení</h3>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Složené úročení <span class="math inline">\(\rightarrow\)</span> úročí se jistina a všechny průběžně získané úroky.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Investujete 100 Kč na spořicí účet v bance, který slibuje úrok 8% ročně. Po prvním roce vložíte získané peníze zpět na účet. Kolik budete mít za 2 roky?</p>
+<p><span class="math display">\[
+FV = PV \times (1 + r) \times (1 + r) = 100 \times 1.08 \times 1.08 = 116.64
+\]</span></p>
+</div>
+</div>
+<ul>
+<li><strong>Obecný vzorec pro složené úročení:</strong> <span class="math display">\[
+FV = PV \times (1 + r)^n
+\]</span>
+<ul>
+<li><span class="math inline">\(r \dots\)</span> úroková sazba</li>
+<li><span class="math inline">\(n \dots\)</span> počet úrokových období</li>
+<li><span class="math inline">\(PV \dots\)</span> současná hodnota peněz</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Kolik naspoříte s použitím složeného úročení za 15 let při roční úrokové sazbě 8% a 10%? Počáteční vklad je 100 Kč a úroky jsou připisovány jednou ročně. <span class="math display">\[
+FV = 100 \times (1 + 0.08)^{15} = 317.22
+\]</span> <span class="math display">\[
+FV = 100 \times (1 + 0.10)^{15} = 417.72
+\]</span></p>
+</div>
+</div>
+</section>
+</section>
+<section id="současná-hodnota-peněz" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="současná-hodnota-peněz"><span class="header-section-number">8.3</span> Současná hodnota peněz</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Současná hodnota (PV, present value) peněz <span class="math inline">\(\rightarrow\)</span> hodnota peněz dnes.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Investujete 100 Kč na spořicí účtet v bance, která slibuje roční úrokovou sazbu 8%. Současná hodnota peněz je investovaných 100 Kč.</p>
+</div>
+</div>
+<ul>
+<li>Výpočet současné hodnoty se ozančuje také jako <strong><em>diskontování</em></strong>.</li>
+<li>Používá se v případech, kdy známe budoucí hodnotu daného peněžního toku a chceme zjistit jeho hodnotu v současnosti.</li>
+<li>Dlůžitý koncept pro rozhodování o investicích a jejich oceňování.</li>
+<li><strong>Obecný vzorec pro výpočet současné hodnoty:</strong> <span class="math display">\[
+PV = \frac{FV}{(1+r)^n}
+\]</span>
+<ul>
+<li><span class="math inline">\(r \dots\)</span> úroková sazba</li>
+<li><span class="math inline">\(n \dots\)</span> počet úrokových období</li>
+<li><span class="math inline">\(FV \dots\)</span> budoucí hodnota peněz</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Máte možnost investice, která vám za jeden rok vyplatí 100 Kč. Kolik budete ochotni investovat dnes, pokud je běžná úroková sazba 8%? Jak se změní výsledek, pokud dostanete 100 Kč až za 7 let? <span class="math display">\[
+PV = \frac{100}{(1 + 0.08)^1} = 92.59
+\]</span> <span class="math display">\[
+PV = \frac{100}{(1 + 0.08)^7} = 58.35
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="kratší-časové-intervaly-než-jeden-rok" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="kratší-časové-intervaly-než-jeden-rok"><span class="header-section-number">8.4</span> Kratší časové intervaly než jeden rok</h2>
+<ul>
+<li><strong>Obecný vzorec:</strong> <span class="math display">\[
+FV = PV \times (1 + \frac{r}{m})^{n \times m}
+\]</span>
+<ul>
+<li><span class="math inline">\(m\)</span> je počet úrokových období za rok</li>
+<li><span class="math inline">\(n\)</span> je počet let</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Kolik naspoříte za 15 let z původní částky 100 Kč při roční úrokové sazbě 8% s použitím složeného úročení pokud se bude úrok připisovat měsíčně/čtvrtletně? <span class="math display">\[
+FV = 100 \times (1 + \frac{0.08}{12})^{15 \times 12} = 330.69
+\]</span> <span class="math display">\[
+FV = 100 \times (1 + \frac{0.08}{4})^{15 \times 4} = 328.10
+\]</span></p>
+</div>
+</div>
+<section id="efektivní-úroková-míra" class="level3" data-number="8.4.1">
+<h3 data-number="8.4.1" class="anchored" data-anchor-id="efektivní-úroková-míra"><span class="header-section-number">8.4.1</span> Efektivní úroková míra</h3>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Efektivní úroková míra zohledňuje frekvenci úročení a dokáže vyjádřit úrokovou míru ve stejných jednotkách (roční úroková míra).</p>
+</div>
+</div>
+<ul>
+<li>Umožnňuje snadné srovnání úrokových měr s různou frekvencí úročení.</li>
+<li>Vyjadřuje přesněji skutečné náklady/vvýnosy.</li>
+<li><strong>Obecný vzrorec efektivní úrokové míry:</strong></li>
+</ul>
+<p><span class="math display">\[
+EIR = \left(1 + \frac{i}{n}\right)^n - 1
+\]</span></p>
+<ul>
+<li><span class="math inline">\(i \dots\)</span> nominální úroková míra</li>
+<li><span class="math inline">\(n \dots\)</span> počet úrokových období v roce</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Uvažujme roční úrokovou míru 5%:</p>
+<ul>
+<li><p>roční úročení <span class="math display">\[
+EIR = \left(1 + \frac{0.05}{1}\right)^1 - 1 = 0.05 = 5\%
+\]</span></p></li>
+<li><p>půlroční úročení (semi-annual) <span class="math display">\[
+EIR = \left(1 + \frac{0.05}{2}\right)^2 - 1 = \left(1 + 0.025\right)^2 - 1 = 0.050625 = 5.0625\%
+\]</span></p></li>
+<li><p>čtvrtletní úročení (quarterly) <span class="math display">\[
+EIR = \left(1 + \frac{0.05}{4}\right)^4 - 1 = \left(1 + 0.0125\right)^4 - 1 = 0.050945 = 5.0945\%
+\]</span></p></li>
+<li><p>měsíční úročení (monthly) <span class="math display">\[
+EIR = \left(1 + \frac{0.05}{12}\right)^12 - 1 = \left(1 + 0.004167\right)^{12} - 1 = 0.051162 = 5.1162\%
+\]</span></p></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="anuita" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="anuita"><span class="header-section-number">8.5</span> Anuita</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Anuita <span class="math inline">\(\rightarrow\)</span> série stejných peněžních toků v pravidelných intervalech.</p>
+</div>
+</div>
+<ul>
+<li><strong>Anuita polhůtní</strong> <span class="math inline">\(\rightarrow\)</span> peněžní toky nastávají na konci každého obddobí.</li>
+<li><strong>Anuita předlhůtní</strong> <span class="math inline">\(\rightarrow\)</span> peněžní toky nastávají na začátku každého období.</li>
+</ul>
+<section id="budoucí-hodnota-anuity" class="level3" data-number="8.5.1">
+<h3 data-number="8.5.1" class="anchored" data-anchor-id="budoucí-hodnota-anuity"><span class="header-section-number">8.5.1</span> Budoucí hodnota anuity</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Na konci každého roku investujete 100 Kč po dobu tří let. Investice se zhodnocuje úrokem 8%. Jaká bude budoucí hodnota investice? (anuita polhůtní) <span class="math display">\[
+FV = 100 \times 1.08^2 + 100 \times 1.08^1 + 100 \times 1.08^0 = 324.64
+\]</span></p>
+</div>
+</div>
+<ul>
+<li><p><strong>Obecný vzorec pro běžnou anuitu:</strong> <span class="math display">\[
+\text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r}
+\]</span></p></li>
+<li><p><strong>Obecný vzorec pro splatnou anuitu:</strong> <span class="math display">\[
+\text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r} \times (1 + r)
+\]</span></p>
+<ul>
+<li>FVA (future value of an ordinary annuity)</li>
+<li>PMT (periodic equal payment)</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Jak dlouho trvá naspořit milion?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Jak dlouho trvá naspořit milion?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Výpočet s využitím běžné anuity.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 29%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Úroková sazba (%)</th>
+<th style="text-align: center;">Jednorázová investice 10 000 Kč</th>
+<th style="text-align: center;">Pravidelná investice 10 000 Kč ročně</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">94.4</td>
+<td style="text-align: center;">36.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">48.3</td>
+<td style="text-align: center;">25.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">33.0</td>
+<td style="text-align: center;">19.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">25.3</td>
+<td style="text-align: center;">16.7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="perpetuita" class="level3" data-number="8.5.2">
+<h3 data-number="8.5.2" class="anchored" data-anchor-id="perpetuita"><span class="header-section-number">8.5.2</span> Perpetuita</h3>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Perpetuita <span class="math inline">\(\rightarrow\)</span> nekonečná série peněžních toků.</p>
+</div>
+</div>
+<ul>
+<li>Specifický typ anuity s neomezenou dobou trvání.</li>
+<li>Často se používá pro oceňování preferenčních akcií.</li>
+<li><strong>Obecný vzorec pro současnou hodnotu perpetuity:</strong> <span class="math display">\[
+PV = \frac{C}{r}
+\]</span>
+<ul>
+<li><span class="math inline">\(C \dots\)</span> konstantní peněžní tok přijatý za každé období</li>
+<li>Vzorec předpokládá, že první platba je provedena na konci prvního období, peněžní toky jsou konstantní a pokračují na dobu neurčitou.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Zvažujete investování do perpetuity, která slibuje platbu 500 Kč na konci každého roku na dobu neurčitou a úroková sazba je 5%. Současná hodnota této perpetuity je: <span class="math display">\[
+PV = \frac{500}{0.05} = 10000
+\]</span> Přijatelná cena za tuto perpetuitu je až 10 000 Kč.</p>
+</div>
+</div>
+</section>
+<section id="současná-hodnota-anuity" class="level3" data-number="8.5.3">
+<h3 data-number="8.5.3" class="anchored" data-anchor-id="současná-hodnota-anuity"><span class="header-section-number">8.5.3</span> Současná hodnota anuity</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Máte možnost investice, která vám za 1 rok vyplatí 1000 a poté ještě další 2 roky budete dostávat stejnou částku. Kolik jste ochotni za danou investici zaplatit pokud je běžná úroková sazba 8%? <span class="math display">\[
+PV = 1000 \times \frac{1}{1,08^1} + 1000 \times \frac{1}{1,08^2} + 1000 \times
+\frac{1}{1,08^3} = 2577
+\]</span></p>
+</div>
+</div>
+<ul>
+<li><p><strong>Obecný vzorec pro běžnou anuitu:</strong> <span class="math display">\[
+\text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r}
+\]</span></p></li>
+<li><p><strong>Obecný vzorec pro splatnou anuitu:</strong> <span class="math display">\[
+\text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r} \times (1+r)
+\]</span></p>
+<ul>
+<li>PVA (present value of an ordinary annuity)</li>
+<li>PMT (periodic equal payment)</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="příklady-k-procvičení" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="příklady-k-procvičení"><span class="header-section-number">8.6</span> Příklady k procvičení</h2>
+<section id="základní-pojmy-1" class="level3" data-number="8.6.1">
+<h3 data-number="8.6.1" class="anchored" data-anchor-id="základní-pojmy-1"><span class="header-section-number">8.6.1</span> Základní pojmy</h3>
+<ol type="1">
+<li>Jaká je reálná úroková míra na termínovaném účtu, pokud je nominální úroková míra na tomto účtu 12.5% a míra inflace činí 10.5%.​</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>2%</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Reálná úroková míra činí -3%, nominální úroková míra byla 5,5%. Jaká byla v daném roce výše inflace v ekonomice?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>8,5%</p>
+</div>
+</div>
+</div>
+<p>​ 3. Jaká je výše reálné úrokové míry, pokud víme, že nominální úroková míra je 4% a očekávaná míra inflace v daném roce je 10%.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>-6%</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Investujete do dluhopisu, který vyplácí roční úrok 2,65%. Jaká bude vaše reálná úroková míra, pokud inflace dosahuje hodnoty 7,85% ročně?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>-5,26%</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Jakou budete požadovat nominální úrokovou sazbu, pokud chcete získat reálné zhodnocení investice 7,61% p.a. a očekáváte inflaci 4,42%? Investici navíc považujete za rizikovou a chcete prémii za riziko ve výši 2.26%.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>14,29%</p>
+</div>
+</div>
+</div>
+</section>
+<section id="jednoduché-úročení-1" class="level3" data-number="8.6.2">
+<h3 data-number="8.6.2" class="anchored" data-anchor-id="jednoduché-úročení-1"><span class="header-section-number">8.6.2</span> Jednoduché úročení</h3>
+<ol type="1">
+<li>Termínovaný vklad nabízí jednoduché úročení na dobu 3 let s úrokem 7,2%. Kolik naspoříte při vkladu 150 000 Kč?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>182 400 Kč</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Termínovaný vklad nabízí jednoduché úročení na dobu 5 let s úrokem 3,4%. Kolik naspoříte při vkladu 300 000 Kč?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-30" class="callout-30-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>351 000 Kč</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Investujete 72 000 Kč do termínovaného vkladu s roční úrokovou sazbou 1.4%. Úroky jsou vypláceny jednou ročně a úročí se pouze jistina. Kolik budete mít naspořeno za 17 let?.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-31-contents" aria-controls="callout-31" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-31" class="callout-31-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>89 136 Kč</p>
+</div>
+</div>
+</div>
+</section>
+<section id="složené-úročení-1" class="level3" data-number="8.6.3">
+<h3 data-number="8.6.3" class="anchored" data-anchor-id="složené-úročení-1"><span class="header-section-number">8.6.3</span> Složené úročení</h3>
+<ol type="1">
+<li>Termínovaný vklad nabízí složené úročení na dobu 8 let s úrokem 6,3%. Kolik naspoříte při vkladu 1 000 000 Kč?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-32-contents" aria-controls="callout-32" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-32" class="callout-32-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>1 630 294,70 Kč</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Termínovaný vklad nabízí složené úročení na dobu 5 let s úrokem 4%. Kolik naspoříte při vkladu 300 000 Kč?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-33-contents" aria-controls="callout-33" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-33" class="callout-33-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>364 995,87 Kč</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Investujete 65 000 Kč na spořicí účet v bance se sazbou 9.5% p.a. Úroky jsou vypláceny jednou ročně a úročí se vždy jistina i s úroky. Kolik budete mít naspořeno za 5 let?.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-34-contents" aria-controls="callout-34" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-34" class="callout-34-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>102 325,52 Kč</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Klient si uložil na spořicí účet částku 90 000 Kč při úrokové míře 4,5% p.a. Kolik si bude moci vyzvednout po 5 letech, pokud víme, že úroky jsou připisovány jednou ročně?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-35" class="callout-35-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>112 156,4 Kč​</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Jaká byla roční úroková sazba z vkladu 20 000 Kč. Pokud za 4 roky máme na účtu 23 400 Kč. Úroky byly připisovány jednou ročně a byly ponechány na účtu k dalšímu zhodnocení.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-36" class="callout-36-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>4%​</p>
+</div>
+</div>
+</div>
+</section>
+<section id="diskontování" class="level3" data-number="8.6.4">
+<h3 data-number="8.6.4" class="anchored" data-anchor-id="diskontování"><span class="header-section-number">8.6.4</span> Diskontování</h3>
+<ol type="1">
+<li>Investice vám za 5 let vyplatí 13 000 Kč. Jaká je současná hodnota této investice, pokud požadujete výnos 1,31% p.a.?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-37-contents" aria-controls="callout-37" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-37" class="callout-37-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>12 180,97 Kč</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Banka odkoupila směnku v hodnotě 500 000 Kč s dobou splatnosti 1 rok. Jakou banka používá diskontní sazbu, pokud za směnku vyplatila 480 000 Kč?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-38-contents" aria-controls="callout-38" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-38" class="callout-38-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>4%​</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Dlužník postupuje bance směnku na 100 000 Kč a zavazuje se ji splatit za 3 měsíce. Jakou má banka diskontní sazbu, pokud dlužník obdrží úvěr ve výši 97 000 Kč.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-39-contents" aria-controls="callout-39" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-39" class="callout-39-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>12%​</p>
+</div>
+</div>
+</div>
+</section>
+<section id="kratší-časové-intervaly-než-jeden-rok-1" class="level3" data-number="8.6.5">
+<h3 data-number="8.6.5" class="anchored" data-anchor-id="kratší-časové-intervaly-než-jeden-rok-1"><span class="header-section-number">8.6.5</span> Kratší časové intervaly než jeden rok</h3>
+<ol type="1">
+<li>Investujete 99 000 Kč na spořicí účet v bance s roční úrokovou mírou 7,24%. Úroky jsou vypláceny čtvrtletně a úročí se vždy jistina i s úroky. Kolik budete mít naspořeno za 12 let?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-40-contents" aria-controls="callout-40" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-40" class="callout-40-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>234 194,23 Kč</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Investujete 85 000 Kč na spořicí účet v bance s roční úrokovou mírou 14,23%. Úroky jsou vypláceny měsíčně a úročí se vždy jistina i s úroky. Kolik budete mít naspořeno za 15 let?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-41-contents" aria-controls="callout-41" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-41" class="callout-41-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>70 9524,21 Kč</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Vypočítejte dobu splatnosti při jednoduchém úročení, pokud vklad ve výši 3 960 Kč vzrostl na 4 000 Kč. Úroková míra činí 2 % p.a.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-42-contents" aria-controls="callout-42" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-42" class="callout-42-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>0,505 roku</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Při jaké úrokové sazbě bude činit úrok z vkladu 100 000 Kč na 7 měsíců 1 500 Kč?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-43-contents" aria-controls="callout-43" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-43" class="callout-43-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>2,57%</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Na dvouletý termínovaný vklad jste uložili 10 000 Kč. Úroky jsou připisovány pololetně. Kolik si budete moci vybrat za 2 roky, pokud je úroková sazba 4% p.a.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-44-contents" aria-controls="callout-44" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-44" class="callout-44-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>10 824,3 Kč</p>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Při jaké výši úrokové sazby se zúročí částka za 5 let z 50 000 na 70 000 Kč. Úroky jsou připisovány čtvrtletně.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-45-contents" aria-controls="callout-45" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-45" class="callout-45-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>6,78%</p>
+</div>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Jaký bude rozdíl za 3 roky v konečné výši kapitálu, pokud byl počáteční vklad 120 000 Kč, úroková míra činí 1,5% p.a., a jsou úroky připisovány​ půlročně nebo ročně.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-46-contents" aria-controls="callout-46" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-46" class="callout-46-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>125 502,3 Kč - 125 481,4 Kč = 20,9 Kč</p>
+</div>
+</div>
+</div>
+<ol start="8" type="1">
+<li>Chcete si uložit 10 000 Kč na 3 roky. Kterou z následujících možností zvolíte?
+<ul>
+<li>Úroková míra 12% p.a. a pololetní připisování úroků [12,36%]​</li>
+<li>Úroková míra 11% p.a. a čtvrtletní připisování úroků [11,46%]​</li>
+</ul></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-47-contents" aria-controls="callout-47" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-47" class="callout-47-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>EIR = 12,36%​</li>
+<li>EIR = 11,46%​</li>
+</ul>
+</div>
+</div>
+</div>
+<ol start="9" type="1">
+<li>Vaše banka nabízí klientům jeden typ účtu spojený se 4% roční nominální úrokovou mírou a se čtvrtletním úročením. Jeden z Vašich dobrých klientů však požaduje měsíční úročení. Jakou výši roční nominální úrokové sazby mu nabídnete, chcete-li zachovat stejné podmínky pro oba druhy účtů?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-48-contents" aria-controls="callout-48" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-48" class="callout-48-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>3,98%​</p>
+</div>
+</div>
+</div>
+</section>
+<section id="anuita-1" class="level3" data-number="8.6.6">
+<h3 data-number="8.6.6" class="anchored" data-anchor-id="anuita-1"><span class="header-section-number">8.6.6</span> Anuita</h3>
+<ol type="1">
+<li>Na konci každého roku investujete 58 000 Kč po dobu 18 let. Investice se zhodnocuje úrokem 10,61% p.a. Kolik budete mít celkem naspořeno?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-49-contents" aria-controls="callout-49" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-49" class="callout-49-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>2 810 812,27 Kč</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Investiční příležitost vyplácí na konci každého roku 13 000 Kč po dobu 19 let. Vaše diskontní sazba je 8,39% p.a. Kolik budete ochotni zaplatit za danou investici?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-50-contents" aria-controls="callout-50" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-50" class="callout-50-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>121 420,01 Kč</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Na začátku každého roku investujete 73 000 Kč po dobu 16 let. Investice se zhodnocuje úrokem 8,74% ročně. Kolik budete mít celkem naspořeno?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-51-contents" aria-controls="callout-51" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-51" class="callout-51-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>2 562 563,13 Kč</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Investiční příležitost vyplácí na začátku každého roku 39 000 Kč po dobu 19 let. Vaše diskontní sazba je 10,48% ročně. Kolik budete ochotni zaplatit za danou investici?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-52-contents" aria-controls="callout-52" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-52" class="callout-52-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>349 250,70 Kč</p>
+</div>
 </div>
 </div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -302,18 +1480,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -345,11 +1512,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -359,8 +1565,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -372,7 +1587,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -416,6 +1754,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -441,6 +1780,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -502,17 +1867,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week_07.html" class="pagination-link">
+      <a href="./week_07.html" class="pagination-link" aria-label="Reading Week">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Reading Week</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week_09.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Banky a bankovní systémy</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week_09.html" class="pagination-link" aria-label="Dluhopisy a jejich oceňování">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 
