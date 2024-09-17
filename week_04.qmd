@@ -1,349 +1,1011 @@
-# Dluhopisy a jejich oceňování
+---
+execute:
+  echo: false
+format:
+  html:
+    code-fold: true
+    mermaid-format: png
+    toc: true
+    toc-depth: 2
+    toc-title: Obsah lekce
+jupyter: python3
+---
+
+# Mezinárodní finance
 
 ::: {.callout-note}
 # Studijní materiály
 
 - Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
 University. <https://openstax.org/details/books/principles-finance>
-  - Chapter 10 - Bonds and Bond Valuation
-  - Chapter 12 - Historical Performance of US Markets
+  - Chapter 3.5 – Foreign Exchange Rates.
+- MELICHER Ronald W. a Edgar NORTON. *Introduction to finance: markets investments and financial management*. Seventeenth edition. Hoboken: Wiley 2020, xxix, 613. ISBN 9781119561170.
+  - Chapter 6 – International Finance and Trade.
+- MARKOVÁ Jana. *Mezinárodní měnová spolupráce*. Oeconomica, 2006.
+- MANDEL Martin; DURČÁKOVÁ Jaroslava. *Mezinárodní finance a devizový trh*. Management Press, 2016.
 :::
 
 **Výstupy z učení:**
 
-1. Porozumět základním charakteristikám dluhopisů a různým typům dluhopisů.
-2. Rozpoznat, jaký je vztah mezi cenou dluhopisu a jeho výnosem.
-3. Naučit se vypočítat hodnotu dluhopisu a rozlišovat mezi dluhopisy s diskontem a
-kupónovými dluhopisy.
-4. Porozumět konceptům dluhopisů s pevnou a variabilní úrokovou sazbou.
-5. Naučit se, jak funguje výnosová křivka a jaký je její význam.
-6. Porozumět běžným rizikům dluhopisů.
+- Porozumět pojmům mezinárodní finance a mezinárodní měnový systém.
+- Znát významné zahraniční finanční instituce.
+- Definovat pojmy Evropská unie a Evropská měnová unie.
+- Rozumět pojmu platební bilance a interpretovat její strukturu.
+- Definovat měnový kurz, co ho ovlivňuje, a znát systémy měnového kurzu.
 
-## Charakteristika dluhopisů
+## Základní pojmy
 
-### Dluhopisy jako investice
+::: {.callout-important title="Definice"}
+Mezinárodní finance lze chápat jako systém peněžních vztahů, jejichž prostřednictvím
+dochází k pohybu peněžních fondů v mezinárodním měřítku.
+:::
 
-- **Dluhopis** je kontrakt mezi věřitelem (investorem) a dlužníkem (emitentem
-dluhopisu).
-- Investor, který kupuje dluhopis, půjčuje peníze emitentovi, jako je například nějaká
-firma nebo vláda.
-- Emitenti dluhopisů využívají tyto nástroje jako **externí zdroj financování** své
-činnosti.
-- Emitent slibuje vrátit původní půjčku a úroky (kupónové platby) ke konkrétnímu datu
-splatnosti.
-- Kupónové platby kompenzují investora s ohledem na časovou hodnotu peněz.
-- Dluhopisy patří mezi záladní investiční nástroje pro diversifikaci portfolia.
-- Investoři, kteří kupují dluhopisy, v podstatě kupují slíbený budoucí tok hotovosti od
-emitenta dluhopisu.
-- Držitel dluhopisu má přednostní právo na majetek společnosti a její cash flow (oproti
-vlastníkům / akcionřům), ale nemá hlasovací právo.
+- **Devizový tuzemec**: Osoba nebo instituce, která má sídlo nebo trvalý pobyt v
+tuzemsku.
+- **Devizový cizozemec**: Osoba nebo instituce, která má sídlo nebo trvalý pobyt v
+zahraničí.
 
-### Základní terminologie
+## Mezinárodní měnový systém
 
-- **Jmenovitá hodnota** (jistina, par value, face value): Je hlavní částka, kterou je
-věřitel povinen splatit při splatnosti dluhopisu.
-- **Úroková** (kupónová) **sazba**: Úroková sazba použitá k výpočtu pravidelných
-kupónových plateb dluhopisu, vyjádřena jako roční sazba.
-- **Kupónová platba:** Pravidelná platka, kterou dostává věřitel od dlužníka.
-- **Datum splatnosti:** Datum expirace dluhopisu, kdy emitent zaplatí poslední úrokovou
-platbu a splatí jemnovitou hodnotu.
-- **Výnos do splatnosti (YTM):** Diskontní sazba použitá k výpočtu současné hodnoty
-budoucích peněžních toků dluhopisu, reprezentující návratnost, pokud je dluhopis držen
-do splatnosti.
-- YTM indikuje celkovou investiční hodnotu dluhopisu.
-- **Možnost předčasného splacení** (callable feature): Udává, zda dluhopis může být
-ukončen nebo splacen před normálním datem splatnosti.
-- **Rating:** Hodnocení, které indikuje kreditní riziko dlužníka.
+Ekonomiky jednotlivých zemí jsou propojeny prostřednictvím mezinárodního obchodu a
+mezinárodního pohybu kapitálu, které by nefungovaly bez existence rozvinutého a
+všeobecně uznávaného měnového a finančního systému.
 
-### Typy Dluhopisů
+::: {.callout-important title="Definice"}
+**Mezinárodní měnový systém** je souhrnem vzájemných vazeb mezi měnami a měnovými
+*systémy jednotlivých zemí a oblastí.
+:::
 
-- **Státní dluhopisy:**
-  - Státní dluhopisy jsou obecně považovány za bezpečnou investici (převážně u
-  rozvinutých států).
-  - Stát, který má vlastní měnu bude vždy schopen dluhopis splatit.
-  - Možnost zvyšovat daně na financování splátek dluhopisů.
-  - Nabízejí většinou jen nízké výnosy.
-- **Korporátní dluhopisy:**
-  - Vydávány firmami a nesou vyšší riziko než státní dluhopisy.
-  - Riziko a návratnost závisí na bonitě společnosti.
-  - Korporátní dluhopisy s vysokým výnosem, ale také velkým rizikem se nazývají "junk
-  bonds" nebo "high yield bonds".
-- Další vlastnosti dluhopisů:
-  - **Convertible bond** možnost převodu dluhopisu na akcie v předem daném poměru.
-  - **Callable bond** dlužník může dluhopis předčasně splatit.
-  - **Putable bond** věřitel může vyžadovat předčasné splacení.
-  - **Zero-coupon bond** (diskontovaný dluhopis) nevyplácí kupón, ale investor ho kupuje
-  se slevou.
-  - **Inflation protected** securities dluhopisy zajištěné proti inflaci.
-  - **Eurodollar bonds** dluhopisy denominované v dolarech prodávané mimo USA.
+- Počátek mezinárodní měnové a finanční spolupráce sahá do 19. století.
+- **Mincovní unie**: Latinská mincovní unie, standard zlaté mince, standard zlatého
+slitku.
+- Historicky byl mezinárodní měnový systém vázán na **zlatý standard**, který byl
+používán pro většinu mezinárodního obchodu od druhé poloviny 19. století až do počátku 20. století.
+- **Zánik zlatého standardu**: Ke zhroucení zlatého standardu došlo během první světové
+války. Během světové hospodářské krize ve 30. letech a druhé světové války pokračovaly
+méně formální směnné systémy.
+- Hospodářská krize 30. let 20. století vedla k opuštění vazby měn na zlato a k
+devalvaci většiny měn.
 
-### Vliv úrokových sazeb
+### Bretton-woodský měnový systém
 
-- Investice do dluhopisu má dvě strany: platbu jmenovité hodnoty při splatnosti a
-pravidelné kupónové platby.
-- Oceňování dluhopisů zahrnuje samostatné výpočty současné hodnoty pro tyto dva typy
-příjmů.
-- Cena dluhopisu a úroková sazba mají inverzní vztah.
-- Když úrokové sazby klesají, ceny dluhopisů stoupají a naopak.
-- Výjimkou jsou dluhopisy s plovoucí úrokovou sazbou, která se přizpůsobuje ekonomickým
-změnám.
+- Cílem bylo vytvořit mezinárodní měnový systém a zdroje kapitálu pro obnovu válkou
+zničených ekonomik a rozvoj mezinárodního obchodu.
+- Systém byl založen na **pevných devizových kurzech** s vazbou na zlato a americký
+dolar, nejsilnější měnu poválečného období.
+- **Americký dolar** hrál klíčovou roli ve fungování Bretton-woodského systému.
+- Na počátku 70. let začaly některé země revalvovat své měny a zavádět systém **volně
+pohyblivých devizových kurzů (floating)**.
+- To vedlo k postupnému rozpadu Bretton-woodského systému pevných kurzů.
+- Tím došlo k oficiálnímu opuštění dlouhodobé kurzové stability prosazované od druhé
+světové války Mezinárodním měnovým fondem (IMF).
+- Systém fungoval až do počátku 70. let 20. století, kdy v srpnu 1971 byla zrušena
+směnitelnost dolaru za zlato.
 
-![](images/fig_4_2.png){width=500 fig-align="center"}
+## Mezinárodní měnový fond
 
-- Investoři do dluhopisů s pevnou úrokovou sazbou mohou vidět ztrátu hodnoty svých
-investic, pokud úrokové sazby vzrostou.
-- Diskontované dluhopisy jsou citlivější na změny úrokových sazeb než kupónové
-dluhopisy.
-
-## Oceňování Dluhopisů
-
-### Obecný postup
-
-1. **Určení peněžních toků**: Identifikujte pravidelné kupónové platby a nominální
-hodnotu dluhopisu, která bude vrácena při splatnosti.
-2. **Diskontování peněžních toků**: Každý budoucí peněžní tok je diskontován na jeho
-současnou hodnotu.
-3. **Součet současných hodnot**: Sečtěte všechny současné hodnoty k získání ceny
-dluhopisu.
+- Na mezinárodní měnové konferenci v **Bretton Woods** v červenci 1944 byly založeny dvě
+hlavní instituce měnové a finanční spolupráce: 
+  - **Mezinárodní měnový fond (International Monetary Fund, IMF)** 
+  - **Mezinárodní banka pro obnovu a rozvoj (International Bank for Reconstruction and
+  Development, IBRD)**.
+- **Cíl IMF**: Podpora světového obchodu a zabezpečení měnové stability.
   
-$$
-\text{price} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{CF_n}{(1+r)^n}
-$$
+Původní cíle IMF:
+
+- Podporovat mezinárodní měnovou součinnost.
+- Usnadňovat rozvoj a vyrovnaný růst mezinárodního obchodu.
+
+Další cíle IMF:
+
+- Vytváření nových prostředků mezinárodní likvidity (např. **SDR** – Special Drawing
+Rights).
+- Pomoc při řešení problémů zadluženosti rozvojových zemí.
+- Podpora při řešení finančních krizí.
+- **Výzkumně-informační a poradenská činnost** v oblasti mezinárodních financí.
+
+## Skupina Světové banky 
+
+- **Skupina Světové banky** (World Bank Group, WBG) je tvořena pěti subjekty.
+- Dva hlavní subjekty jsou:
+  - **Mezinárodní banka pro obnovu a rozvoj** (International Bank for Reconstruction and Development, IBRD)
+  - **Mezinárodní asociace pro rozvoj** (International Development Association, IDA)
+
+### Mezinárodní banka pro obnovu a rozvoj (IBRD)
+
+- Původním posláním IBRD bylo financování poválečné obnovy hospodářství členských zemí.
+První úvěry ve výši 500 mil. USD byly poskytnuty zemím západní Evropy na obnovu jejich
+ekonomik.
+- Po přijetí **Marshallova plánu** se zaměření banky přesunulo na financování
+strukturálních a rozvojových programů, zejména v rozvojových zemích.
+- IBRD poskytuje úvěry, garance a poradenské služby především středně příjmovým zemím a
+zemím s transformující se ekonomikou.
+- Byla založena na konferenci v **Bretton Woods** (New Hampshire, USA) v červenci 1944
+spolu s Mezinárodním měnovým fondem (IMF).
+- IBRD má 189 členských zemí.
+
+### Mezinárodní asociace pro rozvoj (IDA)
+
+- IDA byla založena v roce 1960 a jejím členem je 173 zemí.
+- Hlavním cílem IDA je **odstraňování chudoby** v nejchudších rozvojových zemích
+prostřednictvím zvýhodněných půjček a grantů zaměřených na udržitelný rozvoj a
+zlepšování životních podmínek obyvatel.
+- V současnosti může čerpat prostředky ze zdrojů IDA 76 zemí.
+
+## Banka pro mezinárodní platby
+
+- Banka pro mezinárodní platby (Bank for International Settlements, BIS)
+- **Založena**: 17. května 1930, sídlo v Basileji.
+- **Členové**: 63 centrálních bank.
+- **V počátečním období** své činnosti prováděla BIS operace spojené s likvidací
+válečných reparací Německa po 1. světové válce. Dále se zabývala různými operacemi pro
+centrální banky evropských zemí, zejména v oblasti obchodů se zlatem.
+- V 70. letech se BIS podílela na operacích zaměřených na udržení stability devizových
+kurzů měn členských zemí Evropského společenství (ES) a později Evropského měnového
+systému (EMS).
+- **V současnosti** BIS podporuje měnovou a finanční spolupráci evropských centrálních
+bank v oblastech:
+  - Měnová politika
+  - Bankovní regulace a dohled
+  - Řízení devizových rezerv
+  - Ekonomický a měnový výzkum
+- Basilejský výbor pro bankovní dohled (Basel Committee on Banking Supervision, BCBS) je
+fórum pro pravidelnou spolupráci v oblasti bankovního dohledu.
+- BCBS přispívá k vytváření mezinárodních standardů v oblasti dohledu s cílem posílit
+**makro-obezřetnostní stabilitu**.
+
+## Formování a význam hospodářské měnové unie
+
+- Prohlubování integrace západoevropských zemí mělo za cíl **liberalizaci pohybu zboží,
+služeb, kapitálu a osob** přes národní hranice členských států, což vyvrcholilo
+vytvořením jednotného trhu 1. ledna 1993.
+- Další krok integrace zahrnoval **zavedení hospodářské a měnové unie** zahrnuté do
+**Maastrichtských dohod** podepsaných 7. února 1992.
+- **1. ledna 1999** došlo ke sjednocení národních měn 11 států Evropské unie a vytvoření
+jednotné měny **euro**, což představovalo významný posun v procesu ekonomické integrace
+a výraznou modifikaci mezinárodního měnového systému.
+
+::: {.callout-warning title="Poznámky k používání eura"}
+- Ne všechny členské státy Evropské unie v současnosti používají euro.
+  - Některé státy se rozhodly ponechat si vlastní národní měny.
+  - Některé nesplňují **Maastrichtská kritéria** pro přijetí eura kvůli fiskálním
+  deficitům a dalším omezením.
+- Vytvoření eura bylo doprovázeno vznikem **Evropské centrální banky (ECB)**, která
+nahrazuje centrální banky jednotlivých zúčastněných zemí.
+- ECB odpovídá za provádění měnové politiky v zemích **eurozóny**.
+:::
+
+### Maastrichtská kritéria
+
+- **Kritérium cenové stability**: Míra inflace (CPI) nesmí překročit inflaci tří
+nejvýkonnějších ekonomik eurozóny o více než 1,5 procentního bodu.
+- **Kritérium dlouhodobé udržitelnosti veřejných financí**: 
+  - Poměr veřejného deficitu k HDP nesmí překročit 3 %.
+  - Poměr veřejného dluhu k HDP nesmí překročit 60 %.
+- **Kritérium stability kurzu měny a účasti v ERM II**: Kurz národní měny musí zůstat v
+rámci vymezeného koridoru vůči euru.
+- **Kritérium stability dlouhodobých úrokových sazeb**: Dlouhodobé úrokové sazby nesmí
+překročit sazby tří nejvýkonnějších ekonomik eurozóny o více než 2 procentní body.
+
+### Evropská centrální banka (ECB)
+
+- **Založena** 1998 v souvislosti s vytvořením Evropské měnové unie.
+- **Hlavní úloha**: Odpovídá za provádění měnové politiky v zemích eurozóny.
+
+#### Rozhodovací orgány ECB
+
+- **Rada guvernérů**: Hlavní rozhodovací orgán; zahrnuje členy Výkonné rady a guvernéry
+národních centrálních bank států eurozóny. Určuje měnovou politiku eurozóny.
+- **Výkonná rada**: Skládá se z prezidenta, viceprezidenta a dalších čtyř členů. Zabývá
+se běžným chodem ECB a uskutečňuje měnovou politiku.
+- **Generální rada**: Poradní a koordinační orgán; zahrnuje prezidenta ECB,
+viceprezidenta ECB a guvernéry národních centrálních bank členských států EU. Sestavuje
+statistické výkazy a zprávy o činnosti ECB.
+
+#### Evropský systém centrálních bank (ESCB) a Eurosystém
+
+- **ESCB**: Skládá se z ECB a národních centrálních bank (NCB) všech členských států EU,
+bez ohledu na to, zda zavedly euro.
+- **Eurosystém**: Skládá se z ECB a národních centrálních bank států, které přijaly
+euro. Eurosystém a ESCB budou fungovat souběžně, dokud se všechny členské státy EU
+nestanou členy eurozóny.
+- **Eurozóna**: Skupina zemí, které zavedly euro jako svou měnu.
+
+### Bankovní unie
+
+- Byla vytvořena v reakci na finanční krizi v roce 2008 a následnou dluhovou krizi v
+eurozóně.
+- **Cíl**: Zajistit stabilitu, bezpečnost a spolehlivost bankovního sektoru v eurozóně a
+EU a přispět k finanční stabilitě.
+
+#### Hlavní cíle bankovní unie
+
+- **Posílení bankovního sektoru**: Banky musí být schopny odolat budoucím finančním
+krizím.
+- **Řešení úpadku bank**: Úpadky neudržitelných bank by měly být řešeny bez nutnosti
+využití prostředků daňových poplatníků a s minimálním dopadem na reálnou ekonomiku.
+- Bankovní unie zahrnuje všechny členské státy eurozóny. Členské státy EU mimo eurozónu
+se mohou připojit prostřednictvím úzké spolupráce s Evropskou centrální bankou.
+
+#### Jednotný mechanismus dohledu (Single Supervisory Mechanism, SSM)
+
+- **Nadnárodní struktura EU** pro bankovní dohled.
+- Úkoly v oblasti dohledu nad finančními institucemi vykonává **Evropská centrální banka
+(ECB)** v úzké spolupráci s národními orgány dohledu jednotlivých členských států.
+
+#### Jednotný mechanismus pro řešení krizí (Single Resolution Mechanism, SRM)
+
+- **SRM** je systém zaměřený na účinné a efektivní řešení krizí finančních institucí,
+které nejsou životaschopné.
+- Mechanismus zahrnuje **Jednotný fond pro řešení krizí**, který je financován evropským
+bankovním sektorem a je určen k použití v krizových situacích bank.
+
+## Platební bilance
+
+::: {.callout-important title="Definice"}
+Devizová (prostá) platební bilance:
+
+- „Systematický přehled devizových inkas a úhrad, které byly uskutečněny mezi devizovými
+tuzemci a devizovými cizozemci za určité zvolené období (zpravidla jeden rok).“
+:::
+
+::: {.callout-important title="Definice"}
+Platební bilance (širší pojetí):
+
+- „Systematický statistický záznam všech ekonomických transakcí, které byly uskutečněny
+mezi devizovými tuzemci a cizozemci za určité zvolené období (zpravidla jeden rok).“
+:::
+
+### Zásada podvojného účetnictví
+
+Každá transakce má dvě strany:
+
+- Export zboží (služeb): na jedné straně úbytek zboží (vyjádřeno částkou peněz), na
+straně druhé příjem platby za zboží, ve výsledku se obě strany účtu „vynulují“.
+- Import zboží (služeb): na jedné straně nárůst zboží (vyjádřeno částkou peněz), na
+straně druhé odešlá platba za zboží, ve výsledku se obě strany účtu „vynulují“.
+
+**Důsledkem tohoto principu je skutečnost, že platební bilance musí být vyrovnaná, tedy
+celkový zůstatek (tzv. saldo) platební bilance musí být roven nule.**
+
+### Horizontální struktura platební bilance
+
+#### I. Běžný účet
+
+- **Obchodní bilance** (bilance vývozu a dovozu zboží): přebytek vs. deficit.
+- **Bilance služeb**: mezinárodní doprava, zahraniční cestovní ruch, diplomatické,
+obchodní a vojenské zastoupení, atd.
+- **Bilance výnosů**: platby a výnosy z kapitálových investic (POZOR – pohyb kapitálu je
+registrován na finančním účtu – viz dále).
+  - Kreditní položky: výnosy z finančních aktiv a investování v zahraničí, příjmy
+  rezidentů ze zaměstnání v cizině (zisky, úroky, dividendy, renty).
+  - Debetní položky: úroky placené domácími podniky do zahraničí z úvěrů od zahraničních
+  bank, příjmy nerezidentů zaměstnaných v domácí ekonomice.
+- **Transfery** neboli jednostranné platby: hospodářská pomoc, dary a příspěvky
+nadnárodním institucím, alimenty, zahraniční penze, atd.
+
+#### II. Kapitálový účet
+
+- **Kapitálové transfery** (součástí běžného účtu byly transfery nekapitálové): čerpání
+zdrojů EU, převody majetku migrujícího obyvatelstva, promíjení dluhů.
+
+#### III. Finanční účet
+
+- **Ostatní kapitálové transakce**:
+  - Investiční toky: přímé investice (minimálně 10 % kontrola zahraničního podniku) –
+  nákup akcií, reálné investování.
+  - **Portfoliové investice** (nepřímé investice): prodej nebo nákup akcií či jiných
+  majetkových cenných papírů, pokud není splněna 10% podmínka kontroly podniku, nákup a
+  prodej dluhopisů.
+  - **Ostatní**: dlouhodobé a krátkodobé poskytnuté a přijaté úvěry (podniky, obchodní
+  banky, vlády, centrální banky).
+
+#### IV. Chyby a opomenutí
+
+- Vznikají z důvodu nezaúčtování některých mezinárodních transakcí, např. kvůli
+nedostatku dat.
+- Tato položka odráží také často rozdílnou metodiku používanou v různých zemích při
+statistickém zjišťování položek platební bilance (PB) – výše položky se tak může lišit
+na debetní a kreditní straně účtu.
+- **Devizové intervence** a chyby a opomenutí patří k tzv. vyrovnávacím položkám
+platební bilance – zajišťují, aby se kreditní strana rovnala debetní, tedy aby byla PB
+vyrovnaná.
+
+#### V. Změna devizových rezerv
+
+- Úzce souvisí s intervencí centrální banky (CB) na devizových trzích.
+- **Nákup a prodej deviz** za účelem ovlivnění devizové nabídky a poptávky, a tedy i
+devizového kurzu.
+
+##### Snížení devizových rezerv
+
+- CB se zbavuje zásoby deviz $\rightarrow$ růst nabídky deviz $\rightarrow$ vliv na
+kreditní stranu PB.
+- Prodává devizy výměnou za CZK $\rightarrow$ posílení CZK $\rightarrow$ implikace pro
+reálnou ekonomiku.
+- Nastává, když je zbytek bilance v deficitu („více se přivezlo než vyvezlo“).
+  - Ze země odteklo více deviz než do ní přiteklo, je tedy logické, že chybějící devizy
+  se musí někde vzít.
+
+##### Zvýšení devizových rezerv
+
+- CB nakupuje devizy $\rightarrow$ růst poptávky po devizách $\rightarrow$ vliv na
+debetní stranu PB.
+- Nakupuje devizy výměnou za CZK $\rightarrow$ oslabení CZK $\rightarrow$ implikace pro
+reálnou ekonomiku.
+- Nastává, když je zbytek bilance v přebytku („více se vyvezlo než přivezlo“).
+  - Do země přiteklo více deviz než z ní odteklo, co dělají subjekty s přebytkem deviz?
+  $\rightarrow$ prodají je CB (odliv deviz z trhu).
+
+## Měnový (směnný) kurz
+
+::: {.callout-important title="Definice"}
+- **Devizový kurz** udává, kolik domácích peněžních jednotek (např. CZK) je potřeba
+zaplatit za jednu zahraniční peněžní jednotku (např. USD) nebo naopak.
+:::
+
+::: {.callout-important title="Definice"}
+- **Směnný kurz** je cena měny, která se tvoří na devizovém trhu podle vývoje poptávky
+po devizách a nabídky deviz. Tato cena je ovlivněna fundamentálními faktory a chováním
+subjektů na devizovém trhu.
+:::
+
+- **Fundamentální faktory**: veličiny ovlivňující měnový vývoj, např. rovnováha platební
+bilance, inflační a úrokový diferenciál, změna peněžní zásoby, tempo růstu HDP.
+- Chování subjektů na devizovém trhu je často ovlivněno jejich **očekáváním**, ale také
+vládními a centrálně-bankovními opatřeními, politickými prohlášeními, fiskální a
+monetární politikou či devizovými intervencemi.
+- **Spotový měnový kurz**: Kurz pro okamžitou směnu.
+
+### Typy kurzových záznamů
+
+- **Přímý kurzový záznam (přímá kotace)**: Směnné kurzy vyjádřeny v jednotkách domácí
+měny za jednotku zahraniční měny.
+- **Nepřímý kurzový záznam (nepřímá kotace)**: Směnné kurzy vyjádřeny v jednotkách
+zahraniční měny za jednotku domácí měny.
+
+::: {.callout-tip title="Příklad"}
+O kterou kotaci se jedná_?
+
+- 1 USD = 22,220 CZK (Přímá kotace pro ČR)
+- 1 CZK = 0,045 USD (Nepřímá kotace pro ČR)
+
+Poznámka: Co je pro jednu zemi nepřímá kotace, to je pro partnera přímá kotace a naopak.
+Obě poskytují stejné informace, ale v jiném formátu. Volba mezi přímou a nepřímou kotací
+závisí na místních tržních zvycích.
+:::
+
+### Apreciace, depreciace vs. Revalvace, devalvace
+
+- **Apreciace** a **depreciace** označují posilování a oslabování měny na trhu v
+závislosti na poptávce a nabídce.
+- **Revalvace** a **devalvace** označují posílení nebo oslabení měny na základě
+rozhodnutí centrální banky či vlády.
+- Směnný kurz je důležitý pro podniky zapojené do mezinárodního obchodu, protože
+ovlivňuje hodnotu jejich příjmů a výdajů. Apreciace nebo depreciace měny také ovlivňuje
+kupní sílu spotřebitelů.
+
+Co ovlivňuje měnový kurz?
+
+- **Vývoj platební bilance**
+    - **Aktivní saldo** některého z účtů (více se vyvezlo než přivezlo) $\rightarrow$
+    zvýšení nabídky deviz $\rightarrow$ apreciace (posílení) domácí měny.
+    - **Pasivní saldo** některého z účtů (více se přivezlo než vyvezlo) $\rightarrow$
+    zvýšení poptávky po devizách $\rightarrow$ depreciace (oslabení) domácí měny.
+
+```{python}
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import numpy as np
+
+# Generate data for initial supply and demand curves
+quantity = np.round(np.linspace(0, 100, 100), 0)
+initial_demand = 0.1 - (0.001 * quantity)  # Adjusted downward sloping demand curve
+initial_supply = 0.001 * quantity  # Adjusted upward sloping supply curve
+
+# Generate data for shifted demand curve (appreciation) and shifted supply curve
+shifted_demand = 0.11 - (
+    0.001 * quantity
+)  # Demand shift to the right (increase in demand)
+shifted_supply = (
+    0.001 * quantity
+) + 0.01  # Supply shift to the left (decrease in supply)
+
+# Create the figure with two subplots
+fig = make_subplots(rows=1, cols=2, subplot_titles=("Posun poptávky", "Posun nabídky"))
+
+# Plot for demand shift (appreciation)
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=initial_supply,
+        mode="lines",
+        name="Nabídka",
+        line=dict(color="blue"),
+    ),
+    row=1,
+    col=1,
+)
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=initial_demand,
+        mode="lines",
+        name="Poptávka",
+        line=dict(color="red"),
+    ),
+    row=1,
+    col=1,
+)
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=shifted_demand,
+        mode="lines",
+        name="Nová poptávka",
+        line=dict(color="red", dash="dash"),
+    ),
+    row=1,
+    col=1,
+)
+fig.add_trace(
+    go.Scatter(
+        x=[50],
+        y=[0.05],
+        mode="markers",
+        name="Rovnováha",
+        marker=dict(color="black", size=10),
+        showlegend=False,
+    ),
+    row=1,
+    col=1,
+)
+fig.add_trace(
+    go.Scatter(
+        x=[55],
+        y=[0.055],
+        mode="markers",
+        name="Nová rovnováha",
+        marker=dict(color="green", size=10),
+        showlegend=False,
+    ),
+    row=1,
+    col=1,
+)
+
+# Plot for supply shift
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=initial_supply,
+        mode="lines",
+        name="Nabídka",
+        line=dict(color="blue"),
+        showlegend=False,
+    ),
+    row=1,
+    col=2,
+)
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=initial_demand,
+        mode="lines",
+        name="Poptávka",
+        line=dict(color="red"),
+        showlegend=False,
+    ),
+    row=1,
+    col=2,
+)
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=shifted_supply,
+        mode="lines",
+        name="Nová nabídka",
+        line=dict(color="blue", dash="dash"),
+    ),
+    row=1,
+    col=2,
+)
+fig.add_trace(
+    go.Scatter(
+        x=[50],
+        y=[0.05],
+        mode="markers",
+        name="Rovnováha",
+        marker=dict(color="black", size=10),
+    ),
+    row=1,
+    col=2,
+)
+fig.add_trace(
+    go.Scatter(
+        x=[45],
+        y=[0.055],
+        mode="markers",
+        name="Nová rovnováha",
+        marker=dict(color="green", size=10),
+    ),
+    row=1,
+    col=2,
+)
+
+# Set titles and labels in Czech for both plots
+fig.update_layout(
+    title={
+        "text": "Apreciace měnového kurzu",
+        "x": 0.5,
+        "y": 1,
+        "xanchor": "center",
+        "yanchor": "top",
+    },
+    margin=dict(t=50),
+    title_font=dict(size=20),
+    hovermode="closest",
+    template="seaborn",
+    legend=dict(
+    orientation="h")
+)
+
+# Update x-axis and y-axis labels for both subplots
+fig.update_xaxes(title_text="Množství CZK", row=1, col=1, range=[0, 100])
+fig.update_yaxes(title_text="Kurz (EUR za 1 CZK)", row=1, col=1, range=[0, 0.1])
+fig.update_xaxes(title_text="Množství CZK", row=1, col=2, range=[0, 100])
+fig.update_yaxes(title_text="Kurz (EUR za 1 CZK)", row=1, col=2, range=[0, 0.1])
+
+# Show the figure
+fig.show()
+```
+</br>
+
+```{python}
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import numpy as np
+
+# Generate data for initial supply and demand curves
+quantity = np.round(np.linspace(0, 100, 100), 0)
+initial_demand = 0.1 - (0.001 * quantity)  # Adjusted downward sloping demand curve
+initial_supply = 0.001 * quantity  # Adjusted upward sloping supply curve
+
+# Generate data for shifted demand curve (appreciation) and shifted supply curve
+shifted_demand = 0.09 - (
+    0.001 * quantity
+)  # Demand shift to the right (increase in demand)
+shifted_supply = (
+    0.001 * quantity
+) - 0.01  # Supply shift to the left (decrease in supply)
+
+# Create the figure with two subplots
+fig = make_subplots(rows=1, cols=2, subplot_titles=("Posun poptávky", "Posun nabídky"))
+
+# Plot for demand shift (appreciation)
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=initial_supply,
+        mode="lines",
+        name="Nabídka",
+        line=dict(color="blue"),
+    ),
+    row=1,
+    col=1,
+)
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=initial_demand,
+        mode="lines",
+        name="Poptávka",
+        line=dict(color="red"),
+    ),
+    row=1,
+    col=1,
+)
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=shifted_demand,
+        mode="lines",
+        name="Nová poptávka",
+        line=dict(color="red", dash="dash"),
+    ),
+    row=1,
+    col=1,
+)
+fig.add_trace(
+    go.Scatter(
+        x=[50],
+        y=[0.05],
+        mode="markers",
+        name="Rovnováha",
+        marker=dict(color="black", size=10),
+        showlegend=False,
+    ),
+    row=1,
+    col=1,
+)
+fig.add_trace(
+    go.Scatter(
+        x=[45],
+        y=[0.045],
+        mode="markers",
+        name="Nová rovnováha",
+        marker=dict(color="green", size=10),
+        showlegend=False,
+    ),
+    row=1,
+    col=1,
+)
+
+# Plot for supply shift
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=initial_supply,
+        mode="lines",
+        name="Nabídka",
+        line=dict(color="blue"),
+        showlegend=False,
+    ),
+    row=1,
+    col=2,
+)
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=initial_demand,
+        mode="lines",
+        name="Poptávka",
+        line=dict(color="red"),
+        showlegend=False,
+    ),
+    row=1,
+    col=2,
+)
+fig.add_trace(
+    go.Scatter(
+        x=quantity,
+        y=shifted_supply,
+        mode="lines",
+        name="Nová nabídka",
+        line=dict(color="blue", dash="dash"),
+    ),
+    row=1,
+    col=2,
+)
+fig.add_trace(
+    go.Scatter(
+        x=[50],
+        y=[0.05],
+        mode="markers",
+        name="Rovnováha",
+        marker=dict(color="black", size=10),
+    ),
+    row=1,
+    col=2,
+)
+fig.add_trace(
+    go.Scatter(
+        x=[55],
+        y=[0.045],
+        mode="markers",
+        name="Nová rovnováha",
+        marker=dict(color="green", size=10),
+    ),
+    row=1,
+    col=2,
+)
+
+# Set titles and labels in Czech for both plots
+fig.update_layout(
+    title={
+        "text": "Depreciace měnového kurzu",
+        "x": 0.5,
+        "y": 1,
+        "xanchor": "center",
+        "yanchor": "top",
+    },
+    margin=dict(t=50),
+    title_font=dict(size=20),
+    hovermode="closest",
+    template="seaborn",
+    legend=dict(
+    orientation="h")
+)
+
+# Update x-axis and y-axis labels for both subplots
+fig.update_xaxes(title_text="Množství CZK", row=1, col=1, range=[0, 100])
+fig.update_yaxes(title_text="Kurz (EUR za 1 CZK)", row=1, col=1, range=[0, 0.1])
+fig.update_xaxes(title_text="Množství CZK", row=1, col=2, range=[0, 100])
+fig.update_yaxes(title_text="Kurz (EUR za 1 CZK)", row=1, col=2, range=[0, 0.1])
+
+# Show the figure
+fig.show()
+```
+
+## 2. Parita kupní síly (PPP)
+
+- V 50. a 60. letech minulého století hrály v mezinárodních platbách významnou úlohu
+zejména toky zboží. Pohyby kapitálu podléhaly v mnoha zemích devizovým omezením.
+- V 80. letech dochází k uvolnění pohybu mezinárodního kapitálu, zejména v souvislosti s
+vytvářením podmínek pro EMU. PPP tedy nemůže v dnešních podmínkách plně vysvětlit, čím
+je devizový kurz určen, ani proč je proměnlivost kurzů tak značná.
+- Vývoj PPP je však důležitou informací pro finanční analýzy a predikce vývoje
+devizového kurzu.
+- Vyplývá ze zákona jedné ceny, který říká, že cena zboží po přepočtení na stejnou měnu
+musí být stejná. Existují však překážky mezinárodního obchodu (např. dopravní náklady,
+neobchodovatelné statky jako služby), kvůli nimž si měnové ceny neodpovídají.
+
+### Absolutní verze
+
+- Nominální měnový kurz je vyjádřen jako poměr cenových hladin:
 
 $$
-\text{price} = \sum^n_{t=1} \frac{CF_t}{(1+r)^t}
+SR_{\text{ppp}} = \frac{\sum_{i=1}^{n} P_{D,i} \times Q_i}{\sum_{i=1}^{n} P_{F,i} \times Q_i}
 $$
 
-- $r$ ... diskontní sazba (nominální), neboli výnos požadovaný investorem (YTM)
-- $CF$ ... očekávané budoucí cash flow
-- Očekávaná cash flow jsou výplaty kupónů a s posledním kupónem i vrácení jistiny.
+Kde:
+- $SR_{PPP}$ je devizový kurz odvozený od parity kupní síly (počet domácích měnových
+jednotek za jednotku zahraniční měny),
+- $\sum_{i=1}^{n} P_{D,i}$ je soubor zboží vyjádřený v domácích cenách,
+- $\sum_{i=1}^{n} P_{F,i} \times Q_i$ je stejný soubor zboží oceněný v zahraničních
+cenách.
 
-### Příklad očeňování dluhopisu
+**Příklad:**
+::: {.callout-tip title="Příklad"}
+- Reprezentativní soubor zboží oceněný na českém trhu činí 15 000 CZK. Stejný soubor
+zboží oceněný na americkém trhu v dolarech činí 1 000 USD.
+- Paritní měnový kurz by tedy byl:
 
-- Dluhopis s jistinou 100 a splatností 3 roky na konci každého roku vyplácí úrok 5%.
-Investor požaduje výnos 5% (diskontní sazba). Kolik bude ochoten za dluhopis zaplatit
-(současná hodnota dluhopisu)?
-$$
-\text{price} = \frac{5}{(1+0.05)^1} + \frac{5}{(1+0.05)^2} + \frac{105}{(1+0.05)^3} = 100
-$$
+$$ SR_{PPP} = \frac{15\,000 \, \text{CZK}}{1\,000 \, \text{USD}} = 15 \, \text{CZK/USD} $$
+:::
 
-- Na trhu se zvýšily úrokové sazby a investor nyní požaduje z daného dluhopisu výnos 7%. Kolik bude ochoten za dluhopis zaplatit?
-$$
-\text{price} = \frac{5}{(1+0.07)^1} + \frac{5}{(1+0.07)^2} + \frac{105}{(1+0.07)^3} = 94.75 
-$$
+### Relativní verze
 
-- Centrální banka snížila úrokové sazby. Na trhu je méně atraktivních příležitostí.
-Investor je ochoten spokojit se s výnosem 3%. Kolik bude ochoten za dluhopis zaplatit?
-$$
-\text{price} = \frac{5}{(1+0.03)^1} + \frac{5}{(1+0.03)^2} + \frac{105}{(1+0.03)^3} = 105,66
-$$
+- Relativní verze PPP poskytuje dynamický pohled na devizový kurz. Zaměřuje se na
+procentní změny cen v čase, vyjádřené cenovými indexy.
+- Tato teorie tvrdí, že nový rovnovážný kurz se přizpůsobuje inflačnímu diferenciálu,
+tj. relativní změna rovnovážného kurzu přibližně odpovídá rozdílům v míře inflace v
+různých zemích.
 
-### Využití anuity
+Rovnice pro rovnovážný kurz:
 
-- S využitím vzorce pro výpočet anuity lze zapsat výše zmíněný postup následujícím
-vzorcem pro výpočet současné hodnoty (PV) dluhopisu:
+$$ SR_{E,t} = SR_{E,t-n} \times \frac{1 + p_{D(t-n,t)}}{1 + p_{F(t-n,t)}} $$
 
-$$
-PV = C \times \frac{1 - (1 + r)^{-n}}{r} + FV \times (1 + r)^{-n}
-$$
+Kde:
+- $SR_{E,t}$ je rovnovážný kurz v období $t$,
+- $SR_{E,t-n}$ je rovnovážný kurz v minulém období $t-n$,
+- $1 + p_{D(t-n,t)$ je míra inflace v domácí zemi za období $t-n$ až $t$,
+- $1 + p_{F(t-n,t)$ je míra inflace v zahraničí za období $t-n$ až $t$.
 
-- kde:
-    - $PV$ je současná hodnota nebo cena dluhopisu
-    - $C$ je roční kupónová platba
-    - $r$ je požadovaná úřoková sazba (YTM, yield to maturity) nebo diskontní sazba
-    - $n$ je počet období do splatnosti
-    - $FV$ je nominální hodnota dluhopisu
+::: {.callout-tip title="Příklad"}
+- Předpokládejme, že cena piva v ČR vzrostla o 9 %, zatímco v Británii vzrostla o 5 %.
+Kurz britské libry v minulém období byl 50 CZK/GBP.
+- Index vlivu inflace na kurz je:
 
-### Numerický příklad
+$$ I_{PPP} = \frac{1 + p_{D(t-n,t)}}{1 + p_{F(t-n,t)}} = \frac{1.09}{1.05} \approx 1.038 $$
 
-- Předpokládejme následující dluhopis:
-    - Roční kupónová platba $C = \$100$
-    - Diskontní sazba $r = 5\%$ nebo $0.05$
-    - Počet období do splatnosti $n = 10$ let
-    - Nominální hodnota dluhopisu $FV = \$1000$
+- Nový rovnovážný kurz podle relativní verze PPP je:
 
-$$
-PV = 100 \times \frac{1 - (1 + 0.05)^{-10}}{0.05} + 1000 \times (1 + 0.05)^{-10}
-$$
+$$ SR_{E,t} = SR_{E,t-n} \times I_{PPP} = 50 \times 1.038 = 51.9 \, \text{CZK/GBP} $$
 
-- Současná hodnota kupónových plateb:
-$$
-100 \times \frac{1 - (1 + 0.05)^{-10}}{0.05} = \$772.17
-$$
-- Současná hodnota jistiny:
-$$
-1000 \times (1 + 0.05)^{-10} = \$613.91
-$$
-- Celková hodnota dluhopisu:
-$$
-PV = \$772.17 + \$613.91 = \$1386.08
-$$
+- To představuje apreciaci britské libry o 3.8 %.
+:::
 
-### Různá frekvence kupónových plateb
+### Kritika teorie parity kupní síly
 
-- Předpokládejme následující dluhopis:
-    - Měsíční kupónová platba $C = \$10$ (Celkem $\$120$ za rok)
-    - Diskontní sazba $r = 6\%$ nebo $0.06$, musí být převedena na měsíční frekvency,
-    $r_{monthly} = 0.06/12 = 0.005$
-    - Počt období do splatnosti $n = 5$ let, ale protože jsou platby měsíční bude počet
-    úrokových bodobí $n_{monthly} = 5 \times 12 = 60$
+- PPP není schopna vysvětlit krátkodobé pohyby kurzů.
+- Celková hladina cen zahrnuje ceny všech druhů zboží a služeb, ale pouze některé z nich
+jsou předmětem mezinárodní směny.
+- Není jednoznačně vymezeno, které cenové indexy nejlépe odrážejí změny kupní síly v
+dané ekonomice.
 
-$$
-PV = 10 \times \frac{1 - (1 + 0.005)^{-60}}{0.005} + 1000 \times (1 + 0.005)^{-60}
-$$
-$$
-PV = \$487.51 + \$740.74 = \$1228.25
-$$
+## Teorie parity úrokové míry a úrokový diferenciál
 
-### Vztah diskontní sazby a kupónové sazby
+- Významná úloha **vývozu a dovozu kapitálu** při determinaci kurzu.
+- **Parita úrokové míry** vychází z předpokladu, že při volném pohybu kapitálu investoři
+usilují o dosažení stejných výnosů ze svých aktiv, ať jsou denominována v kterékoliv
+měně.
+- **Dovoz kapitálu** (nákup domácích aktiv devizovými cizozemci, poskytování půjček
+domácím subjektům) závisí na úrokovém diferenciálu.
+- **Úrokový diferenciál** je rozdíl mezi úrokovou mírou v domácí zemi a v zahraničí.
+Očekávaná změna kurzu by měla přibližně odpovídat úrokovému diferenciálu.
 
-- Cena dluhopisu je přímo ovlivněna jeho diskontní sazbout (YTM) a kupónovou sazbou.
-- Dluhopis se prodává s prémii, pokud je kupónová sazba vyšší než YTM. (premium bonds)
-- Pokud je kupónová sazba nižší než YTM, dluhopis se prodává se slevou. (discount bonds)
-- Dluhopisy prodávané za jejich nominální hodnotu mají stejnou kupónovou sazbu a YTM.
-(par value bonds)
-- Mezi úrokovými sazbami a cenami dluhopisů je inverzní vztah.
+### Krátkodobé úrokové diferenciály
 
-## Výnosová křivka (yield curve)
+- Vyšší úroková míra doma než v zahraničí $\rightarrow$ kladný úrokový diferenciál
+$\rightarrow$ příliv zahraničního kapitálu $\rightarrow$ růst poptávky po CZK, růst
+nabídky např. EUR $\rightarrow$ zhodnocování CZK.
+- Naopak, nižší úroková míra doma než v zahraničí $\rightarrow$ záporný úrokový
+diferenciál $\rightarrow$ odliv zahraničního kapitálu $\rightarrow$ pokles poptávky po
+CZK, prodej méně výnosných českých aktiv (růst nabídky CZK), růst poptávky po např. EUR
+$\rightarrow$ znehodnocování CZK.
 
-### Struktura úrokových sazeb
+::: {.callout-tip title="Příklad"}
+- Česká firma exportuje pivo do Velké Británie a fakturuje v librách. Firma má na účtu 1
+mil. GBP a rozhoduje se, zda investovat v GBP nebo převést libry na CZK a investovat
+doma.
+- Úroková sazba na šestiměsíční termínový vklad je 9 % p.a. v CZK a 5 % p.a. v GBP.
+Spotový kurz je 50 CZK/GBP. Pokud firma uloží peněžní prostředky v CZK, získá po 6
+měsících:
 
-- Struktura úrokových sazeb ukazuje očekávané výnosy dluhopisů v různých dobách
-splatnosti.
-- Výnosová křivka je grafickým znázorněním vztahu mezi výnosem a dobou splatnosti, kdy
-na ose y je výnos (diskontní sazba, úroková sazba, atd.) a na ose x doba splatnosti
-dluhopisu.
+$$ 1\,000\,000 \, \text{GBP} \times 50 \, \text{CZK/GBP} \times \left( 1 + \frac{0.09
+\times 180}{360} \right) = 52.25 \, \text{mil. CZK} $$
 
-![](images/fig_4_4.png){width=500 fig-align="center"}
+- Pokud uloží peníze v librách, s očekávaným spotovým kurzem 50.976 CZK/GBP bude výnos:
 
-- Normální výnosová křivka je rostoucí, tzn. s rostoucí dobou splatnosti roste očekávaný
-výnos z dluhopisu.
-- To odráží zvýšené riziko spojené s delšími dobami splatnosti.
-- Firemní dluhopisy obvykle nabízejí vyšší výnosy než státní dluhopisy kvůli vyššímu
-riziku nesplacení (riziko defaultu).
+$$ 1\,000\,000 \, \text{GBP} \times \left( 1 + \frac{0.05 \times 180}{360} \right)
+\times 50.976 = 52.25 \, \text{mil. CZK} $$
 
-### Různé tvary výnosové křivky
+V tomto případě přináší obě varianty stejný výnos.
+:::
 
-- Tvar výnosové křivky je definován její úrovní a sklonem.
-- Úroveň odpovídá úrokovým sazbám, zatímco sklon indikuje rozdíl mezi krátkodobými a
-dlouhodobými výnosy, který je v zásadě určen očekáváním trhu a nejistotou ohledně
-budoucích úrokových sazeb.
-- Rostoucí výnosová křivka naznačuje vyšší návratnost pro dlouhodobé investice, často
-viděná v období ekonomické expanze, kdy investoři očekávají rostoucí inflaci.
-- Plochá výnosová křivka indikuje podobné výnosy pro krátkodobé a dlouhodobé investice,
-typicky během přechodných fází v ekonomice nebo kvůli určitým monetárním politikám.
-- Klesající (invertovaná) výnosová křivka je považována za signál blížící se recese.
+### Dlouhodobé úrokové diferenciály
 
-![](images/fig_4_6.png){width=500 fig-align="center"}
+- Změny nominálních úrokových měr jsou doprovázeny změnou cenové hladiny ($\uparrow i
+\rightarrow \uparrow \pi$; $\downarrow i \rightarrow \downarrow \pi$).
+- **Inflační diferenciál** ovlivňuje měnový kurz (např. vyšší inflace oslabuje měnu,
+nižší inflace posiluje měnu).
+- Investoři zahrnují do svého rozhodování také inflační očekávání.
+- Země s vysokými nominálními úrokovými sazbami mají obvykle vyšší cenovou hladinu, což
+vytváří tlak na **oslabení měny**.
+- Naopak, země s nízkými nominálními úrokovými sazbami mají nižší cenovou hladinu, což
+vytváří tlak na **posílení měny**.
 
-- Příklad invertovaných výnosových křivek způsobených pandemií COVID-19.
+## Další faktory ovlivňující měnový kurz
 
-![](images/fig_4_7.png){width=500 fig-align="center"}
+- Rozdílná úroveň zdanění
+- Politická a ekonomická rizika
+- Transakční náklady
 
-- Výnosová křivka je důležitým ekonomickým ukazatelem.
-- Odráží tržní očekávání a postoje jednotlivých a institucionálních investorů, což
-ovlivňuje investiční trhy a ekonomiku.
+**Poznámka**: Pokud se salda jednotlivých účtů platební bilance nerovnají (jeden účet má
+*aktivní saldo a druhý pasivní), dochází ke změně devizových rezerv, což má vliv na
+*měnový kurz.
 
-## Rizika spojená s dluhopisy
+## Vývoj kurzů vybraných měn
 
-- Riziko ovlivňuje požadovaný výnos investorů, kdy za vyšší riziko je potřeba nabídnout
-vyšší úrokovou sazbu.
-- **Riziko nesplacení (kreditní riziko)** se vztahuje k riziku spojenému s neschopností
-emitenta splnit své platební závazky.
-- **Riziko úrokových sazeb** je rizikem poklesu hodnoty dluhopisu, když úrokové sazby
-rostou. Obecně platí, že čím delší doba splatnosti dluhopisu, tím je toto riziko vyšší.
-- **Likviditní riziko** souvisí s obtížností prodeje dluhopisu.
-- **Riziko předčasného splacení** a riziko reinvestice spočívají v tom, že dluhopisy
-mohou být splaceny před svým datem splatnosti, což může vést k nutnosti reinvestovat za
-méně výhodných podmínek, než byla původní investice.
-- **Riziko změny směnných kurzů** (exchange rate risk) nastává v případě pokud je
-dluhopis v cizí měně.
-- **Politické riziko** (political risk) je většinou u zahraničních dluhopisů a je spojen
-s politickou stabilitou daného státu.
+```{python}
+#| include: false
 
-### Rating dluhopisů
+import yfinance as yf
+import pandas as pd
 
-- **Rating** dluhopisů $\rightarrow$ hodnocení jejich kvality ratingovou agenturou.
-- Hodnotí se převážně riziko nesplacení daného dluhopisu.
-- Dluhopisy s ratingem jsou lépe obchodovatelné.
-- Firma platí ratingové agentuře za zpracování ratingu.
+# Define the ticker symbols
+tickers = ['EURCZK=X', 'EURUSD=X']
 
->   - [Ratingové agentury](https://www.forbes.com/advisor/investing/bond-ratings/)
+# Fetch data from Yahoo Finance from 2000 to today for both EUR/CZK and EUR/USD
+data_eurczk = yf.download(tickers[0], start='2000-01-01')
+data_eurusd = yf.download(tickers[1], start='2000-01-01')
 
-- Tři největší poskytovatelé hodnocení dluhopisů jsou Fitch Ratings, Moody's Investors
-Service a Standard & Poor’s (S&P) Global Ratings.
-- Tyto služby používají hodnotící systém, který nejkvalitnější dluhopisy kategorizuje
-jako AAA, následuje AA, a tak dále.
-- Dluhopisy s hodnocením BBB (S&P, Fitch) / Baa (Moody’s) nebo vyšším jsou považovány za
-investiční dluhopisy (investment grade bonds), indikující silnou stabilitu.
-- Investiční dluhopisy jsou populární, protože mnoho bank a penzijních fondů může
-obchodovat pouze investiční dluhopisy.
-- Dluhopisy s hodnocením nižším než BBB nebo Baa jsou známy jako "high-yield bonds" nebo
-"junk bonds".
-- Hodnocení dluhopisů zahrnuje očekávanou budoucí schopnost firmy splácet dluh a její
-vyhlídky na růst.
+# Save the data to CSV files
+data_eurczk.to_csv("data/eurczk_data.csv")
+data_eurusd.to_csv("data/eurusd_data.csv")
+```
 
-| S&P / Fitch | Moody’s | Grade       | Meaning                             |
-|:-----------:|:-------:|:-----------:|:-----------------------------------:|
-| AAA         | Aaa     | Investment  | Risk almost zero                    |
-| AA          | Aa      | Investment  | Low risk                            |
-| A           | A       | Investment  | Risky if economy declines           |
-| BBB         | Baa     | Investment  | Some risk; more if economy declines |
-| BB          | Ba      | Speculative | Risky                               |
-| B           | B       | Speculative | Risky; expected to get worse        |
-| CCC         | Caa     | Speculative | Probably bankruptcy                 |
-| CC          | Ca      | Speculative | Probably bankruptcy                 |
-| C           | C       | Speculative | In bankruptcy or default            |
-| D           |         | Speculative | In bankruptcy or default            |
+```{python}
+import plotly.graph_objects as go
+import pandas as pd
 
-### Výnosy z dluhopisů
+data = pd.read_csv('data/eurczk_data.csv', index_col='Date', parse_dates=True)
 
-- Zisk invetorů je tvořen úrokem a kapitálovým výnosem.
-- Kapitálový výnos je spojen se změnou ceny samotného dluhopisu, pokud je například
-prodán na sekundářním trhu.
-- Pokud se úrokové sazby významně změní, investor musí upravit cenu svého dluhopisu, aby
-ho byl schopen prodat na sekundárním trhu.
-- Pokud invesetor drží dluhopis do splatnosti, jeho zisk tvoří pouze úrok a kapitálový
-výnos je nulový.
+# Create an interactive plot using Plotly
+fig = go.Figure()
 
-## Historický vývoj dluhopisů
+# Add trace for the closing price
+fig.add_trace(go.Scatter(x=data.index, y=data['Close'], mode='lines', name='EUR/CZK'))
 
-### Státní dluhopisy USA
+# Set Czech labels and descriptions
+fig.update_layout(
+    template="seaborn",
+    title='Denní kurz EUR/CZK',
+    title_font=dict(size=20),
+    xaxis_title='Datum',
+    yaxis_title='Kurz (EUR/CZK)',
+    hovermode="x unified",
+    showlegend=False,
+)
 
-- Americké státní dluhopisy (T-bonds) jsou považovány za jednu z nejbezpečnějších
-investic a často se používají jako benchmark pro bezrizikovou investici ve finančním
-modelování.
-- Přestože mají nízké riziko nesplacení, hodnoty T-bondů kolísají se změnami úrokových
-sazeb.
-- Období od konce 70. let do začátku 80. let bylo charakterizováno vysokými
-sazbami inflace a úrokovými sazbami.
-- Následný pokles úrokových sazeb poskytl investorům vysoké výnosy, jak jevidět v grafu.
-- Avšak zvýšení úrokových sazeb jako například v roce 1999 způsobilo i negativní výnosy
-pro investory.
-- Od roku 1980 do roku 1999 byl průměrný roční výnos na T-bondech 10,21 %, ovlivněný
-nadprůměrnou roční inflační sazbou 4,28 %.
-- Mezi roky 2000 a 2020, kdy se inflace zpomalila a úrokové sazby byly obecně nižší,
-byly výnosy T-bondů také průměrně nižší, a to 5,77 %.
+# Show the figure
+fig.show()
+```
+</br>
 
-![](images/fig_6_2.png){width=500 fig-align="center"}
+```{python}
+import plotly.graph_objects as go
+import pandas as pd
 
-![](images/fig_6_3.png){width=500 fig-align="center"}
+data = pd.read_csv('data/eurusd_data.csv', index_col='Date', parse_dates=True)
 
-### Korporátní dluhopisy
+# Create an interactive plot using Plotly
+fig = go.Figure()
 
-- Korporátní dluhopisy, konkrétně dluhopisy Baa, vykazovaly výkonnostní vzorce podobné
-T-bondům v období čtyř dekád od roku 1980 do roku 2020.
-- Dluhopisy Baa, které nejsou bez rizika nesplacení a vyžadují rizikovou prémii,
-vykázaly průměrný roční výnos 12,07 % od roku 1980 do roku 1999 a prémii 2,30 % oproti
-T-bondům od roku 2000 do roku 2020.
+# Add trace for the closing price
+fig.add_trace(go.Scatter(x=data.index, y=data['Close'], mode='lines', name='EUR/USD'))
 
-![](images/fig_6_4.png){width=500 fig-align="center"}
+# Set Czech labels and descriptions
+fig.update_layout(
+    template="seaborn",
+    title='Denní kurz EUR/USD',
+    title_font=dict(size=20),
+    xaxis_title='Datum',
+    yaxis_title='Kurz (EUR/USD)',
+    hovermode="x unified",
+    showlegend=False,
+)
 
-![](images/fig_6_5.png){width=500 fig-align="center"}
+# Show the figure
+fig.show()
+```
 
-- Prémie získané z dluhopisů Baa významně zlepšují investiční výkonnost v průběhu času.
-Například investice 100 dolarů do portfolia dluhopisů Baa v roce 1980 by byla v roce
-2020 v hodnotě 4 506 dolarů, což předčilo koncovou hodnotu 1 931 dolarů pro podobné
-portfolio T-bondů.
+## Systémy měnového kurzu
 
-![](images/fig_6_6.png){width=500 fig-align="center"}
+- Uspořádání kurzových vztahů v rámci systémů devizových kurzů je spojeno především s
+rozdílnou úlohou centrální banky, vlády a trhu při determinaci kurzu a s mírou pružnosti
+či stability kurzu.
+- Tři základní druhy (existují i další formy):
+  1. **Systém volně pohyblivých kurzů** – čistý floating
+  2. **Systém kurzů s řízenou pohyblivostí** – řízený floating
+  3. **Systém fixního (pevného) kurzu** – s limitovanými oscilacemi k jedné měně nebo ke
+  koši měn
+
+### 1. Volně pohyblivý kurz (čistý floating)
+
+- Volně pohyblivé kurzy bez omezení intervenčního zásahu centrální banky se přizpůsobují
+změnám nabídky a poptávky na devizovém trhu. Reagují přirozeně na vývoj inflace,
+úrokových sazeb a dalších faktorů.
+- Tento model se ukázal jako nevhodný kvůli:
+  - Neomezenému pohybu devizových kurzů, který destabilizoval světovou ekonomiku.
+  - Prohloubení nerovnováhy účtů platebních bilancí.
+  - Neschopnosti omezit inflaci – depreciace měn vedla ke zdražení importů (tzv.
+  importovaná inflace).
+  - Náchylnosti k pohybům spekulativního kapitálu v obrovském množství.
+
+### 2. Systém kurzů s řízenou pohyblivostí (řízený floating)
+
+- Tento systém představuje kompromis mezi volně pohyblivými a pevnými kurzy.
+- Centrální banka si vyhrazuje právo zasáhnout do vývoje kurzu devizovými intervencemi,
+pokud hrozí destabilizace ekonomiky pohybem spekulativního kapitálu.
+
+### 3. Systém fixního (pevného) kurzu
+
+- Pevně stanovený nominální měnový kurz vůči jiné měně či koši cizích měn.
+- Stanovuje se **ústřední kurz** a **povolená pásma oscilace**.
+- Pokud hrozí vychýlení kurzu z oscilačních pásem, centrální banka intervenuje na
+devizových trzích.
+- **Ústřední kurz** se může měnit v závislosti na vývoji platební bilance.
+- **Brettonwoodský měnový systém**: Typický příklad fixního kurzu, fungoval do poloviny 70. let 20. století.
+- Oscilace byla povolena v pásmu $\pm$ 1 % od paritního kurzu k USD.
+
+Výhody:
+
+- Snížení kurzového rizika – odstranění překážek mezinárodního obchodu a investic.
+
+Nevýhody:
+
+- Ztráta autonomní měnové politiky, protože centrální banka musí udržovat kurz na
+oficiálně stanovené úrovni.
+- Náročné na rozsah devizových intervencí, protože centrální banka nemá nekonečné
+množství deviz.
+- Snižuje se prostor pro manévrování – centrální banka nemůže razantně měnit peněžní
+zásobu a úrokové sazby, protože by tím měnila měnový kurz.
+
+### Košový měnový kurz
+
+- **Košový měnový kurz** vyjadřuje ústřední devizový kurz vůči koši měn.
+- Příkladem je jednotka **SDR – Special Drawing Rights**, nadnárodní měnová jednotka
+Mezinárodního měnového fondu (MMF).
+
+### Zvláštní práva čerpání (Special Drawing Rights, SDR)
+
+- SDR je měnová a účetní jednotka užívaná v rámci Mezinárodního měnového fondu (MMF) a v
+některých složitějších transakcích i v soukromém sektoru.
+- SDR tvoří hlavní rezervní aktivum MMF a odvozují se od průměrné hodnoty měn USA,
+Evropské měnové unie, Japonska, Velké Británie a Číny – zemí nejvíce zapojených do
+globálního obchodního systému.
+- **Kód měny**: XDR.
+- MMF přiděluje SDR svým členům na základě výše jejich členských kvót.
+- Každý člen MMF přispívá do společné pokladny určitým obnosem.
+- Členské kvóty určují výši půjček poskytovaných jednotlivým zemím.

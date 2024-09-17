@@ -1,347 +1,480 @@
-# Akcie a jejich oceňování
+---
+format:
+  html:
+    mermaid-format: png
+    toc: true
+    toc-depth: 2
+    toc-title: Obsah lekce
+---
+
+# Podnikové finance a zdroje finančních informací
 
 ::: {.callout-note}
 # Studijní materiály
 
 - Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
 University. <https://openstax.org/details/books/principles-finance>
-  - Chapter 11 - Stocks and Stock Valuation
-  - Chapter 12 - Historical Performance of US Markets
+  - Chapter 2 - Corporate Structure and Governance
+  - Chapter 5 - Financial Statements
+- RůČKOVÁ, P. (2011). Finanční analýza–4. rozšířené vydání. Grada Publishing as.
 :::
 
 **Výstupy z učení:**
 
-1. Umět definovat akcie a jejich charakteristiky.
-2. Rozumět dividendám a jednotlivým typům akcií.
-3. Definovat a vypočítat ukazatele P/E a P/B a pochopit jejich použití při určování
-relativního ocenění společnosti.
-4. Porozumět dividendově diskontním modelům a modelům diskontovaného cash flow.
-5. Získat základní přehled o historické výkonnosti trhů.
+1. Definovat podnikové finance a hlavní cíl finančního managementu.
+2. Znát typy obchodních společností.
+3. Porozumět struktuře výkazu zisků a ztráty, rozvahy a výkazu cash flow.
+4. Definovat majetkovou a finanční strukturu rozvahy.
+5. Znát jednotlivé typy zisků.
+6. Znát různé druhy cash flow.
 
-## Investování do akcií
+## Podnikové finance
 
-- Akcie představují vlastnický podíl v dané společnosti a s tím i nárok na budoucí zisky
-a peněžní toky společnosti.
-- Akcie umožňují oddělení vlastníků od managementu.
-- Na rozdíl od dluhopisů akcie nemají datum splatnosti, nominální hodnotu ani zaručené
-kupónové platby.
-- Akcie mohou vyplácet dividendy, ale ty nejsou garantovány a mohou se měnit na základě
-rozhodnutí představenstva společnosti.
-- Investování do akcií je obecně rizikovější než dluhopisy nebo jiné investice s pevným
-výnosem, protože je zde větší nejistota.
-- S větším rizikem je spojen i potenciálně vyšší výnos v podobě dividend nebo
-kapitálového zhodnocení dané akcie.
+Podnikové finance se zabývají získáváním finančního kapitálu, řízením finančních operací
+a aktiv podniku od jeho založení až po případný zánik. Zobrazují pohyby peněžních
+prostředků, kapitálu a dalších finančních zdrojů.
 
-### Typy akcií
+### Struktura a řízení firmy
 
-- Kmenové akcie (common stock):
-  - představují vlastnický podíl ve společnosti
-  - podíl na řízení a rozhodování
-  - podíl na zisku (dividendy)
-  - podíl na likvidačním zůstatku
-- Prioritní akcie (preferred stock):
-  - nepředstavují vlastnické právo ve firmě
-  - oproti kmenovým akciím mají přednostní právo na zisky a majetek společnosti
-  - zpravidla vyplácejí pravidelnou fixní dividendu
-  - většinou neobsahují hlasovací právo
-  - nemají dobu splatnosti
+Firmy sledují finanční i nefinanční cíle, jako je rozšiřování prodeje, spokojenost
+zákazníků a vývoj nových produktů. Maximalizace bohatství vlastníků nebo akcionářů se
+zaměřuje na dlouhodobou prosperitu firmy.
 
-### Dividendy
+#### Hlavní cíl finančního managementu
 
-- Firma rozhoduje jestli bude vyplácet dividendy a v jaké výši (většinou čtvrtletně).
-- Snaha o stabilní dividendovou politiku.
-- Občas může být vyplacena mimořádná dividenda.
-- Dividendy většinou v penězích (***cash dividend***), ale mohou být i formou akcií
-(***stock dividend***).
-- Stock dividend souvisí s pojmem štěpení akcií (***stock split***), kdy firma rozdělí
-své stávající akcie na více kusů při zachování celkové tržní kapitalizace.
-- Hlavní rozdíl je v tom, že stock dividend zahrnuje vydání nových akcií zatímco u stock
-split je každá akcie rozdělena na více kusů, ale nejedná se o emisi nových akcií, přičemž
-v obou případech zůstává tržní kapitalizace konstantní.
-- Př. Držíte 10 akcií, každá má hodnotu 80. Firma udělá 2-for-1 split. Takže ve výsledku
-máte 20 akcií, ale každá stojí 40. Bohatství je pořád stejné, jen rozdělené na víc dílů.
-- Místo výplaty dividend se může firma rozhodnout nakoupit svoje vlastní akcie (stock
-buyback).
-- Výsledkem je zvýšení cen akcií a zpravidla daňové výhody pro akcionáře.
-- Buyback lze také použít v situaci, kdy firma považuje své akcie za podhodnocené.
+Hlavním cílem finančního managementu je **maximalizace tržní hodnoty firmy**, tedy
+například tržní ceny akcií u akciových společností. Efektivní podnik musí poskytovat
+kvalitní produkty a služby při co nejnižších nákladech, což vede k dlouhodobé prosperitě
+a růstu hodnoty podniku. Klíčová je také péče o zaměstnance a dobrá pověst, přičemž
+tento cíl by měl být dosažen v souladu se zákonem a etickými zásadami.
 
-### Rizika investování do akcií
+### Typy obchodních společností
 
-- Obecně rizikovější než dluhopisy, proto investoři očekávají vyšší výnosy.
-- V případě likvidace společnosti jsou běžní akcionáři na posledním místě.
-- Nejistá výše budoucích dividend.
-- Možné problémy s managementem.
-- Vyšší volatilita cen akcií ve srovnání s cenou dluhopisů.
+Typy obchodních společností jsou specifikovány v zákoně č. 90/2012 Sb., Zákon o
+obchodních společnostech a družstvech. Výběr správné struktury závisí na možnostech
+financování, zdanění a likviditě.
 
-## Poměrové ukazatele
+#### Akciová společnost
 
-- Investoři používají různé metody pro hodnocení společností a oceňování jejich akcií.
-- Často se jedná o studium finančních výkazů a výpočet finančních ukazatelů.
+Akciová společnost je právnická osoba, jejíž majetek je rozdělen na akcie. Za své
+závazky odpovídá celým svým majetkem, ale akcionáři za závazky společnosti neručí a
+nehradí její případné ztráty. Oddělení vlastníků od managementu umožňuje společnosti
+dlouhodobé fungování, i když se vlastníci nebo manažeři mění.
 
-### Poměr cena/zisk (P/E, Price-earnings ratio)
+#### Další typy obchodních společností
 
-- P/E je klíčovým ukazatelem používaným k posouzení tržní hodnoty akcií společnosti.
-- P/E se vypočítá jako:
-$$
-\text{P/E} = \frac{\text{Cena za akcii}}{\text{Zisk na akcii}}
-$$
-- P/E reprezentuje cenu, kterou investor platí za jednotku současného nebo budoucího
-zisku společnosti.
-- P/E může být spočítáno historicky (na základě minulého zisku) nebo prediktivně (na
-základě očekávaných budoucích zisků).
-- Například, pokud je cena akcie společnosti \$24.00 a její zisk na akcii je \$4.00,
-její P/E poměr je:
-$$
-\text{P/E} = \frac{\$24.00}{\$4.00} = 6
-$$
-- Výsledek ukazuje, že investoři jsou ochotni platit až šest dolarů za každý dolar
-zisku.
-- P/E společnosti by měl být srovnáván s historickým P/E nebo s P/E jiných společností
-ve stejném odvětví.
-- Vysoké P/E může naznačovat, že společnost je nadhodnocena, zatímco nízké P/E může
-signalizovat podhodnocení a investiční příležitosti.
-- Prohlédněte si 90letý historický průměr P/E pro index S&P 500
-<https://www.multpl.com/s-p-500-pe-ratio>
+- **Veřejná obchodní společnost** – Společnost alespoň dvou osob, které se podílejí na
+podnikání a ručí za její dluhy celým svým majetkem.
+- **Komanditní společnost** – V této společnosti alespoň jeden společník ručí za dluhy
+omezeně (komanditista) a jeden neomezeně (komplementář).
+- **Společnost s ručením omezeným (s.r.o.)** – Ručí za závazky celým svým majetkem,
+přičemž společníci ručí do výše nesplněných vkladových povinností.
 
-### Poměr cena/účetní hodnota (P/B, Price-to-book ratio)
+### Vztah mezi akcionáři a vedením společnosti
 
-- Poměr cena/účetní hodnota (P/B) je běžný finanční ukazatel používaný k hodnocení tržní
-hodnoty společnosti vzhledem k její účetní hodnotě.
-- Tržní hodnota je aktuální cena všech akcií společnosti, zatímco účetní hodnota
-představuje hodnotu společnosti po likvidaci aktiv a splacení závazků.
-- P/B  se vypočítá jako:
-$$
-\text{P/B} = \frac{\text{Cena za akcii}}{\text{Účetní hodnota na akcii}}
-$$
-- P/B se často používá k hodnocení firem ve finančním sektoru, ale má omezení v
-nezahrnování nehmotných aktiv, jako jsou patenty, ochranné známky a autorská práva.
-- Nízké P/B (méně než 1) by mohlo naznačovat, že akcie je podhodnocena, zatímco vysoké
-P/B (větší než 1) by mohlo naznačovat nadhodnocení.
-- P/B poměr by měl být použit v souvislosti s dalšími ukazateli a srovnán s P/B poměry
-společností ve stejném odvětví pro komplexní analýzu.
+- **Stakeholder** je každá osoba nebo subjekt, který má zájem na výsledcích společnosti
+(zaměstnanci, zákazníci, dodavatelé, stát).
+- **Akcionáři** jsou jednotlivci nebo organizace, které vlastní akcie společnosti. Jsou
+vlastníky firmy, zatímco stakeholder může být zainteresovaný i nefinančně.
+- Akcionáři mají nárok na dividendy, hlasují o záležitostech společnosti a mohou být
+zvoleni do představenstva.
+- Existují dva typy akcionářů:
+    - **Kmenoví akcionáři** – mají hlasovací práva a vlastní kmenové akcie.
+    - **Prioritní akcionáři** – vlastní prioritní akcie s pevným výnosem, ale bez
+    hlasovacího práva.
+- Akcionáři najímají manažery k řízení firmy. Představenstvo (board of directors, BOD)
+dohlíží na korporaci, zatímco manažeři střední úrovně spravují každodenní provoz.
 
-## Dividendové diskontní modely
+### Problém zastoupení
 
-- Dividendový diskontní model (DDM) se používá k ocenění akcie na základě současné
-hodnoty jejích budoucích dividend.
-- Model s nulovým a konstantním růstem má omezení kvůli předpokladu o fixní dividendě a
-růstových sazbách.
-- Tyto modely jsou nejvhodnější pro akcie se stabilní historií vyplácení dividend.
-
-### Gordonův růstový model
-
-- Nejběžnějším DDM je Gordonův růstový model (konstatní růst dividend), který používá
-následující vzorec:
-$$
-\text{Hodnota akcie} = \frac{D_0 (1+g)}{r - g} = \frac{D_1}{r - g}
-$$
-
-- Kde $D_0$ je současná roční dividenda, $r$ je požadovaný výnos, a $g$ je odhadovaná
-budoucí sazba růstu dividend.
-
-### Dividendový diskontní model s nulovým růstem
-
-- Model s nulovým růstem předpokládá, že budoucí dividendy budou stejné navždy.
-- Jeho vzorec je podobný výpočtu současné hodnoty perpetuity:
-$$
-\text{Hodnota akcie} = \frac{\text{Roční dividendy}}{\text{Požadovaná míra výnosu}} = \frac{D}{r}
-$$
-
-### Numerický příklad
-
-- Předpokládejme, že společnost právě vyplatila dividendu $D_0$ ve výši $\$2$,
-očekává se růst dividend $g$ ve výši 5% ročně. Vaše požadovaná míra výnosu $r$ je 10%.
-Cena akcie se vypočítá následovně:
-
-$$
-P = \frac{2.00 (1 + 0.05)}{0.10 - 0.05} = \frac{2.10}{0.05} = \$42.00
-$$
-
-- Podle DDM modelu by cena akcie měla být \$42,00.
-- Pokud je tržní cena nižší než tato hodnota, může to být dobrá investiční příležitost.
-
-### Model s proměnným růstem dividend
-
-- Model s proměnným růstem dividend je realističtější model, který předpokládá, že
-společnost a její akciová hodnota projdou různými fázemi růstu.
-- Tento model vypočítává současnou hodnotu pro každé období růstu a poté je sečte, aby
-získal vnitřní hodnotu akcie.
-- Např. máme společnost X, která za poslední rok vyplatila dividendu \$2.00. Očekáváme
-růstovou míru dividendy 5% pro další čtyři roky a následně stabilizaci na růstu 3%.
-Požadovaná výnosová míra je 8%. V následující tabulce je zobrazen výpočet hodnoty akcie.
-
-| Rok | Růst % | Dividenda (\$) | Hodnota po 4. roce (\$) | Diskontní faktor pro 8% | Současná hodnota dividendy (\$) |
-|:---:|:------:|:--------------:|:-----------------------:|:-----------------------:|:-------------------------------:|
-|  0  |   5%   |   2.00         |                         |                         |                                 |
-|  1  |   5%   |   2.10         |                         |   1.0800                |  1.9444                         |
-|  2  |   5%   |   2.21         |                         |   1.1664                |  1.8904                         |
-|  3  |   5%   |   2.32         |                         |   1.2597                |  1.8379                         |
-|  4  |   5%   |   2.43         |                         |   1.3605                |  1.7869                         |
-|  5  |   3%   |   2.50         |  50.07886               |   1.4693                |  35.7870                        |
-|     |        |                |                         |  $Celkem:$              |  43.2466                        |
-
-$$
-\text{Hodnota po 4. roce} = \frac{2.43 (1 + 0.03)}{0.08 - 0.03} = 50.07886
-$$
-
-- Vnitřní hodnota akcie by byla součet současných hodnot dividend, tedy \$43.2466.
-
-### Výhody a omezení DDM
-
-- Model je nejužitečnější pro ocenění společností s dlouhou a konzistentní historií
-dividend, protože se opírá o očekávané budoucí výplaty a růst dividend.
-- DDM poskytují matematický vzorec, což snižuje šanci na nesprávný výklad nebo
-subjektivitu.
-- Společnosti mohou udržovat výplatu dividend, i když to dlouhodobě není výhodné, aby se
-vyhnuly volatilitě akciových cen.
-- Aplikace DDM na společnosti s omezenou historií dividend nebo na ty v odvětvích s
-vysokým rizikem může vést k nepřesnostem.
-- Jedním z hlavních omezení DDM je jejich neschopnost ohodnotit společnosti, které
-nevyplácí dividendy, což je trend zejména u mladých technologických společností.
-- Cena akcie podle DDM je vysoce citlivá na změny jednotlivých parametrů v rovnici.
-
-## Model diskontovaného cash flow (DCF)
-
-- Investoři při nákupu akcií očekávají budoucí příjmy z divident a zisk z prodeje akcií.
-- Prodejní cena akcie by ideálně měla být vyšší než nákupní cena, což vede ke
-kapitálovému zisku.
-- Kapitálový zisk je vyšší, pokud akcie nevyplácí dividendu.
-- Navíc pokud jsou akcie drženy delší dobu, platí se ve většině zemí nižší daně ze zisku
-z jejich prodeje (v ČR po 3 letech daň 0%).
-- Krátkodobé zisky z cenných papírů jsou zdaněny podle běžných sazeb daně z příjmů (v ČR
-15%).
-- Model diskontovaného cash flow (DCF) je často využíván u firem, které nevyplácí
-dividendy.
-- Model DCF vypočítává současnou hodnotu očekávaných cash flow společnosti.
-- Model DCF je reprezentován následujícím rovnice:
-
-$$
-\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{CF_n}{(1+r)^n}
-$$
-
-- kde:
-  - $CF_n$ je očekávaný peněžní tok v období $n$,
-  - $r$ je diskontní sazba (také známá jako požadovaná míra výnosu),
-  - $n$ je počet období.
-- Alternativně lze model rozšířít o predikce cash flow do nekonečna s využitím perpetuity.
-- Přidá se poslední člen, tzv. terminal cash flow (TCF), který představuje poslední
-predikované cash flow, které dále roste konstantním tempem růstu.
-- Model DCF je poté reprezentován následujícím rovnicí:
-
-$$
-\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{\frac{TFC}{r-g}}{(1+r)^{n-1}}
-$$
-
-### Výhody a omezení modelu DCF
-
-- Mezi hlavní výhody je možnost ocenit všechny firmy bez ohledu na jejich dividendovou
-politiku.
-- Cash flow firmy se v účetnictví hůře zkresluje než zisk, takže model není tak citlivý
-na manipulace s účetnictvím.
-- Společnosti však mohou například uměle vytvářet pozitivní cash flow prodejem aktiv,
-což není dlouhodobě udržitelné.
-- Přesnost modelu DCF závisí na přesnosti jeho vstupů, včetně odhadů cash flow a
-diskontní sazby.
-- Použití různých metod pro oceňování společností snižuje riziko nepřesností.
-
-## Prioritní akcie
-
-- Prioritní akcie nabízejí držitelům přednostní právo na majetek společnosti.
-- Mají stanovenou konstantní dividendu, která je vyplácena akcionářům.
-- Jako kmenové akcie nemají stanovenou dobu splatnosti.
-- Na rozdíl od kmenových akcií neposkytují hlasovací právo.
-- Mnoho preferovaných akcií je kumulativních, což znamená, že jakékoli vynechané
-dividendy se stávají závazkem, který společnost musí nakonec vyplatit preferovaným
-akcionářům.
-- Nekumulativní preferované akcie ztrácejí nevyplacené dividendy navždy.
-- Preferované akcie lze v budoucnu převést na obyčejné akcie.
-- Preferované akcie jsou více podobné dluhopisům kvůli jejich konstantním dividendám,
-což usnadňuje oceňování pomocí dividendových modelů.
-- Vnitřní hodnotu preferovaných akcií lze určit pomocí vzorce na perpetuitu.
-
-$$
-\text{Hodnota akcie} = \frac{\text{Dividenda}}{\text{Požadovaná míra výnosu}}
-$$
-
-### Numerický příklad
-
-- Firma X právě vydala preferované akcie (kumulativní) se jmenovitou hodnotou \$100 a
-roční dividendou 7%.
-- Aktuální cena preferovaných akcií je \$35 za akcii.
-- Jaká je výnosnost těchto preferovaných akcií?
-
-**Řešení:**
-
-- Prvním krokem je určení roční dividendy:
-
-$$
-\$100 \times 0.07 = \$7.00 
-$$
-
-- Nyní použijeme výše uvedený vzorec k vypočítání míry výnosu:
-
-$$
-r = \frac{\$7.00}{\$35.00} = 0.20 \text{ neboli } 20\%
-$$
-
-### Rozdíly mezi prioritními a kmenovými akciemi
-
-| Kmenové akcie                                             | Prioritní akcie                                                         |
-|:---------------------------------------------------------:|:-----------------------------------------------------------------------:|
-| Dividendy vyplaceny až po prioritních akcionářích         | Jako první dostanou dividendy                                           |
-| Dividendy jsou variabilní a mohou narůst nebo klesat      | Konstantní dividenda                                                    |
-| Vysoký potenciál růstu hodnoty vázán na výkon společnosti | Omezená možnost kapitálového zhodnocení                                 |
-| Při likvadaci vyplaceni jako poslední                     | Při likvidaci v pořadí podobně jako držitelé dluhopisů                  |
-| Poskytují držiteli hlasovací právo                        | Bez hlasovacího práva                                                   |
-| Žádná akumulace nevyplacených dividend                    | Pokud jsou kumulativní, nevyplacené dividendy se stávají závazkem firmy |
-
-## Historický vývoj akcií
-
-- Dow Jones Industrial Average (DJIA) a S&P 500 jsou nejčastěji
-citovanými akciovými indexy, přičemž změny v obou jsou silně korelované.
-- Indexy mají za cíl reprezentovat výnosnost celého akciového trhu.
-- Ke konci roku 2020 měly firmy zahrnuté v indexu S&P 500 kombinovanou tržní
-kapitalizaci 33,4 bilionu dolarů, což je přibližně 66 % odhadované tržní kapitalizace
-amerických akcií ve výši 50,8 bilionu dolarů.
-- Historie kapitálových trhů ukazuje, že průměrný výnos z akcií výrazně předčil jiné
-třídy finančních cenných papírů, jako jsou státní dluhopisy, korporátní dluhopisy nebo
-peněžní trh.
-- Často se klade důraz na alokaci aktiv před výběrem konkrétních cenných papírů, protože
-rozhodnutí investovat do akcií namísto dluhopisů obvykle přináší větší dlouhodobý zisk.
-- Akcie malých společností historicky realizovaly větší průměrné roční výnosy, i když s
-větší variabilitou, ve srovnání s velkými společnostmi zastoupenými v indexu S&P 500.
-- V poslední době byl rozdíl ve výnosech mezi akciemi malých a velkých společností méně
-výrazný. Od roku 1980 do roku 2020 průměrný složený roční výnos indexu Wilshire US
-Small-Cap dosáhl 12,13 %, ve srovnání s průměrným výnosem indexu Wilshire US Large Cap,
-který byl 11,82 %.
-
-| Asset Class           | Nominal Average Annual Returns 1981–2020 | Standard Deviation of Returns 1981–2020 |
-|:----------------------|:----------------------------------------:|:---------------------------------------:|
-| Large company stocks  |                                    12.64%|                                   16.06%|
-| Baa bonds             |                                    10.34%|                                    7.67%|
-| 10-year T-bonds       |                                     8.21%|                                    9.92%|
-| US T-bills            |                                     3.94%|                                    3.39%|
-| Inflation             |                                     2.93%|                                    1.76%|
-
-![](images/fig_6_8.png){width=800 fig-align="center"}
-
-![](images/fig_6_7.png){width=600 fig-align="center"}
-
-- Kalkulačky pro nalezení výnosů ve vybraných obdobích pro americké akcie,
-dluhopisy a inflaci.
-<https://openstax.org/r/6-what-to-invest-in>
-- Další kalkulačka pro globální akciové trhy.
-<https://openstax.org/r/returns-of-global-stocks>
-- Globální zpráva o bohatství publikovaná společností Credit Suisse.
-<https://openstax.org/r/global-wealth-report>
-
-::: {.callout-note}
-# Vyplatí se časovat trh?
-
-V období od roku 1980 do poloviny roku 2020 by investice 10 000 dolarů do
-indexového fondu S&P 500 vynesla investorovi 697 421 dolarů. Avšak pokud by
-investor zmeškal 5 nejvýkonnějších dní na trhu, snížil by se konečný zůstatek
-portfolia na 432 411 dolarů. Pokud by zůstal mimo trh během 10 nejlepších dnů,
-zůstatek by klesl na pouhých 313 377 dolarů, což je méně než polovina výnosu z
-celého období.
+::: {.callout-important title="Definice"}
+Problém zastoupení vzniká, když je od jedné osoby či skupiny očekáváno, že bude jednat v
+zájmu jiné osoby, avšak může dojít ke konfliktu zájmů.
 :::
+
+Ve financích je nejčastěji spojován s konfliktem mezi akcionáři a managementem, nebo
+mezi akcionáři a dalšími zainteresovanými stranami, jako jsou zaměstnanci. 
+
+Pokud manažeři využívají své pozice pro osobní prospěch místo maximalizace hodnoty pro
+akcionáře, nastává problém. Asymetrie informací mezi stranami tento problém prohlubuje.
+V současnosti je stále častěji využíváno hodnocení ESG (životní prostředí, sociální
+oblast a správa a řízení), které naznačuje proaktivní řízení a dlouhodobou hodnotu
+podniku.
+
+#### Náklady problému zastoupení
+
+Pokud management upřednostňuje své zájmy před zájmy akcionářů, vznikají ve firmě
+neefektivnosti. Tento problém nelze zcela odstranit, ale může být zmírněn, přičemž snahy
+o jeho řešení obvykle vyžadují dodatečné náklady.
+
+#### Možná řešení
+
+Možná řešení problému zastoupení zahrnují právní prevence, kontrolu a dohled nad
+činností managementu, motivační odměňování vázané na výkonnost (např. hodnotu akcií),
+nebo možnost odvolat vedení. Klíčové je také správné nastavení corporate governance.
+
+### Společnosti na domácích a globálních trzích
+
+- Společnosti na českém trhu vedou účetnictví dle českých účetních standardů, pokud není zákonem stanoveno jinak.
+- Firmy působící v USA dodržují americké účetní a cenné papírové předpisy, konkrétně
+používají zásady GAAP (Generally Accepted Accounting Principles).
+- V Evropě, Asii a některých částech Jižní Ameriky se naopak používají standardy IFRS
+(International Financial Reporting Standards).
+
+Ačkoli GAAP a IFRS sledují stejný cíl objektivního finančního výkaznictví, v praxi se
+liší, zejména v oblastech jako účtování zásob, konsolidace dceřiných společností a
+vykazování menšinových podílů. Při analýze společnosti je důležité zohlednit, zda firma
+používá české účetní standardy, GAAP nebo IFRS.
+
+### Role financí ve firmě
+
+Finanční plánování zajišťuje přehled o minulých, současných i budoucích finančních
+potřebách organizace a pomáhá dosahovat obchodních cílů. Kvalitní finanční plánování
+zahrnuje výkazy zisků a ztrát, peněžních toků, rozvahy, prognózy a různé nástroje
+finanční analýzy, například poměrové ukazatele.
+
+Rozpočtování je klíčovou součástí finančního plánování, které se zaměřuje na objem,
+zdroje a využití peněžních prostředků. Finanční plánování pomáhá řídit rozpočtové změny,
+identifikovat odchylky od očekávaných výsledků a slouží jako základ pro tvorbu budoucích
+rozpočtů.
+
+## Zdroje finančních informací
+
+Finanční informace o výkonnosti a stavu podniku jsou poskytovány třemi hlavními výkazy:
+
+- **Výkaz zisku a ztráty** (income statement)
+- **Rozvaha** (balance sheet)
+- **Výkaz cash flow** (cash flow statement)
+
+### Výkaz zisků a ztráty
+
+Výkaz zisků a ztrát zachycuje výkonnost firmy za určité období a zobrazuje tržby a
+náklady spojené s jejich realizací. Tento dokument vykazuje všechny výnosy (tržby) a
+náklady za účetní období, bez ohledu na to, zda došlo k jejich skutečnému inkasu nebo
+zaplacení.
+
+- **Výnosy** představují peněžní částky, které podnik získal z veškerých svých činností
+za dané období.
+- **Náklady** jsou peněžní částky, které podnik účelně vynaložil na dosažení výnosů, i
+když jejich zaplacení nemuselo nastat ve stejném období.
+
+#### Vybrané položky výkazu zisků a ztráty
+
+Některé důležité položky výkazu zisků a ztrát zahrnují:
+
+- **Tržby za prodej výrobků a služeb** – zahrnují tržby za výrobky a služby
+vyprodukované samotnou firmou.
+- **Tržby za prodej zboží** – příjmy z přeprodeje zboží, které firma nevyrobila.
+- **Výkonová spotřeba** – náklady na materiál, energie, opravy, cestovné a drobný
+nehmotný majetek.
+- **Změna stavu zásob** – rozdíl v hodnotě nedokončené výroby, polotovarů a výrobků,
+který může být kladný i záporný.
+- **Odpisy** – snížení účetní hodnoty dlouhodobých aktiv v důsledku jejich používání.
+- **Opravné položky** – dočasné snížení hodnoty aktiv, např. pohledávek či zásob, pokud
+existují pochybnosti o jejich plné hodnotě.
+
+::: {.callout-tip title="Příklad"}
+Pokud odběratel dluží firmě 100 000 Kč po dobu dvou let a pravděpodobnost splacení je
+nízká, opravná položka sníží hodnotu této pohledávky, aby účetnictví odráželo věrnou
+realitu.
+:::
+
+#### Výsledky hospodaření
+
+Výsledky hospodaření firmy jsou členěny na několik kategorií:
+
+- **Provozní výsledek hospodaření**: rozdíl mezi provozními výnosy a náklady.
+- **Finanční výsledek hospodaření**: rozdíl mezi finančními výnosy a náklady.
+- **Výsledek hospodaření před zdaněním**: součet provozního a finančního výsledku.
+- **Čistý zisk**: výsledek hospodaření po odečtení daně.
+
+#### Klíčové ukazatele
+
+Pro hodnocení výkonnosti firmy jsou důležité následující ukazatele:
+
+- **EBITDA** (Earnings before Interest, Taxes, Depreciation, and Amortization): provozní
+výsledek hospodaření po přičtení odpisů hmotného a nehmotného majetku.
+- **EBIT** (Earnings before Interest and Taxes): měří efektivitu podnikání bez
+zohlednění financování a zdanění.
+- **EBT** (Earnings before Taxes): výsledek hospodaření před zdaněním.
+- **EAT** (Earnings after Taxes): čistý zisk po zdanění.
+
+![](images/fig_5_2.png){width=500 fig-align="center"}
+
+### Rozvaha
+
+Rozvaha zachycuje stav dlouhodobého hmotného a nehmotného majetku (**aktiva**) a zdrojů
+jejich financování (**pasiva**) k určitému datu. Poskytuje základní přehled o majetku
+podniku a jeho financování v určitém okamžiku, a to ve statické formě, tedy k okamžiku
+účetní závěrky.
+
+#### Aktiva (majetek)
+
+Aktiva představují veškerý majetek, který firma vlastní, a jsou rozdělena do dvou
+hlavních kategorií:
+
+- **Dlouhodobý majetek** zahrnuje dlouhodobá hmotná, nehmotná a finanční aktiva, která
+jsou ve firmě používána po delší dobu.
+- **Oběžná aktiva** představují krátkodobý majetek, jako jsou zásoby, pohledávky a
+hotovost, které se rychleji mění v rámci běžného provozu.
+
+#### Pasiva (zdroje financování)
+
+Pasiva zahrnují zdroje financování aktiv podniku a dělí se na:
+
+- **Vlastní kapitál**: kapitál vložený vlastníky společnosti, například základní
+kapitál, rezervy nebo nerozdělený zisk.
+- **Cizí zdroje**: zahrnují závazky vůči věřitelům, jako jsou úvěry, dluhopisy a
+neuhrazené závazky.
+
+#### Rovnice rozvahy
+
+Základní rovnice rozvahy, která musí být vždy v rovnováze, zní:
+
+$$
+\text{Majetek} = \text{Zdroje financování}
+$$
+
+$$
+\text{Aktiva} = \text{Vlastní kapitál} + \text{Cizí zdroje}
+$$
+
+#### Rozvaha ve zkráceném rozsahu
+
+Rozvaha může být prezentována ve zjednodušené formě, která shrnuje hlavní kategorie
+aktiv a pasiv, což poskytuje rychlý přehled o finanční situaci podniku bez přílišného
+detailu.
+
+![](images/fig_5_3.png)
+
+### Majetková struktura podniku
+
+Majetková struktura podniku představuje přehled aktiv, tedy majetku, který přináší
+budoucí ekonomický užitek. Aktiva lze rozdělit na dlouhodobá a krátkodobá (oběžná) podle
+doby jejich využití.
+
+#### Dlouhodobý majetek
+
+Dlouhodobý majetek zahrnuje:
+
+- **Nehmotný majetek**, jako je know-how, goodwill, software, výsledky výzkumu, licence
+a patenty.
+- **Hmotný majetek**, například pozemky, budovy, strojní zařízení, technické vybavení a
+inventář.
+- **Finanční majetek**, což jsou cenné papíry a účasti se splatností delší než jeden
+rok, nebo poskytnuté půjčky se splatností nad jeden rok.
+
+#### Oběžná (krátkodobá) aktiva
+
+Krátkodobá aktiva zahrnují:
+
+- **Zásoby**: materiál, zboží, polotovary a pomocné látky.
+- **Krátkodobé pohledávky**: pohledávky se splatností do jednoho roku.
+- **Krátkodobý finanční majetek**: finanční aktiva se splatností do jednoho roku.
+- **Peněžní prostředky**: hotovost a prostředky na běžných účtech.
+
+#### Faktory ovlivňující majetkovou strukturu podniku
+
+Majetková struktura podniku závisí na několika faktorech:
+
+- **Obor podnikání** – různé sektory, jako bankovnictví, obchod nebo výroba, vykazují
+odlišnou majetkovou strukturu.
+- **Technická náročnost výroby** – firmy s vyšší technickou náročností obvykle vlastní
+větší podíl hmotného a nehmotného dlouhodobého majetku, jako je know-how nebo patenty.
+- **Rozvinutost peněžního a kapitálového trhu** – přístup k finančním trhům ovlivňuje
+podíl finančních aktiv.
+- **Ekonomická situace a strategie podniku** – rozhodnutí o alokaci zdrojů a majetkové
+struktuře jsou formovány firemní strategií a aktuálními ekonomickými podmínkami.
+
+::: {.callout-tip title="Příklad"}
+V průmyslu a službách je vysoký podíl dlouhodobého majetku, zatímco ve stavebnictví
+převládají pohledávky kvůli dlouhým dobám splatnosti.
+
+![](images/fig_5_4.png){width=500 fig-align="center"}
+:::
+
+### Finanční struktura podniku
+
+Finanční struktura podniku představuje způsob, jakým je financován majetek podniku, a je
+zobrazena na straně pasiv v rozvaze. Skládá se z vlastního kapitálu a cizích zdrojů.
+
+#### Vlastní kapitál
+
+Vlastní kapitál tvoří:
+
+- **Základní kapitál** – kapitál vložený do podniku akcionáři nebo společníky, včetně
+peněžních a nepeněžitých vkladů.
+- **Kapitálové fondy** – vytvářeny z darů, dotací, neodepisovaného majetku a emisního ážia.
+- **Fondy ze zisku** – zahrnují rezervní fondy, statutární fondy a další fondy tvořené
+ze zisku.
+- **Výsledek hospodaření** – vyjadřuje zisk nebo ztrátu podniku za určité období.
+- **Nerozdělený zisk** – příjmy společnosti získané od jejího vzniku, snížené o
+dividendy vyplacené akcionářům.
+
+#### Cizí zdroje
+
+Cizí zdroje zahrnují:
+
+- **Rezervy** – vytvářené pro specifické účely, jako jsou rezervy na opravy majetku nebo
+nedobytné pohledávky.
+- **Dlouhodobé závazky** – dluhopisy, závazky se splatností delší než jeden rok a
+bankovní úvěry.
+- **Krátkodobé závazky** – obchodní úvěry, závazky vůči státu, zaměstnancům či
+společníkům, a bankovní úvěry se splatností do jednoho roku.
+
+#### Optimalizace finanční struktury
+
+- Optimalizace finanční struktury zahrnuje vyváženou kombinaci vlastního a cizího
+kapitálu, která minimalizuje náklady na kapitál a zároveň kontroluje rizika.
+- **Optimální finanční struktura** je taková, při níž jsou průměrné náklady na kapitál
+minimální a tržní hodnota firmy maximální.
+- Je důležité dosáhnout správné rovnováhy mezi likviditou, rizikem a náklady na kapitál.
+
+### Bilanční pravidla
+
+- **Zlaté pravidlo financování** – krátkodobé zdroje by měly financovat oběžná aktiva,
+zatímco dlouhodobé zdroje by měly pokrývat dlouhodobý majetek.
+- **Zlaté pravidlo vyrovnání rizika** – vlastní kapitál by měl převyšovat nebo se rovnat
+cizím zdrojům, aby se omezila rizika a udržely nízké náklady na kapitál.
+- **Zlaté pari pravidlo** – dlouhodobý majetek by měl být financován primárně vlastním
+kapitálem.
+- **Zlaté poměrové pravidlo** – růst investic by neměl překračovat růst tržeb, aby
+nedošlo ke snížení rentability a likvidity podniku.
+
+## Strategie financování
+
+Finanční strategie firmy vyjadřuje, jakým způsobem jsou financovány aktiva podniku,
+zejména rozdělení mezi krátkodobé a dlouhodobé zdroje. Existují tři základní přístupy k
+financování.
+
+### Neutrální strategie
+
+Neutrální strategie spočívá v tom, že dlouhodobý majetek a trvale přítomná oběžná aktiva
+jsou financována dlouhodobým kapitálem (vlastním i cizím), zatímco proměnlivá část
+oběžných aktiv je kryta krátkodobým kapitálem.
+
+![](images/fig_5_5.png){width=300 fig-align="center"}
+
+### Konzervativní strategie
+
+Konzervativní strategie využívá vyšší podíl dlouhodobých finančních zdrojů, kterými se
+financuje i část oběžných aktiv. Tento přístup snižuje riziko platební neschopnosti,
+protože podnik má k dispozici stabilní dlouhodobé zdroje. Nicméně s tímto modelem
+přichází vyšší náklady, jelikož dlouhodobý kapitál je obvykle dražší než krátkodobý.
+
+![](images/fig_5_6.png){width=300 fig-align="center"}
+
+### Agresivní strategie
+
+Agresivní strategie naopak spočívá v tom, že podnik financuje i část trvale přítomných
+oběžných aktiv a někdy i dlouhodobý majetek pomocí krátkodobých zdrojů. Tento přístup
+snižuje náklady na financování, ale zvyšuje riziko platební neschopnosti, protože
+krátkodobé závazky mohou být splatné dříve, než podnik získá dostatek prostředků na
+jejich pokrytí.
+
+![](images/fig_5_7.png){width=300 fig-align="center"}
+
+### Doporučení a shrnutí
+
+Při volbě strategie financování by se měly zohlednit následující zásady:
+
+- Udržovat optimální poměr mezi vlastním a cizím kapitálem, při němž jsou celkové
+náklady na kapitál minimální a tržní hodnota firmy maximální.
+- **Krátkodobá aktiva** by měla být financována krátkodobým kapitálem.
+- **Dlouhodobá aktiva** je vhodné financovat dlouhodobým kapitálem, a to jak vlastním,
+tak cizím.
+- Dlouhodobá aktiva, která jsou klíčová pro hlavní činnost podniku, je lepší financovat
+převážně vlastním kapitálem. Ostatní dlouhodobá aktiva lze financovat cizími zdroji,
+protože je v případě potřeby možné je odprodat.
+- Vysoký podíl dlouhodobého kapitálu snižuje efektivnost, protože dlouhodobé zdroje jsou
+dražší.
+- Nízký podíl dlouhodobého kapitálu (a tedy vyšší podíl krátkodobých zdrojů) je
+riskantní a může vést k finančním problémům.
+- Oběžná aktiva by měla výrazně převyšovat krátkodobý cizí kapitál, aby byl podnik
+schopen plynule fungovat i v případě finančních problémů.
+
+## Čistý pracovní kapitál (Net Working Capital)
+
+**Čistý pracovní kapitál (ČPK)** představuje rozdíl mezi oběžnými aktivy a krátkodobými
+*cizími zdroji, a hraje klíčovou roli v udržování platební schopnosti podniku. Výpočet
+*ČPK vychází z rozlišení mezi oběžným a dlouhodobým majetkem a také mezi dlouhodobě a
+*krátkodobě vázaným kapitálem.
+
+- **ČPK = Oběžná aktiva – Krátkodobé cizí zdroje**
+- **ČPK = Vlastní kapitál + Dlouhodobé cizí zdroje – Dlouhodobý majetek**
+
+ČPK je pozitivní, pokud oběžná aktiva převyšují krátkodobé závazky, což signalizuje, že
+podnik má dostatek prostředků pro pokrytí svých krátkodobých závazků. Naopak záporný ČPK
+může znamenat potenciální problémy s likviditou.
+
+![](images/fig_5_8.png){width=500 fig-align="center"}
+
+### Solventnost
+
+- **Solventnost** označuje schopnost podniku splácet své závazky v řádných lhůtách.
+- Solventní podnik má dostatek finančních zdrojů k úhradě svých závazků, zatímco
+nesolventní podnik (se záporným vlastním kapitálem) dluží více, než je schopen splatit.
+
+## Výkaz cash flow – přehled o peněžních tocích
+
+Výkaz cash flow je zásadní finanční dokument, který poskytuje přehled o zdrojích a
+použití peněžních prostředků podniku během účetního období. Zatímco rozvaha a výkaz
+zisků a ztrát zaznamenávají transakce v okamžiku jejich uskutečnění, výkaz cash flow se
+zaměřuje výhradně na skutečné pohyby peněžních prostředků.
+
+Na rozdíl od výkazu zisků a ztrát, který neposkytuje kompletní obraz o pohybu peněz ve
+firmě, výkaz cash flow odhaluje, jak peníze skutečně proudí. Tento výkaz je tedy
+nezbytný pro pochopení celkové likvidity a finanční stability podniku.
+
+### Struktura výkazu cash flow
+
+Peněžní toky jsou rozděleny do tří hlavních kategorií:
+
+- **Provozní činnost**: zahrnuje příjmy a výdaje spojené s každodenním obchodním
+provozem.
+- **Investiční činnost**: týká se nákupu a prodeje dlouhodobého majetku a investic.
+- **Finanční činnost**: zahrnuje změny ve vlastním kapitálu a dlouhodobých závazcích,
+jako jsou úvěry a emise akcií.
+
+![](images/fig_5_9.png){width=600 fig-align="center"}
+
+Existují dva hlavní způsoby, jak vypočítat cash flow:
+
+- **Přímá metoda**: zobrazuje příjmy a výdaje z provozní činnosti přímo, přičemž sleduje
+skutečné platby.
+- **Nepřímá metoda**: vychází z výsledku hospodaření a upravuje jej o nepeněžní operace,
+jako jsou odpisy, a změny pracovního kapitálu. Tato metoda je běžněji používaná.
+
+#### Cash flow z provozní činnosti
+
+Tato část ukazuje rozdíl mezi provozními příjmy a výdaji za určité období, což vypovídá
+o schopnosti firmy generovat peněžní prostředky ze svých hlavních obchodních aktivit.
+
+#### Cash flow z investiční činnosti
+
+Zahrnuje příjmy a výdaje spojené s nákupem a prodejem dlouhodobého majetku, jako jsou
+nemovitosti, stroje nebo investice do jiných firem.
+
+#### Cash flow z finanční činnosti
+
+Peněžní toky z finanční činnosti se vztahují k financování podniku, jako jsou změny ve
+vlastním kapitálu nebo dlouhodobých závazcích. Tato část výkazu ukazuje, jak podnik
+získává nebo splácí finanční prostředky.
+
+#### Volné cash flow
+
+**Volné cash flow** představuje rozdíl mezi provozním cash flow a kapitálovými výdaji,
+*které jsou upraveny o změny v dlouhodobém majetku. Je to ukazatel toho, kolik peněz má
+*firma k dispozici po financování svých základních provozních potřeb.
+
+- Pokud je volné cash flow záporné, firma musí získat dodatečné finanční prostředky
+prostřednictvím zvýšení vlastního kapitálu nebo cizích zdrojů.
+
+### Shrnutí
+
+Výkaz cash flow sleduje změny stavu peněžních prostředků a poskytuje důvody, proč k
+těmto změnám dochází. Pomáhá posoudit kvalitu dosažených zisků a zjistit, zda jsou
+peněžní prostředky generovány převážně z provozních činností nebo z neprovozních
+aktivit. Výkaz cash flow je sestavován buď přímou, nebo častěji nepřímou metodou, a
+rozděluje peněžní toky do tří hlavních kategorií: provozní, investiční a finanční
+činnosti.

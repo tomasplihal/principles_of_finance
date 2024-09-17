@@ -1,298 +1,523 @@
-# Jak přemýšlet o investování
+---
+format:
+  html:
+    mermaid-format: png
+    toc: true
+    toc-depth: 2
+    toc-title: Obsah lekce
+---
+
+# Finanční management
 
 ::: {.callout-note}
 # Studijní materiály
 
 - Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
 University. <https://openstax.org/details/books/principles-finance>
-  - Chapter 15 - How to Think about Investing
+  - Chapter 2 - Corporate Structure and Governance
+  - Chapter 6 - Measures of Financial Health
+  - Chapter 17 - How Firms Raise Capital
+  - Chapter 19 - The Importance of Trade Credit and Working Capital in Planning
+- RůČKOVÁ, P. (2011). Finanční analýza–4. rozšířené vydání. Grada Publishing as.
 :::
 
 **Výstupy z učení:**
 
-1. Rozumět pojmu teorie efektivních trhů, operativní efektivnosti a informační
-efektivnosti na trzích.
-2. Pochopit základní principy investování, včetně role a typů tržních indexů.
-3. Znát metody hodnocení rizika a výnosu pro investice.
-4. Získat dovednosti k identifikaci a používání ukazatelů výkonnosti, jako je Sharpe
-Ratio.
-5. Naučit se činit informovaná investiční rozhodnutí na základě analytických nástrojů a
-teorií.
+1. Porozumět pojmům finanční analýza, ekonomická a účetní analýza.
+2. Znát metody finanční analýzy a základní poměrové ukazatele.
+3. Porozumět struktuře výkazu zisků a ztráty, rozvahy a výkazu cash flow.
+4. Porozumět hotovostnímu cyklu a definovat optimální objem pracovního kapitálu.
+5. Definovat způsoby krátkodobého financování podniku.
+6. Umět vyčíslit průměrné vážené náklady na kapitál.
 
-## Teorie efektivních trhů
+## Finanční analýza
 
-- Efektivní trhy rychle a nezaujatě reaguje na nové informace, ceny se rychle a přesně
-přizpůsobují novým informacím, jsou tam nízké transakční náklady, rychlé a bezproblémové
-vypořádání obchodů atd.
-- Na efektivním trhu by měly být větší výkyvy v cenách způsobeny pouze neočekávanými
-zprávami (očekávané zprávy jsou již zahrnuty v cenách).
-- Na efektivních trzích je obtížné pravidelně nacházet akcie, které jsou špatně oceněné,
-a dosahovat vyšších výnosů než trh.
-- Odchylky od ideálních cen se objevují, ale náhodně a nelze je předpovídat (náhodná
-procházka, random walk theory).
+Finanční analýza je klíčovým nástrojem finančního řízení podniku. Umožňuje **vyhodnotit
+ekonomickou výkonnost podniku a kvantifikovat finanční dopady jeho činnosti**. Současně
+poskytuje informace o silných a slabých stránkách firmy, na jejichž základě lze učinit
+odpovídající opatření. Tím usnadňuje rozhodování jak v krátkodobém horizontu v rámci
+operativního řízení, tak i v dlouhodobém horizontu při realizaci strategických cílů.
 
-### Informační efektivita
+Finanční analýza zahrnuje několik klíčových oblastí:
 
-- Teorie efektivních trhů odkazuje primárně na informační efektivitu.
-- Informační efektivita odkazuje na rychlost, s jakou se v cenách akcií odráží
-nejnovější dostupné informace.
-- Pokud jsou trhy efektivní, je těžké nebo nemožné dosáhnout konzistentně vyšších než
-průměrných výnosů.
-- Existují i další formy efektivity jako například operační efektivita se vztahuje na
-rychlost a přesnost zpracování nákupního nebo prodejního příkazu za nejlepší dostupnou
-cenu.
-- Existují tři formy informační efektivnosti trhu:
+- **Analýza odvětví** – Každé odvětví vykazuje rozdílnou citlivost na ekonomický cyklus,
+ať už se jedná o odvětví cyklická, neutrální nebo anticyklická.
+- **Analýza firem** – Zaměřuje se na aktuální stav podniku a jeho předpokládaný vývoj.
+Provádí se jak kvalitativní analýza (např. kvalita managementu, úroveň řízení, likvidita
+akcií, ekologie), tak kvantitativní analýza (např. z účetních výkazů společnosti).
 
-1. **Slabá efektivnost**
-    - Veškeré historické informace o tržních cenách a obchodech jsou plně odraženy v
-    aktuálních cenách.
-    - Tzn. technická analýza nelze použít k překonání trhu.
-2. **Středně-silná efektivnost**
-    - Všechny veřejně dostupné informace jsou promítnuty v cenách.
-    - Nejen historické ceny, ale všechna dostupná data např. z finančních výkazů,
-    ekonomické faktory, atd.
-    - Tzn. technická ani fundamentální analýze nelze použít k překonání trhu.
-3. **Silná efektivnost**
-    - Všechny veřejné i neveřejné informace jsou zohledněny v současných cenách.
-    - Tzn. nelze žádným způsobem překonat trh, ani s využítím interních informací
-    (insider trading).
+**Cílem finanční analýzy** je zhodnotit několik aspektů podniku:
 
-## Finanční indexy
+- Schopnost vytvářet hodnotu pro vlastníky a akcionáře.
+- Solventnost a likviditu z pohledu věřitelů.
 
-- Finanční index je statistické vyjádření hodnoty vybrané části trhu.
-- Vypočítává se pomocí váženého průměru vybraných aktiv.
-- Indexy mohou sledovat akcie, dluhopisy, komodity, atd. nebo jejich různé kombinace.
-- Index má přesně daná pravidla, jaká aktiva do něho vstupují a jakou mají v indexu
-váhu.
-- Účelem indexů je např.:
-  - **Benchmarking**: Měří výkonnost trhu pro srovnání s dalšími investicemi.
-  - **Investice**: Slouží jako podkladová aktiva pro indexové fondy a ETF.
-  - **Analýza**: Pomáhá při analýze vývoje trhu a sentimentu investorů (makroekonomický
-  ukazatel).
+Ačkoli jsou pohledy vlastníků a věřitelů různé, technika provedení finanční analýzy
+zůstává stejná. Účelem je poskytnout komplexní vyhodnocení současné i budoucí situace
+podniku.
 
-### Výpočet indexů
+<div style="text-align: center;">
+```{mermaid}
+%%| fig-width: 5
+flowchart TD
+    A[Finanční analýza]
+    B(Ekonomická analýza)
+    C(Účetní analýza)
+    B --> A
+    C --> A
+```
+</div>
 
-1. **Price-Weighted**:
-    - Cenově vážený index.
-    - Vypočítá se jako průměr cen vybraných akcií.
-    - Akcie s vyšší cenou mají větší vliv.
-    - *Příklad: Dow Jones Industrial Average*
-2. **Market Capitalization-Weighted**
-    - Index vážený podle tržní kapitalizace.
-    - $\text{Tržní kapitalizace} = \text{cena akcie} \times \text{počet existujících akcií}$
-    - *Příklad: S&P 500*
-3. **Equal-Weighted**:
-    - Stejná váha pro všechny akcie.
-    - Všechny akcie mají stejný dopad.
-    - *Příklad: MSCI World Equal Weighted*
+### Ekonomická analýza
 
-### Hlavní akciové indexy
+Ekonomická analýza se zaměřuje na několik klíčových faktorů, které ovlivňují podnik:
 
-1. **Dow Jones Industrial Average (DJIA)**
-     - Zahrnuje 30 velkých amerických společností.
-     - Cenově vážený.
-     - Založen: 1896
-2. **S&P 500**
-     - 500 amerických akcií s největší tržní kapitalizací.
-     - Vážený podle tržní kapitalizace.
-     - Založen: 1957
-3. **NASDAQ Composite**
-     - Téměř všechny akcie na burze Nasdaq (kolem 3000 akcií).
-     - Zaměřený na společnosti z oblasti informačních technologií.
-     - Vážený podle tržní kapitalizace.
-     - Založen: 1971
-4. **FTSE 100**
-     - 100 největších britských společností.
-     - Vážený podle tržní kapitalizace.
-     - Založen: 1984
-5. **Nikkei 225**
-     - 225 velkých japonských společností.
-     - Cenově vážený.
-     - Založen: 1950
+- **Odvětví a obor činnosti** – Analyzují se rizika daného odvětví, globální trendy a
+specifika trhu.
+- **Operační rizika** – Hodnocení rizik spojených s dodavateli, odběrateli a konkurenty.
+- **Trhy a produkty** – Zaměření na produktové portfolio, konkurenční výhody a tržní
+postavení.
+- **Technologie** – Potřeba investic do nových technologií.
+- **Riziko země** – Politická, ekonomická, regulatorní a měnová rizika.
+- **Management a personální politika** – Zkušenosti, organizace a přístup k riziku.
 
-## Podílové fondy a ETF
+### Účetní analýza
 
-- **Podílový fond**: Profesionálně spravovaný investiční fond, který sdružuje peníze od
-více investorů za účelem nákupu cenných papírů, jako jsou akcie, dluhopisy atd.
-- **Exchange-Traded Fund (ETF)**: Typ investičního fondu obchodovaného na burzách,
-podobně jako. Obvykle sleduje podkladový index.
-- Charakteristika podílového fondu:
-  - profesionální správa portfolioa
-  - aktivní řízení portfolia umožňuje reagovat na aktuální situaci
-  - velká diverzifikace
-  - automatické investování
-  - emituje podílové listy
-- Odlišnosti ETF:
-  - většinou pasivní řízení portfolia (sleduje index)
-  - nemůže měnit strategii podle aktuální situace, ale generuje výnosy zvoleného indexu
-  - nižší poplatky
-  - emituje akcie
-  - vysoká likvidita a transparentnost
-  - nutnost kupovat akcie na burze
+K provedení finanční analýzy se využívají různé účetní výkazy a další dokumenty:
 
-## Měření výnosu
+- Rozvaha
+- Výkaz zisku a ztráty
+- Výkaz cash flow (přehled o peněžních tocích)
+- Přehled o změnách vlastního kapitálu
+- Příloha účetní závěrky
+- Výroční zprávy podniku
 
-- Realizovaný výnos je změna hodnoty portfolia za určité časové období.
-- Potřeba zohlednit dividendy a případně štěpení akcií, proto se nejčastěji používá
-Adjusted Close Price.
-- Výnos lze rozdělit na kapitálový a dividendový:
-  - **Kapitálový výnos** představuje změnu ceny daného aktiva.
-  - **Dividendový výnos** tvoří získané dividendy.
-  - **Celkový výnos** je součet kapitálového a dividendového výnosu.
+## Metody finanční analýzy
+
+Metody finanční analýzy lze rozdělit na tři základní typy:
+
+1. Analýza absolutních ukazatelů
+2. Analýza rozdílových ukazatelů
+3. Analýza poměrových ukazatelů
+
+### Analýza absolutních ukazatelů
+
+Tato metoda vychází z dat jednotlivých účetních výkazů, zkoumá jejich výši, strukturu a
+vývoj v čase. Slouží jako prvotní seznámení se situací analyzované společnosti.
+Absolutní ukazatele se analyzují dvěma způsoby:
+
+- **Horizontální analýza** – Analyzuje změny absolutních hodnot účetních výkazů v čase a
+vyjadřuje je procentuálně. Tato metoda ukazuje trend vývoje ukazatelů a umožňuje
+predikovat budoucí vývoj.
   
-- Příklad: Nákup akcie za \$128,74 a prodej po jednom roce za \$176,53. Za dobu držení
-akcie byly vyplaceny dividendy ve výši \$2,68.
+- **Vertikální analýza** – Rozkládá souhrnné položky na jednotlivé části a zjišťuje, jak
+se jednotlivé položky podílejí na celku. Procentuálně vyjadřuje jednotlivé položky např.
+v bilanční sumě rozvahy nebo tržbách ve výkazu zisku a ztráty.
+
+### Analýza rozdílových ukazatelů
+
+Rozdílové ukazatele slouží především k **řízení likvidity**. Mezi nejdůležitější patří:
+
+- Čistý pracovní kapitál (ČPK)
+- Čisté pohotové prostředky
+- Čistý peněžně-pohledávkový finanční fond
+
+### Analýza poměrových ukazatelů
+
+Poměrové ukazatele umožňují rychlé a spolehlivé hodnocení hospodaření podniku. Vyjadřují
+podíl dvou položek účetních výkazů a využívají veřejně dostupná data, čímž jsou vhodné
+pro srovnání s konkurencí.
+
+Hlavní skupiny poměrových ukazatelů:
+
+- Ukazatele ziskovosti a rentability
+- Ukazatele likvidity
+- Ukazatele zadluženosti
+- Ukazatele aktivity
+
+## Základní finanční ukazatele
+
+### Ukazatele ziskovosti a rentability
+
+- **Čistý zisk** (EAT, Earning After Taxes): Ukazatel čistého zisku podniku po odečtení
+všech daní.
+- **Zisk před zdaněním** (EBT, Earning Before Taxes): Vyjadřuje zisk před odečtením
+daní, což umožňuje posoudit provozní výkonnost podniku bez vlivu daňových opatření.
+- **Zisk před úroky a zdaněním** (EBIT, Earning Before Interests and Taxes): Zohledňuje
+provozní výsledek podniku před úroky a daněmi.
+- **Zisk před úroky, zdaněním a odpisy** (EBITDA, Earning Before Interests, Taxes,
+Depreciation and Amortization): Ukazuje zisk podniku bez vlivu nákladů na financování,
+zdanění a odpisy.
+
+#### Rentabilita celkového kapitálu – ROA (Return On Assets)
+
+Hodnotí výkonnost podniku bez ohledu na zdroje financování jeho majetku. Vyjadřuje
+celkovou efektivnost a produkční sílu podniku.
 $$
-\text{Kapitálový výnos} = 176,53 - 128,74 = 47,79
+\text{ROA} = \frac{\text{EBIT}}{\text{Aktiva}} \times 100
 $$
 
+#### Rentabilita vlastního kapitálu – ROE (Return On Equity)
+
+Klíčový ukazatel pro vlastníky (akcionáře), který zachycuje výnosnost jimi vloženého
+kapitálu.
 $$
-\text{Dividendový výnos} = 2,68
+\text{ROE} = \frac{\text{EAT}}{\text{Vlastní kapitál}} \times 100
 $$
 
+### Ukazatele likvidity
+
+#### Běžná likvidita (Working Capital Ratio, Current Ratio)
+
+Udává, kolikrát je podnik schopen uspokojit své věřitele, pokud by proměnil veškerá
+oběžná aktiva v hotovost.
 $$
-\text{Celkový výnos} = 2,68 + 47,79 = 50,47
+\text{Běžná likvidita} = \frac{\text{Oběžná aktiva}}{\text{KTD závazky}}
 $$
+
+### Ukazatele zadluženosti
+
+#### Celková zadluženost (Debt Ratio)
+
+Ukazuje podíl cizích zdrojů na celkových aktivech.
+$$
+\text{Celková zadluženost} = \frac{\text{Cizí zdroje}}{\text{Aktiva}} \times 100
+$$
+
+#### Finanční páka
+
+Vyjadřuje, jak použití cizího kapitálu zvyšuje rentabilitu vlastního kapitálu.
+
+$$
+\text{Finanční páka} = \frac{\text{Aktiva}}{\text{Vlastní kapitál}}
+$$
+
+### Ukazatele aktivity
+
+#### Doba obratu zásob (Days Sales of Inventory)
+
+Udává počet dní, po které jsou aktiva vázána ve formě zásob.
+
+$$
+\text{Doba obratu zásob} = \frac{\text{Zásoby}}{\text{Tržby}} \times 360
+$$
+
+#### Doba obratu pohledávek (Days Receivable Outstanding)
+
+Ukazuje průměrnou dobu, za kterou jsou pohledávky podniku přeměněny na peněžní
+prostředky.
+
+$$
+\text{Doba obratu pohledávek} = \frac{\text{KTD pohledávky z obchodního styku}}{\text{Tržby}} \times 360
+$$
+
+#### Doba obratu závazků (Days Payable Outstanding)
+
+Udává průměrnou dobu, za kterou podnik uhradí své závazky.
+
+$$
+\text{Doba obratu závazků} = \frac{\text{KTD závazky z obchodního styku}}{\text{Tržby}} \times 360
+$$
+
+## Pracovní kapitál, krátkodobé financování podniku, struktura a náklady kapitálu
+
+Podnikové výkony (tržby) vytvářejí toky plateb, které určují nezbytnou kapitálovou
+potřebu podniku.
+
+Řízení pracovního kapitálu zahrnuje dva hlavní přístupy:
+
+- **Interní financování**: Samofinancování ze zisku, odpisů, rezerv a prostředků
+uvolněných rychlejším obratem kapitálu.
+- **Externí financování**: Financování z vlastních zdrojů (vlastníci, akcionáři) a z
+cizích zdrojů (úvěry, leasing, faktoring).
+
+![Hotovostní cyklus](images/fig_6_11.png){width=500 fig-align="center"}
+
+![Hotovostní cyklus na časové ose](images/fig_6_12.png){width=500 fig-align="center"}
+
+Hotovostní cyklus trvá 70 dní, což znamená, že po tuto dobu je hotovost vázána ve
+výrobním procesu.
+
+### Řízení pracovního kapitálu
+
+Řízení pracovního kapitálu se soustředí na klíčové oblasti:
+
+- **Zásoby:** Objem zásob (materiál, výrobky, nedokončená výroba) závisí na dodávkách od
+dodavatelů a odběrech do výroby. Snahou je minimalizovat zásoby prostřednictvím dodávek
+"just in time".
+
+- **Pohledávky:** Odklad splatnosti je konkurenční nástroj, ale přináší riziko
+nedobytných pohledávek.
   
-- Návratnost se většinou vyjádřuje v procentech, aby se usnadnilo srovnání.
+- **Peněžní prostředky a krátkodobé finanční majetky (KFM):** Peněžní prostředky stojí
+na začátku hotovostního cyklu a slouží k zajištění bezpečnostní likvidity. Časový
+nesoulad příjmů a výdajů vyžaduje přiměřené investiční a finanční plánování.
+  
+- **Závazky:** Odklad splatnosti (např. dodavatelský úvěr) snižuje potřebu hotovosti a
+představuje významný zdroj financování pracovního kapitálu.
+
+### Optimální objem pracovního kapitálu
+
+Při řízení pracovního kapitálu je nutné zohlednit následující otázky:
+
+- Jaká je optimální úroveň pracovního kapitálu k udržení výkonnosti podniku?
+- Jaká úroveň pracovního kapitálu zajistí nejvyšší tvorbu hodnoty pro vlastníky?
+- Jak lze snížit úroveň pracovního kapitálu bez ohrožení ziskovosti a výkonů?
+
+Čistý pracovní kapitál (ČPK) tvoří bezpečnostní marži, která chrání podnik před
+nenadálými riziky a umožňuje zachovat provoz i v nepředvídatelných situacích. Zahrnuje
+zásoby materiálu, rozpracované výroby, hotových výrobků a tzv. obchodní deficit, tedy
+rozdíl mezi dobou splatnosti pohledávek a závazků.
+
+- Na základě těchto údajů je možné stanovit délku obratového cyklu (peníze $\rightarrow$
+zásoby $\rightarrow$ zboží $\rightarrow$ peníze).
+- Obratový cyklus (OC) peněz je vypočítán jako:
 
 $$
-\text{Celkový výnos v procentech} = \frac{2,68}{128,74} + \frac{47,79}{128,74} = 0,0208
-+ 0,3712 = 0,3920 = 39,20\%
+\text{OC} = \text{DOZAS} + \text{DOP} - \text{DOZ}
 $$
 
-### Efektivní roční výnos
+- $\text{DOZAS} \dots$ doba obratu zásob  
+- $\text{DOP} \dots$ doba obratu pohledávek  
+- $\text{DOZ} \dots$ doba obratu závazků
 
-- Efektivní roční výnos (effective annual rate, EAR) vyjadřuje výnosnost investice pokud
-by byla držena jeden rok.
-- Důležité pro srovnání různých investic.
+::: {.callout-tip title="Příklad"}
+Zásoby jsou nakoupeny ihned za hotové, výroba trvá 7 dní, hotové výrobky jsou prodány se
+splatností 20 dnů. Materiál v hodnotě 100 000 Kč je zaplacen hotově, což znamená, že
+podnik potřebuje mít tuto částku k dispozici po dobu 27 dní.
 
-$$
-\text{EAR} = (1 + \text{HPR})^m - 1
-$$
+Pokud by byl materiál odebrán na fakturu se splatností 15 dnů, doba vázání prostředků by
+se snížila na 12 dní (7 + 20 - 15 = 12).
 
-- $\text{HPR}$ je výnos za dané časové období (holding priod return) a $m$ je počet
-těchto období v jednom roce.
+Délka obratového cyklu je klíčová – čím delší, tím větší je potřeba financování.
 
-#### Příklady
-
-- Výnos 25% za 2 roky:
-$$
-\text{EAR} = (1 + 0.25)^{\frac{1}{2}} - 1 = 11.80\%
-$$
-- Výnos 10% za  6  měsíců:
-$$
-\text{EAR} = (1 + 0.10)^{\frac{12}{6}} - 1 = 20.89\%
-$$
-- Výnos 1% za 15 dní:
-$$
-\text{EAR} = (1 + 0.01)^{\frac{365}{15}} - 1 = 27.11\%
-$$
-
-### Průměrný roční výnos
-
-- Roční data SPY upravená o dividendy a splity stažená z
-[Macrotrends](https://www.macrotrends.net/stocks/charts/SPY/spdr-s-p-500-etf/stock-price-history).
-
-| Rok  | Cena     | Roční výnos |
-|:----:|:--------:|:-----------:|
-| 2022 | 378.1934 | -18.17%     |
-| 2021 | 462.1801 | 28.74%      |
-| 2020 | 358.9909 | 18.37%      |
-| 2019 | 303.2705 | 31.22%      |
-| 2018 | 231.1130 | -4.56%      |
-| 2017 | 242.1472 | 21.70%      |
-| 2016 | 198.9700 | 12.00%      |
-| 2015 | 177.6494 | 1.25%       |
-| 2014 | 175.4526 | 13.46%      |
-| 2013 | 154.6353 | 32.31%      |
-| 2012 | 116.8764 | -           |
-
-- Průměrný roční výnos lze spočítat pomocí EAR a výnosu za celé období:
+Průměrné prostředky musí pokrýt průměrné denní výdaje. Výši potřebných prostředků stanovíme na základě součinu délky obratového cyklu peněz a průměrných denních nákladů ($\emptyset DN$).
 
 $$
-\text{EAR} = (1 + \frac{378.1934 - 116.8764}{116.8724})^{\frac{1}{11}} - 1 = 11.27\%
+\text{Potřebné prostředky} = \text{délka OC} \times \emptyset DN
 $$
 
-- Stejného výsledku lze dosáhnout pomocí geometrického průměru ročních výnosů:
+Pokud podnik není schopen odhadnout průměrné denní výdaje, je možné je stanovit jako:
+celkové roční výdaje (náklady) / 360.
+:::
+
+::: {.callout-tip title="Příklad"}
+Pokud jsou zásoby vázány ve výrobě 10 dní, průměrná doba inkasa pohledávek činí 50 dní a
+doba splatnosti závazků je 20 dní, průměrné denní výdaje jsou 2611,10 Kč. Délka
+obratového cyklu je:
+
+$$ 
+OC = 10 + 50 - 20 = 40 \text{ dní}
 $$
-\text{Geometric Average} = \left( (1 - 0.1817) \times (1 + 0.2874) \times \dots \times
-(1 + 0.3231) \right)^{1/10} - 1 = \left(2.9273\right)^{1/10} - 1 = 11.66\%
+
+   Potřebné prostředky:  
+
+$$
+40 \times 2611,10 = 104 444 \text{ Kč}
+$$
+:::
+
+::: {.callout-tip title="Příklad"}
+Stanovte obratový cyklus podniku, je-li splatnost faktury za materiál 30 dní, doba
+výroby 10 dní a splatnost odběratelských faktur 15 dní.
+:::
+
+## Krátkodobé financování podniku
+
+Krátkodobé financování zajišťuje likviditu podniku a pokrývá běžné provozní náklady.
+Existují různé typy financování v závislosti na potřebách podniku.
+
+- **Běžné financování:** Používá se pro pokrytí běžného provozu podniku, jako jsou
+náklady na materiál, energie, mzdy, nájemné a splácení závazků.
+
+- **Mimořádné financování:** Zajišťuje prostředky pro specifické situace:
+  - Zakládání podniku (nákup strojů, pozemků, budov, rozjezd podnikání)
+  - Rozšiřování podniku nebo jeho aktivit
+  - Financování ozdravného procesu podniku
+
+### Vlastní zdroje financování
+
+- Nerozdělený zisk, rezervy, odpisy
+- Vklady vlastníků do základního kapitálu
+- Zvýšení základního kapitálu (emise akcií, private equity, venture capital, business
+angels, dary)
+
+### Cizí zdroje financování
+
+#### Úvěry
+
+- **Obchodní úvěr:** Odběratel získává úvěr tím, že platí za dodávky zboží nebo služeb
+až po sjednané lhůtě, což snižuje dobu, po kterou jsou jeho prostředky vázány.
+Dodavatel může nabídnout **skonto**, což je sleva za dřívější platbu.
+
+- **Kontokorentní úvěr:** Umožňuje automatické čerpání úvěru při přechodu účtu do
+debetu.
+
+- **Revolvingový úvěr:** Opakovaně čerpatelný úvěr, který je poskytován na úvěrovém
+účtu, umožňující flexibilní splácení a čerpání.
+
+#### Leasing
+
+- **Finanční leasing:** Uživatel o majetek pečuje jako o vlastní a může jej po určité
+době odkoupit.
+
+- **Operativní leasing:** Uživatel majetek pouze využívá, přičemž servis a údržbu
+zajišťuje leasingová společnost.
+
+#### Dluhopisy
+
+Dluhopis představuje právo věřitele (držitele dluhopisu) na splacení dlužné částky
+emitentem a na výnos. Existují různé typy dluhopisů:
+
+- Dluhopis s fixním výnosem
+- Dluhopis s nulovým kuponem (zero coupon bond), prodávaný s diskontem
+- Dluhopis s variabilním kuponem
+- Věčný dluhopis (bez termínu splatnosti)
+- Vypověditelný dluhopis (s rizikem předčasného splacení)
+- Prašivý dluhopis (junk bond)
+
+**Pozor na kreditní (úvěrové) riziko!**
+
+## Náklady kapitálu
+
+Kapitálové náklady rozdělujeme na:
+
+- **Náklady cizího kapitálu** – Cena požadovaná věřitelem za poskytnutí kapitálu (úrok)
+je ovlivněna rizikem, které věřitel podstupuje.
+- **Náklady vlastního kapitálu** – Očekávaná výnosnost vlastního kapitálu závisí na
+vnímaném riziku a srovnatelné alternativě.
+
+### Náklady na cizí kapitál
+
+Vzorec pro výpočet nákladů na cizí kapitál:
+
+$$
+\text{NCK} = (1 - t) \times i
 $$
 
-- Aritmetický průměr ročních výnosů však dává odlišný výsledek, který bude zpravidla
-vyšší:
+- $\text{NCK} \dots$ náklady na cizí kapitál  
+- $t \dots$ daňová sazba  
+- $i \dots$ úroková míra  
+
+Nákladové úroky jsou daňově uznatelným nákladem a snižují daňový základ podniku (daňový
+štít). Daňový štít má plný efekt pouze tehdy, pokud je EBIT (zisk před úroky a daněmi)
+alespoň tak velký jako úrokové náklady.
+
+::: {.callout-tip title="Příklad"}
+Společnost si vypůjčí 2 mil. Kč, úroková míra je 7,5 % a daňová sazba 19 %. Vypočítejte
+náklady cizího kapitálu při zohlednění daňového štítu.
+:::
+
+### Náklady na vlastní kapitál
+
+Vlastníci očekávají výnosnost kapitálu, která by měla být srovnatelná s alternativními
+investicemi. Odhad nákladů na vlastní kapitál lze provést pomocí modelu CAPM (Capital
+Asset Pricing Model) nebo na základě následujícího vzorce:
+
 $$
-\text{Arithmetic Average} = \frac{-18.17\% + 28.74\% + \dots + 32.31\%}{10} =
-\frac{135.52\%}{10} = 13.552\%
+\text{KE} = \left(\frac{\text{Dividenda}}{\text{Tržní cena akcie}}\right) + \text{Míra růstu dividend}
 $$
 
-- Aritmetický průměr vychází vyšší než geometrický, protože nezohledňuje složené
-úročení.
-- Aritmetický průměr vyjadřuje, kolik jste vydělali v typickém roce.
-- Geometrický průměr ukazuje, kolik jste skutečně vydělali za rok v průměru při držení
-dané investice.
+- $KE \dots$ požadovaná procentní výnosnost vlastního kapitálu
+- Za účelem optimalizace nákladů na kapitál se vyčíslují tzv. vážené průměrné náklady na
+kapitál.
 
-## Měření rizika
+### Průměrné vážené náklady kapitálu 
 
-- Riziko se týká nejistoty dosažení očekávaného výnosu.
-- Nejčastěji se vyjadřuje jako variabilita výnosů vzhledem k průměru (variance,
-směrodatná odchylka, atd.).
-- Vyšší odchylky od průměru znamenají vyšší riziko, protože je předpověď budoucího
-vývoje složitější a méně přesná.
-- Variance $\rightarrow$ $\sigma^2 = \frac{\sum^n_{t=1} (R_t - \overline{R})^2}{n-1}$
-  - $R_t$ $\rightarrow$ výnos v čase $t$
-  - $\overline{R}$ $\rightarrow$ průměrný výnos
-  - $n$ $\rightarrow$ počet pozorování
-- Směrodatná odchylka $\rightarrow$ odmocnina z variance $\rightarrow$ $\sigma =
-\sqrt{\sigma^2}$
-- Pokud mají výnosy normální rozložení pravděpodobnosti, tak platí (přibližně):
-  - 68 % pozorování leží v rozmezí jedné směrodatné odchylky od průměru.
-  - 95 % pozorování leží v rozmezí jedné směrodatné odchylky od průměru.
-  - 99,7 % pozorování leží v rozmezí jedné směrodatné odchylky od průměru.
-- Další ukazatele rizika jsou např. max. drawdown, value-at-risk, expected shortfall,
-atd.
+Průměrné vážené náklady kapitálu (Weighted Average Cost of Capital – WACC) se počítají
+takto:
 
-## Diverzifikace
+$$
+\text{WACC} = \frac{D}{D + E} \times \text{NCK} + \frac{E}{D + E} \times \text{KE} $$
 
-- Diverzifikace znamená rozložení portfolia do různých investic za účelem snížení
-rizika.
-- Využívá nedokonalé korelace aktiv v portfolium.
-- Různá aktiva reagují na tržní podmínky různě, tzn. pokud jedno aktivum klesá, jiné
-může růst.
-- Celkový benefit získaný diverzifikací záleží na korelaci jednotlivých aktiv.
-- S roztoucím množstvím aktiv klesá přínos dodatečného aktiva k diverzifikaci portfolia
-(přibližně po 20 až 30 akciích je již dodatečný efekt diverzifikace velmi malý).
-- Diverzifikací se nelze zbavit všech rizik.
-- **Nesystematické riziko** (specifické, jedinečné riziko) $\rightarrow$ lze odstranit
-diverzifikací.
-- **Systematické riziko** (tržní riziko) $\rightarrow$ nelze odstranit diverzifikací.
+- $D \dots$ cizí kapitál (dluhy)
+- $E \dots$ vlastní kapitál
+- $NCK \dots$ náklady na cizí kapitál
+- $KE \dots$ náklady na vlastní kapitál
 
-## Sharpe Ratio
+::: {.callout-tip title="Příklad"}
+Celkový kapitál podniku je 150 mil. Kč, zadluženost je 50 %, úroková míra činí 8 %,
+daňová sazba je 19 %. Tržní cena akcie je 450 Kč, dividenda na akcii 52 Kč a očekávaný
+růst dividend 2 % ročně. Vypočítejte náklady cizího kapitálu, náklady vlastního kapitálu
+a WACC.
+:::
 
-- Poměrový ukazatel pro srovnání různých investic.
-- Sharpe Ratio porovnáná výnos investice s ohledem na její riziko měřené směrodatnou
-odchylkou.
-- Poskytuje komplexní pohled na profil rizika a výnosů investice.
-- Vyšší Sharpe Ratio značí atraktivnější investici.
-- $\text{Sharpe ratio} = \frac{R_p - R_f}{\sigma_p}$
-  - $R_p$ $\rightarrow$ výnos portfolia
-  - $R_f$ $\rightarrow$ bezriziková úroková sazba
-  - $\sigma_p$ $\rightarrow$ směrodatná odchylka výnosů (nad bezrizikovou sazbou)
+::: {.callout-tip title="Příklad"}
+Celkový kapitál podniku činí 42 mil. Kč, dluh 14 mil. Kč, úroková míra je 10 %, daňová
+sazba 19 %. Dividenda na akcii je 8 Kč, tržní cena akcie 100 Kč, růst dividend 2 %
+ročně.
 
-### Příklad
+- **a)** Vypočítejte WACC.
+- **b)** Vypočítejte WACC při zvýšení dluhu na 50 % celkového kapitálu.
+- **c)** Vypočítejte WACC při zadluženosti 60 %, kdy se úroková míra i požadovaná míra
+dividend zvýší o 2 %.
+:::
 
-| **Datum**  | **Cena akcie**     | **Výnos**     | **Odchylka od průměru**                  | **Odchylka od průměru na druhou** |
-|:----------:|:------------------:|:-------------:|:----------------------------------------:|:---------------------------------:|
-| 2022-01-31 | 446.572021         | NA            |                                          |                                   |
-| 2022-02-28 | 433.672150         | -0.028886     | -0.017685                                | 0.000313                          |
-| 2022-03-31 | 449.959442         | 0.037557      | 0.048759                                 | 0.002377                          |
-| 2022-04-30 | 410.159393         | -0.088453     | -0.077251                                | 0.005968                          |
-| 2022-05-31 | 411.458649         | 0.003168      | 0.014369                                 | 0.000206                          |
-| 2022-06-30 | 377.204315         | -0.083251     | -0.072049                                | 0.005191                          |
-| 2022-07-31 | 412.154053         | 0.092655      | 0.103856                                 | 0.010786                          |
-|            |                    |               |                                          |                                   |
-|            | **Průměrný výnos** | **-0.011202** | **Součet odchylek od průměru na druhou** | **0.024842**                      |
-|            |                    |               | **Variance**                             | **0.004968**                      |
-|            |                    |               | **Směrodatná odchylka**                  | **0.070486**                      |
-|            |                    |               | **Sharpe ratio (risk-free = 0)**         | **-0.158922**                     |
+## Příklady k procvičení
+
+1. Obchodní společnost si vypůjčí 2 mil. Kč. Úroková míra je 7,5%, daňová sazba je 19%.
+Vypočítejte náklady cizího kapitálu, které na firmu dopadnou při využití tzv. úrokového
+daňového štítu. 
+
+::: {.callout-note collapse="true" title="Výsledek"}
+6%
+:::
+
+2. Obchodní společnost si vypůjčí 2 mil. Kč, které na konci účetního období vynesou 2,2
+mil. Kč. Úroková míra je 12%, daňová sazba 19%. Vypočítejte náklady cizího kapitálu,
+které na firmu dopadnou při využití tzv. úrokového daňového štítu.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+9,72% 
+:::
+
+3. Obchodní společnost si vypůjčí 1 mil. Kč. Úroková míra je 8,5%, aktuální daňová sazba
+je 19%. Vypočítejte náklady cizího kapitálu, které na firmu opravdu dopadnou při využití
+úrokového daňového štítu, a kolik ušetří společnost na daních?
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Skutečný náklad na úvěr je 6,9%, společnost na daních ušetří 1,6%, tj. 16 000,- Kč 
+:::
+
+4. Celkový kapitál firmy je 150 mil. Kč. Zadlužení této firmy 50%, úroková míra 8%,
+aktuální daňová sazba 19%. Tržní cena akcie je 450 Kč, dividenda na akcii činí 52 Kč,
+počítá se s růstem dividend o 2% ročně. Vypočítejte náklady cizího kapitálu, náklady
+vlastního kapitálu a WACC tohoto podniku.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Náklady cizího kapitálu 6,48% = 4 860 000,- Kč, náklady vlastního kapitálu 13,55% = 10
+162 500,- Kč, WACC 10% = 15 000 000,- Kč 
+:::
+
+5. Celkový kapitál firmy je 250 mil. Kč. Zadlužení 40%, úroková míra 8%, aktuální daňová
+sazba 19%, tržní cena akcie 1250,- Kč, dividenda na akcii 130 Kč, počítá se s růstem
+dividend o 2% ročně. Vypočítejte náklady cizího kapitálu, náklady vlastního kapitálu a
+WACC tohoto podniku.
+
+::: {.callout-note collapse="true" title="Výsledek"}
+Náklady cizího kapitálu 6,48% = 6 480 000 Kč, náklady vlastního kapitálu 12,4% = 18 600
+000 Kč, WACC 10,032% = 25 080 000 Kč
+::: 
+
+6. Celkový kapitál firmy je oceněn na 42 mil. Kč, dluh činí 14 mil. Kč, úroková míra je 10%, daňová sazba je 19%. Dividenda na akcii v tržní ceně 100 Kč činí 8 Kč, počítá se s růstem dividend 2% ročně. Vypočítejte WACC:
+    - pro zadané hodnoty 
+    - při zvýšení dluhu na 50 % celkového kapitálu
+    - pro zadluženost 60 %, při níž se zvýší úroková míra i požadovaná míra dividend o 2 % 
+
+::: {.callout-note collapse="true" title="Výsledek"}
+- 9,3%
+- 9,05% 
+- 10,632%
+:::
+
+7. Celkový kapitál firmy je 50 mil. Kč. Zadlužení této firmy je 20 mil. Kč, úroková míra
+8%, aktuální daňová sazba 19%. Tržní cena akcie je 100 Kč, dividenda na akcii činí 6 Kč,
+počítá se s růstem dividend o 1,5% ročně. Vypočítejte WACC 
+    - pro zadané hodnoty
+    - při zvýšení dluhu na 50% celkového kapitálu
+    - pro zadluženost 60%, při níž se zvýší úroková míra i růst dividend o 2%
+
+::: {.callout-note collapse="true" title="Výsledek"}
+- 7,1% 
+- 6,99% 
+- 8,66%
+:::

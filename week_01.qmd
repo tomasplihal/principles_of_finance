@@ -1,4 +1,13 @@
-# Úvod do financí a struktura firmy
+---
+format:
+  html:
+    mermaid-format: png
+    toc: true
+    toc-depth: 2
+    toc-title: Obsah lekce
+---
+
+# Úvod do financí
 
 ::: {.callout-note}
 # Studijní materiály
@@ -7,321 +16,372 @@
 University. <https://openstax.org/details/books/principles-finance>
   - Chapter 1 - Introduction to Finance
   - Chapter 2 - Corporate Structure and Governance
+- MELICHER Ronald W. a Edgar NORTON. Introduction to finance: markets investments and financial management. Seventeenth edition. Hoboken: Wiley 2020 xxix 613. ISBN 9781119561170
+  - Chapter 1 – The Financial Environment
+  - Chapter 2 – Money and the Monetary System
 :::
 
 **Výstupy z učení:**
 
 1. Pochopit základní principy financí.
-2. Porozumět finančnímu rozhodování a strategickému plánování.
-3. Prozkoumat možnosti uplatnění v oblasti financí.
-4. Uvědomit si dopady mikroekonomických a makroekonomických faktorů.
-5. Porozumět používání finančních nástrojů a časové hodnoty peněz.
-6. Rozpoznat důsledky různých podnikových struktur na finanční řízení firmy.
-7. Porozumět vztahu mezi akcionáři a vedením společnosti.
+2. Prozkoumat možnosti uplatnění v oblasti financí.
+3. Porozumět struktuře finančního systému.
+4. Znát funkce finančního systému.
+5. Identifikovat subjekty působící ve finančním systému.
+6. Pochopit peněžní systém a nabídku peněz.
 
 ## Úvod do financí
 
 ### Proč studovat finance
 
-- Finance jsou v dnešním světě důležité pro ekonomické operace.
-- Usnadňují například vlastnictví nemovitostí a bezhotovostní transakce.
-- Silný a nezávislý finanční systém je pro ekonomiku založenou na kapitálu nezbytný.
-- Studium financí otevírá řadu profesních příležitostí.
-- Jedná se o kritický nástroj rozhodování vyžadující analytické myšlení.
-- Znalost financí a finančních trhů rozšiřuje vaše investiční příležitosti.
+Finance hrají klíčovou roli v moderní ekonomice. Umožňují vlastnictví **aktiv**, jako jsou nemovitosti, a podporují **bezhotovostní transakce**, které jsou dnes běžnou součástí života. **Silný a stabilní finanční systém** je zásadní pro ekonomiku založenou na kapitálu. Studium financí navíc poskytuje hlubší pochopení **analytického myšlení** nezbytného pro správná rozhodnutí. **Znalost finančních trhů** pak rozšiřuje vaše možnosti investování a otevírá dveře k novým příležitostem.
 
-#### Kariéra v oblasti financí
+### Kariéra ve financích
 
-- Kariéra v oblasti financí nabízí spoustu příležitosti s prognózou růstu počtu
-pracovních míst.
-- Dovednosti v oblasti financí jsou použitelné v celé řadě oblastí včetně managementu,
-analýzy a logistiky.
-- Mezi tradiční finanční pozice patří finanční manažeři, pracovníci v oblasti investičních vztahů, rozpočtový analytik, úvěrový analytik, finanční analytik, osobní finanční analytik, finanční specialista, úvěrový pracovník, pojišťovací agent, účetní, auditor.
-- Finanční analytici, nezbytní pro finanční prognózy a průzkum trhu, potřebují různorodé
-dovednosti zahrnující práci s tabulkovými procesory, finanční modelování, a porozumění
-obchodním procesům.
-- Podnikoví analytici se více zaměřují na strategické myšlení, vývoj procesů a budování
-týmu, pomáhají při formulování strategie a řešení problémů pomocí přístupů založených na
-datech.
-- Více informací o [možné kariéře v oblasti
-financí](https://openstax.org/r/thebalancecareers) na webových stránkách Balance
-Careers.
+Kariéra v oblasti financí nabízí širokou škálu možností s vysokým potenciálem růstu.
+Mezi nejběžnější finanční pozice patří:
+
+- Finanční manažer
+- Pracovník v oblasti investičních vztahů
+- Rozpočtový a úvěrový analytik
+- Finanční analytik
+- Osobní finanční poradce
+- Úvěrový pracovník
+- Účetní a auditor
+
+Finanční analytici hrají klíčovou roli při tvorbě **finančních prognóz** a **průzkumu
+trhů**, a proto vyžadují dovednosti v práci s tabulkovými procesory a finančním
+modelováním. **Podnikoví analytici** se soustředí na **strategické myšlení**, **vývoj
+procesů** a týmovou spolupráci. Pomáhají formulovat strategie a řešit problémy na
+základě datově podložených přístupů. Více o kariéře ve financích najdete na webu
+[Balance Careers](https://www.thebalancemoney.com/top-jobs-for-finance-majors-2064048).
 
 ### Co jsou finance?
 
-::: {.callout-tip}
-# Definice financí
-
-- Finance jsou vědou o řízení, pohybu a získávání peněz.
-- Jde o pochopení způsobu získávání a využívání peněžních prostředků.
-- Základním principem je porozumění vztahu mezi rizikem a výnosem.
-- Finance jsou také nástrojem, který nám může pomoci lépe se rozhodovat.
+::: {.callout-important title="Definice"}
+**Finance** jsou věda o **řízení, pohybu a získávání peněz**.
 :::
 
-- Finance se dělí na tři základní oblasti: podnikové finance, investice a finanční trhy
-a instituce.
+Slovo finance pochází z latinského výrazu „finare“, které původně označovalo platbu na
+základě soudního rozhodnutí, později jakoukoliv formu platby. V jádru financí leží vztah
+mezi **rizikem a výnosem**, který je základem pro rozhodování v oblasti investic.
+Znalosti z financí vám mohou pomoci lépe spravovat vaše finanční zdroje a činit
+informovaná rozhodnutí.
 
-![](images/fig_1_1.png){width=500 fig-align="center"}
+## Finanční systém
 
-- **Podnikové finance**:
-  - Finance podniku se zaměřují na maximalizaci hodnoty podniku v rizikovém prostředí.
+::: {.callout-important title="Definice"}
+Finanční systém zahrnuje jak **národní**, tak **mezinárodní** finanční systémy, které
+zajišťují financování podniků a správu kapitálu.
+:::
 
-![](images/fig_1_2.png){width=500 fig-align="center"}
+Tento systém lze rozdělit do tří hlavních oblastí:
 
-- **Investice**:
-  - Investice jsou produkty a procesy používané k vytváření bohatství (dosažení výnosu za určitého rizika).
-  - Mezi investice patří např.: akcie, dluhopisy, futures, opce, podílové fondy, ETF,
-  reálná aktiva atd.
+1. **Finanční instituce a trhy** – kde dochází k interakci mezi poskytovateli a
+uživateli finančních prostředků.
+2. **Investice** – proces alokace kapitálu za účelem dosažení budoucího výnosu.
+3. **Finanční řízení** – zahrnuje správu aktiv, závazků a kapitálu podniku.
 
-- **Finanční trhy a instituce**:
-  - Finanční trhy a instituce zahrnují firmy a regulační orgány, které dohlížejí na
-  finanční systém.
-  - Usnadňují investiční postupy a zajišťují bezpečnost investorů i celého odvětví.
-  - V USA např.:
-    - Securities and Exchange Commission (SEC)
-    - Financial Industry Regulatory Authority (FINRA)
-    - Securities Investor Protection Corporation (SIPC)
-  - V Evropě např.:
-    - The European Securities and Markets Authority (ESMA)
-    - Centrální banky jednotlivých zemí obvykle slouží jako hlavní orgán dohledu nad
-    finančním trhem v dané zemi.
-  - Finanční odvětví prochází neustále významným vývojem díky novým technologiím,
-  inovacím, konkurenci a změnám v regulacích.
+<div style="text-align: center;">
+```{mermaid}
+%%| fig-width: 3
+graph TD
+  A[Finanční trhy a instituce] <--> B[Investice] 
+  B <--> C[Finanční management]
+  A <--> C
+```
+</div>
 
-### Role financí ve firmě
+Finanční systém zahrnuje různé složky, jako jsou **zákony a předpisy**, které ovlivňují
+finanční transakce, a **centrální banku**, která kontroluje nabídku peněz v ekonomice.
+Dále lze finanční systém rozdělit na:
 
-- Finanční plánování je klíčové pro zajištění přehledu o minulých, současných a
-budoucích finančních potřebách organizace a pro dosažení obchodních cílů.
-- Dobré finanční plánování zahrnuje minulé, současné a výhledové výkazy zisků a ztrát,
-výkazy peněžních toků, rozvahy, prognózy a nástroje finanční analýzy, jako je analýza
-poměrových ukazatelů.
-- Rozpočtování (budgeting) je klíčovou součástí finančního plánování, které se zaměřuje
-na výši, zdroje a použití peněžních prostředků.
-- Finanční plánování pomáhá řídit změny rozpočtu, orientovat se v odchylkách od
-očekávaných výsledků a slouží jako základ pro budoucí rozpočty.
+- **Podnikové finance** – zabývají se tím, jak podniky získávají finanční kapitál a
+spravují své operace a aktiva během svého vývoje.
+- **Osobní finance** – zaměřují se na to, jak jednotlivci investují a spravují své
+prostředky, připravují se na mimořádné situace a chrání se před neočekávanými událostmi.
 
-### Význam dat a technologií
+### Finanční instituce
 
-- Finanční údaje jsou klíčové pro lepší obchodní a finanční rozhodování a alokaci
-zdrojů.
-- Mezi základní typy finančních údajů patří výkaz zisků a ztrát, výkaz peněžních toků a
-rozvaha.
-- Kromě interních údajů firmy lze využít i externí údaje, jako jsou průzkumy mezi
-zákazníky a dodavateli, průzkumy trhu, dohody s věřiteli a makroekonomické údaje.
-- Využití dat sahá od měření dopadu obchodních rozhodnutí až po strategické plánování a
-motivaci zaměstnanců.
+Finanční instituce, jako jsou **komerční banky**, **pojišťovny** nebo **podílové
+fondy**, shromažďují prostředky od střadatelů a půjčují je podnikům nebo jednotlivcům.
+Tyto instituce plní zásadní roli v **efektivním fungování finančního systému**, protože
+převádějí finanční prostředky od střadatelů k těm, kteří je potřebují investovat do
+**fyzických aktiv**, jako jsou zásoby, budovy a zařízení.
 
-### Mikroekonomické a makroekonomické faktory
+### Finanční trhy a investice
 
-- Finance spojují ekonomii a účetnictví.
-- Využívají ekonomickou teorii, empirické důkazy a účetní údaje k přijímání obchodních
-rozhodnutí.
-- Ekonomie studuje alokaci omezených zdrojů a dělí se na mikroekonomii a makroekonomii.
-- Mikroekonomie se zaměřuje na rozhodování jednotlivých subjektů, analyzuje podněty,
-chování, spotřebu, nabídku a poptávku.
-  - Pomáhá při finančních prognózách, plánování a sestavování rozpočtů.
-- Makroekonomie zkoumá skupinová rozhodnutí a zkoumá prvky, jako je inflace, úrokové
-sazby, nezaměstnanost, hospodářský růst, akciový trh a fiskální politika vlády.
-  - Zahrnuje širší proměnné, které by měly být zahrnuty do finančních prognóz.
-- Aby mohli finanční manažeři efektivně směřovat ke strategickým cílům, potřebují jak
-mikro (zdola nahoru, taktický), tak makro (shora dolů, strategický) pohled.
+Finanční trhy propojují **investory** s těmi, kteří hledají kapitál pro financování
+svých projektů. Účast na finančních trzích zahrnuje **investování prostředků**,
+**půjčování peněz** nebo **obchodování s akciemi**. Tyto trhy mohou být jak fyzická
+místa (např. burzy), tak elektronická fóra, která usnadňují tok finančních prostředků
+mezi investory, podniky a vládami. **Investice** zahrnují nákup a prodej cenných papírů,
+analýzu jejich výkonnosti a řízení investičního rizika, např. pomocí **diverzifikace
+portfolia**.
 
-### Riziko a výnos ve financích
+### Finanční management
 
-- Vyšší riziko vede k vyšším očekávaným výnosům, přičemž riziko je v podstatě nejistota.
-- Finance se snaží riziko kvantifikovat, aby pomohly při našem rozhodování.
-- Jednotlivci se obecně vyhýbají riziku (jsou **rizikově averzní**), což znamená, že za
-podstoupení většího rizika očekávají vyšší výnosy.
-- Finanční riziko se skládá z několika složek včetně rizika defaultu, inflačního rizika,
-diverzifikovatelného (nesystematického) rizika, nediverzifikovatelného (systematického)
-rizika a politického rizika, atd.
+Finanční management se zaměřuje na to, jak podniky spravují svá **aktiva**, **závazky**
+a **vlastní kapitál**. Finanční manažeři rozhodují o klíčových otázkách, jako je
+zavedení nového produktu, expanze výroby nebo **alokace přebytečných prostředků**. Při
+těchto rozhodnutích spolupracují s finančními institucemi a sledují **trendy na
+finančních trzích**. Klíčovou součástí finančního managementu je **finanční plánování**,
+správa majetku a získávání kapitálu, což má za cíl zvýšit **hodnotu podniku**.
 
-![](images/fig_1_3.png){width=500 fig-align="center"}
+## Struktura a funkce finančního systému
 
-### Časová hodnota peněz
+Finanční systém je komplexní soustava zahrnující **finanční zprostředkovatele**,
+**trhy**, **nástroje**, **tvůrce politik** a **předpisy**, které vzájemně interagují a
+podporují efektivní fungování ekonomiky.
 
-- Volba mezi úsporami a výdaji je v podstatě volbou mezi současnou a budoucí spotřebou.
-- Toto rozhodnutí zahrnuje zvažování krátkodobých, střednědobých a dlouhodobých cílů.
-- Časová hodnota peněz zahrnuje volbu poměru výnosu a rizika.
-- V podnikání jsou důležité tři typy hodnoty: účetní hodnota (historické náklady), tržní
-hodnota (cena, kterou platí spotřebitelé) a ekonomická hodnota (to, co jsou spotřebitelé
-ochotni zaplatit).
+<div style="text-align: center;">
 
-### Trhy a účastníci trhu
+```{mermaid}
+flowchart TD
+  A["`**Policy Makers**
 
-- **Primární trh** je trh s "novými" cennými papíry, jako jsou například počáteční emise
-acií (Initial Public Offering, IPO) a nabídka sezónních akcií (Seasoned Equity Offering,
-SEO), které poskytují přímé peněžní prostředky firmám. 
-- **Sekundární trh** je trhem "již existujících" cenných papírů, na kterém se obchoduje
-mezi investory a poskytuje přehled o vnímání hodnoty firmy. 
-- Účastníci trhu, včetně dealerů, brokerů a finančních zprostředkovatelů, hrají roli při
-usnadňování finančních transakcí.
-- **Dealeři** vlastní cenné papíry, které nakupují nebo prodávají, a vydělávají na
-obchodování s nimi (na rozdílu v cenách).
-- **Brokeři** zprostředkovávají transakce mezi kupujícími a prodávajícími, přičemž
-obvykle vydělávají na provizi z prodeje.
-- **Finanční zprostředkovatelé**, jako jsou komerční banky nebo investiční společnosti,
-umožňují snazší obchodování mezi transakčními stranami.
-- Finanční zprostředkovatelé zvyšují efektivitu, poskytují úspory z rozsahu,
-specializované znalosti a mají zásadní význam pro tržní ekonomiku.
+    President, Congress, and U.S. Treasury
+    Federal Reserve Board
 
-### Finanční nástroje
+    *Role: pass laws and set fiscal and monetary policies*`"]
 
-#### Peněžní trhy
+  B["`**Monetary System**
+  
+    Federal Reserve Central Bank
+    Commercial Banking System
+  
+    *Role: create and transfer money*`"]
 
-- Na peněžním trhu se obchoduje s krátkodobými (**méně než jeden rok**), nízkorizikovými
-a vysoce likvidními cennými papíry.
-- Míra bankrotu je minimální a nástroje lze rychle prodat na sekundárním trhu.
-- Finanční instituce, podniky a vlády využívají peněžní trh pro potřeby krátkodobých
-výpůjček a/nebo úvěrů.
-- Transakce jsou obvykle velké, přesahující 100 000 USD.
-- Státní pokladniční poukázky (treasury bills, T-bills) jsou krátkodobé dluhové nástroje
-emitované vládou USA, považují se za téměr bezrizikové.
-- Úrokové sazby patří mezi významný nástroj měnové politiky.
+  C["`**Financial Institutions**
+  
+    Depository Institutions
+    Contractual Savings Organizations
+    Securities Firms
+    Finance Firms
+  
+    *Role: accumulate and lend/invest savings*`"]
+  D["`**Financial Markets**
+  
+    Debt Securities Markets
+    Equity Securities Markets
+    Derivative Securities Markets
+    Foreign Exchange Markets
+    
+    *Role: market and facilitate
+    transfer of financial assets*`"]
 
-#### Kapitálové trhy
+  A --> B
+  A --> C
+  A --> D
+  B --> A
+  B --> C
+  B --> D
+  C --> D
+  D --> C
+```
+</div>
 
-- Na kapitálovém trhu se obchoduje s dlouhodobějšími (**delšími než jeden rok**)
-finančními nástroji s různým rizikem defaultu a méně jistou likviditou.
-- Nástroje se dělí na dluhové nástroje (dluhopisové trhy) a majetkové cenné papíry
-(akciové trhy).
-- Státní i korporátní dluhopisy s delší splatností určené pro dlouhodobější financování.
-- Akcie představují vlastnictví společnosti.
-- Peněžní toky z akcií jsou vzhledem k jejich nepředvídatelnosti více nejisté a rizikové
-než peněžní toky z dluhopisů.
-- S akciemi lze obchodovat na organizovaných burzách cenných papírů nebo na
-mimoburzovním trhu.
+### Funkce finančního systému
 
-## Struktura a řízení firmy
+1. **Shromažďovací funkce** – **akumulace úspor**
+   - Finanční systém umožňuje dočasné **shromažďování volných prostředků** od subjektů s
+   přebytkem.
+   - Tyto prostředky jsou shromažďovány ve formě **vkladů**, které mohou být dále
+   použity na půjčky a investice v mnohem větších objemech, než by zvládl kterýkoli
+   jednotlivý vkladatel.
 
-- Podnikatelské cíle zahrnují plnění osobních finančních cílů a u veřejně obchodovaných
-společností zvyšování hodnoty společnosti pro akcionáře.
-- Akcionáři jsou jednotlivci, kteří usilují o návratnost investic pro své osobní
-dlouhodobé finanční cíle.
-- Firmy se zaměřují na finanční i nefinanční cíle, včetně rozšiřování prodeje,
-spokojenosti zákazníků a vývoje produktů.
-- Hodnota aktiv je určena současnou hodnotou budoucích peněžních toků.
-- Maximalizace bohatství vlastníků/akcionářů by měla zohledňovat dlouhé období.
+2. **Depozitní a alokační funkce** – **úvěrování a investování úspor**
+   - Subjekty s přebytkem mohou ukládat nebo investovat své **dočasně volné
+   prostředky**.
+   - Uložené finanční prostředky jsou následně půjčovány **podnikům**, **spotřebitelům**
+   a **institucím**, což podporuje ekonomickou aktivitu.
 
-### Hlavní cíl finančního managementu
+3. **Zprostředkovací funkce** – **přenos finančních prostředků**
+   - Finanční systém zajišťuje **zprostředkování** finančních toků mezi přebytkovými a
+   deficitními subjekty, čímž napomáhá rovnováze mezi těmito dvěma skupinami.
 
-- Maximalizovat fundamentální hodnotu existujících akcií (maximalizovat hodnotu firmy v
-dlouhém období).
-- Maximalizace hodnoty firmy vyžaduje, aby podnik byl efektivní, poskytoval kvalitní
-produkty a služby za co nejnižší náklady.
-- Z dlouhodobého hlediska je pro hodnotu podniku prospěšné dobře se starat o své
-zaměstnance (kvalitní pracovní síla).
-- Důležitá je také dobrá pověst.
-- Při dodržování zákona a základní etiky je tento cíl vhodný pro celou společnost.
+4. **Multiplikace depozit** – **multiplikace peněz**
+   - V rámci měnového systému dochází k **multiplikaci peněžních prostředků**, což
+   umožňuje zvětšení objemu prostředků v oběhu a tím zajišťuje dostatek **prostředků
+   směny** v ekonomice.
 
-### Typy obchodních společností
 
-- Podrobnosti v zákoně č. 90/2012 Sb.,Zákon o obchodních společnostech a družstvech
-(zákon o obchodních korporacích)
-- Organizace musí při volbě své struktury vyhodnotit všechna pro a proti, včetně
-možnosti získávat finanční prostředky, dopadů zdanění a likvidity.
-- Učebnice jsou z pravidla psané z pohledu velkých akciových společností, které jsou
-veřejně obchodované.
-- Většinu metod lze však aplikovat obecně i na malé firmy a jiná vlastnická uspořádání.
+## Subjekty působící ve finančním systému
 
-#### Akciová společnost
+### Subjekty kolektivního investování
 
-- Právnická osoba.
-- Majetek je rozdělen na určitý počet akcií (podílů na majetku).
-- Společnost za svoje závazky odpovídá celým svým majetkem.
-- Akcionář za závazky společnosti neručí a ani není povinen uhradit případnou ztrátu.
-- Umožňuje oddělení vlastníků od managementu a díky tomu může fungovat dlouhodobě i když
-se vlastníci nebo management mění.
+Subjekty kolektivního investování zahrnují **investiční společnosti** a **fondy**.
+Investiční fondy mohou být **otevřené** nebo **uzavřené**, což závisí na možnosti
+přijetí nových investorů a likvidity fondu. Mezi další důležité subjekty patří
+**obchodníci s cennými papíry** (zprostředkovatelé, makléři, brokeři, dealeři) a **fondy
+kvalifikovaných investorů**.
 
-#### Ostatní typy obchodních společností
+Zákonná regulace je stanovena **Zákonem 256/2004 Sb. o podnikání na kapitálovém trhu**,
+který vymezuje **hlavní investiční služby**:
 
-- **Veřejná obchodní společnost** - společnost alespoň dvou osob, které se účastní na
-jejím podnikání nebo správě jejího majetku a ručí za její dluhy společně a nerozdílně
-celým svým majetkem.
-- **Komanditní společnost** - společnost, v níž alespoň jeden společník ručí za její
-dluhy omezeně (tzv. „komanditista“) a alespoň jeden společník neomezeně (tzv.
-„komplementář“).
-- **Společnost s ručením omezeným** - Společnost odpovídá za porušení svých závazků
-celým svým majetkem, společníci pak společně a nerozdílně ručí za závazky společnosti
-jen do výše, v jaké nesplnili vkladové povinnosti podle stavu zapsaného v obchodním
-rejstříku v době, kdy byli věřitelem vyzváni k plnění.
+- Přijímání a předávání pokynů
+- Provádění pokynů
+- Obchodování s investičními nástroji na účet jiných osob nebo na vlastní účet
+- Upisování a umísťování emisí investičních nástrojů
 
-### Vztah mezi akcionáři (shareholders) a vedením společnosti
+Dále jsou k dispozici **doplňkové investiční služby**, mezi které patří:
 
-- **Stakeholder** (zainteresovaná strana) je každý, kdo má zájem na výsledcích
-organizace (např. zaměstnanci, zákazníci, akcionáři, dodavatelé, stát).
-- Akcionáři (**shareholder**s) jsou jednotlivci, společnosti nebo organizace, které
-vlastní akcie.
-- Akcionář je vlastníkem společnosti, zatímco stakeholder je někdo, kdo je závislý na
-výkonnosti společnosti, případně i nefinančně.
-- Akcionáří dostávají dividendy, hlasují o záležitostech společnosti a mohou být voleni
-do představenstva.
-- Existují dva typy akcionářů: kmenoví a prioritní:
-  - **Kmenoví akcionáři**  vlastní kmenové akcie (common stock) společnosti a mají
-  hlasovací práva.
-  - **Prioritní akcionáři** vlastní prioritní akcie (preferred stock), dostávají pevné
-  dividendy, ale nemají hlasovací práva.
-- Akcionáří najímají manažery, aby řídili firmu.
-- Na nejvyšší úrovni dohlíží na korporace představenstvo (board of directors, BOD),
-zatímco o každodenní provoz se starají manažeři střední úrovně.
-- Vedení by se mělo dlouhodobě zaměřovat na plnění cílů společnosti; krátkodobé zaměření
-může bránit dlouhodobému zdraví společnosti.
+- Správa a úschova investičních nástrojů
+- Poradenská činnost
+- Služby spojené s upisováním emisí
 
-### Problém zastoupení
+### Pojišťovny
 
-- Jedná se o konflikt zájmů, který nastává v situaci, když se od člověka (nebo skupiny
-lidí) očekává, že bude jednat v nejlepším zájmu někoho jiného.
-- Ve světě financí se jedná zpravidla o vztah managementu a akcionářů, ale třeba i
-akcionářů a ostatních zainteresovaných stran (např. zaměstnanců).
-- Problémy nastávají, když manažer využívá své postavení k osobnímu prospěchu, místo aby
-jednal v nejlepším zájmu akcionářů.
-- Od managementu se očekává, že se bude snažit maximalizovat bohatství akcionářů a
-nikoliv svoje vlastní bohatství.
-- Problém dále umocňují asymetrické informace mezi stranami.
-- Stále častěji se využívá k hodnocení společností rating v oblasti životního prostředí,
-sociální oblasti a správy a řízení (ESG), které poskytují organizace třetích stran.
-- Vysoké hodnocení ESG může naznačovat proaktivní řízení a potenciální dlouhodobou
-hodnotu.
+Pojišťovny jsou specifické instituce oprávněné provádět pojišťovací nebo zajišťovací
+činnost. Jejich činnost je regulována **Zákonem č. 277/2009 Sb. o pojišťovnictví**.
+Pojišťovny poskytují **životní** i **neživotní pojištění**.
 
-![](images/fig_1_5.png){width=500 fig-align="center"}
+Hlavní úkoly pojišťoven zahrnují:
 
-#### Náklady problému zastoupení
+- Preventivní úkol – prevence škod a rizik.
+- Investiční úkol – investice získaných pojistných prostředků.
+- Technický úkol – vytváření pojistně technických rezerv.
 
-- Pokud management maximalizuje vlastní bohatství na úkor akcionářů vznikají ve firmě
-neefektivnosti.
-- Tento problém nelze úplně odstranit, ale dá se minimalizovat.
-- Snaha o řešení tohoto problému může vyžadovat další vynaložené náklady.
+Pojistně technické rezervy jsou vytvářeny pro pokrytí budoucích závazků z daného
+pojištění. Pojištění funguje na základě několika klíčových **principů**:
 
-#### Možná řešení
+- **Princip solidárnosti**
+- **Princip podmíněné návratnosti**
+- **Princip neekvivalence**
 
-- Snaha zabránit problému právní cestou (např. na základě smluv).
-- Kontrola a dohled.
-- Motivační nastavení odměňování (např. spojené s cenou akcie).
-- Možnost odvolat management.
-- Celkově nastavení corporate governance, atd.
+Ukazatele pojistného trhu zahrnují **předepsané pojistné**, **pojistné plnění**,
+**škodovost**, **pojištěnost** a **koncentraci pojistného trhu**.
 
-### Interakce s investory, zprostředkovateli a dalšími účastníky trhu
+### Penzijní společnosti
 
-- Vztahy s investory (Investor Relations, IR) jsou dílčím útvarem podnikových vztahů s
-veřejností, jehož cílem je udržovat otevřené vztahy s akcionáři.
-- IR, které mají přísné regulační povinnosti, vyžadují úzkou spolupráci s právními a
-účetními odděleními.
-- K povinnostem patří organizování schůzek akcionářů, šíření finančních údajů a řízení
-otázek zveřejňování finančních informací.
-- Pravidelné čtvrtletní zprávy o výsledcích hospodaření zajišťují transparentnost pro
-investiční komunitu.
-- Každoroční setkání akcionářů a investiční konference jsou důležité pro efektivní
-vztahy s investory.
+Penzijní společnosti shromažďují příspěvky účastníků, zaměstnavatelů a státní příspěvky,
+které investují do účastnických fondů a spravují je. Právní rámec pro jejich činnost je
+dán **Zákonem 427/2011 Sb. o doplňkovém penzijním spoření**. Penzijní systém se skládá
+ze dvou pilířů:
 
-### Společnosti na domácích a globálních trzích
+1. I. pilíř – Státní průběžně financovaný systém.
+2. III. pilíř – Penzijní připojištění a doplňkové penzijní spoření.
 
-- Společnosti působící především v USA, dodržují americké zákony o účetnictví a cenných
-papírech a při finančním výkaznictví používají obecně uznávané účetní zásady (Generally
-Accepted Accounting Principles, GAAP).
-- V Evropské unii a některých dalších zemích Asie nebo Jižní ameriky se finanční
-výkaznictví obvykle řídí Mezinárodními standardy účetního výkaznictví (International
-Financial Reporting Standards, IFRS).
-- Přestože jsou GAAP a IFRS navrženy tak, aby poskytovaly objektivní finanční
-výkaznictví, významně se liší, což má dopad na oblasti, jako je účtování zásob,
-konsolidace dceřiných společností a vykazování menšinových podílů.
-- Při analýze společnosti je potřeba brát v úvahu zda se používá GAAP nebo IFRS.
+#### Doplňkové penzijní spoření
+
+Doplňkové penzijní spoření nabízí možnost vyššího zhodnocení s určitou mírou rizika.
+Minimální příspěvek účastníka nebo zaměstnavatele činí **100 Kč**. Výše státního
+příspěvku závisí na měsíčním příspěvku:
+
+- 500 až 1 699 Kč: Státní příspěvek činí 20 %.
+- 1 700 Kč a více: Státní příspěvek činí 19 %.
+
+Minimální doba spoření je **10 let** a příspěvky lze odečíst od daňového základu.
+Účastníci si mohou vybrat z různých investičních strategií.
+
+#### Výplata dávek
+
+Prostředky účastníka jsou použity k výplatě následujících dávek:
+
+- Starobní penze na určenou dobu
+- Invalidní penze na určenou dobu
+- Jednorázové vyrovnání
+- Odbytné
+- Úhrada jednorázového pojistného pro doživotní penzi nebo penzi na určitou dobu
+
+Podmínky pro nárok na starobní penzi nebo úhradu jednorázového pojistného zahrnují
+dosažení věku **60 let** a spoření po dobu **minimálně 120 měsíců**.
+
+### Banky
+
+Více informací o bankách je uvedeno v přednášce **„Bankovní systém“**.
+
+## Peníze a peněžní systém
+
+**Peníze** jsou klíčovým prvkem fungování finančního systému. Slouží jako **měřítko
+*bohatství**, prostředek pro **nákup zboží a služeb**, a jsou všeobecně přijímány k
+***úhradě dluhů**. Tvorba a převod peněz jsou nezbytné pro proces **tvorby kapitálu**. 
+
+- Příliš mnoho peněz v ekonomice vede k **neudržitelnému hospodářskému růstu** a
+inflaci.
+- Nedostatek peněz může naopak vést k **recesi** a poklesu ekonomické aktivity.
+- Vztahy mezi **peněžní zásobou**, **ekonomickou aktivitou** a **růstem cen** jsou
+komplexní a ovlivněny dalšími faktory.
+
+### Historie peněz
+
+Peníze prošly dlouhým vývojem od **naturální směny** (barter) k moderním měnám. Nejprve
+fungovaly **komoditní peníze**, kdy byly využívány předměty s vlastní hodnotou,
+například **zlato a stříbro**. První mince se objevily kolem roku **650 př. n. l.** v
+Malé Asii.
+
+V 19. století byl zaveden **zlatý standard**, kde byla hodnota měny pevně vázána ke
+zlatu, což určovalo směnný kurz a stabilizovalo ekonomické vztahy mezi zeměmi.
+
+### Funkce a formy peněz
+
+ Peníze jsou jakékoli aktivum všeobecně přijímané při placení za zboží a služby nebo
+ úhradě dluhů. Peníze plní tři základní funkce:
+
+1. **Prostředek směny** – umožňují jednoduchou výměnu zboží a služeb.
+2. **Uchovatel hodnoty** – uchovávají hodnotu v čase, čímž umožňují spoření a budoucí
+spotřebu.
+3. **Zúčtovací jednotka** – poskytují jednotný systém pro oceňování zboží a služeb.
+
+**Formy peněz** zahrnují:
+
+- **Hotovost** (bankovky a mince)
+- **Bezhotovostní peníze** (bankovní depozita)
+
+Obě formy společně tvoří **peněžní zásobu**.
+
+### Peněžní systém
+
+Peněžní systém je soustava, která vytváří a převádí peníze, což je klíčové pro fungování
+ekonomiky. **Centrální banka** hraje důležitou roli při regulaci objemu peněžní zásoby.
+Pouze **banky** mohou vytvářet nové peníze, zatímco jiné finanční instituce působí jako
+zprostředkovatelé mezi střadateli a investory.
+
+<div style="text-align: center;">
+
+```{mermaid}
+flowchart TD
+  A["`**Central Bank**
+
+    Federal Reserve System
+    Board of Governors
+    Federal Reserve Banks`"]
+  B["`**Banking System** 
+
+    Creates Money
+    Transfers Money
+    Provides Financial Intermediation
+    Processes/clears checks`"]
+
+    A --> |Defines and regulates \n money supply| B
+    A --> |Facilitates \n the transferring of money \n through check processing \n and clearing| B
+
+```
+</div>
+
+### Peněžní zásoba
+
+Peněžní zásobu tvoří **centrální banka** a **obchodní banky**. Centrální banka vydává
+**hotovost** a vytváří **bankovní rezervy**, zatímco obchodní banky vytvářejí
+**bezhotovostní peníze** prostřednictvím svých operací.
+
+**Měření peněžní zásoby** se provádí pomocí měnových agregátů, které se liší podle
+*likvidity zahrnutých aktiv. Česká národní banka sleduje následující agregáty:
+
+- **M1**: Hotovostní oběživo + jednodenní vklady (tzv. úzké peníze).
+- **M2**: M1 + termínová depozita se splatností do 2 let a s výpovědní lhůtou do 3
+měsíců (střední peníze).
+- **M3**: M2 + repo operace, akcie/podílové listy fondů peněžního trhu a dluhové cenné
+papíry do 2 let (široké peníze).
+
+### Nabídka peněz a ekonomická aktivita
+
+**Peněžní zásoba** a **ekonomická aktivita** jsou úzce propojené. Změny v objemu peněz v
+*oběhu mají přímý dopad na **cenovou hladinu** a **ekonomický růst**.
+
+- **Monetaristé** tvrdí, že množství peněz v oběhu přímo ovlivňuje úroveň **HDP**.
+Přebytek peněz vede k růstu reálné ekonomické aktivity a následně ke **zvyšování cen**
+(inflaci).
+- **Keynesiánci** věří, že změna peněžní zásoby ovlivňuje **HDP** nepřímo, zejména
+prostřednictvím změn **úrokových sazeb**. Tyto změny ovlivňují poptávku po zboží a
+službách, a tedy i celkovou ekonomickou aktivitu.

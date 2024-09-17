@@ -1,4 +1,13 @@
-# Ekonomické základy: Peníze a úrokové sazby
+---
+format:
+  html:
+    mermaid-format: png
+    toc: true
+    toc-depth: 2
+    toc-title: Obsah lekce
+---
+
+# Ekonomické základy
 
 ::: {.callout-note}
 # Studijní materiály
@@ -6,6 +15,7 @@
 - Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
 University. <https://openstax.org/details/books/principles-finance>
   - Chapter 3 - Economic Foundations: Money and Rates
+- MANKIW, N. Gregory. Zásady ekonomie. Praha: Grada, 2000, 763 s. ISBN 80-7169-891-1.
 :::
 
 **Výstupy z učení:**
@@ -15,27 +25,28 @@ rovnovážné ceny.
 2. Chápat klíčové makroekonomické ukazatele, jako je inflace, nezaměstnanost nebo hrubý
 domácí produkt a jejich dopad na ekonomiku.
 3. Identifikovat a interpretovat fáze hospodářského cyklu.
-4. Zhodnotit dopad úrokových sazeb na ekonomiku a rozhodování jednotlivců.
-5. Chápat faktory určující směnné kurzy a jejich vliv na globální obchod a domácí
-ekonomiku.
+4. Chápat vztah vybraných faktorů na vývoj finančních indikátorů 
 
-## Mikroekonomie
+## Mikroekonomie: Poptávka, nabídka, rovnováha
 
-- Mikroekonomie studuje rozhodnutí a akce jednotlivých aktérů v ekonomice jako jsou
-firmy a spotřebitelé.
-- Pomáhá finančním manažerům pochopit trh, cenotvorbu a dostupnost zdrojů.
+::: {.callout-important title="Definice"}
+**Mikroekonomie** se zabývá rozhodováním jednotlivých ekonomických subjektů, jako jsou
+**firmy a spotřebitelé**.
+:::
+
+- Pomáhá finančním manažerům lépe pochopit **trh**, **cenotvorbu** a **dostupnost
+zdrojů**.
 
 ### Poptávka
 
-- Poptávka odkazuje na množství zboží nebo služby, které jsou spotřebitelé
-**ochotni a schopni koupit** za různé ceny, za předpokladu, že všechny ostatní
-faktory zůstanou konstantní.
-- Poptávka po produktu může být ilustrována prostřednictvím poptávkové křivky, která je
-typicky klesající, což reprezentuje zákon poptávky.
-- Zákon poptávky, tj. nepřímý vztah mezi cenou a prodaným množstvím, je dán klesajícím
-uspokojením z konzumace dalších jednotek a omezenou schopností spotřebitelů platit.
-- Poptávková křivka předpokládá, že se mění pouze cena produktu, zatímco všechny ostatní
-faktory zůstávají konstantní.
+::: {.callout-important title="Definice"}
+**Poptávka** vyjadřuje množství zboží či služeb, které jsou spotřebitelé **ochotni a
+schopni koupit** za různé ceny, pokud ostatní faktory zůstanou konstantní.
+:::
+
+Zákon poptávky popisuje **nepřímý vztah** mezi cenou a poptávaným množstvím – při nižší
+ceně roste poptávané množství. Tento vztah je znázorněn na **poptávkové křivce**, která
+je obvykle klesající.
 
 | Cena ($)    | Množství   |
 |:-----------:|:----------:|
@@ -46,15 +57,12 @@ faktory zůstávají konstantní.
 | 10          | 40         |
 | 5           | 50         |
 
-![](images/fig_2_1.png){width=500 fig-align="center"}
+![Poptávková křivka](images/fig_2_1.png){width=500 fig-align="center"}
 
-- Nicméně změny v dalších ekonomických faktorech, jako je příjem a preference
-spotřebitelů, velikost populace a ceny ostatních statků mohou způsobit posun poptávkové
-křivky.
-- Nárůst poptávky, způsobený faktory jako je nárůst ceny substitů (podobných statků),
-posouvá poptávkovou křivku doprava, zatímco pokles poptávky, třeba kvůli negativní
-publicitě, ji posouvá doleva.
-- Níže je zobrazen nárůst poptávky.
+Změny v jiných faktorech, jako jsou **příjmy**, **preference spotřebitelů** nebo **ceny
+substitutů** (podobných statků), mohou způsobit **posun poptávkové křivky**. Například
+nárůst ceny substitutu posune poptávkovou křivku doprava, zatímco pokles poptávky,
+například vlivem negativní publicity, ji posune doleva.
 
 | Cena ($)    | Množství   |
 |:-----------:|:----------:|
@@ -65,225 +73,488 @@ publicitě, ji posouvá doleva.
 | 10          | 49         |
 | 5           | 59         |
 
-![](images/fig_2_2.png){width=500 fig-align="center"}
+![Posun poptávky doprava](images/fig_2_2.png){width=500 fig-align="center"}
 
 ### Nabídka
 
-- Nabídka odkazuje na množství zboží nebo služby, které jsou podniky **ochotni a schopni
-prodat** za různé ceny, za předpokladu, že ostatní faktory zůstanou konstantní.
-- Vyšší ceny často motivují výrobce, aby nabídli více svých produktů k prodeji, což
-naznačuje pozitivní korelaci mezi cenou a nabízeným množstvím.
-- Nabídková křivka vizuálně reprezentuje tento vztah za předpokladu, že všechny ostatní
-relevantní ekonomické faktory zůstávají nezměněny.
-- Pokud se změní jiné faktory, jako jsou náklady na výrobu nebo mzdy, nabídková křivka
-se posune.
-- Posun doprava na nabídkové křivce naznačuje nárůst nabídky (větší množství za stejnou
-cenu), zatímco posun doleva naznačuje pokles nabídky.
+::: {.callout-important title="Definice"}
+**Nabídka** vyjadřuje množství zboží či služeb, které jsou výrobci **ochotni a schopni
+prodat** za různé ceny, pokud ostatní faktory zůstanou konstantní.
+:::
+
+Zákon nabídky popisuje **přímý vztah** mezi cenou a nabízeným množstvím – vyšší cena
+motivuje výrobce k nabídnutí většího množství. Tento vztah je znázorněn na **nabídkové
+křivce**.
 
 | Cena ($)    | Množství   |
 |:-----------:|:----------:|
-|    30       |    60      |
-|    25       |    50      |
-|    20       |    40      |
-|    15       |    30      |
-|    10       |    20      |
-|     5       |    10      |
+| 30          | 60         |
+| 25          | 50         |
+| 20          | 40         |
+| 15          | 30         |
+| 10          | 20         |
+| 5           | 10         |
 
-![](images/fig_2_3.png){width=500 fig-align="center"}
+![Nabídková křivka](images/fig_2_3.png){width=500 fig-align="center"}
+
+Posun nabídkové křivky nastává při změně faktorů, jako jsou **náklady na výrobu** nebo
+**mzdy**. **Posun doprava** znamená nárůst nabídky, zatímco **posun doleva** naznačuje
+její pokles.
 
 ### Rovnovážná cena
 
-- Tržní rovnováha je určena interakcí poptávky (kupujících) a nabídky (prodávajících),
-reprezentovanou bodem průsečíku poptávkové a nabídkové křivky.
-- V rovnováze je poptávané množství stejné jako nabízené a nevzníká tak žádný nedostatek
-ani přebytek.
-- Na konkurenčním trhu vede cena vyšší než je rovnovážná cena k přebytku nabídky, což
-způsobuje snížení ceny a menší výrobu.
-- Naopak cena nižší než rovnovážná vede k nedostatku, což tlačí ceny nahoru směrem k
+::: {.callout-important title="Definice"}
+**Tržní rovnováha** je dosažena v bodě, kde se **poptávka** a **nabídka** protínají, což
+určuje **rovnovážnou cenu**.
+:::
+
+V rovnovážném bodě je poptávané množství stejné jako nabízené a na trhu není žádný
+**přebytek** ani **nedostatek**. Pokud cena překročí rovnovážnou hodnotu, vzniká
+přebytek, což tlačí cenu dolů. Naopak **nedostatek** zboží způsobuje růst ceny směrem k
 rovnováze.
-- Tržní síly táhnou ceny k rovnováze a zůstávají tam, dokud se nezmění poptávka nebo
-nabídka.
 
-![](images/fig_2_4.png){width=500 fig-align="center"}
+![Rovnovážná cena](images/fig_2_4.png){width=500 fig-align="center"}
 
-- Nárůst nabídky (posun nabídkové křivky doprava) vede k poklesu rovnovážné ceny.
-- Nicméně, pohyb po poptávkové křivce kvůli změnám rovnovážné ceny je nárůst poptávaného
-množství, nikoli nárůst poptávky.
+Změny v nabídce nebo poptávce vedou k pohybům v rovnováze:
 
-![](images/fig_2_5.png){width=500 fig-align="center"}
+- **Nárůst nabídky** (posun nabídkové křivky doprava) způsobí pokles rovnovážné ceny.
+- **Pokles poptávky** (posun poptávkové křivky doleva) také snižuje rovnovážnou cenu.
 
-- Pokles poptávky (posun poptávkové křivky doleva) také vede k poklesu rovnovážné ceny.
-- Výrobci se pohybují po nabídkové křivce a vyrábí méně produktů, když cena klesá, což
-se nazývá pokles nabízeného množství.
+![Posun v nabídce a poptávce](images/fig_2_5.png){width=500 fig-align="center"}
+![Pokles poptávky](images/fig_2_6.png){width=500 fig-align="center"}
 
-![](images/fig_2_6.png){width=500 fig-align="center"}
+## Makroekonomie: Hrubý domácí produkt
 
-## Makroekonomie
+::: {.callout-important title="Definice"}
+**Hrubý domácí produkt (HDP, GDP)** představuje **hodnotu finální produkce** dosaženou
+na území daného státu výrobními faktory působícími na tomto území v určitém časovém
+období, **bez ohledu na zemi původu těchto faktorů**.
+:::
 
-- Makroekonomie se dívá na ekonomiku jako celek a zaměřuje se na otázky, jako je
-inflace, nezaměstnanost nebo hrubý domácí produkt (HDP).
+::: {.callout-important title="Definice"}
+**Hrubý národní produkt (HNP)** představuje **hodnotu finální produkce** dosažené
+výrobními faktory náležícími danému státu, bez ohledu na to, kde působily.
+:::
 
-### Inflace
+**Výpočet HNP:**
 
-- Inflace označuje zvyšování cenových hladin v čase.
-- Způsobuje pokles kupní síly měny, což znamená, že daná měna už nemůže koupit tolik
-věcí, jako dříve.
-- Měření inflace má většinou provádí statistický úřad měsíčně, přičemž Index
-spotřebitelských cen (consumer price index, CPI) je nejčastěji citovaným ukazatelem.
-- CPI je založen na nákladech na nákup pevného koše zboží a služeb, které by typická
-městská rodina mohla zakoupit.
-- Index jádrové inflace (core inflation) je vypočítán vyloučením nestabilních
-ekonomických proměnných jako jsou energetické a potravinové ceny.
-- Index cen výrobců (producer price index, PPI) měří ceny, které výrobci platí za
-dodávky a suroviny, což naznačuje možné budoucí nárůsty CPI.
-- Alternativou pro výpočet inflace může být také deflátor HDP, který používá ceny z
-výchozího roku k vypočítání toho, jaký by byl HDP, pokud by ceny byly identické s těmi
-ve výchozím roce.
+$$
+\text{HNP} = \text{HDP} + \text{produkt českých firem v zahraničí} − \text{produkt
+zahraničních firem v ČR}
+$$
 
-![](images/fig_2_7.png){width=500 fig-align="center"}
+> **Poznámka**: V praxi se častěji využívá **HDP**, protože **HNP** je obtížné přesně
+zjistit.
 
-### Nezaměstnanost
+::: {.callout-tip title="Příklad"}
+| Společnost                             | HDP      | HNP         |
+|----------------------------------------|:--------:|:-----------:|
+| Adidas, výrobní závod na Taiwanu        | Taiwan   | Německo     |
+| ČSOB, a.s.                             | ČR       | Belgie      |
+| Hyundai Motor Manufacturing Czech, Nošovice | ČR    | Jižní Korea |
+| Land Rover, pobočka ve VB              | VB       | Indie       |
+| Penam, a.s. (pekárna)                  | ČR       | ČR          |
+| Pivovar Starobrno                      | ČR       | Nizozemsko  |
+| Škoda Auto, a.s. divize SR             | SR       | Německo     |
+:::
 
-- Nezaměstnanost se vztahuje na lidi, kteří nepracují, ale aktivně hledají práci a jsou
-schopni práci přijmout.
-- Míra nezaměstnanosti je procento pracovní síly, která je nezaměstnaná, vypočítaná
-jako:
+- **Čistý produkt** je hodnota hrubého produktu po odečtení **opotřebení kapitálu**
+(amortizace).
+
+$$
+\text{Čistý produkt} = \text{Hrubý produkt} − \text{Opotřebení kapitálu}
+$$
+
+### Nominální HDP
+
+- **Nominální HDP** měří produkci v **běžných cenách** daného období.
+- Pokud chceme porovnat HDP v různých obdobích, je problém v tom, že **ceny nejsou
+fixní** a mohou se měnit.
+- **Důsledek**: Změny v nominálním HDP mohou být způsobeny:
+    1. Změnou vyráběného množství.
+    2. Změnou cen.
+
+> **Poznámka**: Při posuzování **hospodářského růstu** by neměly změny cen hrát roli,
+proto **nominální HDP není vhodným ukazatelem** pro jeho měření.
+
+### Reálný HDP
+
+- **Reálný HDP** měří produkci oceněnou **stálými cenami** jednoho vybraného období, což
+eliminuje vliv inflace.
+- Změny v reálném HDP tak odrážejí pouze **změnu vyráběného množství**.
+- **Hospodářský růst** se měří růstem reálného HDP, nikoli nominálního.
+
+::: {.callout-tip title="Příklad"}
+- **2007-2009 - Zimbabwe**: Hyperinflace (měsíční inflace v červnu 2008 přes 11 milionů
+%) vedla k výraznému zvýšení nominálního HDP, ale hospodářské vazby se zhroutily.
+- **2019-2021 - Venezuela**: Hyperinflace (1 500 %) způsobila prudký nárůst cen, ale
+reálná ekonomická aktivita výrazně poklesla.
+- **Turecko 2024**: Inflace dosahuje 70 %, což má dopad na ceny a nominální HDP, ale o
+reálném hospodářském růstu nelze mluvit.
+
+Závěr: **Nominální HDP není ukazatelem hospodářského růstu**, protože odráží i
+změny cen, nikoliv pouze změny v množství produkce.
+:::
+
+### Srovnání HDP mezi různými zeměmi
+
+Při srovnávání **výkonnosti ekonomik** dvou zemí nemusí být absolutní hodnota **reálného
+HDP** vždy vhodná, zejména pokud se země výrazně liší svou velikostí. Větší země mají
+zpravidla vyšší HDP než malé země jednoduše proto, že v nich vzniká více produkce.
+Například USA mají mnohem vyšší HDP než Lucembursko, ale to neznamená, že je Lucembursko
+zaostalé.
+
+Tento efekt lze eliminovat pomocí **HDP na hlavu (GDP per capita)**, který lépe
+vyjadřuje hospodářskou úroveň na obyvatele.
+
+![](images/fig_2_15)
+*Zdroj: Kurzy.cz*
+![](images/fig_2_16)
+*Zdroj: World Bank*
+
+- Ekonomický růst (reálné HDP, meziroční změna v %):
+
+| Rok        | EMU  | USA  | ČR   |
+|------------|------|------|------|
+| **2020**   | -6,1% | -2,2% | -5,5% |
+| **2021**   | 6,0%  | 5,8%  | 3,6%  |
+| **2023**   | 0,4%  | 2,5%  | -0,4% |
+| **2Q 2024**| 0,6%  | 3,1%  | 0,4%  |
+
+### Metody měření HDP
+
+Existují tři základní metody měření HDP, které by měly vždy vést ke stejné hodnotě.
+Každá z nich představuje jiný pohled na ekonomickou aktivitu.
+
+#### Výdajová metoda
+
+Výdajová metoda (nejpoužívanější) sčítá všechny **výdaje na finální produkci**. Tato
+hodnota se často označuje jako **agregátní poptávka (AD)** a skládá se ze čtyř
+základních složek:
+
+$$
+GDP = C + G + I + NX  
+$$
+
+kde:
+
+- $C \dots$ spotřeba domácností
+- $G \dots$ vládní výdaje
+- $I \dots$ investice (firmy)
+- $NX \dots$ = čistý export (export - import)
+
+Každá z těchto složek přispívá ke změně HDP a je důležitým ukazatelem ekonomické
+aktivity.
+
+![](images/fig_2_17)
+*Zdroj: ČSÚ*
+
+#### Důchodová metoda
+
+Důchodová metoda je opakem výdajové metody. **Princip** spočívá v tom, že každý výdaj je
+zároveň důchodem někoho jiného. Když sečteme všechny **důchody**, dostaneme stejnou
+hodnotu jako při výpočtu podle výdajové metody.
+
+#### Výrobková metoda (produkční/zbožová metoda)
+
+Výrobková metoda se zaměřuje na **přidanou hodnotu** na jednotlivých stupních výroby.
+HDP se zde počítá jako součet přidaných hodnot vytvořených v různých fázích produkce.
+
+::: {.callout-tip title="Příklad"}
+- **Modelový příklad výroby džemu:**
+
+| Stupeň výroby   | Meziprodukt | Přidaná hodnota | Hodnota produktu |
+|-----------------|-------------|-----------------|------------------|
+| 1. Sběr malin   |  0          |  3              |  3               |
+| 2. Výroba džemu |  3          |  5              |  8               |
+| 3. Prodej džemu |  8          |  2              | 10               |
+| **Součet**      | 11          | **10**              | 21               |
+
+V tomto příkladu je **HDP** součtem přidaných hodnot v každé fázi výroby (10). V hodnotě
+21 jsou maliny započítány třikrát, výroba džemu dvakrát – musíme tyto duplicity
+eliminovat.  Zajímá nás až hodnota finální produkce (složená z ceny malin + ceny za
+výrobu džemu + marže za prodej = 10), nikoliv hodnota mezistupňů.
+:::
+
+> **Poznámka**: Výrobková metoda se v praxi využívá méně často kvůli složitosti
+sledování přidané hodnoty v případě dlouhých výrobních řetězců.
+
+## Makroekonomie: Inflace
+
+::: {.callout-important title="Definice"}
+**Inflace** představuje **zvyšování cenové hladiny** v čase, což vede k poklesu **kupní
+*síly měny**. Znamená to, že za danou měnu nelze koupit tolik věcí jako dříve.
+:::
+
+- **Deflace** je opakem inflace, kdy ceny klesají.
+- **Desinflace** označuje zpomalení tempa inflace.
+
+**Index jádrové inflace** (core inflation) je ukazatel inflace, který vylučuje ceny
+*potravin a energie kvůli jejich vysoké nestabilitě.
+
+Míra inflace se počítá následovně:
+
+$$
+\pi_t = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100
+$$
+
+- $\pi_t \dots$ míra inflace v čase $t$ (v %)
+- $P_t \dots$ je hodnota cenového indexu v čase $t$
+- $P_{t-1} \dots$ je hodnota cenového indexu v předchozím období
+
+### Měření inflace
+
+#### Index spotřebitelských cen (CPI)
+
+**Index spotřebitelských cen (CPI)** je nejčastěji používaným ukazatelem inflace. Je
+*založen na **spotřebním koši** – fixním souboru zboží a služeb, které obvykle nakupuje
+*průměrná městská domácnost.
+
+CPI v čase $t$ se vypočítá podle následujícího vzorce:
+
+$$
+\text{CPI}_t = \left( \frac{\sum \left( \frac{p_t}{p_0} \times p_0 q_0 \right)}{\sum \left( p_0 q_0 \right)} \right) \times 100
+$$
+
+- $p_t \dots$ cena zboží/služby v běžném období
+- $p_0 \dots$ cena zboží/služby v základním období
+- $p_0 \times q_0 \dots$ fixní váha zboží/služby ve spotřebním koši
+
+Takto se spočítá cenová hladina pro daný rok. **Míra inflace** se poté vypočítá podle
+předchozího vzorce pro inflaci.
+
+- Spotřební koš – váhy položek (platné od ledna 2024):
+
+| **Kategorie**                                      | **Váha (v promilech)** |
+|----------------------------------------------------|------------------------|
+| 1. Potraviny a nealkoholické nápoje                | 177,43                 |
+| 2. Alkoholické nápoje, tabák                       | 84,62                  |
+| 3. Odívání a obuv                                  | 43,94                  |
+| 4. Bydlení, voda, energie, paliva                  | 258,39                 |
+| 5. Bytové vybavení, opravy                         | 58,00                  |
+| 6. Zdraví                                          | 27,88                  |
+| 7. Doprava                                         | 105,62                 |
+| 8. Pošty a telekomunikace                          | 29,36                  |
+| 9. Rekreace a kultura                              | 78,24                  |
+| 10. Vzdělávání                                     | 6,17                   |
+| 11. Stravování a ubytování                         | 64,77                  |
+| 12. Ostatní zboží a služby                         | 65,53                  |
+
+>**Poznámky:** Váhy jsou uvedeny v promilech a aktualizují se každé dva roky. Spotřební
+koš v ČR obsahuje více než 1 000 položek. Podrobnou strukturu koše lze nalézt na
+stránkách [Českého statistického úřadu (ČSÚ)](https://www.czso.cz).
+
+#### Deflátor HDP
+
+Deflátor HDP je **cenový index**, který využívá **HDP** k výpočtu inflace. Vypočítá se
+pomocí následujícího vzorce:
+
+$$
+IPD = \frac{HDP_N}{HDP_R} \times 100
+$$
+
+- $HDP_N \dots$ HDP v běžných cenách
+- $HDP_R \dots$ HDP ve stálých cenách
+
+Deflátor HDP pomáhá odstranit vliv **cenových změn** a umožňuje lépe pochopit reálnou
+produkci v ekonomice.
+
+### Srovnání CPI a Deflátoru HDP
+
+#### Deflátor HDP
+
+- **Výhoda**: Zachycuje **změny cen všech statků** a služeb v ekonomice, což z něj činí
+komplexní ukazatel celkové cenové hladiny.
+- Snadno se konstruuje, protože vychází z již dostupných dat o HDP.
+- Pro běžného spotřebitele nemá příliš vysokou vypovídací hodnotu, protože zahrnuje i
+statky, které běžný spotřebitel nekupuje.
+
+#### CPI (Index spotřebitelských cen)
+
+- **Výhoda**: Odráží pouze změny cen **zboží a služeb, které nakupuje typická
+domácnost**, a má tak vyšší vypovídací hodnotu pro domácnosti.
+- Jeho konstrukce je náročnější, protože vyžaduje pečlivý výběr **spotřebního koše**.
+- **Fixní váhy** položek ve spotřebním koši se mění pouze každých několik let, což může
+snižovat přesnost CPI, pokud se změnily preference spotřebitelů.
+
+### Index cen výrobců 
+
+**Index cen výrobců** (PPI – Producer Price Index) měří ceny, které **výrobci platí** za
+suroviny a dodávky, a často předpovídá budoucí změny v CPI. Když se zvýší ceny vstupů
+pro výrobce, lze očekávat, že konečné ceny výrobků, které spotřebitelé nakupují, také
+vzrostou.
+
+- PPI se konstruuje podobně jako CPI, ale zaměřuje se na **jiný koš** – zboží a služby,
+které nakupují výrobci.
+- PPI je v předstihu oproti CPI, protože reaguje na změny v nákladech výrobců dříve, než
+se tyto změny projeví u spotřebitelů.
+
+**Složení PPI:**
+
+- Index cen průmyslových výrobců – sleduje ceny zboží a služeb průmyslového sektoru.
+- Index cen stavebních prací – měří náklady stavebních projektů.
+- Index cen tržních služeb – monitoruje ceny služeb v tržním sektoru.
+- Index cen zemědělských výrobců – zachycuje změny cen v zemědělském sektoru.
+
+![](images/fig_2_18)
+*Zdroj: EUROSTAT*
+![](images/fig_2_19)
+*Zdroj: EUROSTAT*
+
+### Formy inflace
+
+- **Otevřená inflace** – klasický případ, kdy ceny zboží a služeb skutečně rostou.
+- **Potlačená inflace** – ceny by měly růst, ale kvůli regulacím nebo jiným zásahům
+zůstávají nízké.
+    - Typická pro ekonomiky s cenovými regulacemi, kde dochází k **makroekonomické
+    nerovnováze** – poptávka převyšuje nabídku, ale ceny se nezvyšují kvůli regulaci.
+    - Kdyby trh fungoval bez zásahů, ceny by rostly a vedly by k rovnováze.
+    - Potlačená inflace je dlouhodobě neudržitelná a nakonec se projeví jako **otevřená
+    inflace**.
+- **Mírná (plíživá) inflace** – míra inflace je relativně nízká, jednociferná.
+- **Pádivá inflace** – inflace dosahuje vyšších hodnot, dvou až trojciferné úrovně, což
+způsobuje problémy v hospodářství.
+- **Hyperinflace** – extrémní forma inflace, při které se rozpadá peněžní systém a lidé
+se často uchylují k **barteru**.
+
+## Makroekonomie: Nezaměstnanost
+
+::: {.callout-important title="Definice"}
+**Nezaměstnanost** označuje stav, kdy lidé, kteří **nepracují**, ale aktivně hledají
+práci a jsou připraveni ji přijmout, nejsou schopni najít zaměstnání. 
+:::
+
+**Míra nezaměstnanosti** udává procento pracovní síly, které je nezaměstnané:
+
+$$
+\text{Míra nezaměstnanosti} = \frac{\text{Počet nezaměstnaných}}{\text{Pracovní síla}} \times 100
+$$
 
 $$
 \text{Pracovní síla} = \text{Počet zaměstnaných} + \text{Počet nezaměstnaných}
 $$
+
+Pracovní síla tedy zahrnuje **ekonomicky aktivní obyvatelstvo**.
+
+### Kdo je považován za nezaměstnaného?
+
+Aby osoba byla považována za nezaměstnanou, musí splňovat následující podmínky:
+
+- Je starší 15 let.
+- **Aktivně hledá práci**.
+- Je připravena k **nástupu do práce do 14 dnů**.
+
+Ne každý, kdo nemá práci, je považován za nezaměstnaného. Například **důchodci** nebo
+**rodiče pečující o domácnost**, kteří nehledají práci, nejsou součástí pracovní síly.
+
+- Statistické úřady zveřejňují **míru nezaměstnanosti** každý měsíc.
+- Pro porovnání globálních dat o nezaměstnanosti můžete navštívit [World Bank
+Data](https://openstax.org/r/data-world-bank).
+
+![](images/fig_2_20)
+
+*Zdroj: EUROSTAT*
+
+> **Poznámka**: V České republice je **míra nezaměstnanosti kolem 3 %** považována za
+hranici **přirozené nezaměstnanosti**. To znamená, že pracují ti, kteří chtějí, a na
+trhu zůstávají lidé, kteří mají špatné pracovní návyky nebo z nějakého důvodu pracovat
+nechtějí. K přirozené nezaměstnanosti přispívají také lidé, kteří přecházejí mezi
+zaměstnáními kvůli lepším příležitostem.
+
+## Ekonomické a finanční indikátory
+
+Mezi nejznámější ekonomické a finanční indikátory patří:
+
+- **HDP** (hrubý domácí produkt)
+- **Inflace**
+- **Míra nezaměstnanosti**
+- **Burzovní indexy** (tržní indexy)
+- **Úrokové míry**
+- **Akciové kurzy**
+- **Cena dluhopisů**
+
+###  Vliv vybraných faktorů na vývoj indikátorů
+
+#### Cena dluhopisů a nominální úroková míra
+
+- Existuje **inverzní vztah** mezi úrovní úrokových sazeb a cenou dluhopisů.
+- **Růst úrokových sazeb** snižuje cenu již emitovaných dluhopisů.
+
+::: {.callout-tip title="Příklad"}
+Původní dluhopis s výnosovou mírou 5 % a očekávanou inflací 8 % se stává méně
+atraktivním, když nově emitovaný dluhopis nabízí 10% výnos.
+:::
+
+#### Cena akcií a výsledky podnikatelské činnosti
+
+- Pozitivní očekávání hospodářského růstu zvyšují **akciové kurzy** díky očekávanému
+nárůstu zisků firem.
+- V období **recese** se očekávají horší podnikatelské výsledky, což vede k poklesu
+akciových kurzů.
+
+#### Cena akcií, inflace a úrokové sazby
+
+- **Růst inflace** snižuje reálnou hodnotu zisků a dividend, což negativně ovlivňuje
+**akciové kurzy**.
+- Vysoká inflace zvyšuje **úrokové sazby**, což zvyšuje náklady na úvěry pro firmy.
+
+#### Úroková míra a devizový trh
+
+- Růst **úrokových sazeb** zvyšuje **hodnotu domácí měny** díky vyšší atraktivitě
+investic do této měny.
+- Vyšší úrokové sazby vedou k vyšší poptávce po domácí měně, což způsobuje **apreciaci**
+měnového kurzu.
+
+#### Další faktory
+
+- Daňová zátěž
+- Neekonomické faktory: občanské nepokoje, války, politická nestabilita, přírodní
+katastrofy.
+
+### Dělení indikátorů dle vztahu k hospodářskému cyklu
+
+#### Předbíhající indikátory
+
+- Pohybují se ve stejném směru jako hospodářský cyklus, ale **v předstihu**.
+- Používají se pro prognózy budoucího vývoje.
+- Příklady: nová stavební povolení, akciové kurzy, objednávky strojního zařízení.
+
+#### Souběžné indikátory
+
+- Odráží **aktuální průběh** hospodářského cyklu.
+- Potvrzují stávající trendy v ekonomice.
+- Příklady: průmyslová produkce, tržby za zboží a služby.
+
+#### Zpožďující se indikátory
+
+- Potvrzují vývoj s **určitým zpožděním**.
+- Slouží k analýze vztahů mezi ekonomickými veličinami.
+- Příklady: průměrná doba trvání nezaměstnanosti, změny CPI.
+
+### Citlivost odvětví na hospodářský cyklus
+
+#### Cyklická odvětví
+
+- Zisky a tržby těchto odvětví se pohybují v souladu s hospodářským cyklem.
+- Největší zisky mají v období **konjunktury**, zatímco během recese trpí.
   
-$$
-\text{Míra nezaměstnanosti} = \frac{\text{Počet nezaměstnaných}}{\text{Pracovní síla}}
-$$
+#### Neutrální odvětví
 
-- Ne každý bez práce je považován za nezaměstnaného.
-- Například důchodci nebo rodiče pečující o domácnost a nehledající zaměstnání nejsou
-zahrnuti do pracovní síly.
-- Statistický úřad zveřejňuje míru nezaměstnanosti každý měsíc.
-- Pro porovnání míry nezaměstnanosti po celém světě navštivte
-<https://openstax.org/r/data-world-bank>.
+- Tato odvětví nejsou přímo ovlivněna hospodářským cyklem.
+- Zahrnují sektory, kde spotřebitelé nemohou dlouhodobě odložit spotřebu, např.
+**potravinářský** a **farmaceutický** průmysl.
 
-![](images/fig_2_8.png){width=500 fig-align="center"}
+#### Anticyklická odvětví
 
-### Hrubý domácí produkt
+- Profitují během **recese**, protože nabízejí levnější substituty dražších produktů.
+- Příkladem jsou firmy vyrábějící **levné potraviny**, **oděvy** nebo **televizní
+společnosti**.
 
-- Hrubý domácí produkt (HDP) představuje celkovou peněžní hodnotu všech konečných statků
-a služeb vyrobených v zemi během jednoho roku.
-- HDP lze vypočítat sečtením všech položek zakoupených v ekonomice, rozdělených do čtyř
-kategorií: spotřeba, investice, vládní výdaje a čistý export.
-- Čistý export zahrnuje hodnotu statků vyrobených v domácí ekonomice a prodaných v
-zahraničí, mínus hodnotu statků vyrobených v zahraničí a zakoupených v domácí ekonomice.
-- Nominální HDP, tržní hodnota všech vyrobených statků a služeb, může narůst kvůli
-zvýšení produkce nebo zvýšení cen (inflace).
-- Reálný HDP, vypočítaný korigováním nominálního HDP o inflaci, roste pouze pokud roste
-produkce statků a služeb.
-
-![](images/fig_2_9.png){width=500 fig-align="center"}
-
-## Hospodářský cyklus a ekonomická aktivita
-
-![](images/fig_2_10.png){width=700 fig-align="center"}
-
-- Růst ekonomiky není v čase konstantní; má období rychlejšího růstu a období
-negativního růstu, známé jako hospodářský cyklus.
-
-![](images/fig_2_11.png){width=300 fig-align="center"}
-
-- Hospodářský cyklus se skládá z období ekonomické expanze a kontrakce.
-- Během fáze expanze roste HDP, zaměstnanost se zvyšuje a nezaměstnanost klesá.
-- Další ukazatele jako je zakládání nových firem nebo stavba stavba nových domů, mohou
-narůst.
-- Časem rychlá expanze zpomaluje, což převede ekonomiku do fáze kontrakce.
-- Tento bod je známý jako vrchol hospodářského cyklu.
-- Kontrakce je často spojena se zvyšující se nezaměstnaností a zpomalujícím HDP.
-- Bod, kdy kontrakce končí a začíná expanze, se nazývá dno.
-- Délka hospodářského cyklu se měří od jednoho dna k dalšímu.
-
-![](images/fig_2_12.png){width=500 fig-align="center"}
-
-- Recese, často synonymum pro fázi kontrakce, bývala definována jako dvě po sobě jdoucí
-čtvrtletí poklesu HDP.
-- Dnes Národní úřad pro ekonomický výzkum (National Bureau of Economic Research, NBER),
-který oficiálně deklaruje recese v USA, používá širší definici.
-- Významný pokles ekonomické aktivity rozšířený napříč ekonomikou a trvající několik
-měsíců může být deklarován jako recese, bere se v úvahu reálný příjem, zaměstnanost,
-průmyslová výroba, velkoobchod a maloobchodní prodej, vedle reálného HDP.
-
-## Úrokové sazby
-
-- Trh zápůjčitelných fondů (dostupných peněz) je řízen úrokovou sazbou (cenou peněz).
-- Dodavatelé prostředků (věřitelé) jsou ti s rozpočtovým přebytkem, zatímco poptávači
-prostředků (dlužníci) jsou ti s rozpočtovým deficitem.
-- Faktory ovlivňující nabídku a poptávku po penězích:
-  - velikost úspor
-  - přístup komerčních bank
-  - politika centrální banky
-  - politika vlády 
-  - preference likvidity
-  - mezinárodní faktory
-- Na tomto trhu reprezentuje vzestupně se sklánějící křivka nabídky věřitele, kteří jsou
-povzbuzeni k dodání více prostředků při vyšší úrokové sazbě, a sestupně se sklánějící
-křivka poptávky reprezentuje dlužníky, kteří poptávají méně prostředků, jak úrokové
-sazby rostou.
-- Rovnováha na tomto trhu nastává tam, kde se křivky nabídky a poptávky protínají,
-stanoví úrokovou sazbu, která vyváží dodané a poptávané množství půjčitelných
-prostředků.
-
-![](images/fig_2_13.png){width=500 fig-align="center"}
-
-- Nominální úroková sazba je kotovaná sazba a reálná úroková sazba ji upravuje o
-inflaci. Vypočítá se jako:
-$$
-\text{Reálná úroková sazba} = \text{Nominální úroková sazba} - \text{Inflace}
-$$
-- Reálná úroková sazba, nikoli nominální, určuje skutečnou cenu půjčování si a odměnu za
-půjčování.
-- Různé typy dlužníků mají různé úrokové sazby na základě jejich kreditního rizika. 
-- Státní dluhopisy mají zpravidla nejnižší (bezrizikovou) sazbu (může se velmi lišit u
-různých států), zatímco společnosti a jednotlivci mají vyšší sazby kvůli vyššímu riziku.
-- Rizikové přirážky jsou účtovány jako kompenzace za kreditní riziko, které nesou
-věřitelé.
-- Rizikovější dlužníci, jako jsou držitelé kreditních karet bez zástavy, mají tendenci
-platit mnohem vyšší úrokové sazby.
-
-![](images/fig_2_14.png){width=500 fig-align="center"}
-
-## Směnné kurzy
-
-- Směnný kurz je cena měny.
-- Kurz pro okamžitou směnu se nazývá spotový měnový kurz.
-- **Přímá kotace**: když jsou směnné kurzy vyjádřeny v jednotkách domácí měny za
-jednotku zahraniční měny.
-  - Například, pokud jsme v USA a směnný kurz mezi americkým dolarem a eurem je 1,2, to
-  znamená, že EUR 1 je ekvivalentní USD 1,2. Přímá kotace je uvedena jako:
-   $$
-   \text{USD } 1.2 = \text{EUR } 1
-   $$
-- **Nepřímá kotace**: když jsou směnné kurzy vyjádřeny v jednotkách zahraniční měny za
-jednotku domácí měny.
-  - V předchozím příkladu by nepřímá kvótace z americké perspektivy byla kolik eur
-  můžete koupit za 1 americký dolar. Pokud můžete koupit EUR 0,8333 eur za USD 1,
-  nepřímá kotace je uvedena jako:
-   $$
-   \text{USD } 1 = \frac{\text{EUR } 1}{\text{USD } 1.2}
-   $$
-   $$
-   \text{USD } 1 = \text{EUR } 0.8333
-   $$
-- Tyto dva typy kotací poskytují stejné informace, ale v jiném formátu.
-- Volba
-mezi přímou a nepřímou kotací závisí na místních tržních zvycích.
-- Apreciace měny je, když náklady na nákup měny rostou. Pokud cena za nákup jednoho EUR
-stoupne na USD 1,3, EUR se apreciovalo (zhodnotilo se). To může být kvůli zvýšené
-poptávce po měně nebo snížené nabídce.
-- Depreciace měny je, když náklady na nákup měny klesají. Pokud cena za nákup jednoho
-EUR klesne na USD 1,1, EUR depreciovalo (znehodnotilo se). To může být kvůli snížené
-poptávce po měně nebo zvýšené nabídce.
-- Riziko směnného kurzu je starostí pro podniky zapojené do mezinárodního obchodu.
-Hodnota očekávaných příjmů nebo výdajů podniku se může změnit kvůli kolísajícím směnným
-kurzům.
-- Ekonomická expozice odkazuje na riziko, že změna směnných kurzů může
-ovlivnit zákaznickou základnu a prodeje podniku.
-- Apreciace nebo depreciace měny může ovlivnit kupní sílu spotřebitelů, což ovlivňuje
-např. jejich výběr dovolené.
+| **Cyklická odvětví**                                      | **Neutrální odvětví**                                      |
+|------------------------------------------------------------|------------------------------------------------------------|
+| 1. Stavebnictví                                             | 1. Potravinářský průmysl                                   |
+| 2. Automobilový průmysl                                     | 2. Nealkoholické nápoje                                    |
+| 3. Hotelnictví a ubytování                                  | 3. Alkoholické nápoje                                      |
+| 4. Oděvní průmysl                                           | 4. Pivovarnictví                                           |
+| 5. Strojírenství                                            | 5. Tabákový průmysl                                        |
+| 6. Elektronika                                              | 6. Farmaceutický průmysl                                   |

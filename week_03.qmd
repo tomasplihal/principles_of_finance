@@ -1,222 +1,405 @@
-# Časová hodnota peněz
+---
+format:
+  html:
+    mermaid-format: png
+    toc: true
+    toc-depth: 2
+    toc-title: Obsah lekce
+---
+
+# Bankovní systém
 
 ::: {.callout-note}
 # Studijní materiály
 
-- Dahlquist, J. R., &; Knight, R. (2022). Principles of finance. OpenStax, Rice
-University. <https://openstax.org/details/books/principles-finance>
-  - Chapter 7 - Time Value of Money I: Single Payment Value
-  - Chapter 8 - Time Value of Money II: Equal Multiple Payments
-  - Chapter 9 - Time Value of Money III: Unequal Multiple Payment Values
+
+- MELICHER, Ronald W. a Edgar NORTON. Introduction to finance : markets, investments, and financial management. Seventeenth edition. Hoboken: Wiley, 2020, xxix, 613. ISBN 9781119561170
+  - Chapter 3 – Banks and Other Financial Institutions
+- Kantnerová, L. (2016). Základy bankovnictví: teorie a praxe. CH Beck.
 :::
 
 **Výstupy z učení:**
 
-1. Vysvětlit, proč má čas dopad na hodnotu peněz.
-2. Chápat pojmy budoucí hodnota a současná hodnota.
-3. Ovládat výpočet budoucí hodnoty pomocí jednoduchého i složeného úročení.
-4. Dokázat spočítat současnou hodnotu peněžního toku.
-5. Umět využívat vzroce pro výpočet anuity.
+- Porozumět pojmům bankovní systém a různé podoby bankovního systému.
+- Definovat pojem banka, hlavní činnosti bank, úrokové míry ČNB.
+- Rozumět pojmu centrální banka a znát její funkce.
 
-## Úvod do časové hodnoty peněz
+## Bankovní systém
 
-- Koncept časové hodnoty peněz (TVM, time value of money) uvádí, že peníze dnes jsou
-hodnotnější než peníze v budoucnosti.
-- To je způsobeno třemi důvody: 
-  1. potenciálem pro okamžité spoření/investování
-  2. rizikem budoucích platebních selhání
-  3. lidskou preferencí pro okamžitou spotřebu
-- TVM motivuje ke spoření v současnosti za účelem dosažení budoucích zisků.
-- TVM je klíčové pro informovaná finanční rozhodnutí s ohledem na faktory jako riziko,
-úrokové sazby, inflace a výnos.
-- Pomáhá ve finančním plánování, hodnocení firemních projektů, plánování důchodu a
-osobních investičních rozhodnutí.
-- Zatímco inflace snižuje budoucí hodnotu peněz, pozitivní efekt složeného úroku
-prospívá spořitelům a investorům.
-- Delší investiční období a vyšší úrokové sazby zvyšují hodnotu investovaných peněz.
-- Základní finanční transakce je jednorázový peněžní tok buď přijatý nebo zaplacený.
-- Všechny typy peněžních toků lze rozložit na sérii jednorázových částek.
-- Pro ilustraci časové hodnoty peněz lze použít online kalkulačky, např. <https://www.calculator.net/interest-calculator.html>
+::: {.callout-important title="Definice"}
+**Bankovní systém** představuje soustavu všech bankovních institucí působících na území
+daného státu, včetně jejich **vztahů mezi sebou** a s dalšími ekonomickými subjekty,
+jako jsou domácnosti či firmy. 
+:::
 
-## Základní terminologie
+Fungování a efektivnost bankovního systému závisí na:
 
-- **Současná hodnota** (PV, present value) $\rightarrow$ hodnota peněz dnes.
-- **Budoucí hodnota** (FV, future value) $\rightarrow$ hodnota peněz v určitém čase v
-budoucnosti.
-- Příklad: Investujete 1000 na spořicí účtet v bance, která slibuje roční úrokovou sazbu 8%.
-    - Současná hodnota = 1000
-    - Budoucí hodnota za rok = vklad + úrok = 1000 + 80 = 1080
+- Ekonomickém systému země.
+- Rozvinutosti finančního trhu.
+- Měnové stabilitě.
+- Zapojení do mezinárodních organizací.
+- Regulaci bankovních aktivit.
 
-## Budoucí hodnota
+### Různé podoby bankovního systému
 
-### Jednoduché úročení
+1. **Jednostupňový vs. dvoustupňový systém**
+   - Jednostupňový systém: Centrální banka vykonává všechny bankovní funkce.
+   - Dvoustupňový systém: Oddělení centrální banky (regulátor) a komerčních bank.
 
-- **Jednoduché úročení** $\rightarrow$ úročí se pouze jistina (počáteční vklad).
-- Př. Investujete 1000 na spořicí účet v bance, který slibuje úrok (r) 8% ročně. Jaká
-bude hodnota investice za 2 roky?
-  - FV za 2 roky = 1000 + 80 + 80 = 1160
-- Obecný vzorec:
+2. **Univerzální model vs. model odděleného bankovnictví**
+   - Univerzální model: Banky mohou poskytovat všechny druhy finančních služeb
+   (např. depozitní i investiční služby).
+   - Oddělený model: Specializace bank na různé oblasti (např. investiční
+   bankovnictví oddělené od běžných služeb).
+
+3. **Otevřenost vůči zahraničním bankám**
+   - Vysoce otevřený systém: Vysoká přítomnost zahraničních bank.
+   - Málo otevřený systém: Omezený vstup zahraničních bank.
+
+4. **Pobočkový vs. unitární vs. propojený systém**
+   - Pobočkový model: Banky provozují širokou síť poboček.
+   - Unitární systém: Banky bez poboček, operující centrálně.
+   - Propojený systém: Systém, ve kterém jsou banky propojené s jinými finančními
+   institucemi.
+
+### Bankovní systém v České republice
+
+- **Dvoustupňový systém**:
+  - **Česká národní banka (ČNB)** funguje jako centrální banka a regulátor.
+  - Ostatní **komerční banky** poskytují běžné finanční služby.
+
+- **Univerzální model**: České banky mohou poskytovat širokou škálu finančních služeb.
+
+- **Pobočkový model**: Banky v ČR provozují pobočky, které slouží klientům po celé zemi.
+
+- **Otevřený systém**: Český bankovní systém je otevřený pro zahraniční banky.
+
+- **Struktura bank v ČR** (údaje ČNB k 31.7.2024):
+  - 52 bank a poboček (včetně stavebních spořitelen).
+  - 11 bank s českou účastí, z toho 2 banky se **státní účastí**.
+  - 18 bank s převládající zahraniční účastí.
+  - 23 poboček zahraničních bank.
+
+## Banka
+
+::: {.callout-important title="Definice"}
+Banka je **právnická osoba** se sídlem v České republice, založená jako **akciová
+společnost**, která:
+- **Přijímá vklady** od veřejnosti.
+- **Poskytuje úvěry**.
+- Má **bankovní licenci** k výkonu těchto činností.
+:::
+
+**Hlavní činnosti bank:**
+
+1. **Finanční zprostředkování** – pohyb kapitálu od přebytkových subjektů k deficitním.
+2. **Provádění platebního styku** – zajišťování peněžních převodů mezi subjekty.
+3. **Clearingový systém** – zúčtování tuzemských mezibankovních plateb, které v ČR
+zajišťuje systém CERTIS pod vedením **ČNB**.
+4. **Emise bezhotovostních peněz** – banky vytvářejí bezhotovostní peníze
+prostřednictvím **multiplikace peněz**.
+5. **Finanční investování** – banky poskytují klientům služby spojené s obchodováním s
+cennými papíry (CP), deriváty, nebo správou aktiv.
+6. **Další činnosti**:
+   - Investice do cenných papírů (i na vlastní účet).
+   - Poskytování záruk a zajišťování dokumentárního platebního styku.
+   - Směnárenská činnost.
+
+### Peněžní multiplikátor
+
+**Peněžní multiplikátor** popisuje, jak obchodní banky **vytvářejí peníze**
+*prostřednictvím **depozit** a **úvěrové expanze**.
+
+- **Centrální banka**:
+  - Vydává hotovost (oběživo a depozita).
+  - Vytváří bankovní rezervy a bezhotovostní peníze prostřednictvím nástrojů měnové
+  politiky.
+  
+- **Obchodní banky**:
+  - Vytvářejí bezhotovostní peníze prostřednictvím **úvěrů** a **depozitní
+  multiplikace**.
+
+Obchodní banky jsou povinny držet určité procento z vkladů nebankovních subjektů jako
+**rezervy** u centrální banky. Toto procento stanovuje centrální banka jako **povinné
+minimální rezervy (PMR)**.
+
+Například, pokud centrální banka stanoví **10% míru PMR**, banky musí z každého vkladu
+10% uložit u centrální banky a zbývajících 90% mohou použít k **poskytnutí úvěrů**
+nebo na **finanční investice**.
+
+::: {.callout-tip title="Příklad"}
+Předpokládejme, že centrální banka **nákupem dluhopisu** dodá do oběhu **100 milionů
+Kč**. Tato částka vstoupí do oběhu prostřednictvím obchodních bank, které ji postupně
+multiplikují:
+
+1. **Obchodní banka** poskytne úvěr ve výši **100 mil. Kč** a klient zaplatí dodavateli
+za technologie. Dodavatel uloží peníze u své banky, která uloží **10 mil. Kč do rezerv**
+a zbývajících **90 mil. Kč** poskytne jako úvěr.
+2. Následně další banka z těchto 90 mil. Kč uloží **9 mil. Kč do rezerv** a poskytne
+**81 mil. Kč** jako úvěr.
+3. Tento proces pokračuje dále, což vede k vytvoření dodatečných peněz v oběhu.
+
+Celkově proces vytváří mnohem více peněz, než bylo původně do oběhu vloženo. **Peněžní
+multiplikátor** určuje, kolikrát se peněžní zásoba zvýší na základě původní dodané
+částky.
+:::
+
+### Druhy bank
+
+#### Univerzální banky
+
+- Banky poskytující širokou škálu finančních služeb, včetně depozitních, úvěrových a
+investičních produktů.
+
+#### Specializované banky
+
+- **Specializované banky** se zaměřují na specifické sektory nebo oblasti ekonomiky.
+- Některé z těchto bank jsou vytvořeny za účelem podpory **státní hospodářské
+politiky**.
+- Cílem může být podpora **exportu**, **bydlení** nebo **podnikatelské činnosti**.
+
+#### Exportní banky
+
+- V ČR: **Česká exportní banka**, založena v roce 1995.
+- Poskytuje **státní podporu vývozu** formou vývozních úvěrů.
+- Cílem je zvýšení **konkurenceschopnosti** českých exportérů na mezinárodních trzích.
+
+### Záruční a rozvojové banky
+
+- V ČR: **Národní rozvojová banka, a.s.**
+- Podporuje **rozvoj malého a středního podnikání**, infrastruktury a dalších sektorů
+ekonomiky.
+- Cílem je napomáhat rozvoji sektorů, které vyžadují **veřejnou podporu**, v souladu s
+hospodářskou politikou ČR.
+
+### Právní úprava bankovnictví v ČR
+
+1. **Zákon č. 21/1992 Sb., o bankách** – Definuje právní rámec pro fungování bank v ČR.
+2. **Zákon č. 6/1993 Sb., o České národní bance** – Upravuje postavení, činnost a
+organizační strukturu **ČNB**.
+3. **Právní normy EU**:
+   - ČR je členem EU, a proto v ČR platí i **nařízení Evropského parlamentu a Rady EU**.
+   - **Směrnice** a **doporučení** EU musí být začleněny do českého právního řádu.
+
+**Princip jednotné bankovní licence:**
+
+- Banky z členských zemí EU mají vůči ČNB pouze **informační povinnost**.
+- Banky mimo EU musí **požádat o licenci** od ČNB pro provozování bankovních služeb v
+ČR.
+
+### Hospodaření bank
+
+**Finanční situace bank** je hodnocena pomocí několika klíčových poměrových ukazatelů:
+
+1. **Kapitálová přiměřenost** – Poměr **regulatorního kapitálu Tier 1** k **rizikově
+váženým aktivům**.
+   
+2. **Rizikovost**:
+   - Podíl **pohledávek se selháním** na celkových pohledávkách.
+   - Poměr **kapitálu Tier 1** k celkovým aktivům.
+
+3. **Ziskovost**:
+   - **ROAA (Return on Average Assets)** – Míra ziskovosti průměrných aktiv:
+     $$ ROAA = \frac{\text{Čistý zisk}}{\text{Průměrná aktiva}} \times 100 $$
+   - **ROAE (Return on Average Equity)** – Míra ziskovosti průměrného vlastního kapitálu:
+     $$ ROAE = \frac{\text{Čistý zisk}}{\text{Průměrný vlastní kapitál}} \times 100 $$
+   - **Čistá úroková marže (NIM)** – Poměr čistého úrokového zisku k průměrným výnosovým aktivům:
+     $$ NIM = \frac{\text{Čistý úrokový zisk}}{\text{Průměrná výnosová aktiva}} \times 100 $$
+
+Vybrané finanční ukazatele bankovního sektoru ČR:
+
+![](images/fig_3_1.png)
+*Zdroj: www.cnb.cz*
+
+Mezinárodní srovnání ROA:
+
+![](images/fig_3_2.png)
+*Zdroj: Macrotrends.net*
+
+Mezinárodní srovnání ROAE:
+
+![](images/fig_3_3.png)
+*Zdroj: Macrotrends.net*
+
+## Úrokové míry v ekonomice
+
+**Úrokové míry** patří mezi důležité ekonomické ukazatele, které výrazně ovlivňují
+*ekonomickou aktivitu. Centrální banky obvykle vyhlašují tři základní sazby. V ČR tyto
+*sazby stanovuje **Česká národní banka (ČNB)**.
+
+Základní sazby ČNB (platné od 2.8.2024):
+
+- **Diskontní sazba**: 3,50 %
+- **2T Repo sazba**: 4,50 %
+- **Lombardní sazba**: 5,50 %
+
+### Diskontní sazba
+
+- Diskontní sazba je sazba, kterou ČNB používá pro **depozitní facilitu** – možnost pro
+banky uložit přebytečnou likviditu u ČNB přes noc.
+- Tato sazba představuje **dolní hranici** pro pohyb krátkodobých úrokových sazeb na
+peněžním trhu.
+- Změna diskontní sazby ovlivňuje **množství peněz v oběhu**: 
+  - **Zvýšení diskontní sazby** $\rightarrow$ snaha snížit množství peněz v oběhu
+  $\rightarrow$ růst úrokových sazeb komerčních bank $\rightarrow$ větší příliv kapitálu
+  do země $\rightarrow$ paradoxně růst peněžní zásoby, což může být v rozporu s původním
+  záměrem centrální banky.
+- Dlouhodobě **diskontní sazba** nepředstavuje hlavní operativní nástroj měnové
+politiky.
+
+![](images/fig_3_4.png)
+
+### Repo sazba
+
+- **2T Repo sazba** je hlavní měnový nástroj ČNB. Repo operace probíhají ve formě
+tendrů, při kterých ČNB přijímá přebytečnou likviditu od bank a předává jim jako
+zajištění cenné papíry.
+- Repo operace mají **14denní splatnost**, proto se sazba označuje jako **dvoutýdenní
+repo sazba**.
+- Repo operace slouží především k **odčerpání přebytečné likvidity** z bankovního
+sektoru.
+
+![](images/fig_3_5.png)
+
+### Lombardní sazba
+
+- **Lombardní sazba** umožňuje bankám vypůjčit si likviditu od ČNB formou **repo
+operace** přes noc. 
+- Vzhledem k přebytku likvidity v bankovním systému je lombardní facilita málo
+využívaná.
+- Lombardní sazba tvoří **horní hranici** pro krátkodobé úrokové sazby na peněžním trhu.
+- ČNB může dočasně omezit nebo zastavit poskytování lombardních úvěrů z mimořádných
+důvodů měnové politiky.
+
+![](images/fig_3_6.png)
+
+### Mezibankovní úrokové sazby
+
+**Mezibankovní úrokové sazby** jsou sjednávány individuálně mezi komerčními bankami.
+Referenční banky kotují dvě sazby:
+
+- **Sazba „bid“**: Sazba, za kterou banky přijímají mezibankovní depozita.
+- **Sazba „offer“**: Sazba, za kterou banky prodávají mezibankovní depozita.
+
+#### PRIBOR
+
+- **PRIBOR (Prague Interbank Offered Rate)** je průměrná sazba, za kterou si banky
+navzájem poskytují likviditu na českém mezibankovním trhu.
+- PRIBOR slouží jako **referenční sazba** pro úvěry komerčních bank, jejichž sazby jsou
+často vázané na PRIBOR.
+
+
+### Význam úrokových sazeb na trhu mezibankovních depozit
+
+- **Mezibankovní sazby** jsou citlivé na měnově politická opatření centrální banky a
+další ekonomické vlivy.
+- Ovlivňují **úrokové sazby bankovních produktů**, jako jsou depozita a úvěry.
+- **Různí dlužníci** mají různé úrokové sazby podle svého **kreditního rizika** – státní
+dluhopisy mají nižší sazby, zatímco rizikovější dlužníci platí vyšší úroky.
+
+### Reálná a nominální úroková míra
+
+- **Nominální úroková míra** je sazba bez ohledu na inflaci.
+- **Reálná úroková míra** je nominální sazba upravená o inflaci. Vypočítá se jako:
+
 $$
-FV = PV \times [1 + (r \times n)]
-$$
-- Př. Kolik naspoříte za 15 let při roční úrokové sazbě 8% a 10%?
-  $$
-  FV = 1000 \times (1 + [0.08 \times 15]) = 2200
-  $$
-  $$
-  FV = 1000 \times (1 + [0.10 \times 15]) = 2500
-  $$
-
-### Složené úročení
-
-- **Složené úročení** $\rightarrow$ úročí se jistina a všechny získané úroky.
-- Př. Investujete 1000 na spořicí účet v bance, který slibuje úrok (r) 8% ročně. Po
-prvním roce vložíte získané peníze zpět na účet. Kolik budete mít za 2 roky?
-  $$
-  FV = PV \times (1 + r) \times (1 + r) = 1000 \times 1.08 \times 1.08 = 1166
-  $$
-- Obecný vzorec:
-  $$
-  FV = PV \times (1 + r)^n
-  $$
-  - $n$ je počet úrokových období v letech
-- Př. Kolik naspoříte za 15 let z původní částky 1000 při roční úrokové sazbě 8% a 10% s
-použitím složeného úročení?
-  $$
-  FV = 1000 \times (1 + 0.08)^{15} = 3172.169 
-  $$
-  $$
-  FV = 1000 \times (1 + 0.10)^{15} = 4177.248 
-  $$
-
-## Současná hodnota
-
-- Diskontování umožňuje výpočet současné hodnoty pokud známe budoucí hodnotu a úrokovou
-sazbu.
-- Dlůžitý koncept pro rozhodování o investicích a jejich oceňování.
-- Obecný vzorec: 
-$$
-PV = \frac{FV}{(1+r)^n}
+\text{Reálná úroková míra} = \text{Nominální úroková míra} - \text{Inflace}
 $$
 
-- Př. Máte možnost investice, která vám za jeden rok vyplatí 1000. Kolik budete ochotni
-investovat dnes, pokud je běžná úroková sazba 8%? Jak se změní výsledek, pokud dostanete
-1000 až za 7 let?
-  $$
-  PV = \frac{1000}{(1+ 0.08)^1} = 925.93
-  $$
-  $$
-  PV = \frac{1000}{(1+ 0.08)^7} = 583.49
-  $$
+- Reálná úroková míra určuje skutečnou **cenu půjčování** a **odměnu za půjčování** po
+zohlednění inflace.
 
-## Kratší časové intervaly než jeden rok
+## Centrální banka
 
-- Obecný vzorec: 
-$$
-FV = PV \times (1 + \frac{r}{m})^{n \times m}
-$$ 
-  - $m$ je počet úrokových období za rok
-  - $n$ je počet let
-- Př. Kolik naspoříte za 15 let z původní částky 1000 při roční úrokové sazbě 8% s
-použitím složeného úročení pokud se bude úrok připisovat měsíčně/čtvrtletně?
-  $$
-  FV = 1000 \times (1 + \frac{0.08}{12})^{15 \times 12} = 3306.921
-  $$
-  $$
-  FV = 1000 \times (1 + \frac{0.08}{4})^{15 \times 4} = 3281.031
-  $$
+**Centrální banka** se od ostatních bank v zemi liší tím, že má **výjimečné pravomoci**
+*a vykonává činnosti, které žádná jiná banka provádět nemůže. Mezi její hlavní rysy
+*patří:
 
-## Anuita
+- **Emisní monopol**: Centrální banka má výhradní právo vydávat hotovostní peníze.
+- **Provádění měnové politiky**: Centrální banka řídí monetární politiku země.
+- **Regulace bankovního systému**: Dozor nad bankami a finančním systémem.
 
-- **Anuita** $\rightarrow$ série stejných peněžních toků v pravidelných intervalech.
-- **Anuita běžná** (polhůtní) $\rightarrow$ peněžní toky nastávají na konci každého
-obddobí.
-- **Anuita splatná** (předlhůtní) $\rightarrow$ peněžní toky nastávají na začátku
-každého období.
+Důvody vzniku centrální banky:
 
-### Budoucí hodnota anuity
+- Potřeba stabilizovat měnový a finanční systém.
+- Regulace bankovního sektoru.
+- Podpora hospodářské politiky státu.
 
-- Př. Na konci každého roku investujete 1000 po dobu tří let. Investice se zhodnocuje
-úrokem 8%. Jaká bude budoucí hodnota investice? (běžná anuita)
-$$
-FV = 1000 \times 1.08^2 +1000 \times 1.08^1 +1000 \times 1.08^0 = 3246
-$$
+### Česká národní banka (ČNB)
 
-- Obecný vzorec pro běžnou anuitu: 
-$$
-\text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r}
-$$
-  - FVA (future value of an ordinary annuity)
-  - PMT (periodic equal payment)
+- Řídící orgán: **Bankovní rada ČNB**
+  - Guvernér: Aleš Michl
+  - Dva víceguvernéři: Jan Frait a Eva Zamrazilová
+  - Další členové rady: Jan Kubíček, Jan Procházka, Tomáš Holub, Karina Kubelková
+  - Členové bankovní rady jsou jmenováni prezidentem ČR na šestileté období.
 
-- Obecný vzorec pro splatnou anuitu:
-$$
-\text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r} \times (1 + r)
-$$
+**Cíle ČNB:**
 
-### Perpetuita
+- **Primární cíl**: Udržování **cenové stability** (kontrola inflace).
+- **Sekundární cíl**: Podpora **hospodářské politiky vlády** vedoucí k udržitelnému
+růstu, nízké nezaměstnanosti a stabilnímu růstu HDP.
 
-- **Perpetuita** je typ anuity, který poskytuje nekonečnou sérii peněžních toků.
-- Jinými slovy, peněžní toky pokračují na dobu neurčitou.
-- Často se používá pro oceňování preferovaných akcií.
-- Obecný vzorec pro současnou hodnotu (PV) perpetuity je:
-$$
-PV = \frac{C}{r}
-$$
-- kde:
-    - $C$ je konstantní peněžní tok přijatý za každé období,
-    - $r$ je diskontní sazba nebo úroková sazba.
+**Hlavní funkce ČNB:**
 
-- Vzorec předpokládá, že první platba je provedena na konci prvního období, peněžní toky
-jsou konstatní a pokračují na dobu neurčitou.
-- Př. Předpokládejte, že zvažujete investování do
-perpetuity, která slibuje platbu 500 na konci každého roku na dobu neurčitou a úroková
-sazba je 5%. Současná hodnota této perpetuity by byla:
-$$
-PV = \frac{500}{0.05} = 10000
-$$
-- Takže byste měli být ochotni zaplatit až 10 000 za tuto perpetuitu.
+1. Emise hotovostních peněz (bankovky a mince).
+2. Provádění měnové politiky (expanzivní a restriktivní opatření).
+3. Regulace a dohled nad finančním trhem.
 
-### Jak dlouho trvá naspořit milion?
+#### Makroekonomické funkce
 
-- Výpočet s využitím běžné anuity.
-- Jednorázová investice 10 000:
+1. **Měnová politika**:
+   - Provádění expanzivní (podpora růstu) nebo restriktivní (boj proti inflaci)
+   politiky.
+   
+2. **Emise hotovostních peněz**:
+   - ČNB má **emisní monopol** na vydávání peněz.
+   - Stanovuje design a ochranné prvky bankovek a mincí.
+   - Zajišťuje bezpečnost a likvidaci vyřazených peněz.
+   
+3. **Devizová politika**:
+   - ČNB spravuje **devizové rezervy**.
+   - Ovlivňuje **měnový kurz** a obchoduje se zlatem a devizami.
+   - Povolení směnárenské činnosti.
 
-| Úroková sazba (%) | Čas v letech |
-|:-----------------:|:------------:|
-|  5                | 94,4         |
-| 10                | 48,3         |
-| 15                | 33,0         |
-| 20                | 25,3         |
+#### Mikroekonomické funkce
 
-- Pravidelná investice 10 000 ročně:
+1. **Banka bank**:
+   - ČNB přijímá vklady a poskytuje úvěry komerčním bankám.
+   - Vede účty bank a zajišťuje clearing (zúčtování mezi bankami).
+   - Reguluje povinné minimální rezervy.
 
-| Úroková sazba (%) | Čas v letech |
-|:-----------------:|:------------:|
-|  5                | 36,7         |
-| 10                | 25,2         |
-| 15                | 19,8         |
-| 20                | 16,7         |
+2. **Banka státu**:
+   - ČNB vede účty státního rozpočtu a spravuje státní dluh.
+   - Poskytuje úvěry státu a emituje státní dluhopisy.
 
-### Současná hodnota anuity
+3. **Regulace a dohled nad bankovním sektorem**:
+   - ČNB dohlíží na banky a finanční instituce, uděluje bankovní licence.
+   - Kontroluje dodržování předpisů a může pozastavit činnost banky.
 
-- Používá se např. k oceňování investic.
-- Př. Mate možnost investice, která vám za 1 rok vyplatí 1000 a poté ještě další 2 roky
-budete dostávat stejnou částku. Kolik jste ochotni za danou investici zaplatit pokud je
-běžná úroková sazba 8%?
-$$
-PV = 1000 \times \frac{1}{1,08^1} + 1000 \times \frac{1}{1,08^2} + 1000 \times
-\frac{1}{1,08^3} = 2577
-$$
+4. **Reprezentace státu v měnové oblasti**:
+   - Zastupuje ČR v mezinárodních organizacích (IMF, WB).
+   - Informuje veřejnost o měnovém vývoji.
 
-- Obecný vzorec pro běžnou anuitu:
-$$
-\text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r}
-$$
-  - PVA (present value of an ordinary annuity)
-  - PMT (periodic equal payment)
+### Nástroje ČNB v oblasti měnové politiky
 
-- Obecný vzorec pro splatnou anuitu: 
-$$
-\text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r} \times (1+r)
-$$
+#### Přímé (administrativní) nástroje:
+
+- Regulace a limity na **úvěry**, **úrokové sazby**, či **likviditu**.
+- Používány zřídka a jsou tržně nekonformní.
+
+#### Nepřímé (tržně konformní) nástroje:
+
+1. **Povinné minimální rezervy (PMR)**:
+   - Banky musí držet určité procento z vkladů jako rezervu u ČNB (v ČR 2 %).
+
+2. **Diskontní nástroje**:
+   - Diskontní sazba: Pro vklady komerčních bank u ČNB.
+   - 2T Repo sazba: Klíčová sazba pro řízení likvidity bankovního sektoru.
+   - Lombardní sazba: Sazba pro půjčky od ČNB komerčním bankám.
+
+3. **Operace na volném trhu**:
+   - Nákup a prodej vládních cenných papírů.
+   - Devizové intervence na podporu měnového kurzu.
+
+4. **Dohody, výzvy, doporučení**:
+   - Nepřímé opatření ČNB k ovlivňování chování bank a trhu.

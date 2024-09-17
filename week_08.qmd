@@ -1,3 +1,12 @@
+---
+format:
+  html:
+    mermaid-format: png
+    toc: true
+    toc-depth: 2
+    toc-title: Obsah lekce
+---
+
 # Časová hodnota peněz
 
 ::: {.callout-note}

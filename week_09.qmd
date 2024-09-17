@@ -4,8 +4,13 @@ execute:
 format:
   html:
     code-fold: true
+    mermaid-format: png
+    toc: true
+    toc-depth: 2
+    toc-title: Obsah lekce
 jupyter: python3
 ---
+
 # Dluhopisy a jejich oceňování
 
 ::: {.callout-note}
