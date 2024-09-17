@@ -207,9 +207,9 @@ zaostalé.
 Tento efekt lze eliminovat pomocí **HDP na hlavu (GDP per capita)**, který lépe
 vyjadřuje hospodářskou úroveň na obyvatele.
 
-![](images/fig_2_15)
+![](images/fig_2_15.png)
 *Zdroj: Kurzy.cz*
-![](images/fig_2_16)
+![](images/fig_2_16.png)
 *Zdroj: World Bank*
 
 - Ekonomický růst (reálné HDP, meziroční změna v %):
@@ -246,7 +246,7 @@ kde:
 Každá z těchto složek přispívá ke změně HDP a je důležitým ukazatelem ekonomické
 aktivity.
 
-![](images/fig_2_17)
+![](images/fig_2_17.png)
 *Zdroj: ČSÚ*
 
 #### Důchodová metoda
@@ -396,9 +396,9 @@ se tyto změny projeví u spotřebitelů.
 - Index cen tržních služeb – monitoruje ceny služeb v tržním sektoru.
 - Index cen zemědělských výrobců – zachycuje změny cen v zemědělském sektoru.
 
-![](images/fig_2_18)
+![](images/fig_2_18.png)
 *Zdroj: EUROSTAT*
-![](images/fig_2_19)
+![](images/fig_2_19.png)
 *Zdroj: EUROSTAT*
 
 ### Formy inflace
@@ -451,7 +451,7 @@ Ne každý, kdo nemá práci, je považován za nezaměstnaného. Například **
 - Pro porovnání globálních dat o nezaměstnanosti můžete navštívit [World Bank
 Data](https://openstax.org/r/data-world-bank).
 
-![](images/fig_2_20)
+![](images/fig_2_20.png)
 
 *Zdroj: EUROSTAT*
 

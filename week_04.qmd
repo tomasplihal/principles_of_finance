@@ -778,8 +778,8 @@ $$ SR_{E,t} = SR_{E,t-n} \times \frac{1 + p_{D(t-n,t)}}{1 + p_{F(t-n,t)}} $$
 Kde:
 - $SR_{E,t}$ je rovnovážný kurz v období $t$,
 - $SR_{E,t-n}$ je rovnovážný kurz v minulém období $t-n$,
-- $1 + p_{D(t-n,t)$ je míra inflace v domácí zemi za období $t-n$ až $t$,
-- $1 + p_{F(t-n,t)$ je míra inflace v zahraničí za období $t-n$ až $t$.
+- $1 + p_{D(t-n,t)}$ je míra inflace v domácí zemi za období $t-n$ až $t$,
+- $1 + p_{F(t-n,t)}$ je míra inflace v zahraničí za období $t-n$ až $t$.
 
 ::: {.callout-tip title="Příklad"}
 - Předpokládejme, že cena piva v ČR vzrostla o 9 %, zatímco v Británii vzrostla o 5 %.
