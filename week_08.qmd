@@ -62,7 +62,6 @@ ke konkrétnímu finančnímu produktu)​.
 poskytovatelem kapitálu.​
 - ​Reálná úroková míra ​$\rightarrow$ upravená nominální úroková míra o vliv inflace.​
 - Aktuální informace o inflace jsou na stránkách [ČNB](https://www.cnb.cz/).
-
 $$
 i = r + \pi
 $$
