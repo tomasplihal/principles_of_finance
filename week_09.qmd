@@ -47,7 +47,7 @@ kupónem) ve stanoveném čase.
 - Držitel dluhopisu má přednostní právo na majetek společnosti a její cash flow (oproti
 vlastníkům / akcionářům), ale nemá hlasovací právo.
 - **Kupónový dluhopis** $\rightarrow$ pravidelné splátky úroků. 
-- **Diskonovaný dluhopis** (zero-coupon bond) $\rightarrow$ žádné splátky úroků, ale
+- **Diskontovaný dluhopis** (zero-coupon bond) $\rightarrow$ žádné splátky úroků, ale
 investor ho kupuje se slevou. 
 - Další typy dluhopisů: convertible bond, callable bond, putable bond, inflation
 protected bond, Eurodollar bond, atd.
@@ -343,7 +343,7 @@ podmínek.
 
 ::: {.callout-important title="Definice"}
 **Rating** dluhopisů představuje hodnocení jejich kvality ratingovou agenturou. Převážně
-*se hodnotí kreditní riziko.
+se hodnotí kreditní riziko.
 :::
 
 - Hodnocení dluhopisů zahrnuje očekávanou budoucí schopnost firmy splácet dluh a její
@@ -367,7 +367,6 @@ Service a Standard & Poor’s (S&P) Global Ratings.
 | CC          | Ca      | Speculative | Probably bankruptcy                 |
 | C           | C       | Speculative | In bankruptcy or default            |
 | D           |         | Speculative | In bankruptcy or default            |
-
 
 ## Historický vývoj dluhopisů
 

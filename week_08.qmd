@@ -61,7 +61,7 @@ ke konkrétnímu finančnímu produktu)​.
 - Nominální úroková míra​$\rightarrow$ sjednaná úroková míra mezi vypůjčovatelem a
 poskytovatelem kapitálu.​
 - ​Reálná úroková míra ​$\rightarrow$ upravená nominální úroková míra o vliv inflace.​
-- Aktuální informace o inflace jsou na stránkách [ČNB](https://www.cnb.cz/).
+- Aktuální informace o inflaci jsou na stránkách [ČNB](https://www.cnb.cz/).
 $$
 i = r + \pi
 $$
@@ -94,7 +94,7 @@ budoucnosti.
 :::
 
 ::: {.callout-tip title="Příklad"}
-Investujete 100 Kč na spořicí účtet v bance, která slibuje roční úrokovou sazbu 8%.
+Investujete 100 Kč na spořicí účet v bance, která slibuje roční úrokovou sazbu 8%.
 Budoucí hodnota peněz je celková naspořená částka za určitý čas. Budoucí hodnota 100 Kč
 za jeden rok je 108 Kč.
 :::
@@ -176,7 +176,7 @@ Investujete 100 Kč na spořicí účtet v bance, která slibuje roční úrokov
 Současná hodnota peněz je investovaných 100 Kč.
 :::
 
-- Výpočet současné hodnoty se ozančuje také jako ***diskontování***.
+- Výpočet současné hodnoty se označuje také jako ***diskontování***.
 - Používá se v případech, kdy známe budoucí hodnotu daného peněžního toku a chceme zjistit jeho hodnotu v současnosti.
 - Dlůžitý koncept pro rozhodování o investicích a jejich oceňování.
 - **Obecný vzorec pro výpočet současné hodnoty:** 
@@ -227,8 +227,8 @@ stejných jednotkách (roční úroková míra).
 :::
 
 - Umožnňuje snadné srovnání úrokových měr s různou frekvencí úročení.
-- Vyjadřuje přesněji skutečné náklady/vvýnosy.
-- **Obecný vzrorec efektivní úrokové míry:**
+- Vyjadřuje přesněji skutečné náklady/výnosy.
+- **Obecný vzorec efektivní úrokové míry:**
 
 $$
 EIR = \left(1 + \frac{i}{n}\right)^n - 1
@@ -257,7 +257,7 @@ $$
 
 - měsíční úročení (monthly)
 $$
-EIR = \left(1 + \frac{0.05}{12}\right)^12 - 1 = \left(1 + 0.004167\right)^{12} - 1 = 0.051162 = 5.1162\%
+EIR = \left(1 + \frac{0.05}{12}\right)^{12} - 1 = \left(1 + 0.004167\right)^{12} - 1 = 0.051162 = 5.1162\%
 $$
 :::
 
@@ -267,7 +267,7 @@ $$
 Anuita $\rightarrow$ série stejných peněžních toků v pravidelných intervalech.
 :::
 
-- **Anuita polhůtní** $\rightarrow$ peněžní toky nastávají na konci každého obddobí.
+- **Anuita polhůtní** $\rightarrow$ peněžní toky nastávají na konci každého období.
 - **Anuita předlhůtní** $\rightarrow$ peněžní toky nastávají na začátku každého období.
 
 ### Budoucí hodnota anuity
@@ -280,12 +280,12 @@ FV = 100 \times 1.08^2 + 100 \times 1.08^1 + 100 \times 1.08^0 = 324.64
 $$
 :::
 
-- **Obecný vzorec pro běžnou anuitu:**
+- **Obecný vzorec pro polhůtní anuitu:**
 $$
 \text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r}
 $$
 
-- **Obecný vzorec pro splatnou anuitu:**
+- **Obecný vzorec pro předlhůtní anuitu:**
 $$
 \text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r} \times (1 + r)
 $$
@@ -295,7 +295,7 @@ $$
 
 ::: {.callout-note collapse="true" title="Jak dlouho trvá naspořit milion?"}
 
-- Výpočet s využitím běžné anuity.
+- Výpočet s využitím pohlhůtní anuity.
 
 | Úroková sazba (%) | Jednorázová investice 10 000 Kč | Pravidelná investice 10 000 Kč ročně |
 |:-----------------:|:------------:|:------------:|
@@ -342,12 +342,12 @@ PV = 1000 \times \frac{1}{1,08^1} + 1000 \times \frac{1}{1,08^2} + 1000 \times
 $$
 :::
 
-- **Obecný vzorec pro běžnou anuitu:**
+- **Obecný vzorec pro předlhůtní anuitu:**
 $$
 \text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r}
 $$
 
-- **Obecný vzorec pro splatnou anuitu:** 
+- **Obecný vzorec pro polhůtní anuitu:** 
 $$
 \text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r} \times (1+r)
 $$
