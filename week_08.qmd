@@ -24,7 +24,7 @@ University. <https://openstax.org/details/books/principles-finance>
 1. Vysvětlit vliv času na hodnotu peněz.
 2. Ovládat výpočet budoucí hodnoty pomocí jednoduchého i složeného úročení.
 3. Dokázat spočítat současnou hodnotu peněz.
-4. Chápat pojek efektivní úroková míra.
+4. Chápat pojem efektivní úroková míra.
 5. Umět využívat vzroce pro výpočet anuity.
 
 ## Úvod do časové hodnoty peněz
@@ -231,10 +231,10 @@ stejných jednotkách (roční úroková míra).
 - **Obecný vzorec efektivní úrokové míry:**
 
 $$
-EIR = \left(1 + \frac{i}{n}\right)^n - 1
+EIR = \left(1 + \frac{r}{n}\right)^n - 1
 $$
 
-  - $i \dots$ nominální úroková míra
+  - $r \dots$ nominální úroková míra
   - $n \dots$ počet úrokových období v roce
 
 ::: {.callout-tip title="Příklad"}
@@ -289,7 +289,6 @@ $$
 $$
 \text{FVA} = \text{PMT} \times \frac{(1 + r)^n - 1}{r} \times (1 + r)
 $$
-
   - FVA (future value of an ordinary annuity)
   - PMT (periodic equal payment)
 
