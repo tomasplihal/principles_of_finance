@@ -42,7 +42,7 @@ podíl ze zisku, na rozhodování a na likvidační zůstatek.
 - Na rozdíl od dluhopisů akcie nemají datum splatnosti, nominální hodnotu ani zaručené
 kupónové platby.
 - Základním typem akcií jsou tzv. kmenové akcie (common stock), speciálním typem jsou
-například preferenční akcie (prioritní, preferred s stock).
+například preferenční akcie (prioritní, preferred stock).
 
 |                               | Kmenové akcie | Prioritní akcie |
 |-------------------------------|:-------------:|:---------------:|
@@ -58,7 +58,7 @@ například preferenční akcie (prioritní, preferred s stock).
 
 - Akcie mohou vyplácet dividendy, ale ty nejsou garantovány a mohou se měnit na základě
 rozhodnutí představenstva společnosti.
-- Vetšinou snaha o stabilní dividendovou politiku.
+- Většinou snaha o stabilní dividendovou politiku.
 - Dividendy jsou většinou v penězích (***cash dividend***), ale mohou být i formou nově
 vydaných akcií (***stock dividend***).
 - Místo výplaty dividend se může firma rozhodnout nakoupit svoje vlastní akcie (***stock
@@ -66,7 +66,7 @@ buyback***).
 - Výsledkem odkupu vlastních akcií je zvýšení jejich ceny a zpravidla daňové výhody pro
 akcionáře.
 
-### Stěpení akcií
+### Štěpení akcií
 
 ::: {.callout-important title="Definice"}
 Štěpení akcií (***stock split***) rozdělí stávající akcie na více kusů při zachování
@@ -97,7 +97,7 @@ ovlivnit podnikatelské prostředí
 ## Poměrové ukazatele P/E a P/B
 
 ::: {.callout-important title="Definice"}
-P/E ratio (price-earnings ratio) neboli poměr cena/zisk je finanční ukazatel, který
+**P/E ratio (price-earnings ratio)** neboli poměr cena/zisk je finanční ukazatel, který
 vyjadřuje vztah mezi tržní cenou akcie a čistým ziskem na jednu akcii (EPS, earnings per
 share).
 :::
@@ -127,9 +127,9 @@ Výsledek ukazuje, že investoři jsou ochotni platit až šest dolarů za každ
 :::
 
 ::: {.callout-important title="Definice"}
-P/B ratio (price-to-book ratio) neboli poměr cena/účetní hodnota je finanční ukazatel,
-který vyjadřuje vztah mezi tržní cenou akcie a účetní hodnotou vlastního kapitálu na
-jednu akcii (book value per share).
+**P/B ratio (price-to-book ratio)** neboli poměr cena/účetní hodnota je finanční
+ukazatel, který vyjadřuje vztah mezi tržní cenou akcie a účetní hodnotou vlastního
+kapitálu na jednu akcii (book value per share).
 :::
 
 $$
@@ -149,15 +149,15 @@ autorská práva.
 ## Dividendové diskontní modely
 
 ::: {.callout-important title="Definice"}
-Dividendový diskontní model (DDM) je metoda oceňování akcií, která odhaduje současnou
-hodnotu akcie na základě budoucích dividend, které budou vyplaceny, diskontovaných na
-současnou hodnotu.
+Dividendový diskontní model (DDM) je metoda oceňování akcií, která odhaduje hodnotu
+akcie na základě budoucích dividend, které budou vyplaceny, diskontovaných na současnou
+hodnotu.
 :::
 
 Základní forma DDM, známá jako **Gordonův růstový model**:
 
 $$
-\text{Hodnota akcie} = \frac{D_0 (1+g)}{r - g} = \frac{D_1}{r - g}
+\text{Hodnota akcie} = \frac{D_0 \times (1+g)}{r - g} = \frac{D_1}{r - g}
 $$
 
 - $D_0 \dots$ současná roční dividenda

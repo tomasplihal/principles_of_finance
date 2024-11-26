@@ -52,11 +52,11 @@ kapitola zaměří na metody hodnocení investic.
 Klíčové aspekty kapitálového rozpočtování:
 
 1. Identifikace investičních příležitostí.
-2. Odhad budoucích peněžních toků
-3. Stanovení nákladů na kapitál (např. úroky)
-4. Vyhodnocení projektů (NPV, IRR, atd.)
-5. Rozhodnutí o investici
-6. Monitorování a kontrola
+2. Odhad budoucích peněžních toků.
+3. Stanovení nákladů na kapitál (např. úroky).
+4. Vyhodnocení projektů (NPV, IRR, atd.).
+5. Rozhodnutí o investici.
+6. Monitorování a kontrola.
 
 ## Doba návratnosti
 
@@ -122,7 +122,7 @@ investici.
 :::
 
 $$
-\text{NPV} = \sum \left( \frac{CF_t}{(1+r)^t} \right) - C_0
+\text{NPV} = \sum^n_{t=1} \left( \frac{CF_t}{(1+r)^t} \right) - C_0
 $$
 
 - $CF_t \dots$ peněžní tok v čase $t$
@@ -203,15 +203,15 @@ fig.show()
 
 ::: {.callout-important title="Definice"}
 **Vnitřní výnosové procento** (Internal Rate of Return, IRR) je diskontní sazba, při
-*které se čistá současná hodnota (NPV) peněžních toků z investice rovná nule.
+které se čistá současná hodnota (NPV) peněžních toků z investice rovná nule.
 :::
 
 - Pokud je IRR vyšší než požadovaná návratnost nebo diskontní sazba, investice je
 považována za výhodnou.
-- IRR se vypočítává řešením následující rovnice pro $r$:
+- IRR se vypočítává řešením následující rovnice:
 
 $$
-0 = \sum \left( \frac{CF_t}{(1+IRR)^t} \right) - C_0
+0 = \sum^n_{t=1} \left( \frac{CF_t}{(1+IRR)^t} \right) - C_0
 $$
 
 - $CF_t \dots$ peněžní tok v čase $t$
@@ -254,7 +254,7 @@ nebo softwarových nástrojů, jako je Excel.*
 
 ::: {.callout-important title="Definice"}
 **Profitability Index** (PI) je poměr současné hodnoty budoucích peněžních toků
-*generovaných investicí k počáteční investici.
+generovaných investicí k počáteční investici.
 :::
 
 $$
@@ -310,9 +310,9 @@ Discounted Payback Period je něco málo přes 3 roky.
 ### Modifikované IRR
 
 ::: {.callout-important title="Definice"}
-**Modifikované vnitřní výnosové procento** Modified Internal Rate of Return (MIRR) je
-*upravená verze IRR, která bere v úvahu nejen náklady na kapitál, ale také reinvestiční
-*míru, která se používá pro budoucí peněžní toky. 
+**Modifikované vnitřní výnosové procento** (Modified Internal Rate of Return, MIRR) je
+upravená verze IRR, která bere v úvahu nejen náklady na kapitál, ale také reinvestiční
+míru, která se používá pro budoucí peněžní toky. 
 :::
 
 - MIRR poskytuje přesnější míru návratnosti pro projekty s nestandardními peněžními

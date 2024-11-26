@@ -58,7 +58,7 @@ protected bond, Eurodollar bond, atd.
 kterou je věřitel povinen splatit při splatnosti dluhopisu.
 - **Úroková** (kupónová) **sazba** $\rightarrow$ úroková sazba použitá k výpočtu
 pravidelných kupónových plateb dluhopisu, vyjádřena jako roční sazba.
-- **Kupónová platba** $\rightarrow$ pravidelná platka, kterou dostává věřitel od dlužníka.
+- **Kupónová platba** $\rightarrow$ pravidelná platba, kterou dostává věřitel od dlužníka.
 - **Datum splatnosti** $\rightarrow$ datum expirace dluhopisu, kdy emitent zaplatí
 poslední úrokovou platbu a splatí jemnovitou hodnotu.
 - **Výnos do splatnosti (YTM)** $\rightarrow$ diskontní sazba použitá k výpočtu současné
@@ -181,7 +181,7 @@ fig.show()
 
 ### Využití anuity
 
-S využitím vzorce pro výpočet anuity lze výpočet zjednodušit:
+S využitím vzorce pro výpočet anuity lze postup zjednodušit:
 
 $$
 PV = C \times \frac{1 - (1 + r)^{-n}}{r} + FV \times (1 + r)^{-n}
@@ -382,8 +382,7 @@ modelování.
 - Přestože mají nízké riziko nesplacení, hodnoty T-bondů kolísají se změnami úrokových
 sazeb.
 - Od roku 1980 do roku 1999 byl průměrný roční výnos na T-bondech 10,21 %, ovlivněný
-nadprůměrnou roční inflační sazbou 4,28 % a poklesem úrokových sazeb z předchozího
-období.
+nadprůměrnou roční inflací 4,28 % a poklesem úrokových sazeb z předchozího období.
 - Mezi roky 2000 a 2020, kdy se inflace zpomalila a úrokové sazby byly obecně nižší,
 byly výnosy T-bondů také průměrně pouze 5,77 %.
 

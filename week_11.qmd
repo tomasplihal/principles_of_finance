@@ -35,7 +35,7 @@ teorií.
 ::: {.callout-important title="Definice"}
 Teorie efektivních trhů (Efficient Market Hypothesis, EMH) tvrdí, že ceny finančních
 aktiv odrážejí všechny dostupné informace, což znemožňuje dlouhodobě překonávat
-výkonnosti trhu.
+výkonnost trhu.
 :::
 
 - Jedná se o informační efektivitu trhu.
@@ -98,32 +98,30 @@ Index](https://www.spglobal.com/spdji/en/indices/equity/sp-100-equal-weight-inde
 největších amerických společností a je považován za ukazatel výkonnosti amerického trhu.
 2. **Dow Jones Industrial Average (USA)**: Založen 1896, cenově vážený. Sleduje 30
 velkých, průmyslově významných amerických společností.
-3. **NASDAQ Composite (USA)**: Založen 1971, vážený podle třtní kapitalizace. Zaměřuje
+3. **NASDAQ Composite (USA)**: Založen 1971, vážený podle tržní kapitalizace. Zaměřuje
 se na technologické společnosti, zahrnuje více než 3 000 akcií.
-4. **FTSE 100 (Spojené království)**: Založen 1984, vážený podle třžní kapitalizace.
+4. **FTSE 100 (Spojené království)**: Založen 1984, vážený podle tržní kapitalizace.
 Sleduje 100 největších společností kotovaných na Londýnské burze.
 5. **Nikkei 225 (Japonsko)**: Založen 1950, cenově vážený. Sleduje 225 nejvýznamnějších
 japonských společností kotovaných na Tokijské burze.
 
-Další indexy např.: DAX (Německo), CAC 40 (Francie), Hang Seng (Hongkong), MSCI World,
+Další indexy např.: DAX (Německo), CAC 40 (Francie), Hang Seng (Hong Kong), MSCI World,
 Shanghai Composite (Čína), BSE Sensex (Indie), atd.
 
 ## Podílové fondy a ETF
 
 ::: {.callout-important title="Definice"}
 **Podílové fondy** jsou investiční nástroje, které shromažďují prostředky od mnoha
-*investorů za účelem nákupu diverzifikovaného portfolia cenných papírů, jako jsou akcie,
-*dluhopisy, atd. Spravují je profesionální portfolio manažeři a sledují stanovenou
-*investiční strategii.
+investorů za účelem nákupu diverzifikovaného portfolia cenných papírů, jako jsou akcie,
+dluhopisy, atd. Spravují je profesionální portfolio manažeři a sledují stanovenou
+investiční strategii.
 :::
 
 ::: {.callout-important title="Definice"}
 **ETF (Exchange-Traded Funds)** jsou investiční fondy, které se obchodují na burze
-*podobně jako akcie. ETF obvykle sledují konkrétní index, sektor, komoditu nebo jinou
-*třídu aktiv.
+podobně jako akcie. ETF obvykle sledují konkrétní index, sektor, komoditu nebo jinou
+třídu aktiv.
 :::
-
-Srovnání podílovvých fondů a ETF:
 
 |                               | **Podílové fondy**                                | **ETF (Exchange-Traded Funds)**                      |
 |-------------------------------|:-------------------------------------------------:|:----------------------------------------------------:|
@@ -133,7 +131,7 @@ Srovnání podílovvých fondů a ETF:
 | **Poplatky**                  | Vyšší poplatky (manažerské, vstupní/výstupní)     | Nižší poplatky (nízké manažerské, transakční poplatky) |
 | **Transparentnost**           | Méně transparentní (strategii tvoří manažer)      | Vysoce transparentní (strategie pevně daná předem)   |
 | **Dostupnost**                | Prostřednictvím finančních institucí nebo poradců | Na burzách, prostřednictvím makléřů                  |
-| **Jednoduchost**              | Možnost automatického investofání                 | Nutnost kupovat akcie na burze                       |
+| **Jednoduchost**              | Možnost automatického investování                 | Nutnost kupovat akcie na burze                       |
 | **Emise**                     | Emituje podílové listy                            | Emituje akcie                                        |
 
 ## Měření výnosu
@@ -144,7 +142,7 @@ Adjusted Close Price.
 
 ::: {.callout-important title="Definice"}
 **Celkový výnos (Total Return)**: Zahrnuje všechny složky výnosu, tedy změnu hodnoty
-*investice (kapitálový zisk nebo ztráta) plus jakékoli výnosy z dividend nebo úroků.
+investice (kapitálový zisk nebo ztráta) plus jakékoli výnosy z dividend nebo úroků.
 :::
 
 $$
@@ -171,7 +169,7 @@ $$
 $$
   
 $$
-\text{Celkový výnos (\%)} = \frac{(176,53 - 128,74) + 2.68}{128,74} \times 100 = 39,20\%
+\text{Celkový výnos (\%)} = \frac{(176,53 - 128,74) + 2,68}{128,74} \times 100 = 39,20\%
 $$
 :::
 
@@ -250,8 +248,8 @@ dané investice.
 
 ::: {.callout-important title="Definice"}
 **Směrodatná odchylka (Standard Deviation)** měří, jak moc se výnosy investice odchylují
-*od průměrného výnosu. Vysoká směrodatná odchylka naznačuje vysokou volatilitu, tedy
-*vyšší riziko.
+od průměrného výnosu. Vysoká směrodatná odchylka naznačuje vysokou volatilitu, tedy
+vyšší riziko.
 :::
 
 Vzorec pro směrodatnou odchylku:
@@ -280,7 +278,7 @@ Diverzifikace je investiční strategie, která spočívá v rozložení investi
 aktiv, sektorů nebo geografických oblastí s cílem snížit celkové riziko portfolia.
 :::
 
-- Využívá nedokonalé korelace aktiv v portfolium.
+- Využívá nedokonalé korelace aktiv v portfoliu.
 - S roztoucím množstvím aktiv klesá přínos dodatečného aktiva k diverzifikaci portfolia
 (přibližně po 20 až 30 akciích je již dodatečný efekt diverzifikace velmi malý).
 - **Nesystematické riziko** (specifické, jedinečné riziko) $\rightarrow$ lze odstranit

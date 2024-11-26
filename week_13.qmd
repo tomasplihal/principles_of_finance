@@ -41,7 +41,7 @@ očekávaných výsledků, což může mít negativní dopad na finanční situa
 
 Typy rizik, kterým čelí firmy:
 
-1. **Provozní riziko** $\rightarrow$ provoze firmy (např. selhání dodavatelů,
+1. **Provozní riziko** $\rightarrow$ provoz firmy (např. selhání dodavatelů,
 technologický problém, lidský faktor)
 2. **Finanční riziko** $\rightarrow$ spojené s finančním řízením (např. zadlužení,
 volatilita úrokových sazeb, likvidita)
@@ -58,8 +58,8 @@ ovlivnit podnikání firmy
 ::: {.callout-important title="Definice"}
 **Finanční deriváty** jsou finanční nástroje, jejichž hodnota je odvozena od hodnoty
 jiného aktiva, kterému se říká podkladové aktivum. Podkladovým aktivem mohou být
-například akcie, dluhopisy, komodity, měnové kurzy, úrokové sazby nebo jiné finanční
-indexy. Specifikují parametry transakce, která proběhne v budoucnosti.
+například akcie, dluhopisy, komodity, měnové kurzy, úrokové sazby a další. Specifikují
+parametry transakce, která proběhne v budoucnosti.
 :::
 
 **Využití finančních derivátů:**
@@ -109,17 +109,7 @@ v předem stanoveném termínu. Obě strany mají **povinnost** obchod uskutečn
 - **Long pozice** $\rightarrow$ závazek koupit podkladové aktivum
 - **Short pozice** $\rightarrow$ závazek prodat podkladové aktivum
 - Graf výplaty z long (a) a short (b) forwardu při splatnosti.
-  - $K$ je předem sjednaná cena
-  - $S_T$ je cena podkladového aktiva při splatnosti (v čase $T$)
 
-::: {.callout-tip title="Příklad"}
-Firma A, která vyrábí elektroniku, ví, že za 6 měsíců bude potřebovat koupit 1000
-kilogramů mědi pro svou výrobu. Bojí se, že cena mědi vzroste, takže se dohodne s
-dodavatelem na forwardovém kontraktu, podle kterého koupí 1000 kg mědi za pevnou cenu 10
-000 USD za 6 měsíců. I když cena mědi vzroste na 12 000 USD, firma A zaplatí pouze 10
-000 USD, jak bylo sjednáno v kontraktu. Naopak, pokud cena klesne na 8 000 USD, firma A
-stále musí zaplatit dohodnutých 10 000 USD.
-:::
 <br>
 
 ```{python}
@@ -176,6 +166,15 @@ fig.show()
 ```
 
 <br>
+
+::: {.callout-tip title="Příklad"}
+Firma A, která vyrábí elektroniku, ví, že za 6 měsíců bude potřebovat koupit 1000
+kilogramů mědi pro svou výrobu. Bojí se, že cena mědi vzroste, takže se dohodne s
+dodavatelem na forwardovém kontraktu, podle kterého koupí 1000 kg mědi za pevnou cenu 10
+000 USD za 6 měsíců. I když cena mědi vzroste na 12 000 USD, firma A zaplatí pouze 10
+000 USD, jak bylo sjednáno v kontraktu. Naopak, pokud cena klesne na 8 000 USD, firma A
+stále musí zaplatit dohodnutých 10 000 USD.
+:::
 
 ## Futures
 
@@ -241,7 +240,7 @@ uplatněna, musí transakci uskutečnit.
 50 USD za akcii, vzroste. Koupí tedy call opci s realizační cenou 55 USD a expirací za 3
 měsíce. Zaplatí prémii 2 USD za akcii. Pokud cena akcií XYZ za 3 měsíce vzroste na 60
 USD, investor může koupit akcie za 55 USD a okamžitě je prodat za tržní cenu 60 USD,
-čímž získá zisk (po odečtení prémie). Pokud cena klesne pod 55 USD, investor opci
+čímž dosáhne zisku (po odečtení prémie). Pokud cena klesne pod 55 USD, investor opci
 neuplatní a ztrácí pouze prémii 2 USD.
 :::
 
@@ -250,8 +249,8 @@ neuplatní a ztrácí pouze prémii 2 USD.
 akcii. Obává se, že cena může klesnout, a proto si koupí put opci s realizační cenou 95
 USD, která mu umožňuje prodat akcie za tuto cenu během následujících 6 měsíců. Zaplatí
 prémii 3 USD za akcii. Pokud cena akcií skutečně klesne na 80 USD, investor může
-uplatnit opci a prodat akcie za 95 USD, čímž se vyhne ztrátě větší než prémii. Pokud
-cena zůstane nad 95 USD, opci neuplatní a ztrácí pouze prémii 3 USD.
+uplatnit opci a prodat akcie za 95 USD, čímž se vyhne ztrátě a přijde jen o zaplacenou
+prémii. Pokud cena zůstane nad 95 USD, opci neuplatní a ztrácí pouze prémii 3 USD.
 :::
 
 ```{python}
