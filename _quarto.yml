@@ -32,6 +32,7 @@ format:
     number-depth: 3
   pdf:
     documentclass: scrreprt
+    pdf-engine: lualatex
 
 
 
