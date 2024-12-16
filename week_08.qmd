@@ -474,7 +474,7 @@ používá diskontní sazbu, pokud za směnku vyplatila 480 000 Kč?
 Jakou má banka diskontní sazbu, pokud dlužník obdrží úvěr ve výši 97 000 Kč.
 
 ::: {.callout-note collapse="true" title="Výsledek"}
-12,65%​
+12,96%​
 :::
 
 ### Kratší časové intervaly než jeden rok
