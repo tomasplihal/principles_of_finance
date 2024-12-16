@@ -467,14 +467,14 @@ pokud požadujete výnos 1,31% p.a.?
 používá diskontní sazbu, pokud za směnku vyplatila 480 000 Kč?
 
 ::: {.callout-note collapse="true" title="Výsledek"}
-4%​
+4,17%​
 :::
 
 3. Dlužník postupuje bance směnku na 100 000 Kč a zavazuje se ji splatit za 3 měsíce.
 Jakou má banka diskontní sazbu, pokud dlužník obdrží úvěr ve výši 97 000 Kč.
 
 ::: {.callout-note collapse="true" title="Výsledek"}
-12%​
+12,65%​
 :::
 
 ### Kratší časové intervaly než jeden rok
