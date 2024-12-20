@@ -341,12 +341,12 @@ PV = 1000 \times \frac{1}{1,08^1} + 1000 \times \frac{1}{1,08^2} + 1000 \times
 $$
 :::
 
-- **Obecný vzorec pro předlhůtní anuitu:**
+- **Obecný vzorec pro polhůtní anuitu:** 
 $$
 \text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r}
 $$
 
-- **Obecný vzorec pro polhůtní anuitu:** 
+- **Obecný vzorec pro předlhůtní anuitu:**
 $$
 \text{PVA} = \text{PMT} \times \frac{1 - \frac{1}{(1 + r)^n}}{r} \times (1+r)
 $$
