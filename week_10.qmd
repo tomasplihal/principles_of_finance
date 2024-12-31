@@ -361,7 +361,7 @@ akcie, pokud je vaše diskontní sazba 7.2% ročně a očekáváte tempo růstu 
 výši 0% ročně?
 
 ::: {.callout-note collapse="true" title="Výsledek"}
-\$416.67
+\$69.44
 :::
 
 5. Kmenová akcie dané firmy vyplácí dividendu ve výši \$12 ročně. Jaká bude hodnota
