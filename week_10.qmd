@@ -383,5 +383,5 @@ hodnota akcie, pokud je vaše diskontní sazba 13.04% ročně?
 hodnota akcie, pokud je vaše diskontní sazba 10.3% ročně?
 
 ::: {.callout-note collapse="true" title="Výsledek"}
-\$165.5
+\$165.05
 :::
