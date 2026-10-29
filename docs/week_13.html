@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>13&nbsp; Úvod do řízení rizik a finančních derivátů – Základy financí</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./week_12.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_13.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Úvod do řízení rizik a finančních derivátů</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Základy financí</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Základy-financí.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preambule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Úvod do financí</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ekonomické základy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bankovní systém</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mezinárodní finance</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Podnikové finance a zdroje finančních informací</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Finanční management</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Reading Week</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Časová hodnota peněz</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dluhopisy a jejich oceňování</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Akcie a jejich oceňování</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Jak přemýšlet o investování</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Jak firmy přemýšlejí o investování</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_13.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Úvod do řízení rizik a finančních derivátů</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Obsah lekce</h2>
+   
+  <ul class="collapse">
+  <li><a href="#řízení-rizik-ve-firmě" id="toc-řízení-rizik-ve-firmě" class="nav-link active" data-scroll-target="#řízení-rizik-ve-firmě"><span class="header-section-number">13.1</span> Řízení rizik ve firmě</a></li>
+  <li><a href="#charakteristika-finančních-derivátů" id="toc-charakteristika-finančních-derivátů" class="nav-link" data-scroll-target="#charakteristika-finančních-derivátů"><span class="header-section-number">13.2</span> Charakteristika finančních derivátů</a></li>
+  <li><a href="#forwardy" id="toc-forwardy" class="nav-link" data-scroll-target="#forwardy"><span class="header-section-number">13.3</span> Forwardy</a></li>
+  <li><a href="#futures" id="toc-futures" class="nav-link" data-scroll-target="#futures"><span class="header-section-number">13.4</span> Futures</a></li>
+  <li><a href="#swapy" id="toc-swapy" class="nav-link" data-scroll-target="#swapy"><span class="header-section-number">13.5</span> Swapy</a></li>
+  <li><a href="#opce" id="toc-opce" class="nav-link" data-scroll-target="#opce"><span class="header-section-number">13.6</span> Opce</a></li>
+  <li><a href="#příklady-k-procvičení" id="toc-příklady-k-procvičení" class="nav-link" data-scroll-target="#příklady-k-procvičení"><span class="header-section-number">13.7</span> Příklady k procvičení</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Úvod do řízení rizik a finančních derivátů</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Studijní materiály
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Dahlquist, J. R., &amp;; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
+<ul>
+<li>Chapter 20 - Risk Management and the Financial Manager</li>
+</ul></li>
+<li>MELICHER, Ronald W. a Edgar NORTON. Introduction to finance: markets, investments, and financial management.</li>
+<li>HULL, John. 2018. Options, futures, and other derivatives. Ninth edition. Harlow: Pearson. ISBN 978-1-292-21289-0.</li>
+</ul>
+</div>
+</div>
+<p><strong>Výstupy z učení:</strong></p>
+<ol type="1">
+<li>Porozumět základnímu fungování finančních derivátů.</li>
+<li>Pochopit základní principy využití finančních derivátů.</li>
+<li>Rozlišovat forwardy, futures, opce a swapy.</li>
+<li>Získat dovednosti k identifikaci výhod a nevýhod využití derivátů.</li>
+<li>Naučit se činit informovaná investiční rozhodnutí a řídit rizika.</li>
+</ol>
+<section id="řízení-rizik-ve-firmě" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="řízení-rizik-ve-firmě"><span class="header-section-number">13.1</span> Řízení rizik ve firmě</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Riziko z pohledu firmy představuje možnost, že skutečné výsledky se budou lišit od očekávaných výsledků, což může mít negativní dopad na finanční situaci, provozní činnost, reputaci nebo hodnotu firmy.</p>
+</div>
+</div>
+<p>Typy rizik, kterým čelí firmy:</p>
+<ol type="1">
+<li><strong>Provozní riziko</strong> <span class="math inline">\(\rightarrow\)</span> provoz firmy (např. selhání dodavatelů, technologický problém, lidský faktor)</li>
+<li><strong>Finanční riziko</strong> <span class="math inline">\(\rightarrow\)</span> spojené s finančním řízením (např. zadlužení, volatilita úrokových sazeb, likvidita)</li>
+<li><strong>Tržní riziko</strong> <span class="math inline">\(\rightarrow\)</span> pohyby tržních cen, jako jsou změny cen surovin, měnových kurzů nebo akciových trhů</li>
+<li><strong>Kreditní riziko</strong> <span class="math inline">\(\rightarrow\)</span> protistrana (např. zákazník nebo partner) nesplní své finanční závazky</li>
+<li><strong>Regulatorní riziko</strong> <span class="math inline">\(\rightarrow\)</span> změny zákonů a předpisů, které mohou negativně ovlivnit podnikání firmy</li>
+<li><strong>Reputační riziko</strong> <span class="math inline">\(\rightarrow\)</span> poškození pověsti firmy.</li>
+</ol>
+</section>
+<section id="charakteristika-finančních-derivátů" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="charakteristika-finančních-derivátů"><span class="header-section-number">13.2</span> Charakteristika finančních derivátů</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Finanční deriváty</strong> jsou finanční nástroje, jejichž hodnota je odvozena od hodnoty jiného aktiva, kterému se říká podkladové aktivum. Podkladovým aktivem mohou být například akcie, dluhopisy, komodity, měnové kurzy, úrokové sazby a další. Specifikují parametry transakce, která proběhne v budoucnosti.</p>
+</div>
+</div>
+<p><strong>Využití finančních derivátů:</strong></p>
+<ul>
+<li><em>Hedging (zajištění rizik)</em> <span class="math inline">\(\rightarrow\)</span> snižení nebo úplná eliminace rizika</li>
+<li>Spekulace <span class="math inline">\(\rightarrow\)</span> snaha vydělat na příznivém pohybu ceny podkladového aktiva</li>
+<li>Arbitráž <span class="math inline">\(\rightarrow\)</span> využívání rozdílu v cenách určitých aktiv</li>
+</ul>
+<p><strong>Výhody derivátů:</strong></p>
+<ul>
+<li>Umožňují transfer rizik.</li>
+<li>Možnost vytvořit rizikově výnosový profil, který by jinak nebyl možný.</li>
+<li>Zlepšují efektivitu trhů (umožňují arbitráž).</li>
+<li>Nízké transakční náklady</li>
+</ul>
+<p><strong>Základní typy derivátů:</strong></p>
+<ul>
+<li><strong><em>Nepodmíněné kontrakty</em></strong> <span class="math inline">\(\rightarrow\)</span> povinnost provést budoucí transakci (forwardy, futures, swapy)
+<ul>
+<li>Snaha zafixovat budoucí cenu.</li>
+</ul></li>
+<li><strong><em>Podmíněné kontrakty</em></strong> <span class="math inline">\(\rightarrow\)</span> držitel má právo rozhodnout, zda transakce bude provedena (opce)
+<ul>
+<li>Poskytují jistou formu pojištění proti nepříznivé události.</li>
+</ul></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 33%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;"><strong>Burzovně obchodované deriváty (ETD)</strong></th>
+<th style="text-align: center;"><strong>Mimoburzovně obchodované deriváty (OTC)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Příklad derivátů</strong></td>
+<td style="text-align: center;">Futures, opce</td>
+<td style="text-align: center;">Forwardy, swapy, opce</td>
+</tr>
+<tr class="even">
+<td><strong>Obchodování</strong></td>
+<td style="text-align: center;">Na organizovaných burzách</td>
+<td style="text-align: center;">Přímo mezi dvěma stranami</td>
+</tr>
+<tr class="odd">
+<td><strong>Standardizace smluv</strong></td>
+<td style="text-align: center;">Vysoce standardizované</td>
+<td style="text-align: center;">Přizpůsobené podle potřeb zúčastněných stran</td>
+</tr>
+<tr class="even">
+<td><strong>Regulace</strong></td>
+<td style="text-align: center;">Silně regulované</td>
+<td style="text-align: center;">Méně regulované, závisí na dohodě stran</td>
+</tr>
+<tr class="odd">
+<td><strong>Riziko protistrany</strong></td>
+<td style="text-align: center;">Nízké (zajištěné clearingovým domem)</td>
+<td style="text-align: center;">Vyšší (riziko nesplnění závazků protistranou)</td>
+</tr>
+<tr class="even">
+<td><strong>Likvidita</strong></td>
+<td style="text-align: center;">Vysoce likvidní</td>
+<td style="text-align: center;">Méně likvidní, závisí na specifickém trhu</td>
+</tr>
+<tr class="odd">
+<td><strong>Požadavky na marži</strong></td>
+<td style="text-align: center;">Povinné maržové požadavky</td>
+<td style="text-align: center;">Individuálně sjednávané, často vyžadují zajištění</td>
+</tr>
+<tr class="even">
+<td><strong>Transparentnost</strong></td>
+<td style="text-align: center;">Vyšší transparentnost (veřejně dostupné ceny)</td>
+<td style="text-align: center;">Nižší transparentnost (cenová tvorba mezi stranami)</td>
+</tr>
+<tr class="odd">
+<td><strong>Vypořádání</strong></td>
+<td style="text-align: center;">Vypořádání prostřednictvím burzy a clearingového domu</td>
+<td style="text-align: center;">Přímo mezi účastníky</td>
+</tr>
+<tr class="even">
+<td><strong>Příklad trhu</strong></td>
+<td style="text-align: center;">CME, NYMEX, Euronext</td>
+<td style="text-align: center;">Privátní dohody mezi bankami, korporacemi apod.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="forwardy" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="forwardy"><span class="header-section-number">13.3</span> Forwardy</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Forward</strong> je smlouva o budoucím nákupu nebo prodeji aktiva za předem stanovenou cenu a v předem stanoveném termínu. Obě strany mají <strong>povinnost</strong> obchod uskutečnit.</p>
+</div>
+</div>
+<ul>
+<li>Nejvíce používané k zajištění měnového rizika.</li>
+<li><strong>Long pozice</strong> <span class="math inline">\(\rightarrow\)</span> závazek koupit podkladové aktivum</li>
+<li><strong>Short pozice</strong> <span class="math inline">\(\rightarrow\)</span> závazek prodat podkladové aktivum</li>
+<li>Graf výplaty z long (a) a short (b) forwardu při splatnosti.</li>
+</ul>
+<p><br></p>
+<div id="f13afeaf" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+        <script>
+        window.PlotlyConfig = {MathJaxConfig: 'local'};
+        if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+        </script>
+        <script type="module">import "https://cdn.plot.ly/plotly-4.1.1.min"</script>
+        
+</div>
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="d66a9265-052e-4cbf-b5e8-44720454d53b" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("d66a9265-052e-4cbf-b5e8-44720454d53b")) {                    Plotly.newPlot(                        "d66a9265-052e-4cbf-b5e8-44720454d53b",                        [{"hovertemplate":"Long Forward\u003cbr\u003eCena podkladov\u00e9ho aktiva: %{x:.0f}\u003cbr\u003eV\u00fdplata: %{y:.0f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"blue","width":3},"mode":"lines","name":"Long Forward","x":{"dtype":"f8","bdata":"AAAAAAAAVEBvZ0jM2xlUQN7OkJi3M1RATjbZZJNNVEC9nSExb2dUQCwFav1KgVRAm2yyySabVEAK1PqVArVUQHo7Q2LezlRA6aKLLrroVEBYCtT6lQJVQMdxHMdxHFVANtlkk002VUCmQK1fKVBVQBWo9SsFalVAhA8++OCDVUDzdobEvJ1VQGLezpCYt1VA0UUXXXTRVUBBrV8pUOtVQLAUqPUrBVZAH3zwwQcfVkCO4ziO4zhWQP1KgVq\u002fUlZAbbLJJptsVkDcGRLzdoZWQEuBWr9SoFZAuuiiiy66VkApUOtXCtRWQJi3MyTm7VZACB988MEHV0B3hsS8nSFXQObtDIl5O1dAVVVVVVVVV0DEvJ0hMW9XQDQk5u0MiVdAo4suuuiiV0AS83aGxLxXQIFav1Kg1ldA8MEHH3zwV0BgKVDrVwpYQM+QmLczJFhAPvjggw8+WECtXylQ61dYQBzHcRzHcVhAjC666KKLWED7lQK1fqVYQGr9SoFav1hA2WSTTTbZWEBIzNsZEvNYQLgzJObtDFlAJ5tssskmWUCWArV+pUBZQAVq\u002fUqBWllAdNFFF110WUDkOI7jOI5ZQFOg1q8UqFlAwgcffPDBWUAxb2dIzNtZQKDWrxSo9VlAED744IMPWkB\u002fpUCtXylaQO4MiXk7Q1pAXXTRRRddWkDM2xkS83ZaQDxDYt7OkFpAq6qqqqqqWkAaEvN2hsRaQIl5O0Ni3lpA+OCDDz74WkBoSMzbGRJbQNavFKj1K1tARhdddNFFW0C1fqVArV9bQCTm7QyJeVtAk0022WSTW0ACtX6lQK1bQHIcx3Ecx1tA4YMPPvjgW0BQ61cK1PpbQMBSoNavFFxALrrooosuXECeITFvZ0hcQA2JeTtDYlxAfPDBBx98XEDsVwrU+pVcQFq\u002fUqDWr1xAyiabbLLJXEA5juM4juNcQKj1KwVq\u002fVxAF1100UUXXUCGxLydITFdQPYrBWr9Sl1AZZNNNtlkXUDU+pUCtX5dQENi3s6QmF1Asskmm2yyXUAiMW9nSMxdQJGYtzMk5l1AAAAAAAAAXkA="},"y":{"dtype":"f8","bdata":"AAAAAAAANMBEYt7OkJgzwIjEvJ0hMTPAyCabbLLJMsAMiXk7Q2IywFDrVwrU+jHAlE022WSTMcDYrxSo9SsxwBgS83aGxDDAXHTRRRddMMBArV8pUOsvwMhxHMdxHC\u002fAUDbZZJNNLsDQ+pUCtX4twFi\u002fUqDWryzA4IMPPvjgK8BoSMzbGRIrwPAMiXk7QyrAeNFFF110KcD4lQK1fqUowIBav1Kg1ifACB988MEHJ8CQ4ziO4zgmwBio9SsFaiXAmGyyySabJMAgMW9nSMwjwKj1KwVq\u002fSLAMLrooosuIsC4fqVArV8hwEBDYt7OkCDAgA8++OCDH8CQmLczJOYdwKAhMW9nSBzAsKqqqqqqGsDAMyTm7QwZwMC8nSExbxfA0EUXXXTRFcDgzpCYtzMUwPBXCtT6lRLAAOGDDz74EMAA1PqVArUOwCDm7QyJeQvAQPjggw8+CMBgCtT6lQIFwIAcx3EcxwHAAF100UUX\u002fb9AgVq\u002fUqD2v4ClQK1fKfC\u002fgJNNNtlk478AcGdIzNvJvwBwZ0jM28k\u002fgJNNNtlk4z+ApUCtXynwP0CBWr9SoPY\u002fAF100UUX\u002fT+AHMdxHMcBQGAK1PqVAgVAQPjggw8+CEAg5u0MiXkLQADU+pUCtQ5AAOGDDz74EEDwVwrU+pUSQODOkJi3MxRA0EUXXXTRFUDAvJ0hMW8XQMAzJObtDBlAsKqqqqqqGkCgITFvZ0gcQJCYtzMk5h1AgA8++OCDH0BAQ2LezpAgQLB+pUCtXyFAMLrooosuIkCo9SsFav0iQCAxb2dIzCNAmGyyySabJEAQqPUrBWolQJDjOI7jOCZACB988MEHJ0CAWr9SoNYnQACWArV+pShAcNFFF110KUDwDIl5O0MqQGhIzNsZEitA4IMPPvjgK0Bgv1Kg1q8sQND6lQK1fi1AUDbZZJNNLkDIcRzHcRwvQECtXylQ6y9AXHTRRRddMEAYEvN2hsQwQNivFKj1KzFAlE022WSTMUBQ61cK1PoxQAyJeTtDYjJAyCabbLLJMkCIxLydITEzQERi3s6QmDNAAAAAAAAANEA="},"type":"scatter"},{"hovertemplate":"Short Forward\u003cbr\u003eCena podkladov\u00e9ho aktiva: %{x:.0f}\u003cbr\u003eV\u00fdplata: %{y:.0f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"red","width":3},"mode":"lines","name":"Short Forward","x":{"dtype":"f8","bdata":"AAAAAAAAVEBvZ0jM2xlUQN7OkJi3M1RATjbZZJNNVEC9nSExb2dUQCwFav1KgVRAm2yyySabVEAK1PqVArVUQHo7Q2LezlRA6aKLLrroVEBYCtT6lQJVQMdxHMdxHFVANtlkk002VUCmQK1fKVBVQBWo9SsFalVAhA8++OCDVUDzdobEvJ1VQGLezpCYt1VA0UUXXXTRVUBBrV8pUOtVQLAUqPUrBVZAH3zwwQcfVkCO4ziO4zhWQP1KgVq\u002fUlZAbbLJJptsVkDcGRLzdoZWQEuBWr9SoFZAuuiiiy66VkApUOtXCtRWQJi3MyTm7VZACB988MEHV0B3hsS8nSFXQObtDIl5O1dAVVVVVVVVV0DEvJ0hMW9XQDQk5u0MiVdAo4suuuiiV0AS83aGxLxXQIFav1Kg1ldA8MEHH3zwV0BgKVDrVwpYQM+QmLczJFhAPvjggw8+WECtXylQ61dYQBzHcRzHcVhAjC666KKLWED7lQK1fqVYQGr9SoFav1hA2WSTTTbZWEBIzNsZEvNYQLgzJObtDFlAJ5tssskmWUCWArV+pUBZQAVq\u002fUqBWllAdNFFF110WUDkOI7jOI5ZQFOg1q8UqFlAwgcffPDBWUAxb2dIzNtZQKDWrxSo9VlAED744IMPWkB\u002fpUCtXylaQO4MiXk7Q1pAXXTRRRddWkDM2xkS83ZaQDxDYt7OkFpAq6qqqqqqWkAaEvN2hsRaQIl5O0Ni3lpA+OCDDz74WkBoSMzbGRJbQNavFKj1K1tARhdddNFFW0C1fqVArV9bQCTm7QyJeVtAk0022WSTW0ACtX6lQK1bQHIcx3Ecx1tA4YMPPvjgW0BQ61cK1PpbQMBSoNavFFxALrrooosuXECeITFvZ0hcQA2JeTtDYlxAfPDBBx98XEDsVwrU+pVcQFq\u002fUqDWr1xAyiabbLLJXEA5juM4juNcQKj1KwVq\u002fVxAF1100UUXXUCGxLydITFdQPYrBWr9Sl1AZZNNNtlkXUDU+pUCtX5dQENi3s6QmF1Asskmm2yyXUAiMW9nSMxdQJGYtzMk5l1AAAAAAAAAXkA="},"y":{"dtype":"f8","bdata":"AAAAAAAANEBEYt7OkJgzQIjEvJ0hMTNAyCabbLLJMkAMiXk7Q2IyQFDrVwrU+jFAlE022WSTMUDYrxSo9SsxQBgS83aGxDBAXHTRRRddMEBArV8pUOsvQMhxHMdxHC9AUDbZZJNNLkDQ+pUCtX4tQFi\u002fUqDWryxA4IMPPvjgK0BoSMzbGRIrQPAMiXk7QypAeNFFF110KUD4lQK1fqUoQIBav1Kg1idACB988MEHJ0CQ4ziO4zgmQBio9SsFaiVAmGyyySabJEAgMW9nSMwjQKj1KwVq\u002fSJAMLrooosuIkC4fqVArV8hQEBDYt7OkCBAgA8++OCDH0CQmLczJOYdQKAhMW9nSBxAsKqqqqqqGkDAMyTm7QwZQMC8nSExbxdA0EUXXXTRFUDgzpCYtzMUQPBXCtT6lRJAAOGDDz74EEAA1PqVArUOQCDm7QyJeQtAQPjggw8+CEBgCtT6lQIFQIAcx3EcxwFAAF100UUX\u002fT9AgVq\u002fUqD2P4ClQK1fKfA\u002fgJNNNtlk4z8AcGdIzNvJPwBwZ0jM28m\u002fgJNNNtlk47+ApUCtXynwv0CBWr9SoPa\u002fAF100UUX\u002fb+AHMdxHMcBwGAK1PqVAgXAQPjggw8+CMAg5u0MiXkLwADU+pUCtQ7AAOGDDz74EMDwVwrU+pUSwODOkJi3MxTA0EUXXXTRFcDAvJ0hMW8XwMAzJObtDBnAsKqqqqqqGsCgITFvZ0gcwJCYtzMk5h3AgA8++OCDH8BAQ2LezpAgwLB+pUCtXyHAMLrooosuIsCo9SsFav0iwCAxb2dIzCPAmGyyySabJMAQqPUrBWolwJDjOI7jOCbACB988MEHJ8CAWr9SoNYnwACWArV+pSjAcNFFF110KcDwDIl5O0MqwGhIzNsZEivA4IMPPvjgK8Bgv1Kg1q8swND6lQK1fi3AUDbZZJNNLsDIcRzHcRwvwECtXylQ6y\u002fAXHTRRRddMMAYEvN2hsQwwNivFKj1KzHAlE022WSTMcBQ61cK1PoxwAyJeTtDYjLAyCabbLLJMsCIxLydITEzwERi3s6QmDPAAAAAAAAANMA="},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"shapes":[{"line":{"color":"black","dash":"solid","width":0.7},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":0,"y1":0,"yref":"y"}],"title":{"text":"V\u00fdplata z forward kontraktu, dohodnut\u00e1 cena 100"},"xaxis":{"title":{"text":"Cena podkladov\u00e9ho aktiva p\u0159i expiraci"}},"yaxis":{"title":{"text":"V\u00fdplata"}},"legend":{"title":{"text":"Pozice"}}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('d66a9265-052e-4cbf-b5e8-44720454d53b');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
+<p><br></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Firma A, která vyrábí elektroniku, ví, že za 6 měsíců bude potřebovat koupit 1000 kilogramů mědi pro svou výrobu. Bojí se, že cena mědi vzroste, takže se dohodne s dodavatelem na forwardovém kontraktu, podle kterého koupí 1000 kg mědi za pevnou cenu 10 000 USD za 6 měsíců. I když cena mědi vzroste na 12 000 USD, firma A zaplatí pouze 10 000 USD, jak bylo sjednáno v kontraktu. Naopak, pokud cena klesne na 8 000 USD, firma A stále musí zaplatit dohodnutých 10 000 USD.</p>
+</div>
+</div>
+</section>
+<section id="futures" class="level2" data-number="13.4">
+<h2 data-number="13.4" class="anchored" data-anchor-id="futures"><span class="header-section-number">13.4</span> Futures</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Futures</strong> je <strong><em>standardizovaný</em></strong> forwardový kontrakt obchodovaný na burzách, které zavazují obě strany k nákupu nebo prodeji aktiva za předem dohodnutou cenu v určitém budoucím čase.</p>
+</div>
+</div>
+<ul>
+<li>Rozdíly mezi forwardy a futures vycházejí z výše uvedených rozdílů mezi OTC a ETD trhy.</li>
+<li><strong>Forwardy</strong> jsou flexibilní, mimoburzovní deriváty přizpůsobené potřebám zúčastněných stran, s vyšším rizikem protistrany a nižší likviditou.</li>
+<li><strong>Futures</strong> jsou standardizované deriváty obchodované na burze, s denním vypořádáním, vyšší likviditou a nižším rizikem protistrany díky clearingovým domům.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Farmář ví, že za 3 měsíce sklidí 5000 kg pšenice. Bojí se, že cena pšenice klesne, a proto prodá futures kontrakt na burze, který mu zaručuje prodej těchto 5000 kg za cenu 5 USD za kg. Pokud za 3 měsíce cena pšenice skutečně klesne na 4 USD za kg, farmář stále dostane 5 USD za kg, jak bylo sjednáno. Naopak, pokud cena vzroste na 6 USD za kg, farmář stále musí prodat za 5 USD, jak je uvedeno v jeho futures kontraktu.</p>
+</div>
+</div>
+</section>
+<section id="swapy" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="swapy"><span class="header-section-number">13.5</span> Swapy</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Swap</strong> je smlouva mezi dvěma stranami o výměně peněžních toků nebo jiných finančních závazků. Nejběžnější jsou úrokové swapy a měnové swapy.</p>
+</div>
+</div>
+<ul>
+<li>Používá se při hedgingu opakujících se pravidelných transakcí (např. úroky z půjčky placené čtvrtletně).</li>
+<li>Jedná se v podstatě o několik stejných forwardů, které mají různé doby splatnosti.</li>
+<li>Využívají je převážně finanční instituce a obchodují se na OTC trhu.</li>
+</ul>
+</section>
+<section id="opce" class="level2" data-number="13.6">
+<h2 data-number="13.6" class="anchored" data-anchor-id="opce"><span class="header-section-number">13.6</span> Opce</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Opce (Options)</strong> je finanční kontrakt, který dává kupujícímu právo, ale nikoli povinnost, koupit (call opce) nebo prodat (put opce) podkladové aktivum za určitou cenu během stanoveného časového období.</p>
+</div>
+</div>
+<ul>
+<li><strong>Call opce</strong> (kupní opce) je <strong><em>právo</em></strong> koupit podkladové aktivum v předem sjednaný čas za předem dohodnutou cenu.</li>
+<li><strong>Put opce</strong> (prodejní opce) je <strong><em>právo</em></strong> prodat podkladové aktivum v předem sjednaný čas za předem dohodnutou cenu.</li>
+</ul>
+<p>
+</p>
+<ul>
+<li><strong>Long pozice</strong> označuje majitele opce. Má právo rozhodnout, zda bude opce uplatněna.</li>
+<li><strong>Short pozice</strong> označuje protistranu, která prodává opci long pozici. Pokud je opce uplatněna, musí transakci uskutečnit.</li>
+</ul>
+<p>
+</p>
+<ul>
+<li><strong>Americká opce</strong> může být uplatněna kdykoliv během doby splatnosti.</li>
+<li><strong>Evropská opce</strong> může být uplatněna pouze v den splatnosti.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Call opce:</strong> Investor očekává, že cena akcií společnosti XYZ, která je nyní na úrovni 50 USD za akcii, vzroste. Koupí tedy call opci s realizační cenou 55 USD a expirací za 3 měsíce. Zaplatí prémii 2 USD za akcii. Pokud cena akcií XYZ za 3 měsíce vzroste na 60 USD, investor může koupit akcie za 55 USD a okamžitě je prodat za tržní cenu 60 USD, čímž dosáhne zisku (po odečtení prémie). Pokud cena klesne pod 55 USD, investor opci neuplatní a ztrácí pouze prémii 2 USD.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Put opce:</strong> Investor vlastní akcie společnosti ABC, které nyní mají hodnotu 100 USD za akcii. Obává se, že cena může klesnout, a proto si koupí put opci s realizační cenou 95 USD, která mu umožňuje prodat akcie za tuto cenu během následujících 6 měsíců. Zaplatí prémii 3 USD za akcii. Pokud cena akcií skutečně klesne na 80 USD, investor může uplatnit opci a prodat akcie za 95 USD, čímž se vyhne ztrátě a přijde jen o zaplacenou prémii. Pokud cena zůstane nad 95 USD, opci neuplatní a ztrácí pouze prémii 3 USD.</p>
+</div>
+</div>
+<div id="2c1b73a5" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="378957db-3346-47e3-84bc-d05e1ca66393" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("378957db-3346-47e3-84bc-d05e1ca66393")) {                    Plotly.newPlot(                        "378957db-3346-47e3-84bc-d05e1ca66393",                        [{"hovertemplate":"Long Call\u003cbr\u003eCena podkladov\u00e9ho aktiva: %{x:.0f}\u003cbr\u003eZisk: %{y:.0f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"blue","width":3},"mode":"lines","name":"Long Call","x":{"dtype":"f8","bdata":"AAAAAAAAVEBvZ0jM2xlUQN7OkJi3M1RATjbZZJNNVEC9nSExb2dUQCwFav1KgVRAm2yyySabVEAK1PqVArVUQHo7Q2LezlRA6aKLLrroVEBYCtT6lQJVQMdxHMdxHFVANtlkk002VUCmQK1fKVBVQBWo9SsFalVAhA8++OCDVUDzdobEvJ1VQGLezpCYt1VA0UUXXXTRVUBBrV8pUOtVQLAUqPUrBVZAH3zwwQcfVkCO4ziO4zhWQP1KgVq\u002fUlZAbbLJJptsVkDcGRLzdoZWQEuBWr9SoFZAuuiiiy66VkApUOtXCtRWQJi3MyTm7VZACB988MEHV0B3hsS8nSFXQObtDIl5O1dAVVVVVVVVV0DEvJ0hMW9XQDQk5u0MiVdAo4suuuiiV0AS83aGxLxXQIFav1Kg1ldA8MEHH3zwV0BgKVDrVwpYQM+QmLczJFhAPvjggw8+WECtXylQ61dYQBzHcRzHcVhAjC666KKLWED7lQK1fqVYQGr9SoFav1hA2WSTTTbZWEBIzNsZEvNYQLgzJObtDFlAJ5tssskmWUCWArV+pUBZQAVq\u002fUqBWllAdNFFF110WUDkOI7jOI5ZQFOg1q8UqFlAwgcffPDBWUAxb2dIzNtZQKDWrxSo9VlAED744IMPWkB\u002fpUCtXylaQO4MiXk7Q1pAXXTRRRddWkDM2xkS83ZaQDxDYt7OkFpAq6qqqqqqWkAaEvN2hsRaQIl5O0Ni3lpA+OCDDz74WkBoSMzbGRJbQNavFKj1K1tARhdddNFFW0C1fqVArV9bQCTm7QyJeVtAk0022WSTW0ACtX6lQK1bQHIcx3Ecx1tA4YMPPvjgW0BQ61cK1PpbQMBSoNavFFxALrrooosuXECeITFvZ0hcQA2JeTtDYlxAfPDBBx98XEDsVwrU+pVcQFq\u002fUqDWr1xAyiabbLLJXEA5juM4juNcQKj1KwVq\u002fVxAF1100UUXXUCGxLydITFdQPYrBWr9Sl1AZZNNNtlkXUDU+pUCtX5dQENi3s6QmF1Asskmm2yyXUAiMW9nSMxdQJGYtzMk5l1AAAAAAAAAXkA="},"y":{"dtype":"f8","bdata":"AAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwIDEvJ0hMRPAkE022WSTEcBArV8pUOsPwGC\u002fUqDWrwzAgNFFF110CcCA4ziO4zgGwKD1KwVq\u002fQLAgA8++OCD\u002f7\u002fAMyTm7Qz5vwBYCtT6lfK\u002fAPjggw8+6L8AgVq\u002fUqDWvwBwZ0jM26k\u002fAF100UUX3T8A5u0MiXnrPwDPkJi3M\u002fQ\u002fwKqqqqqq+j9AQ2LezpAAQCAxb2dIzANAAB988MEHB0AADYl5O0MKQMD6lQK1fg1AYHTRRRddEEBQ61cK1PoRQEBi3s6QmBNAMNlkk002FUAgUOtXCtQWQCDHcRzHcRhAED744IMPGkAAtX6lQK0bQAAsBWr9Sh1A4KKLLrroHkDwDIl5O0MgQGhIzNsZEiFA4IMPPvjgIUBgv1Kg1q8iQND6lQK1fiNAUDbZZJNNJEDIcRzHcRwlQECtXylQ6yVAuOiiiy66JkAwJObtDIknQLBfKVDrVyhAKJtssskmKUCg1q8UqPUpQBgS83aGxCpAkE022WSTK0AQiXk7Q2IsQIjEvJ0hMS1AAAAAAAAALkA="},"type":"scatter"},{"hovertemplate":"Short Call\u003cbr\u003eCena podkladov\u00e9ho aktiva: %{x:.0f}\u003cbr\u003eZisk: %{y:.0f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"red","width":3},"mode":"lines","name":"Short Call","x":{"dtype":"f8","bdata":"AAAAAAAAVEBvZ0jM2xlUQN7OkJi3M1RATjbZZJNNVEC9nSExb2dUQCwFav1KgVRAm2yyySabVEAK1PqVArVUQHo7Q2LezlRA6aKLLrroVEBYCtT6lQJVQMdxHMdxHFVANtlkk002VUCmQK1fKVBVQBWo9SsFalVAhA8++OCDVUDzdobEvJ1VQGLezpCYt1VA0UUXXXTRVUBBrV8pUOtVQLAUqPUrBVZAH3zwwQcfVkCO4ziO4zhWQP1KgVq\u002fUlZAbbLJJptsVkDcGRLzdoZWQEuBWr9SoFZAuuiiiy66VkApUOtXCtRWQJi3MyTm7VZACB988MEHV0B3hsS8nSFXQObtDIl5O1dAVVVVVVVVV0DEvJ0hMW9XQDQk5u0MiVdAo4suuuiiV0AS83aGxLxXQIFav1Kg1ldA8MEHH3zwV0BgKVDrVwpYQM+QmLczJFhAPvjggw8+WECtXylQ61dYQBzHcRzHcVhAjC666KKLWED7lQK1fqVYQGr9SoFav1hA2WSTTTbZWEBIzNsZEvNYQLgzJObtDFlAJ5tssskmWUCWArV+pUBZQAVq\u002fUqBWllAdNFFF110WUDkOI7jOI5ZQFOg1q8UqFlAwgcffPDBWUAxb2dIzNtZQKDWrxSo9VlAED744IMPWkB\u002fpUCtXylaQO4MiXk7Q1pAXXTRRRddWkDM2xkS83ZaQDxDYt7OkFpAq6qqqqqqWkAaEvN2hsRaQIl5O0Ni3lpA+OCDDz74WkBoSMzbGRJbQNavFKj1K1tARhdddNFFW0C1fqVArV9bQCTm7QyJeVtAk0022WSTW0ACtX6lQK1bQHIcx3Ecx1tA4YMPPvjgW0BQ61cK1PpbQMBSoNavFFxALrrooosuXECeITFvZ0hcQA2JeTtDYlxAfPDBBx98XEDsVwrU+pVcQFq\u002fUqDWr1xAyiabbLLJXEA5juM4juNcQKj1KwVq\u002fVxAF1100UUXXUCGxLydITFdQPYrBWr9Sl1AZZNNNtlkXUDU+pUCtX5dQENi3s6QmF1Asskmm2yyXUAiMW9nSMxdQJGYtzMk5l1AAAAAAAAAXkA="},"y":{"dtype":"f8","bdata":"AAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQIDEvJ0hMRNAkE022WSTEUBArV8pUOsPQGC\u002fUqDWrwxAgNFFF110CUCA4ziO4zgGQKD1KwVq\u002fQJAgA8++OCD\u002fz\u002fAMyTm7Qz5PwBYCtT6lfI\u002fAPjggw8+6D8AgVq\u002fUqDWPwBwZ0jM26m\u002fAF100UUX3b8A5u0MiXnrvwDPkJi3M\u002fS\u002fwKqqqqqq+r9AQ2LezpAAwCAxb2dIzAPAAB988MEHB8AADYl5O0MKwMD6lQK1fg3AYHTRRRddEMBQ61cK1PoRwEBi3s6QmBPAMNlkk002FcAgUOtXCtQWwCDHcRzHcRjAED744IMPGsAAtX6lQK0bwAAsBWr9Sh3A4KKLLrroHsDwDIl5O0MgwGhIzNsZEiHA4IMPPvjgIcBgv1Kg1q8iwND6lQK1fiPAUDbZZJNNJMDIcRzHcRwlwECtXylQ6yXAuOiiiy66JsAwJObtDIknwLBfKVDrVyjAKJtssskmKcCg1q8UqPUpwBgS83aGxCrAkE022WSTK8AQiXk7Q2IswIjEvJ0hMS3AAAAAAAAALsA="},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"shapes":[{"line":{"color":"black","dash":"solid","width":0.7},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":0,"y1":0,"yref":"y"}],"title":{"text":"Zisk z Call Opce, Strike price = 100, Op\u010dn\u00ed pr\u00e9mie = 5"},"xaxis":{"title":{"text":"Cena podkladov\u00e9ho aktiva p\u0159i expiraci"}},"yaxis":{"title":{"text":"Zisk"}},"legend":{"title":{"text":"Pozice"}}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('378957db-3346-47e3-84bc-d05e1ca66393');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
+<p><br></p>
+<div id="7e76d527" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="ec5f0663-6af0-4899-ac4f-11c74c3e57ba" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("ec5f0663-6af0-4899-ac4f-11c74c3e57ba")) {                    Plotly.newPlot(                        "ec5f0663-6af0-4899-ac4f-11c74c3e57ba",                        [{"hovertemplate":"Long Put\u003cbr\u003eCena podkladov\u00e9ho aktiva: %{x:.0f}\u003cbr\u003eZisk: %{y:.0f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"blue","width":3},"mode":"lines","name":"Long Put","x":{"dtype":"f8","bdata":"AAAAAAAAVEBvZ0jM2xlUQN7OkJi3M1RATjbZZJNNVEC9nSExb2dUQCwFav1KgVRAm2yyySabVEAK1PqVArVUQHo7Q2LezlRA6aKLLrroVEBYCtT6lQJVQMdxHMdxHFVANtlkk002VUCmQK1fKVBVQBWo9SsFalVAhA8++OCDVUDzdobEvJ1VQGLezpCYt1VA0UUXXXTRVUBBrV8pUOtVQLAUqPUrBVZAH3zwwQcfVkCO4ziO4zhWQP1KgVq\u002fUlZAbbLJJptsVkDcGRLzdoZWQEuBWr9SoFZAuuiiiy66VkApUOtXCtRWQJi3MyTm7VZACB988MEHV0B3hsS8nSFXQObtDIl5O1dAVVVVVVVVV0DEvJ0hMW9XQDQk5u0MiVdAo4suuuiiV0AS83aGxLxXQIFav1Kg1ldA8MEHH3zwV0BgKVDrVwpYQM+QmLczJFhAPvjggw8+WECtXylQ61dYQBzHcRzHcVhAjC666KKLWED7lQK1fqVYQGr9SoFav1hA2WSTTTbZWEBIzNsZEvNYQLgzJObtDFlAJ5tssskmWUCWArV+pUBZQAVq\u002fUqBWllAdNFFF110WUDkOI7jOI5ZQFOg1q8UqFlAwgcffPDBWUAxb2dIzNtZQKDWrxSo9VlAED744IMPWkB\u002fpUCtXylaQO4MiXk7Q1pAXXTRRRddWkDM2xkS83ZaQDxDYt7OkFpAq6qqqqqqWkAaEvN2hsRaQIl5O0Ni3lpA+OCDDz74WkBoSMzbGRJbQNavFKj1K1tARhdddNFFW0C1fqVArV9bQCTm7QyJeVtAk0022WSTW0ACtX6lQK1bQHIcx3Ecx1tA4YMPPvjgW0BQ61cK1PpbQMBSoNavFFxALrrooosuXECeITFvZ0hcQA2JeTtDYlxAfPDBBx98XEDsVwrU+pVcQFq\u002fUqDWr1xAyiabbLLJXEA5juM4juNcQKj1KwVq\u002fVxAF1100UUXXUCGxLydITFdQPYrBWr9Sl1AZZNNNtlkXUDU+pUCtX5dQENi3s6QmF1Asskmm2yyXUAiMW9nSMxdQJGYtzMk5l1AAAAAAAAAXkA="},"y":{"dtype":"f8","bdata":"AAAAAAAALkCIxLydITEtQBCJeTtDYixAkE022WSTK0AYEvN2hsQqQKDWrxSo9SlAKJtssskmKUCwXylQ61coQDAk5u0MiSdAuOiiiy66JkBArV8pUOslQMhxHMdxHCVAUDbZZJNNJEDQ+pUCtX4jQFi\u002fUqDWryJA4IMPPvjgIUBoSMzbGRIhQPAMiXk7QyBA8KKLLrroHkDwKwVq\u002fUodQAC1fqVArRtAED744IMPGkAgx3Ecx3EYQDBQ61cK1BZAMNlkk002FUBAYt7OkJgTQFDrVwrU+hFAYHTRRRddEEDg+pUCtX4NQAANiXk7QwpAAB988MEHB0AgMW9nSMwDQEBDYt7OkABAwKqqqqqq+j8Az5CYtzP0PwDm7QyJees\u002fAF100UUX3T8AcGdIzNupPwCBWr9SoNa\u002fAPjggw8+6L8AWArU+pXyv8AzJObtDPm\u002fgA8++OCD\u002f7+g9SsFav0CwIDjOI7jOAbAgNFFF110CcBgv1Kg1q8MwECtXylQ6w\u002fAkE022WSTEcCAxLydITETwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMAAAAAAAAAUwAAAAAAAABTAAAAAAAAAFMA="},"type":"scatter"},{"hovertemplate":"Short Put\u003cbr\u003eCena podkladov\u00e9ho aktiva: %{x:.0f}\u003cbr\u003eZisk: %{y:.0f}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"red","width":3},"mode":"lines","name":"Short Put","x":{"dtype":"f8","bdata":"AAAAAAAAVEBvZ0jM2xlUQN7OkJi3M1RATjbZZJNNVEC9nSExb2dUQCwFav1KgVRAm2yyySabVEAK1PqVArVUQHo7Q2LezlRA6aKLLrroVEBYCtT6lQJVQMdxHMdxHFVANtlkk002VUCmQK1fKVBVQBWo9SsFalVAhA8++OCDVUDzdobEvJ1VQGLezpCYt1VA0UUXXXTRVUBBrV8pUOtVQLAUqPUrBVZAH3zwwQcfVkCO4ziO4zhWQP1KgVq\u002fUlZAbbLJJptsVkDcGRLzdoZWQEuBWr9SoFZAuuiiiy66VkApUOtXCtRWQJi3MyTm7VZACB988MEHV0B3hsS8nSFXQObtDIl5O1dAVVVVVVVVV0DEvJ0hMW9XQDQk5u0MiVdAo4suuuiiV0AS83aGxLxXQIFav1Kg1ldA8MEHH3zwV0BgKVDrVwpYQM+QmLczJFhAPvjggw8+WECtXylQ61dYQBzHcRzHcVhAjC666KKLWED7lQK1fqVYQGr9SoFav1hA2WSTTTbZWEBIzNsZEvNYQLgzJObtDFlAJ5tssskmWUCWArV+pUBZQAVq\u002fUqBWllAdNFFF110WUDkOI7jOI5ZQFOg1q8UqFlAwgcffPDBWUAxb2dIzNtZQKDWrxSo9VlAED744IMPWkB\u002fpUCtXylaQO4MiXk7Q1pAXXTRRRddWkDM2xkS83ZaQDxDYt7OkFpAq6qqqqqqWkAaEvN2hsRaQIl5O0Ni3lpA+OCDDz74WkBoSMzbGRJbQNavFKj1K1tARhdddNFFW0C1fqVArV9bQCTm7QyJeVtAk0022WSTW0ACtX6lQK1bQHIcx3Ecx1tA4YMPPvjgW0BQ61cK1PpbQMBSoNavFFxALrrooosuXECeITFvZ0hcQA2JeTtDYlxAfPDBBx98XEDsVwrU+pVcQFq\u002fUqDWr1xAyiabbLLJXEA5juM4juNcQKj1KwVq\u002fVxAF1100UUXXUCGxLydITFdQPYrBWr9Sl1AZZNNNtlkXUDU+pUCtX5dQENi3s6QmF1Asskmm2yyXUAiMW9nSMxdQJGYtzMk5l1AAAAAAAAAXkA="},"y":{"dtype":"f8","bdata":"AAAAAAAALsCIxLydITEtwBCJeTtDYizAkE022WSTK8AYEvN2hsQqwKDWrxSo9SnAKJtssskmKcCwXylQ61cowDAk5u0MiSfAuOiiiy66JsBArV8pUOslwMhxHMdxHCXAUDbZZJNNJMDQ+pUCtX4jwFi\u002fUqDWryLA4IMPPvjgIcBoSMzbGRIhwPAMiXk7QyDA8KKLLrroHsDwKwVq\u002fUodwAC1fqVArRvAED744IMPGsAgx3Ecx3EYwDBQ61cK1BbAMNlkk002FcBAYt7OkJgTwFDrVwrU+hHAYHTRRRddEMDg+pUCtX4NwAANiXk7QwrAAB988MEHB8AgMW9nSMwDwEBDYt7OkADAwKqqqqqq+r8Az5CYtzP0vwDm7QyJeeu\u002fAF100UUX3b8AcGdIzNupvwCBWr9SoNY\u002fAPjggw8+6D8AWArU+pXyP8AzJObtDPk\u002fgA8++OCD\u002fz+g9SsFav0CQIDjOI7jOAZAgNFFF110CUBgv1Kg1q8MQECtXylQ6w9AkE022WSTEUCAxLydITETQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEA="},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"shapes":[{"line":{"color":"black","dash":"solid","width":0.7},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":0,"y1":0,"yref":"y"}],"title":{"text":"Zisk z Put Opce, Strike price = 100, Op\u010dn\u00ed pr\u00e9mie = 5"},"xaxis":{"title":{"text":"Cena podkladov\u00e9ho aktiva p\u0159i expiraci"}},"yaxis":{"title":{"text":"Zisk"}},"legend":{"title":{"text":"Pozice"}}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('ec5f0663-6af0-4899-ac4f-11c74c3e57ba');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
+<p><br></p>
+<section id="další-charakteristiky-opce" class="level3" data-number="13.6.1">
+<h3 data-number="13.6.1" class="anchored" data-anchor-id="další-charakteristiky-opce"><span class="header-section-number">13.6.1</span> Další charakteristiky opce</h3>
+<ul>
+<li><strong>Realizační cena (Strike Price)</strong> <span class="math inline">\(\rightarrow\)</span> cena, za kterou může být podkladové aktivum koupeno (u call opce) nebo prodáno (u put opce)</li>
+<li><strong>Datum expirace (Expiration Date)</strong> <span class="math inline">\(\rightarrow\)</span> den, kdy právo vyplývající z opce zaniká</li>
+<li><strong>Prémie (Premium)</strong> <span class="math inline">\(\rightarrow\)</span> cena, kterou kupující opce platí prodávajícímu za získání práva vyplývajícího z opce</li>
+<li><strong>Vnitřní hodnota (Intrinsic Value)</strong> <span class="math inline">\(\rightarrow\)</span> rozdíl mezi aktuální cenou podkladového aktiva a realizační cenou opce</li>
+<li><strong>Časová hodnota (Time Value)</strong> <span class="math inline">\(\rightarrow\)</span> část prémie opce, která přesahuje její vnitřní hodnotu</li>
+<li><strong>In-the-money (ITM)</strong> <span class="math inline">\(\rightarrow\)</span> opce má vnitřní hodnotu</li>
+<li><strong>At-the-money (ATM)</strong> <span class="math inline">\(\rightarrow\)</span> strike price je přibližně rovna aktuální ceně podkladového aktiva</li>
+<li><strong>Out-of-the-money (OTM)</strong> <span class="math inline">\(\rightarrow\)</span> opce nemá vnitřní hodnotu</li>
+</ul>
+</section>
+</section>
+<section id="příklady-k-procvičení" class="level2" data-number="13.7">
+<h2 data-number="13.7" class="anchored" data-anchor-id="příklady-k-procvičení"><span class="header-section-number">13.7</span> Příklady k procvičení</h2>
+<ol type="1">
+<li>Firma A uzavřela forwardový kontrakt na nákup 1 000 barelů ropy za cenu 50 USD za barel, s dodáním za 3 měsíce. Po 3 měsících je tržní cena ropy 55 USD za barel. Jaký je zisk nebo ztráta firmy A z tohoto forwardového kontraktu?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Firma A dosáhne zisku 5000 USD (5 USD za barel).</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Investor uzavřel futures kontrakt na nákup 1 000 kg kukuřice za cenu 4 USD za kg. O měsíc později se cena kukuřice zvýšila na 4,50 USD za kg. Jaký je zisk nebo ztráta investora při uzavření pozice?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Investor dosáhne zisku 500 USD (0,5 USD za kg)</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Firma B uzavřela forwardový kontrakt na prodej 1 000 tun hliníku za cenu 2 000 USD za tunu, s dodáním za 6 měsíců. Po 6 měsících je tržní cena hliníku 2 100 USD za tunu. Jaký je zisk nebo ztráta firmy B z tohoto forwardového kontraktu?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Firma B utrpí ztrátu 100 000 USD, protože prodala hliník za nižší cenu, než je tržní cena.</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Investor uzavřel futures kontrakt na nákup 5 000 kg pšenice za cenu 6 USD za kg. O dva měsíce později se cena pšenice snížila na 5,50 USD za kg. Jaký je zisk nebo ztráta investora při uzavření pozice?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Investor utrpí ztrátu 2 500 USD, protože koupil pšenici za vyšší cenu, než je aktuální tržní cena.</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Investor koupil call opci na akcii společnosti XYZ s realizační cenou 100 USD a expirací za 2 měsíce. Zaplatil prémii 5 USD za akcii. Těsně před expirací je cena akcie XYZ 110 USD. Jaký je zisk nebo ztráta investora při uplatnění opce?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Investor dosáhne zisku 5 USD na jednu akcii.</p>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Investor koupil put opci na akcii společnosti ABC s realizační cenou 80 USD a expirací za 1 měsíc. Zaplatil prémii 2 USD za akcii. Těsně před expirací je cena akcie ABC 75 USD. Jaký je zisk nebo ztráta investora při uplatnění opce?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Investor dosáhne zisku 3 USD na jednu akcii.</p>
+</div>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Investor koupil call opci na akcii společnosti XYZ s realizační cenou 100 USD a expirací za 3 měsíce. Zaplatil prémii 4 USD za akcii. Těsně před expirací je cena akcie XYZ 95 USD. Jaký je zisk nebo ztráta investora?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Investor utrpí ztrátu 4 USD na každou akcii, tedy celkovou ztrátu rovnou zaplacené prémii.</p>
+</div>
+</div>
+</div>
+<ol start="8" type="1">
+<li>Investor koupil put opci na akcii společnosti ABC s realizační cenou 50 USD a expirací za 2 měsíce. Zaplatil prémii 3 USD za akcii. Těsně před expirací je cena akcie ABC 55 USD. Jaký je zisk nebo ztráta investora?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Výsledek
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Investor utrpí ztrátu 3 USD na každou akcii, tedy celkovou ztrátu rovnou zaplacené prémii.</p>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/tomasplihal\.github\.io\/principles_of_finance\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./week_12.html" class="pagination-link" aria-label="Jak firmy přemýšlejí o investování">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Jak firmy přemýšlejí o investování</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
