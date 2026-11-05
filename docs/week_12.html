@@ -37,10 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/exercise-1.0.0/exercise.js"></script>
+<link href="site_libs/quarto-contrib/exercise-1.0.0/exercise.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -132,7 +136,7 @@ window.Quarto = {
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Základy financí</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
     <div class="dropdown">
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -167,6 +171,7 @@ window.Quarto = {
           </li>
       </ul>
     </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -445,7 +450,7 @@ Příklad
 <li>Kumulativní peněžní tok po 3 letech je 90 000 Kč. K pokrytí zbývajících 10 000 Kč potřebujeme 10 000 Kč z peněžního toku ve 4. roce.</li>
 </ul>
 <p><span class="math display">\[
-\text{Payback Period} = 3 \text{ roky} + \frac{10 000 \text{ Kč}}{50 000 \text{ Kč}} = 3,2 \text{ roky}
+\text{Payback Period} = 3 \text{ roky} + \frac{10 000 \text{ Kč}}{50 000 \text{ Kč}} = 3{,}2 \text{ roky}
 \]</span></p>
 </div>
 </div>
@@ -513,9 +518,9 @@ Příklad
 <div class="callout-body-container callout-body">
 <p>Firma investuje 100 000 Kč do projektu, který generuje roční peněžní toky 30 000 Kč po dobu 5 let. Diskontní sazba je 10 %.</p>
 <p><span class="math display">\[
-\text{NPV} = \frac{30 000}{(1+0,1)^1} + \frac{30 000}{(1+0,1)^2} + \frac{30 000}{(1+0,1)^3} + \frac{30 000}{(1+0,1)^4} + \frac{30 000}{(1+0,1)^5} - 100 000
+\text{NPV} = \frac{30 000}{(1+0{,}1)^1} + \frac{30 000}{(1+0{,}1)^2} + \frac{30 000}{(1+0{,}1)^3} + \frac{30 000}{(1+0{,}1)^4} + \frac{30 000}{(1+0{,}1)^5} - 100 000
 \]</span> <span class="math display">\[
-\text{NPV} = 13723.60 \text{ Kč}
+\text{NPV} = 13723{,}60 \text{ Kč}
 \]</span></p>
 </div>
 </div>
@@ -631,7 +636,7 @@ Příklad
 <li>Rok 3: 50 000 Kč</li>
 </ul>
 <p><span class="math display">\[
-0 = \frac{30 000}{(1+IRR)^1} + \frac{40 000}{(1+IRR)^2} + \frac{50 000}{(1+IRR)^3} - 100 000 = 18,5\%
+0 = \frac{30 000}{(1+IRR)^1} + \frac{40 000}{(1+IRR)^2} + \frac{50 000}{(1+IRR)^3} - 100 000 = 18{,}5\%
 \]</span></p>
 <p>Pokud by požadovaná návratnost (diskontní sazba) byla nižší než 18,5 %, byla by investice považována za výhodnou, protože IRR převyšuje požadovanou návratnost.</p>
 <p><em>Ponz. Tento problém nelze vyřešit analyticky jednoduchým způsobem, proto se obvykle řeší numerickými metodami, například iterací nebo využitím funkcí finančních kalkulaček nebo softwarových nástrojů, jako je Excel.</em></p>
@@ -705,10 +710,10 @@ Příklad
 <div class="callout-body-container callout-body">
 <p>Firma investuje 100 000 Kč do projektu, který generuje budoucí peněžní toky ve výši 30 000 Kč ročně po dobu 5 let. Diskontní sazba je 10 %.</p>
 <p><span class="math display">\[
-PV = \frac{30 000}{(1+0,1)^1} + \frac{30 000}{(1+0,1)^2} + \frac{30 000}{(1+0,1)^3} + \frac{30 000}{(1+0,1)^4} + \frac{30 000}{(1+0,1)^5} = 113 723,60 \text{ Kč}
+PV = \frac{30 000}{(1+0{,}1)^1} + \frac{30 000}{(1+0{,}1)^2} + \frac{30 000}{(1+0{,}1)^3} + \frac{30 000}{(1+0{,}1)^4} + \frac{30 000}{(1+0{,}1)^5} = 113 723{,}60 \text{ Kč}
 \]</span></p>
 <p><span class="math display">\[
-\text{PI} = \frac{113 723,6 \text{ Kč}}{100 000 \text{ Kč}} = 1,137
+\text{PI} = \frac{113 723{,}6 \text{ Kč}}{100 000 \text{ Kč}} = 1{,}137
 \]</span></p>
 <ul>
 <li>Investice přinese o 13,7% více než vložená částka.</li>
@@ -835,13 +840,13 @@ Příklad
 <p>Předpokládejme, že diskontní sazba (náklady na kapitál) je 10 % a reinvestiční sazba je 12 %.</p>
 <ol type="1">
 <li><p><strong>Výpočet FV pro pozitivní peněžní toky:</strong> <span class="math display">\[
-FV = 20 000 \times (1+0,12)^2 + 40 000 \times (1+0,12)^1 + 50 000 = 122 016 \text{ Kč}
+FV = 20 000 \times (1+0{,}12)^2 + 40 000 \times (1+0{,}12)^1 + 50 000 = 122 016 \text{ Kč}
 \]</span></p></li>
 <li><p><strong>Výpočet PV pro počáteční investici:</strong> <span class="math display">\[
 PV = 100 000 \text{ Kč}
 \]</span></p></li>
 <li><p><strong>Výpočet MIRR:</strong> <span class="math display">\[
-\text{MIRR} = \left( \frac{122 016}{100 000} \right)^{\frac{1}{3}} - 1 = 6,9\%
+\text{MIRR} = \left( \frac{122 016}{100 000} \right)^{\frac{1}{3}} - 1 = 6{,}9\%
 \]</span></p></li>
 </ol>
 <p>Projekt by měl roční návratnost 6,9 %, pokud by byly peněžní toky reinvestovány při sazbě 12 %.</p>
@@ -1060,6 +1065,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

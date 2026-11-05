@@ -37,10 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/exercise-1.0.0/exercise.js"></script>
+<link href="site_libs/quarto-contrib/exercise-1.0.0/exercise.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -129,7 +133,7 @@ window.Quarto = {
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Základy financí</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
     <div class="dropdown">
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -164,6 +168,7 @@ window.Quarto = {
           </li>
       </ul>
     </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -535,16 +540,16 @@ Příklad
 </div>
 <div class="callout-body-container callout-body">
 <p>Nákup akcie za $128,74 a prodej po jednom roce za $176,53. Za dobu držení akcie byly vyplaceny dividendy ve výši $2,68. <span class="math display">\[
-\text{Kapitálový výnos} = 176,53 - 128,74 = \$47,79
+\text{Kapitálový výnos} = 176{,}53 - 128{,}74 = \$47{,}79
 \]</span></p>
 <p><span class="math display">\[
-\text{Dividendový výnos} = \$2,68
+\text{Dividendový výnos} = \$2{,}68
 \]</span></p>
 <p><span class="math display">\[
-\text{Celkový výnos} = 2,68 + 47,79 = \$50,47
+\text{Celkový výnos} = 2{,}68 + 47{,}79 = \$50{,}47
 \]</span></p>
 <p><span class="math display">\[
-\text{Celkový výnos (\%)} = \frac{(176,53 - 128,74) + 2,68}{128,74} \times 100 = 39,20\%
+\text{Celkový výnos (\%)} = \frac{(176{,}53 - 128{,}74) + 2{,}68}{128{,}74} \times 100 = 39{,}20\%
 \]</span></p>
 </div>
 </div>
@@ -582,13 +587,13 @@ Příklad
 <div class="callout-body-container callout-body">
 <ul>
 <li>Výnos 25% za 2 roky: <span class="math display">\[
-\text{CAGR} = (1 + 0.25)^{\frac{1}{2}} - 1 = 11.80\%
+\text{CAGR} = (1 + 0{,}25)^{\frac{1}{2}} - 1 = 11{,}80\%
 \]</span></li>
 <li>Výnos 10% za 6 měsíců: <span class="math display">\[
-\text{CAGR} = (1 + 0.10)^{\frac{12}{6}} - 1 = 20.89\%
+\text{CAGR} = (1 + 0{,}10)^{\frac{12}{6}} - 1 = 20{,}89\%
 \]</span></li>
 <li>Výnos 1% za 15 dní: <span class="math display">\[
-\text{CAGR} = (1 + 0.01)^{\frac{365}{15}} - 1 = 27.11\%
+\text{CAGR} = (1 + 0{,}01)^{\frac{365}{15}} - 1 = 27{,}11\%
 \]</span></li>
 </ul>
 </div>
@@ -676,15 +681,15 @@ Pozor na aritmetický průměr!
 <li>Průměrný roční výnos lze spočítat pomocí CAGR a výnosu za celé období:</li>
 </ul>
 <p><span class="math display">\[
-\text{CAGR} = \frac{378.1934}{116.8724}^{\frac{1}{10}} - 1 = 12.46\%
+\text{CAGR} = \frac{378{,}1934}{116{,}8724}^{\frac{1}{10}} - 1 = 12{,}46\%
 \]</span></p>
 <ul>
 <li>Stejného výsledku lze dosáhnout pomocí geometrického průměru ročních výnosů.</li>
 <li><strong>Aritmetický průměr</strong> ročních výnosů však dává odlišný výsledek:</li>
 </ul>
 <p><span class="math display">\[
-\text{Arithmetic Average} = \frac{-18.17\% + 28.74\% + \dots + 32.31\%}{10} =
-\frac{136.32\%}{10} = 13.63\%
+\text{Arithmetic Average} = \frac{-18{,}17\% + 28{,}74\% + \dots + 32{,}31\%}{10} =
+\frac{136{,}32\%}{10} = 13{,}63\%
 \]</span></p>
 <ul>
 <li>Aritmetický průměr vychází vyšší než geometrický, protože <strong><em>nezohledňuje složené úročení</em></strong>.</li>
@@ -1067,6 +1072,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
