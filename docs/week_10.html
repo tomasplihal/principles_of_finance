@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -72,6 +72,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -105,7 +108,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -273,18 +276,18 @@ window.Quarto = {
     <h2 id="toc-title">Obsah lekce</h2>
    
   <ul class="collapse">
-  <li><a href="#charakteristika-akcií" id="toc-charakteristika-akcií" class="nav-link active" data-scroll-target="#charakteristika-akcií"><span class="header-section-number">10.1</span> Charakteristika akcií</a></li>
-  <li><a href="#poměrové-ukazatele-pe-a-pb" id="toc-poměrové-ukazatele-pe-a-pb" class="nav-link" data-scroll-target="#poměrové-ukazatele-pe-a-pb"><span class="header-section-number">10.2</span> Poměrové ukazatele P/E a P/B</a></li>
-  <li><a href="#dividendové-diskontní-modely" id="toc-dividendové-diskontní-modely" class="nav-link" data-scroll-target="#dividendové-diskontní-modely"><span class="header-section-number">10.3</span> Dividendové diskontní modely</a></li>
-  <li><a href="#model-diskontovaného-cash-flow-dcf" id="toc-model-diskontovaného-cash-flow-dcf" class="nav-link" data-scroll-target="#model-diskontovaného-cash-flow-dcf"><span class="header-section-number">10.4</span> Model diskontovaného cash flow (DCF)</a></li>
-  <li><a href="#preferenční-akcie" id="toc-preferenční-akcie" class="nav-link" data-scroll-target="#preferenční-akcie"><span class="header-section-number">10.5</span> Preferenční akcie</a></li>
-  <li><a href="#historický-vývoj-akcií" id="toc-historický-vývoj-akcií" class="nav-link" data-scroll-target="#historický-vývoj-akcií"><span class="header-section-number">10.6</span> Historický vývoj akcií</a></li>
+  <li><a href="#co-je-akcie" id="toc-co-je-akcie" class="nav-link active" data-scroll-target="#co-je-akcie"><span class="header-section-number">10.1</span> Co je akcie</a></li>
+  <li><a href="#dividendy-zpětný-odkup-a-štěpení-akcií" id="toc-dividendy-zpětný-odkup-a-štěpení-akcií" class="nav-link" data-scroll-target="#dividendy-zpětný-odkup-a-štěpení-akcií"><span class="header-section-number">10.2</span> Dividendy, zpětný odkup a štěpení akcií</a></li>
+  <li><a href="#poměrové-ukazatele-pe-a-pb" id="toc-poměrové-ukazatele-pe-a-pb" class="nav-link" data-scroll-target="#poměrové-ukazatele-pe-a-pb"><span class="header-section-number">10.3</span> Poměrové ukazatele P/E a P/B</a></li>
+  <li><a href="#vnitřní-hodnota-akcie" id="toc-vnitřní-hodnota-akcie" class="nav-link" data-scroll-target="#vnitřní-hodnota-akcie"><span class="header-section-number">10.4</span> Vnitřní hodnota akcie</a></li>
+  <li><a href="#výnosy-a-rizika-akcií" id="toc-výnosy-a-rizika-akcií" class="nav-link" data-scroll-target="#výnosy-a-rizika-akcií"><span class="header-section-number">10.5</span> Výnosy a rizika akcií</a></li>
+  <li><a href="#shrnutí" id="toc-shrnutí" class="nav-link" data-scroll-target="#shrnutí"><span class="header-section-number">10.6</span> Shrnutí</a></li>
   <li><a href="#příklady-k-procvičení" id="toc-příklady-k-procvičení" class="nav-link" data-scroll-target="#příklady-k-procvičení"><span class="header-section-number">10.7</span> Příklady k procvičení</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -316,7 +319,7 @@ Studijní materiály
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Dahlquist, J. R., &amp;; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
+<li>Dahlquist, J. R., &amp; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
 <ul>
 <li>Chapter 11 - Stocks and Stock Valuation</li>
 <li>Chapter 12 - Historical Performance of US Markets</li>
@@ -326,537 +329,702 @@ Studijní materiály
 </div>
 <p><strong>Výstupy z učení:</strong></p>
 <ol type="1">
-<li>Umět definovat akcie a jejich charakteristiky.</li>
-<li>Rozumět dividendám a jednotlivým typům akcií.</li>
-<li>Definovat a vypočítat ukazatele P/E a P/B a pochopit jejich použití při určování relativního ocenění společnosti.</li>
-<li>Porozumět dividendově diskontním modelům a modelům diskontovaného cash flow.</li>
-<li>Získat základní přehled o historické výkonnosti trhů.</li>
+<li>Popsat, co je akcie, jaká práva dává akcionáři a čím se liší kmenové a prioritní akcie.</li>
+<li>Vysvětlit, jak se akcionář podílí na zisku firmy (dividenda, zpětný odkup akcií), a co se stane při štěpení akcií.</li>
+<li>Vypočítat ukazatele P/E a P/B a vysvětlit, co říkají o ocenění akcie.</li>
+<li>Ocenit akcii dividendovým diskontním modelem a popsat princip modelu diskontovaných peněžních toků.</li>
+<li>Porovnat historické výnosy akcií a dluhopisů a rozpoznat hlavní rizika akcií.</li>
 </ol>
-<section id="charakteristika-akcií" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="charakteristika-akcií"><span class="header-section-number">10.1</span> Charakteristika akcií</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Akcie představuje vlastnický podíl v dané společnosti a poskytuje držiteli právo na podíl ze zisku, na rozhodování a na likvidační zůstatek.</p>
-</div>
-</div>
-<ul>
-<li>Akcie umožňují oddělení vlastníků od managementu.</li>
-<li>Na rozdíl od dluhopisů akcie nemají datum splatnosti, nominální hodnotu ani zaručené kupónové platby.</li>
-<li>Základním typem akcií jsou tzv. kmenové akcie (common stock), speciálním typem jsou například preferenční akcie (prioritní, preferred stock).</li>
-</ul>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;">Kmenové akcie</th>
-<th style="text-align: center;">Prioritní akcie</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vlastnický podíl ve firmě</td>
-<td style="text-align: center;">Ano</td>
-<td style="text-align: center;">Ne</td>
-</tr>
-<tr class="even">
-<td>Podíl na řízení</td>
-<td style="text-align: center;">Ano</td>
-<td style="text-align: center;">Ne</td>
-</tr>
-<tr class="odd">
-<td>Podíl na zisku</td>
-<td style="text-align: center;">Ano</td>
-<td style="text-align: center;">Ano</td>
-</tr>
-<tr class="even">
-<td>Podíl na likvidačním zůstatku</td>
-<td style="text-align: center;">Ano</td>
-<td style="text-align: center;">Ano</td>
-</tr>
-<tr class="odd">
-<td>Přednostní právo na zisky a majetek</td>
-<td style="text-align: center;">Ne</td>
-<td style="text-align: center;">Ano</td>
-</tr>
-<tr class="even">
-<td>Pravidelná fixní dividenda</td>
-<td style="text-align: center;">Ne</td>
-<td style="text-align: center;">Ano</td>
-</tr>
-<tr class="odd">
-<td>Doba splatnosti</td>
-<td style="text-align: center;">Ne</td>
-<td style="text-align: center;">Ne</td>
-</tr>
-</tbody>
-</table>
-<section id="dividendy" class="level3" data-number="10.1.1">
-<h3 data-number="10.1.1" class="anchored" data-anchor-id="dividendy"><span class="header-section-number">10.1.1</span> Dividendy</h3>
-<ul>
-<li>Akcie mohou vyplácet dividendy, ale ty nejsou garantovány a mohou se měnit na základě rozhodnutí představenstva společnosti.</li>
-<li>Většinou snaha o stabilní dividendovou politiku.</li>
-<li>Dividendy jsou většinou v penězích (<strong><em>cash dividend</em></strong>), ale mohou být i formou nově vydaných akcií (<strong><em>stock dividend</em></strong>).</li>
-<li>Místo výplaty dividend se může firma rozhodnout nakoupit svoje vlastní akcie (<strong><em>stock buyback</em></strong>).</li>
-<li>Výsledkem odkupu vlastních akcií je zvýšení jejich ceny a zpravidla daňové výhody pro akcionáře.</li>
-</ul>
-</section>
-<section id="štěpení-akcií" class="level3" data-number="10.1.2">
-<h3 data-number="10.1.2" class="anchored" data-anchor-id="štěpení-akcií"><span class="header-section-number">10.1.2</span> Štěpení akcií</h3>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Štěpení akcií (<strong><em>stock split</em></strong>) rozdělí stávající akcie na více kusů při zachování celkové hodnoty všech akcií (tržní kapitalizace).</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Příklad
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Držíte 10 akcií, každá má hodnotu 80 Kč. Firma udělá 2-for-1 split. Ve výsledku máte 20 akcií, ale každá stojí 40 Kč. Celková hodnota akcií (tržní kapitalizace) je pořád stejná, jen rozdělená na více dílů.</p>
-</div>
-</div>
-</section>
-<section id="rizika-investování-do-akcií" class="level3" data-number="10.1.3">
-<h3 data-number="10.1.3" class="anchored" data-anchor-id="rizika-investování-do-akcií"><span class="header-section-number">10.1.3</span> Rizika investování do akcií</h3>
-<p>Akcie jsou obecně rizikovější než dluhopisy, proto investoři očekávají vyšší výnosy. Mezi hlavní rizika lze zařadit:</p>
-<ul>
-<li><strong>Tržní riziko</strong> <span class="math inline">\(\rightarrow\)</span> vývoj tržní hodnoty akcie</li>
-<li><strong>Kreditní riziko</strong> <span class="math inline">\(\rightarrow\)</span> firma může zbankrotovat, nastane likvidace, akcionář získá likvidační zůstatek</li>
-<li><strong>Riziko likvidity</strong> <span class="math inline">\(\rightarrow\)</span> může být obtížné prodat akcii</li>
-<li><strong>Úrokové riziko</strong> <span class="math inline">\(\rightarrow\)</span> změny úrokových sazeb mohou ovlivnit chování akcií</li>
-<li><strong>Riziko inflace</strong> <span class="math inline">\(\rightarrow\)</span> snižuje reálné výnosy</li>
-<li><strong>Riziko změny směnných kurzů</strong> <span class="math inline">\(\rightarrow\)</span> pokud se akcie obchoduje v cizí měně</li>
-<li><strong>Politické a regulační riziko</strong> <span class="math inline">\(\rightarrow\)</span> změny v politice nebo regulacích mohou ovlivnit podnikatelské prostředí</li>
-</ul>
-</section>
-</section>
-<section id="poměrové-ukazatele-pe-a-pb" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="poměrové-ukazatele-pe-a-pb"><span class="header-section-number">10.2</span> Poměrové ukazatele P/E a P/B</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>P/E ratio (price-earnings ratio)</strong> neboli poměr cena/zisk je finanční ukazatel, který vyjadřuje vztah mezi tržní cenou akcie a čistým ziskem na jednu akcii (EPS, earnings per share).</p>
-</div>
-</div>
-<p><span class="math display">\[
-\text{P/E} = \frac{\text{Cena akcie}}{\text{Zisk na akcii}}
-\]</span></p>
-<ul>
-<li>P/E se používá k hodnocení, jak drahé nebo levné jsou akcie v poměru k ziskům společnosti.</li>
-<li>Vysoké P/E může naznačovat, že investoři očekávají budoucí růst zisků, zatímco nízké P/E indikuje podhodnocenou akcii nebo slabší růstové vyhlídky společnosti.</li>
-<li>P/E reprezentuje cenu, kterou investor platí za jednotku současného nebo budoucího zisku společnosti.</li>
-<li>P/E společnosti by měl být srovnáván s historickým P/E nebo s P/E jiných společností ve stejném odvětví.</li>
-<li>Prohlédněte si 90letý historický průměr P/E pro index S&amp;P 500 <a href="https://www.multpl.com/s-p-500-pe-ratio" class="uri">https://www.multpl.com/s-p-500-pe-ratio</a></li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Příklad
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Cena akcie společnosti $24.00 a její zisk na akcii je $4.00. <span class="math display">\[
-\text{P/E} = \frac{\$24{,}00}{\$4{,}00} = \$6
-\]</span></p>
-<p>Výsledek ukazuje, že investoři jsou ochotni platit až šest dolarů za každý dolar zisku.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>P/B ratio (price-to-book ratio)</strong> neboli poměr cena/účetní hodnota je finanční ukazatel, který vyjadřuje vztah mezi tržní cenou akcie a účetní hodnotou vlastního kapitálu na jednu akcii (book value per share).</p>
-</div>
-</div>
-<p><span class="math display">\[
-\text{P/B} = \frac{\text{Cena za akcii}}{\text{Účetní hodnota na akcii}}
-\]</span></p>
-<ul>
-<li><em>Tržní hodnota</em> je aktuální cena všech akcií společnosti, zatímco <em>účetní hodnota</em> představuje hodnotu společnosti po likvidaci aktiv a splacení závazků.</li>
-<li>P/B se používá k hodnocení, zda je akcie podhodnocená nebo nadhodnocená ve vztahu k účetní hodnotě společnosti.</li>
-<li>Nízké P/B (méně než 1) může signalizovat, že akcie je podhodnocená nebo že společnost má problémy, zatímco vysoké P/B naznačuje, že investoři očekávají budoucí růst nebo že je akcie nadhodnocená.</li>
-<li>P/B má omezení v nezahrnování nehmotných aktiv, jako jsou patenty, ochranné známky a autorská práva.</li>
-</ul>
-</section>
-<section id="dividendové-diskontní-modely" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="dividendové-diskontní-modely"><span class="header-section-number">10.3</span> Dividendové diskontní modely</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Dividendový diskontní model (DDM) je metoda oceňování akcií, která odhaduje hodnotu akcie na základě budoucích dividend, které budou vyplaceny, diskontovaných na současnou hodnotu.</p>
-</div>
-</div>
-<p>Základní forma DDM, známá jako <strong>Gordonův růstový model</strong>:</p>
-<p><span class="math display">\[
-\text{Hodnota akcie} = \frac{D_0 \times (1+g)}{r - g} = \frac{D_1}{r - g}
-\]</span></p>
-<ul>
-<li><span class="math inline">\(D_0 \dots\)</span> současná roční dividenda</li>
-<li><span class="math inline">\(D_1 \dots\)</span> očekávaná dividenda v příštím roce</li>
-<li><span class="math inline">\(r \dots\)</span> požadovaná míra výnosnosti (diskontní míra)</li>
-<li><span class="math inline">\(g \dots\)</span> očekávaná míra růstu dividend</li>
-</ul>
-<p>Tento model předpokládá, že dividendy porostou konstantním tempem <span class="math inline">\(g\)</span> navždy. Je užitečný pro oceňování akcií společností, které pravidelně vyplácejí dividendy a mají stabilní růstový profil (<span class="math inline">\(g\)</span> může být i 0).</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Příklad
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Předpokládejme, že společnost právě vyplatila dividendu ve výši <span class="math inline">\(\$2\)</span>, očekává se růst dividend ve výši 5% ročně. Vaše požadovaná míra výnosu je 10%. Cena akcie se vypočítá následovně:</p>
-<p><span class="math display">\[
-P = \frac{2{,}00 (1 + 0{,}05)}{0{,}10 - 0{,}05} = \frac{2{,}10}{0{,}05} = \$42{,}00
-\]</span></p>
-<p>Podle DDM modelu by cena akcie měla být $42,00. Pokud je tržní cena nižší, může to být dobrá investiční příležitost.</p>
-</div>
-</div>
-<ul>
-<li>Model lze rozšířit o proměnný růst dividend.</li>
-<li>Předpokládá se, že společnost a její dividendy projdou různými fázemi růstu.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Příklad
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Máme společnost <span class="math inline">\(X\)</span>, která za poslední rok vyplatila dividendu $2.00. Očekáváme růstovou míru dividendy 5% pro další čtyři roky a následně stabilizaci na růstu 3%. Požadovaná výnosová míra je 8%. V následující tabulce je zobrazen výpočet hodnoty akcie.</p>
+<p><strong>Značení:</strong></p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 4%">
-<col style="width: 7%">
-<col style="width: 14%">
-<col style="width: 22%">
-<col style="width: 22%">
-<col style="width: 29%">
+<col style="width: 10%">
+<col style="width: 89%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Rok</th>
-<th style="text-align: center;">Růst %</th>
-<th style="text-align: center;">Dividenda ($)</th>
-<th style="text-align: center;">Hodnota po 4. roce ($)</th>
-<th style="text-align: center;">Diskontní faktor pro 8%</th>
-<th style="text-align: center;">Současná hodnota dividendy ($)</th>
+<th style="text-align: left;">Symbol</th>
+<th style="text-align: left;">Význam</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">2.00</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(P\)</span></td>
+<td style="text-align: left;">cena akcie, v oceňovacích modelech její vnitřní hodnota</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">2.10</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">1.0800</td>
-<td style="text-align: center;">1.9444</td>
+<td style="text-align: left;"><span class="math inline">\(D_0\)</span></td>
+<td style="text-align: left;">dividenda na akcii, kterou firma právě vyplatila</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">2.21</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">1.1664</td>
-<td style="text-align: center;">1.8904</td>
+<td style="text-align: left;"><span class="math inline">\(D_1\)</span></td>
+<td style="text-align: left;">dividenda na akcii, kterou firma vyplatí za rok</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">2.32</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">1.2597</td>
-<td style="text-align: center;">1.8379</td>
+<td style="text-align: left;"><span class="math inline">\(r\)</span></td>
+<td style="text-align: left;">požadovaný výnos akcionáře, kterým diskontujeme</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">2.43</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">1.3605</td>
-<td style="text-align: center;">1.7869</td>
+<td style="text-align: left;"><span class="math inline">\(g\)</span></td>
+<td style="text-align: left;">roční tempo růstu dividend</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">3%</td>
-<td style="text-align: center;">2.50</td>
-<td style="text-align: center;">50.07886</td>
-<td style="text-align: center;">1.4693</td>
-<td style="text-align: center;">35.7870</td>
+<td style="text-align: left;"><span class="math inline">\(EPS\)</span></td>
+<td style="text-align: left;">čistý zisk na akcii (earnings per share)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><span class="math inline">\(Celkem:\)</span></td>
-<td style="text-align: center;">43.2466</td>
+<td style="text-align: left;"><span class="math inline">\(BV\)</span></td>
+<td style="text-align: left;">účetní hodnota vlastního kapitálu na akcii (book value)</td>
 </tr>
 </tbody>
 </table>
-<p><span class="math display">\[
-\text{Hodnota po 4. roce} = \frac{2{,}43 (1 + 0{,}03)}{0{,}08 - 0{,}03} = 50{,}07886
-\]</span></p>
-<p>Vnitřní hodnota akcie je součet všech současných hodnot dividend, tedy $43.2466.</p>
-</div>
-</div>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>Výhody DDM</strong></th>
-<th style="text-align: center;"><strong>Omezení DDM</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">Jednoduchost a srozumitelnost</td>
-<td style="text-align: center;">Závislost na dividendách</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Vhodnost pro stabilní společnosti</td>
-<td style="text-align: center;">Citlivost na vstupní parametry</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Teoretická konzistence</td>
-<td style="text-align: center;">Nerealistické předpoklady</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"></td>
-<td style="text-align: center;">Ignorování jiných faktorů</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="model-diskontovaného-cash-flow-dcf" class="level2" data-number="10.4">
-<h2 data-number="10.4" class="anchored" data-anchor-id="model-diskontovaného-cash-flow-dcf"><span class="header-section-number">10.4</span> Model diskontovaného cash flow (DCF)</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Model diskontovaného cashflow (DCF) je metoda oceňování, která se používá k určení hodnoty investice na základě budoucích peněžních toků (cashflow), které tato investice vygeneruje. Tyto budoucí peněžní toky jsou diskontovány na jejich současnou hodnotu pomocí diskontní sazby, která odráží požadovanou míru výnosnosti investora a riziko spojené s investicí.</p>
-</div>
-</div>
-<p>Základní vzorec pro DCF model je:</p>
-<p><span class="math display">\[
-\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{CF_n}{(1+r)^n}
-\]</span></p>
+<section id="co-je-akcie" class="level2 page-columns page-full" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="co-je-akcie"><span class="header-section-number">10.1</span> Co je akcie</h2>
+<p>Firma, která potřebuje peníze na další rozvoj, si je může půjčit, například vydáním dluhopisů z <a href="./week_09.html">týdne 9</a>. Může ale také prodat investorům podíl na sobě samé. <strong>Akcie</strong> je cenný papír, který představuje podíl na vlastnictví akciové společnosti. Kdo koupí akcii, nestává se věřitelem firmy, ale jejím spoluvlastníkem, <strong>akcionářem</strong>.</p>
+<p>Akcionář má tři základní práva:</p>
 <ul>
-<li><span class="math inline">\(CF_n \dots\)</span> očekávaný peněžní tok v období <span class="math inline">\(n\)</span></li>
-<li><span class="math inline">\(r \dots\)</span> diskontní sazba</li>
-<li><span class="math inline">\(n \dots\)</span> počet období</li>
+<li><strong>Podíl na zisku.</strong> Část zisku může firma akcionářům vyplatit jako <strong>dividendu</strong>.</li>
+<li><strong>Podíl na řízení.</strong> Akcionář hlasuje na valné hromadě, která volí orgány společnosti a rozhoduje například o výplatě dividendy. Počet hlasů odpovídá počtu akcií.</li>
+<li><strong>Podíl na likvidačním zůstatku.</strong> Pokud firma zanikne, rozdělí se mezi akcionáře to, co zbude po zaplacení všech dluhů.</li>
 </ul>
-<p>Alternativně lze model rozšířít o predikce cash flow do nekonečna s využitím perpetuity:</p>
-<p><span class="math display">\[
-\text{Hodnota akcie} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \frac{CF_3}{(1+r)^3} + \dots + \frac{\frac{TFC}{r-g}}{(1+r)^{n-1}}
-\]</span></p>
-<ul>
-<li>Poslední člen, tzv. terminal cash flow (TCF), představuje poslední predikované cash flow, které dále roste konstantním tempem růstu.</li>
-</ul>
+<p>Akcionář za dluhy firmy neručí. Když firma zkrachuje, může přijít nejvýš o to, co do akcií vložil. Vlastníci přitom firmu většinou sami neřídí, ale najímají si k tomu management. Akcie tak umožňují oddělit vlastnictví firmy od jejího řízení.</p>
+<p>Rozdíl mezi akcií a dluhopisem shrnuje tabulka:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 52%">
-<col style="width: 47%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>Výhody DCF</strong></th>
-<th style="text-align: center;"><strong>Omezení DCF</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">Nepotřebuje dividendy</td>
-<td style="text-align: center;">Citlivost na vstupní parametry</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Komplexní ocenění</td>
-<td style="text-align: center;">Obtížnost přesných odhadů cashflow</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Flexibilita</td>
-<td style="text-align: center;">Náročnost na data</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Založen na skutečných peněžních tocích</td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Pro účely modelu diskontovaného cashflow (DCF) se obvykle používá tzv. volný peněžní tok (Free Cash Flow, FCF).</li>
-<li>FCF není přímo uveden v účetních výkazech, ale lze jej odvodit z informací uvedených ve výkazu o peněžních tocích (Cash Flow Statement) a výkazu zisku a ztráty (Income Statement).</li>
-<li>Metody přesného výpočtu FCF jsou nad rámec tohoto předmětu.</li>
-</ul>
-</section>
-<section id="preferenční-akcie" class="level2" data-number="10.5">
-<h2 data-number="10.5" class="anchored" data-anchor-id="preferenční-akcie"><span class="header-section-number">10.5</span> Preferenční akcie</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Preferenční (prioritní) akcie (preferred stock) jsou typem akcií, které mají přednostní postavení ve vztahu k výplatě dividend a při likvidaci společnosti oproti kmenovým akciím. Mají stanovenou konstantní pravidelnou dividendu (bez doby splatnosti), a většinou neposkytují hlasovací právo.</p>
-</div>
-</div>
-<ul>
-<li>Mohou být tzv. kumulativní <span class="math inline">\(\rightarrow\)</span> jakékoli vynechané dividendy se stávají závazkem, který společnost musí vyplatit.</li>
-<li>Nekumulativní preferované akcie ztrácejí nevyplacené dividendy navždy.</li>
-<li>Konvertibilní preferované akcie lze za určitých podmínek převést na kmenové akcie.</li>
-</ul>
-<p>Vnitřní hodnotu preferovaných akcií lze určit pomocí vzorce na perpetuitu:</p>
-<p><span class="math display">\[
-\text{Hodnota akcie} = \frac{\text{Dividenda}}{\text{Diskontní míra}}
-\]</span></p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Příklad
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Firma <span class="math inline">\(X\)</span> právě vydala preferované akcie (kumulativní) se jmenovitou hodnotou $100 a roční dividendou 7%. Aktuální cena preferovaných akcií je $35 za akcii. Jaká je výnosnost těchto preferovaných akcií?</p>
-<ul>
-<li>Prvním krokem je určení roční dividendy:</li>
-</ul>
-<p><span class="math display">\[
-\$100 \times 0{,}07 = \$7{,}00
-\]</span></p>
-<ul>
-<li>Nyní použijeme výše uvedený vzorec k vypočítání míry výnosu:</li>
-</ul>
-<p><span class="math display">\[
-r = \frac{\$7{,}00}{\$35{,}00} = 0{,}20 \text{ neboli } 20\%
-\]</span></p>
-</div>
-</div>
-</section>
-<section id="historický-vývoj-akcií" class="level2" data-number="10.6">
-<h2 data-number="10.6" class="anchored" data-anchor-id="historický-vývoj-akcií"><span class="header-section-number">10.6</span> Historický vývoj akcií</h2>
-<ul>
-<li>Dow Jones Industrial Average (DJIA) a S&amp;P 500 jsou nejčastěji citovanými akciovými indexy, přičemž změny v obou jsou silně korelované.</li>
-<li>Indexy mají za cíl reprezentovat výnosnost celého akciového trhu.</li>
-<li>Historie kapitálových trhů ukazuje, že průměrný výnos z akcií výrazně předčil jiné třídy finančních cenných papírů.</li>
-</ul>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 39%">
+<col style="width: 24%">
+<col style="width: 37%">
 <col style="width: 38%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Asset Class</th>
-<th style="text-align: center;">Nominal Average Annual Returns 1981–2020</th>
-<th style="text-align: center;">Standard Deviation of Returns 1981–2020</th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Dluhopis</th>
+<th style="text-align: left;">Akcie</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Large company stocks</td>
-<td style="text-align: center;">12.64%</td>
-<td style="text-align: center;">16.06%</td>
+<td style="text-align: left;">Co investor drží</td>
+<td style="text-align: left;">pohledávku za firmou (je věřitel)</td>
+<td style="text-align: left;">podíl na firmě (je spoluvlastník)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Baa bonds</td>
-<td style="text-align: center;">10.34%</td>
-<td style="text-align: center;">7.67%</td>
+<td style="text-align: left;">Příjem</td>
+<td style="text-align: left;">kupón, předem daný a povinný</td>
+<td style="text-align: left;">dividenda, nejistá a nepovinná</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">10-year T-bonds</td>
-<td style="text-align: center;">8.21%</td>
-<td style="text-align: center;">9.92%</td>
+<td style="text-align: left;">Splatnost</td>
+<td style="text-align: left;">předem daná</td>
+<td style="text-align: left;">žádná</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">US T-bills</td>
-<td style="text-align: center;">3.94%</td>
-<td style="text-align: center;">3.39%</td>
+<td style="text-align: left;">Hlasovací právo</td>
+<td style="text-align: left;">ne</td>
+<td style="text-align: left;">ano</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Inflation</td>
-<td style="text-align: center;">2.93%</td>
-<td style="text-align: center;">1.76%</td>
+<td style="text-align: left;">Při úpadku firmy</td>
+<td style="text-align: left;">věřitelé dostanou zaplaceno dřív</td>
+<td style="text-align: left;">akcionáři jsou na řadě poslední</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Riziko a očekávaný výnos</td>
+<td style="text-align: left;">nižší</td>
+<td style="text-align: left;">vyšší</td>
 </tr>
 </tbody>
 </table>
+<p>Akcie nemá splatnost ani jmenovitou hodnotu, kterou by firma musela vrátit, a dividendu firma vyplácet nemusí. Akcionář proto nese větší riziko než věřitel a požaduje za to vyšší výnos.</p>
+<section id="trh-s-akciemi" class="level3 page-columns page-full" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="trh-s-akciemi"><span class="header-section-number">10.1.1</span> Trh s akciemi</h3>
+<p>Peníze firma získá jen ve chvíli, kdy nové akcie vydá a prodá investorům, na tzv. <strong>primárním trhu</strong>. Když je poprvé nabídne veřejnosti, jde o <strong>primární veřejnou nabídku</strong> (IPO, initial public offering). Potom se s akciemi obchoduje na <strong>sekundárním trhu</strong>, hlavně na burze. Tam už si je mezi sebou prodávají investoři a firma z těchto obchodů nic nedostává. Cenu akcie na burze určuje nabídka a poptávka, a mění se proto každým okamžikem.</p>
+<p>Vynásobením ceny akcie počtem všech akcií firmy dostaneme <strong>tržní kapitalizaci</strong>, tedy částku, na kterou trh oceňuje celou firmu.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Firma vydala 10 milionů akcií a jedna se na burze obchoduje za 250 Kč. Její tržní kapitalizace je <span class="math inline">\(10\,000\,000 \times 250 = 2{,}5\)</span> mld. Kč.</p>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>V Česku se s akciemi obchoduje na Burze cenných papírů Praha. Největší burzy světa jsou newyorské NYSE a Nasdaq.</p>
+</div></div></section>
+<section id="kmenové-a-prioritní-akcie" class="level3" data-number="10.1.2">
+<h3 data-number="10.1.2" class="anchored" data-anchor-id="kmenové-a-prioritní-akcie"><span class="header-section-number">10.1.2</span> Kmenové a prioritní akcie</h3>
+<p>Většina akcií jsou <strong>kmenové akcie</strong> (common stock), se kterými jsou spojena všechna základní práva akcionáře. Firma může vydat i <strong>prioritní akcie</strong> (preferred stock, nazývané také preferenční). Jejich majitel má přednost při výplatě dividendy, která bývá pevně daná, zpravidla ale nemá hlasovací právo.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 28%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Kmenové akcie</th>
+<th style="text-align: left;">Prioritní akcie</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Podíl na vlastnictví firmy</td>
+<td style="text-align: left;">ano</td>
+<td style="text-align: left;">ano</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hlasovací právo</td>
+<td style="text-align: left;">ano</td>
+<td style="text-align: left;">zpravidla ne</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dividenda</td>
+<td style="text-align: left;">nejistá, může růst</td>
+<td style="text-align: left;">zpravidla pevná, vyplácí se přednostně</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pořadí při likvidaci firmy</td>
+<td style="text-align: left;">poslední</td>
+<td style="text-align: left;">po věřitelích, před kmenovými akciemi</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Splatnost</td>
+<td style="text-align: left;">žádná</td>
+<td style="text-align: left;">žádná</td>
+</tr>
+</tbody>
+</table>
+<p>Prioritní akcie mohou mít další vlastnosti:</p>
 <ul>
-<li>Zvláště patrný je tento rozdíl při pohledu na kumulované výnosy (složené úročení).</li>
+<li>U <strong>kumulativních</strong> se vynechaná dividenda neztrácí. Firma ji musí doplatit dřív, než vyplatí cokoli majitelům kmenových akcií.</li>
+<li><strong>Konvertibilní</strong> lze za daných podmínek vyměnit za kmenové akcie.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
+<p>Pevnou dividendou a chybějícím hlasovacím právem se prioritní akcie podobají dluhopisu. Dividendu ale firma na rozdíl od kupónu vynechat může, aniž by se dostala do úpadku.</p>
+</section>
+</section>
+<section id="dividendy-zpětný-odkup-a-štěpení-akcií" class="level2 page-columns page-full" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="dividendy-zpětný-odkup-a-štěpení-akcií"><span class="header-section-number">10.2</span> Dividendy, zpětný odkup a štěpení akcií</h2>
+<p>Akcionář může vydělat dvěma způsoby: firma mu vyplatí <strong>dividendu</strong>, nebo vzroste cena akcie a on ji prodá dráž, než koupil (<strong>kapitálový zisk</strong>). Jak z obojího spočítat celkový výnos, ukáže <a href="./week_11.html">týden 11</a>.</p>
+<section id="dividendy" class="level3 page-columns page-full" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="dividendy"><span class="header-section-number">10.2.1</span> Dividendy</h3>
+<p>Dividenda je část zisku, kterou firma vyplatí akcionářům, nejčastěji v penězích a jednou nebo několikrát ročně. Zaručená není: o její výši rozhodují každý rok orgány společnosti (v Česku valná hromada na návrh představenstva) a ve špatném roce ji firma může snížit nebo zrušit. Firmy se ale snaží vyplácet dividendu stabilní nebo mírně rostoucí, protože její snížení investoři berou jako špatnou zprávu.</p>
+<p>Zisk, který firma nevyplatí, v ní zůstává a může ho investovat do dalšího růstu. Mladé a rychle rostoucí firmy proto často nevyplácejí žádnou dividendu, zatímco zavedené firmy se stabilním ziskem (energetika, banky) vyplácejí velkou část zisku.</p>
+<p>Kolik dividenda vynáší vzhledem k ceně akcie, říká <strong>dividendový výnos</strong> (dividend yield):</p>
+<div class="formula">
+<p><span class="math display">\[
+\text{dividendový výnos} = \frac{D}{P}
+\]</span></p>
+</div>
+<p>kde <span class="math inline">\(D\)</span> je roční dividenda na akcii a <span class="math inline">\(P\)</span> cena akcie.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Akcie stojí 800 Kč a firma vyplácí dividendu 40 Kč ročně. Dividendový výnos je</p>
+<p><span class="math display">\[
+\frac{40}{800} = 0{,}05 = 5\%
+\]</span></p>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Dividendu dostane ten, kdo akcii vlastní v tzv. rozhodný den. První den, kdy se akcie obchoduje už bez nároku na dividendu, její cena obvykle klesne zhruba o výši dividendy.</p>
+</div></div></section>
+<section id="zpětný-odkup-akcií" class="level3" data-number="10.2.2">
+<h3 data-number="10.2.2" class="anchored" data-anchor-id="zpětný-odkup-akcií"><span class="header-section-number">10.2.2</span> Zpětný odkup akcií</h3>
+<p>Místo dividendy může firma za volné peníze nakoupit na trhu své vlastní akcie (<strong>zpětný odkup</strong>, stock buyback). Akcií v oběhu je pak méně, takže na každou zbývající připadá větší podíl na firmě a jejím zisku. Akcionář, který své akcie neprodal, nedostal žádné peníze, ale vlastní větší část firmy. Na rozdíl od dividendy také neplatí hned daň z příjmu.</p>
+</section>
+<section id="štěpení-akcií" class="level3 page-columns page-full" data-number="10.2.3">
+<h3 data-number="10.2.3" class="anchored" data-anchor-id="štěpení-akcií"><span class="header-section-number">10.2.3</span> Štěpení akcií</h3>
+<p><strong>Štěpení akcií</strong> (stock split) rozdělí každou akcii na několik nových. Akcionář má víc akcií, každá má ale úměrně nižší cenu. Hodnota jeho podílu ani tržní kapitalizace firmy se nezmění.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Držíte 10 akcií, každá stojí 800 Kč, dohromady tedy 8 000 Kč. Firma rozštěpí akcie v poměru 2:1, za každou starou akcii dostanete dvě nové. Budete mít <span class="math inline">\(10 \times 2 = 20\)</span> akcií a každá bude stát <span class="math inline">\(800 / 2 = 400\)</span> Kč. Dohromady je to stále 8 000 Kč.</p>
+</div>
+</div>
+<p>Firmy akcie štěpí, když jejich cena vyroste tak vysoko, že je jedna akcie pro drobné investory drahá. Nižší cena za kus usnadní obchodování, na hodnotě firmy ale nic nemění. Je to stejné, jako když pizzu rozkrojíte na 8 dílků místo na 4: pizzy není víc.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Nvidia v červnu 2024 rozštěpila akcie v poměru 10:1. Cena jedné akcie tím klesla zhruba z 1 200 na 120 USD. Opačný postup, kdy se několik akcií spojí do jedné, se nazývá zpětné štěpení (reverse split).</p>
+</div></div></section>
+</section>
+<section id="poměrové-ukazatele-pe-a-pb" class="level2 page-columns page-full" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="poměrové-ukazatele-pe-a-pb"><span class="header-section-number">10.3</span> Poměrové ukazatele P/E a P/B</h2>
+<p>Je akcie za 600 Kč drahá? Ze samotné ceny to nepoznáme. Záleží na tom, co za ni dostaneme: kolik firma vydělává a jaký má majetek. Poměrové ukazatele proto cenu akcie vztahují k zisku nebo k účetní hodnotě firmy a umožňují porovnat různě velké firmy mezi sebou. Říká se tomu <strong>relativní ocenění</strong>.</p>
+<section id="poměr-ceny-a-zisku-pe" class="level3 page-columns page-full" data-number="10.3.1">
+<h3 data-number="10.3.1" class="anchored" data-anchor-id="poměr-ceny-a-zisku-pe"><span class="header-section-number">10.3.1</span> Poměr ceny a zisku (P/E)</h3>
+<p>Nejdřív potřebujeme <strong>zisk na akcii</strong> (EPS, earnings per share), tedy čistý zisk firmy za rok vydělený počtem akcií. Ukazatel <strong>P/E</strong> (price-to-earnings ratio) je poměr ceny akcie a zisku na akcii:</p>
+<div class="formula">
+<p><span class="math display">\[
+P/E = \frac{P}{EPS}
+\]</span></p>
+</div>
+<p>P/E říká, kolik korun investor platí za 1 Kč ročního zisku firmy. Jinak řečeno: za kolik let by se mu cena akcie vrátila, kdyby zisk zůstal stejný a celý připadl jemu.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Firma vydělala za rok 400 mil. Kč a má 10 milionů akcií. Akcie stojí 600 Kč.</p>
+<p><span class="math display">\[
+EPS = \frac{400\,000\,000}{10\,000\,000} = 40
+\qquad \qquad
+P/E = \frac{600}{40} = 15
+\]</span></p>
+<p>Investoři platí 15 Kč za každou korunu ročního zisku.</p>
+</div>
+</div>
+<p>Jak P/E číst:</p>
+<ul>
+<li><strong>Vysoké P/E</strong> znamená, že investoři čekají rychlý růst zisku a jsou ochotni si za něj připlatit. Může ale také znamenat, že je akcie nadhodnocená.</li>
+<li><strong>Nízké P/E</strong> mají firmy se slabými vyhlídkami na růst nebo s vyšším rizikem. Může ale také znamenat, že je akcie podhodnocená.</li>
+<li>P/E má smysl porovnávat s firmami ze stejného odvětví nebo s minulými hodnotami téže firmy. Technologická firma a elektrárna mají běžně úplně jiné P/E.</li>
+<li>Firma ve ztrátě má záporný zisk a její P/E nedává smysl.</li>
+</ul>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Dlouhodobý průměr P/E amerického indexu S&amp;P 500 je kolem 16. Aktuální hodnotu a historii ukazuje <a href="https://www.multpl.com/s-p-500-pe-ratio">multpl.com</a>.</p>
+</div></div><p>Pomocí P/E lze cenu akcie také odhadnout: zisk na akcii vynásobíme hodnotou P/E, která je obvyklá u podobných firem.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Firma má zisk na akcii 25 Kč. Podobné firmy v odvětví se obchodují za dvanáctinásobek zisku (P/E = 12). Odpovídající cena akcie je <span class="math inline">\(12 \times 25 = 300\)</span> Kč. Pokud se akcie na burze prodává za 250 Kč, je vůči odvětví levná.</p>
+</div>
+</div>
+</section>
+<section id="poměr-ceny-a-účetní-hodnoty-pb" class="level3" data-number="10.3.2">
+<h3 data-number="10.3.2" class="anchored" data-anchor-id="poměr-ceny-a-účetní-hodnoty-pb"><span class="header-section-number">10.3.2</span> Poměr ceny a účetní hodnoty (P/B)</h3>
+<p><strong>Účetní hodnota</strong> vlastního kapitálu je rozdíl mezi aktivy a závazky firmy v její rozvaze, tedy to, co podle účetnictví patří akcionářům. Po vydělení počtem akcií dostaneme účetní hodnotu na akcii <span class="math inline">\(BV\)</span> (book value). Ukazatel <strong>P/B</strong> (price-to-book ratio) je poměr ceny akcie a účetní hodnoty na akcii:</p>
+<div class="formula">
+<p><span class="math display">\[
+P/B = \frac{P}{BV}
+\]</span></p>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Firma má aktiva 5 mld. Kč, závazky 3 mld. Kč a 10 milionů akcií. Akcie stojí 300 Kč.</p>
+<p><span class="math display">\[
+BV = \frac{5\,000\,000\,000 - 3\,000\,000\,000}{10\,000\,000} = 200
+\qquad \qquad
+P/B = \frac{300}{200} = 1{,}5
+\]</span></p>
+<p>Trh oceňuje firmu na 1,5násobek hodnoty, kterou má vlastní kapitál v účetnictví.</p>
+</div>
+</div>
+<ul>
+<li>P/B vyšší než 1 je běžné: trh oceňuje i budoucí zisky, které v rozvaze nejsou.</li>
+<li>P/B nižší než 1 znamená, že je firma na burze levnější než její čistý majetek v účetnictví. Akcie může být podhodnocená, nebo má firma vážné problémy a trh hodnotám v rozvaze nevěří.</li>
+<li>Účetnictví většinou nezachycuje nehmotný majetek, který si firma vytvořila sama: značku, know-how nebo software. Technologické firmy proto mívají P/B velmi vysoké. Ukazatel se hodí hlavně pro banky a firmy s velkým hmotným majetkem.</li>
+</ul>
+</section>
+</section>
+<section id="vnitřní-hodnota-akcie" class="level2 page-columns page-full" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="vnitřní-hodnota-akcie"><span class="header-section-number">10.4</span> Vnitřní hodnota akcie</h2>
+<p>Poměrové ukazatele říkají, zda je akcie drahá ve srovnání s jinými. Druhý přístup se ptá, jakou hodnotu má akcie sama o sobě. Postupujeme stejně jako u dluhopisu v <a href="./week_09.html">týdnu 9</a>: <strong>hodnota akcie je současná hodnota peněžních toků, které akcionáři přinese</strong>. Této hodnotě říkáme <strong>vnitřní hodnota</strong> (intrinsic value).</p>
+<p>Peněžními toky akcie jsou dividendy. Akcie nemá splatnost, dividend je proto nekonečně mnoho:</p>
+<div class="formula">
+<p><span class="math display">\[
+P = \frac{D_1}{(1+r)^1} + \frac{D_2}{(1+r)^2} + \frac{D_3}{(1+r)^3} + \dots
+\]</span></p>
+</div>
+<p>Tomuto přístupu se říká <strong>dividendový diskontní model</strong> (DDM). Platí, i když chcete akcii za pár let prodat: kupec vám zaplatí právě současnou hodnotu dividend, které přijdou po prodeji.</p>
+<p>Oproti dluhopisu jsou tu dva rozdíly. Budoucí dividendy nejsou předem dané, musíme je odhadnout. A požadovaný výnos <span class="math inline">\(r\)</span> je vyšší než u dluhopisů stejné firmy, protože akcionář nese větší riziko.</p>
+<p>Vnitřní hodnotu pak porovnáme s cenou na burze:</p>
+<ul>
+<li>vnitřní hodnota &gt; tržní cena: akcie je <strong>podhodnocená</strong>, vyplatí se ji koupit,</li>
+<li>vnitřní hodnota &lt; tržní cena: akcie je <strong>nadhodnocená</strong>.</li>
+</ul>
+<p>Nekonečný součet spočítat neumíme, pokud o dividendách něco nepředpokládáme. Podle předpokladu rozlišujeme tři případy.</p>
+<section id="stálá-dividenda-prioritní-akcie" class="level3" data-number="10.4.1">
+<h3 data-number="10.4.1" class="anchored" data-anchor-id="stálá-dividenda-prioritní-akcie"><span class="header-section-number">10.4.1</span> Stálá dividenda: prioritní akcie</h3>
+<p>Prioritní akcie vyplácí stále stejnou dividendu a nemá splatnost. Je to perpetuita z <a href="./week_08.html">týdne 8</a>, stejně jako perpetuitní dluhopis:</p>
+<div class="formula">
+<p><span class="math display">\[
+P = \frac{D}{r}
+\qquad \qquad
+r = \frac{D}{P}
+\]</span></p>
+</div>
+<p>Druhý vzorec říká, kolik akcie vynáší, když ji koupíte za cenu <span class="math inline">\(P\)</span>. Stejně oceníme i kmenovou akcii, u které nečekáme žádný růst dividendy.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Prioritní akcie vyplácí dividendu 35 Kč ročně. Jakou má hodnotu, pokud požadujete výnos 7 % ročně?</p>
+<p><span class="math display">\[
+P = \frac{35}{0{,}07} = 500
+\]</span></p>
+<p>Pokud se na burze prodává za 400 Kč, vynáší kupujícímu <span class="math inline">\(35 / 400 = 8{,}75\%\)</span> ročně.</p>
+</div>
+</div>
+</section>
+<section id="gordonův-model-dividenda-roste-stálým-tempem" class="level3" data-number="10.4.2">
+<h3 data-number="10.4.2" class="anchored" data-anchor-id="gordonův-model-dividenda-roste-stálým-tempem"><span class="header-section-number">10.4.2</span> Gordonův model: dividenda roste stálým tempem</h3>
+<p>U kmenových akcií dividenda většinou roste spolu se ziskem firmy. Pokud předpokládáme, že poroste navždy stálým tempem <span class="math inline">\(g\)</span>, jsou dividendy rostoucí perpetuita z <a href="./week_08.html">týdne 8</a>. Vzorec se nazývá <strong>Gordonův růstový model</strong>:</p>
+<div class="formula">
+<p><span class="math display">\[
+P = \frac{D_0 \times (1 + g)}{r - g} = \frac{D_1}{r - g}
+\]</span></p>
+</div>
+<p>Časová osa ukazuje dividendy firmy, která právě vyplatila 20 Kč na akcii a jejíž dividenda roste o 5 % ročně:</p>
+<div id="ec00aa69" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
 <figure class="figure">
-<p><img src="images/fig_6_8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
+<p><img src="week_10_files/figure-html/cell-2-output-1.svg" class="img-fluid figure-img" alt="Časová osa: dividenda 21 Kč za rok, 22,05 Kč za dva roky, 23,15 Kč za tři roky a 24,31 Kč za čtyři roky, dále roste o 5 % ročně."></p>
 </figure>
 </div>
+</div>
+</div>
+<p>V čitateli je vždy <strong>dividenda, která přijde za rok</strong> (<span class="math inline">\(D_1\)</span>). Dividendu, kterou firma právě vyplatila (<span class="math inline">\(D_0\)</span>), už kupující nedostane, proto ji nejdřív zvýšíme o růst: <span class="math inline">\(D_1 = D_0 \times (1 + g)\)</span>.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Pozor na zadání">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pozor na zadání
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>„Firma <strong>právě vyplatila</strong> dividendu 20 Kč“ znamená <span class="math inline">\(D_0 = 20\)</span>. Do čitatele patří <span class="math inline">\(20 \times (1 + g)\)</span>.</li>
+<li>„Firma <strong>za rok vyplatí</strong> dividendu 20 Kč“ nebo „očekávaná dividenda je 20 Kč“ znamená <span class="math inline">\(D_1 = 20\)</span>. Do čitatele patří přímo 20.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Firma právě vyplatila dividendu 20 Kč na akcii. Očekáváte, že dividenda poroste o 5 % ročně, a požadujete výnos 10 % ročně. Jaká je hodnota akcie?</p>
+<p><span class="math display">\[
+P = \frac{20 \times 1{,}05}{0{,}10 - 0{,}05} = \frac{21}{0{,}05} = 420
+\]</span></p>
+<p>Hodnota akcie je 420 Kč. Pokud se na burze prodává za 380 Kč, je podle modelu podhodnocená.</p>
+</div>
+</div>
+<p>Model má dvě omezení:</p>
+<ul>
+<li>Platí jen pro <span class="math inline">\(r &gt; g\)</span>. Dividenda nemůže navždy růst rychleji, než je požadovaný výnos. V praxi by dlouhodobé tempo růstu nemělo být vyšší než růst celé ekonomiky.</li>
+<li>Výsledek je <strong>velmi citlivý na odhad</strong> <span class="math inline">\(g\)</span> a <span class="math inline">\(r\)</span>. Graf ukazuje hodnotu akcie z příkladu pro různá tempa růstu: při 5 % je to 420 Kč, při 7 % už 713 Kč a při 8 % dokonce 1 080 Kč. Malá změna odhadu znamená velkou změnu hodnoty.</li>
+</ul>
+<div id="e1d7bd22" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+        <script>
+        window.PlotlyConfig = {MathJaxConfig: 'local'};
+        if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+        </script>
+        <script type="module">import "https://cdn.plot.ly/plotly-4.1.1.min"</script>
+        
+</div>
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="115603b1-1e3d-4287-9440-1ed3265077be" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("115603b1-1e3d-4287-9440-1ed3265077be")) {                    Plotly.newPlot(                        "115603b1-1e3d-4287-9440-1ed3265077be",                        [{"hovertemplate":"%{y:,.2f} K\u010d","line":{"color":"#0000dc","width":3},"mode":"lines","name":"Hodnota akcie","x":{"dtype":"f8","bdata":"AAAAAAAAAACamZmZmZm5P5qZmZmZmck\u002fMzMzMzMz0z+amZmZmZnZPwAAAAAAAOA\u002fMzMzMzMz4z9nZmZmZmbmP5qZmZmZmek\u002fzszMzMzM7D8AAAAAAADwP5mZmZmZmfE\u002fMzMzMzMz8z\u002fNzMzMzMz0P2dmZmZmZvY\u002fAAAAAAAA+D+amZmZmZn5PzQzMzMzM\u002fs\u002fzszMzMzM\u002fD9mZmZmZmb+PwAAAAAAAABAzczMzMzMAECZmZmZmZkBQGZmZmZmZgJAMzMzMzMzA0AAAAAAAAAEQM3MzMzMzARAmpmZmZmZBUBnZmZmZmYGQDQzMzMzMwdAAAAAAAAACEDNzMzMzMwIQJqZmZmZmQlAZ2ZmZmZmCkA0MzMzMzMLQAEAAAAAAAxAzszMzMzMDECZmZmZmZkNQGZmZmZmZg5AMzMzMzMzD0AAAAAAAAAQQGdmZmZmZhBAzczMzMzMEEA0MzMzMzMRQJmZmZmZmRFAAAAAAAAAEkBmZmZmZmYSQM3MzMzMzBJAMzMzMzMzE0CamZmZmZkTQAAAAAAAABRAZ2ZmZmZmFEDNzMzMzMwUQDMzMzMzMxVAmpmZmZmZFUAAAAAAAAAWQGdmZmZmZhZAzczMzMzMFkA0MzMzMzMXQJqZmZmZmRdAAAAAAAAAGEBmZmZmZmYYQM3MzMzMzBhAMzMzMzMzGUCamZmZmZkZQAAAAAAAABpAZ2ZmZmZmGkDNzMzMzMwaQDQzMzMzMxtAmpmZmZmZG0ABAAAAAAAcQGdmZmZmZhxAzszMzMzMHEAzMzMzMzMdQJmZmZmZmR1AAAAAAAAAHkBmZmZmZmYeQM3MzMzMzB5AMzMzMzMzH0CamZmZmZkfQAAAAAAAACBAMzMzMzMzIEBnZmZmZmYgQJqZmZmZmSBAzczMzMzMIEAAAAAAAAAhQA=="},"y":{"dtype":"f8","bdata":"AAAAAAAAaUBwHMdxHEdpQENjfWisj2lAnkSmYbvZaUBVVVVVVSVqQCivobyGcmpAMbmCmFzBakCRRx555BFrQBaykIUsZGtAhEM4hEO4a0DiOI7jOA5sQA1zmMMcZmxAAAAAAADAbEBCv9k69BttQL6gL+gLem1AWVpaWlrabUDP8zzP8zxuQG00dX7toW5AidqVqF0Jb0CKlIGnW3NvQP\u002f\u002f\u002f\u002f\u002f\u002f329Az0BUOrIncEAN0iAN0mBwQLVt27Ztm3BAeQ3lNZTXcEBVVVVVVRVxQEuRz7rBVHFAXr169eqVcUCO4ziO49hxQLdLPRm\u002fHXJASZIkSZJkckAOzLUDc61yQHh4eHh4+HJAIT1QObtFc0BVVVVVVZVzQHZiJ3Zi53NAAAAAAAA8dEA0TdM0TZN0QK211lpr7XRAB9bR5n1KdUCqqqqqqqp1QC+PrQgaDnZAck8jLPd0dkD3EdxHcN92QNu2bdu2TXdA\u002f\u002f\u002f\u002f\u002f\u002f+\u002fd0BoL6G9hDZ4QGSfQ2qCsXhAEzuxEzsxeUD09fX19bV5QAAAAAAAQHpAQ2N9aKzPekBVVVVVVWV7QC+5gphcAXxAFrKQhSykfEDiOI7jOE59QAAAAAAAAH5AvqAv6Au6fkDP8zzP83x\u002fQETtStSuJIBAAAAAAACQgEAM0iAN0gCBQHkN5TWUd4FAS5HPusH0gUCO4ziO43iCQEiSJEmSBINAeHh4eHiYg0BVVVVVVTWEQAAAAAAA3IRArbXWWmuNhUCsqqqqqkqGQHNPIyz3FIdA3bZt27bth0BmL6G9hNaIQBE7sRM70YlA\u002ff\u002f\u002f\u002f\u002f\u002ffikBUVVVVVQWMQBSykIUsRI1A\u002f\u002f\u002f\u002f\u002f\u002f+fjkDmeZ7neQ6QQP\u002f\u002f\u002f\u002f\u002f\u002f35BAeA3lNZTHkUCO4ziO48iSQHh4eHh46JNAAAAAAAAslUCrqqqqqpqWQA=="},"type":"scatter"},{"hoverinfo":"skip","marker":{"color":"#b9006e","size":11},"mode":"markers+text","text":["p\u0159\u00edklad: 420 K\u010d"],"textposition":"bottom right","x":[5],"y":[420],"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"title":{"text":"Hodnota akcie podle tempa r\u016fstu dividendy","font":{"size":20}},"xaxis":{"title":{"text":"Tempo r\u016fstu dividendy g (%)"},"hoverformat":".1f","ticksuffix":" %"},"yaxis":{"title":{"text":"Hodnota akcie (K\u010d)"},"tickformat":",d"},"hovermode":"x unified","showlegend":false,"separators":", "},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('115603b1-1e3d-4287-9440-1ed3265077be');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
+<p>Při <span class="math inline">\(g = 0\)</span> dostaneme vzorec pro stálou dividendu. Tempo růstu může být i záporné, pokud čekáme, že dividenda bude klesat.</p>
+</section>
+<section id="očekávaný-výnos-akcie" class="level3 page-columns page-full" data-number="10.4.3">
+<h3 data-number="10.4.3" class="anchored" data-anchor-id="očekávaný-výnos-akcie"><span class="header-section-number">10.4.3</span> Očekávaný výnos akcie</h3>
+<p>Gordonův model lze obrátit. Když známe cenu akcie na burze, vyjádříme z něj výnos, který akcie kupujícímu přinese:</p>
+<div class="formula">
+<p><span class="math display">\[
+r = \frac{D_0 \times (1 + g)}{P} + g = \frac{D_1}{P} + g
+\]</span></p>
+</div>
+<p>Výnos akcie má dvě části: <strong>dividendový výnos</strong> <span class="math inline">\(D_1 / P\)</span> a <strong>růst</strong> <span class="math inline">\(g\)</span>. Stejným tempem jako dividenda totiž v modelu roste i cena akcie, <span class="math inline">\(g\)</span> je tedy kapitálový výnos.</p>
+<p>I tady záleží na zadání. Dividendový výnos se počítá z dividendy <span class="math inline">\(D_1\)</span>, která přijde za rok. Pokud zadání uvádí dividendu <span class="math inline">\(D_0\)</span>, kterou firma právě vyplatila, nejdřív ji zvýšíme o růst.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Akcie stojí 500 Kč. Za rok vyplatí dividendu 20 Kč, která má dál růst o 4 % ročně.</p>
+<p><span class="math display">\[
+r = \frac{20}{500} + 0{,}04 = 0{,}04 + 0{,}04 = 8\%
+\]</span></p>
+<p>Akcie vynáší 8 % ročně: 4 % na dividendě a 4 % na růstu ceny.</p>
+<p>Kdyby firma dividendu 20 Kč právě vyplatila, přišla by za rok dividenda <span class="math inline">\(20 \times 1{,}04 = 20{,}80\)</span> Kč a výnos by byl</p>
+<p><span class="math display">\[
+r = \frac{20 \times 1{,}04}{500} + 0{,}04 = 0{,}0416 + 0{,}04 = 8{,}16\%
+\]</span></p>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Gordonův model vysvětluje i rozdíly v P/E. Vydělíme-li obě strany ziskem na akcii, dostaneme <span class="math inline">\(P/E = \dfrac{D_1 / EPS}{r - g}\)</span>. Čím rychlejší růst <span class="math inline">\(g\)</span> investoři čekají, tím vyšší P/E.</p>
+</div></div></section>
+<section id="dvoufázový-růst-dividendy" class="level3" data-number="10.4.4">
+<h3 data-number="10.4.4" class="anchored" data-anchor-id="dvoufázový-růst-dividendy"><span class="header-section-number">10.4.4</span> Dvoufázový růst dividendy</h3>
+<p>Málokterá firma roste celý život stejným tempem. Mladá firma obvykle několik let roste rychle a pak zpomalí na tempo, které lze udržet dlouhodobě. Gordonův model sám na to nestačí, použijeme ho ale pro druhou fázi:</p>
+<ol type="1">
+<li>Spočítáme dividendy v letech rychlého růstu.</li>
+<li>Na konci rychlého růstu oceníme akcii Gordonovým modelem. Dostaneme její hodnotu k tomuto roku, tzv. <strong>pokračující hodnotu</strong> (terminal value).</li>
+<li>Dividendy i pokračující hodnotu diskontujeme k dnešku a sečteme.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Firma právě vyplatila dividendu 20 Kč. Další 3 roky má dividenda růst o 10 % ročně, potom už jen o 4 % ročně. Požadujete výnos 9 % ročně. Jaká je hodnota akcie?</p>
+<p><strong>1. Dividendy v prvních třech letech:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+D_1 &amp;= 20 \times 1{,}1 = 22 \\
+D_2 &amp;= 22 \times 1{,}1 = 24{,}20 \\
+D_3 &amp;= 24{,}20 \times 1{,}1 = 26{,}62
+\end{aligned}
+\]</span></p>
+<p><strong>2. Hodnota akcie na konci 3. roku.</strong> Od 4. roku roste dividenda stálým tempem 4 %, použijeme tedy Gordonův model s dividendou <span class="math inline">\(D_4 = 26{,}62 \times 1{,}04\)</span>:</p>
+<p><span class="math display">\[
+P_3 = \frac{26{,}62 \times 1{,}04}{0{,}09 - 0{,}04} = \frac{27{,}6848}{0{,}05} = 553{,}70
+\]</span></p>
+<p><strong>3. Současná hodnota.</strong> Na konci 3. roku tak máme dividendu 26,62 Kč a akcii v hodnotě 553,70 Kč, dohromady 580,32 Kč:</p>
+<div id="2c492abe" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="week_10_files/figure-html/cell-4-output-1.svg" class="img-fluid figure-img" alt="Časová osa: 22 Kč v roce 1, 24,20 Kč v roce 2 a 580,32 Kč v roce 3. Platby jsou diskontovány k dnešku na 20,18, 20,37 a 448,11 Kč, dohromady 488,66 Kč."></p>
+</figure>
+</div>
+</div>
+</div>
+<p><span class="math display">\[
+P = \frac{22}{1{,}09} + \frac{24{,}20}{1{,}09^2} + \frac{26{,}62 + 553{,}70}{1{,}09^3} = 488{,}66
+\]</span></p>
+<p>Hodnota akcie je 488,66 Kč.</p>
+</div>
+</div>
+<p>Pozor na krok 3: Gordonův model dává hodnotu <strong>rok před první dividendou</strong>, kterou do něj dosadíme. Z dividendy ve 4. roce proto vyjde hodnota na konci 3. roku a diskontujeme ji třemi roky, ne čtyřmi.</p>
+</section>
+<section id="kdy-dividendový-model-použít" class="level3" data-number="10.4.5">
+<h3 data-number="10.4.5" class="anchored" data-anchor-id="kdy-dividendový-model-použít"><span class="header-section-number">10.4.5</span> Kdy dividendový model použít</h3>
+<p>Dividendový diskontní model je jednoduchý a hodí se pro zavedené firmy, které vyplácejí stabilní dividendu. Má ale slabiny:</p>
+<ul>
+<li>Nelze ho použít na firmy, které dividendu nevyplácejí.</li>
+<li>Výsledek stojí na odhadech <span class="math inline">\(g\)</span> a <span class="math inline">\(r\)</span>, které nikdo nezná přesně, a je na ně velmi citlivý.</li>
+<li>Předpoklad stálého růstu navždy je velké zjednodušení.</li>
+</ul>
+</section>
+<section id="model-diskontovaných-peněžních-toků-dcf" class="level3" data-number="10.4.6">
+<h3 data-number="10.4.6" class="anchored" data-anchor-id="model-diskontovaných-peněžních-toků-dcf"><span class="header-section-number">10.4.6</span> Model diskontovaných peněžních toků (DCF)</h3>
+<p>Firmy, které nevyplácejí dividendu, se oceňují <strong>modelem diskontovaných peněžních toků</strong> (DCF, discounted cash flow). Princip je stejný, jen místo dividend diskontujeme peníze, které firma svou činností vydělá a které může rozdělit investorům (tzv. <strong>volný peněžní tok</strong>, free cash flow):</p>
+<div class="formula">
+<p><span class="math display">\[
+\text{hodnota firmy} = \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \dots
+  + \frac{CF_n}{(1+r)^n} + \frac{TV_n}{(1+r)^n}
+\]</span></p>
+</div>
+<p>Analytik odhadne peněžní toky <span class="math inline">\(CF_1\)</span> až <span class="math inline">\(CF_n\)</span> na několik let dopředu. Vše, co přijde potom, shrne pokračující hodnota <span class="math inline">\(TV_n\)</span>, která se počítá jako rostoucí perpetuita, tedy stejně jako v dvoufázovém modelu:</p>
+<p><span class="math display">\[
+TV_n = \frac{CF_{n+1}}{r - g}
+\]</span></p>
+<p>Výsledkem je hodnota celé firmy. Po odečtení dluhů a vydělení počtem akcií dostaneme hodnotu jedné akcie. Jak se volný peněžní tok počítá z účetních výkazů, je nad rámec tohoto předmětu. Na stejném principu stojí čistá současná hodnota, kterou firmy hodnotí své investice (<a href="./week_12.html">týden 12</a>).</p>
+</section>
+</section>
+<section id="výnosy-a-rizika-akcií" class="level2 page-columns page-full" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="výnosy-a-rizika-akcií"><span class="header-section-number">10.5</span> Výnosy a rizika akcií</h2>
+<section id="historické-výnosy-akcií-v-usa" class="level3 page-columns page-full" data-number="10.5.1">
+<h3 data-number="10.5.1" class="anchored" data-anchor-id="historické-výnosy-akcií-v-usa"><span class="header-section-number">10.5.1</span> Historické výnosy akcií v USA</h3>
+<p>Jak se akciím dařilo ve srovnání s dluhopisy z <a href="./week_09.html">týdne 9</a>? Graf ukazuje <strong>celkový roční výnos</strong> amerických akcií, tedy změnu ceny i dividendy. Akcie zastupuje index S&amp;P 500, který sleduje 500 velkých amerických firem.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Zdroj dat: A. Damodaran, <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html">Historical Returns on Stocks, Bonds and Bills</a>, NYU Stern, leden 2026. Inflace: meziroční změna indexu spotřebitelských cen v prosinci, <a href="https://fred.stlouisfed.org/series/CPIAUCNS">FRED</a>.</p>
+</div></div><div id="0238bb2a" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="63eb32f0-fa6e-4ad6-8d8e-f88ff3530dc3" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("63eb32f0-fa6e-4ad6-8d8e-f88ff3530dc3")) {                    Plotly.newPlot(                        "63eb32f0-fa6e-4ad6-8d8e-f88ff3530dc3",                        [{"hovertemplate":"%{y:.2f} %","marker":{"color":["#0000dc","#b9006e","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#b9006e","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#b9006e","#b9006e","#b9006e","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#b9006e","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#0000dc","#b9006e","#0000dc","#0000dc","#0000dc","#b9006e","#0000dc","#0000dc","#0000dc"]},"name":"V\u00fdnos akci\u00ed (S&P 500)","x":{"dtype":"i2","bdata":"vAe9B74HvwfAB8EHwgfDB8QHxQfGB8cHyAfJB8oHywfMB80HzgfPB9AH0QfSB9MH1AfVB9YH1wfYB9kH2gfbB9wH3QfeB98H4AfhB+IH4wfkB+UH5gfnB+gH6Qc="},"y":{"dtype":"f8","bdata":"PQrXo3C9P0DNzMzMzMwSwOxRuB6FazRA16NwPQpXNkCamZmZmZkYQD0K16NwPT9APQrXo3B9MkA9CtejcD0XQArXo3A9ijBAexSuR+F6P0B7FK5H4XoIwHsUrkfhOj5A9ihcj8L1HUBxPQrXo\u002fAjQEjhehSuR\u002fU\u002fmpmZmZmZQkCuR+F6FK42QM3MzMzMjEBA16NwPQpXPECkcD0K1+M0QI\u002fC9ShcDyLAMzMzMzOzJ8C4HoXrUfg1wFyPwvUoXDxAexSuR+F6JUBSuB6F61ETQLgehetROC9A7FG4HoXrFUBmZmZmZkZCwHE9Ctej8DlApHA9CtejLUDNzMzMzMwAQEjhehSuxy9AMzMzMzMTQEAK16NwPQorQBSuR+F6FPY\u002fCtejcD2KJ0Bcj8L1KJw1QOxRuB6F6xDA9ihcj8I1P0CF61G4HgUyQLgehetReDxACtejcD0KMsCPwvUoXA86QOF6FK5H4ThASOF6FK7HMUA="},"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"annotations":[{"arrowhead":0,"ax":-80,"ay":0,"font":{"size":13},"showarrow":true,"text":"2008: \u221236,6 %","x":2008,"y":-36.55}],"title":{"text":"Ro\u010dn\u00ed v\u00fdnos americk\u00fdch akci\u00ed (S&P 500)","font":{"size":20}},"xaxis":{"title":{"text":"Rok"}},"yaxis":{"title":{"text":"V\u00fdnos za rok (%)"},"ticksuffix":" %"},"hovermode":"x unified","showlegend":false,"separators":", "},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('63eb32f0-fa6e-4ad6-8d8e-f88ff3530dc3');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
+<p>V letech 1980–2025 vynášely akcie v průměru 13,4 % ročně, zhruba dvakrát víc než státní dluhopisy. Výnosy ale silně kolísaly: v nejlepším roce akcie vydělaly přes 37 %, v roce 2008 během finanční krize ztratily víc než třetinu hodnoty.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 19%">
+<col style="width: 20%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Akcie (S&amp;P 500)</th>
+<th style="text-align: center;">Státní dluhopisy</th>
+<th style="text-align: center;">Pokladniční poukázky</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Průměrný roční výnos</td>
+<td style="text-align: center;">13,4 %</td>
+<td style="text-align: center;">6,8 %</td>
+<td style="text-align: center;">4,2 %</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Nejlepší rok</td>
+<td style="text-align: center;">+37,2 % (1995)</td>
+<td style="text-align: center;">+32,8 % (1982)</td>
+<td style="text-align: center;">+14,0 % (1981)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Nejhorší rok</td>
+<td style="text-align: center;">−36,6 % (2008)</td>
+<td style="text-align: center;">−17,8 % (2022)</td>
+<td style="text-align: center;">0,0 % (2014)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Počet ztrátových let ze 46</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p>Průměrná inflace byla ve stejném období 3,2 % ročně. Vyšší průměrný výnos akcií je odměna za vyšší riziko, tzv. <strong>riziková prémie</strong>. Kdyby akcie nevynášely víc než bezpečnější dluhopisy, nikdo by je nekupoval.</p>
+<div id="2c4064c4" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="3df9ff62-263a-40ac-b4c3-575298c193ae" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("3df9ff62-263a-40ac-b4c3-575298c193ae")) {                    Plotly.newPlot(                        "3df9ff62-263a-40ac-b4c3-575298c193ae",                        [{"fill":"tozeroy","fillcolor":"rgba(128, 128, 128, 0.3)","line":{"width":0},"mode":"lines","name":"Inflace (stejn\u00e1 kupn\u00ed s\u00edla)","x":{"dtype":"i2","bdata":"uwe8B70Hvge\u002fB8AHwQfCB8MHxAfFB8YHxwfIB8kHygfLB8wHzQfOB88H0AfRB9IH0wfUB9UH1gfXB9gH2QfaB9sH3AfdB94H3wfgB+EH4gfjB+QH5QfmB+cH6AfpBw=="},"y":{"dtype":"f8","bdata":"AAAAAAAAWUDhehSuRyFcQOe7W1mio15AHWkJnQvQX0A+HxgzWoJgQLV\u002fEBNLKWFARE0DCD3QYUAGFaOpZgJiQBoKcUykzmJAKivz7nKjY0DmppCvOY1kQF5FAquvzmVAb1raMoR5ZkBKfO1NXiBnQNR0obItw2dAsoODcJllaEDmsSrTPARpQNEel7jb2GlA+u\u002fOSVhJakAAn8b0r7VqQIELHfbvbGtAu2PNdvJabED7HV33dctsQMA8e83mem1ALT3Sh8gIbkC542cKcANvQLvV3rN7CXBA7qpYMsNxcECjaupShR1xQFslh9N2IXFAmie7sL+YcUDpZvvsUdxxQLw1TiOpY3JAcQYU8ZK1ckAu9+Tnav1yQF\u002f1qEddInNAxjvgVx9Gc0CG268+QqxzQK0sqRmGFnRAJrgY\u002fL54dEDY4ZRVwvB0QLiPblqqOXVA6fqZCzK4dkDkp7MQVy94QGgjeP+\u002f\u002fnhA16SGgqy3eUBUX4\u002fHHWh6QA=="},"type":"scatter","hovertemplate":"%{y:,.0f} USD"},{"line":{"color":"grey","dash":"dot","width":3},"mode":"lines","name":"Pokladni\u010dn\u00ed pouk\u00e1zky (T-bills)","x":{"dtype":"i2","bdata":"uwe8B70Hvge\u002fB8AHwQfCB8MHxAfFB8YHxwfIB8kHygfLB8wHzQfOB88H0AfRB9IH0wfUB9UH1gfXB9gH2QfaB9sH3AfdB94H3wfgB+EH4gfjB+QH5QfmB+cH6AfpBw=="},"y":{"dtype":"f8","bdata":"AAAAAAAAWUAqXI\u002fC9dhbQN2eILHdwV9AQdBo67ujYUAgQhpr5DdjQA8u9xDyH2VAoNhNYHDBZkBk01oWtCdoQNcus49AmGlARHNwzrNba0A8tJogUKdtQBWd+Maj829AkomcWWXccEA4z8zB5nNxQDV9PuMQ\u002fXFAYICBrk7GckC+yRMnWNZzQKHOZAvh23RAQVTLg43xdUBYxAnoXwV3QGv+\u002f\u002fMTH3hAm996JpWReUA1aM5vXnV6QPQvq79z5HpAAuUPrFwre0Bj2oSwvIx7QL6Izc\u002fVb3xACZHfPujQfUC1JySI3CZ\u002fQF9XbG+Cln9ABoOnp6Oif0BIJgw1+q1\u002fQCw2yUgIsn9A\u002fGbjwVW5f0B8M8YxNb5\u002fQAI2hUmlwH9AYyr7wLXEf0BnWOERvN5\u002fQMurZg4fFoBATj\u002fPkD9ngEAoHq052r+AQG\u002fl\u002fOhJz4BAp5UekQLRgEC4ba8X\u002fCqBQG144jgKE4JAZDsrebgCg0Ci3o4KnM+DQA=="},"type":"scatter","hovertemplate":"%{y:,.0f} USD"},{"line":{"color":"teal","dash":"dash","width":3},"mode":"lines","name":"St\u00e1tn\u00ed dluhopisy (T-bonds)","x":{"dtype":"i2","bdata":"uwe8B70Hvge\u002fB8AHwQfCB8MHxAfFB8YHxwfIB8kHygfLB8wHzQfOB88H0AfRB9IH0wfUB9UH1gfXB9gH2QfaB9sH3AfdB94H3wfgB+EH4gfjB+QH5QfmB+cH6AfpBw=="},"y":{"dtype":"f8","bdata":"AAAAAAAAWUBwPQrXo0BYQLahYpy\u002fPVpAFYirvutsYUCXvc+bq\u002fthQB+\u002fzhjBc2RAembM4N21aUD1GKOm8fNvQAS+oP43Xm5AvNqTN6FucEBGxLVVyFZzQP1Knh22i3RAbwl2CKugd0CfbG3M0tZ5QOEMDTPKgn1Ahz40fmIje0BQTfO5UMGAQPb5TA2n\u002foBA8yk2fxuvgkDQJ7Y9v3iFQFSRlPFDs4NA7MolMnn7hkAmFvLRLkOIQFcsiVFQ7otAwCfKJHwJjEDkx8wGwUuNQIAZHzj\u002fIo5Axmno\u002fDW6jkDMy0vurO6QQFgYc\u002f7xVZRADlLnTgsTkkD0VOf6fZqTQGjffE91v5ZAsbBsOmpsl0DY\u002f9W+vUqVQP17oSSylJdA26soMPfhl0CKdZzlJgyYQKAarDGGuJhAWqBwLEK3mEAegR7KNBmbQGFXdBExK55ACL8ZnNPVnEAo+WacpbGXQGqC+Xf+nJhAIO0XYKg1mEBBhWM0ExmaQA=="},"type":"scatter","hovertemplate":"%{y:,.0f} USD"},{"line":{"color":"#0000dc","dash":"solid","width":3},"mode":"lines","name":"Akcie (S&P 500)","x":{"dtype":"i2","bdata":"uwe8B70Hvge\u002fB8AHwQfCB8MHxAfFB8YHxwfIB8kHygfLB8wHzQfOB88H0AfRB9IH0wfUB9UH1gfXB9gH2QfaB9sH3AfdB94H3wfgB+EH4gfjB+QH5QfmB+cH6AfpBw=="},"y":{"dtype":"f8","bdata":"AAAAAAAAWUBH4XoUrndgQNbAVgkWY19Am5xY4uzlYkD3xtXEtx5nQF1fCxC4imhA88dQX7gacEB0vwzcAhVzQH1CzI\u002fUMHRA7SwcPsGHd0DugfRqCPB+QFFrVwyu\u002fX1A6bmDPVKHg0DewcY5xf2EQG+\u002f7QqJFYdA72Ac1CFkh0Bv6nvQ2wuQQB6Pt1+Fr5NAuuiCOZozmkBJ93u7RNCgQO9RyB9uU6RAer8zeI99okDMoy4uokygQGKkgtbPb5lAf+0w5kdToEAsbAC4IhSiQHGVqLCs86JAEBdcXgXppUASuLUzZRynQHGDbdnnU51AieX8arp3okDmnrmkYDSlQK4q2ZlfpqVAn38ZfA4XqUDCHufdCJSwQEMpl\u002f\u002fT0bJAs4zsa1AUs0Aq6gGrMlO1QNYeVDvu7rlAfaiElBrWuEDMzIboO0vAQMg9YfDjOsNANZaQ8W+0yEC+wFpAgj\u002fEQD9HoMhUhslAVHkRohLgz0BBcVuEd8XSQA=="},"type":"scatter","hovertemplate":"%{y:,.0f} USD"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"title":{"text":"Hodnota investice 100 USD od roku 1980","font":{"size":20}},"legend":{"x":0.02,"y":0.98,"traceorder":"reversed"},"xaxis":{"title":{"text":"Rok"}},"yaxis":{"title":{"text":"Hodnota investice (USD)"},"tickformat":",d"},"hovermode":"x unified","separators":", "},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('3df9ff62-263a-40ac-b4c3-575298c193ae');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
+<p>Díky složenému úročení je rozdíl za 46 let obrovský. Ze 100 USD investovaných na začátku roku 1980 by na konci roku 2025 bylo 19 222 USD v akciích, ale jen 1 670 USD ve státních dluhopisech a 634 USD v pokladničních poukázkách. Na udržení kupní síly by stačilo 423 USD.</p>
+<p>Cesta k tomu ale nebyla klidná. V letech 2000–2002 ztratily akcie tři roky po sobě, dohromady 37 %, a v roce 2008 dalších 37 %. Na konci roku 2008 tak měla investice nižší hodnotu než o deset let dřív. Akcie jsou proto vhodné pro peníze, které investor nebude několik let potřebovat a propad může přečkat.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Vyplatí se časovat trh?">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -867,152 +1035,491 @@ Vyplatí se časovat trh?
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>V období od roku 1980 do poloviny roku 2020 by investice 10 000 dolarů do indexového fondu S&amp;P 500 vynesla investorovi 697 421 dolarů. Avšak pokud by investor zmeškal 5 nejvýkonnějších dní na trhu, snížil by se konečný zůstatek portfolia na 432 411 dolarů. Pokud by zůstal mimo trh během 10 nejlepších dnů, zůstatek by klesl na pouhých 313 377 dolarů, což je méně než polovina výnosu z celého období.</p>
+<p>Investor, který na konci roku 1979 vložil 10 000 USD do indexu S&amp;P 500 a nechal je tam, měl na konci roku 2025 celkem 634 195 USD (bez dividend). Kdyby za těch 46 let zmeškal jen 5 dnů s nejvyšším růstem, měl by 391 874 USD. Bez 10 nejlepších dnů by to bylo 275 305 USD, tedy méně než polovina.</p>
+<p>Osm z deseti nejlepších dnů přitom přišlo uprostřed největších propadů: za finanční krize na podzim 2008 a v březnu 2009 a při pandemii na jaře 2020. Kdo při propadu akcie prodá a čeká na klidnější dobu, obvykle zmešká právě tyto dny.</p>
 </div>
 </div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Výpočet z denních hodnot indexu S&amp;P 500 (Yahoo Finance). Index nezahrnuje dividendy, proto jsou částky nižší než v grafu.</p>
+</div></div></section>
+<section id="rizika-akcií" class="level3" data-number="10.5.2">
+<h3 data-number="10.5.2" class="anchored" data-anchor-id="rizika-akcií"><span class="header-section-number">10.5.2</span> Rizika akcií</h3>
 <ul>
-<li>Kalkulačky pro nalezení výnosů ve vybraných obdobích pro americké akcie, dluhopisy a inflaci. <a href="https://openstax.org/r/6-what-to-invest-in" class="uri">https://openstax.org/r/6-what-to-invest-in</a></li>
-<li>Další kalkulačka pro globální akciové trhy. <a href="https://openstax.org/r/returns-of-global-stocks" class="uri">https://openstax.org/r/returns-of-global-stocks</a></li>
-<li>Globální zpráva o bohatství publikovaná společností Credit Suisse. <a href="https://openstax.org/r/global-wealth-report" class="uri">https://openstax.org/r/global-wealth-report</a></li>
+<li><strong>Tržní riziko</strong>: ceny akcií kolísají s celým trhem, například v recesi nebo při panice investorů. Postihuje všechny akcie najednou.</li>
+<li><strong>Riziko konkrétní firmy</strong>: firmě se přestane dařit, ztratí zákazníky nebo zkrachuje. Při úpadku jsou akcionáři na řadě poslední a obvykle nedostanou nic. Toto riziko lze snížit rozložením peněz mezi mnoho firem (<a href="./week_11.html">týden 11</a>).</li>
+<li><strong>Úrokové riziko</strong>: když rostou úrokové sazby, roste i výnos, který investoři požadují. Budoucí dividendy se diskontují vyšší sazbou a hodnota akcie klesá, stejně jako cena dluhopisu.</li>
+<li><strong>Inflační riziko</strong>: inflace snižuje reálný výnos. Firmy ale mohou zdražovat, akcie proto před inflací dlouhodobě chrání lépe než dluhopisy s pevným kupónem.</li>
+<li><strong>Měnové riziko</strong>: u akcie v cizí měně může investor prodělat na změně kurzu.</li>
+<li><strong>Riziko likvidity</strong>: málo obchodovanou akcii nemusí jít rychle prodat bez slevy.</li>
+<li><strong>Politické a regulační riziko</strong>: změna zákonů, daní nebo regulace může snížit zisky celého odvětví.</li>
 </ul>
+</section>
+</section>
+<section id="shrnutí" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="shrnutí"><span class="header-section-number">10.6</span> Shrnutí</h2>
+<ul>
+<li>Akcie je podíl na vlastnictví firmy. Akcionář má právo na podíl na zisku, na řízení a na likvidačním zůstatku, při úpadku je ale na řadě až po věřitelích.</li>
+<li>Prioritní akcie mají přednost při výplatě dividendy, která bývá pevná, zpravidla ale nemají hlasovací právo.</li>
+<li>Akcionář vydělává na dividendě a na růstu ceny akcie. Dividenda není zaručená. Štěpení akcií zvýší počet akcií a úměrně sníží jejich cenu, hodnota podílu se nemění.</li>
+<li>P/E a P/B porovnávají cenu akcie se ziskem a s účetní hodnotou. Smysl mají hlavně při srovnání s podobnými firmami.</li>
+<li>Vnitřní hodnota akcie je současná hodnota budoucích dividend. Při stálé dividendě je to perpetuita, při stálém růstu rostoucí perpetuita (Gordonův model).</li>
+<li>V Gordonově modelu je v čitateli dividenda, která přijde za rok. Model platí jen pro <span class="math inline">\(r &gt; g\)</span> a je velmi citlivý na odhad obou hodnot.</li>
+<li>Akcie dlouhodobě vynášejí víc než dluhopisy, jejich cena ale mnohem víc kolísá.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Výpočet</th>
+<th style="text-align: left;">Vzorec</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Tržní kapitalizace</td>
+<td style="text-align: left;">cena akcie <span class="math inline">\(\times\)</span> počet akcií</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dividendový výnos</td>
+<td style="text-align: left;"><span class="math inline">\(\dfrac{D}{P}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Zisk na akcii (<span class="math inline">\(EPS\)</span>)</td>
+<td style="text-align: left;">čistý zisk / počet akcií</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Poměr ceny a zisku</td>
+<td style="text-align: left;"><span class="math inline">\(P/E = \dfrac{P}{EPS}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Účetní hodnota na akcii (<span class="math inline">\(BV\)</span>)</td>
+<td style="text-align: left;">(aktiva − závazky) / počet akcií</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Poměr ceny a účetní hodnoty</td>
+<td style="text-align: left;"><span class="math inline">\(P/B = \dfrac{P}{BV}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Hodnota akcie se stálou dividendou</td>
+<td style="text-align: left;"><span class="math inline">\(P = \dfrac{D}{r}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hodnota akcie s rostoucí dividendou (Gordonův model)</td>
+<td style="text-align: left;"><span class="math inline">\(P = \dfrac{D_0 \times (1 + g)}{r - g} = \dfrac{D_1}{r - g}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Očekávaný výnos akcie</td>
+<td style="text-align: left;"><span class="math inline">\(r = \dfrac{D_0 \times (1 + g)}{P} + g = \dfrac{D_1}{P} + g\)</span></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="příklady-k-procvičení" class="level2" data-number="10.7">
 <h2 data-number="10.7" class="anchored" data-anchor-id="příklady-k-procvičení"><span class="header-section-number">10.7</span> Příklady k procvičení</h2>
-<ol type="1">
-<li>Vlastníte 20 akcií firmy <span class="math inline">\(X\)</span>, které stojí $484. Firma oznámila štěpení akcií v poměru 4:1. Jaká bude nová cena akcií a kolik jich budete vlastnit?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>Pokud příklad neuvádí jinak, vyplácí se dividenda jednou ročně a diskontujeme složeně.</p>
+<section id="štěpení-akcií-a-tržní-kapitalizace" class="level3" data-number="10.7.1">
+<h3 data-number="10.7.1" class="anchored" data-anchor-id="štěpení-akcií-a-tržní-kapitalizace"><span class="header-section-number">10.7.1</span> Štěpení akcií a tržní kapitalizace</h3>
+<div class="exercise" data-number="1">
+<p>Vlastníte 20 akcií firmy, každá stojí 484 Kč. Firma oznámila štěpení akcií v poměru 4:1. Kolik akcií budete vlastnit a jaká bude cena jedné akcie?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Počet akcií (ks)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="80" aria-label="Počet akcií (ks)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Cena akcie (Kč)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="121" aria-label="Cena akcie (Kč)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="5; 1936">
+<p>To by bylo zpětné štěpení. Při štěpení 4:1 dostanete za jednu starou akcii čtyři nové, akcií tedy přibude a jejich cena klesne.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Za každou starou akcii dostanete čtyři nové, cena jedné akcie klesne na čtvrtinu:</p>
+<p><span class="math display">\[
+20 \times 4 = 80
+\qquad \qquad
+\frac{484}{4} = 121
+\]</span></p>
+<p>Budete mít 80 akcií po 121 Kč. Hodnota vašeho podílu se nezmění: <span class="math inline">\(20 \times 484 = 80 \times 121 = 9\,680\)</span> Kč.</p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<div class="exercise" data-number="2">
+<p>Vlastníte 300 akcií firmy, každá stojí 230 Kč. Firma oznámila štěpení akcií v poměru 2:1. Kolik akcií budete vlastnit a jaká bude cena jedné akcie?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Počet akcií (ks)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="600" aria-label="Počet akcií (ks)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Cena akcie (Kč)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="115" aria-label="Cena akcie (Kč)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+300 \times 2 = 600
+\qquad \qquad
+\frac{230}{2} = 115
+\]</span></p>
+<p>Budete mít 600 akcií po 115 Kč, dohromady stále 69 000 Kč.</p>
+</details>
 </div>
-<div id="callout-15" class="callout-15-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>80 kusů, cena $121</p>
+<div class="exercise" data-number="3">
+<p>Firma má 25 milionů akcií a jedna stojí 320 Kč. Firma rozštěpí akcie v poměru 5:1. Jaká bude po štěpení cena jedné akcie a jaká bude tržní kapitalizace firmy?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Cena akcie (Kč)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="64" aria-label="Cena akcie (Kč)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Tržní kapitalizace (mil. Kč)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="8000" aria-label="Tržní kapitalizace (mil. Kč)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="1600">
+<p>Štěpením klesne cena akcie, ale ve stejném poměru vzroste počet akcií. Po štěpení jich je 125 milionů, tržní kapitalizace se proto nezmění.</p>
 </div>
+<div class="exercise-mistake" hidden="hidden" data-answer="40000">
+<p>Cenu po štěpení (64 Kč) vynásobte novým počtem akcií (125 milionů). Tržní kapitalizace se štěpením nemění.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Cena akcie klesne na pětinu, počet akcií vzroste pětkrát:</p>
+<p><span class="math display">\[
+\frac{320}{5} = 64
+\qquad \qquad
+25 \times 5 = 125
+\]</span></p>
+<p>Po štěpení má firma 125 milionů akcií po 64 Kč. Tržní kapitalizace je <span class="math inline">\(125 \times 64 = 8\,000\)</span> mil. Kč, tedy 8 mld. Kč, stejně jako před štěpením (<span class="math inline">\(25 \times 320 = 8\,000\)</span> mil. Kč).</p>
+</details>
 </div>
-<ol start="2" type="1">
-<li>Vlastníte 300 akcií firmy <span class="math inline">\(Y\)</span>, které stojí $230. Firma oznámila štěpení akcií v poměru 2:1. Jaká bude nová cena akcií a kolik jich budete vlastnit?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+</section>
+<section id="dividendový-výnos-pe-a-pb" class="level3" data-number="10.7.2">
+<h3 data-number="10.7.2" class="anchored" data-anchor-id="dividendový-výnos-pe-a-pb"><span class="header-section-number">10.7.2</span> Dividendový výnos, P/E a P/B</h3>
+<div class="exercise" data-number="1" data-unit="%">
+<p>Akcie stojí 1 250 Kč a firma vyplácí dividendu 50 Kč ročně. Jaký je dividendový výnos?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="4" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="25">
+<p>To je poměr ceny a dividendy. Dividendový výnos je dividenda dělená cenou akcie.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\frac{50}{1\,250} = 0{,}04 = 4\%
+\]</span></p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<div class="exercise" data-number="2">
+<p>Firma vydělala za rok 180 mil. Kč a má 12 milionů akcií. Akcie stojí 330 Kč. Jaký je zisk na akcii a jaké je P/E?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Zisk na akcii (Kč)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="15" aria-label="Zisk na akcii (Kč)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">P/E</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="22" aria-label="P/E"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+EPS = \frac{180\,000\,000}{12\,000\,000} = 15
+\qquad \qquad
+P/E = \frac{330}{15} = 22
+\]</span></p>
+<p>Zisk na akcii je 15 Kč. Investoři platí 22 Kč za každou korunu ročního zisku.</p>
+</details>
 </div>
-<div id="callout-16" class="callout-16-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>600 kusů, cena $115</p>
+<div class="exercise" data-number="3" data-unit="Kč">
+<p>Firma má zisk na akcii 32 Kč. Podobné firmy v odvětví se obchodují s P/E = 14. Jakou cenu akcie byste podle odvětví čekali?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="448" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="2.29">
+<p>Zisk na akcii hodnotou P/E nedělte, ale násobte: <span class="math inline">\(P = P/E \times EPS\)</span>.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Z <span class="math inline">\(P/E = P / EPS\)</span> vyjádříme cenu:</p>
+<p><span class="math display">\[
+P = P/E \times EPS = 14 \times 32 = 448
+\]</span></p>
+<p>Odpovídající cena je 448 Kč.</p>
+</details>
 </div>
+<div class="exercise" data-number="4">
+<p>Firma má aktiva 900 mil. Kč, závazky 500 mil. Kč a 8 milionů akcií. Akcie stojí 40 Kč. Jaká je účetní hodnota na akcii a jaké je P/B?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Účetní hodnota na akcii (Kč)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="50" aria-label="Účetní hodnota na akcii (Kč)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">P/B</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="0.8" aria-label="P/B"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="112.5; 0.3556">
+<p>Účetní hodnota vlastního kapitálu jsou aktiva po odečtení závazků, tedy 400 mil. Kč.</p>
 </div>
-<ol start="3" type="1">
-<li>Kmenová akcie dané firmy vyplácí dividendu ve výši $30 ročně. Jaká bude hodnota akcie, pokud je vaše diskontní sazba 11.4% ročně a očekáváte tempo růstu dividendy ve výši 11.1% ročně?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise-mistake" hidden="hidden" data-answer="1.25">
+<p>P/B je cena dělená účetní hodnotou na akcii, ne naopak: <span class="math inline">\(40 / 50\)</span>.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+BV = \frac{900\,000\,000 - 500\,000\,000}{8\,000\,000} = 50
+\qquad \qquad
+P/B = \frac{40}{50} = 0{,}8
+\]</span></p>
+<p>Účetní hodnota na akcii je 50 Kč. P/B je nižší než 1: akcie se prodává levněji, než kolik na ni připadá vlastního kapitálu v účetnictví.</p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</section>
+<section id="prioritní-akcie" class="level3" data-number="10.7.3">
+<h3 data-number="10.7.3" class="anchored" data-anchor-id="prioritní-akcie"><span class="header-section-number">10.7.3</span> Prioritní akcie</h3>
+<div class="exercise" data-number="1" data-unit="Kč">
+<p>Prioritní akcie vyplácí pevnou dividendu 5 Kč ročně. Jaká je její hodnota, pokud požadujete výnos 13,04 % ročně?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="38.34" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="0.65">
+<p>Dividendu požadovaným výnosem nenásobte, ale dělte: <span class="math inline">\(5 / 0{,}1304\)</span>.</p>
 </div>
-<div id="callout-17" class="callout-17-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>$11 110</p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Stálá dividenda bez splatnosti je perpetuita:</p>
+<p><span class="math display">\[
+P = \frac{5}{0{,}1304} = 38{,}34
+\]</span></p>
+<p>Hodnota akcie je 38,34 Kč.</p>
+</details>
 </div>
+<div class="exercise" data-number="2" data-unit="Kč">
+<p>Prioritní akcie vyplácí pevnou dividendu 17 Kč ročně. Jaká je její hodnota, pokud požadujete výnos 10,3 % ročně?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="165.05" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="1.75">
+<p>Dividendu požadovaným výnosem nenásobte, ale dělte: <span class="math inline">\(17 / 0{,}103\)</span>.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+P = \frac{17}{0{,}103} = 165{,}05
+\]</span></p>
+<p>Hodnota akcie je 165,05 Kč.</p>
+</details>
 </div>
-<ol start="4" type="1">
-<li>Kmenová akcie dané firmy vyplácí dividendu ve výši $5 ročně. Jaká bude hodnota akcie, pokud je vaše diskontní sazba 7.2% ročně a očekáváte tempo růstu dividendy ve výši 0% ročně?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise" data-number="3" data-unit="%">
+<p>Prioritní akcie se jmenovitou hodnotou 1 000 Kč vyplácí ročně dividendu 6 % ze jmenovité hodnoty. Na burze se prodává za 750 Kč. Jaký výnos přinese investorovi, který ji teď koupí?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="8" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="6">
+<p>To je dividenda vzhledem ke jmenovité hodnotě. Investor ale za akcii zaplatil 750 Kč, dividendu 60 Kč proto vydělte touto cenou.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<div class="exercise-mistake" hidden="hidden" data-answer="12.5">
+<p>Výnos je dividenda dělená cenou, ne naopak: <span class="math inline">\(60 / 750\)</span>.</p>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Dividenda se počítá ze jmenovité hodnoty: <span class="math inline">\(0{,}06 \times 1\,000 = 60\)</span> Kč. Výnos ale investor počítá z ceny, kterou zaplatil:</p>
+<p><span class="math display">\[
+r = \frac{60}{750} = 0{,}08 = 8\%
+\]</span></p>
+<p>Akcie vynáší 8 % ročně. Je to víc než 6 %, protože ji investor koupil pod jmenovitou hodnotou.</p>
+</details>
 </div>
-<div id="callout-18" class="callout-18-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>$69.44</p>
+</section>
+<section id="gordonův-model" class="level3" data-number="10.7.4">
+<h3 data-number="10.7.4" class="anchored" data-anchor-id="gordonův-model"><span class="header-section-number">10.7.4</span> Gordonův model</h3>
+<div class="exercise" data-number="1" data-unit="Kč">
+<p>Firma právě vyplatila dividendu 12 Kč na akcii. Očekáváte, že dividenda poroste o 3 % ročně, a požadujete výnos 9,8 % ročně. Jaká je hodnota akcie?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="181.76" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="176.47">
+<p>Do čitatele patří dividenda, která přijde za rok. Firma 12 Kč právě vyplatila, nejdřív je proto zvyšte o růst: <span class="math inline">\(12 \times 1{,}03\)</span>.</p>
 </div>
+<div class="exercise-mistake" hidden="hidden" data-answer="126.12">
+<p>Ve jmenovateli chybí růst. Dividendu dělte rozdílem <span class="math inline">\(r - g = 0{,}098 - 0{,}03\)</span>.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Dividenda 12 Kč už byla vyplacena, je to <span class="math inline">\(D_0\)</span>. Za rok bude <span class="math inline">\(D_1 = 12 \times 1{,}03 = 12{,}36\)</span> Kč:</p>
+<p><span class="math display">\[
+P = \frac{12 \times 1{,}03}{0{,}098 - 0{,}03} = \frac{12{,}36}{0{,}068} = 181{,}76
+\]</span></p>
+<p>Hodnota akcie je 181,76 Kč.</p>
+</details>
 </div>
-<ol start="5" type="1">
-<li>Kmenová akcie dané firmy vyplácí dividendu ve výši $12 ročně. Jaká bude hodnota akcie, pokud je vaše diskontní sazba 9.8% ročně a očekáváte tempo růstu dividendy ve výši 3% ročně?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise" data-number="2" data-unit="Kč">
+<p>Firma za rok vyplatí dividendu 30 Kč na akcii. Očekáváte, že dividenda pak poroste o 5 % ročně, a požadujete výnos 11 % ročně. Jaká je hodnota akcie?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="500" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="525">
+<p>Dividendu 30 Kč firma vyplatí až za rok, je to už <span class="math inline">\(D_1\)</span>. Růstem ji znovu nenásobte.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<div class="exercise-mistake" hidden="hidden" data-answer="272.73">
+<p>Ve jmenovateli chybí růst. Dividendu dělte rozdílem <span class="math inline">\(r - g = 0{,}11 - 0{,}05\)</span>.</p>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Dividenda 30 Kč přijde za rok, je to přímo <span class="math inline">\(D_1\)</span>:</p>
+<p><span class="math display">\[
+P = \frac{30}{0{,}11 - 0{,}05} = \frac{30}{0{,}06} = 500
+\]</span></p>
+<p>Hodnota akcie je 500 Kč.</p>
+</details>
 </div>
-<div id="callout-19" class="callout-19-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>$181.76</p>
+<div class="exercise" data-number="3" data-unit="Kč">
+<p>Firma právě vyplatila dividendu 5 Kč na akcii a neočekáváte, že by dividenda v budoucnu rostla. Jaká je hodnota akcie, pokud požadujete výnos 7,2 % ročně?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="69.44" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Při nulovém růstu je <span class="math inline">\(D_1 = D_0 = 5\)</span> Kč a z Gordonova modelu zbude perpetuita:</p>
+<p><span class="math display">\[
+P = \frac{5}{0{,}072} = 69{,}44
+\]</span></p>
+<p>Hodnota akcie je 69,44 Kč.</p>
+</details>
 </div>
+<div class="exercise" data-number="4" data-unit="Kč">
+<p>Firma právě vyplatila dividendu 8 Kč na akcii. Očekáváte, že dividenda poroste o 6 % ročně, a požadujete výnos 10 % ročně. Akcie se na burze prodává za 190 Kč. Jaká je její vnitřní hodnota? Je akcie podhodnocená, nebo nadhodnocená?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="212" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="200">
+<p>Do čitatele patří dividenda, která přijde za rok. Firma 8 Kč právě vyplatila, nejdřív je proto zvyšte o růst: <span class="math inline">\(8 \times 1{,}06\)</span>.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+P = \frac{8 \times 1{,}06}{0{,}10 - 0{,}06} = \frac{8{,}48}{0{,}04} = 212
+\]</span></p>
+<p>Vnitřní hodnota je 212 Kč, tedy víc než tržní cena 190 Kč. Akcie je podle modelu podhodnocená.</p>
+</details>
 </div>
-<ol start="6" type="1">
-<li>Preferenční akcie dané firmy vyplácí fixní dividendu ve výši $5 ročně. Jaká bude hodnota akcie, pokud je vaše diskontní sazba 13.04% ročně?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise" data-number="5" data-unit="Kč">
+<p>Firma za rok vyplatí dividendu 15 Kč na akcii. Její trh se zmenšuje a očekáváte, že dividenda bude potom každý rok o 2 % klesat. Jaká je hodnota akcie, pokud požadujete výnos 8 % ročně?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="150" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="250">
+<p>Takhle by dividenda o 2 % ročně rostla. Klesá, proto je <span class="math inline">\(g = -0{,}02\)</span> a ve jmenovateli vyjde <span class="math inline">\(0{,}08 + 0{,}02\)</span>.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<div class="exercise-mistake" hidden="hidden" data-answer="187.5">
+<p>Takhle vychází akcie bez růstu. Dividenda ale každý rok o 2 % klesá, ve jmenovateli proto bude <span class="math inline">\(0{,}08 + 0{,}02\)</span>.</p>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Dividenda klesá, tempo růstu je záporné: <span class="math inline">\(g = -0{,}02\)</span>.</p>
+<p><span class="math display">\[
+P = \frac{15}{0{,}08 - (-0{,}02)} = \frac{15}{0{,}10} = 150
+\]</span></p>
+<p>Hodnota akcie je 150 Kč.</p>
+</details>
 </div>
-<div id="callout-20" class="callout-20-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>$38.34</p>
+<div class="exercise" data-number="6" data-unit="%">
+<p>Akcie se na burze prodává za 640 Kč. Firma za rok vyplatí dividendu 32 Kč, která má dál růst o 3,5 % ročně. Jaký výnos akcie investorovi přinese?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="8.5" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="5">
+<p>To je jen dividendový výnos. Přičtěte k němu tempo růstu dividendy, kterým roste i cena akcie.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+r = \frac{D_1}{P} + g = \frac{32}{640} + 0{,}035 = 0{,}05 + 0{,}035 = 8{,}5\%
+\]</span></p>
+<p>Akcie vynáší 8,5 % ročně: 5 % na dividendě a 3,5 % na růstu ceny.</p>
+</details>
 </div>
+<div class="exercise" data-number="7" data-unit="%">
+<p>Akcie se na burze prodává za 400 Kč. Firma právě vyplatila dividendu 20 Kč a očekává se, že dividenda poroste o 4 % ročně. Jaký výnos akcie investorovi přinese?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="9.2" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="9">
+<p>Dividendový výnos se počítá z dividendy, která přijde za rok. Firma 20 Kč právě vyplatila, nejdřív je proto zvyšte o růst: <span class="math inline">\(20 \times 1{,}04\)</span>.</p>
 </div>
-<ol start="7" type="1">
-<li>Preferenční akcie dané firmy vyplácí fixní dividendu ve výši $17 ročně. Jaká bude hodnota akcie, pokud je vaše diskontní sazba 10.3% ročně?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise-mistake" hidden="hidden" data-answer="5.2">
+<p>To je jen dividendový výnos. Přičtěte k němu tempo růstu dividendy, kterým roste i cena akcie.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Dividenda 20 Kč už byla vyplacena. Za rok bude <span class="math inline">\(D_1 = 20 \times 1{,}04 = 20{,}80\)</span> Kč:</p>
+<p><span class="math display">\[
+r = \frac{D_1}{P} + g = \frac{20{,}80}{400} + 0{,}04 = 0{,}052 + 0{,}04 = 9{,}2\%
+\]</span></p>
+<p>Akcie vynáší 9,2 % ročně.</p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</section>
+<section id="dvoufázový-růst-dividendy-1" class="level3" data-number="10.7.5">
+<h3 data-number="10.7.5" class="anchored" data-anchor-id="dvoufázový-růst-dividendy-1"><span class="header-section-number">10.7.5</span> Dvoufázový růst dividendy</h3>
+<div class="exercise" data-number="1" data-unit="Kč">
+<p>Firma právě vyplatila dividendu 10 Kč na akcii. Další 2 roky má dividenda růst o 20 % ročně, potom už jen o 5 % ročně. Jaká je hodnota akcie, pokud požadujete výnos 11 % ročně?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="227.03" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="206.76">
+<p>Hodnota <span class="math inline">\(P_2\)</span> je hodnota akcie na konci 2. roku, diskontujte ji proto dvěma roky, ne třemi.</p>
 </div>
-<div id="callout-21" class="callout-21-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>$165.05</p>
+<div class="exercise-mistake" hidden="hidden" data-answer="22.50">
+<p>To je jen současná hodnota dividend z prvních dvou let. Přičtěte současnou hodnotu akcie na konci 2. roku, která shrnuje všechny další dividendy.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Dividendy v letech rychlého růstu:</p>
+<p><span class="math display">\[
+\begin{aligned}
+D_1 &amp;= 10 \times 1{,}2 = 12 \\
+D_2 &amp;= 12 \times 1{,}2 = 14{,}40
+\end{aligned}
+\]</span></p>
+<p>Od 3. roku roste dividenda o 5 %. Hodnota akcie na konci 2. roku podle Gordonova modelu:</p>
+<p><span class="math display">\[
+P_2 = \frac{14{,}40 \times 1{,}05}{0{,}11 - 0{,}05} = \frac{15{,}12}{0{,}06} = 252
+\]</span></p>
+<p>Dividendy i hodnotu <span class="math inline">\(P_2\)</span> diskontujeme k dnešku:</p>
+<p><span class="math display">\[
+\begin{aligned}
+P &amp;= \frac{12}{1{,}11} + \frac{14{,}40 + 252}{1{,}11^2} \\
+  &amp;= 10{,}81 + 216{,}22 = 227{,}03
+\end{aligned}
+\]</span></p>
+<p>Hodnota akcie je 227,03 Kč.</p>
+</details>
 </div>
+<div class="exercise" data-number="2" data-unit="Kč">
+<p>Firma právě vyplatila dividendu 40 Kč na akcii. Další 3 roky má dividenda růst o 8 % ročně, potom už jen o 3 % ročně. Jaká je hodnota akcie, pokud požadujete výnos 10 % ročně?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="672.74" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" hidden="hidden" data-answer="622.10">
+<p>Hodnota <span class="math inline">\(P_3\)</span> je hodnota akcie na konci 3. roku, diskontujte ji proto třemi roky, ne čtyřmi.</p>
+</div>
+<div class="exercise-mistake" hidden="hidden" data-answer="115.69">
+<p>To je jen současná hodnota dividend z prvních tří let. Přičtěte současnou hodnotu akcie na konci 3. roku, která shrnuje všechny další dividendy.</p>
+</div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Dividendy v letech rychlého růstu:</p>
+<p><span class="math display">\[
+\begin{aligned}
+D_1 &amp;= 40 \times 1{,}08 = 43{,}20 \\
+D_2 &amp;= 43{,}20 \times 1{,}08 = 46{,}66 \\
+D_3 &amp;= 46{,}66 \times 1{,}08 = 50{,}39
+\end{aligned}
+\]</span></p>
+<p>Od 4. roku roste dividenda o 3 %. Hodnota akcie na konci 3. roku podle Gordonova modelu:</p>
+<p><span class="math display">\[
+P_3 = \frac{50{,}39 \times 1{,}03}{0{,}10 - 0{,}03} = \frac{51{,}90}{0{,}07} = 741{,}43
+\]</span></p>
+<p>Dividendy i hodnotu <span class="math inline">\(P_3\)</span> diskontujeme k dnešku:</p>
+<p><span class="math display">\[
+\begin{aligned}
+P &amp;= \frac{43{,}20}{1{,}1} + \frac{46{,}66}{1{,}1^2} + \frac{50{,}39 + 741{,}43}{1{,}1^3} \\
+  &amp;= 39{,}27 + 38{,}56 + 594{,}91 = 672{,}74
+\end{aligned}
+\]</span></p>
+<p>Hodnota akcie je 672,74 Kč.</p>
+</details>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

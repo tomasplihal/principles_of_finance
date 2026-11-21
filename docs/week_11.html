@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -72,6 +72,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -105,7 +108,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -273,18 +276,18 @@ window.Quarto = {
     <h2 id="toc-title">Obsah lekce</h2>
    
   <ul class="collapse">
-  <li><a href="#teorie-efektivních-trhů" id="toc-teorie-efektivních-trhů" class="nav-link active" data-scroll-target="#teorie-efektivních-trhů"><span class="header-section-number">11.1</span> Teorie efektivních trhů</a></li>
-  <li><a href="#finanční-indexy" id="toc-finanční-indexy" class="nav-link" data-scroll-target="#finanční-indexy"><span class="header-section-number">11.2</span> Finanční indexy</a></li>
-  <li><a href="#podílové-fondy-a-etf" id="toc-podílové-fondy-a-etf" class="nav-link" data-scroll-target="#podílové-fondy-a-etf"><span class="header-section-number">11.3</span> Podílové fondy a ETF</a></li>
-  <li><a href="#měření-výnosu" id="toc-měření-výnosu" class="nav-link" data-scroll-target="#měření-výnosu"><span class="header-section-number">11.4</span> Měření výnosu</a></li>
-  <li><a href="#měření-rizika" id="toc-měření-rizika" class="nav-link" data-scroll-target="#měření-rizika"><span class="header-section-number">11.5</span> Měření rizika</a></li>
-  <li><a href="#sharpe-ratio" id="toc-sharpe-ratio" class="nav-link" data-scroll-target="#sharpe-ratio"><span class="header-section-number">11.6</span> Sharpe Ratio</a></li>
+  <li><a href="#měření-výnosu" id="toc-měření-výnosu" class="nav-link active" data-scroll-target="#měření-výnosu"><span class="header-section-number">11.1</span> Měření výnosu</a></li>
+  <li><a href="#měření-rizika" id="toc-měření-rizika" class="nav-link" data-scroll-target="#měření-rizika"><span class="header-section-number">11.2</span> Měření rizika</a></li>
+  <li><a href="#diverzifikace" id="toc-diverzifikace" class="nav-link" data-scroll-target="#diverzifikace"><span class="header-section-number">11.3</span> Diverzifikace</a></li>
+  <li><a href="#efektivní-trhy" id="toc-efektivní-trhy" class="nav-link" data-scroll-target="#efektivní-trhy"><span class="header-section-number">11.4</span> Efektivní trhy</a></li>
+  <li><a href="#indexy-a-fondy" id="toc-indexy-a-fondy" class="nav-link" data-scroll-target="#indexy-a-fondy"><span class="header-section-number">11.5</span> Indexy a fondy</a></li>
+  <li><a href="#shrnutí" id="toc-shrnutí" class="nav-link" data-scroll-target="#shrnutí"><span class="header-section-number">11.6</span> Shrnutí</a></li>
   <li><a href="#příklady-k-procvičení" id="toc-příklady-k-procvičení" class="nav-link" data-scroll-target="#příklady-k-procvičení"><span class="header-section-number">11.7</span> Příklady k procvičení</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -316,218 +319,236 @@ Studijní materiály
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Dahlquist, J. R., &amp;; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
+<li>Dahlquist, J. R., &amp; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
 <ul>
 <li>Chapter 15 - How to Think about Investing</li>
+<li>Chapter 11 - Stocks and Stock Valuation (část 11.5 Efficient Markets)</li>
 </ul></li>
 </ul>
 </div>
 </div>
 <p><strong>Výstupy z učení:</strong></p>
 <ol type="1">
-<li>Rozumět pojmům teorie efektivních trhů, operativní efektivnosti a informační efektivnosti na trzích.</li>
-<li>Pochopit základní principy investování, včetně role a typů tržních indexů.</li>
-<li>Znát metody hodnocení rizika a výnosu pro investice.</li>
-<li>Naučit se činit informovaná investiční rozhodnutí na základě analytických nástrojů a teorií.</li>
+<li>Vypočítat celkový výnos investice, přepočítat ho na roční výnos a rozlišit aritmetický a geometrický průměr výnosů.</li>
+<li>Změřit riziko investice směrodatnou odchylkou a porovnat investice Sharpeho poměrem.</li>
+<li>Vysvětlit, jak diverzifikace snižuje riziko portfolia, a rozlišit systematické a nesystematické riziko.</li>
+<li>Popsat teorii efektivních trhů a její tři formy.</li>
+<li>Vysvětlit, k čemu slouží akciové indexy, a porovnat podílové fondy a ETF.</li>
 </ol>
-<section id="teorie-efektivních-trhů" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="teorie-efektivních-trhů"><span class="header-section-number">11.1</span> Teorie efektivních trhů</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Teorie efektivních trhů (Efficient Market Hypothesis, EMH) tvrdí, že ceny finančních aktiv odrážejí všechny dostupné informace, což znemožňuje dlouhodobě překonávat výkonnost trhu.</p>
-</div>
-</div>
-<ul>
-<li>Jedná se o informační efektivitu trhu.</li>
-<li>Ceny se rychle a přesně přizpůsobují novým informacím, nízké transakční náklady, rychlé a bezproblémové vypořádání obchodů atd.</li>
-<li>Na efektivním trhu by měly být větší výkyvy v cenách způsobeny pouze neočekávanými zprávami (očekávané zprávy jsou již zahrnuty v cenách).</li>
-<li>Obtížné najít akcie, které jsou špatně oceněné, a dosahovat vyšších výnosů než trh.</li>
-<li>Odchylky od ideálních cen se objevují, ale náhodně a nelze je předpovídat (<strong>náhodná procházka, random walk theory</strong>).</li>
-</ul>
-<p>Existují tři formy informační efektivnosti trhu:</p>
-<ol type="1">
-<li><strong>Slabá efektivnost</strong>
-<ul>
-<li>Veškeré historické informace o tržních cenách a obchodech jsou plně odraženy v aktuálních cenách.</li>
-<li>Tzn. technická analýza nelze použít k překonání trhu.</li>
-</ul></li>
-<li><strong>Středně-silná efektivnost</strong>
-<ul>
-<li>Všechny veřejně dostupné informace jsou promítnuty v cenách, např. historické ceny, finanční výkazy, ekonomické faktory, atd.</li>
-<li>Tzn. technická ani fundamentální analýze nelze použít k překonání trhu.</li>
-</ul></li>
-<li><strong>Silná efektivnost</strong>
-<ul>
-<li>Všechny veřejné i neveřejné informace jsou zohledněny v současných cenách.</li>
-<li>Tzn. nelze žádným způsobem překonat trh, ani s využítím neveřejných informací (insider trading).</li>
-</ul></li>
-</ol>
-<ul>
-<li>Existují i další formy efektivity jako například opertivní efektivita, tzn. rychlost a přesnost zpracování nákupního nebo prodejního příkazu za nejlepší dostupnou cenu.</li>
-</ul>
-</section>
-<section id="finanční-indexy" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="finanční-indexy"><span class="header-section-number">11.2</span> Finanční indexy</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Indexy jsou ukazatele, které sledují výkonnost vybraných finančních aktiv, reprezentující konkrétní trh nebo sektor.</p>
-</div>
-</div>
-<ul>
-<li>Indexy mohou sledovat akcie, dluhopisy, komodity, atd. nebo jejich různé kombinace.</li>
-<li>Index má přesně daná pravidla, jaká aktiva do něho vstupují a jakou mají v indexu váhu.</li>
-<li>Hlavní využití akciových indexů zahrnují:
-<ul>
-<li><strong>Benchmarking</strong>: Měří výkonnost trhu pro srovnání s dalšími investicemi.</li>
-<li><strong>Investice</strong>: Slouží jako podkladová aktiva pro indexové fondy a ETF.</li>
-<li><strong>Analýza</strong>: Pomáhá při analýze vývoje trhu a sentimentu investorů (makroekonomický ukazatel).</li>
-</ul></li>
-</ul>
-<p>Akciové indexy se počítají různými metodami, v závislosti na typu indexu. Tři nejběžnější metody jsou:</p>
-<ol type="1">
-<li><strong>Vážený podle tržní kapitalizace</strong>: Váhy podle celkové hodnoty akcií; Příklad: <a href="https://www.spglobal.com/spdji/en/indices/equity/sp-500/">S&amp;P 500</a></li>
-<li><strong>Vážený podle ceny</strong>: Příklad: <a href="https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/">Dow Jones Industrial Average</a></li>
-<li><strong>Rovnoměrně vážený</strong> (equal-weighted): Každá akcie má stejnou váhu. Příklad: <a href="https://www.spglobal.com/spdji/en/indices/equity/sp-100-equal-weight-index/">S&amp;P 100 Equal Weight Index</a></li>
-</ol>
-<section id="vybrané-akciové-indexy" class="level3" data-number="11.2.1">
-<h3 data-number="11.2.1" class="anchored" data-anchor-id="vybrané-akciové-indexy"><span class="header-section-number">11.2.1</span> Vybrané akciové indexy</h3>
-<ol type="1">
-<li><strong>S&amp;P 500 (USA)</strong>: Založen 1957, vážený podle tržní kapitalizace. Sleduje 500 největších amerických společností a je považován za ukazatel výkonnosti amerického trhu.</li>
-<li><strong>Dow Jones Industrial Average (USA)</strong>: Založen 1896, cenově vážený. Sleduje 30 velkých, průmyslově významných amerických společností.</li>
-<li><strong>NASDAQ Composite (USA)</strong>: Založen 1971, vážený podle tržní kapitalizace. Zaměřuje se na technologické společnosti, zahrnuje více než 3 000 akcií.</li>
-<li><strong>FTSE 100 (Spojené království)</strong>: Založen 1984, vážený podle tržní kapitalizace. Sleduje 100 největších společností kotovaných na Londýnské burze.</li>
-<li><strong>Nikkei 225 (Japonsko)</strong>: Založen 1950, cenově vážený. Sleduje 225 nejvýznamnějších japonských společností kotovaných na Tokijské burze.</li>
-</ol>
-<p>Další indexy např.: DAX (Německo), CAC 40 (Francie), Hang Seng (Hong Kong), MSCI World, Shanghai Composite (Čína), BSE Sensex (Indie), atd.</p>
-</section>
-</section>
-<section id="podílové-fondy-a-etf" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="podílové-fondy-a-etf"><span class="header-section-number">11.3</span> Podílové fondy a ETF</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Podílové fondy</strong> jsou investiční nástroje, které shromažďují prostředky od mnoha investorů za účelem nákupu diverzifikovaného portfolia cenných papírů, jako jsou akcie, dluhopisy, atd. Spravují je profesionální portfolio manažeři a sledují stanovenou investiční strategii.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>ETF (Exchange-Traded Funds)</strong> jsou investiční fondy, které se obchodují na burze podobně jako akcie. ETF obvykle sledují konkrétní index, sektor, komoditu nebo jinou třídu aktiv.</p>
-</div>
-</div>
+<p><strong>Značení:</strong></p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 22%">
-<col style="width: 37%">
-<col style="width: 39%">
+<col style="width: 17%">
+<col style="width: 82%">
 </colgroup>
 <thead>
 <tr class="header">
-<th></th>
-<th style="text-align: center;"><strong>Podílové fondy</strong></th>
-<th style="text-align: center;"><strong>ETF (Exchange-Traded Funds)</strong></th>
+<th style="text-align: left;">Symbol</th>
+<th style="text-align: left;">Význam</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Obchodování</strong></td>
-<td style="text-align: center;">Nákup/prodej na konci obchodního dne za NAV (Net Asset Value)</td>
-<td style="text-align: center;">Obchoduje se během obchodního dne na burze jako akcie</td>
+<td style="text-align: left;"><span class="math inline">\(P_0\)</span>, <span class="math inline">\(P_1\)</span></td>
+<td style="text-align: left;">cena (hodnota) investice na začátku a na konci</td>
 </tr>
 <tr class="even">
-<td><strong>Správa</strong></td>
-<td style="text-align: center;">Většinou aktivně spravované</td>
-<td style="text-align: center;">Obvykle pasivně spravované (sledují index)</td>
+<td style="text-align: left;"><span class="math inline">\(D\)</span></td>
+<td style="text-align: left;">dividendy nebo jiné příjmy za dobu držení</td>
 </tr>
 <tr class="odd">
-<td><strong>Flexibilita</strong></td>
-<td style="text-align: center;">Strategie reaguje na aktuální situaci</td>
-<td style="text-align: center;">Strategie pevně daná</td>
+<td style="text-align: left;"><span class="math inline">\(R\)</span></td>
+<td style="text-align: left;">výnos investice za dané období; <span class="math inline">\(R_t\)</span> je výnos v roce <span class="math inline">\(t\)</span></td>
 </tr>
 <tr class="even">
-<td><strong>Poplatky</strong></td>
-<td style="text-align: center;">Vyšší poplatky (manažerské, vstupní/výstupní)</td>
-<td style="text-align: center;">Nižší poplatky (nízké manažerské, transakční poplatky)</td>
+<td style="text-align: left;"><span class="math inline">\(R_a\)</span></td>
+<td style="text-align: left;">roční výnos (výnos přepočtený na jeden rok)</td>
 </tr>
 <tr class="odd">
-<td><strong>Transparentnost</strong></td>
-<td style="text-align: center;">Méně transparentní (strategii tvoří manažer)</td>
-<td style="text-align: center;">Vysoce transparentní (strategie pevně daná předem)</td>
+<td style="text-align: left;"><span class="math inline">\(\bar{R}\)</span></td>
+<td style="text-align: left;">aritmetický průměr výnosů</td>
 </tr>
 <tr class="even">
-<td><strong>Dostupnost</strong></td>
-<td style="text-align: center;">Prostřednictvím finančních institucí nebo poradců</td>
-<td style="text-align: center;">Na burzách, prostřednictvím makléřů</td>
+<td style="text-align: left;"><span class="math inline">\(R_G\)</span></td>
+<td style="text-align: left;">geometrický průměr výnosů</td>
 </tr>
 <tr class="odd">
-<td><strong>Jednoduchost</strong></td>
-<td style="text-align: center;">Možnost automatického investování</td>
-<td style="text-align: center;">Nutnost kupovat akcie na burze</td>
+<td style="text-align: left;"><span class="math inline">\(n\)</span></td>
+<td style="text-align: left;">počet let</td>
 </tr>
 <tr class="even">
-<td><strong>Emise</strong></td>
-<td style="text-align: center;">Emituje podílové listy</td>
-<td style="text-align: center;">Emituje akcie</td>
+<td style="text-align: left;"><span class="math inline">\(\sigma\)</span></td>
+<td style="text-align: left;">směrodatná odchylka výnosů (volatilita)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(R_f\)</span></td>
+<td style="text-align: left;">bezriziková výnosová míra</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(S\)</span></td>
+<td style="text-align: left;">Sharpeho poměr</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(w\)</span></td>
+<td style="text-align: left;">váha aktiva v portfoliu</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(R_p\)</span></td>
+<td style="text-align: left;">výnos portfolia</td>
 </tr>
 </tbody>
 </table>
+<p>V týdnech <a href="./week_09.html">9</a> a <a href="./week_10.html">10</a> jsme oceňovali dluhopisy a akcie. Teď se na ně podíváme očima investora, který si klade čtyři otázky: Kolik investice vydělala? Jak moc je riziková? Dá se riziko snížit? A má smysl hledat akcie, které vydělají víc než ostatní?</p>
+<section id="měření-výnosu" class="level2 page-columns page-full" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="měření-výnosu"><span class="header-section-number">11.1</span> Měření výnosu</h2>
+<section id="celkový-výnos" class="level3 page-columns page-full" data-number="11.1.1">
+<h3 data-number="11.1.1" class="anchored" data-anchor-id="celkový-výnos"><span class="header-section-number">11.1.1</span> Celkový výnos</h3>
+<p>Investor vydělává dvěma způsoby: investice mu vyplácí příjem (dividendu, kupón) a mění se její cena. <strong>Celkový výnos</strong> (total return) sečte obojí a vydělí částkou, kterou investor na začátku vložil:</p>
+<div class="formula">
+<p><span class="math display">\[
+R = \frac{P_1 - P_0 + D}{P_0}
+\]</span></p>
+</div>
+<p>kde <span class="math inline">\(P_0\)</span> je nákupní cena, <span class="math inline">\(P_1\)</span> prodejní cena a <span class="math inline">\(D\)</span> dividendy vyplacené za dobu držení. Výnos lze rozdělit na dvě části:</p>
+<p><span class="math display">\[
+R = \frac{P_1 - P_0}{P_0} + \frac{D}{P_0}
+\]</span></p>
+<p>První zlomek je <strong>kapitálový výnos</strong>, tedy změna ceny. Druhý je <strong>dividendový výnos</strong>. Protože jde o výnos za dobu, po kterou investor investici držel, říká se mu také výnos za dobu držení (holding period return).</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Akcii jste koupili za 500 Kč a po roce prodali za 560 Kč. Mezitím jste dostali dividendu 15 Kč.</p>
+<p><span class="math display">\[
+R = \frac{560 - 500 + 15}{500} = \frac{75}{500} = 0{,}15 = 15\%
+\]</span></p>
+<p>Kapitálový výnos je <span class="math inline">\(60 / 500 = 12\%\)</span> a dividendový výnos <span class="math inline">\(15 / 500 = 3\%\)</span>.</p>
+</div>
+</div>
+<p>Celkový výnos může být i záporný, a to i když akcie vyplácí dividendu.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Akcii jste koupili za 800 Kč a po roce prodali za 760 Kč. Dostali jste dividendu 24 Kč.</p>
+<p><span class="math display">\[
+R = \frac{760 - 800 + 24}{800} = \frac{-16}{800} = -0{,}02 = -2\%
+\]</span></p>
+<p>Cena klesla o 5 %, dividenda ztrátu snížila o 3 procentní body.</p>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Kdo zapomene na dividendy, výnos akcií podhodnotí. Grafy cen proto často ukazují cenu upravenou o dividendy a štěpení akcií (adjusted close). Z ní vychází přímo celkový výnos.</p>
+</div></div></section>
+<section id="roční-výnos" class="level3" data-number="11.1.2">
+<h3 data-number="11.1.2" class="anchored" data-anchor-id="roční-výnos"><span class="header-section-number">11.1.2</span> Roční výnos</h3>
+<p>Výnos 20 % zní dobře. Záleží ale na tom, jestli ho investice dosáhla za půl roku, nebo za pět let. Abychom mohli porovnat investice držené různě dlouho, přepočítáme výnos na jeden rok. <strong>Roční výnos</strong> (annualized return) říká, kolik procent ročně by investice musela vynášet při složeném úročení, aby dala stejný výsledek:</p>
+<div class="formula">
+<p><span class="math display">\[
+R_a = (1 + R)^{1/n} - 1
+\]</span></p>
+</div>
+<p>kde <span class="math inline">\(R\)</span> je výnos za celou dobu držení a <span class="math inline">\(n\)</span> je doba držení v letech. U doby kratší než rok je <span class="math inline">\(n\)</span> zlomek: půl roku je <span class="math inline">\(n = 0{,}5\)</span>, tři měsíce <span class="math inline">\(n = 0{,}25\)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Výnos 25 % za 2 roky:</p>
+<p><span class="math display">\[
+R_a = 1{,}25^{1/2} - 1 = 0{,}1180 = 11{,}80\%
+\]</span></p>
+<p>Výnos 10 % za 6 měsíců, tedy <span class="math inline">\(n = 0{,}5\)</span> a <span class="math inline">\(1 / n = 2\)</span>:</p>
+<p><span class="math display">\[
+R_a = 1{,}10^{2} - 1 = 0{,}21 = 21\%
+\]</span></p>
+<p>Výnos 4 % za 3 měsíce, tedy <span class="math inline">\(n = 0{,}25\)</span> a <span class="math inline">\(1 / n = 4\)</span>:</p>
+<p><span class="math display">\[
+R_a = 1{,}04^{4} - 1 = 0{,}1699 = 16{,}99\%
+\]</span></p>
+</div>
+</div>
+<p>Pozor na krátká období. Přepočet na rok předpokládá, že se stejný výnos podaří zopakovat po celý zbytek roku. Výnos 4 % za čtvrtletí neznamená, že investice za rok vydělá 17 %.</p>
+<p>Když známe jen počáteční a konečnou hodnotu investice, která mezitím nic nevyplácela, dosadíme <span class="math inline">\(1 + R = P_1 / P_0\)</span>:</p>
+<div class="formula">
+<p><span class="math display">\[
+R_a = \left(\frac{P_1}{P_0}\right)^{1/n} - 1
+\]</span></p>
+</div>
+<p>Tomuto výnosu se říká také <strong>CAGR</strong> (compound annual growth rate, složená roční míra růstu). Je to stejný výpočet jako výpočet úrokové sazby v <a href="./week_08.html">týdnu 8</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do fondu jste vložili 200 000 Kč. Po 6 letech má investice hodnotu 300 000 Kč.</p>
+<p><span class="math display">\[
+R_a = \left(\frac{300\,000}{200\,000}\right)^{1/6} - 1 = 1{,}5^{1/6} - 1 = 0{,}0699 = 6{,}99\%
+\]</span></p>
+<p>Investice vydělala celkem 50 %, tedy 6,99 % ročně. Nestačí vydělit <span class="math inline">\(50 / 6 = 8{,}33\%\)</span>: takový výpočet nepočítá s tím, že se výnosy z dřívějších let dál zhodnocují.</p>
+</div>
+</div>
 </section>
-<section id="měření-výnosu" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="měření-výnosu"><span class="header-section-number">11.4</span> Měření výnosu</h2>
-<ul>
-<li>Realizovaný výnos je změna hodnoty portfolia za určité časové období.</li>
-<li>Potřeba zohlednit dividendy a případně štěpení akcií, proto se nejčastěji používá Adjusted Close Price.</li>
-</ul>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<section id="průměrný-výnos-za-více-let" class="level3" data-number="11.1.3">
+<h3 data-number="11.1.3" class="anchored" data-anchor-id="průměrný-výnos-za-více-let"><span class="header-section-number">11.1.3</span> Průměrný výnos za více let</h3>
+<p>Výnosy akcií jsou každý rok jiné. Jaký byl průměrný roční výnos? Odpověď závisí na tom, jaký průměr použijeme.</p>
+<p><strong>Aritmetický průměr</strong> je součet ročních výnosů dělený počtem let. <strong>Geometrický průměr</strong> počítá se složeným úročením: roční výnosy mezi sebou násobíme.</p>
+<div class="formula">
+<p><span class="math display">\[
+\begin{aligned}
+\bar{R} &amp;= \frac{R_1 + R_2 + \dots + R_n}{n} \\[1ex]
+R_G &amp;= \big[(1 + R_1) \times (1 + R_2) \times \dots \times (1 + R_n)\big]^{1/n} - 1
+\end{aligned}
+\]</span></p>
+</div>
+<p>Rozdíl nejlépe ukáže příklad.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Definice
+Příklad
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Celkový výnos (Total Return)</strong>: Zahrnuje všechny složky výnosu, tedy změnu hodnoty investice (kapitálový zisk nebo ztráta) plus jakékoli výnosy z dividend nebo úroků.</p>
-</div>
-</div>
+<p>Investujete 100 000 Kč. První rok investice vydělá 50 %, druhý rok 50 % ztratí.</p>
+<p>Aritmetický průměr je <span class="math inline">\((50\% - 50\%) / 2 = 0\%\)</span>. Přesto jste prodělali: po prvním roce máte 150 000 Kč a po druhém 75 000 Kč. Geometrický průměr to ukáže:</p>
 <p><span class="math display">\[
-\text{Celkový výnos} = \frac{(V_f - V_i) + D}{V_i} \times 100
+R_G = (1{,}5 \times 0{,}5)^{1/2} - 1 = 0{,}75^{1/2} - 1 = -0{,}1340 = -13{,}40\%
 \]</span></p>
+<p>Investice ztrácela v průměru 13,40 % ročně: <span class="math inline">\(100\,000 \times 0{,}8660^2 \approx 75\,000\)</span> Kč.</p>
+</div>
+</div>
+<p>Součin v hranaté závorce říká, kolikrát se investice za celé období zhodnotila, je to tedy <span class="math inline">\(P_1 / P_0\)</span>. Geometrický průměr je proto totéž co roční výnos <span class="math inline">\(R_a\)</span> z předchozí části.</p>
+<p>Kdy který průměr použít:</p>
 <ul>
-<li><span class="math inline">\(V_f \dots\)</span> koncová hodnota investice</li>
-<li><span class="math inline">\(V_i \dots\)</span> počáteční hodnota investice</li>
-<li><span class="math inline">\(D \dots\)</span> výnosy z investice (např. dividendy nebo úroky)</li>
+<li><strong>Geometrický průměr</strong> říká, kolik investice za celé období skutečně vynášela ročně. Hodí se pro hodnocení minulé výkonnosti.</li>
+<li><strong>Aritmetický průměr</strong> říká, jaký výnos investice přinesla v typickém roce. Používá se při měření rizika a jako odhad výnosu v jednom dalším roce.</li>
+<li>Geometrický průměr není nikdy vyšší než aritmetický. Stejné jsou jen tehdy, když je výnos každý rok stejný. Jinak je geometrický průměr nižší, a to tím víc, čím víc výnosy kolísají.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
 <div class="callout-header d-flex align-content-center">
@@ -539,43 +560,47 @@ Příklad
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Nákup akcie za $128,74 a prodej po jednom roce za $176,53. Za dobu držení akcie byly vyplaceny dividendy ve výši $2,68. <span class="math display">\[
-\text{Kapitálový výnos} = 176{,}53 - 128{,}74 = \$47{,}79
+<p>Akciový fond vydělal ve čtyřech letech po sobě 25 %, −10 %, 15 % a 10 %.</p>
+<p><span class="math display">\[
+\bar{R} = \frac{25 - 10 + 15 + 10}{4} = \frac{40}{4} = 10\%
 \]</span></p>
 <p><span class="math display">\[
-\text{Dividendový výnos} = \$2{,}68
+\begin{aligned}
+R_G &amp;= (1{,}25 \times 0{,}90 \times 1{,}15 \times 1{,}10)^{1/4} - 1 \\
+    &amp;= 1{,}4231^{1/4} - 1 = 9{,}22\%
+\end{aligned}
 \]</span></p>
+<p>Kdo do fondu vložil 100 000 Kč, má po čtyřech letech 142 312,50 Kč. To odpovídá zhodnocení 9,22 % ročně, ne 10 %.</p>
+</div>
+</div>
+<p>Stejný rozdíl je vidět na skutečných datech. V <a href="./week_10.html">týdnu 10</a> jsme uvedli, že americké akcie vynášely v letech 1980–2025 v průměru 13,4 % ročně. To je aritmetický průměr. Ze 100 USD se za těch 46 let stalo 19 222 USD, čemuž odpovídá geometrický průměr</p>
 <p><span class="math display">\[
-\text{Celkový výnos} = 2{,}68 + 47{,}79 = \$50{,}47
+R_G = \left(\frac{19\,222}{100}\right)^{1/46} - 1 = 12{,}1\%
 \]</span></p>
+<p>Kdyby akcie vynášely každý rok přesně 13,4 %, bylo by ze 100 USD přes 32 000 USD. Aritmetický průměr tedy skutečné zhodnocení nadhodnocuje.</p>
+</section>
+</section>
+<section id="měření-rizika" class="level2 page-columns page-full" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="měření-rizika"><span class="header-section-number">11.2</span> Měření rizika</h2>
+<p>Budoucí výnos investice předem neznáme. <strong>Riziko</strong> je nejistota, jakého výnosu investice dosáhne: skutečný výnos může být vyšší i nižší, než jsme čekali. Čím víc se výnosy v jednotlivých letech liší od průměru, tím je investice rizikovější.</p>
+<section id="směrodatná-odchylka" class="level3 page-columns page-full" data-number="11.2.1">
+<h3 data-number="11.2.1" class="anchored" data-anchor-id="směrodatná-odchylka"><span class="header-section-number">11.2.1</span> Směrodatná odchylka</h3>
+<p>Kolísání výnosů kolem průměru měří <strong>směrodatná odchylka</strong> (standard deviation). U investic se jí říká také <strong>volatilita</strong>. Spočítáme ji ve čtyřech krocích:</p>
+<ol type="1">
+<li>Spočítáme aritmetický průměr výnosů <span class="math inline">\(\bar{R}\)</span>.</li>
+<li>Od každého výnosu odečteme průměr a rozdíl umocníme na druhou.</li>
+<li>Druhé mocniny sečteme a vydělíme <span class="math inline">\(n - 1\)</span>. Dostaneme <strong>rozptyl</strong> (variance).</li>
+<li>Rozptyl odmocníme.</li>
+</ol>
+<div class="formula">
 <p><span class="math display">\[
-\text{Celkový výnos (\%)} = \frac{(176{,}53 - 128{,}74) + 2{,}68}{128{,}74} \times 100 = 39{,}20\%
+\sigma = \sqrt{\frac{(R_1 - \bar{R})^2 + (R_2 - \bar{R})^2 + \dots + (R_n - \bar{R})^2}{n - 1}}
 \]</span></p>
 </div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>CAGR</strong> (Compound Annual Growth Rate) někdy označováno také jako efektivní roční výnos (effective annual rate, EAR) přepočítává celkový výnos na roční bázi a zohledňuje složené úročení, což umožňuje srovnání výnosů investic s různými časovými horizonty.</p>
-</div>
-</div>
-<p><span class="math display">\[
-\text{CAGR} = (\frac{V_f}{V_i})^m - 1 = (1 + \text{HPR})^m - 1
-\]</span></p>
-<ul>
-<li><span class="math inline">\(V_f \dots\)</span> koncová hodnota investice</li>
-<li><span class="math inline">\(V_i \dots\)</span> počáteční hodnota investice</li>
-<li><span class="math inline">\(\text{HPR} \dots\)</span> výnos za dané časové období (holding priod return)</li>
-<li><span class="math inline">\(m \dots\)</span> počet těchto období v jednom roce</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Proč <span class="math inline">\(n - 1\)</span> a ne <span class="math inline">\(n\)</span>? Počítáme z několika minulých let, tedy jen ze vzorku výnosů. Dělení <span class="math inline">\(n - 1\)</span> to zohledňuje (výběrová směrodatná odchylka). V Excelu ji počítá funkce SMODCH.VÝBĚR.S, anglicky STDEV.S.</p>
+</div></div><div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -585,470 +610,1180 @@ Příklad
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Výnos 25% za 2 roky: <span class="math display">\[
-\text{CAGR} = (1 + 0{,}25)^{\frac{1}{2}} - 1 = 11{,}80\%
-\]</span></li>
-<li>Výnos 10% za 6 měsíců: <span class="math display">\[
-\text{CAGR} = (1 + 0{,}10)^{\frac{12}{6}} - 1 = 20{,}89\%
-\]</span></li>
-<li>Výnos 1% za 15 dní: <span class="math display">\[
-\text{CAGR} = (1 + 0{,}01)^{\frac{365}{15}} - 1 = 27{,}11\%
-\]</span></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Pozor na aritmetický průměr!">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Pozor na aritmetický průměr!
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Roční data SPY upravená o dividendy a splity stažená z <a href="https://www.macrotrends.net/stocks/charts/SPY/spdr-s-p-500-etf/stock-price-history">Macrotrends</a>.</p>
+<p>Akciový fond z předchozího příkladu vydělal 25 %, −10 %, 15 % a 10 %. Průměrný výnos je 10 %. Odchylka je rozdíl mezi výnosem a průměrem, vše v procentech.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;">Rok</th>
-<th style="text-align: center;">Cena</th>
-<th style="text-align: center;">Roční výnos</th>
+<th style="text-align: center;">Výnos</th>
+<th style="text-align: center;">Odchylka</th>
+<th style="text-align: center;">Na druhou</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">2022</td>
-<td style="text-align: center;">378.1934</td>
-<td style="text-align: center;">-18.17%</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">225</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2021</td>
-<td style="text-align: center;">462.1801</td>
-<td style="text-align: center;">28.74%</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">−10</td>
+<td style="text-align: center;">−20</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2020</td>
-<td style="text-align: center;">358.9909</td>
-<td style="text-align: center;">18.37%</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">25</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2019</td>
-<td style="text-align: center;">303.2705</td>
-<td style="text-align: center;">31.22%</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2018</td>
-<td style="text-align: center;">231.1130</td>
-<td style="text-align: center;">-4.56%</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2017</td>
-<td style="text-align: center;">242.1472</td>
-<td style="text-align: center;">21.70%</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2016</td>
-<td style="text-align: center;">198.9700</td>
-<td style="text-align: center;">12.00%</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2015</td>
-<td style="text-align: center;">177.6494</td>
-<td style="text-align: center;">1.25%</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2014</td>
-<td style="text-align: center;">175.4526</td>
-<td style="text-align: center;">13.46%</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2013</td>
-<td style="text-align: center;">154.6353</td>
-<td style="text-align: center;">32.31%</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2012</td>
-<td style="text-align: center;">116.8764</td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">Součet</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">650</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>Průměrný roční výnos lze spočítat pomocí CAGR a výnosu za celé období:</li>
-</ul>
 <p><span class="math display">\[
-\text{CAGR} = \frac{378{,}1934}{116{,}8724}^{\frac{1}{10}} - 1 = 12{,}46\%
+\sigma = \sqrt{\frac{650}{4 - 1}} = \sqrt{216{,}67} = 14{,}72
 \]</span></p>
-<ul>
-<li>Stejného výsledku lze dosáhnout pomocí geometrického průměru ročních výnosů.</li>
-<li><strong>Aritmetický průměr</strong> ročních výnosů však dává odlišný výsledek:</li>
-</ul>
-<p><span class="math display">\[
-\text{Arithmetic Average} = \frac{-18{,}17\% + 28{,}74\% + \dots + 32{,}31\%}{10} =
-\frac{136{,}32\%}{10} = 13{,}63\%
-\]</span></p>
-<ul>
-<li>Aritmetický průměr vychází vyšší než geometrický, protože <strong><em>nezohledňuje složené úročení</em></strong>.</li>
-<li>Aritmetický průměr vyjadřuje, kolik jste vydělali v typickém roce.</li>
-<li>Geometrický průměr ukazuje, kolik jste skutečně vydělali za rok v průměru při držení dané investice.</li>
-</ul>
-</div>
+<p>Směrodatná odchylka výnosů fondu je 14,72 %. Výnosy jsme dosazovali v procentech, v procentech proto vyjde i výsledek.</p>
 </div>
 </div>
 </section>
-<section id="měření-rizika" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="měření-rizika"><span class="header-section-number">11.5</span> Měření rizika</h2>
+<section id="co-směrodatná-odchylka-říká" class="level3 page-columns page-full" data-number="11.2.2">
+<h3 data-number="11.2.2" class="anchored" data-anchor-id="co-směrodatná-odchylka-říká"><span class="header-section-number">11.2.2</span> Co směrodatná odchylka říká</h3>
+<p>Směrodatná odchylka říká, jak daleko od průměru se výnos v jednom roce obvykle pohybuje. Pokud mají výnosy přibližně normální rozdělení, platí:</p>
 <ul>
-<li>Riziko se týká nejistoty dosažení očekávaného výnosu.</li>
+<li>zhruba 68 % výnosů leží nejvýš jednu směrodatnou odchylku od průměru,</li>
+<li>zhruba 95 % výnosů leží nejvýš dvě směrodatné odchylky od průměru,</li>
+<li>zhruba 99,7 % výnosů leží nejvýš tři směrodatné odchylky od průměru.</li>
 </ul>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>Americké akcie měly v letech 1980–2025 průměrný roční výnos 13,4 % a směrodatnou odchylku 16,3 %. Zhruba ve dvou letech ze tří by tedy měl výnos ležet mezi <span class="math inline">\(13{,}4 - 16{,}3 = -2{,}9\%\)</span> a <span class="math inline">\(13{,}4 + 16{,}3 = 29{,}7\%\)</span>. Ve skutečnosti to bylo ve 30 letech ze 46, tedy v 65 % případů. V grafu je toto rozmezí podbarvené, čárkovaná čára je průměrný výnos.</p>
+<div id="e27e3bbd" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+        <script>
+        window.PlotlyConfig = {MathJaxConfig: 'local'};
+        if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+        </script>
+        <script type="module">import "https://cdn.plot.ly/plotly-4.1.1.min"</script>
+        
 </div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Směrodatná odchylka (Standard Deviation)</strong> měří, jak moc se výnosy investice odchylují od průměrného výnosu. Vysoká směrodatná odchylka naznačuje vysokou volatilitu, tedy vyšší riziko.</p>
-</div>
-</div>
-<p>Vzorec pro směrodatnou odchylku:</p>
-<p><span class="math display">\[
-\sigma = \sqrt{\frac{\sum_{i=1}^{n} (r_i - \bar{r})^2}{n}}
-\]</span></p>
-<ul>
-<li><span class="math inline">\(r_i \dots\)</span> jednotlivé výnosy</li>
-<li><span class="math inline">\(\bar{r} \dots\)</span> průměrný výnos</li>
-<li><span class="math inline">\(n\)</span> počet období</li>
-</ul>
-<p>Pokud mají výnosy normální rozložení pravděpodobnosti, tak platí (přibližně):</p>
-<ul>
-<li>68 % pozorování leží v rozmezí jedné směrodatné odchylky od průměru.</li>
-<li>95 % pozorování leží v rozmezí dvou směrodatných odchylek od průměru.</li>
-<li>99,7 % pozorování leží v rozmezí tří směrodatných odchylek od průměru.</li>
-</ul>
-<p>Mezi další ukazatele rizika řadíme např. max. drawdown, value-at-risk, expected shortfall, atd.</p>
-<section id="diverzifikace" class="level3" data-number="11.5.1">
-<h3 data-number="11.5.1" class="anchored" data-anchor-id="diverzifikace"><span class="header-section-number">11.5.1</span> Diverzifikace</h3>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Diverzifikace je investiční strategie, která spočívá v rozložení investic do různých aktiv, sektorů nebo geografických oblastí s cílem snížit celkové riziko portfolia.</p>
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="a66fe5a2-592c-4c87-bed8-693d3405b18e" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("a66fe5a2-592c-4c87-bed8-693d3405b18e")) {                    Plotly.newPlot(                        "a66fe5a2-592c-4c87-bed8-693d3405b18e",                        [{"customdata":["\u221240 % a\u017e \u221230 %","\u221230 % a\u017e \u221220 %","\u221220 % a\u017e \u221210 %","\u221210 % a\u017e 0 %","0 % a\u017e 10 %","10 % a\u017e 20 %","20 % a\u017e 30 %","30 % a\u017e 40 %"],"hovertemplate":"%{customdata}\u003cbr\u003epo\u010det let: %{y}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#0000dc"},"width":9.4,"x":{"dtype":"i1","bdata":"3efx+wUPGSM="},"y":{"dtype":"i1","bdata":"AQECBAkKCwg="},"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"shapes":[{"fillcolor":"rgba(185, 0, 110, 0.12)","line":{"width":0},"type":"rect","x0":-2.887378143032267,"x1":29.697378143032267,"xref":"x","y0":0,"y1":1,"yref":"y domain"},{"line":{"color":"#b9006e","dash":"dash","width":2},"type":"line","x0":13.405,"x1":13.405,"xref":"x","y0":0,"y1":1,"yref":"y domain"}],"title":{"text":"Ro\u010dn\u00ed v\u00fdnosy americk\u00fdch akci\u00ed (S&P 500), 1980\u20132025","font":{"size":20}},"xaxis":{"title":{"text":"V\u00fdnos za rok (%)"},"tickvals":{"dtype":"i1","bdata":"2OLs9gAKFB4o"},"ticksuffix":" %"},"yaxis":{"title":{"text":"Po\u010det let"}},"showlegend":false,"separators":", "},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('a66fe5a2-592c-4c87-bed8-693d3405b18e');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
 </div>
 </div>
-<ul>
-<li>Využívá nedokonalé korelace aktiv v portfoliu.</li>
-<li>S roztoucím množstvím aktiv klesá přínos dodatečného aktiva k diverzifikaci portfolia (přibližně po 20 až 30 akciích je již dodatečný efekt diverzifikace velmi malý).</li>
-<li><strong>Nesystematické riziko</strong> (specifické, jedinečné riziko) <span class="math inline">\(\rightarrow\)</span> lze odstranit diverzifikací.</li>
-<li><strong>Systematické riziko</strong> (tržní riziko) <span class="math inline">\(\rightarrow\)</span> nelze odstranit diverzifikací.</li>
-</ul>
-</section>
-</section>
-<section id="sharpe-ratio" class="level2" data-number="11.6">
-<h2 data-number="11.6" class="anchored" data-anchor-id="sharpe-ratio"><span class="header-section-number">11.6</span> Sharpe Ratio</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Sharpe ratio měří výnos investice vzhledem k jejímu riziku, tedy poměr nadměrného výnosu (výnos nad bezrizikovou sazbou) k jeho volatilitě (směrodatné odchylce).</p>
-</div>
-</div>
-<ul>
-<li>Poměrový ukazatel pro srovnání různých investic.</li>
-<li>Poskytuje komplexní pohled na profil rizika a výnosů investice.</li>
-<li>Vyšší Sharpe Ratio značí atraktivnější investici.</li>
-</ul>
-<p><span class="math display">\[
-\text{Sharpe ratio} = \frac{R_p - R_f}{\sigma_p}
-\]</span></p>
-<ul>
-<li><span class="math inline">\(R_p \dots\)</span> výnos portfolia</li>
-<li><span class="math inline">\(R_f \dots\)</span> bezriziková úroková sazba</li>
-<li><span class="math inline">\(\sigma_p \dots\)</span> směrodatná odchylka výnosů (nad bezrizikovou sazbou)</li>
-</ul>
-<section id="souhrnný-příklad" class="level3" data-number="11.6.1">
-<h3 data-number="11.6.1" class="anchored" data-anchor-id="souhrnný-příklad"><span class="header-section-number">11.6.1</span> Souhrnný příklad</h3>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Zdroj dat: A. Damodaran, <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html">Historical Returns on Stocks, Bonds and Bills</a>, NYU Stern, leden 2026.</p>
+</div></div><p>Dvě směrodatné odchylky dávají rozmezí −19,2 % až 46,0 %. Mimo něj skončily jen dva roky ze 46: 2002 (−22,0 %) a 2008 (−36,6 %). Oba byly ztrátové: velké propady jsou u akcií častější než stejně velké zisky.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Směrodatná odchylka není jediná míra rizika. Používá se také <strong>maximální propad</strong> (maximum drawdown), tedy největší pokles hodnoty investice z dosavadního maxima.</p>
+</div></div></section>
+<section id="výnos-a-riziko" class="level3" data-number="11.2.3">
+<h3 data-number="11.2.3" class="anchored" data-anchor-id="výnos-a-riziko"><span class="header-section-number">11.2.3</span> Výnos a riziko</h3>
+<p>Tabulka porovnává tři druhy investic v USA v letech 1980–2025. Akcie a státní dluhopisy známe z týdnů 9 a 10. <strong>Pokladniční poukázky</strong> jsou krátkodobé státní dluhopisy se splatností do jednoho roku.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 9%">
-<col style="width: 16%">
-<col style="width: 12%">
-<col style="width: 33%">
-<col style="width: 28%">
+<col style="width: 35%">
+<col style="width: 19%">
+<col style="width: 20%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;"><strong>Datum</strong></th>
-<th style="text-align: center;"><strong>Cena akcie</strong></th>
-<th style="text-align: center;"><strong>Výnos</strong></th>
-<th style="text-align: center;"><strong>Odchylka od průměru</strong></th>
-<th style="text-align: center;"><strong>Odchylka od průměru na druhou</strong></th>
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Akcie (S&amp;P 500)</th>
+<th style="text-align: center;">Státní dluhopisy</th>
+<th style="text-align: center;">Pokladniční poukázky</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">2022-01-31</td>
-<td style="text-align: center;">446.572021</td>
-<td style="text-align: center;">NA</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: left;">Průměrný roční výnos</td>
+<td style="text-align: center;">13,4 %</td>
+<td style="text-align: center;">6,8 %</td>
+<td style="text-align: center;">4,2 %</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2022-02-28</td>
-<td style="text-align: center;">433.672150</td>
-<td style="text-align: center;">-0.028886</td>
-<td style="text-align: center;">-0.017685</td>
-<td style="text-align: center;">0.000313</td>
+<td style="text-align: left;">Směrodatná odchylka</td>
+<td style="text-align: center;">16,3 %</td>
+<td style="text-align: center;">10,4 %</td>
+<td style="text-align: center;">3,5 %</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2022-03-31</td>
-<td style="text-align: center;">449.959442</td>
-<td style="text-align: center;">0.037557</td>
-<td style="text-align: center;">0.048759</td>
-<td style="text-align: center;">0.002377</td>
+<td style="text-align: left;">Nejhorší rok</td>
+<td style="text-align: center;">−36,6 %</td>
+<td style="text-align: center;">−17,8 %</td>
+<td style="text-align: center;">0,0 %</td>
+</tr>
+</tbody>
+</table>
+<p>Čím vyšší průměrný výnos, tím vyšší riziko. Není to náhoda: rizikovou investici by nikdo nekoupil, kdyby za riziko nedostal zaplaceno vyšším výnosem. Tomuto příplatku jsme v týdnu 10 říkali <strong>riziková prémie</strong>. Platí to i obráceně: kdo chce vyšší výnos, musí přijmout vyšší riziko. Pokud někdo slibuje vysoký výnos bez rizika, je na místě opatrnost.</p>
+<p>Pokladniční poukázky velkých vyspělých států se považují za <strong>bezrizikovou investici</strong>. Stát je téměř jistě splatí a jejich cena skoro nekolísá. Jejich výnos se proto používá jako <strong>bezriziková výnosová míra</strong> <span class="math inline">\(R_f\)</span>: tolik lze vydělat bez rizika. Dlouhodobé státní dluhopisy stát splatí také, jejich cena ale kolísá s úrokovými sazbami (<a href="./week_09.html">týden 9</a>).</p>
+</section>
+<section id="sharpeho-poměr" class="level3 page-columns page-full" data-number="11.2.4">
+<h3 data-number="11.2.4" class="anchored" data-anchor-id="sharpeho-poměr"><span class="header-section-number">11.2.4</span> Sharpeho poměr</h3>
+<p>Co je lepší: fond s výnosem 12 % a směrodatnou odchylkou 20 %, nebo fond s výnosem 8 % a směrodatnou odchylkou 8 %? Samotný výnos ani samotné riziko odpověď nedají. <strong>Sharpeho poměr</strong> (Sharpe ratio) je spojuje do jednoho čísla:</p>
+<div class="formula">
+<p><span class="math display">\[
+S = \frac{\bar{R} - R_f}{\sigma}
+\]</span></p>
+</div>
+<p>V čitateli je výnos investice nad bezrizikovou výnosovou míru, tedy odměna za to, že investor podstoupil riziko. Ve jmenovateli je riziko samotné. Sharpeho poměr tak říká, <strong>kolik výnosu navíc investor dostal za jednotku rizika</strong>. Čím je vyšší, tím lépe.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Fond A má průměrný výnos 12 % a směrodatnou odchylku 20 %. Fond B má průměrný výnos 8 % a směrodatnou odchylku 8 %. Bezriziková výnosová míra je 4 %.</p>
+<p><span class="math display">\[
+S_A = \frac{12 - 4}{20} = 0{,}40
+\qquad \qquad
+S_B = \frac{8 - 4}{8} = 0{,}50
+\]</span></p>
+<p>Fond B má vyšší Sharpeho poměr. Vydělal méně, ale za každé procento rizika přinesl víc výnosu navíc.</p>
+</div>
+</div>
+<ul>
+<li>Sharpeho poměr nemá žádnou „správnou“ hodnotu. Smysl má při porovnání investic za stejné období.</li>
+<li>Investice, která vydělala méně než bezriziková míra, má Sharpeho poměr záporný.</li>
+<li>Americké akcie měly v letech 1980–2025 Sharpeho poměr <span class="math inline">\((13{,}4 - 4{,}2) / 16{,}3 = 0{,}56\)</span>, státní dluhopisy <span class="math inline">\((6{,}8 - 4{,}2) / 10{,}4 = 0{,}25\)</span>.</li>
+</ul>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Poměr navrhl americký ekonom William Sharpe, který v roce 1990 dostal Nobelovu cenu za ekonomii.</p>
+</div></div></section>
+</section>
+<section id="diverzifikace" class="level2 page-columns page-full" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="diverzifikace"><span class="header-section-number">11.3</span> Diverzifikace</h2>
+<p>Kdo vloží všechny peníze do akcií jedné firmy, může o většinu přijít, když se té firmě přestane dařit. <strong>Diverzifikace</strong> znamená rozložit peníze mezi víc různých investic, aby ztráta z jedné neohrozila celek. Lidově: nedávat všechna vejce do jednoho košíku. Soubor všech investic, které investor drží, se nazývá <strong>portfolio</strong>.</p>
+<section id="výnos-portfolia" class="level3" data-number="11.3.1">
+<h3 data-number="11.3.1" class="anchored" data-anchor-id="výnos-portfolia"><span class="header-section-number">11.3.1</span> Výnos portfolia</h3>
+<p>Jak velkou část portfolia aktivum tvoří, říká jeho <strong>váha</strong> <span class="math inline">\(w\)</span>: podíl aktiva na celkové hodnotě portfolia. Váhy dávají dohromady 1. Výnos portfolia je vážený průměr výnosů jednotlivých aktiv:</p>
+<div class="formula">
+<p><span class="math display">\[
+R_p = w_1 \times R_1 + w_2 \times R_2 + \dots
+\]</span></p>
+</div>
+<p>kde <span class="math inline">\(w_1\)</span>, <span class="math inline">\(w_2\)</span> jsou váhy a <span class="math inline">\(R_1\)</span>, <span class="math inline">\(R_2\)</span> výnosy jednotlivých aktiv za stejné období.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do akcií A jste investovali 60 000 Kč, do akcií B 40 000 Kč. Akcie A za rok vydělaly 15 %, akcie B ztratily 5 %.</p>
+<p>Portfolio má hodnotu 100 000 Kč, váhy jsou tedy <span class="math inline">\(w_A = 0{,}6\)</span> a <span class="math inline">\(w_B = 0{,}4\)</span>:</p>
+<p><span class="math display">\[
+R_p = 0{,}6 \times 15\% + 0{,}4 \times (-5\%) = 9\% - 2\% = 7\%
+\]</span></p>
+<p>Kontrola: <span class="math inline">\(60\,000 \times 1{,}15 + 40\,000 \times 0{,}95 = 107\,000\)</span> Kč.</p>
+</div>
+</div>
+</section>
+<section id="riziko-portfolia" class="level3" data-number="11.3.2">
+<h3 data-number="11.3.2" class="anchored" data-anchor-id="riziko-portfolia"><span class="header-section-number">11.3.2</span> Riziko portfolia</h3>
+<p>U rizika vážený průměr neplatí. Riziko portfolia je většinou <strong>nižší</strong> než průměr rizik jednotlivých aktiv, protože jejich ceny se nepohybují úplně stejně. Když jedno aktivum ztrácí, jiné může vydělávat, a ztrátu tím zmírní.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Polovinu peněz máte v akciích A, polovinu v akciích B. Tabulka ukazuje jejich roční výnosy v procentech. Výnos portfolia je každý rok průměr obou výnosů.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Rok</th>
+<th style="text-align: center;">Akcie A</th>
+<th style="text-align: center;">Akcie B</th>
+<th style="text-align: center;">Portfolio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">15</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2022-04-30</td>
-<td style="text-align: center;">410.159393</td>
-<td style="text-align: center;">-0.088453</td>
-<td style="text-align: center;">-0.077251</td>
-<td style="text-align: center;">0.005968</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">−10</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">5</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2022-05-31</td>
-<td style="text-align: center;">411.458649</td>
-<td style="text-align: center;">0.003168</td>
-<td style="text-align: center;">0.014369</td>
-<td style="text-align: center;">0.000206</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">5</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2022-06-30</td>
-<td style="text-align: center;">377.204315</td>
-<td style="text-align: center;">-0.083251</td>
-<td style="text-align: center;">-0.072049</td>
-<td style="text-align: center;">0.005191</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">15</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2022-07-31</td>
-<td style="text-align: center;">412.154053</td>
-<td style="text-align: center;">0.092655</td>
-<td style="text-align: center;">0.103856</td>
-<td style="text-align: center;">0.010786</td>
+<td style="text-align: center;">Průměrný výnos</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">10</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">Směrodatná odchylka</td>
+<td style="text-align: center;">14,72</td>
+<td style="text-align: center;">12,25</td>
+<td style="text-align: center;">5,77</td>
+</tr>
+</tbody>
+</table>
+<p>Portfolio má stejný průměrný výnos jako obě akcie, ale mnohem nižší riziko než kterákoli z nich. Ve 2. roce ztrátu akcií A vyvážil zisk akcií B, ve 3. roce naopak.</p>
+</div>
+</div>
+<div id="a7c831e6" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="759280fc-9a8c-4ebc-8e0b-dea76f6aeb8e" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("759280fc-9a8c-4ebc-8e0b-dea76f6aeb8e")) {                    Plotly.newPlot(                        "759280fc-9a8c-4ebc-8e0b-dea76f6aeb8e",                        [{"hovertemplate":"%{y} %","line":{"color":"grey","dash":"dot","width":2},"mode":"lines+markers","name":"Akcie A","x":[1,2,3,4],"y":{"dtype":"i1","bdata":"GfYPCg=="},"type":"scatter"},{"hovertemplate":"%{y} %","line":{"color":"teal","dash":"dash","width":2},"mode":"lines+markers","name":"Akcie B","x":[1,2,3,4],"y":{"dtype":"i1","bdata":"BRT7FA=="},"type":"scatter"},{"hovertemplate":"%{y} %","line":{"color":"#0000dc","dash":"solid","width":4},"mode":"lines+markers","name":"Portfolio","x":[1,2,3,4],"y":{"dtype":"f8","bdata":"AAAAAAAALkAAAAAAAAAUQAAAAAAAABRAAAAAAAAALkA="},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"title":{"text":"V\u00fdnosy dvou akci\u00ed a portfolia z obou","font":{"size":20}},"xaxis":{"title":{"text":"Rok"},"tickvals":[1,2,3,4]},"yaxis":{"title":{"text":"V\u00fdnos za rok (%)"},"ticksuffix":" %"},"hovermode":"x unified","separators":", "},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('759280fc-9a8c-4ebc-8e0b-dea76f6aeb8e');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
+<p>Diverzifikací se tedy dá snížit riziko, aniž by klesl očekávaný výnos. Portfolio z příkladu má proto vyšší Sharpeho poměr než kterákoli z obou akcií.</p>
+</section>
+<section id="korelace" class="level3" data-number="11.3.3">
+<h3 data-number="11.3.3" class="anchored" data-anchor-id="korelace"><span class="header-section-number">11.3.3</span> Korelace</h3>
+<p>Jak moc diverzifikace pomůže, záleží na tom, jak podobně se výnosy aktiv pohybují. Měří to <strong>korelace</strong>, číslo mezi −1 a +1:</p>
+<ul>
+<li><strong>+1</strong>: výnosy se pohybují úplně stejně. Diverzifikace riziko nesníží.</li>
+<li><strong>0</strong>: výnosy spolu nesouvisejí.</li>
+<li><strong>−1</strong>: výnosy se pohybují přesně opačně.</li>
+</ul>
+<p>Čím nižší korelace, tím víc diverzifikace riziko snižuje. Akcie A a B z příkladu mají korelaci −0,65. Ve skutečnosti mívají akcie mezi sebou korelaci kladnou, ale nižší než 1, takže diverzifikace funguje, jen ne tak silně jako v příkladu.</p>
+<p>Nejvíc si jsou podobné firmy ze stejného odvětví. Roční výnosy ropných firem ExxonMobil a Chevron měly v letech 2006–2025 korelaci 0,92: když se dařilo jedné, dařilo se i druhé. Kdo koupí obě, riziko skoro nesníží. Výnosy ExxonMobilu a výrobce elektroniky Apple měly korelaci −0,23, tedy dokonce zápornou, což je u akcií výjimka. Diverzifikovat proto znamená kupovat firmy z různých odvětví a zemí, ne jen velký počet akcií.</p>
+</section>
+<section id="systematické-a-nesystematické-riziko" class="level3 page-columns page-full" data-number="11.3.4">
+<h3 data-number="11.3.4" class="anchored" data-anchor-id="systematické-a-nesystematické-riziko"><span class="header-section-number">11.3.4</span> Systematické a nesystematické riziko</h3>
+<p>Kolik akcií je potřeba? Graf ukazuje průměrné riziko portfolia podle toho, kolik náhodně vybraných akcií obsahuje.</p>
+<div id="9d5a5d4f" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="349eac09-ab7d-45a0-b503-b9252955ba1d" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("349eac09-ab7d-45a0-b503-b9252955ba1d")) {                    Plotly.newPlot(                        "349eac09-ab7d-45a0-b503-b9252955ba1d",                        [{"hovertemplate":"%{y:.1f} %\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#0000dc","width":3},"mode":"lines+markers","x":{"dtype":"i1","bdata":"AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0e"},"y":[28.54204597059506,23.24072180546638,20.988309631263366,19.574039269464706,18.86259794481953,18.31131235258322,17.846309822456142,17.507496568289675,17.263857392469486,17.084099409770545,16.86231355950655,16.70438092505579,16.64780087834015,16.45094152067458,16.394595703212843,16.274445841610014,16.22095846543582,16.14288100926831,16.048190926669566,16.039408263449936,15.955660565617087,15.89987275336488,15.863636064610855,15.839345103324394,15.811074213025817,15.77978623935909,15.745989082750695,15.71682436937955,15.689606817911649,15.66414767953609],"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"shapes":[{"line":{"color":"#b9006e","dash":"dash","width":2},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":15.66414767953609,"y1":15.66414767953609,"yref":"y"}],"annotations":[{"font":{"color":"#b9006e","size":13},"showarrow":false,"text":"zb\u00fdv\u00e1 hlavn\u011b systematick\u00e9 riziko:\u003cbr\u003ediverzifikac\u00ed ho neodstran\u00edme","x":20,"y":7.832073839768045},{"arrowhead":0,"ax":110,"ay":-30,"font":{"size":13},"showarrow":true,"text":"nesystematick\u00e9 riziko:\u003cbr\u003es po\u010dtem akci\u00ed miz\u00ed","x":2,"y":23.24072180546638}],"title":{"text":"Riziko portfolia podle po\u010dtu akci\u00ed","font":{"size":20}},"xaxis":{"title":{"text":"Po\u010det akci\u00ed v portfoliu"}},"yaxis":{"title":{"text":"Sm\u011brodatn\u00e1 odchylka ro\u010dn\u00edch v\u00fdnos\u016f (%)"},"range":[0,32],"ticksuffix":" %"},"showlegend":false,"separators":", "},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('349eac09-ab7d-45a0-b503-b9252955ba1d');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Výpočet z ročních výnosů akcií 30 velkých amerických firem z různých odvětví v letech 2006–2025, včetně dividend (Yahoo Finance). Pro každý počet akcií jde o průměr z náhodně sestavených portfolií, ve kterých mají všechny akcie stejnou váhu.</p>
+</div></div><p>Jedna akcie měla v průměru směrodatnou odchylku necelých 29 %. Portfolio ze dvou akcií 23 %, z pěti 19 % a z deseti 17 %. Potom už riziko klesá jen pomalu: se všemi třiceti akciemi je to necelých 16 %. Na nulu neklesne nikdy, ať přidáme akcií sebevíc.</p>
+<p>Riziko akcie má totiž dvě části:</p>
+<ul>
+<li><strong>Nesystematické riziko</strong> (specifické, jedinečné) se týká jedné firmy nebo jednoho odvětví: nepovedený výrobek, soudní spor, špatné vedení, stávka. V portfoliu se tyto události navzájem vyruší, protože jedné firmě se zrovna nedaří a jiné ano. <strong>Diverzifikací ho lze odstranit.</strong></li>
+<li><strong>Systematické riziko</strong> (tržní) se týká všech firem najednou: recese, růst úrokových sazeb, finanční krize, pandemie. V roce 2008 ztratily skoro všechny akcie. <strong>Diverzifikací ho odstranit nelze.</strong></li>
+</ul>
+<p>Většinu nesystematického rizika odstraní už 20 až 30 akcií z různých odvětví. Protože se ho investor může zbavit skoro zadarmo, trh za něj vyšším výnosem neodměňuje. Rizikovou prémii investor dostává jen za systematické riziko, kterému se vyhnout nemůže.</p>
+<p>Systematické riziko akcií lze zmírnit jen tím, že část peněz investor vloží do jiných druhů aktiv, například do dluhopisů. Platí za to nižším očekávaným výnosem.</p>
+</section>
+</section>
+<section id="efektivní-trhy" class="level2 page-columns page-full" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="efektivní-trhy"><span class="header-section-number">11.4</span> Efektivní trhy</h2>
+<p>V <a href="./week_10.html">týdnu 10</a> jsme počítali vnitřní hodnotu akcie a porovnávali ji s cenou na burze. Stačí tedy najít podhodnocené akcie a vydělat víc než ostatní? Totéž ale zkoušejí tisíce profesionálních analytiků a fondů se stejnými informacemi. Jakmile se objeví akcie, která je zjevně levná, začnou ji kupovat a její cena vzroste.</p>
+<p><strong>Teorie efektivních trhů</strong> (efficient market hypothesis, EMH) z toho vyvozuje, že <strong>ceny na trhu odrážejí všechny dostupné informace</strong>. Plyne z ní několik věcí:</p>
+<ul>
+<li>Nová informace se do ceny promítne rychle, během minut nebo vteřin.</li>
+<li>Cena se mění jen kvůli <strong>neočekávaným</strong> zprávám. Co investoři čekali, už v ceně je.</li>
+<li>Neočekávané zprávy přicházejí náhodně, proto se náhodně mění i ceny a nelze je předpovídat. Říká se tomu <strong>náhodná procházka</strong> (random walk).</li>
+<li>Je velmi těžké dlouhodobě dosahovat vyššího výnosu než trh, aniž by investor podstupoval vyšší riziko.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Firma oznámí, že její zisk vzrostl o 20 %, a cena akcie přesto klesne o 5 %. Jak je to možné?</p>
+<p>Investoři čekali růst zisku o 30 % a tomu odpovídala cena akcie před oznámením. Skutečnost byla horší než očekávání. Rozhoduje překvapení, ne zpráva samotná.</p>
+</div>
+</div>
+<p>Tomu, že ceny odrážejí dostupné informace, se říká <strong>informační efektivnost</strong>. Vedle ní se rozlišuje <strong>operační efektivnost</strong>: jak rychle, přesně a levně trh vyřizuje pokyny k nákupu a prodeji za nejlepší dostupnou cenu.</p>
+<section id="tři-formy-efektivnosti" class="level3" data-number="11.4.1">
+<h3 data-number="11.4.1" class="anchored" data-anchor-id="tři-formy-efektivnosti"><span class="header-section-number">11.4.1</span> Tři formy efektivnosti</h3>
+<p>Podle toho, jaké informace jsou v cenách zahrnuty, se rozlišují tři formy informační efektivnosti. Každá další zahrnuje i tu předchozí.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 47%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Forma</th>
+<th style="text-align: left;">Co je v cenách zahrnuto</th>
+<th style="text-align: left;">Čím nelze trh porazit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Slabá</td>
+<td style="text-align: left;">minulé ceny a objemy obchodů</td>
+<td style="text-align: left;">technickou analýzou</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Středně silná</td>
+<td style="text-align: left;">všechny veřejně dostupné informace</td>
+<td style="text-align: left;">ani fundamentální analýzou</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><strong>Průměrný výnos</strong></td>
-<td style="text-align: center;"><strong>-0.011202</strong></td>
-<td style="text-align: center;"><strong>Součet odchylek od průměru na druhou</strong></td>
-<td style="text-align: center;"><strong>0.024842</strong></td>
+<td style="text-align: left;">Silná</td>
+<td style="text-align: left;">všechny informace, veřejné i neveřejné</td>
+<td style="text-align: left;">ani s neveřejnými informacemi</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Technická analýza</strong> hledá v grafech minulých cen vzory, ze kterých odhaduje další vývoj.</li>
+<li><strong>Fundamentální analýza</strong> odhaduje vnitřní hodnotu akcie z veřejných informací o firmě: z účetních výkazů, zpráv a vyhlídek odvětví. Patří sem oceňovací modely z týdne 10.</li>
+<li><strong>Neveřejné informace</strong> má například vedení firmy, které zná výsledky hospodaření dřív, než je zveřejní.</li>
+</ul>
+<p>Většina velkých vyspělých trhů se podle dosavadních výzkumů blíží středně silné formě. Silná forma neplatí: kdo zná neveřejné informace, vydělat na nich může. Právě proto je obchodování na jejich základě (<strong>insider trading</strong>) zakázané.</p>
+</section>
+<section id="co-z-toho-plyne-pro-investora" class="level3 page-columns page-full" data-number="11.4.2">
+<h3 data-number="11.4.2" class="anchored" data-anchor-id="co-z-toho-plyne-pro-investora"><span class="header-section-number">11.4.2</span> Co z toho plyne pro investora</h3>
+<p>Pokud jsou trhy efektivní, neporazí je spolehlivě ani profesionálové. Data tomu odpovídají. V roce 2025 dosáhlo 79 % aktivně řízených fondů, které investují do velkých amerických firem, nižšího výnosu než index S&amp;P 500. O rok dřív to bylo 65 %. Jedním z důvodů jsou poplatky, které výnos fondů snižují.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Zdroj: S&amp;P Dow Jones Indices, <a href="https://www.spglobal.com/spdji/en/spiva/article/spiva-us-year-end-2025/">SPIVA U.S. Year-End 2025</a>. Co je index a aktivně řízený fond, vysvětlují další části.</p>
+</div></div><p>Efektivní trh neznamená, že jsou ceny vždy správné nebo že trh nemůže prudce spadnout. Investoři podléhají emocím a ceny se mohou od vnitřní hodnoty odchýlit, někdy i na roky. Pro investora je podstatné, že takové odchylky nelze spolehlivě poznat předem a vydělat na nich.</p>
+<p>Pro běžného investora z toho plyne jednoduché doporučení: nehledat vítězné akcie ani správný okamžik k nákupu, ale koupit široce diverzifikované portfolio, držet ho dlouhodobě a hlídat náklady. Jak na to, ukazuje poslední část.</p>
+</section>
+</section>
+<section id="indexy-a-fondy" class="level2 page-columns page-full" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="indexy-a-fondy"><span class="header-section-number">11.5</span> Indexy a fondy</h2>
+<section id="akciové-indexy" class="level3 page-columns page-full" data-number="11.5.1">
+<h3 data-number="11.5.1" class="anchored" data-anchor-id="akciové-indexy"><span class="header-section-number">11.5.1</span> Akciové indexy</h3>
+<p><strong>Akciový index</strong> je číslo, které shrnuje vývoj cen vybrané skupiny akcií, například největších firem jedné země. Každý index má pravidla, která určují, jaké akcie do něj patří a jakou mají váhu. Index slouží třem účelům:</p>
+<ul>
+<li><strong>Měřítko</strong> (benchmark): s indexem se porovnává výkonnost fondů a portfolií. Vydělat 15 % není úspěch, pokud trh ve stejném roce vydělal 25 %.</li>
+<li><strong>Základ pro investice</strong>: indexové fondy a ETF nakupují přesně ty akcie, které jsou v indexu.</li>
+<li><strong>Ukazatel nálady na trhu</strong>: růst nebo pokles indexu ukazuje, jak investoři hodnotí vyhlídky ekonomiky.</li>
+</ul>
+<p>Indexy se liší tím, jak určují váhu jednotlivých akcií:</p>
+<ul>
+<li><strong>Podle tržní kapitalizace</strong>: čím větší firma, tím větší váha. Tak se počítá většina indexů.</li>
+<li><strong>Podle ceny akcie</strong>: větší váhu má akcie s vyšší cenou za kus, bez ohledu na velikost firmy.</li>
+<li><strong>Rovnoměrně</strong> (equal-weighted): všechny akcie mají stejnou váhu.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Index tvoří dvě firmy. Firma A má tržní kapitalizaci 900 mld. Kč a její akcie vzrostly o 10 %. Firma B má tržní kapitalizaci 100 mld. Kč a její akcie klesly o 10 %.</p>
+<p>Index vážený tržní kapitalizací počítáme stejně jako výnos portfolia s vahami 0,9 a 0,1:</p>
+<p><span class="math display">\[
+0{,}9 \times 10\% + 0{,}1 \times (-10\%) = 8\%
+\]</span></p>
+<p>Rovnoměrně vážený index by se nezměnil: <span class="math inline">\(0{,}5 \times 10\% + 0{,}5 \times (-10\%) = 0\%\)</span>.</p>
+</div>
+</div>
+<p>Nejznámější akciové indexy:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 25%">
+<col style="width: 15%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Index</th>
+<th style="text-align: left;">Trh</th>
+<th style="text-align: center;">Počet akcií</th>
+<th style="text-align: left;">Váhy podle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">S&amp;P 500</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: left;">tržní kapitalizace</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><strong>Variance</strong></td>
-<td style="text-align: center;"><strong>0.004968</strong></td>
+<td style="text-align: left;">Dow Jones Industrial Average</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: left;">ceny akcie</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><strong>Směrodatná odchylka</strong></td>
-<td style="text-align: center;"><strong>0.070486</strong></td>
+<td style="text-align: left;">MSCI World</td>
+<td style="text-align: left;">23 vyspělých zemí</td>
+<td style="text-align: center;">asi 1 300</td>
+<td style="text-align: left;">tržní kapitalizace</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><strong>Sharpe ratio (risk-free = 0)</strong></td>
-<td style="text-align: center;"><strong>-0.158922</strong></td>
+<td style="text-align: left;">DAX</td>
+<td style="text-align: left;">Německo</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: left;">tržní kapitalizace</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FTSE 100</td>
+<td style="text-align: left;">Velká Británie</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: left;">tržní kapitalizace</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Nikkei 225</td>
+<td style="text-align: left;">Japonsko</td>
+<td style="text-align: center;">225</td>
+<td style="text-align: left;">ceny akcie</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PX</td>
+<td style="text-align: left;">Česko</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: left;">tržní kapitalizace</td>
+</tr>
+</tbody>
+</table>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Index PX pražské burzy se počítá od 5. dubna 1994, kdy začínal na 1 000 bodech. Počet akcií v něm se mění, 14 jich bylo v listopadu 2026.</p>
+</div></div><p>Většina indexů sleduje jen ceny akcií a dividendy nezapočítává. Skutečný výnos investora je proto o dividendy vyšší než růst indexu. Výjimkou je například německý DAX, který dividendy započítává.</p>
+</section>
+<section id="podílové-fondy-a-etf" class="level3 page-columns page-full" data-number="11.5.2">
+<h3 data-number="11.5.2" class="anchored" data-anchor-id="podílové-fondy-a-etf"><span class="header-section-number">11.5.2</span> Podílové fondy a ETF</h3>
+<p>Koupit jednotlivě 500 akcií z indexu je pro drobného investora nepraktické a drahé. Proto existují fondy. <strong>Podílový fond</strong> shromáždí peníze od mnoha investorů a nakoupí za ně portfolio cenných papírů. Investor dostane podílové listy a patří mu část portfolia odpovídající jeho vkladu. I s malou částkou tak získá diverzifikované portfolio.</p>
+<p>Podle toho, kdo rozhoduje o složení portfolia, se fondy dělí na dva druhy:</p>
+<ul>
+<li><strong>Aktivně řízený fond</strong>: akcie vybírá správce (portfolio manažer), který se snaží dosáhnout vyššího výnosu než trh. Za jeho práci platí investoři vyšší poplatky.</li>
+<li><strong>Indexový fond</strong> (pasivně řízený): drží akcie ve stejném složení jako zvolený index, a jeho výnos tedy index kopíruje. Nikdo akcie nevybírá, poplatky jsou proto nízké.</li>
+</ul>
+<p><strong>ETF</strong> (exchange-traded fund, burzovně obchodovaný fond) je fond, jehož podíly se obchodují na burze stejně jako akcie. Většina ETF je pasivní a kopíruje nějaký index. Tabulka porovnává dva nejběžnější případy: aktivně řízený podílový fond a ETF, které kopíruje index.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 44%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Aktivně řízený podílový fond</th>
+<th style="text-align: left;">Indexové ETF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Nákup a prodej</td>
+<td style="text-align: left;">u správce fondu nebo v bance</td>
+<td style="text-align: left;">na burze přes obchodníka s cennými papíry</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cena</td>
+<td style="text-align: left;">jednou denně, podle hodnoty majetku fondu</td>
+<td style="text-align: left;">mění se během dne jako u akcie</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Složení</td>
+<td style="text-align: left;">určuje správce, zveřejňuje se zpětně</td>
+<td style="text-align: left;">dané indexem, známé předem</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Poplatky</td>
+<td style="text-align: left;">vyšší</td>
+<td style="text-align: left;">nízké</td>
+</tr>
+</tbody>
+</table>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Hodnota majetku fondu připadající na jeden podíl se označuje <strong>NAV</strong> (net asset value). Za tuto cenu podílový fond podílové listy vydává a odkupuje.</p>
+</div></div></section>
+<section id="poplatky-a-složené-úročení" class="level3" data-number="11.5.3">
+<h3 data-number="11.5.3" class="anchored" data-anchor-id="poplatky-a-složené-úročení"><span class="header-section-number">11.5.3</span> Poplatky a složené úročení</h3>
+<p>Náklady fondu se uvádějí v procentech z hodnoty investice za rok, nejčastěji jako ukazatel <strong>TER</strong> (total expense ratio, celková nákladovost). Investor je neplatí zvlášť: fond si je průběžně strhává z majetku, a o stejnou částku je tedy nižší výnos. Aktivně řízené akciové fondy si běžně účtují 1 až 2 % ročně, velké indexové ETF často méně než 0,2 %.</p>
+<p>Rozdíl jednoho procentního bodu vypadá nevinně. Na dlouhém horizontu ale poplatky působí stejně jako složené úročení, jen opačným směrem.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Investujete 100 000 Kč na 30 let. Akciový trh vynáší 7 % ročně. Aktivně řízený fond si účtuje 1,5 % ročně, indexové ETF 0,2 % ročně. Oba dosáhnou před poplatky stejného výnosu jako trh. Po odečtení poplatků tak fond vynáší zhruba 5,5 % a ETF 6,8 % ročně.</p>
+<p><span class="math display">\[
+\begin{aligned}
+100\,000 \times 1{,}055^{30} &amp;= 498\,395 \\
+100\,000 \times 1{,}068^{30} &amp;= 719\,677
+\end{aligned}
+\]</span></p>
+<p>V ETF budete mít o 221 282 Kč víc. Rozdíl způsobený poplatky je víc než dvojnásobek původního vkladu.</p>
+</div>
+</div>
+<p>Aktivně řízený fond se vyplatí jen tehdy, když jeho správce porazí trh aspoň o rozdíl v poplatcích. Podle teorie efektivních trhů i podle dat se to dlouhodobě daří jen málokterému. Proto se rozšířilo <strong>pasivní investování</strong>: investor koupí levný indexový fond nebo ETF, drží ho dlouhodobě a získá tím výnos celého trhu. Opakem je <strong>aktivní investování</strong>, tedy snaha trh porazit výběrem akcií nebo načasováním nákupů a prodejů.</p>
+</section>
+</section>
+<section id="shrnutí" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="shrnutí"><span class="header-section-number">11.6</span> Shrnutí</h2>
+<ul>
+<li>Celkový výnos se skládá z kapitálového výnosu (změna ceny) a dividendového výnosu.</li>
+<li>Výnosy za různě dlouhá období porovnáváme po přepočtu na roční výnos, který počítá se složeným úročením.</li>
+<li>Geometrický průměr říká, kolik investice skutečně vynášela ročně. Aritmetický průměr je u kolísajících výnosů vyšší a používá se při měření rizika.</li>
+<li>Riziko měříme směrodatnou odchylkou výnosů (volatilitou). Zhruba dvě třetiny výnosů leží nejvýš jednu směrodatnou odchylku od průměru.</li>
+<li>Vyšší výnos lze čekat jen za vyšší riziko. Sharpeho poměr říká, kolik výnosu nad bezrizikovou míru připadá na jednotku rizika.</li>
+<li>Diverzifikace snižuje riziko portfolia, pokud výnosy aktiv nemají korelaci +1. Odstraní nesystematické riziko jednotlivých firem, systematické (tržní) riziko zůstává.</li>
+<li>Podle teorie efektivních trhů ceny odrážejí všechny dostupné informace, a je proto velmi těžké trh dlouhodobě porážet. Slabá forma zahrnuje minulé ceny, středně silná všechny veřejné informace a silná i neveřejné.</li>
+<li>Index shrnuje vývoj skupiny akcií a slouží jako měřítko. Indexové fondy a ETF ho kopírují s nízkými poplatky, aktivně řízené fondy se ho snaží porazit a jsou dražší.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Výpočet</th>
+<th style="text-align: left;">Vzorec</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Celkový výnos</td>
+<td style="text-align: left;"><span class="math inline">\(R = \dfrac{P_1 - P_0 + D}{P_0}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Roční výnos</td>
+<td style="text-align: left;"><span class="math inline">\(R_a = (1 + R)^{1/n} - 1\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Roční výnos z hodnot investice (CAGR)</td>
+<td style="text-align: left;"><span class="math inline">\(R_a = \left(\dfrac{P_1}{P_0}\right)^{1/n} - 1\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Aritmetický průměr výnosů</td>
+<td style="text-align: left;"><span class="math inline">\(\bar{R} = \dfrac{R_1 + R_2 + \dots + R_n}{n}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Geometrický průměr výnosů</td>
+<td style="text-align: left;"><span class="math inline">\(R_G = \big[(1 + R_1) \times \dots \times (1 + R_n)\big]^{1/n} - 1\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Směrodatná odchylka</td>
+<td style="text-align: left;"><span class="math inline">\(\sigma = \sqrt{\dfrac{(R_1 - \bar{R})^2 + \dots + (R_n - \bar{R})^2}{n - 1}}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sharpeho poměr</td>
+<td style="text-align: left;"><span class="math inline">\(S = \dfrac{\bar{R} - R_f}{\sigma}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Výnos portfolia</td>
+<td style="text-align: left;"><span class="math inline">\(R_p = w_1 \times R_1 + w_2 \times R_2 + \dots\)</span></td>
 </tr>
 </tbody>
 </table>
 </section>
-</section>
 <section id="příklady-k-procvičení" class="level2" data-number="11.7">
 <h2 data-number="11.7" class="anchored" data-anchor-id="příklady-k-procvičení"><span class="header-section-number">11.7</span> Příklady k procvičení</h2>
-<ol type="1">
-<li>Nákup akcie za $370 a prodej po jednom roce za $426. Za dobu držení akcie byly vyplaceny dividendy ve výši $3,2. Jaký je celkový procentní výnos invetice?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>Pokud příklad neuvádí jinak, počítáme se složeným úročením a směrodatnou odchylku počítáme s dělením <span class="math inline">\(n - 1\)</span>.</p>
+<section id="celkový-výnos-1" class="level3" data-number="11.7.1">
+<h3 data-number="11.7.1" class="anchored" data-anchor-id="celkový-výnos-1"><span class="header-section-number">11.7.1</span> Celkový výnos</h3>
+<div class="exercise" data-number="1" data-unit="%">
+<p>Akcii jste koupili za 370 Kč a po roce prodali za 426 Kč. Za tu dobu jste dostali dividendu 3,20 Kč. Jaký je celkový výnos investice?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="16" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="15.14" hidden="hidden">
+<p>To je jen kapitálový výnos. K rozdílu cen přičtěte i dividendu 3,20 Kč.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<div class="exercise-mistake" data-answer="13.9" hidden="hidden">
+<p>Výnos se počítá z nákupní ceny 370 Kč, ne z prodejní.</p>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+R = \frac{426 - 370 + 3{,}20}{370} = \frac{59{,}20}{370} = 0{,}16 = 16\%
+\]</span></p>
+</details>
 </div>
-<div id="callout-14" class="callout-14-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>16%</p>
+<div class="exercise" data-tol="0.005" data-number="2" data-unit="%">
+<p>Akcii jste koupili za 698,50 Kč a po roce prodali za 681 Kč. Za tu dobu jste dostali dividendu 4,90 Kč. Jaký je celkový výnos investice?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" autocomplete="off" data-answer="-1.80" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="-2.51; -2.505" hidden="hidden">
+<p>To je jen kapitálový výnos. Ke změně ceny přičtěte i dividendu 4,90 Kč.</p>
 </div>
+<div class="exercise-mistake" data-answer="1.8; 1.804" hidden="hidden">
+<p>Prodali jste levněji, než jste koupili, a dividenda rozdíl nepokryla. Výnos je záporný.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+R = \frac{681 - 698{,}50 + 4{,}90}{698{,}50} = \frac{-12{,}60}{698{,}50} = -0{,}0180 = -1{,}80\%
+\]</span></p>
+<p>Cena klesla o 17,50 Kč, dividenda ztrátu snížila na 12,60 Kč.</p>
+</details>
 </div>
-<ol start="2" type="1">
-<li>Nákup akcie za $698,5 a prodej po jednom roce za $681. Za dobu držení akcie byly vyplaceny dividendy ve výši $4,9. Jaký je celkový procentní výnos invetice?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise" data-number="3">
+<p>Akcii jste koupili za 920 Kč a po roce prodali za 1 150 Kč. Za tu dobu jste dostali dividendu 46 Kč. Jaký je kapitálový výnos, dividendový výnos a celkový výnos?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Kapitálový výnos (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="25" aria-label="Kapitálový výnos (%)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Dividendový výnos (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="5" aria-label="Dividendový výnos (%)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Celkový výnos (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="30" aria-label="Celkový výnos (%)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="20; 4; 24" hidden="hidden">
+<p>Výnosy se počítají z nákupní ceny 920 Kč, ne z prodejní.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\frac{1\,150 - 920}{920} = 0{,}25 = 25\%
+\qquad \qquad
+\frac{46}{920} = 0{,}05 = 5\%
+\]</span></p>
+<p>Celkový výnos je součet obou: <span class="math inline">\(25\% + 5\% = 30\%\)</span>.</p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<div class="exercise" data-number="4">
+<p>Koupili jste 50 akcií po 240 Kč. Po roce jste je prodali po 264 Kč. Za tu dobu jste dostali dividendu 9 Kč na akcii. Kolik korun jste celkem vydělali a jaký je celkový výnos v procentech?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Výnos (Kč)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="1650" aria-label="Výnos (Kč)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Výnos (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="13.75" aria-label="Výnos (%)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="1200; 10" hidden="hidden">
+<p>To je jen zisk ze změny ceny. Přičtěte dividendu 9 Kč na akcii.</p>
 </div>
-<div id="callout-15" class="callout-15-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>-1,8%</p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Na jedné akcii jste vydělali <span class="math inline">\(264 - 240 + 9 = 33\)</span> Kč:</p>
+<p><span class="math display">\[
+50 \times 33 = 1\,650
+\qquad \qquad
+R = \frac{33}{240} = 0{,}1375 = 13{,}75\%
+\]</span></p>
+<p>Vydělali jste 1 650 Kč. Výnos v procentech na počtu akcií nezávisí.</p>
+</details>
 </div>
+</section>
+<section id="roční-výnos-1" class="level3" data-number="11.7.2">
+<h3 data-number="11.7.2" class="anchored" data-anchor-id="roční-výnos-1"><span class="header-section-number">11.7.2</span> Roční výnos</h3>
+<div class="exercise" data-number="1" data-unit="%">
+<p>Investice vydělala 8 % za 3 měsíce. Jaký je to roční výnos?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="36.05" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="32" hidden="hidden">
+<p>Takhle vychází jednoduché úročení. Roční výnos počítá se složeným: <span class="math inline">\(1{,}08^4 - 1\)</span>.</p>
 </div>
+<div class="exercise-mistake" data-answer="1.94; 1.943" hidden="hidden">
+<p>Exponent je obráceně. Do roku se vejdou čtyři čtvrtletí, proto <span class="math inline">\(1{,}08^4\)</span>.</p>
 </div>
-<ol start="3" type="1">
-<li>Počáteční hodnota investice byla $1 200, na konci byla hodnota investice $1 394. Celková doba trvání byla 4 roky. Jak velký je CAGR?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Tři měsíce jsou čtvrt roku, tedy <span class="math inline">\(n = 0{,}25\)</span> a <span class="math inline">\(1 / n = 4\)</span>:</p>
+<p><span class="math display">\[
+R_a = 1{,}08^{4} - 1 = 0{,}3605 = 36{,}05\%
+\]</span></p>
+</details>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<div class="exercise" data-number="2" data-unit="%">
+<p>Investice vydělala 30 % za 3 roky. Jaký je to roční výnos?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="9.14" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="10" hidden="hidden">
+<p>Dělení počtem let nepočítá se složeným úročením. Použijte třetí odmocninu: <span class="math inline">\(1{,}30^{1/3} - 1\)</span>.</p>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+R_a = 1{,}30^{1/3} - 1 = 0{,}0914 = 9{,}14\%
+\]</span></p>
+</details>
 </div>
-<div id="callout-16" class="callout-16-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>3,82%</p>
+<div class="exercise" data-number="3" data-unit="%">
+<p>Počáteční hodnota investice byla 1 200 Kč, po 4 letech měla hodnotu 1 394 Kč. Jaký byl roční výnos (CAGR)?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="3.82" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="4.04" hidden="hidden">
+<p>Takhle vychází jednoduché úročení. Podíl hodnot odmocněte: <span class="math inline">\(1{,}1617^{1/4} - 1\)</span>.</p>
 </div>
+<div class="exercise-mistake" data-answer="16.17" hidden="hidden">
+<p>To je výnos za celé 4 roky. Přepočítejte ho na jeden rok.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+R_a = \left(\frac{1\,394}{1\,200}\right)^{1/4} - 1 = 1{,}1617^{1/4} - 1 = 0{,}0382 = 3{,}82\%
+\]</span></p>
+</details>
 </div>
-<ol start="4" type="1">
-<li>Počáteční hodnota investice byla $213, na konci byla hodnota investice $321. Celková doba trvání byla 7 let. Jak velký je CAGR?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise" data-number="4" data-unit="%">
+<p>Počáteční hodnota investice byla 213 Kč, po 7 letech měla hodnotu 321 Kč. Jaký byl roční výnos (CAGR)?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="6.03" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="7.24" hidden="hidden">
+<p>Takhle vychází jednoduché úročení. Podíl hodnot odmocněte: <span class="math inline">\(1{,}5070^{1/7} - 1\)</span>.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+R_a = \left(\frac{321}{213}\right)^{1/7} - 1 = 1{,}5070^{1/7} - 1 = 0{,}0603 = 6{,}03\%
+\]</span></p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<div class="exercise" data-number="5" data-unit="%">
+<p>Počáteční hodnota investice byla 121 Kč, po 6 měsících měla hodnotu 91 Kč. Jaký je to roční výnos?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" autocomplete="off" data-answer="-43.44" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="-24.79" hidden="hidden">
+<p>To je výnos za 6 měsíců. Přepočítejte ho na celý rok.</p>
 </div>
-<div id="callout-17" class="callout-17-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>6,03%</p>
+<div class="exercise-mistake" data-answer="-49.59" hidden="hidden">
+<p>Takhle vychází jednoduché úročení. Podíl hodnot umocněte na druhou: <span class="math inline">\(0{,}75207^2 - 1\)</span>.</p>
 </div>
+<div class="exercise-mistake" data-answer="-13.28" hidden="hidden">
+<p>Exponent je obráceně. Do roku se vejdou dvě pololetí, proto <span class="math inline">\(0{,}75207^2\)</span>.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Šest měsíců je půl roku, tedy <span class="math inline">\(n = 0{,}5\)</span> a <span class="math inline">\(1 / n = 2\)</span>:</p>
+<p><span class="math display">\[
+R_a = \left(\frac{91}{121}\right)^{2} - 1 = 0{,}75207^{2} - 1 = -0{,}4344 = -43{,}44\%
+\]</span></p>
+</details>
 </div>
-<ol start="5" type="1">
-<li>Počáteční hodnota investice byla $121, na konci byla hodnota investice $91. Celková doba trvání byla 6 měsíců. Jak velký je CAGR?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+</section>
+<section id="průměrný-výnos" class="level3" data-number="11.7.3">
+<h3 data-number="11.7.3" class="anchored" data-anchor-id="průměrný-výnos"><span class="header-section-number">11.7.3</span> Průměrný výnos</h3>
+<div class="exercise" data-number="1">
+<p>Investice vydělala první rok 30 %, druhý rok ztratila 20 % a třetí rok vydělala 10 %. Jaký je aritmetický a jaký geometrický průměr ročních výnosů?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Aritmetický průměr (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="6.67" aria-label="Aritmetický průměr (%)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Geometrický průměr (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="4.59" aria-label="Geometrický průměr (%)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="4.8" hidden="hidden">
+<p>To je výnos za tři roky vydělený třemi. Geometrický průměr je třetí odmocnina: <span class="math inline">\(1{,}144^{1/3} - 1\)</span>.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\bar{R} = \frac{30 - 20 + 10}{3} = 6{,}67\%
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+R_G &amp;= (1{,}30 \times 0{,}80 \times 1{,}10)^{1/3} - 1 \\
+    &amp;= 1{,}144^{1/3} - 1 = 0{,}0459 = 4{,}59\%
+\end{aligned}
+\]</span></p>
+<p>Investice se za tři roky zhodnotila o 14,4 %, tedy o 4,59 % ročně.</p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<div class="exercise" data-number="2">
+<p>Akcie první rok vzrostla o 100 % a druhý rok klesla o 50 %. Jaký je aritmetický a jaký geometrický průměr ročních výnosů?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Aritmetický průměr (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="25" aria-label="Aritmetický průměr (%)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Geometrický průměr (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="0" aria-label="Geometrický průměr (%)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\begin{aligned}
+\bar{R} &amp;= \frac{100 - 50}{2} = 25\% \\[1ex]
+R_G &amp;= (2 \times 0{,}5)^{1/2} - 1 = 1^{1/2} - 1 = 0\%
+\end{aligned}
+\]</span></p>
+<p>Cena se nejdřív zdvojnásobila a pak klesla na polovinu, je tedy stejná jako na začátku. Investor nevydělal nic, i když aritmetický průměr je 25 %.</p>
+</details>
 </div>
-<div id="callout-18" class="callout-18-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>-43,44%</p>
+<div class="exercise" data-number="3">
+<p>Fond vydělal ve čtyřech letech po sobě 12 %, −8 %, 20 % a 4 %. Jaký je aritmetický a jaký geometrický průměr ročních výnosů?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Aritmetický průměr (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="7" aria-label="Aritmetický průměr (%)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Geometrický průměr (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="6.49" aria-label="Geometrický průměr (%)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="7.15" hidden="hidden">
+<p>To je výnos za čtyři roky vydělený čtyřmi. Geometrický průměr je čtvrtá odmocnina: <span class="math inline">\(1{,}2859^{1/4} - 1\)</span>.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\bar{R} = \frac{12 - 8 + 20 + 4}{4} = 7\%
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+R_G &amp;= (1{,}12 \times 0{,}92 \times 1{,}20 \times 1{,}04)^{1/4} - 1 \\
+    &amp;= 1{,}2859^{1/4} - 1 = 0{,}0649 = 6{,}49\%
+\end{aligned}
+\]</span></p>
+</details>
 </div>
+</section>
+<section id="směrodatná-odchylka-a-sharpeho-poměr" class="level3" data-number="11.7.4">
+<h3 data-number="11.7.4" class="anchored" data-anchor-id="směrodatná-odchylka-a-sharpeho-poměr"><span class="header-section-number">11.7.4</span> Směrodatná odchylka a Sharpeho poměr</h3>
+<div class="exercise" data-tol="0.05" data-number="1">
+<p>Akciový fond vydělal ve čtyřech letech po sobě 18 %, −6 %, 12 % a 0 %. Jaký je průměrný výnos (aritmetický) a směrodatná odchylka výnosů?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Průměrný výnos (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="6" aria-label="Průměrný výnos (%)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Směrodatná odchylka (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="10.95" aria-label="Směrodatná odchylka (%)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="9.49" hidden="hidden">
+<p>Součet druhých mocnin dělte <span class="math inline">\(n - 1 = 3\)</span>, ne počtem let.</p>
 </div>
-<ol start="6" type="1">
-<li>Jaká bude hodnota Sharpe ratia, pokud je průměrný výnos investice 14.3%, risk-free rate 1.84% a volatilita 26.6%?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise-mistake" data-answer="120" hidden="hidden">
+<p>To je rozptyl. Směrodatná odchylka je jeho odmocnina.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\bar{R} = \frac{18 - 6 + 12 + 0}{4} = 6\%
+\]</span></p>
+<p>Odchylky od průměru jsou 12, −12, 6 a −6:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\sigma &amp;= \sqrt{\frac{12^2 + (-12)^2 + 6^2 + (-6)^2}{4 - 1}} \\
+       &amp;= \sqrt{\frac{360}{3}} = \sqrt{120} = 10{,}95
+\end{aligned}
+\]</span></p>
+<p>Směrodatná odchylka je 10,95 %.</p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<div class="exercise" data-tol="0.05" data-number="2">
+<p>Dluhopisový fond vydělal ve třech letech po sobě 4 %, 10 % a 7 %. Jaký je průměrný výnos (aritmetický) a směrodatná odchylka výnosů?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Průměrný výnos (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="7" aria-label="Průměrný výnos (%)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Směrodatná odchylka (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="3" aria-label="Směrodatná odchylka (%)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="2.45" hidden="hidden">
+<p>Součet druhých mocnin dělte <span class="math inline">\(n - 1 = 2\)</span>, ne počtem let.</p>
 </div>
-<div id="callout-19" class="callout-19-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>0.47</p>
+<div class="exercise-mistake" data-answer="9" hidden="hidden">
+<p>To je rozptyl. Směrodatná odchylka je jeho odmocnina.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\bar{R} = \frac{4 + 10 + 7}{3} = 7\%
+\]</span></p>
+<p>Odchylky od průměru jsou −3, 3 a 0:</p>
+<p><span class="math display">\[
+\sigma = \sqrt{\frac{(-3)^2 + 3^2 + 0^2}{3 - 1}} = \sqrt{\frac{18}{2}} = \sqrt{9} = 3
+\]</span></p>
+<p>Směrodatná odchylka je 3 %. Výnosy dluhopisového fondu kolísají mnohem méně než výnosy akciového fondu z předchozího příkladu.</p>
+</details>
 </div>
+<div class="exercise" data-number="3">
+<p>Fond má průměrný roční výnos 9 % a směrodatnou odchylku 15 %. Výnosy mají přibližně normální rozdělení. V jakém rozmezí bude ležet výnos fondu zhruba ve dvou letech ze tří?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Dolní mez (%)</span><input type="text" class="form-control" autocomplete="off" data-answer="-6" aria-label="Dolní mez (%)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Horní mez (%)</span><input type="text" class="form-control" autocomplete="off" data-answer="24" aria-label="Horní mez (%)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="-21; 39" hidden="hidden">
+<p>To jsou dvě směrodatné odchylky od průměru. V tomto rozmezí leží zhruba 95 % výnosů.</p>
 </div>
-<ol start="7" type="1">
-<li>Jaká bude hodnota Sharpe ratia, pokud je průměrný výnos investice 7.1%, risk-free rate 2.4% a volatilita 18.3%?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Zhruba 68 % výnosů, tedy dva ze tří, leží nejvýš jednu směrodatnou odchylku od průměru:</p>
+<p><span class="math display">\[
+9 - 15 = -6
+\qquad \qquad
+9 + 15 = 24
+\]</span></p>
+<p>Výnos bude většinou mezi −6 % a 24 %.</p>
+</details>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<div class="exercise" data-tol="0.005" data-number="4">
+<p>Jaký je Sharpeho poměr investice, která má průměrný výnos 14,3 % a směrodatnou odchylku 26,6 %? Bezriziková výnosová míra je 1,84 %.</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="0.47" aria-label="Váš výsledek" placeholder="Váš výsledek"><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="0.54; 0.538; 0.5376" hidden="hidden">
+<p>Od výnosu investice nejdřív odečtěte bezrizikovou výnosovou míru.</p>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<div class="exercise-mistake" data-answer="2.13; 2.135" hidden="hidden">
+<p>Zlomek je obráceně. Výnos nad bezrizikovou míru dělíme směrodatnou odchylkou.</p>
 </div>
-<div id="callout-20" class="callout-20-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>0.26</p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+S = \frac{14{,}3 - 1{,}84}{26{,}6} = \frac{12{,}46}{26{,}6} = 0{,}47
+\]</span></p>
+</details>
 </div>
+<div class="exercise" data-tol="0.005" data-number="5">
+<p>Jaký je Sharpeho poměr investice, která má průměrný výnos 7,1 % a směrodatnou odchylku 18,3 %? Bezriziková výnosová míra je 2,4 %.</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="0.26" aria-label="Váš výsledek" placeholder="Váš výsledek"><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="0.39; 0.388" hidden="hidden">
+<p>Od výnosu investice nejdřív odečtěte bezrizikovou výnosovou míru.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+S = \frac{7{,}1 - 2{,}4}{18{,}3} = \frac{4{,}7}{18{,}3} = 0{,}26
+\]</span></p>
+</details>
 </div>
-<ol start="8" type="1">
-<li>Investice A má průměrný výnos 11.37% a volatilitu 16.92%. Investice B má průměrný výnos 7.34% a volatilitu 20.11%. Investice C má průměrný výnos 10.46% a volatilitu 11.78%. Investice D má průměrný výnos 13.71% a volatilitu 10.69%. Risk-free rate je 0%. Která z uvedených investic je nejatraktivnější z hlediska Sharpe ratia?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise" data-tol="0.005" data-number="6">
+<p>Fond A má průměrný výnos 11 % a směrodatnou odchylku 16 %. Fond B má průměrný výnos 7 % a směrodatnou odchylku 5 %. Bezriziková výnosová míra je 3 %. Jaký je Sharpeho poměr obou fondů? Který fond je z tohoto pohledu lepší?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Sharpeho poměr fondu A</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="0.5" aria-label="Sharpeho poměr fondu A"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Sharpeho poměr fondu B</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="0.8" aria-label="Sharpeho poměr fondu B"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="0.69; 1.4; 0.6875" hidden="hidden">
+<p>Od výnosu fondu nejdřív odečtěte bezrizikovou výnosovou míru 3 %.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+S_A = \frac{11 - 3}{16} = 0{,}50
+\qquad \qquad
+S_B = \frac{7 - 3}{5} = 0{,}80
+\]</span></p>
+<p>Lepší je fond B. Vydělal méně než fond A, ale s mnohem nižším rizikem, a za jednotku rizika tak přinesl víc výnosu navíc.</p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</section>
+<section id="portfolio" class="level3" data-number="11.7.5">
+<h3 data-number="11.7.5" class="anchored" data-anchor-id="portfolio"><span class="header-section-number">11.7.5</span> Portfolio</h3>
+<div class="exercise" data-number="1" data-unit="%">
+<p>Do akcií A jste investovali 70 000 Kč, do akcií B 30 000 Kč. Akcie A za rok vydělaly 12 %, akcie B ztratily 4 %. Jaký je výnos vašeho portfolia?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="7.2" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="4" hidden="hidden">
+<p>To je prostý průměr obou výnosů. V akciích A máte víc peněz, proto mají větší váhu.</p>
 </div>
-<div id="callout-21" class="callout-21-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Investice D</p>
+<div class="exercise-mistake" data-answer="0.8" hidden="hidden">
+<p>Váhy jsou zaměněné. Váhu 0,7 mají akcie A, do kterých jste vložili 70 000 Kč.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Portfolio má hodnotu 100 000 Kč, váhy jsou <span class="math inline">\(w_A = 0{,}7\)</span> a <span class="math inline">\(w_B = 0{,}3\)</span>:</p>
+<p><span class="math display">\[
+R_p = 0{,}7 \times 12\% + 0{,}3 \times (-4\%) = 8{,}4\% - 1{,}2\% = 7{,}2\%
+\]</span></p>
+</details>
 </div>
+<div class="exercise" data-number="2" data-unit="%">
+<p>Máte portfolio v hodnotě 500 000 Kč: 250 000 Kč v akciovém fondu, 150 000 Kč v dluhopisovém fondu a 100 000 Kč v akciích jedné firmy. Akciový fond za rok vydělal 8 %, dluhopisový fond 2 % a akcie firmy ztratily 10 %. Jaký je výnos portfolia?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="2.6" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="0" hidden="hidden">
+<p>To je prostý průměr tří výnosů. Každý výnos vynásobte váhou aktiva v portfoliu.</p>
+</div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Váhy jsou <span class="math inline">\(250 / 500 = 0{,}5\)</span>, <span class="math inline">\(150 / 500 = 0{,}3\)</span> a <span class="math inline">\(100 / 500 = 0{,}2\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+R_p &amp;= 0{,}5 \times 8\% + 0{,}3 \times 2\% + 0{,}2 \times (-10\%) \\
+    &amp;= 4\% + 0{,}6\% - 2\% = 2{,}6\%
+\end{aligned}
+\]</span></p>
+</details>
+</div>
+<div class="exercise" data-tol="0.05" data-number="3">
+<p>Polovinu peněz máte v akciích A, polovinu v akciích B. Akcie A vydělaly ve třech letech po sobě 20 %, −10 % a 14 %, akcie B −4 %, 22 % a 6 %. Jaký je průměrný výnos portfolia a jeho směrodatná odchylka?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Průměrný výnos portfolia (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="8" aria-label="Průměrný výnos portfolia (%)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Směrodatná odchylka portfolia (%)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="2" aria-label="Směrodatná odchylka portfolia (%)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="1.63; 1.633" hidden="hidden">
+<p>Součet druhých mocnin dělte <span class="math inline">\(n - 1 = 2\)</span>, ne počtem let.</p>
+</div>
+<div class="exercise-mistake" data-answer="14.49" hidden="hidden">
+<p>Riziko portfolia není průměr rizik obou akcií. Spočítejte nejdřív výnos portfolia v každém roce a z něj směrodatnou odchylku.</p>
+</div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Výnos portfolia je každý rok průměr obou výnosů:</p>
+<p><span class="math display">\[
+\frac{20 - 4}{2} = 8
+\qquad
+\frac{-10 + 22}{2} = 6
+\qquad
+\frac{14 + 6}{2} = 10
+\]</span></p>
+<p>Průměrný výnos portfolia je <span class="math inline">\((8 + 6 + 10) / 3 = 8\%\)</span>. Odchylky od průměru jsou 0, −2 a 2:</p>
+<p><span class="math display">\[
+\sigma = \sqrt{\frac{0^2 + (-2)^2 + 2^2}{3 - 1}} = \sqrt{4} = 2
+\]</span></p>
+<p>Směrodatná odchylka portfolia je 2 %. Samotné akcie A mají 15,87 % a akcie B 13,11 %. Jejich výnosy se pohybují proti sobě, a portfolio proto skoro nekolísá.</p>
+</details>
+</div>
+<div class="exercise" data-number="4" data-unit="%">
+<p>Index tvoří tři firmy a je vážený tržní kapitalizací. Firma A má tržní kapitalizaci 800 mld. Kč a její akcie vzrostly o 5 %. Firma B má 150 mld. Kč a její akcie klesly o 10 %. Firma C má 50 mld. Kč a její akcie vzrostly o 20 %. O kolik procent se změnil index?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="3.5" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="5" hidden="hidden">
+<p>Tak by se změnil rovnoměrně vážený index. Tady má každá firma váhu podle své tržní kapitalizace.</p>
+</div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Celková tržní kapitalizace je 1 000 mld. Kč, váhy jsou 0,8, 0,15 a 0,05:</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; 0{,}8 \times 5\% + 0{,}15 \times (-10\%) + 0{,}05 \times 20\% \\
+&amp; = 4\% - 1{,}5\% + 1\% = 3{,}5\%
+\end{aligned}
+\]</span></p>
+<p>Index vzrostl o 3,5 %. Rozhoduje hlavně největší firma.</p>
+</details>
+</div>
+</section>
+<section id="poplatky" class="level3" data-number="11.7.6">
+<h3 data-number="11.7.6" class="anchored" data-anchor-id="poplatky"><span class="header-section-number">11.7.6</span> Poplatky</h3>
+<div class="exercise" data-number="1">
+<p>Investujete 200 000 Kč na 20 let. Akciový trh vynáší 8 % ročně. Aktivně řízený fond si účtuje 1,8 % ročně, indexové ETF 0,3 % ročně. Oba dosáhnou před poplatky stejného výnosu jako trh. Kolik budete mít po 20 letech v každém z nich? Poplatek odečtěte od ročního výnosu.</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Aktivně řízený fond (Kč)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="666070.70" aria-label="Aktivně řízený fond (Kč)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Indexové ETF (Kč)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="881747.14" aria-label="Indexové ETF (Kč)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="932191.43" hidden="hidden">
+<p>To je výnos trhu bez poplatků. Od 8 % odečtěte roční poplatek.</p>
+</div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Fond vynáší po poplatcích <span class="math inline">\(8 - 1{,}8 = 6{,}2\%\)</span> ročně, ETF <span class="math inline">\(8 - 0{,}3 = 7{,}7\%\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+200\,000 \times 1{,}062^{20} &amp;= 666\,070{,}70 \\
+200\,000 \times 1{,}077^{20} &amp;= 881\,747{,}14
+\end{aligned}
+\]</span></p>
+<p>V ETF budete mít o 215 676,44 Kč víc.</p>
+</details>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
