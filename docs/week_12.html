@@ -108,7 +108,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -276,17 +276,18 @@ window.Quarto = {
     <h2 id="toc-title">Obsah lekce</h2>
    
   <ul class="collapse">
-  <li><a href="#cíl-firmy" id="toc-cíl-firmy" class="nav-link active" data-scroll-target="#cíl-firmy"><span class="header-section-number">12.1</span> Cíl firmy</a></li>
+  <li><a href="#investiční-rozhodování-firmy" id="toc-investiční-rozhodování-firmy" class="nav-link active" data-scroll-target="#investiční-rozhodování-firmy"><span class="header-section-number">12.1</span> Investiční rozhodování firmy</a></li>
   <li><a href="#doba-návratnosti" id="toc-doba-návratnosti" class="nav-link" data-scroll-target="#doba-návratnosti"><span class="header-section-number">12.2</span> Doba návratnosti</a></li>
   <li><a href="#čistá-současná-hodnota" id="toc-čistá-současná-hodnota" class="nav-link" data-scroll-target="#čistá-současná-hodnota"><span class="header-section-number">12.3</span> Čistá současná hodnota</a></li>
   <li><a href="#vnitřní-výnosové-procento" id="toc-vnitřní-výnosové-procento" class="nav-link" data-scroll-target="#vnitřní-výnosové-procento"><span class="header-section-number">12.4</span> Vnitřní výnosové procento</a></li>
-  <li><a href="#alternativní-metody-měření-výkonnosti-investic" id="toc-alternativní-metody-měření-výkonnosti-investic" class="nav-link" data-scroll-target="#alternativní-metody-měření-výkonnosti-investic"><span class="header-section-number">12.5</span> Alternativní metody měření výkonnosti investic</a></li>
-  <li><a href="#příklady-k-procvičení" id="toc-příklady-k-procvičení" class="nav-link" data-scroll-target="#příklady-k-procvičení"><span class="header-section-number">12.6</span> Příklady k procvičení</a></li>
+  <li><a href="#další-metody-a-výběr-mezi-projekty" id="toc-další-metody-a-výběr-mezi-projekty" class="nav-link" data-scroll-target="#další-metody-a-výběr-mezi-projekty"><span class="header-section-number">12.5</span> Další metody a výběr mezi projekty</a></li>
+  <li><a href="#shrnutí" id="toc-shrnutí" class="nav-link" data-scroll-target="#shrnutí"><span class="header-section-number">12.6</span> Shrnutí</a></li>
+  <li><a href="#příklady-k-procvičení" id="toc-příklady-k-procvičení" class="nav-link" data-scroll-target="#příklady-k-procvičení"><span class="header-section-number">12.7</span> Příklady k procvičení</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -318,7 +319,7 @@ Studijní materiály
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Dahlquist, J. R., &amp;; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
+<li>Dahlquist, J. R., &amp; Knight, R. (2022). Principles of finance. OpenStax, Rice University. <a href="https://openstax.org/details/books/principles-finance" class="uri">https://openstax.org/details/books/principles-finance</a>
 <ul>
 <li>Chapter 16 - How Companies Think about Investing</li>
 </ul></li>
@@ -327,184 +328,280 @@ Studijní materiály
 </div>
 <p><strong>Výstupy z učení:</strong></p>
 <ol type="1">
-<li>Umět vysvětlit hlavní cíl firmy a metody jeho dosažení.</li>
-<li>Porozumět metodám hodnocení investic z pohledu firmy.</li>
-<li>Naučit se vypočítat dobu návratnosti, NPV a IRR.</li>
-<li>Interpretovat dosažené výsledky a kriticky je zhodnotit.</li>
-<li>Získat povědomí o dalších alternativních metodách hodnocení investic.</li>
+<li>Vysvětlit, jak firma rozhoduje o investicích, a popsat peněžní toky projektu a diskontní sazbu.</li>
+<li>Vypočítat dobu návratnosti a vysvětlit její nedostatky.</li>
+<li>Vypočítat čistou současnou hodnotu (NPV) a rozhodnout podle ní o projektu.</li>
+<li>Vysvětlit vnitřní výnosové procento (IRR), určit ho a popsat jeho úskalí.</li>
+<li>Použít index ziskovosti a diskontovanou dobu návratnosti a vybrat mezi několika projekty.</li>
 </ol>
-<section id="cíl-firmy" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="cíl-firmy"><span class="header-section-number">12.1</span> Cíl firmy</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Hlavním cílem firmy je maximalizace tržní hodnoty firmy <strong>v dlouhém období</strong>. Firmy se snaží generovat zisk prostřednictvím efektivního řízení zdrojů, zvyšováním příjmů, snižováním nákladů a zajištěním udržitelného růstu.</p>
-</div>
-</div>
-<p>Základní tři pilíře vedoucí k maximalizaci hodnoty firmy:</p>
-<ul>
-<li><strong>Rozhodování o investicích</strong> (kapitálové rozpočtování, Capital Budgeting) <span class="math inline">\(\rightarrow\)</span> plánování a hodnocení investic do projektů nebo aktiv.</li>
-<li><strong>Rozhodování o financování</strong> (Capital Structure) <span class="math inline">\(\rightarrow\)</span> volba vhodné kombinace vlastního kapitálu (equity) a dluhu (debt) k financování investic.</li>
-<li><strong>Strategické řízení rizik</strong> (Risk management) <span class="math inline">\(\rightarrow\)</span> identifikace rizik, jejich hodnocení a zajištění proti rizikům.</li>
-</ul>
-<p>Všechny tři oblasti jsou důležité, hodnota však vzniká hlavně z investic. Proto se tato kapitola zaměří na metody hodnocení investic.</p>
-<p>Klíčové aspekty kapitálového rozpočtování:</p>
-<ol type="1">
-<li>Identifikace investičních příležitostí.</li>
-<li>Odhad budoucích peněžních toků.</li>
-<li>Stanovení nákladů na kapitál (např. úroky).</li>
-<li>Vyhodnocení projektů (NPV, IRR, atd.).</li>
-<li>Rozhodnutí o investici.</li>
-<li>Monitorování a kontrola.</li>
-</ol>
-</section>
-<section id="doba-návratnosti" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="doba-návratnosti"><span class="header-section-number">12.2</span> Doba návratnosti</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Doba návratnosti</strong> (Payback period) je doba, za kterou se vrátí počáteční investice z peněžních toků generovaných projektem nebo investicí. Čím kratší je doba návratnosti, tím méně je investice vystavena riziku.</p>
-</div>
-</div>
-<p>Vzorec pro výpočet payback period s konstatním cashflow:</p>
-<p><span class="math display">\[
-\text{Payback Period} = \frac{\text{Počáteční investice}}{\text{Roční čistý peněžní tok}}
-\]</span></p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Příklad
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Firma investuje 100 000 Kč do projektu. Očekává, že projekt bude generovat čistý peněžní tok 25 000 Kč ročně.</p>
-<p><span class="math display">\[
-\text{Payback Period} = \frac{100 000 \text{ Kč}}{25 000 \text{ Kč}} = 4 \text{ roky}
-\]</span></p>
-</div>
-</div>
-<ul>
-<li>Pokud se peněžní toky liší rok od roku, výpočet se provádí postupným sčítáním peněžních toků, dokud není dosaženo výše počáteční investice.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Příklad
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Počáteční investice je 100 000 Kč, ale peněžní toky jsou následující:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Rok</th>
-<th>Peněžní tok (Kč)</th>
-<th>Kumulativní peněžní tok (Kč)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>20 000</td>
-<td>20 000</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>30 000</td>
-<td>50 000</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>40 000</td>
-<td>90 000</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>50 000</td>
-<td>140 000</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Peněžní tok se vyrovná s počáteční investicí někdy během 4. roku.</li>
-<li>Kumulativní peněžní tok po 3 letech je 90 000 Kč. K pokrytí zbývajících 10 000 Kč potřebujeme 10 000 Kč z peněžního toku ve 4. roce.</li>
-</ul>
-<p><span class="math display">\[
-\text{Payback Period} = 3 \text{ roky} + \frac{10 000 \text{ Kč}}{50 000 \text{ Kč}} = 3{,}2 \text{ roky}
-\]</span></p>
-</div>
-</div>
-<p><br></p>
+<p><strong>Značení:</strong></p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 44%">
-<col style="width: 55%">
+<col style="width: 18%">
+<col style="width: 81%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;"><strong>Výhody</strong></th>
-<th style="text-align: center;"><strong>Nevýhody</strong></th>
+<th style="text-align: left;">Symbol</th>
+<th style="text-align: left;">Význam</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Jednoduchost a snadná interpretace</td>
-<td style="text-align: center;">Ignoruje časovou hodnotu peněz</td>
+<td style="text-align: left;"><span class="math inline">\(CF_0\)</span></td>
+<td style="text-align: left;">počáteční investice, tedy částka, kterou firma dnes zaplatí</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Rychlé zhodnocení likvidity a rizika</td>
-<td style="text-align: center;">Nezohledňuje celkovou ziskovost</td>
+<td style="text-align: left;"><span class="math inline">\(CF_t\)</span>, <span class="math inline">\(CF\)</span></td>
+<td style="text-align: left;">peněžní tok projektu v roce <span class="math inline">\(t\)</span>; <span class="math inline">\(CF\)</span> je tok stejný v každém roce</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Vhodné pro krátkodobé projekty</td>
-<td style="text-align: center;">Nevhodné pro srovnávání různě velkých projektů</td>
+<td style="text-align: left;"><span class="math inline">\(r\)</span></td>
+<td style="text-align: left;">diskontní sazba (náklady kapitálu)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(n\)</span></td>
+<td style="text-align: left;">doba trvání projektu v letech</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(PV\)</span></td>
+<td style="text-align: left;">současná hodnota budoucích peněžních toků projektu</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(DN\)</span></td>
+<td style="text-align: left;">doba návratnosti</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(NPV\)</span></td>
+<td style="text-align: left;">čistá současná hodnota (net present value)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(IRR\)</span></td>
+<td style="text-align: left;">vnitřní výnosové procento (internal rate of return)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(PI\)</span></td>
+<td style="text-align: left;">index ziskovosti (profitability index)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(MIRR\)</span></td>
+<td style="text-align: left;">modifikované vnitřní výnosové procento</td>
 </tr>
 </tbody>
 </table>
-<p><br></p>
+<p>V týdnech <a href="./week_09.html">9</a> až <a href="./week_11.html">11</a> jsme se dívali očima investora, který kupuje dluhopisy a akcie. Teď se podíváme z druhé strany: jak se rozhoduje firma, která peníze od investorů dostala a má je do něčeho vložit? Koupit nový stroj? Otevřít další pobočku? Vyvinout nový výrobek? Nástroje známe z <a href="./week_08.html">týdne 8</a>: budoucí peněžní toky diskontujeme a porovnáme s tím, co dnes zaplatíme.</p>
+<section id="investiční-rozhodování-firmy" class="level2 page-columns page-full" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="investiční-rozhodování-firmy"><span class="header-section-number">12.1</span> Investiční rozhodování firmy</h2>
+<section id="cíl-firmy" class="level3" data-number="12.1.1">
+<h3 data-number="12.1.1" class="anchored" data-anchor-id="cíl-firmy"><span class="header-section-number">12.1.1</span> Cíl firmy</h3>
+<p>Hlavním cílem firmy je <strong>dlouhodobě zvyšovat svou hodnotu pro vlastníky</strong>. Vedení firmy k tomu dělá tři druhy rozhodnutí:</p>
+<ul>
+<li><strong>Investiční rozhodování</strong>: do čeho peníze vložit. Říká se mu také <strong>kapitálové rozpočtování</strong> (capital budgeting).</li>
+<li><strong>Rozhodování o financování</strong>: kde peníze vzít, tedy jak zkombinovat vlastní kapitál a dluh.</li>
+<li><strong>Řízení rizik</strong>: která rizika firma ponese a proti kterým se zajistí.</li>
+</ul>
+<p>Hodnota firmy vzniká hlavně dobrými investicemi. Financování a řízení rizik jim k tomu vytvářejí podmínky. Tato kapitola se proto věnuje investičnímu rozhodování.</p>
+<p>Investici, o které firma rozhoduje, budeme říkat <strong>projekt</strong>. Typický projekt má tři vlastnosti: firma dnes zaplatí velkou částku, peníze se jí vracejí postupně řadu let a rozhodnutí se dá jen těžko vzít zpět. Postup rozhodování má šest kroků:</p>
+<ol type="1">
+<li>Najít investiční příležitosti.</li>
+<li>Odhadnout peněžní toky, které projekt přinese.</li>
+<li>Určit diskontní sazbu.</li>
+<li>Projekt vyhodnotit některou z metod této kapitoly.</li>
+<li>Rozhodnout, zda projekt přijmout.</li>
+<li>Průběžně kontrolovat, jestli se projekt vyvíjí podle plánu.</li>
+</ol>
 </section>
-<section id="čistá-současná-hodnota" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="čistá-současná-hodnota"><span class="header-section-number">12.3</span> Čistá současná hodnota</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
+<section id="peněžní-toky-projektu" class="level3 page-columns page-full" data-number="12.1.2">
+<h3 data-number="12.1.2" class="anchored" data-anchor-id="peněžní-toky-projektu"><span class="header-section-number">12.1.2</span> Peněžní toky projektu</h3>
+<p>Každý projekt popíšeme jeho peněžními toky na časové ose. Na začátku stojí <strong>počáteční investice</strong> <span class="math inline">\(CF_0\)</span>: částka, kterou firma zaplatí dnes. V dalších letech projekt přináší <strong>peněžní toky</strong> <span class="math inline">\(CF_1\)</span>, <span class="math inline">\(CF_2\)</span> až <span class="math inline">\(CF_n\)</span>. Peněžní tok za rok je rozdíl mezi penězi, které firma díky projektu dostane, a penězi, které kvůli němu zaplatí.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Definice
+Příklad
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Čistá současná hodnota</strong> (Net Present Value, NPV) je metoda hodnocení investic, která počítá současnou hodnotu očekávaných budoucích peněžních toků, sníženou o počáteční investici.</p>
+<p>Pražírna kávy zvažuje koupi nového pražicího stroje za 500 000 Kč. Díky němu vydělá navíc 100 000 Kč v prvním roce, 150 000 Kč ve druhém, 200 000 Kč ve třetím a 250 000 Kč ve čtvrtém roce, protože jí budou přibývat zákazníci. Po čtyřech letech stroj doslouží.</p>
+<div id="778ef04f" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="week_12_files/figure-html/cell-2-output-1.svg" class="img-fluid figure-img" alt="Časová osa projektu: dnes výdaj 500 000 Kč, na konci 1. až 4. roku příjmy 100 000, 150 000, 200 000 a 250 000 Kč."></p>
+</figure>
 </div>
 </div>
-<p><span class="math display">\[
-\text{NPV} = \sum^n_{t=1} \left( \frac{CF_t}{(1+r)^t} \right) - C_0
-\]</span></p>
+</div>
+<p>Má pražírna stroj koupit? Na tomto projektu si postupně ukážeme všechny metody.</p>
+</div>
+</div>
+<p>Do výpočtu patří jen peněžní toky, které vzniknou kvůli projektu:</p>
 <ul>
-<li><span class="math inline">\(CF_t \dots\)</span> peněžní tok v čase <span class="math inline">\(t\)</span></li>
-<li><span class="math inline">\(r \dots\)</span> diskontní sazba</li>
-<li><span class="math inline">\(C_0 \dots\)</span> počáteční investice</li>
+<li>Počítáme rozdíl proti stavu, kdy by firma projekt neudělala. Zajímá nás, kolik vydělá <strong>navíc</strong>.</li>
+<li>Peníze, které firma už utratila a nedostane je zpět, ať se rozhodne jakkoli, do výpočtu nepatří. Říká se jim <strong>utopené náklady</strong> (sunk costs). Příkladem je průzkum trhu, který si firma zaplatila před rozhodnutím.</li>
+</ul>
+<p>Pro jednoduchost předpokládáme, že počáteční investici firma zaplatí dnes a každý další peněžní tok přijde na konci roku.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Peněžní tok není totéž co účetní zisk. Stroj firma zaplatí hned, v účetnictví se ale jeho cena rozkládá do nákladů několik let (odpisy). Projekty hodnotíme podle peněz, které skutečně přitečou a odtečou.</p>
+</div></div></section>
+<section id="diskontní-sazba" class="level3" data-number="12.1.3">
+<h3 data-number="12.1.3" class="anchored" data-anchor-id="diskontní-sazba"><span class="header-section-number">12.1.3</span> Diskontní sazba</h3>
+<p>Peníze na projekt firmě svěřili investoři: vlastníci a věřitelé. Za to chtějí výnos, jaký by při stejném riziku získali jinde. Tomuto výnosu se říká <strong>náklady kapitálu</strong> (cost of capital). Firma je používá jako <strong>diskontní sazbu</strong> <span class="math inline">\(r\)</span> pro hodnocení projektů. Projekt má smysl jen tehdy, když vydělá aspoň tolik, kolik investoři požadují.</p>
+<ul>
+<li>Diskontní sazbě se říká také <strong>požadovaný výnos</strong> projektu.</li>
+<li>Čím rizikovější projekt, tím vyšší výnos investoři požadují (<a href="./week_11.html">týden 11</a>), a tím vyšší diskontní sazbu firma použije.</li>
+<li>V příkladech této kapitoly je diskontní sazba vždy zadaná.</li>
+</ul>
+</section>
+</section>
+<section id="doba-návratnosti" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="doba-návratnosti"><span class="header-section-number">12.2</span> Doba návratnosti</h2>
+<p>Nejjednodušší otázka zní: za jak dlouho se vložené peníze vrátí? <strong>Doba návratnosti</strong> (payback period) je doba, za kterou peněžní toky projektu dohromady dosáhnou výše počáteční investice. Když projekt přináší každý rok stejný peněžní tok <span class="math inline">\(CF\)</span>, stačí investici tímto tokem vydělit:</p>
+<div class="formula">
+<p><span class="math display">\[
+DN = \frac{CF_0}{CF}
+\]</span></p>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pekárna koupí novou pec za 600 000 Kč. Pec jí ušetří 150 000 Kč ročně za energie.</p>
+<p><span class="math display">\[
+DN = \frac{600\,000}{150\,000} = 4
+\]</span></p>
+<p>Investice se vrátí za 4 roky.</p>
+</div>
+</div>
+<p>Když se peněžní toky rok od roku liší, sčítáme je postupně, dokud nedosáhnou výše investice.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pražicí stroj stojí 500 000 Kč a přináší 100 000, 150 000, 200 000 a 250 000 Kč.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Rok</th>
+<th style="text-align: center;">Peněžní tok</th>
+<th style="text-align: center;">Součet od začátku</th>
+<th style="text-align: center;">Zbývá vrátit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">100 000</td>
+<td style="text-align: center;">100 000</td>
+<td style="text-align: center;">400 000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">150 000</td>
+<td style="text-align: center;">250 000</td>
+<td style="text-align: center;">250 000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">200 000</td>
+<td style="text-align: center;">450 000</td>
+<td style="text-align: center;">50 000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">250 000</td>
+<td style="text-align: center;">700 000</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p>Po třech letech zbývá vrátit 50 000 Kč. Ve čtvrtém roce projekt přinese 250 000 Kč, na zbytek tedy stačí pětina roku:</p>
+<p><span class="math display">\[
+DN = 3 + \frac{50\,000}{250\,000} = 3{,}2
+\]</span></p>
+<p>Investice se vrátí za 3,2 roku. Předpokládáme přitom, že peníze během roku přicházejí rovnoměrně.</p>
+</div>
+</div>
+<p>Firma, která se podle doby návratnosti rozhoduje, si určí nejdelší dobu, na kterou je ochotná peníze vázat, například tři roky. Projekty s kratší dobou návratnosti přijme, ostatní zamítne.</p>
+<p>Doba návratnosti se spočítá rychle a rozumí jí každý. Říká, jak dlouho budou peníze v projektu vázané: čím dřív se vrátí, tím dřív je firma může použít jinde a tím kratší dobu jsou v ohrožení. Má ale vážné nedostatky:</p>
+<ul>
+<li><strong>Nepočítá s časovou hodnotou peněz.</strong> Sčítá peníze z různých let, jako by měly stejnou hodnotu.</li>
+<li><strong>Nepočítá s peněžními toky po době návratnosti.</strong> Projekt, který potom vydělává dalších deset let, hodnotí stejně jako projekt, který hned skončí.</li>
+<li><strong>Nemá jasné pravidlo pro rozhodnutí.</strong> Hranici tří nebo čtyř let si firma volí sama a nic neříká, která je správná.</li>
+<li><strong>Neříká, kolik projekt vydělá.</strong></li>
+</ul>
+<p>Tabulka ukazuje tři projekty s počáteční investicí 400 000 Kč. Peněžní toky jsou v tisících Kč.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Projekt</th>
+<th style="text-align: center;">Rok 1</th>
+<th style="text-align: center;">Rok 2</th>
+<th style="text-align: center;">Rok 3</th>
+<th style="text-align: center;">Rok 4</th>
+<th style="text-align: center;">Doba návratnosti</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">150</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3 roky</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">150</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3 roky</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">150</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: center;">3 roky</td>
+</tr>
+</tbody>
+</table>
+<p>Podle doby návratnosti jsou všechny tři projekty stejně dobré. Přitom projekt A vrací peníze dřív než projekt B a projekt C vydělá ve čtvrtém roce dalších 300 000 Kč. Projekty A a B navíc jen vrátí to, co do nich firma vložila, a nic nevydělají.</p>
+</section>
+<section id="čistá-současná-hodnota" class="level2 page-columns page-full" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="čistá-současná-hodnota"><span class="header-section-number">12.3</span> Čistá současná hodnota</h2>
+<section id="výpočet-a-rozhodovací-pravidlo" class="level3" data-number="12.3.1">
+<h3 data-number="12.3.1" class="anchored" data-anchor-id="výpočet-a-rozhodovací-pravidlo"><span class="header-section-number">12.3.1</span> Výpočet a rozhodovací pravidlo</h3>
+<p>Počáteční investici platí firma dnes, peníze z projektu dostane až v budoucnu. Porovnat je můžeme teprve tehdy, když budoucí peněžní toky převedeme na současnou hodnotu. <strong>Čistá současná hodnota</strong> (net present value, NPV) je současná hodnota všech budoucích peněžních toků projektu snížená o počáteční investici:</p>
+<div class="formula">
+<p><span class="math display">\[
+NPV = -CF_0 + \frac{CF_1}{(1+r)^1} + \frac{CF_2}{(1+r)^2} + \dots + \frac{CF_n}{(1+r)^n}
+\]</span></p>
+</div>
+<p>Počáteční investici <span class="math inline">\(CF_0\)</span> dosazujeme jako kladné číslo a odečítáme ji. Diskontovat ji nemusíme, protože ji firma platí dnes. Součet zlomků je současná hodnota série peněžních toků <span class="math inline">\(PV\)</span> z <a href="./week_08.html">týdne 8</a>, stručně tedy <span class="math inline">\(NPV = PV - CF_0\)</span>.</p>
+<p>Rozhodovací pravidlo je jednoduché:</p>
+<ul>
+<li><span class="math inline">\(NPV &gt; 0\)</span>: projekt <strong>přijmeme</strong>. Vydělá víc, než investoři požadují.</li>
+<li><span class="math inline">\(NPV &lt; 0\)</span>: projekt <strong>zamítneme</strong>. Nevydělá ani tolik, kolik investoři požadují.</li>
+<li><span class="math inline">\(NPV = 0\)</span>: projekt vydělá přesně požadovaný výnos. Hodnota firmy se nezmění.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
 <div class="callout-header d-flex align-content-center">
@@ -516,16 +613,93 @@ Příklad
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Firma investuje 100 000 Kč do projektu, který generuje roční peněžní toky 30 000 Kč po dobu 5 let. Diskontní sazba je 10 %.</p>
+<p>Pražírna hodnotí koupi pražicího stroje za 500 000 Kč. Její náklady kapitálu jsou 10 %. Nejdřív spočítáme současnou hodnotu budoucích peněžních toků:</p>
+<div id="699f3413" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="week_12_files/figure-html/cell-3-output-1.svg" class="img-fluid figure-img" alt="Časová osa: 100 000 Kč v roce 1, 150 000 Kč v roce 2, 200 000 Kč v roce 3 a 250 000 Kč v roce 4. Každá platba je diskontována k dnešku sazbou 10 %, dohromady 535 892,36 Kč."></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Od ní odečteme počáteční investici:</p>
 <p><span class="math display">\[
-\text{NPV} = \frac{30 000}{(1+0{,}1)^1} + \frac{30 000}{(1+0{,}1)^2} + \frac{30 000}{(1+0{,}1)^3} + \frac{30 000}{(1+0{,}1)^4} + \frac{30 000}{(1+0{,}1)^5} - 100 000
-\]</span> <span class="math display">\[
-\text{NPV} = 13723{,}60 \text{ Kč}
+\begin{aligned}
+NPV &amp;= -500\,000 + \frac{100\,000}{1{,}1} + \frac{150\,000}{1{,}1^2} + \frac{200\,000}{1{,}1^3}
+       + \frac{250\,000}{1{,}1^4} \\
+    &amp;= -500\,000 + 535\,892{,}36 = 35\,892{,}36
+\end{aligned}
 \]</span></p>
+<p>NPV je 35 892,36 Kč. Je kladná, pražírna má stroj koupit.</p>
 </div>
 </div>
-<p><br></p>
-<div id="a553c4d9" class="cell" data-execution_count="1">
+<p>Co číslo 35 892 Kč znamená? Budoucí peněžní toky ze stroje mají dnes hodnotu 535 892 Kč, pražírna za ně ale zaplatí jen 500 000 Kč. <strong>O NPV vzroste hodnota firmy</strong> v okamžiku, kdy projekt přijme. Projekt s kladnou NPV zaplatí investorům výnos, který požadují, a ještě něco zbude.</p>
+<p>Když projekt přináší každý rok stejnou částku, jsou jeho peněžní toky anuita a současnou hodnotu spočítáme vzorcem z týdne 8.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dopravní firma zvažuje koupi nákladního auta za 2 000 000 Kč. Auto bude 5 let vydělávat 550 000 Kč ročně. Náklady kapitálu jsou 9 %.</p>
+<p><span class="math display">\[
+\begin{aligned}
+NPV &amp;= -2\,000\,000 + 550\,000 \times \frac{1 - \dfrac{1}{1{,}09^5}}{0{,}09} \\
+    &amp;= -2\,000\,000 + 2\,139\,308{,}19 = 139\,308{,}19
+\end{aligned}
+\]</span></p>
+<p>NPV je 139 308,19 Kč, firma má auto koupit.</p>
+<p>Kdyby byly náklady kapitálu 12 %, měly by stejné peněžní toky současnou hodnotu jen 1 982 626,91 Kč a NPV by byla −17 373,09 Kč. Firma by auto koupit neměla, přestože auto dohromady vydělá 2 750 000 Kč, tedy víc, než stojí.</p>
+</div>
+</div>
+</section>
+<section id="npv-a-diskontní-sazba" class="level3" data-number="12.3.2">
+<h3 data-number="12.3.2" class="anchored" data-anchor-id="npv-a-diskontní-sazba"><span class="header-section-number">12.3.2</span> NPV a diskontní sazba</h3>
+<p>Příklad s nákladním autem ukazuje, že NPV závisí na diskontní sazbě. Čím je sazba vyšší, tím menší současnou hodnotu budoucí peněžní toky mají, a NPV klesá. Tabulka a graf ukazují NPV pražicího stroje při různých diskontních sazbách.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Diskontní sazba</th>
+<th style="text-align: right;">NPV (Kč)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0 %</td>
+<td style="text-align: right;">200 000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5 %</td>
+<td style="text-align: right;">109 736</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">10 %</td>
+<td style="text-align: right;">35 892</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">12 %</td>
+<td style="text-align: right;">10 100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">13 %</td>
+<td style="text-align: right;">−2 093</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">15 %</td>
+<td style="text-align: right;">−25 180</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">20 %</td>
+<td style="text-align: right;">−76 196</td>
+</tr>
+</tbody>
+</table>
+<div id="4fecd79d" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
         <script>
         window.PlotlyConfig = {MathJaxConfig: 'local'};
@@ -536,9 +710,9 @@ Příklad
 </div>
 <div class="cell-output cell-output-display">
 <div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="b96b62f8-6337-4c45-9a39-20617c8ff0d1" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("b96b62f8-6337-4c45-9a39-20617c8ff0d1")) {                    Plotly.newPlot(                        "b96b62f8-6337-4c45-9a39-20617c8ff0d1",                        [{"mode":"lines","name":"","x":{"dtype":"f8","bdata":"AAAAAAAAAACamZmZmZm5P5qZmZmZmck\u002fMzMzMzMz0z+amZmZmZnZPwAAAAAAAOA\u002fMzMzMzMz4z9nZmZmZmbmP5qZmZmZmek\u002fzszMzMzM7D8AAAAAAADwP5mZmZmZmfE\u002fMzMzMzMz8z\u002fNzMzMzMz0P2dmZmZmZvY\u002fAAAAAAAA+D+amZmZmZn5PzQzMzMzM\u002fs\u002fzszMzMzM\u002fD9mZmZmZmb+PwAAAAAAAABAzczMzMzMAECZmZmZmZkBQGZmZmZmZgJAMzMzMzMzA0AAAAAAAAAEQM3MzMzMzARAmpmZmZmZBUBnZmZmZmYGQDQzMzMzMwdAAAAAAAAACEDNzMzMzMwIQJqZmZmZmQlAZ2ZmZmZmCkA0MzMzMzMLQAEAAAAAAAxAzszMzMzMDECZmZmZmZkNQGZmZmZmZg5AMzMzMzMzD0AAAAAAAAAQQGdmZmZmZhBAzczMzMzMEEA0MzMzMzMRQJmZmZmZmRFAAAAAAAAAEkBmZmZmZmYSQM3MzMzMzBJAMzMzMzMzE0CamZmZmZkTQAAAAAAAABRAZ2ZmZmZmFEDNzMzMzMwUQDMzMzMzMxVAmpmZmZmZFUAAAAAAAAAWQGdmZmZmZhZAzczMzMzMFkA0MzMzMzMXQJqZmZmZmRdAAAAAAAAAGEBmZmZmZmYYQM3MzMzMzBhAMzMzMzMzGUCamZmZmZkZQAAAAAAAABpAZ2ZmZmZmGkDNzMzMzMwaQDQzMzMzMxtAmpmZmZmZG0ABAAAAAAAcQGdmZmZmZhxAzszMzMzMHEAzMzMzMzMdQJmZmZmZmR1AAAAAAAAAHkBmZmZmZmYeQM3MzMzMzB5AMzMzMzMzH0CamZmZmZkfQAAAAAAAACBAMzMzMzMzIEBnZmZmZmYgQJqZmZmZmSBAzczMzMzMIEAAAAAAAAAhQDQzMzMzMyFAZ2ZmZmZmIUCZmZmZmZkhQM3MzMzMzCFAAAAAAAAAIkAzMzMzMzMiQGZmZmZmZiJAmpmZmZmZIkDNzMzMzMwiQAAAAAAAACNAMzMzMzMzI0BnZmZmZmYjQJqZmZmZmSNAzczMzMzMI0AAAAAAAAAkQDQzMzMzMyRAZ2ZmZmZmJECamZmZmZkkQM3MzMzMzCRAAAAAAAAAJUAzMzMzMzMlQGZmZmZmZiVAmpmZmZmZJUDNzMzMzMwlQAAAAAAAACZAMzMzMzMzJkBnZmZmZmYmQJqZmZmZmSZAzczMzMzMJkAAAAAAAAAnQDQzMzMzMydAZ2ZmZmZmJ0CamZmZmZknQM3MzMzMzCdAAAAAAAAAKEAzMzMzMzMoQGZmZmZmZihAmpmZmZmZKEDNzMzMzMwoQAAAAAAAAClAMzMzMzMzKUBmZmZmZmYpQJqZmZmZmSlAzczMzMzMKUAAAAAAAAAqQDQzMzMzMypAZ2ZmZmZmKkCamZmZmZkqQM3MzMzMzCpAAAAAAAAAK0A0MzMzMzMrQGdmZmZmZitAmpmZmZmZK0DOzMzMzMwrQAEAAAAAACxANDMzMzMzLEBnZmZmZmYsQJqZmZmZmSxAzszMzMzMLED\u002f\u002f\u002f\u002f\u002f\u002f\u002f8sQDMzMzMzMy1AZmZmZmZmLUCZmZmZmZktQMzMzMzMzC1AAAAAAAAALkAzMzMzMzMuQGZmZmZmZi5AmZmZmZmZLkDNzMzMzMwuQAAAAAAAAC9AMzMzMzMzL0BmZmZmZmYvQJqZmZmZmS9AzczMzMzML0AAAAAAAAAwQJqZmZmZGTBAMzMzMzMzMEDNzMzMzEwwQGdmZmZmZjBAAAAAAACAMECamZmZmZkwQDMzMzMzszBAzczMzMzMMEBnZmZmZuYwQAAAAAAAADFAmpmZmZkZMUA0MzMzMzMxQM3MzMzMTDFAZ2ZmZmZmMUAAAAAAAIAxQJmZmZmZmTFAMzMzMzOzMUDNzMzMzMwxQGZmZmZm5jFAAAAAAAAAMkCZmZmZmRkyQDMzMzMzMzJAzczMzMxMMkBmZmZmZmYyQAAAAAAAgDJAmpmZmZmZMkAzMzMzM7MyQM3MzMzMzDJAZmZmZmbmMkAAAAAAAAAzQJqZmZmZGTNAMzMzMzMzM0DNzMzMzEwzQGdmZmZmZjNAAAAAAACAM0CamZmZmZkzQDMzMzMzszNAzczMzMzMM0BnZmZmZuYzQAAAAAAAADRA"},"y":[50000.0,49551.04790377377,49104.18326027904,48659.39360465635,48216.66656126911,47775.98984296608,47337.35125034898,46900.73867104856,46466.14007900604,46033.54353376249,45602.93717975361,45174.309245612356,44747.6480434766,44322.94196830492,43900.17949719686,43479.34918872131,43060.439682249475,42643.439697295486,42228.338032861706,41815.12356679143,41403.78525512614,40994.31213147029,40586.69330636012,40180.9179666401,39776.97537484345,39374.854868579765,38974.54585992688,38576.03783482978,38179.320352503484,37784.38304484276,37391.215615836,36999.80784098561,36610.14956673248,36222.23070988695,35836.04125706357,35451.571264122475,35068.81085561431,34687.75022423157,34308.37963026378,33930.689401058466,33554.669930486154,33180.31167841125,32807.605170166404,32436.540996032923,32067.10981072464,31699.30233287752,31333.109344542794,30968.521690685735,30605.5302786877,30244.126077853958,29884.30011892456,29526.043493590856,29169.347354015143,28814.20291235572,28460.60144029503,28108.53426857317,27757.99278652437,27408.968441618712,27061.452739006832,26715.43724106972,26370.913566971398,26027.873392216687,25686.30844821176,25346.210521829656,25007.57145497853,24670.383144174797,24334.63754011897,24000.326647276266,23667.442523459784,23335.97727941852,23005.923078427808,22677.27213588443,22350.016718904302,22024.149145924624,21699.661786308377,21376.547059953562,21054.797436904548,20734.405436967954,20415.363629330823,20097.664632183136,19781.301112342546,19466.26578488342,19152.551412768084,18840.15080648216,18529.056823672174,18219.262368787255,17910.760392722932,17603.54389246886,17297.60591075882,16992.939535724523,16689.537900551484,16387.394183138782,16086.501605760812,15786.853434732908,15488.44298007874,15191.263595201686,14895.308676557906,14600.571663333234,14307.046037121858,14014.725321608697,13723.603082253416,13433.672925978291,13144.928500857535,12857.363495810376,12570.971640295713,12285.74670401033,12001.682496588612,11718.772867305972,11437.01170478353,11156.392936696499,10876.910529483932,10598.55848806183,10321.33085553782,10045.221712929157,9770.22517888205,9496.335409394349,9223.546597539636,8951.852973194538,8681.248802767266,8411.728388929656,8143.286070350128,7875.91622143007,7609.613252041476,7344.371607267283,7080.185767143892,6817.050246405539,6554.9595942307205,6293.908393991205,6033.891263002781,5774.902852278039,5516.937846281189,5259.990962685084,5004.0569521301695,4749.1305979854205,4495.206716110946,4242.280154623029,3990.345793660941,3739.3985451554527,3489.433352599408,3240.445190820099,2992.429065753786,2745.380014221715,2499.2931037079306,2254.1634321391666,2009.9861276665943,1766.7563484489601,1524.4692824376452,1283.1201471636377,1042.70418952621,803.2166855829491,564.65294034207,327.00828755576003,90.27808951587213,-145.54226314943116,-380.45735167666135,-614.4717293671183,-847.5899217846818,-1079.816426952646,-1311.1557155483551,-1541.6122310969859,-1771.1903901629103,-1999.894582540508,-2227.729171442461,-2454.698493687414,-2680.8068598853934,-2906.05855462249,-3130.4578366431906,-3354.0089390322264,-3576.7160693940677,-3798.583410031735,-4019.6151181235327,-4239.815325899093,-4459.188140813212,-4677.737645719157,-4895.46789903971,-5112.382934937848,-5328.486763485014,-5543.7833708291,-5758.276719360118,-5971.970747875452,-6184.8693717430815,-6396.976483064149,-6608.295950833593,-6818.8316211002275,-7028.587317124866,-7237.566839537865,-7445.773966494744,-7653.212453831389,-7859.8860352171705,-8065.798422307755,-8270.953304895755,-8475.354351061258,-8679.005207320202,-8881.90949877241,-9084.070829247674,-9285.492781451676,-9486.178917109684,-9686.132777110179,-9885.357881646409,-10083.857730357733,-10281.635802469127],"type":"scatter","hovertemplate":"NPV: %{y:.2f}\u003cbr\u003eDiskontn\u00ed sazba: %{x:.2f}%"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"title":{"text":"Z\u00e1vislost NPV na diskontn\u00ed sazb\u011b","font":{"size":20}},"xaxis":{"title":{"text":"Diskontn\u00ed sazba (%)"}},"yaxis":{"title":{"text":"\u010cist\u00e1 sou\u010dasn\u00e1 hodnota (NPV)"}},"showlegend":false},                        {"responsive": true}                    ).then(function(){
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="d9294ef5-7c68-478b-85af-8e46c7a6324d" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("d9294ef5-7c68-478b-85af-8e46c7a6324d")) {                    Plotly.newPlot(                        "d9294ef5-7c68-478b-85af-8e46c7a6324d",                        [{"hovertemplate":"sazba %{x:.1f} %\u003cbr\u003eNPV %{y:,.0f} K\u010d\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#0000dc","width":3},"mode":"lines","x":{"dtype":"f8","bdata":"AAAAAAAAAACamZmZmZm5P5qZmZmZmck\u002fMzMzMzMz0z+amZmZmZnZPwAAAAAAAOA\u002fMzMzMzMz4z9nZmZmZmbmP5qZmZmZmek\u002fzszMzMzM7D8AAAAAAADwP5mZmZmZmfE\u002fMzMzMzMz8z\u002fNzMzMzMz0P2dmZmZmZvY\u002fAAAAAAAA+D+amZmZmZn5PzQzMzMzM\u002fs\u002fzszMzMzM\u002fD9mZmZmZmb+PwAAAAAAAABAzczMzMzMAECZmZmZmZkBQGZmZmZmZgJAMzMzMzMzA0AAAAAAAAAEQM3MzMzMzARAmpmZmZmZBUBnZmZmZmYGQDQzMzMzMwdAAAAAAAAACEDNzMzMzMwIQJqZmZmZmQlAZ2ZmZmZmCkA0MzMzMzMLQAEAAAAAAAxAzszMzMzMDECZmZmZmZkNQGZmZmZmZg5AMzMzMzMzD0AAAAAAAAAQQGdmZmZmZhBAzczMzMzMEEA0MzMzMzMRQJmZmZmZmRFAAAAAAAAAEkBmZmZmZmYSQM3MzMzMzBJAMzMzMzMzE0CamZmZmZkTQAAAAAAAABRAZ2ZmZmZmFEDNzMzMzMwUQDMzMzMzMxVAmpmZmZmZFUAAAAAAAAAWQGdmZmZmZhZAzczMzMzMFkA0MzMzMzMXQJqZmZmZmRdAAAAAAAAAGEBmZmZmZmYYQM3MzMzMzBhAMzMzMzMzGUCamZmZmZkZQAAAAAAAABpAZ2ZmZmZmGkDNzMzMzMwaQDQzMzMzMxtAmpmZmZmZG0ABAAAAAAAcQGdmZmZmZhxAzszMzMzMHEAzMzMzMzMdQJmZmZmZmR1AAAAAAAAAHkBmZmZmZmYeQM3MzMzMzB5AMzMzMzMzH0CamZmZmZkfQAAAAAAAACBAMzMzMzMzIEBnZmZmZmYgQJqZmZmZmSBAzczMzMzMIEAAAAAAAAAhQDQzMzMzMyFAZ2ZmZmZmIUCZmZmZmZkhQM3MzMzMzCFAAAAAAAAAIkAzMzMzMzMiQGZmZmZmZiJAmpmZmZmZIkDNzMzMzMwiQAAAAAAAACNAMzMzMzMzI0BnZmZmZmYjQJqZmZmZmSNAzczMzMzMI0AAAAAAAAAkQDQzMzMzMyRAZ2ZmZmZmJECamZmZmZkkQM3MzMzMzCRAAAAAAAAAJUAzMzMzMzMlQGZmZmZmZiVAmpmZmZmZJUDNzMzMzMwlQAAAAAAAACZAMzMzMzMzJkBnZmZmZmYmQJqZmZmZmSZAzczMzMzMJkAAAAAAAAAnQDQzMzMzMydAZ2ZmZmZmJ0CamZmZmZknQM3MzMzMzCdAAAAAAAAAKEAzMzMzMzMoQGZmZmZmZihAmpmZmZmZKEDNzMzMzMwoQAAAAAAAAClAMzMzMzMzKUBmZmZmZmYpQJqZmZmZmSlAzczMzMzMKUAAAAAAAAAqQDQzMzMzMypAZ2ZmZmZmKkCamZmZmZkqQM3MzMzMzCpAAAAAAAAAK0A0MzMzMzMrQGdmZmZmZitAmpmZmZmZK0DOzMzMzMwrQAEAAAAAACxANDMzMzMzLEBnZmZmZmYsQJqZmZmZmSxAzszMzMzMLED\u002f\u002f\u002f\u002f\u002f\u002f\u002f8sQDMzMzMzMy1AZmZmZmZmLUCZmZmZmZktQMzMzMzMzC1AAAAAAAAALkAzMzMzMzMuQGZmZmZmZi5AmZmZmZmZLkDNzMzMzMwuQAAAAAAAAC9AMzMzMzMzL0BmZmZmZmYvQJqZmZmZmS9AzczMzMzML0AAAAAAAAAwQJqZmZmZGTBAMzMzMzMzMEDNzMzMzEwwQGdmZmZmZjBAAAAAAACAMECamZmZmZkwQDMzMzMzszBAzczMzMzMMEBnZmZmZuYwQAAAAAAAADFAmpmZmZkZMUA0MzMzMzMxQM3MzMzMTDFAZ2ZmZmZmMUAAAAAAAIAxQJmZmZmZmTFAMzMzMzOzMUDNzMzMzMwxQGZmZmZm5jFAAAAAAAAAMkCZmZmZmRkyQDMzMzMzMzJAzczMzMxMMkBmZmZmZmYyQAAAAAAAgDJAmpmZmZmZMkAzMzMzM7MyQM3MzMzMzDJAZmZmZmbmMkAAAAAAAAAzQJqZmZmZGTNAMzMzMzMzM0DNzMzMzEwzQGdmZmZmZjNAAAAAAACAM0CamZmZmZkzQDMzMzMzszNAzczMzMzMM0BnZmZmZuYzQAAAAAAAADRAmpmZmZkZNEA0MzMzMzM0QM3MzMzMTDRAZ2ZmZmZmNEAAAAAAAIA0QJqZmZmZmTRANDMzMzOzNEDNzMzMzMw0QGZmZmZm5jRAAAAAAAAANUCZmZmZmRk1QDMzMzMzMzVAzczMzMxMNUBmZmZmZmY1QAAAAAAAgDVAmpmZmZmZNUAzMzMzM7M1QM3MzMzMzDVAZmZmZmbmNUAAAAAAAAA2QJqZmZmZGTZAMzMzMzMzNkDNzMzMzEw2QGdmZmZmZjZAAAAAAACANkCamZmZmZk2QDMzMzMzszZAzczMzMzMNkBnZmZmZuY2QAAAAAAAADdAmpmZmZkZN0A0MzMzMzM3QM3MzMzMTDdAZ2ZmZmZmN0AAAAAAAIA3QJqZmZmZmTdANDMzMzOzN0DNzMzMzMw3QGdmZmZm5jdAAAAAAAAAOECZmZmZmRk4QDMzMzMzMzhAzczMzMxMOEBmZmZmZmY4QAAAAAAAgDhAmpmZmZmZOEAzMzMzM7M4QM3MzMzMzDhAZmZmZmbmOEAAAAAAAAA5QA=="},"y":[200000.0,198004.24231258105,196016.9386009873,194038.04311595473,192067.51040605223,190105.29531543085,188151.35298158485,186205.6388331391,184268.10858764907,182338.71824942494,180417.42410737008,178504.1827328425,176598.95097752905,174701.68597134412,172812.34512034035,170930.88610464195,169057.26687639125,167191.4456577181,165333.38093871973,163483.03147546528,161640.3562880098,159805.31465843203,157977.86612888286,156157.97049965512,154345.58782726526,152540.67842255603,150743.20284881,148953.1219198841,147170.3966983545,145394.9884936834,143626.858860394,141865.9695962678,140112.28274055105,138365.76057218167,136626.365608025,134894.06060113083,133168.8085389986,131450.57264186325,129739.31636098935,128035.00337698474,126337.59759812325,124647.0631586872,122963.36441731686,121286.46595537988,119616.33257534914,117952.92929919879,116296.22136680828,114646.1742343849,113002.75357289473,111365.92526651057,109735.65541106835,108111.91031254106,106494.65648551995,104883.86065171403,103279.48973845574,101681.51087722485,100089.8914021781,98504.5988486982,96925.60095194692,95352.86564543727,93786.36105961085,92226.0555204323,90671.91754799045,89123.9158551154,87582.01934600202,86046.1971148497,84516.41844450799,82992.65280513815,81474.86985288083,79963.03942853888,78457.13155626704,76957.11644227523,75462.9644735395,73974.64621652698,72492.13241592573,71015.3939933913,69544.40204629744,68079.1278465013,66619.54283911467,65165.6186412893,63717.327041007346,62274.639995885664,60837.52963198593,59405.96824263851,57979.92828727001,56559.38239024684,55144.3033397214,53734.66408649355,52330.437742874725,50931.59758156829,49538.11703455099,48149.969691970735,46767.1293010466,45389.56976498291,44017.26514188736,42650.18964370119,41288.31763513526,39931.623632616946,38580.08230324183,37233.66846373805,35892.357079434325,34556.123263240326,33224.94227463042,31898.78951864026,30577.64054486656,29261.471046479302,27950.256859236397,26643.973960511852,25342.598468325567,24046.106640386686,22754.47487313836,21467.67970081541,20185.697794504464,18908.505961216404,17636.081142960116,16368.400415829616,15105.440989092458,13847.180204290664,12593.595534342807,11344.664582659025,10100.36508225731,8860.67489489098,7625.572010179865,6395.034544749418,5169.040741377452,3947.5689681451768,2730.5977175954613,1518.1056058989489,310.0713720252388,-893.5261230793549,-2092.7078973083408,-3287.4948482044274,-4477.907753762556,-5663.967273227521,-6845.693947886699,-8023.108201853931,-9196.230342849158,-10365.08056297223,-11529.678939471021,-12690.045435503009,-13846.1999008907,-14998.162072872394,-16145.951576847932,-17289.587927116896,-18429.090527611785,-19564.478672626487,-20695.771547539625,-21822.98822953098,-22946.14768829255,-24065.268786736764,-25180.37028169562,-26291.470824618475,-27398.588962261216,-28501.743137373065,-29600.95168937568,-30696.232855039998,-31787.604769154917,-32875.08546519454,-33958.69287597656,-35038.44483431958,-36114.359073692,-37186.4532288597,-38254.74483652512,-39319.25133596535,-40379.99006966199,-41436.97828392964,-42490.23312953673,-43539.77166232467,-44585.61084381945,-45627.76754184178,-46666.25853110966,-47701.10049384006,-48732.31002034171,-49759.90360960871,-50783.897669904865,-51804.30851934792,-52821.152386485715,-53834.44541087182,-54844.203643633635,-55850.443048039335,-56853.17950005771,-57852.42878891702,-58848.20661765651,-59840.52860367729,-60829.41027928621,-61814.86709223827,-62796.914406272525,-63775.567501647165,-64750.841575667495,-65722.75174321339,-66691.31303725915,-67656.5404093939,-68618.44873033417,-69577.0527904362,-70532.36730020121,-71484.40689078101,-72433.18611447548,-73378.7194452309,-74321.02127913065,-75260.10593488626,-76195.98765432095,-77128.680602854,-78058.19886997715,-78984.55646973208,-79907.76734118012,-80827.84534887306,-81744.80428331578,-82658.65786143072,-83569.41972701414,-84477.10345119325,-85381.72253287694,-86283.29039920599,-87181.82040599693,-88077.32583818684,-88969.81991027074,-89859.31576673931,-90745.82648251118,-91629.3650633638,-92509.9444463597,-93387.57750027196,-94262.27702600369,-95134.0557570078,-96002.92635970074,-96868.90143387654,-97731.99351311417,-98592.2150651862,-99449.57849246066,-100304.0961323037,-101155.78025747568,-102004.64307652868,-102850.69673419686,-103693.95331178838,-104534.42482757033,-105372.12323715538,-106207.06043388142,-107039.24824919208,-107868.69845301233,-108695.42275412328,-109519.43280053191,-110340.7401798414,-111159.3564196158,-111975.2929877449,-112788.5612928039,-113599.17268441344,-114407.13845359493,-115212.46983312402,-116015.1779978819,-116815.27406520472,-117612.7690952298,-118407.67409123876,-119200.0],"type":"scatter"},{"hoverinfo":"skip","marker":{"color":"#b9006e","size":12},"mode":"markers+text","text":["IRR = 12,8 %"],"textfont":{"color":"#b9006e","size":14},"textposition":"top right","x":[12.825726900167378],"y":[0],"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"shapes":[{"line":{"color":"grey","width":1},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":0,"y1":0,"yref":"y"}],"title":{"text":"NPV pra\u017eic\u00edho stroje podle diskontn\u00ed sazby","font":{"size":20}},"xaxis":{"title":{"text":"Diskontn\u00ed sazba (%)"},"ticksuffix":" %"},"yaxis":{"title":{"text":"NPV (K\u010d)"},"tickformat":",.0f"},"showlegend":false,"separators":", "},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('b96b62f8-6337-4c45-9a39-20617c8ff0d1');
+var gd = document.getElementById('d9294ef5-7c68-478b-85af-8e46c7a6324d');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -563,62 +737,50 @@ if (outputEl) {{
                         })                };            </script>        </div>
 </div>
 </div>
-<p><br></p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 45%">
-<col style="width: 54%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>Výhody</strong></th>
-<th style="text-align: center;"><strong>Nevýhody</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">Zohledňuje časovou hodnotu peněz</td>
-<td style="text-align: center;">Složitější výpočet a interpretace</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Poskytuje míru ziskovosti investice</td>
-<td style="text-align: center;">Citlivost na přesnost odhadů peněžních toků</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Vhodné pro dlouhodobé projekty</td>
-<td style="text-align: center;">Závislost na stanovení diskontní sazby</td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
+<p>Z grafu, kterému se říká <strong>profil NPV</strong>, plynou tři věci:</p>
+<ul>
+<li>Při sazbě 0 % se nediskontuje. NPV je součet peněžních toků snížený o investici: <span class="math inline">\(700\,000 - 500\,000 = 200\,000\)</span> Kč.</li>
+<li>Při nízkých sazbách je NPV kladná a projekt se vyplatí, při vysokých je záporná.</li>
+<li>Křivka protíná nulu zhruba u 12,8 %. Tato sazba se nazývá vnitřní výnosové procento a věnuje se jí další část.</li>
+</ul>
+<p>Diskontní sazbu firma jen odhaduje. Profil NPV ukazuje, jak moc na odhadu záleží: pražicí stroj se vyplatí, dokud jsou náklady kapitálu nižší než zhruba 12,8 %.</p>
 </section>
-<section id="vnitřní-výnosové-procento" class="level2" data-number="12.4">
+<section id="výhody-a-nevýhody" class="level3 page-columns page-full" data-number="12.3.3">
+<h3 data-number="12.3.3" class="anchored" data-anchor-id="výhody-a-nevýhody"><span class="header-section-number">12.3.3</span> Výhody a nevýhody</h3>
+<p>NPV nemá nedostatky doby návratnosti a přidává další výhody:</p>
+<ul>
+<li>počítá s časovou hodnotou peněz,</li>
+<li>počítá se všemi peněžními toky projektu,</li>
+<li>má jasné pravidlo: přijmout projekty s kladnou NPV,</li>
+<li>zohledňuje riziko, protože rizikovější projekt diskontujeme vyšší sazbou,</li>
+<li>vychází v korunách a říká přímo, o kolik projekt zvýší hodnotu firmy.</li>
+</ul>
+<p>NPV je proto nejlepší z metod této kapitoly a ostatní metody s ní budeme porovnávat. Její slabinou jsou vstupy. Budoucí peněžní toky i diskontní sazba jsou jen odhady a výsledek je na ně citlivý. Kladná NPV na papíře nezaručuje, že projekt skutečně vydělá.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Vraťme se k projektům A, B a C z části o době návratnosti. Při diskontní sazbě 10 % mají NPV zhruba −57 000 Kč, −80 000 Kč a +125 000 Kč. Přijmout se vyplatí jen projekt C.</p>
+</div></div></section>
+</section>
+<section id="vnitřní-výnosové-procento" class="level2 page-columns page-full" data-number="12.4">
 <h2 data-number="12.4" class="anchored" data-anchor-id="vnitřní-výnosové-procento"><span class="header-section-number">12.4</span> Vnitřní výnosové procento</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Vnitřní výnosové procento</strong> (Internal Rate of Return, IRR) je diskontní sazba, při které se čistá současná hodnota (NPV) peněžních toků z investice rovná nule.</p>
-</div>
-</div>
-<ul>
-<li>Pokud je IRR vyšší než požadovaná návratnost nebo diskontní sazba, investice je považována za výhodnou.</li>
-<li>IRR se vypočítává řešením následující rovnice:</li>
-</ul>
+<p>Manažeři často chtějí slyšet výsledek v procentech: kolik procent ročně projekt vynáší? Odpovídá na to <strong>vnitřní výnosové procento</strong> (internal rate of return, IRR). Je to <strong>diskontní sazba, při které je NPV projektu rovna nule</strong>:</p>
+<div class="formula">
 <p><span class="math display">\[
-0 = \sum^n_{t=1} \left( \frac{CF_t}{(1+IRR)^t} \right) - C_0
+0 = -CF_0 + \frac{CF_1}{(1+IRR)^1} + \frac{CF_2}{(1+IRR)^2} + \dots + \frac{CF_n}{(1+IRR)^n}
 \]</span></p>
+</div>
+<p>V grafu profilu NPV je IRR místo, kde křivka protíná vodorovnou osu. IRR říká, jaký roční výnos projekt přináší z peněz, které jsou v něm vložené. Rozhodovací pravidlo porovnává IRR s náklady kapitálu:</p>
 <ul>
-<li><span class="math inline">\(CF_t \dots\)</span> peněžní tok v čase <span class="math inline">\(t\)</span></li>
-<li><span class="math inline">\(IRR \dots\)</span> vnitřní míra návratnosti, kterou hledáme</li>
-<li><span class="math inline">\(C_0 \dots\)</span> počáteční investice</li>
+<li><span class="math inline">\(IRR &gt; r\)</span>: projekt <strong>přijmeme</strong>. Vynáší víc, než investoři požadují.</li>
+<li><span class="math inline">\(IRR &lt; r\)</span>: projekt <strong>zamítneme</strong>.</li>
 </ul>
+<p>U běžného projektu, který začíná výdajem a potom už jen vydělává, vede toto pravidlo vždy ke stejnému rozhodnutí jako NPV. Když je IRR vyšší než náklady kapitálu, je NPV kladná, a naopak.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>IRR už známe pod jiným jménem. Výnos do splatnosti dluhopisu z <a href="./week_09.html">týdne 9</a> je IRR investice do dluhopisu: sazba, při které se současná hodnota kupónů a jmenovité hodnoty rovná ceně.</p>
+</div></div><section id="jak-irr-najít" class="level3 page-columns page-full" data-number="12.4.1">
+<h3 data-number="12.4.1" class="anchored" data-anchor-id="jak-irr-najít"><span class="header-section-number">12.4.1</span> Jak IRR najít</h3>
+<p>Když projekt přinese jediný peněžní tok, spočítáme IRR stejně jako úrokovou sazbu v týdnu 8.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -629,75 +791,157 @@ Příklad
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Firma investuje 100 000 Kč do projektu, který bude generovat následující peněžní toky:</p>
-<ul>
-<li>Rok 1: 30 000 Kč</li>
-<li>Rok 2: 40 000 Kč</li>
-<li>Rok 3: 50 000 Kč</li>
-</ul>
+<p>Firma koupí pozemek za 4 000 000 Kč a za 3 roky ho prodá za 5 000 000 Kč. Hledáme sazbu, při které má 5 000 000 Kč za tři roky současnou hodnotu 4 000 000 Kč:</p>
 <p><span class="math display">\[
-0 = \frac{30 000}{(1+IRR)^1} + \frac{40 000}{(1+IRR)^2} + \frac{50 000}{(1+IRR)^3} - 100 000 = 18{,}5\%
+IRR = \left(\frac{5\,000\,000}{4\,000\,000}\right)^{1/3} - 1 = 1{,}25^{1/3} - 1
+= 0{,}0772 = 7{,}72\%
 \]</span></p>
-<p>Pokud by požadovaná návratnost (diskontní sazba) byla nižší než 18,5 %, byla by investice považována za výhodnou, protože IRR převyšuje požadovanou návratnost.</p>
-<p><em>Ponz. Tento problém nelze vyřešit analyticky jednoduchým způsobem, proto se obvykle řeší numerickými metodami, například iterací nebo využitím funkcí finančních kalkulaček nebo softwarových nástrojů, jako je Excel.</em></p>
+<p>Při nákladech kapitálu 6 % firma projekt přijme, při 9 % ho zamítne.</p>
 </div>
 </div>
-<p><br></p>
+<p>Když má projekt víc peněžních toků, rovnici obvykle vzorcem vyřešit nelze. Zkoušíme proto různé sazby. U běžného projektu platí: je-li NPV kladná, sazbu zvýšíme, je-li záporná, sazbu snížíme.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Jaké je IRR pražicího stroje? Při sazbě 10 % vyšla NPV 35 892 Kč. Je kladná, IRR je tedy vyšší než 10 %. Zkusíme 12 %:</p>
+<p><span class="math display">\[
+\begin{aligned}
+NPV &amp;= -500\,000 + \frac{100\,000}{1{,}12} + \frac{150\,000}{1{,}12^2}
+       + \frac{200\,000}{1{,}12^3} + \frac{250\,000}{1{,}12^4} \\
+    &amp;= 10\,100
+\end{aligned}
+\]</span></p>
+<p>NPV je pořád kladná, sazbu zvýšíme na 13 %:</p>
+<p><span class="math display">\[
+\begin{aligned}
+NPV &amp;= -500\,000 + \frac{100\,000}{1{,}13} + \frac{150\,000}{1{,}13^2}
+       + \frac{200\,000}{1{,}13^3} + \frac{250\,000}{1{,}13^4} \\
+    &amp;= -2\,093
+\end{aligned}
+\]</span></p>
+<p>Teď je NPV záporná. IRR leží mezi 12 % a 13 %, blíž ke 13 %. Přesný výpočet dává 12,83 %. Pražírna má náklady kapitálu 10 %, IRR je vyšší a projekt přijme. Ke stejnému závěru vedla i kladná NPV.</p>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>V Excelu počítá IRR funkce MÍRA.VÝNOSNOSTI (anglicky IRR), NPV funkce ČISTÁ.SOUČHODNOTA (NPV). Ta diskontuje už první zadanou hodnotu o jeden rok, počáteční investici proto odečtěte zvlášť: <code>=ČISTÁ.SOUČHODNOTA(10%; B2:E2) - 500000</code>.</p>
+</div></div></section>
+<section id="úskalí-irr" class="level3" data-number="12.4.2">
+<h3 data-number="12.4.2" class="anchored" data-anchor-id="úskalí-irr"><span class="header-section-number">12.4.2</span> Úskalí IRR</h3>
+<p>IRR je oblíbené, protože procentům rozumí každý a dají se snadno porovnat s úrokem z úvěru nebo s výnosem jiných investic. Má ale tři úskalí, která NPV nemá.</p>
+<p><strong>Projekt může mít víc IRR.</strong> Když se znaménko peněžních toků změní víckrát než jednou, například protože projekt končí velkým výdajem, může rovnice pro IRR mít dvě řešení.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Těžební firma otevře lom za 100 mil. Kč. Za rok prodá vytěžený kámen za 260 mil. Kč a za dva roky zaplatí 165 mil. Kč za rekultivaci krajiny.</p>
+<div id="c7ab1ab2" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="7175da96-d632-4d0e-9a35-fe1db12771ec" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("7175da96-d632-4d0e-9a35-fe1db12771ec")) {                    Plotly.newPlot(                        "7175da96-d632-4d0e-9a35-fe1db12771ec",                        [{"hovertemplate":"sazba %{x:.0f} %\u003cbr\u003eNPV %{y:.2f} mil. K\u010d\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#0000dc","width":3},"mode":"lines","x":{"dtype":"f8","bdata":"AAAAAAAAAACamZmZmZnJP5qZmZmZmdk\u002fMzMzMzMz4z+amZmZmZnpPwAAAAAAAPA\u002fMzMzMzMz8z9nZmZmZmb2P5qZmZmZmfk\u002fzszMzMzM\u002fD8AAAAAAAAAQJmZmZmZmQFAMzMzMzMzA0DNzMzMzMwEQGdmZmZmZgZAAAAAAAAACECamZmZmZkJQDQzMzMzMwtAzszMzMzMDEBmZmZmZmYOQAAAAAAAABBAzczMzMzMEECZmZmZmZkRQGZmZmZmZhJAMzMzMzMzE0AAAAAAAAAUQM3MzMzMzBRAmpmZmZmZFUBnZmZmZmYWQDQzMzMzMxdAAAAAAAAAGEDNzMzMzMwYQJqZmZmZmRlAZ2ZmZmZmGkA0MzMzMzMbQAEAAAAAABxAzszMzMzMHECZmZmZmZkdQGZmZmZmZh5AMzMzMzMzH0AAAAAAAAAgQGdmZmZmZiBAzczMzMzMIEA0MzMzMzMhQJmZmZmZmSFAAAAAAAAAIkBmZmZmZmYiQM3MzMzMzCJAMzMzMzMzI0CamZmZmZkjQAAAAAAAACRAZ2ZmZmZmJEDNzMzMzMwkQDMzMzMzMyVAmpmZmZmZJUAAAAAAAAAmQGdmZmZmZiZAzczMzMzMJkA0MzMzMzMnQJqZmZmZmSdAAAAAAAAAKEBmZmZmZmYoQM3MzMzMzChAMzMzMzMzKUCamZmZmZkpQAAAAAAAACpAZ2ZmZmZmKkDNzMzMzMwqQDQzMzMzMytAmpmZmZmZK0ABAAAAAAAsQGdmZmZmZixAzszMzMzMLEAzMzMzMzMtQJmZmZmZmS1AAAAAAAAALkBmZmZmZmYuQM3MzMzMzC5AMzMzMzMzL0CamZmZmZkvQAAAAAAAADBAMzMzMzMzMEBnZmZmZmYwQJqZmZmZmTBAzczMzMzMMEAAAAAAAAAxQDQzMzMzMzFAZ2ZmZmZmMUCZmZmZmZkxQM3MzMzMzDFAAAAAAAAAMkAzMzMzMzMyQGZmZmZmZjJAmpmZmZmZMkDNzMzMzMwyQAAAAAAAADNAMzMzMzMzM0BnZmZmZmYzQJqZmZmZmTNAzczMzMzMM0AAAAAAAAA0QDQzMzMzMzRAZ2ZmZmZmNECamZmZmZk0QM3MzMzMzDRAAAAAAAAANUAzMzMzMzM1QGZmZmZmZjVAmpmZmZmZNUDNzMzMzMw1QAAAAAAAADZAMzMzMzMzNkBnZmZmZmY2QJqZmZmZmTZAzczMzMzMNkAAAAAAAAA3QDQzMzMzMzdAZ2ZmZmZmN0CamZmZmZk3QM3MzMzMzDdAAAAAAAAAOEAzMzMzMzM4QGZmZmZmZjhAmpmZmZmZOEDNzMzMzMw4QAAAAAAAADlAMzMzMzMzOUBmZmZmZmY5QJqZmZmZmTlAzczMzMzMOUAAAAAAAAA6QDQzMzMzMzpAZ2ZmZmZmOkCamZmZmZk6QM3MzMzMzDpAAAAAAAAAO0A0MzMzMzM7QGdmZmZmZjtAmpmZmZmZO0DOzMzMzMw7QAEAAAAAADxANDMzMzMzPEBnZmZmZmY8QJqZmZmZmTxAzszMzMzMPED\u002f\u002f\u002f\u002f\u002f\u002f\u002f88QDMzMzMzMz1AZmZmZmZmPUCZmZmZmZk9QMzMzMzMzD1AAAAAAAAAPkAzMzMzMzM+QGZmZmZmZj5AmZmZmZmZPkDNzMzMzMw+QAAAAAAAAD9AMzMzMzMzP0BmZmZmZmY\u002fQJqZmZmZmT9AzczMzMzMP0AAAAAAAABAQJqZmZmZGUBAMzMzMzMzQEDNzMzMzExAQGdmZmZmZkBAAAAAAACAQECamZmZmZlAQDMzMzMzs0BAzczMzMzMQEBnZmZmZuZAQAAAAAAAAEFAmpmZmZkZQUA0MzMzMzNBQM3MzMzMTEFAZ2ZmZmZmQUAAAAAAAIBBQJmZmZmZmUFAMzMzMzOzQUDNzMzMzMxBQGZmZmZm5kFAAAAAAAAAQkCZmZmZmRlCQDMzMzMzM0JAzczMzMxMQkBmZmZmZmZCQAAAAAAAgEJAmpmZmZmZQkAzMzMzM7NCQM3MzMzMzEJAZmZmZmbmQkAAAAAAAABDQJqZmZmZGUNAMzMzMzMzQ0DNzMzMzExDQGdmZmZmZkNAAAAAAACAQ0CamZmZmZlDQDMzMzMzs0NAzczMzMzMQ0BnZmZmZuZDQAAAAAAAAERAmpmZmZkZREA0MzMzMzNEQM3MzMzMTERAZ2ZmZmZmREAAAAAAAIBEQJqZmZmZmURANDMzMzOzREDNzMzMzMxEQGZmZmZm5kRAAAAAAAAARUCZmZmZmRlFQDMzMzMzM0VAzczMzMxMRUBmZmZmZmZFQAAAAAAAgEVAmpmZmZmZRUAzMzMzM7NFQM3MzMzMzEVAZmZmZmbmRUAAAAAAAABGQJqZmZmZGUZAMzMzMzMzRkDNzMzMzExGQGdmZmZmZkZAAAAAAACARkCamZmZmZlGQDMzMzMzs0ZAzczMzMzMRkBnZmZmZuZGQAAAAAAAAEdAmpmZmZkZR0A0MzMzMzNHQM3MzMzMTEdAZ2ZmZmZmR0AAAAAAAIBHQJqZmZmZmUdANDMzMzOzR0DNzMzMzMxHQGdmZmZm5kdAAAAAAAAASECZmZmZmRlIQDMzMzMzM0hAzczMzMxMSEBmZmZmZmZIQAAAAAAAgEhAmpmZmZmZSEAzMzMzM7NIQM3MzMzMzEhAZmZmZmbmSEAAAAAAAABJQJqZmZmZGUlAMzMzMzMzSUDNzMzMzExJQGZmZmZmZklAAAAAAACASUCamZmZmZlJQDMzMzMzs0lAzczMzMzMSUBnZmZmZuZJQAAAAAAAAEpAmpmZmZkZSkA0MzMzMzNKQM3MzMzMTEpAZ2ZmZmZmSkAAAAAAAIBKQJqZmZmZmUpANDMzMzOzSkDNzMzMzMxKQGdmZmZm5kpAAAAAAAAAS0CamZmZmRlLQDQzMzMzM0tAzczMzMxMS0BnZmZmZmZLQAEAAAAAgEtAmpmZmZmZS0A0MzMzM7NLQM7MzMzMzEtAZ2ZmZmbmS0ABAAAAAABMQJqZmZmZGUxANDMzMzMzTEDOzMzMzExMQGdmZmZmZkxAAQAAAACATECamZmZmZlMQDQzMzMzs0xAzszMzMzMTEBmZmZmZuZMQP\u002f\u002f\u002f\u002f\u002f\u002f\u002f0xAmZmZmZkZTUAzMzMzMzNNQMzMzMzMTE1AZmZmZmZmTUAAAAAAAIBNQJmZmZmZmU1AMzMzMzOzTUDMzMzMzMxNQGZmZmZm5k1AAAAAAAAATkA="},"y":[-5.0,-4.860936809016721,-4.723734543896143,-4.58837432660502,-4.454837490551739,-4.323105577884519,-4.1931603368276456,-4.064983719057437,-3.9385578771157554,-3.8138651618605763,-3.690888119953854,-3.569609491385222,-3.45001220703125,-3.332079386249916,-3.2157943345092406,-3.101140541050057,-2.988101676581948,-2.876661591011981,-2.7668043112058456,-2.658514038780652,-2.5517751479289643,-2.4465721832737017,-2.3428898577531356,-2.2407130505357884,-2.1400268049647195,-2.040816326530603,-1.943066980872942,-1.8467642918096487,-1.7518939393939377,-1.658441757998304,-1.5663937344250485,-1.4757360060433768,-1.386454858951879,-1.298536726166816,-1.2119681858351328,-1.1267359594724553,-1.04282691022496,-0.9602280411556023,-0.8789264935531378,-0.7989095452652464,-0.7201646090534837,-0.642679230971595,-0.5664410887651457,-0.4914379902933206,-0.41765787197232385,-0.34508879723927066,-0.2737189550376229,-0.2035366583224345,-0.13453034258617436,-0.0666885644042452,0.0,0.06554655617077287,0.12996219281660615,0.19325788318855075,0.25544448643930195,0.31653274896518724,0.3765333057295095,0.4354566815686667,0.493313292480849,0.5501134468975977,0.6058673469387656,0.660585089650823,0.7142766682286208,0.766951973221353,0.81862079372263,0.869292818544892,0.9189776373784468,0.9676847419351873,1.0154235270779566,1.0622032919344804,1.10803324099723,1.1529224852089186,1.1968800430339002,1.239914841515656,1.2820357173208237,1.3232514177693844,1.3635706018518476,1.4030018412334329,1.4415536212449354,1.4792343418615275,1.516052318668244,1.5520157838138715,1.5871328869522046,1.6214116961713927,1.6548601989116207,1.6874863028709086,1.7192978368996847,1.7503025518836495,1.7805081216159806,1.8099221436580564,1.8385521401896057,1.8664055588480437,1.8934897735573344,1.9198120853464644,1.9453797231575152,1.9701998446437585,1.994279536957805,2.0176258175298756,2.040245634836296,2.0621458691586696,2.083333333333343,2.1038147734917914,2.123596869791726,2.142686237139344,2.161089425902361,2.178812922614597,2.195863150671528,2.212246471017693,2.2279691828254897,2.243037524165416,2.257457672668636,2.2712357461809063,2.284377803408944,2.2968898445587485,2.3087778119661806,2.3200475907197955,2.330705009276457,2.3407558400689226,2.350205800106835,2.359060551569712,2.3673257023933587,2.375006806848873,2.3821093661149177,2.3886388288429856,2.394600591715985,2.4000000000000057,2.404842348089687,2.409132880047025,2.4128767901334953,2.416079223336297,2.418745275888142,2.420879995780595,2.4224883832718973,2.42357539138834,2.4241459264198113,2.424204848409701,2.423756971638767,2.422807065103555,2.4213598529888714,2.4194200151351453,2.4169921875,2.4140809626144772,2.4106908900340613,2.4068264767843317,2.4024921878014,2.397692446367401,2.392431634540742,2.3867140935813467,2.3805441243712693,2.3739259878300345,2.3668639053254594,2.359362059079629,2.3514245925702824,2.34305561092755,2.334259181325919,2.325039333372189,2.3154000594883968,2.305345315290907,2.2948790199646965,2.2840050566338306,2.2727272727272805,2.2610494803408585,2.2489754565949482,2.236508943988312,2.223653650747565,2.210413251173051,2.196791385980589,2.1827916626394313,2.1684176557065484,2.153672907156789,2.1385609267097294,2.1230851921526437,2.10724914965985,2.091056214108619,2.0745097693913124,2.0576131687242736,2.0403697349532592,2.022782760855179,2.004855509436922,1.9865912142304012,1.9679930795847724,1.9490642809550565,1.929807965187777,1.910227250803345,1.8903252282753868,1.8701049603068896,1.849569482103547,1.8287218016437663,1.8075648999459162,1.7861017313327068,1.764335223692484,1.7422682787377823,1.71990377226102,1.6972445543874244,1.6742934498251714,1.6510532581129382,1.6275267538644727,1.6037166870107455,1.5796257830395461,1.5552567432321922,1.5306122448979522,1.5056949416057392,1.4805074634134456,1.455052417094791,1.429332386363626,1.4033499320959777,1.3771075925494927,1.3506078835808495,1.3238532988604845,1.2968463100853143,1.269589367189056,1.2420848985502317,1.2143353111980701,1.1863429910163603,1.1581103029447064,1.1296395911780337,1.1009331793639348,1.0719933707976708,1.0428224486153965,1.0134226759852254,0.9837962962963047,0.953945533345788,0.9238725915240025,0.8935796559976694,0.8630688928909507,0.8323424494649316,0.8014024542950153,0.770251017446526,0.7388902306484795,0.7073221674654206,0.6755488834678118,0.6435724164001613,0.6113947863477591,0.5790179959016655,0.5464440303217089,0.5136748576981773,0.4807124291115201,0.4475586787905854,0.4142155242690677,0.38068486654054823,0.34696859021183,0.3130685636545678,0.2789866391554767,0.2447246530652336,0.21028442594518992,0.17566776271340245,0.14087645278843297,0.10591227023219574,0.07077697389117077,0.03547230753599706,1.4210854715202004e-14,-0.035638234683986525,-0.07144069714803436,-0.10740570255498483,-0.14353158046561987,-0.17981667470725426,-0.21625934324347895,-0.2528579580454675,-0.2896109049644622,-0.32651658360543934,-0.3635734072022103,-0.4007798024938012,-0.438134209601742,-0.47563508190918924,-0.513280885940631,-0.5510701012431127,-0.5890012202687416,-0.6270727482580867,-0.6652832031249858,-0.7036311153423895,-0.742115027829314,-0.7807334958389447,-0.8194850868479762,-0.8583683804468052,-0.8973819682310591,-0.936524453694048,-0.9757944521202973,-1.0151905904801453,-1.054711507325493,-1.0943558526862773,-1.1341222879684523,-1.1740094858523662,-1.2140161301927606,-1.254140915919237,-1.2943825489379464,-1.3347397460343444,-1.3752112347765149,-1.4157957534200136,-1.4564920508129546,-1.4972988863026302,-1.5382150296427,-1.5792392609013035,-1.6203703703703667,-1.661607158475249,-1.7029484356857836,-1.7443930224279143,-1.7859397489962419,-1.827587455467409,-1.8693349916143802,-1.9111812168214044,-1.9531249999999858],"type":"scatter"},{"hoverinfo":"skip","marker":{"color":"#b9006e","size":12},"mode":"markers+text","text":["IRR = 10 %","IRR = 50 %"],"textfont":{"color":"#b9006e","size":14},"textposition":["bottom right","top left"],"x":[10,50],"y":[0,0],"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"shapes":[{"line":{"color":"grey","width":1},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":0,"y1":0,"yref":"y"}],"title":{"text":"NPV lomu podle diskontn\u00ed sazby","font":{"size":20}},"xaxis":{"title":{"text":"Diskontn\u00ed sazba (%)"},"ticksuffix":" %"},"yaxis":{"title":{"text":"NPV (mil. K\u010d)"}},"showlegend":false,"separators":", "},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('7175da96-d632-4d0e-9a35-fe1db12771ec');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
+<p>NPV je nulová při sazbě 10 % i při sazbě 50 %, projekt má tedy dvě IRR. Má firma s náklady kapitálu 12 % projekt přijmout? Pravidlo pro IRR odpověď nedá: 12 % je víc než jedno IRR a míň než druhé. NPV odpověď dá:</p>
+<p><span class="math display">\[
+NPV = -100 + \frac{260}{1{,}12} - \frac{165}{1{,}12^2} = -100 + 232{,}1 - 131{,}5 = 0{,}6
+\]</span></p>
+<p>NPV je 0,6 mil. Kč, tedy kladná, a projekt se vyplatí.</p>
+</div>
+</div>
+<p><strong>IRR nevidí velikost projektu.</strong> Výnos 50 % z malé částky může být méně peněz než výnos 30 % z velké.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Firma může uskutečnit jen jeden ze dvou projektů. Oba trvají jeden rok, náklady kapitálu jsou 10 %. Částky jsou v Kč.</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 39%">
-<col style="width: 60%">
-</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;"><strong>Výhody</strong></th>
-<th style="text-align: center;"><strong>Nevýhody</strong></th>
+<th style="text-align: center;">Projekt</th>
+<th style="text-align: center;">Investice dnes</th>
+<th style="text-align: center;">Příjem za rok</th>
+<th style="text-align: center;">IRR</th>
+<th style="text-align: center;">NPV</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Jednoduché porovnání s požadovanou návratností</td>
-<td style="text-align: center;">Může vést k chybným rozhodnutím při nestandardních peněžních tocích</td>
+<td style="text-align: center;">malý</td>
+<td style="text-align: center;">100 000</td>
+<td style="text-align: center;">150 000</td>
+<td style="text-align: center;">50 %</td>
+<td style="text-align: center;">36 364</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Zohledňuje časovou hodnotu peněz</td>
-<td style="text-align: center;">Ignoruje velikost projektu (může preferovat menší projekty s vyšší IRR)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Snadno pochopitelné a široce používané</td>
-<td style="text-align: center;">Může být obtížné vypočítat u složitějších peněžních toků</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Umožňuje srovnání různých projektů</td>
-<td style="text-align: center;">Nezohledňuje reinvestiční riziko</td>
+<td style="text-align: center;">velký</td>
+<td style="text-align: center;">1 000 000</td>
+<td style="text-align: center;">1 300 000</td>
+<td style="text-align: center;">30 %</td>
+<td style="text-align: center;">181 818</td>
 </tr>
 </tbody>
 </table>
-<p><br></p>
+<p>Malý projekt má vyšší IRR, velký ale zvýší hodnotu firmy pětkrát víc. Firma má zvolit velký projekt. Stejně jako IRR by svedl i index ziskovosti: malý projekt ho má 1,36, velký 1,18.</p>
+</div>
+</div>
+<p><strong>IRR předpokládá, že peníze z projektu firma znovu investuje se stejným výnosem.</strong> Vyjde-li IRR 40 %, počítá se s tím, že i peníze, které projekt průběžně vydělá, ponesou dál 40 %. Tak výnosný další projekt ale firma mít nemusí.</p>
+<p>Pro jeden běžný projekt je IRR spolehlivé a hodí se k NPV jako doplněk. Když se IRR a NPV neshodnou, <strong>rozhoduje NPV</strong>.</p>
 </section>
-<section id="alternativní-metody-měření-výkonnosti-investic" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="alternativní-metody-měření-výkonnosti-investic"><span class="header-section-number">12.5</span> Alternativní metody měření výkonnosti investic</h2>
-<section id="profitability-index" class="level3" data-number="12.5.1">
-<h3 data-number="12.5.1" class="anchored" data-anchor-id="profitability-index"><span class="header-section-number">12.5.1</span> Profitability Index</h3>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Profitability Index</strong> (PI) je poměr současné hodnoty budoucích peněžních toků generovaných investicí k počáteční investici.</p>
-</div>
-</div>
+</section>
+<section id="další-metody-a-výběr-mezi-projekty" class="level2 page-columns page-full" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="další-metody-a-výběr-mezi-projekty"><span class="header-section-number">12.5</span> Další metody a výběr mezi projekty</h2>
+<section id="index-ziskovosti" class="level3" data-number="12.5.1">
+<h3 data-number="12.5.1" class="anchored" data-anchor-id="index-ziskovosti"><span class="header-section-number">12.5.1</span> Index ziskovosti</h3>
+<p><strong>Index ziskovosti</strong> (profitability index, PI) pracuje se stejnými čísly jako NPV, jen je místo odečtení dělí. Říká, kolik korun současné hodnoty přinese jedna investovaná koruna:</p>
+<div class="formula">
 <p><span class="math display">\[
-\text{PI} = \frac{\text{PV budoucích peněžních toků}}{\text{Počáteční investice}}
+PI = \frac{PV}{CF_0} = \frac{NPV + CF_0}{CF_0}
 \]</span></p>
-<ul>
-<li>Pokud je PI větší než 1, investice je považována za ziskovou.</li>
-</ul>
+</div>
+<p>kde <span class="math inline">\(PV\)</span> je současná hodnota budoucích peněžních toků projektu. Když je <span class="math inline">\(PI &gt; 1\)</span>, projekt přijmeme, když je <span class="math inline">\(PI &lt; 1\)</span>, zamítneme ho. Rozhodnutí je vždy stejné jako podle NPV: index ziskovosti je větší než 1 právě tehdy, když je NPV kladná.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -708,37 +952,18 @@ Příklad
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Firma investuje 100 000 Kč do projektu, který generuje budoucí peněžní toky ve výši 30 000 Kč ročně po dobu 5 let. Diskontní sazba je 10 %.</p>
+<p>Budoucí peněžní toky pražicího stroje mají současnou hodnotu 535 892,36 Kč, stroj stojí 500 000 Kč.</p>
 <p><span class="math display">\[
-PV = \frac{30 000}{(1+0{,}1)^1} + \frac{30 000}{(1+0{,}1)^2} + \frac{30 000}{(1+0{,}1)^3} + \frac{30 000}{(1+0{,}1)^4} + \frac{30 000}{(1+0{,}1)^5} = 113 723{,}60 \text{ Kč}
+PI = \frac{535\,892{,}36}{500\,000} = 1{,}07
 \]</span></p>
-<p><span class="math display">\[
-\text{PI} = \frac{113 723{,}6 \text{ Kč}}{100 000 \text{ Kč}} = 1{,}137
-\]</span></p>
-<ul>
-<li>Investice přinese o 13,7% více než vložená částka.</li>
-</ul>
+<p>Každá investovaná koruna přinese 1,07 Kč v současné hodnotě. Index je větší než 1, projekt se vyplatí.</p>
 </div>
 </div>
+<p>Index ziskovosti se hodí hlavně k seřazení projektů, když firma nemá peníze na všechny. Ukážeme to v části o omezeném rozpočtu.</p>
 </section>
 <section id="diskontovaná-doba-návratnosti" class="level3" data-number="12.5.2">
 <h3 data-number="12.5.2" class="anchored" data-anchor-id="diskontovaná-doba-návratnosti"><span class="header-section-number">12.5.2</span> Diskontovaná doba návratnosti</h3>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Diskontovaná doba návratnosti</strong> (Discounted Payback Period) je doba, za kterou se vrátí počáteční investice s ohledem na časovou hodnotu peněz, tedy po diskontování budoucích peněžních toků.</p>
-</div>
-</div>
-<ul>
-<li>Není specifický vzorec, výpočet se provádí postupným sčítáním diskontovaných peněžních toků do té doby, než se pokryje počáteční investice.</li>
-</ul>
+<p><strong>Diskontovaná doba návratnosti</strong> (discounted payback period) odstraňuje první nedostatek doby návratnosti: sčítá diskontované peněžní toky. Říká, za jak dlouho se investice vrátí i s výnosem, který investoři požadují.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -749,78 +974,108 @@ Příklad
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Firma investuje 100 000 Kč do projektu, který generuje následující peněžní toky při diskontní sazbě 10 %:</p>
-<ul>
-<li>Rok 1: 30 000 Kč</li>
-<li>Rok 2: 40 000 Kč</li>
-<li>Rok 3: 50 000 Kč</li>
-</ul>
+<p>Pražicí stroj stojí 500 000 Kč, diskontní sazba je 10 %.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 6%">
+<col style="width: 7%">
 <col style="width: 18%">
-<col style="width: 31%">
-<col style="width: 43%">
+<col style="width: 26%">
+<col style="width: 27%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Rok</th>
-<th>Peněžní tok (Kč)</th>
-<th>Diskontovaný peněžní tok (Kč)</th>
-<th>Kumulativní diskontovaný peněžní tok (Kč)</th>
+<th style="text-align: center;">Rok</th>
+<th style="text-align: center;">Peněžní tok</th>
+<th style="text-align: center;">Diskontovaný tok</th>
+<th style="text-align: center;">Součet od začátku</th>
+<th style="text-align: center;">Zbývá vrátit</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>30 000</td>
-<td>27 273</td>
-<td>27 273</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">100 000</td>
+<td style="text-align: center;">90 909</td>
+<td style="text-align: center;">90 909</td>
+<td style="text-align: center;">409 091</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>40 000</td>
-<td>33 058</td>
-<td>60 331</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">150 000</td>
+<td style="text-align: center;">123 967</td>
+<td style="text-align: center;">214 876</td>
+<td style="text-align: center;">285 124</td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td>50 000</td>
-<td>37 565</td>
-<td>97 896</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">200 000</td>
+<td style="text-align: center;">150 263</td>
+<td style="text-align: center;">365 139</td>
+<td style="text-align: center;">134 861</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">250 000</td>
+<td style="text-align: center;">170 753</td>
+<td style="text-align: center;">535 892</td>
+<td style="text-align: center;">0</td>
 </tr>
 </tbody>
 </table>
-<p>Kumulativní diskontované peněžní toky dosáhnou téměř 100 000 Kč po 3 letech, takže Discounted Payback Period je něco málo přes 3 roky.</p>
-</div>
-</div>
-</section>
-<section id="modifikované-irr" class="level3" data-number="12.5.3">
-<h3 data-number="12.5.3" class="anchored" data-anchor-id="modifikované-irr"><span class="header-section-number">12.5.3</span> Modifikované IRR</h3>
-<div class="callout callout-style-default callout-important callout-titled" title="Definice">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Modifikované vnitřní výnosové procento</strong> (Modified Internal Rate of Return, MIRR) je upravená verze IRR, která bere v úvahu nejen náklady na kapitál, ale také reinvestiční míru, která se používá pro budoucí peněžní toky.</p>
-</div>
-</div>
-<ul>
-<li>MIRR poskytuje přesnější míru návratnosti pro projekty s nestandardními peněžními toky, eliminuje některé problémy spojené s IRR.</li>
-</ul>
+<p>Po třech letech zbývá vrátit 134 861 Kč, čtvrtý rok přinese v současné hodnotě 170 753 Kč:</p>
 <p><span class="math display">\[
-\text{MIRR} = \left( \frac{FV(\text{pozitivní peněžní toky})}{PV(\text{negativní peněžní toky})} \right)^{\frac{1}{n}} - 1
+3 + \frac{134\,861}{170\,753} = 3{,}79
 \]</span></p>
-<ul>
-<li><span class="math inline">\(FV \dots\)</span> budoucí hodnota pozitivních peněžních toků při reinvestiční sazbě</li>
-<li><span class="math inline">\(PV \dots\)</span> současná hodnota negativních peněžních toků při financovací sazbě</li>
-<li><span class="math inline">\(n \dots\)</span> počet období</li>
-</ul>
+<p>Diskontovaná doba návratnosti je 3,79 roku. Obyčejná doba návratnosti vyšla 3,2 roku.</p>
+</div>
+</div>
+<div id="e069eae8" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="df1aa406-f2e4-437e-984e-f929bbd4e262" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("df1aa406-f2e4-437e-984e-f929bbd4e262")) {                    Plotly.newPlot(                        "df1aa406-f2e4-437e-984e-f929bbd4e262",                        [{"hovertemplate":"%{y:,.0f} K\u010d","line":{"color":"grey","dash":"dash","width":3},"mode":"lines+markers","name":"pen\u011b\u017en\u00ed toky","x":{"dtype":"i1","bdata":"AAECAwQ="},"y":{"dtype":"i4","bdata":"4F74\u002f4Dl+f9wL\u002fz\u002fsDz\u002f\u002f0ANAwA="},"type":"scatter"},{"hovertemplate":"%{y:,.0f} K\u010d","line":{"color":"#0000dc","dash":"solid","width":3},"mode":"lines+markers","name":"diskontovan\u00e9 pen\u011b\u017en\u00ed toky","x":{"dtype":"i1","bdata":"AAECAwQ="},"y":{"dtype":"f8","bdata":"AAAAAICEHsEvuuiiC\u002fgYwSkVJt4PZxHB5yXZDWh2AMGQ2TFti4bhQA=="},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"rgb(234,234,242)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2},"colorscale":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(231,231,240)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(183,183,191)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"rgb(67,103,167)"},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"tickcolor":"rgb(36,36,36)","ticklen":8,"ticks":"outside","tickwidth":2}},"colorscale":{"sequential":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]],"sequentialminus":[[0.0,"rgb(2,4,25)"],[0.06274509803921569,"rgb(24,15,41)"],[0.12549019607843137,"rgb(47,23,57)"],[0.18823529411764706,"rgb(71,28,72)"],[0.25098039215686274,"rgb(97,30,82)"],[0.3137254901960784,"rgb(123,30,89)"],[0.3764705882352941,"rgb(150,27,91)"],[0.4392156862745098,"rgb(177,22,88)"],[0.5019607843137255,"rgb(203,26,79)"],[0.5647058823529412,"rgb(223,47,67)"],[0.6274509803921569,"rgb(236,76,61)"],[0.6901960784313725,"rgb(242,107,73)"],[0.7529411764705882,"rgb(244,135,95)"],[0.8156862745098039,"rgb(245,162,122)"],[0.8784313725490196,"rgb(246,188,153)"],[0.9411764705882353,"rgb(247,212,187)"],[1.0,"rgb(250,234,220)"]]},"colorway":["rgb(76,114,176)","rgb(221,132,82)","rgb(85,168,104)","rgb(196,78,82)","rgb(129,114,179)","rgb(147,120,96)","rgb(218,139,195)","rgb(140,140,140)","rgb(204,185,116)","rgb(100,181,205)"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"rgb(234,234,242)","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":30},"paper_bgcolor":"white","plot_bgcolor":"rgb(234,234,242)","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","radialaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"rgb(234,234,242)","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"showgrid":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"fillcolor":"rgb(67,103,167)","line":{"width":0},"opacity":0.5},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""},"bgcolor":"rgb(234,234,242)","caxis":{"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":""}},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","showgrid":true,"ticks":"","title":{"standoff":15},"zerolinecolor":"white"}}},"shapes":[{"line":{"color":"grey","width":1},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":0,"y1":0,"yref":"y"}],"title":{"text":"Kdy se investice do pra\u017eic\u00edho stroje vr\u00e1t\u00ed","font":{"size":20}},"legend":{"x":0.02,"y":0.98,"xanchor":"left","yanchor":"top"},"xaxis":{"title":{"text":"Rok"},"tickvals":{"dtype":"i1","bdata":"AAECAwQ="}},"yaxis":{"title":{"text":"Sou\u010det pen\u011b\u017en\u00edch tok\u016f v\u010detn\u011b investice (K\u010d)"},"tickformat":",.0f"},"hovermode":"x unified","separators":", "},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('df1aa406-f2e4-437e-984e-f929bbd4e262');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
+<p>Diskontovaná doba návratnosti je vždy delší než obyčejná, protože diskontované peněžní toky jsou menší. Modrá čára v grafu končí na hodnotě 35 892 Kč, což je NPV projektu. Projekt se zápornou NPV se proto s požadovaným výnosem nevrátí nikdy. Ostatní nedostatky zůstávají: metoda nepočítá s peněžními toky po době návratnosti a hranici pro přijetí si firma volí sama.</p>
+</section>
+<section id="modifikované-vnitřní-výnosové-procento" class="level3" data-number="12.5.3">
+<h3 data-number="12.5.3" class="anchored" data-anchor-id="modifikované-vnitřní-výnosové-procento"><span class="header-section-number">12.5.3</span> Modifikované vnitřní výnosové procento</h3>
+<p><strong>Modifikované vnitřní výnosové procento</strong> (modified internal rate of return, MIRR) opravuje dvě úskalí IRR: má vždy jen jedno řešení a nepředpokládá, že firma peníze znovu investuje s výnosem IRR. Počítá s tím, že je investuje s výnosem rovným nákladům kapitálu. U projektu s jediným výdajem na začátku má postup tři kroky:</p>
+<ol type="1">
+<li>Všechny kladné peněžní toky převedeme na budoucí hodnotu ke konci projektu. Úročíme je náklady kapitálu.</li>
+<li>Budoucí hodnoty sečteme.</li>
+<li>Spočítáme roční výnos, při kterém z počáteční investice vyroste tento součet.</li>
+</ol>
+<div class="formula">
+<p><span class="math display">\[
+MIRR = \left(\frac{FV}{CF_0}\right)^{1/n} - 1
+\]</span></p>
+</div>
+<p>kde <span class="math inline">\(FV\)</span> je součet budoucích hodnot kladných peněžních toků na konci projektu.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -831,217 +1086,657 @@ Příklad
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Firma má počáteční investici 100 000 Kč a očekává následující peněžní toky:</p>
-<ul>
-<li>Rok 1: 20 000 Kč</li>
-<li>Rok 2: 40 000 Kč</li>
-<li>Rok 3: 50 000 Kč</li>
-</ul>
-<p>Předpokládejme, že diskontní sazba (náklady na kapitál) je 10 % a reinvestiční sazba je 12 %.</p>
-<ol type="1">
-<li><p><strong>Výpočet FV pro pozitivní peněžní toky:</strong> <span class="math display">\[
-FV = 20 000 \times (1+0{,}12)^2 + 40 000 \times (1+0{,}12)^1 + 50 000 = 122 016 \text{ Kč}
-\]</span></p></li>
-<li><p><strong>Výpočet PV pro počáteční investici:</strong> <span class="math display">\[
-PV = 100 000 \text{ Kč}
-\]</span></p></li>
-<li><p><strong>Výpočet MIRR:</strong> <span class="math display">\[
-\text{MIRR} = \left( \frac{122 016}{100 000} \right)^{\frac{1}{3}} - 1 = 6{,}9\%
-\]</span></p></li>
-</ol>
-<p>Projekt by měl roční návratnost 6,9 %, pokud by byly peněžní toky reinvestovány při sazbě 12 %.</p>
+<p>Pražicí stroj stojí 500 000 Kč, náklady kapitálu jsou 10 %. První peněžní tok se do konce čtvrtého roku úročí tři roky, druhý dva roky, třetí jeden rok:</p>
+<p><span class="math display">\[
+\begin{aligned}
+FV &amp;= 100\,000 \times 1{,}1^3 + 150\,000 \times 1{,}1^2 \\
+   &amp;\quad + 200\,000 \times 1{,}1 + 250\,000 \\
+   &amp;= 133\,100 + 181\,500 + 220\,000 + 250\,000 = 784\,600
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+MIRR = \left(\frac{784\,600}{500\,000}\right)^{1/4} - 1 = 1{,}5692^{1/4} - 1 = 11{,}92\%
+\]</span></p>
+<p>MIRR je 11,92 %. Je vyšší než náklady kapitálu 10 %, projekt se vyplatí. Je ale nižší než IRR 12,83 %, protože počítá s nižším výnosem z průběžně vydělaných peněz.</p>
 </div>
 </div>
 </section>
+<section id="vzájemně-se-vylučující-projekty" class="level3 page-columns page-full" data-number="12.5.4">
+<h3 data-number="12.5.4" class="anchored" data-anchor-id="vzájemně-se-vylučující-projekty"><span class="header-section-number">12.5.4</span> Vzájemně se vylučující projekty</h3>
+<p>Zatím jsme rozhodovali, zda jeden projekt přijmout, nebo zamítnout. Projekty, které spolu nesouvisejí a o každém lze rozhodnout zvlášť, se nazývají <strong>nezávislé</strong>: firma přijme všechny s kladnou NPV.</p>
+<p>Jindy si firma musí vybrat. Pražírna potřebuje jen jeden pražicí stroj a rozhoduje se mezi menším a větším. Koupí-li jeden, druhý už nekoupí. Takové projekty se nazývají <strong>vzájemně se vylučující</strong> (mutually exclusive). Platí pro ně pravidlo: <strong>vybereme projekt s nejvyšší NPV</strong>.</p>
+<p>Cílem je zvýšit hodnotu firmy co nejvíc, a NPV říká přímo, o kolik ji projekt zvýší. Podle IRR ani indexu ziskovosti vybírat nelze, protože nevidí velikost projektu. Ukázal to příklad s malým a velkým projektem v části o úskalích IRR.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>NPV lze přímo porovnávat jen u projektů, které trvají stejně dlouho. Porovnání projektů s různou dobou trvání je nad rámec tohoto předmětu.</p>
+</div></div></section>
+<section id="omezený-rozpočet" class="level3 page-columns page-full" data-number="12.5.5">
+<h3 data-number="12.5.5" class="anchored" data-anchor-id="omezený-rozpočet"><span class="header-section-number">12.5.5</span> Omezený rozpočet</h3>
+<p>Firma často najde víc projektů s kladnou NPV, než kolik dokáže zaplatit. Chce pak vybrat takovou skupinu projektů, která se vejde do rozpočtu a má dohromady nejvyšší NPV. Pomůže index ziskovosti: říká, kolik hodnoty projekt přinese na jednu korunu z omezeného rozpočtu. Projekty proto seřadíme podle indexu ziskovosti od nejvyššího a přijímáme je, dokud rozpočet stačí.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Tento postup vede jistě k nejlepšímu výběru, když vybrané projekty rozpočet právě vyčerpají. Zbude-li část rozpočtu nevyužitá, je potřeba porovnat i jiné kombinace.</p>
+</div></div><div class="callout callout-style-default callout-tip callout-titled" title="Příklad">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Příklad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Firma má na investice 100 mil. Kč a zvažuje pět projektů. Všechny mají kladnou NPV, dohromady by ale stály 200 mil. Kč. Částky jsou v mil. Kč.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Projekt</th>
+<th style="text-align: center;">Investice</th>
+<th style="text-align: center;">NPV</th>
+<th style="text-align: center;">PI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">1,40</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">1,30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">1,37</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">1,45</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">E</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">1,35</td>
+</tr>
+</tbody>
+</table>
+<p>Index ziskovosti počítáme z NPV, u projektu A je to <span class="math inline">\((20 + 50) / 50 = 1{,}40\)</span>. Pořadí podle indexu je D, A, C, E, B. Projekty D, A a C stojí dohromady <span class="math inline">\(20 + 50 + 30 = 100\)</span> mil. Kč a rozpočet právě vyčerpají. Jejich NPV je <span class="math inline">\(9 + 20 + 11 = 40\)</span> mil. Kč.</p>
+<p>Kdyby firma vybírala podle samotné NPV, začala by projektem E. Projekt A se k němu už nevejde, další v pořadí je projekt B. Celková NPV by byla jen <span class="math inline">\(21 + 12 = 33\)</span> mil. Kč.</p>
+</div>
+</div>
 </section>
-<section id="příklady-k-procvičení" class="level2" data-number="12.6">
-<h2 data-number="12.6" class="anchored" data-anchor-id="příklady-k-procvičení"><span class="header-section-number">12.6</span> Příklady k procvičení</h2>
-<ol type="1">
-<li>Firma investuje 50 000 Kč do projektu, který generuje roční peněžní toky ve výši 10 000 Kč. Jaká je doba návratnosti?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Výsledek
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-16" class="callout-16-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>5 let</p>
-</div>
-</div>
-</div>
-<ol start="2" type="1">
-<li>Firma investuje 120 000 Kč do projektu, který generuje roční peněžní toky ve výši 30 000 Kč. Jaká je doba návratnosti?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Výsledek
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-17" class="callout-17-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>4 roky</p>
-</div>
-</div>
-</div>
-<ol start="3" type="1">
-<li>Firma investuje 75 000 Kč do projektu, který generuje roční peněžní toky ve výši 20 000 Kč. Jaká je doba návratnosti?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Výsledek
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-18" class="callout-18-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>3,75 roku, což znamená 3 roky a 9 měsíců.</p>
-</div>
-</div>
-</div>
-<ol start="4" type="1">
-<li>Firma investuje 100 000 Kč do projektu, který generuje následující peněžní toky:</li>
-</ol>
+<section id="porovnání-metod" class="level3 page-columns page-full" data-number="12.5.6">
+<h3 data-number="12.5.6" class="anchored" data-anchor-id="porovnání-metod"><span class="header-section-number">12.5.6</span> Porovnání metod</h3>
+<p>Tabulka shrnuje, zda metoda počítá s časovou hodnotou peněz, zda počítá se všemi peněžními toky projektu a kdy podle ní projekt přijmeme.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 18%">
+<col style="width: 15%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Metoda</th>
+<th style="text-align: center;">Časová hodnota</th>
+<th style="text-align: center;">Všechny toky</th>
+<th style="text-align: left;">Projekt přijmeme, když</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Doba návratnosti</td>
+<td style="text-align: center;">ne</td>
+<td style="text-align: center;">ne</td>
+<td style="text-align: left;">je kratší než limit firmy</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Diskontovaná doba návratnosti</td>
+<td style="text-align: center;">ano</td>
+<td style="text-align: center;">ne</td>
+<td style="text-align: left;">je kratší než limit firmy</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NPV</td>
+<td style="text-align: center;">ano</td>
+<td style="text-align: center;">ano</td>
+<td style="text-align: left;"><span class="math inline">\(NPV &gt; 0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IRR</td>
+<td style="text-align: center;">ano</td>
+<td style="text-align: center;">ano</td>
+<td style="text-align: left;"><span class="math inline">\(IRR &gt; r\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Index ziskovosti</td>
+<td style="text-align: center;">ano</td>
+<td style="text-align: center;">ano</td>
+<td style="text-align: left;"><span class="math inline">\(PI &gt; 1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Doba návratnosti vychází v letech, NPV v korunách, IRR v procentech a index ziskovosti je poměr bez jednotky.</p>
+<p>A co firmy skutečně používají? V průzkumu mezi 392 finančními řediteli severoamerických firem uvedlo 75,7 % z nich, že IRR používají vždy nebo téměř vždy, a 74,9 % totéž řeklo o NPV. Z ostatních metod byla nejčastější doba návratnosti s 56,7 %, a to přes všechny své nedostatky. Oblíbená byla hlavně v menších firmách. Firmy tedy většinou nepoužívají jednu metodu, ale několik vedle sebe.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Zdroj: Graham, J. R., &amp; Harvey, C. R. (2002). <a href="https://people.duke.edu/~charvey/Research/Published_Papers/P76_How_do_CFOs.pdf">How do CFOs make capital budgeting and capital structure decisions?</a> Journal of Applied Corporate Finance, 15(1). Průzkum proběhl v roce 1999.</p>
+</div></div></section>
+</section>
+<section id="shrnutí" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="shrnutí"><span class="header-section-number">12.6</span> Shrnutí</h2>
 <ul>
-<li>Rok 1: 30 000 Kč</li>
-<li>Rok 2: 30 000 Kč</li>
-<li>Rok 3: 30 000 Kč</li>
+<li>Cílem firmy je dlouhodobě zvyšovat svou hodnotu. Investiční rozhodování (kapitálové rozpočtování) hledá projekty, které hodnotu firmy zvýší.</li>
+<li>Projekt popisuje počáteční investice a peněžní toky v dalších letech. Diskontní sazbou jsou náklady kapitálu, tedy výnos, který požadují investoři.</li>
+<li>Doba návratnosti říká, za jak dlouho se investice vrátí. Je jednoduchá, ale nepočítá s časovou hodnotou peněz ani s peněžními toky po době návratnosti.</li>
+<li>NPV je současná hodnota budoucích peněžních toků snížená o počáteční investici. Projekt s kladnou NPV zvyšuje hodnotu firmy a přijmeme ho.</li>
+<li>U projektu, který začíná výdajem a potom už jen vydělává, platí: čím vyšší diskontní sazba, tím nižší NPV.</li>
+<li>IRR je diskontní sazba, při které je NPV nulová. Projekt přijmeme, když je IRR vyšší než náklady kapitálu.</li>
+<li>IRR může mít víc řešení a nevidí velikost projektu. Když se IRR a NPV neshodnou, rozhoduje NPV.</li>
+<li>Index ziskovosti je současná hodnota budoucích peněžních toků dělená investicí. Hodí se k seřazení projektů při omezeném rozpočtu.</li>
+<li>Diskontovaná doba návratnosti sčítá diskontované peněžní toky, a je proto delší než obyčejná. S peněžními toky po době návratnosti ale také nepočítá.</li>
+<li>Ze vzájemně se vylučujících projektů vybíráme ten s nejvyšší NPV.</li>
 </ul>
-<p>Diskontní sazba je 10 %. Jaká je NPV daného projektu?</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Výpočet</th>
+<th style="text-align: left;">Vzorec</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Doba návratnosti, stejné toky</td>
+<td style="text-align: left;"><span class="math inline">\(DN = \dfrac{CF_0}{CF}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Čistá současná hodnota</td>
+<td style="text-align: left;"><span class="math inline">\(NPV = -CF_0 + \dfrac{CF_1}{(1+r)^1} + \dots + \dfrac{CF_n}{(1+r)^n}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vnitřní výnosové procento</td>
+<td style="text-align: left;"><span class="math inline">\(0 = -CF_0 + \dfrac{CF_1}{(1+IRR)^1} + \dots + \dfrac{CF_n}{(1+IRR)^n}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IRR při jediném peněžním toku</td>
+<td style="text-align: left;"><span class="math inline">\(IRR = \left(\dfrac{CF_n}{CF_0}\right)^{1/n} - 1\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Index ziskovosti</td>
+<td style="text-align: left;"><span class="math inline">\(PI = \dfrac{PV}{CF_0} = \dfrac{NPV + CF_0}{CF_0}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Modifikované IRR</td>
+<td style="text-align: left;"><span class="math inline">\(MIRR = \left(\dfrac{FV}{CF_0}\right)^{1/n} - 1\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="příklady-k-procvičení" class="level2" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="příklady-k-procvičení"><span class="header-section-number">12.7</span> Příklady k procvičení</h2>
+<p>Pokud příklad neuvádí jinak, firma platí počáteční investici dnes, další peněžní toky přicházejí na konci roku a počítáme se složeným úročením. U doby návratnosti předpokládáme, že peníze během roku přicházejí rovnoměrně.</p>
+<section id="doba-návratnosti-1" class="level3" data-number="12.7.1">
+<h3 data-number="12.7.1" class="anchored" data-anchor-id="doba-návratnosti-1"><span class="header-section-number">12.7.1</span> Doba návratnosti</h3>
+<div class="exercise" data-number="1">
+<p>Firma investuje 840 000 Kč do projektu, který přináší 240 000 Kč ročně. Jaká je doba návratnosti?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Doba návratnosti (roky)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="3.5" aria-label="Doba návratnosti (roky)"><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="0.29; 0.286" hidden="hidden">
+<p>Zlomek je obráceně. Investici dělte ročním peněžním tokem.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+DN = \frac{840\,000}{240\,000} = 3{,}5
+\]</span></p>
+<p>Investice se vrátí za 3,5 roku.</p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<div class="exercise" data-number="2">
+<p>Projekt vyžaduje investici 300 000 Kč. V jednotlivých letech přinese 80 000 Kč, 100 000 Kč, 90 000 Kč a 120 000 Kč. Jaká je doba návratnosti?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Doba návratnosti (roky)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="3.25" aria-label="Doba návratnosti (roky)"><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="4" hidden="hidden">
+<p>Investice se vrátí už během čtvrtého roku. Zbývajících 30 000 Kč vydělte peněžním tokem čtvrtého roku.</p>
 </div>
-<div id="callout-19" class="callout-19-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>-25 395 Kč</p>
+<div class="exercise-mistake" data-answer="3.1" hidden="hidden">
+<p>Zbývajících 30 000 Kč dělte peněžním tokem čtvrtého roku, ne investicí.</p>
 </div>
+<div class="exercise-mistake" data-answer="3.08; 3.077" hidden="hidden">
+<p>Peněžní toky nejsou každý rok stejné, průměrem je nahradit nelze. Sčítejte je postupně rok po roce.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Po třech letech projekt vrátil <span class="math inline">\(80\,000 + 100\,000 + 90\,000 = 270\,000\)</span> Kč a zbývá 30 000 Kč. Čtvrtý rok přinese 120 000 Kč:</p>
+<p><span class="math display">\[
+DN = 3 + \frac{30\,000}{120\,000} = 3{,}25
+\]</span></p>
+<p>Investice se vrátí za 3,25 roku.</p>
+</details>
 </div>
-<ol start="5" type="1">
-<li>Firma investuje 150 000 Kč do projektu, který generuje následující peněžní toky:</li>
-</ol>
-<ul>
-<li>Rok 1: 50 000 Kč</li>
-<li>Rok 2: 60 000 Kč</li>
-<li>Rok 3: 70 000 Kč</li>
-</ul>
-<p>Diskontní sazba je 8 %. Jaká je NPV daného projektu?</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise" data-number="3">
+<p>Každý z projektů A a B vyžaduje investici 200 000 Kč. Projekt A přinese v jednotlivých letech 100 000 Kč, 100 000 Kč a 20 000 Kč. Projekt B přinese v prvním roce 50 000 Kč a potom tři roky po 100 000 Kč. Jaká je doba návratnosti obou projektů?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Projekt A (roky)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="2" aria-label="Projekt A (roky)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Projekt B (roky)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="2.5" aria-label="Projekt B (roky)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Projekt A vrátí investici přesně po dvou letech: <span class="math inline">\(100\,000 + 100\,000 = 200\,000\)</span> Kč.</p>
+<p>Projekt B vrátí po dvou letech 150 000 Kč a zbývá 50 000 Kč. Třetí rok přinese 100 000 Kč:</p>
+<p><span class="math display">\[
+DN_B = 2 + \frac{50\,000}{100\,000} = 2{,}5
+\]</span></p>
+<p>Podle doby návratnosti je lepší projekt A. Projekt B ale vydělá celkem 350 000 Kč, projekt A jen 220 000 Kč. Doba návratnosti nepočítá s peněžními toky, které přijdou později.</p>
+</details>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+</section>
+<section id="čistá-současná-hodnota-1" class="level3" data-number="12.7.2">
+<h3 data-number="12.7.2" class="anchored" data-anchor-id="čistá-současná-hodnota-1"><span class="header-section-number">12.7.2</span> Čistá současná hodnota</h3>
+<div class="exercise" data-tol="10" data-number="1" data-unit="Kč">
+<p>Firma investuje 150 000 Kč do projektu, který přinese 50 000 Kč za rok, 60 000 Kč za dva roky a 70 000 Kč za tři roky. Diskontní sazba je 8 %. Jaká je NPV projektu?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="3304.88" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="153304.88" hidden="hidden">
+<p>To je současná hodnota budoucích peněžních toků. Odečtěte od ní počáteční investici.</p>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<div class="exercise-mistake" data-answer="30000" hidden="hidden">
+<p>Peněžní toky jste jen sečetli a odečetli investici. Každý peněžní tok nejdřív diskontujte.</p>
 </div>
-<div id="callout-20" class="callout-20-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>3 311 Kč</p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\begin{aligned}
+NPV &amp;= -150\,000 + \frac{50\,000}{1{,}08} + \frac{60\,000}{1{,}08^2} + \frac{70\,000}{1{,}08^3} \\
+    &amp;= -150\,000 + 46\,296{,}30 + 51\,440{,}33 + 55\,568{,}26 \\
+    &amp;= 3\,304{,}88
+\end{aligned}
+\]</span></p>
+<p>NPV je 3 304,88 Kč. Je kladná, projekt se vyplatí.</p>
+</details>
 </div>
+<div class="exercise" data-number="2" data-unit="Kč">
+<p>Firma investuje 100 000 Kč do projektu, který tři roky přináší 30 000 Kč ročně. Diskontní sazba je 10 %. Jaká je NPV projektu?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" autocomplete="off" data-answer="-25394.44" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="25394.44" hidden="hidden">
+<p>Současná hodnota peněžních toků je nižší než investice. NPV je záporná.</p>
 </div>
+<div class="exercise-mistake" data-answer="74605.56" hidden="hidden">
+<p>To je současná hodnota budoucích peněžních toků. Odečtěte od ní počáteční investici.</p>
 </div>
-<ol start="6" type="1">
-<li>Firma investuje 200 000 Kč do projektu, který generuje následující peněžní toky:</li>
-</ol>
-<ul>
-<li>Rok 1: 70 000 Kč</li>
-<li>Rok 2: 80 000 Kč</li>
-<li>Rok 3: 90 000 Kč</li>
-<li>Rok 4: 100 000 Kč</li>
-</ul>
-<p>Diskontní sazba je 12 %. Jaká je NPV daného projektu?</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise-mistake" data-answer="-10000" hidden="hidden">
+<p>Peněžní toky jste jen sečetli a odečetli investici. Každý peněžní tok nejdřív diskontujte.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\begin{aligned}
+NPV &amp;= -100\,000 + \frac{30\,000}{1{,}1} + \frac{30\,000}{1{,}1^2} + \frac{30\,000}{1{,}1^3} \\
+    &amp;= -100\,000 + 27\,272{,}73 + 24\,793{,}39 + 22\,539{,}44 \\
+    &amp;= -25\,394{,}44
+\end{aligned}
+\]</span></p>
+<p>NPV je −25 394,44 Kč, firma má projekt zamítnout. Je to vidět i bez počítání: projekt přinese celkem 90 000 Kč, tedy méně, než stojí.</p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<div class="exercise" data-number="3" data-unit="Kč">
+<p>Firma investuje 200 000 Kč do projektu, který v jednotlivých letech přinese 70 000 Kč, 80 000 Kč, 90 000 Kč a 100 000 Kč. Diskontní sazba je 12 %. Jaká je NPV projektu?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="53887.54" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="253887.54" hidden="hidden">
+<p>To je současná hodnota budoucích peněžních toků. Odečtěte od ní počáteční investici.</p>
 </div>
-<div id="callout-21" class="callout-21-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>53 897 Kč</p>
+<div class="exercise-mistake" data-answer="140000" hidden="hidden">
+<p>Peněžní toky jste jen sečetli a odečetli investici. Každý peněžní tok nejdřív diskontujte.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\begin{aligned}
+NPV &amp;= -200\,000 + \frac{70\,000}{1{,}12} + \frac{80\,000}{1{,}12^2} + \frac{90\,000}{1{,}12^3}
+       + \frac{100\,000}{1{,}12^4} \\
+    &amp;= -200\,000 + 62\,500 + 63\,775{,}51 \\
+    &amp;\quad + 64\,060{,}22 + 63\,551{,}81 \\
+    &amp;= 53\,887{,}54
+\end{aligned}
+\]</span></p>
+<p>NPV je 53 887,54 Kč.</p>
+</details>
 </div>
+<div class="exercise" data-tol="100" data-number="4" data-unit="Kč">
+<p>Firma investuje 1 200 000 Kč do výrobní linky, která bude 10 let přinášet 180 000 Kč ročně. Diskontní sazba je 7 %. Jaká je NPV projektu?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="64244.68" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="152741.80" hidden="hidden">
+<p>Takhle vychází předlhůtní anuita. Peněžní toky přicházejí na konci roku.</p>
 </div>
-<ol start="7" type="1">
-<li>Firma investuje 50 000 Kč do projektu, který generuje následující peněžní toky:</li>
-</ol>
-<ul>
-<li>Rok 1: 15 000 Kč</li>
-<li>Rok 2: 20 000 Kč</li>
-<li>Rok 3: 25 000 Kč</li>
-</ul>
-<p>Jaká bude hodnota IRR?</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="exercise-mistake" data-answer="600000" hidden="hidden">
+<p>Peněžní toky jste jen sečetli a odečetli investici. Nejdřív je diskontujte.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<div class="exercise-mistake" data-answer="1264244.68" hidden="hidden">
+<p>To je současná hodnota budoucích peněžních toků. Odečtěte od ní počáteční investici.</p>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Deset stejných peněžních toků na konci roku je polhůtní anuita:</p>
+<p><span class="math display">\[
+\begin{aligned}
+NPV &amp;= -1\,200\,000 + 180\,000 \times \frac{1 - \dfrac{1}{1{,}07^{10}}}{0{,}07} \\
+    &amp;= -1\,200\,000 + 1\,264\,244{,}68 = 64\,244{,}68
+\end{aligned}
+\]</span></p>
+<p>NPV je 64 244,68 Kč.</p>
+</details>
 </div>
-<div id="callout-22" class="callout-22-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>14,5%</p>
+<div class="exercise" data-number="5">
+<p>Projekt vyžaduje investici 800 000 Kč a pět let přináší 220 000 Kč ročně. Jaká je jeho NPV při diskontní sazbě 8 % a jaká při 14 %?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">NPV při 8 % (Kč)</span><input type="text" class="form-control" autocomplete="off" data-answer="78396.21" aria-label="NPV při 8 % (Kč)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">NPV při 14 % (Kč)</span><input type="text" class="form-control" autocomplete="off" data-answer="-44722.19" aria-label="NPV při 14 % (Kč)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Peněžní toky jsou polhůtní anuita. Při sazbě 8 %:</p>
+<p><span class="math display">\[
+\begin{aligned}
+NPV &amp;= -800\,000 + 220\,000 \times \frac{1 - \dfrac{1}{1{,}08^5}}{0{,}08} \\
+    &amp;= -800\,000 + 878\,396{,}21 = 78\,396{,}21
+\end{aligned}
+\]</span></p>
+<p>Při sazbě 14 %:</p>
+<p><span class="math display">\[
+\begin{aligned}
+NPV &amp;= -800\,000 + 220\,000 \times \frac{1 - \dfrac{1}{1{,}14^5}}{0{,}14} \\
+    &amp;= -800\,000 + 755\,277{,}81 = -44\,722{,}19
+\end{aligned}
+\]</span></p>
+<p>Při sazbě 8 % se projekt vyplatí, při 14 % ne. IRR projektu leží mezi těmito sazbami.</p>
+</details>
 </div>
+</section>
+<section id="vnitřní-výnosové-procento-1" class="level3" data-number="12.7.3">
+<h3 data-number="12.7.3" class="anchored" data-anchor-id="vnitřní-výnosové-procento-1"><span class="header-section-number">12.7.3</span> Vnitřní výnosové procento</h3>
+<div class="exercise" data-number="1" data-unit="%">
+<p>Firma investuje 250 000 Kč do vývoje výrobku. Za 5 let výrobek prodá za 400 000 Kč, jiné peněžní toky projekt nemá. Jaké je IRR projektu?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="9.86" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="12" hidden="hidden">
+<p>Takhle vychází jednoduché úročení. Podíl částek odmocněte: <span class="math inline">\(1{,}6^{1/5} - 1\)</span>.</p>
 </div>
+<div class="exercise-mistake" data-answer="60" hidden="hidden">
+<p>To je výnos za celých 5 let. Přepočítejte ho na jeden rok.</p>
 </div>
-<ol start="8" type="1">
-<li>Firma investuje 120 000 Kč do projektu, který generuje následující peněžní toky:</li>
-</ol>
-<ul>
-<li>Rok 1: 40 000 Kč</li>
-<li>Rok 2: 50 000 Kč</li>
-<li>Rok 3: 60 000 Kč</li>
-<li>Rok 4: 70 000 Kč</li>
-</ul>
-<p>Jaká bude hodnota IRR?</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Výsledek">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+IRR = \left(\frac{400\,000}{250\,000}\right)^{1/5} - 1 = 1{,}6^{1/5} - 1 = 0{,}0986 = 9{,}86\%
+\]</span></p>
+</details>
 </div>
-<div class="callout-title-container flex-fill">
-Výsledek
+<div class="exercise" data-tol="5" data-number="2">
+<p>Firma investuje 50 000 Kč do projektu, který v jednotlivých letech přinese 15 000 Kč, 20 000 Kč a 25 000 Kč. Spočítejte NPV při diskontní sazbě 8 % a 9 %. Co z toho plyne pro IRR?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">NPV při 8 % (Kč)</span><input type="text" class="form-control" autocomplete="off" data-answer="881.47" aria-label="NPV při 8 % (Kč)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">NPV při 9 % (Kč)</span><input type="text" class="form-control" autocomplete="off" data-answer="-100.35" aria-label="NPV při 9 % (Kč)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Při sazbě 8 %:</p>
+<p><span class="math display">\[
+NPV = -50\,000 + \frac{15\,000}{1{,}08} + \frac{20\,000}{1{,}08^2} + \frac{25\,000}{1{,}08^3}
+= 881{,}47
+\]</span></p>
+<p>Při sazbě 9 %:</p>
+<p><span class="math display">\[
+NPV = -50\,000 + \frac{15\,000}{1{,}09} + \frac{20\,000}{1{,}09^2} + \frac{25\,000}{1{,}09^3}
+= -100{,}35
+\]</span></p>
+<p>Při 8 % je NPV kladná, při 9 % záporná. IRR leží mezi těmito sazbami, mnohem blíž k 9 %. Přesný výpočet dává 8,90 %.</p>
+</details>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+<div class="exercise" data-tol="0.05" data-number="3" data-unit="%">
+<p><strong>Bonus.</strong> Firma investuje 120 000 Kč do projektu, který v jednotlivých letech přinese 40 000 Kč, 50 000 Kč, 60 000 Kč a 70 000 Kč. Jaké je IRR projektu? Výsledek zaokrouhlete na dvě desetinná místa. Přesný výsledek najdete jen pomocí softwaru, například Excelu.</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="26.43" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Hledáme sazbu, při které je NPV nulová. Při <span class="math inline">\(r = 26\%\)</span>:</p>
+<p><span class="math display">\[
+-120\,000 + \frac{40\,000}{1{,}26} + \frac{50\,000}{1{,}26^2} + \frac{60\,000}{1{,}26^3}
++ \frac{70\,000}{1{,}26^4} = 1\,007{,}03
+\]</span></p>
+<p>NPV je kladná, sazba musí být vyšší. Při <span class="math inline">\(r = 27\%\)</span>:</p>
+<p><span class="math display">\[
+-120\,000 + \frac{40\,000}{1{,}27} + \frac{50\,000}{1{,}27^2} + \frac{60\,000}{1{,}27^3}
++ \frac{70\,000}{1{,}27^4} = -1\,304{,}37
+\]</span></p>
+<p>IRR leží mezi 26 % a 27 %. Přesnou sazbu najde software. V Excelu zapište peněžní toky −120 000, 40 000, 50 000, 60 000 a 70 000 do buněk A1 až A5 a použijte funkci <code>=MÍRA.VÝNOSNOSTI(A1:A5)</code>.</p>
+<p>IRR je 26,43 %.</p>
+</details>
 </div>
-<div id="callout-23" class="callout-23-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>20,2%</p>
+</section>
+<section id="index-ziskovosti-a-diskontovaná-doba-návratnosti" class="level3" data-number="12.7.4">
+<h3 data-number="12.7.4" class="anchored" data-anchor-id="index-ziskovosti-a-diskontovaná-doba-návratnosti"><span class="header-section-number">12.7.4</span> Index ziskovosti a diskontovaná doba návratnosti</h3>
+<div class="exercise" data-tol="0.005" data-number="1">
+<p>Projekt vyžaduje investici 2 000 000 Kč a jeho NPV je 300 000 Kč. Jaký je index ziskovosti?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="1.15" aria-label="Váš výsledek" placeholder="Váš výsledek"><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="0.15" hidden="hidden">
+<p>To je NPV dělená investicí. V čitateli má být současná hodnota budoucích peněžních toků, tedy NPV zvýšená o investici.</p>
 </div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Současná hodnota budoucích peněžních toků je <span class="math inline">\(300\,000 + 2\,000\,000 = 2\,300\,000\)</span> Kč:</p>
+<p><span class="math display">\[
+PI = \frac{2\,300\,000}{2\,000\,000} = 1{,}15
+\]</span></p>
+</details>
 </div>
+<div class="exercise" data-tol="0.005" data-number="2">
+<p>Firma investuje 400 000 Kč do projektu, který v jednotlivých letech přinese 150 000 Kč, 200 000 Kč a 180 000 Kč. Diskontní sazba je 9 %. Jaký je index ziskovosti?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="1.11" aria-label="Váš výsledek" placeholder="Váš výsledek"><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="1.33; 1.325" hidden="hidden">
+<p>Peněžní toky nejdřív diskontujte, teprve potom je vydělte investicí.</p>
+</div>
+<div class="exercise-mistake" data-answer="0.11; 0.112" hidden="hidden">
+<p>To je NPV dělená investicí. V čitateli má být současná hodnota budoucích peněžních toků.</p>
+</div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\begin{aligned}
+PV &amp;= \frac{150\,000}{1{,}09} + \frac{200\,000}{1{,}09^2} + \frac{180\,000}{1{,}09^3} \\
+   &amp;= 137\,614{,}68 + 168\,336{,}00 + 138\,993{,}03 = 444\,943{,}70
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+PI = \frac{444\,943{,}70}{400\,000} = 1{,}11
+\]</span></p>
+<p>Index je větší než 1, projekt se vyplatí. Jeho NPV je 44 943,70 Kč.</p>
+</details>
+</div>
+<div class="exercise" data-tol="0.01" data-number="3">
+<p>Projekt vyžaduje investici 200 000 Kč a tři roky přináší 90 000 Kč ročně. Diskontní sazba je 10 %. Jaká je doba návratnosti a jaká diskontovaná doba návratnosti?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">Doba návratnosti (roky)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="2.22" aria-label="Doba návratnosti (roky)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">Diskontovaná doba návratnosti (roky)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="2.65" aria-label="Diskontovaná doba návratnosti (roky)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Doba návratnosti:</p>
+<p><span class="math display">\[
+DN = \frac{200\,000}{90\,000} = 2{,}22
+\]</span></p>
+<p>Pro diskontovanou dobu návratnosti peněžní toky nejdřív diskontujeme:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 18%">
+<col style="width: 26%">
+<col style="width: 27%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Rok</th>
+<th style="text-align: center;">Peněžní tok</th>
+<th style="text-align: center;">Diskontovaný tok</th>
+<th style="text-align: center;">Součet od začátku</th>
+<th style="text-align: center;">Zbývá vrátit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">90 000</td>
+<td style="text-align: center;">81 818</td>
+<td style="text-align: center;">81 818</td>
+<td style="text-align: center;">118 182</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">90 000</td>
+<td style="text-align: center;">74 380</td>
+<td style="text-align: center;">156 198</td>
+<td style="text-align: center;">43 802</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">90 000</td>
+<td style="text-align: center;">67 618</td>
+<td style="text-align: center;">223 817</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+2 + \frac{43\,802}{67\,618} = 2{,}65
+\]</span></p>
+<p>Diskontovaná doba návratnosti je 2,65 roku, tedy delší než obyčejná.</p>
+</details>
+</div>
+</section>
+<section id="výběr-mezi-projekty" class="level3" data-number="12.7.5">
+<h3 data-number="12.7.5" class="anchored" data-anchor-id="výběr-mezi-projekty"><span class="header-section-number">12.7.5</span> Výběr mezi projekty</h3>
+<div class="exercise" data-number="1">
+<p>Firma vybírá jeden ze dvou strojů. Stroj A stojí 300 000 Kč a dva roky přináší 200 000 Kč ročně. Stroj B stojí 600 000 Kč a dva roky přináší 380 000 Kč ročně. Diskontní sazba je 10 %. Jaká je NPV obou strojů a který má firma koupit?</p>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><span class="input-group-text">NPV stroje A (Kč)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="47107.44" aria-label="NPV stroje A (Kč)"></div>
+<div class="input-group input-group-sm"><span class="input-group-text">NPV stroje B (Kč)</span><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="59504.13" aria-label="NPV stroje B (Kč)"></div>
+<button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p><span class="math display">\[
+\begin{aligned}
+NPV_A &amp;= -300\,000 + \frac{200\,000}{1{,}1} + \frac{200\,000}{1{,}1^2} = 47\,107{,}44 \\[1ex]
+NPV_B &amp;= -600\,000 + \frac{380\,000}{1{,}1} + \frac{380\,000}{1{,}1^2} = 59\,504{,}13
+\end{aligned}
+\]</span></p>
+<p>Firma má koupit stroj B, protože má vyšší NPV. Stroj A má přitom vyšší IRR (21,5 % proti 17,3 %). U vzájemně se vylučujících projektů ale rozhoduje NPV.</p>
+</details>
+</div>
+<div class="exercise" data-number="2" data-unit="mil. Kč">
+<p>Firma má na investice 60 mil. Kč a zvažuje čtyři projekty. Jakou nejvyšší celkovou NPV může získat?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Projekt</th>
+<th style="text-align: center;">Investice (mil. Kč)</th>
+<th style="text-align: center;">NPV (mil. Kč)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">6,4</td>
+</tr>
+</tbody>
+</table>
+<form class="exercise-check">
+<div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="21.4" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">mil. Kč</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
+</form>
+<p class="exercise-feedback" aria-live="polite"></p>
+<div class="exercise-mistake" data-answer="20" hidden="hidden">
+<p>To je NPV projektů A a B, které mají nejvyšší NPV. Projekt A ale spotřebuje dvě třetiny rozpočtu. Seřaďte projekty podle indexu ziskovosti.</p>
+</div>
+<details class="exercise-solution"><summary>Zobrazit řešení</summary>
+<p>Spočítáme index ziskovosti každého projektu, například u projektu A <span class="math inline">\((12 + 40) / 40 = 1{,}30\)</span>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Projekt</th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">C</th>
+<th style="text-align: center;">D</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">PI</td>
+<td style="text-align: center;">1,30</td>
+<td style="text-align: center;">1,40</td>
+<td style="text-align: center;">1,35</td>
+<td style="text-align: center;">1,32</td>
+</tr>
+</tbody>
+</table>
+<p>Pořadí podle indexu je B, C, D, A. Projekty B, C a D stojí dohromady 60 mil. Kč a rozpočet právě vyčerpají:</p>
+<p><span class="math display">\[
+8 + 7 + 6{,}4 = 21{,}4
+\]</span></p>
+<p>Nejvyšší celková NPV je 21,4 mil. Kč.</p>
+</details>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

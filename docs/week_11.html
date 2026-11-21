@@ -1302,10 +1302,10 @@ Příklad
 <div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="16" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="15.14" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="15.14">
 <p>To je jen kapitálový výnos. K rozdílu cen přičtěte i dividendu 3,20 Kč.</p>
 </div>
-<div class="exercise-mistake" data-answer="13.9" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="13.9">
 <p>Výnos se počítá z nákupní ceny 370 Kč, ne z prodejní.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1314,16 +1314,16 @@ R = \frac{426 - 370 + 3{,}20}{370} = \frac{59{,}20}{370} = 0{,}16 = 16\%
 \]</span></p>
 </details>
 </div>
-<div class="exercise" data-tol="0.005" data-number="2" data-unit="%">
+<div class="exercise" data-number="2" data-tol="0.005" data-unit="%">
 <p>Akcii jste koupili za 698,50 Kč a po roce prodali za 681 Kč. Za tu dobu jste dostali dividendu 4,90 Kč. Jaký je celkový výnos investice?</p>
 <form class="exercise-check">
 <div class="input-group input-group-sm"><input type="text" class="form-control" autocomplete="off" data-answer="-1.80" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="-2.51; -2.505" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="-2.51; -2.505">
 <p>To je jen kapitálový výnos. Ke změně ceny přičtěte i dividendu 4,90 Kč.</p>
 </div>
-<div class="exercise-mistake" data-answer="1.8; 1.804" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="1.8; 1.804">
 <p>Prodali jste levněji, než jste koupili, a dividenda rozdíl nepokryla. Výnos je záporný.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1342,7 +1342,7 @@ R = \frac{681 - 698{,}50 + 4{,}90}{698{,}50} = \frac{-12{,}60}{698{,}50} = -0{,}
 <button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="20; 4; 24" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="20; 4; 24">
 <p>Výnosy se počítají z nákupní ceny 920 Kč, ne z prodejní.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1362,7 +1362,7 @@ R = \frac{681 - 698{,}50 + 4{,}90}{698{,}50} = \frac{-12{,}60}{698{,}50} = -0{,}
 <button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="1200; 10" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="1200; 10">
 <p>To je jen zisk ze změny ceny. Přičtěte dividendu 9 Kč na akcii.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1384,10 +1384,10 @@ R = \frac{33}{240} = 0{,}1375 = 13{,}75\%
 <div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="36.05" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="32" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="32">
 <p>Takhle vychází jednoduché úročení. Roční výnos počítá se složeným: <span class="math inline">\(1{,}08^4 - 1\)</span>.</p>
 </div>
-<div class="exercise-mistake" data-answer="1.94; 1.943" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="1.94; 1.943">
 <p>Exponent je obráceně. Do roku se vejdou čtyři čtvrtletí, proto <span class="math inline">\(1{,}08^4\)</span>.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1403,7 +1403,7 @@ R_a = 1{,}08^{4} - 1 = 0{,}3605 = 36{,}05\%
 <div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="9.14" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="10" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="10">
 <p>Dělení počtem let nepočítá se složeným úročením. Použijte třetí odmocninu: <span class="math inline">\(1{,}30^{1/3} - 1\)</span>.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1418,10 +1418,10 @@ R_a = 1{,}30^{1/3} - 1 = 0{,}0914 = 9{,}14\%
 <div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="3.82" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="4.04" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="4.04">
 <p>Takhle vychází jednoduché úročení. Podíl hodnot odmocněte: <span class="math inline">\(1{,}1617^{1/4} - 1\)</span>.</p>
 </div>
-<div class="exercise-mistake" data-answer="16.17" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="16.17">
 <p>To je výnos za celé 4 roky. Přepočítejte ho na jeden rok.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1436,7 +1436,7 @@ R_a = \left(\frac{1\,394}{1\,200}\right)^{1/4} - 1 = 1{,}1617^{1/4} - 1 = 0{,}03
 <div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="6.03" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="7.24" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="7.24">
 <p>Takhle vychází jednoduché úročení. Podíl hodnot odmocněte: <span class="math inline">\(1{,}5070^{1/7} - 1\)</span>.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1451,13 +1451,13 @@ R_a = \left(\frac{321}{213}\right)^{1/7} - 1 = 1{,}5070^{1/7} - 1 = 0{,}0603 = 6
 <div class="input-group input-group-sm"><input type="text" class="form-control" autocomplete="off" data-answer="-43.44" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="-24.79" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="-24.79">
 <p>To je výnos za 6 měsíců. Přepočítejte ho na celý rok.</p>
 </div>
-<div class="exercise-mistake" data-answer="-49.59" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="-49.59">
 <p>Takhle vychází jednoduché úročení. Podíl hodnot umocněte na druhou: <span class="math inline">\(0{,}75207^2 - 1\)</span>.</p>
 </div>
-<div class="exercise-mistake" data-answer="-13.28" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="-13.28">
 <p>Exponent je obráceně. Do roku se vejdou dvě pololetí, proto <span class="math inline">\(0{,}75207^2\)</span>.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1478,7 +1478,7 @@ R_a = \left(\frac{91}{121}\right)^{2} - 1 = 0{,}75207^{2} - 1 = -0{,}4344 = -43{
 <button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="4.8" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="4.8">
 <p>To je výnos za tři roky vydělený třemi. Geometrický průměr je třetí odmocnina: <span class="math inline">\(1{,}144^{1/3} - 1\)</span>.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1520,7 +1520,7 @@ R_G &amp;= (2 \times 0{,}5)^{1/2} - 1 = 1^{1/2} - 1 = 0\%
 <button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="7.15" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="7.15">
 <p>To je výnos za čtyři roky vydělený čtyřmi. Geometrický průměr je čtvrtá odmocnina: <span class="math inline">\(1{,}2859^{1/4} - 1\)</span>.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1546,10 +1546,10 @@ R_G &amp;= (1{,}12 \times 0{,}92 \times 1{,}20 \times 1{,}04)^{1/4} - 1 \\
 <button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="9.49" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="9.49">
 <p>Součet druhých mocnin dělte <span class="math inline">\(n - 1 = 3\)</span>, ne počtem let.</p>
 </div>
-<div class="exercise-mistake" data-answer="120" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="120">
 <p>To je rozptyl. Směrodatná odchylka je jeho odmocnina.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1574,10 +1574,10 @@ R_G &amp;= (1{,}12 \times 0{,}92 \times 1{,}20 \times 1{,}04)^{1/4} - 1 \\
 <button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="2.45" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="2.45">
 <p>Součet druhých mocnin dělte <span class="math inline">\(n - 1 = 2\)</span>, ne počtem let.</p>
 </div>
-<div class="exercise-mistake" data-answer="9" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="9">
 <p>To je rozptyl. Směrodatná odchylka je jeho odmocnina.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1599,7 +1599,7 @@ R_G &amp;= (1{,}12 \times 0{,}92 \times 1{,}20 \times 1{,}04)^{1/4} - 1 \\
 <button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="-21; 39" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="-21; 39">
 <p>To jsou dvě směrodatné odchylky od průměru. V tomto rozmezí leží zhruba 95 % výnosů.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1618,10 +1618,10 @@ R_G &amp;= (1{,}12 \times 0{,}92 \times 1{,}20 \times 1{,}04)^{1/4} - 1 \\
 <div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="0.47" aria-label="Váš výsledek" placeholder="Váš výsledek"><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="0.54; 0.538; 0.5376" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="0.54; 0.538; 0.5376">
 <p>Od výnosu investice nejdřív odečtěte bezrizikovou výnosovou míru.</p>
 </div>
-<div class="exercise-mistake" data-answer="2.13; 2.135" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="2.13; 2.135">
 <p>Zlomek je obráceně. Výnos nad bezrizikovou míru dělíme směrodatnou odchylkou.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1636,7 +1636,7 @@ S = \frac{14{,}3 - 1{,}84}{26{,}6} = \frac{12{,}46}{26{,}6} = 0{,}47
 <div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="0.26" aria-label="Váš výsledek" placeholder="Váš výsledek"><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="0.39; 0.388" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="0.39; 0.388">
 <p>Od výnosu investice nejdřív odečtěte bezrizikovou výnosovou míru.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1653,7 +1653,7 @@ S = \frac{7{,}1 - 2{,}4}{18{,}3} = \frac{4{,}7}{18{,}3} = 0{,}26
 <button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="0.69; 1.4; 0.6875" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="0.69; 1.4; 0.6875">
 <p>Od výnosu fondu nejdřív odečtěte bezrizikovou výnosovou míru 3 %.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1674,10 +1674,10 @@ S_B = \frac{7 - 3}{5} = 0{,}80
 <div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="7.2" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="4" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="4">
 <p>To je prostý průměr obou výnosů. V akciích A máte víc peněz, proto mají větší váhu.</p>
 </div>
-<div class="exercise-mistake" data-answer="0.8" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="0.8">
 <p>Váhy jsou zaměněné. Váhu 0,7 mají akcie A, do kterých jste vložili 70 000 Kč.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1693,7 +1693,7 @@ R_p = 0{,}7 \times 12\% + 0{,}3 \times (-4\%) = 8{,}4\% - 1{,}2\% = 7{,}2\%
 <div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="2.6" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="0" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="0">
 <p>To je prostý průměr tří výnosů. Každý výnos vynásobte váhou aktiva v portfoliu.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1714,10 +1714,10 @@ R_p &amp;= 0{,}5 \times 8\% + 0{,}3 \times 2\% + 0{,}2 \times (-10\%) \\
 <button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="1.63; 1.633" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="1.63; 1.633">
 <p>Součet druhých mocnin dělte <span class="math inline">\(n - 1 = 2\)</span>, ne počtem let.</p>
 </div>
-<div class="exercise-mistake" data-answer="14.49" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="14.49">
 <p>Riziko portfolia není průměr rizik obou akcií. Spočítejte nejdřív výnos portfolia v každém roce a z něj směrodatnou odchylku.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1742,7 +1742,7 @@ R_p &amp;= 0{,}5 \times 8\% + 0{,}3 \times 2\% + 0{,}2 \times (-10\%) \\
 <div class="input-group input-group-sm"><input type="text" class="form-control" inputmode="decimal" autocomplete="off" data-answer="3.5" aria-label="Váš výsledek" placeholder="Váš výsledek"><span class="input-group-text">%</span><button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button></div>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="5" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="5">
 <p>Tak by se změnil rovnoměrně vážený index. Tady má každá firma váhu podle své tržní kapitalizace.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
@@ -1767,7 +1767,7 @@ R_p &amp;= 0{,}5 \times 8\% + 0{,}3 \times 2\% + 0{,}2 \times (-10\%) \\
 <button type="submit" class="btn btn-primary btn-sm">Zkontrolovat</button>
 </form>
 <p class="exercise-feedback" aria-live="polite"></p>
-<div class="exercise-mistake" data-answer="932191.43" hidden="hidden">
+<div class="exercise-mistake" hidden="hidden" data-answer="932191.43">
 <p>To je výnos trhu bez poplatků. Od 8 % odečtěte roční poplatek.</p>
 </div>
 <details class="exercise-solution"><summary>Zobrazit řešení</summary>
